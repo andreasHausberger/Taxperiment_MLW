@@ -1,0 +1,54 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: andreas
+ * Date: 19.11.18
+ * Time: 10:06
+ */
+
+$config = array(
+    "db" => array(
+        "db1" => array(
+            "servername" => "localhost",
+            "username" => "root",
+            "password" => "root",
+            "dbname" => "mouselabWEB"
+        ),
+        "db2" => array(
+            "dbname" => "database2",
+            "username" => "dbUser",
+            "password" => "password2",
+            "host" => "localhost"
+        )
+    ),
+    "urls" => array(
+        "baseUrl" => "http://mouselabweb:8888"
+    ),
+    "paths" => array(
+        "resources" => "/path/to/resources",
+        "images" => array(
+            "content" => $_SERVER["DOCUMENT_ROOT"] . "/images/content",
+            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
+        )
+    )
+);
+
+$connection = new mysqli($config[0][0]);
+
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+else {
+    echo "Connected successfully";
+}
+
+
+
+
+defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
+defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
+
+ini_set("error_reporting", "true");
+error_reporting(E_ALL|E_STRCT);
+
+require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');

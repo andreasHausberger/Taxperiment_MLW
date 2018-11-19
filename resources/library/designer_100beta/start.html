@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Untitled Document</title>
+<link href="mlwebdesign.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="top.refreshTable(false);">
+<FORM>
+<input type=hidden name="colnum" value="">
+<input type=hidden name="rownum" value="">
+<DIV id="edit" style="z-index: 1;">
+</DIV>
+<DIV id="hidden" style="visibility: hidden; position: absolute; top: 0px; z-index: 0;">
+</DIV>
+<DIV ID="tempLyr" STYLE="position: absolute; top: 50px; left: 300px; z-index: 101; visibility: hidden"></DIV>
+<DIV ID="scaleLyr" STYLE="position: absolute; top: 50px; left: 300px; z-index: 100; visibility: hidden;">
+<TABLE width=200 class="tblStyle">
+  <TR><TD class="labelTD"><strong>Horizontal Scale</strong></TD>
+<TD class="labelTD"><input type=button value=" Close " onClick="document.getElementById('scaleLyr').style.visibility='hidden';"></TD></TR>
+<TR class="inpTD">
+  <TD>Variable name: <INPUT type=text size=20 name="scaleName" value=""></TD><TD>Points: <INPUT type=text size=3 name="scalePoints" value=""></TD></TR>
+<TR >
+  <TD class="inpTD" colspan=2 align=center>Width:<INPUT type=text size=3 name="scaleWidth" value="80">%&nbsp;&nbsp;Capt. Events<INPUT name="scaleCapture" type=checkbox value="true"></TD>
+</TR>
+<TR >
+  <TD class="inpTD" colspan=2 align=center><B>Scale values:</B>&nbsp;&nbsp;<INPUT name="scaleShowValues" type=checkbox value="true" checked>    
+  Show<BR>
+  Start value (opt, numeric):
+    <INPUT type=text size=3 name="scaleBegin" value=""> 
+    <BR>End value (opt, numeric): 
+    <INPUT type=text size=3 name="scaleEnd" value=""></TD></TR>
+<TR >
+  <TD class="inpTD" colspan=2 align=center><input type=button value="Create Scale" onClick="top.makeScale(this.form)"></TD></TR>
+</TABLE>
+</DIV>
+<DIV ID="choiceLyr" STYLE="position: absolute; top: 49px; left: 316px; z-index: 100; visibility: hidden">
+<TABLE width=227 class="tblStyle">
+  <TR><TD class="labelTD">Multiple choice options</TD><TD class="labelTD"><input type=button value=" Close " onClick="document.getElementById('choiceLyr').style.visibility='hidden'"></TD></TR>
+<TR ><TD class="inpTD">Variable name: 
+  <INPUT type=text size=20 name="choiceName" value=""></TD><TD class="inpTD">number of options: 
+    <INPUT type=text size=3 name="choiceOptions" value=""></TD></TR>
+<TR >
+  <TD class="inpTD" colspan=2 align=center><strong>Response type: </strong><BR><INPUT name="choiceType" type=radio value="single" checked>
+  Single (radio)<INPUT type=radio name="choiceType" value="multi">Multiple (checkbox)<BR>Capture Events<INPUT name="choiceCapture" type=checkbox value="true"></TD>
+</TR><TR><TD colspan=2 align=center class="inpTD"><input type=button value="Create Options" onClick="top.makeOptions(this.form)"></TD></TR>
+
+</TABLE>
+</DIV>
+<DIV ID="fieldLyr" STYLE="position: absolute; top: 50px; left: 300px; z-index: 100; visibility: hidden">
+<TABLE width=200 class="tblStyle">
+  <TR ><TD width="135" class="labelTD"><strong>Text field</strong></TD><TD width="51" class="labelTD"><input name="closeField" type=button value=" Close " onClick="document.getElementById('fieldLyr').style.visibility='hidden';"></TD></TR>
+<TR ><TD colspan=2 class="inpTD">Variable name: 
+  <INPUT type=text size=20 name="textName" value=""></TD></TR>
+<TR ><TD colspan=2 align=center class="inpTD">Optional attributes<BR>
+  Width: <INPUT type=text size=3 name="textWidth" value="50">&nbsp;&nbsp;Height: <INPUT type=text size=3 name="textRow" value="1"><BR>Capture Events<INPUT name="textCapture" type=checkbox value="true"></TD></TR>
+<TR ><TD colspan=2 align=center class="inpTD"><input type=button onClick="top.maketextHTML(this.form)" value="Create Text Field"></TD></TR></TABLE>
+</DIV>
+
+<DIV ID="CBLyr" STYLE="position: absolute; top: 190px; left: 300px; z-index: 100; visibility: hidden;">
+<TABLE width="500px" class="tblStyle">
+  <TR ><TD class="labelTD"><strong>Manual CB orders</strong></TD><TD width="50px" align=center class="labelTD"><input type=button value=" Close " onClick="top.changeCB('close')"></TD></TR>
+<TR ><TD colspan=2 class="inpTD" align="center"><BR>
+<div id="CBList"></div><BR>
+<input type="button" name="selAll" id="selAll" value="select All" onClick="top.changeCB('selAll')">&nbsp;&nbsp;<input type="button" name="invSel" id="invSel" value="inv. Selection" onClick="top.changeCB('invSel')">&nbsp;&nbsp;<input type="button" name="delSel" id="delSel" value="Del Selected" onClick="top.changeCB('delSel')"></TR>
+   <TR >
+  <TD align=left class="inpTD"><strong>input: </strong>Separate column and row numbers by semicolons (;) <BR />col:
+    <input type=text value="" name="colord" id="colord">&nbsp;row:<input type=text value="" name="roword" id="roword" >&nbsp;<input type="button" name="addCB" id="addCB" value="add" onClick="top.changeCB('add')"></td><TD width="170px" align=center class="inpTD">New list based on counterbalancing<input type="button" name="crList" id="crList" value="New List" onClick="top.changeCB('crList')"></TD></TR>
+</TABLE>
+</DIV>
+
+<DIV ID="tmLyr" STYLE="position: absolute; top: 51px; left: 620px; z-index: 100; visibility: hidden">
+<TABLE width=300 class="tblStyle">
+  <TR><TD width="126" class="labelTD"><strong>Time Bar Settings</strong></TD><TD width="160" align="right" class="labelTD"><input type=button value=" Close " onClick="document.getElementById('tmLyr').style.visibility='hidden'"></TD></TR>
+<TR ><TD class="inpTD">Total time: 
+  <INPUT type=text size=6 name="tmTotalSec" value="60"> 
+  sec</TD>
+  <TD class="inpTD">Steps: 
+    <INPUT type=text size=5 name="tmStepSec" value="1"> 
+    sec</TD>
+</TR>
+<TR ><TD class="inpTD">Bar length: 
+  <INPUT type=text size=6 name="tmWidthPx" value="200"> 
+  px</TD>
+  <TD class="inpTD">Label:<INPUT type=text size=10 name="tmLabel" value="Timer: "></TD>
+</TR>
+<TR>
+  <TD class="inpTD">Progress direction:<br>
+    <INPUT name="tmFill" type=radio value="true" checked>fill (from left)<br>
+  <INPUT type=radio name="tmFill" value="false">empty (from right)</td>
+  <td class="inpTD">
+Start timer when:<br>
+<INPUT name="tmDirectStart" type=radio value="true" checked>
+page is loaded<br>
+  <INPUT type=radio name="tmDirectStart" value="false">
+  first box is opened</TD>
+</tr><tr>
+<td class="inpTD">Show time in bar <INPUT name="tmShowTime" type=checkbox value="true" checked></td>
+<td class="inpTD">Format:
+    <INPUT type=text name="tmTimeFormat" value="min:sec">
+</td>
+
+</TR><TR><TD colspan=2 class="inpTD" align=center><input type=button value="Create Bar in active part" onClick="top.makeBar(this.form)"></TD></TR>
+
+</TABLE>
+</DIV>
+</FORM>
+</body>
+</html>

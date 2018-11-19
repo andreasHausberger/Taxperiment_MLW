@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>MLWEB-editor Helpfile</title>
+<link rel="stylesheet" href="mlwebdesign.css" type="text/css"></head>
+
+<body>
+<H1> The Designer </H1>
+<p>Help version 1.00beta<br>
+  August 14, 2008</p>
+<p>The Designer makes it very easy to create your MouselabWEB page as well as adding some general HTML elements where subjecs can enter data, like radio buttons and text fields. </p>
+<h3>Starting from scratch</h3>
+<p> When creating a new experiment, you first want to fill in some of the general settings before starting with creating the MouselabWEB cells. The settings are all on top of the screen and are discussed in this section. After that, clicking on the button &lsquo;<em>edit MouselabWEB table&rsquo; </em>will enable you to start inserting the experiment data. You can also insert HTML code above and beneath the MouselabWEB table. The &lsquo;<em>edit pre HTML&rsquo; and &lsquo;edit post HTML&rsquo; </em>buttons will activate these sections. </p>
+<h3>General Settings</h3>
+<h3><img width="535" height="95" alt="General settings box" src="images/general.gif"></h3>
+<table border=1 cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" valign="top"><p> Expname </p></td>
+    <td width="449" valign="top"><p> The name or number of the experiment (passed on with submission of the form to identify this specific page in the database). For the replay function in the datalyser program, it is easy if file name and expname are identical. (The player defaults to expname.php, but a different name can of course be entered.), Also when you download/save the page code, it will default to &lsquo;expname.html&rsquo; or &lsquo;expname.php&rsquo;</p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Email </p></td>
+    <td width="449" valign="top"><p> The e-mail address used by the webmailer. Make sure this is the same address you used for registration. If you use the PHP version, this can be left blank. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Next Page </p></td>
+    <td width="449" valign="top"><p> The URL of the page the browser should link to, if the MouselabWEB page is submitted. The header variables (e.g., condition and subject variables) are passed to the next page, allowing a chain of MouselabWEB pages that pass the same subject and the same counterbalancing number. Standard this is thanks.html </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Form </p></td>
+    <td width="449" valign="top"><p> The name of the form on the page (default value is normally fine, but this has to be set to the existing form name if MouselabWEB table is inserted in an existing web page with an existing form). </p></td>
+  </tr>
+
+  <tr>
+    <td width="119" valign="top"><p> Open and Close </p>
+    </td>
+    <td width="449" valign="top"><p> Select what action should open and close a box.  <br>
+        <strong>Opening: </strong>mouseover or click<br>
+        <strong>Closing: </strong>mouseover, click (any: this means any click on another box will close the current box), click (same: only clicking the same box can close the current box), noClose: (meaning no action, every box stays open) </p>
+    <p>If closing is set to noclose, more than one box is allowed to stay open. (note Process data will also be generated for open boxes). In any other situation, a box have to be closed before a next one can open. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Format </p></td>
+    <td width="449" valign="top"><p> How the process data should be outputted: CSV is comma-separated, used for import in many programs (e.g., Excel) and statistical packages such as SPSS and SAS and R. Note however that when you open it directly as an Excel file, all the data will be put in one column. This can be prevented by importing it or replacing the comma&rsquo;s by semicolons. </p>
+        <p> XML is a  format that uses an XML-like structure, which does result in more overhead. The download program accepts both types when downloading and extracting data from the database. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Master </p></td>
+    <td width="449" valign="top"><p> The special feature can be used to put a division on the counterbalancing number: e.g., if master is set to 2, two consecutive condition numbers will result in the same counterbalancing order, and only the third will have the next order. This can be very useful if the experiment has some experimental conditions for which people are assigned to by a number that goes along with the counterbalancing number (e.g., if you use the same number to counterbalance as to divide your experimental conditions) Otherwise, the experimental conditions will be confounded with the presentation order (counterbalancing) conditions, having condition 1 always with order 1, condition 2 always with order 2, etc. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Rand </p></td>
+    <td width="449" valign="top"><p> This feature forces randomization of the counterbalancing variables (thus resulting in random orders of presentation on the screen), even if a condition number is supplied. </p></td>
+  </tr>
+</table>
+<h3>Appearance</h3>
+<h3><img alt="Appearance box" width="245" height="94" src="images/appearance.gif"></h3>
+<p> These boxes can be used to change the default CSS classes used for the appearance of the MouselabWEB boxes. </p>
+<table border=1 cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" valign="top"><p> CSS </p></td>
+    <td width="449" valign="top"><p> The name of the style sheet that should be used by MouselabWEB for this page. Default is mlweb.css. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Active </p></td>
+    <td width="449" valign="top"><p> The style used for the display of the inside of active boxes. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Boxfront </p></td>
+    <td width="449" valign="top"><p> The style used for inactive/open boxes (e.g. the style used for headers and such). </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Inactive </p></td>
+    <td width="449" valign="top"><p> The style used to draw a nice front on the outside of the box. </p></td>
+  </tr>
+</table>
+
+<h3>Creating Mouselab Cells</h3>
+<p><img alt="Cell settings" width="430" height="180" src="images/cell.gif"></p>
+<p> If the MouselabWEB Cells part is not visible yet, click on the &lsquo;<em>edit MouselabWEB table&rsquo; </em> button and you can start with creating the cells. Simply use the &lsquo;<em>new row</em>&rsquo; and &lsquo;<em>new col</em>&rsquo; to add rows and columns. You can then start filling in the values and such. At all times it&rsquo;s possible to swap and/or delete the rows and columns. Click on the particular row or column you wish to edit and it will receive focus (and the properties can be edited). </p>
+<p><strong> The Cell Options: </strong></p>
+<table  border=1 cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" valign="top"><p> Name </p></td>
+    <td width="449" valign="top"><p> This is the name of the box in the process data (so this name will become an important variable in your data file, so make it descriptive) </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Boxtxt </p></td>
+    <td width="449" valign="top"><p> The text visible to the subjects on the outside of the box </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Text </p></td>
+    <td width="449" valign="top"><p> The hidden text that becomes visible after moving the mouse cursor into the box. </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Active </p></td>
+    <td width="449" valign="top"><p> The active checkbox sets whether a box is always open (unchecked) or closed (active checked) </p></td>
+  </tr>
+</table>
+
+<p><strong> Table Options: </strong></p>
+<table border=1 cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" valign="top"><p> CounterBalancing </p></td>
+    <td width="449" valign="top"><p><strong>Auto: </strong>if set to auto, columns and rows which type is set to CBal will be  counterbalanced against each other. For example, if there are 3 columns and 2  rows that are set to CBal, 3x2x1 * 2x1 =24 orders are possible. Columns that  are set to fixed will remain in fixed position (e.g. header rows or columns  should have this property: for example: header rows should have the row set to  fixed, but the columns and thus the labels, can still be counterbalanced  together with the other cells).<br>
+        <strong>Manual: </strong>This allows to set all counterbalancing orders used  manually. Pressing the <strong>set</strong> button will open a new window in  which orders can be entered. This feature is handy when you want to have more  control over the orders presented. For example when using gambles with separate  outcome and probability boxes, one typically wants to keep the outcome and  probability of one event together and in the same order. (more on this feature  in the walkthrough)</p>    </td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Move </p></td>
+    <td width="449" valign="top"><p> Move the select row or Column to a different position </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Height / Width </p></td>
+    <td width="449" valign="top"><p> Sets the width or the height of the cells in pixels </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Type </p></td>
+    <td width="449" valign="top"><p> The Type item sets the counterbalancing group (fixed, CBal). Columns and Rows can be counterbalanced or fixed.Columns and rows set to CBal will be counterbalanced according to the Countebalancing settings (manual or auto, see above) </p></td>
+  </tr>
+  <tr>
+    <td width="119" valign="top"><p> Del </p></td>
+    <td width="449" valign="top"><p> Delete the current active column or cell </p></td>
+  </tr>
+  <tr>
+    <td valign="top">Fix Col and Row labels </td>
+    <td valign="top">Checking these boxes will fix the labels on the outside of the boxes. For example, when one has two products A and B, the labeling on the outside of the boxes can remain fixed (product A left, product B right) but the underlying values can be counterbalanced. </td>
+  </tr>
+  <tr>
+    <td valign="top">new Btns</td>
+    <td valign="top"><p>create new column or row buttons<br>
+      (if buttons are already present, one button will say  'del btns' (to delete the current set of buttons, this but is shown on the row of column the buttons are in ) and the other will say 'to row btns' or 'to col btns', to move the buttons from rows to cols, or vice versa. </p>
+    </td>
+  </tr>
+</table>
+<h3>Pre &amp; Post HTML</h3>
+<p> The pre and post HTML can be used to add additional text (in HTML format) to the MouselabWEB page. If this HTML contains form elements, the background ascripts will automatically capture the responses for these elements. </p>
+<p> MouselabWEB also provides templates which make it very easy to quickly insert scales, option boxes and Text fields. You can give the scales boxes and textfields variable names and the process of mouseovers and clicks on the scales can be captured, like for the MouselabWEB cells. There is a checkbox in each option pane for this. </p>
+<table border=1 cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="120" valign="top"><p> Insert Scale </p></td>
+    <td width="409" valign="top"><p> HTML scale with custom amount of points, labels and values </p></td>
+  </tr>
+  <tr>
+    <td width="120" valign="top"><p> Insert Option / </p>
+        <p> Choice </p></td>
+    <td width="409" valign="top"><p> Radio or Checkbox HTML with custom amount of options, labels and values. </p></td>
+  </tr>
+  <tr>
+    <td width="120" valign="top"><p> Insert Textfield </p></td>
+    <td width="409" valign="top"><p> Simple textfield (1 row or multiple rows (textarea)) </p></td>
+  </tr>
+  <tr>
+    <td width="120" valign="top"><p> Undo last insert </p></td>
+    <td width="409" valign="top"><p> Removes the latest inserted HTML generated code </p></td>
+  </tr>
+</table>
+
+<h3>Opening / Saving an experiment</h3>
+<p>Press <em>load</em> to import a previously made  MouselabWEB page. Most features of the existing page will be captured, but  specific manual formatting might get lost. Pages from older versions should  typically load fine (if not let us know). In this way you can upgrade older  pages to a new version with more features.</p>
+<p>Use the ouput buttons on  the right side of the screen to save the page (as HTML or PHP); In older  versions you needed to copy-paste the code into an editor (This is due to the  nature of the <em>Designer</em>, which is an  HTML-based program and therefore does not have access to your file system.) In the  new online version you can download the code directly. If you have installed  the designer locally and running it on a php-enalbed webserver, you should also  be able to download the file.</p>
+<h2> Other </h2>
+<p> The title of the MouselabWEB page (which will typically appear in the window title bar) can be changed in the top row of the editing section. </p>
+<p><img alt="Title settings" width="600" height="21" src="images/title.gif"></p>
+<p>If you have added  additional questions to the MouselabWEB page besides a MouselabWEB table, you  can select the form-check option to make sure people have inputted an answer  before going to the next page. The warning text displayed when the subject has  not met this condition is also customizable. This bar also allows for activating  the timer and setting the properties of the timer.</p>
+<p><strong>timer:</strong></p>
+<p><img src="images/timer.gif" alt="Timer settings" width="302" height="188"><br>
+<br>
+Version 1.00 includes  a timer that will show a timer bar progressing, and will disable new acquisitions  if the total time has passed. By pressing the timer properties, you can set  some of the properties of the timer. </p>
+<ul>
+  <li><strong>Total time:</strong> total time a user is allowed to access boxes.</li>
+  <li>    <strong>Steps:</strong> time interval of updating the progress bar.</li>
+  <li><strong>Bar length:</strong> length of the progress bar in pixels</li>
+  <li><strong>Label: </strong>Label shown on the left of the time bar</li>
+  <li><strong>Progress Direction: </strong>set whether the bars fills from the left side (and  timer counting up from 0 if &quot;show time&quot; is checked), or empties from right  (and counting down from total time if &quot;show time&quot; is checked)</li>
+  <li><strong>Start timer when: </strong>&nbsp;select  whether timer starts when page is loaded or when first box is opened.</li>
+  <li><strong>Show time in bar: </strong>prints the current time in the progress bar</li>
+  <li><strong>Format: </strong>how time is displayed in the time bar, when there is a colon (:), the  bar will show minutes and seconds separately (if the current time is more than  60 seconds). If there is no colon, it will only show secs. It will use the labeling  as given in the format box (before and after the colon). Examples:<strong><br>
+    </strong><em>let's say the current time is&nbsp; 80 sec</em><strong><br>
+    format: &quot;min:sec&quot;, </strong>time bar will show <strong>&quot;1 min : 20 sec&quot;</strong> <strong><br>
+    format: &quot;M:s&quot;</strong>, time bar will show <strong>&quot;1 M : 20 s&quot;<br>
+    format: &quot;secs&quot;, </strong>time bar will show <strong>&quot;80 secs&quot;</strong></li>
+</ul>
+<p>To actually create a  time bar, the timer must be set to active (in the top bar). When pressing the  create button, it will put in some code in the current active part (preHTML,  mouselabwebtable (bottom), postHTML). Note that this actually inserts code in  the preHTML or postHTML part if this is active, at the position of the current  cursor (like inserting a scale). <br>
+  Whenever the &quot;create&quot;  button is used again, the previous code is removed. However, if you deactive  the timer in between, the code inserted in a pre or postHMTL part will not be  removed automatically.</p>
+<p><strong>Submit button:<br>
+</strong>On the bottom of the editing section, a field can be adapted to change the text printed on the next/submit button of the page.<br> 
+<img src="images/submitbut.gif" alt="Timer settings" width="244" height="28" ><br>
+</p>
+</body>
+</html>

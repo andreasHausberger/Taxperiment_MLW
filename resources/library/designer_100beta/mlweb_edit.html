@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Mouselab WEB Page Designer</title>
+<link rel="stylesheet" href="mlwebdesign.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+
+</style></head>
+
+<body>
+<Form name="mainmenu">
+
+<TABLE style="padding: 0px; margin: 0px;">
+<TR><TD>
+<TABLE height="90" width=110 class="tblStyle">
+<tr>
+<TD rowspan=5 align=center class="labelTD" heighty=90><B>Mouselab<sub>WEB</SUB> Designer</B><small>v. 1.00b</small><BR>
+<INPUT type="button" value="help" onClick="top.showHelp()"><BR>
+    <input type="button" value="load" onClick="top.inTableStruct();">
+    <input type="button" value="clear" onClick="top.resetStruct();">
+  </TD></tr></table>
+ 
+</TD>
+<TD>
+<TABLE height="90"  width="530" class="tblStyle">
+<TR>
+  <TD colspan="3" height="25" align=center class="labelTD"><div align="center">General Settings</div></TD>
+</TR>
+<TR><TD colspan=3 align=left class="inpTD">expname: 
+  <input name="expname" type="text" id="expname" size="15">&nbsp;&nbsp;email:<input name="to_email" type="text"  size="15">&nbsp;&nbsp;next Page: 
+  <input name="nextURL" type="text" id="nextURL" value="thanks.html" size="15">&nbsp;&nbsp;form:
+  <input name="formname" type="text" id="formname" value="mlwebform" size="10"></TD>
+</TR>
+<TR><TD width="230"  align=left class="inpTD">Open
+    <SELECT name="openEvent" onChange="top.changeEvents(this.form)"><Option value=0>Mouseover</option>
+    <option value="1">Click</option>
+  </SElect>
+  &nbsp;&nbsp;Close
+    <SELECT name="closeEvent" onChange="top.changeEvents(this.form)"><Option value=0 selected>Mouseout</option>
+      <option value="1">Click (any)</option>
+      <option value="2">Click (same)</option>
+      <option value="3">NoClose</option>
+        </SElect>
+
+	</TD>
+	<TD width="130"  align=left class="inpTD">format:
+  <input name="formatBtn" type="radio" value="CSV" checked>
+CSV
+<input name="formatBtn" type="radio" value="XML">
+XML</TD>
+<TD width="130" align=left class="inpTD">master:
+  <input name="masterCond" type="text" id="masterCond" value="1" size="3" maxlength="3">
+rand:
+<input name="randomize" type="checkbox" id="randomize" value="random"></TD></TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE height="90" width=130 class="tblStyle">
+<TR>
+  <TD height="25" colspan="4" valign="top" align=center class="labelTD">Appearance</TD>
+</TR>
+<TR><TD align=right class="inpTD">CSS:</TD>
+  <TD align=left class="inpTD"><input type=text size=10 name="cssname" value="mlweb.css"></TD>
+<TD align=right class="inpTD">active:</TD>
+<TD align=left class="inpTD"><input type=text size=10 name="actclass" value="actTD"></TD>
+</TR><TR>
+<TD  align=right class="inpTD">boxfront:</TD>
+<TD  align=left class="inpTD"><input type=text size=10 name="boxclass" value="boxTD"></TD>
+<TD  align=right class="inpTD">inactive:</TD>
+<TD  align=left class="inpTD"><input type=text size=10 name="inactclass" value="inactTD"></TD>
+</TR>
+</table>
+</TD><TD>
+<TABLE height="90" width=110 class="tblStyle">
+<TD  rowspan=5 align=center class="labelTD"><B>output</B><BR>
+  <input type="button" value="test" onClick="top.testDoc();">
+  &nbsp;
+  <INPUT type="button" onClick="top.outHTML();" value="html"><BR>  
+  
+  <small>serverside:</small><BR>
+    <input type="button" value="php" onClick="top.outPHP();"></TD>
+  </tabLE> 
+</TD>
+ </TR>
+</TABLE>
+</FORM>
+</body>
+</html>

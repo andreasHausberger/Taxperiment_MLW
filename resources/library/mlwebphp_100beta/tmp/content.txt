@@ -1,0 +1,1 @@
+this folder contains temporary files used by download_data.php

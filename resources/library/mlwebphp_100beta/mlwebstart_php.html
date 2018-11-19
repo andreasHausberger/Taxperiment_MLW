@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Mouselab WEB start page</title>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+<script language="javascript">
+function startExp(formlink)
+{
+pagename = "intro.php";
+subject = formlink.subject.value;
+condnum=parseInt(formlink.condnum.value);
+linkstr = pagename+"?subject="+subject+"&condnum="+condnum.toString();
+
+var newWind=window.open(linkstr,"survey","height="+(screen.availHeight-60).toString()+",width="+(screen.availWidth-30).toString() +",scrollbars,status,resizable, left=2, top=2")
+
+}
+</script>
+</head>
+<body> 
+<h1>Start of experiment</h1>
+<form>
+  <TABLE border=1><TR><TD>Subject name:</TD><TD><input name="subject" type="text" id="subject"></TD></TR>
+      <TR><TD>condition number:</TD><TD><input name="condnum" type="text" id="condnum" size="10"></TD></TR> 
+  <TR><TD colspan=2><input type="button" name="Button" value="Start Experiment" onClick="startExp(this.form)"></TD></TR></TABLE>
+</form>
+
+</body>
+</html>
