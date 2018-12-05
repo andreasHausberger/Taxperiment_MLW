@@ -15,9 +15,9 @@ $config = array(
             "dbname" => "mouselabWEB"
         ),
         "db2" => array(
-            "dbname" => "database2",
-            "username" => "dbUser",
-            "password" => "password2",
+            "dbname" => "mouselabWEB",
+            "username" => "root",
+            "password" => "root",
             "host" => "localhost"
         )
     ),
@@ -33,13 +33,18 @@ $config = array(
     )
 );
 
-$connection = new mysqli($config[0][0]);
+
+$connection = new mysqli("localhost",
+             "root",
+             "root",
+             "mouselabWEB");
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
 else {
     echo "Connected successfully";
+
 }
 
 
@@ -51,4 +56,4 @@ defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__)
 ini_set("error_reporting", "true");
 error_reporting(E_ALL|E_STRCT);
 
-require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');
+// require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');

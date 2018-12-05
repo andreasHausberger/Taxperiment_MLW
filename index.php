@@ -17,7 +17,7 @@ require_once (TEMPLATES_PATH . "/header.php");
     <h2> This is the main page content </h2>
 
     <div>
-
+        <iframe src="./resources/library/mlwebphp_100beta/mlweb_start_random.html" frameborder="0"></iframe>
     </div>
 </div>
 
