@@ -17,17 +17,30 @@ $pages = array(
     5 => "tutorial5.php",
     6 => "sliderTutorial1.php",
     7 => "tutorial6.php",
-    8 => "exam1.php"
+    8 => "exam1.php",
+    9 => "tutorial_end.php"
 );
 
 $page = $pages[$index];
 
-require_once ("../../templates/header.php");
+if ($index == 9) {
+    require_once ("../../templates/header.php");
 
-include($page);
-include("../../templates/continue.php");
+    include($page);
+    include("../../templates/redirect.php");
 
 
-require_once ("../../templates/footer.php");
+    require_once ("../../templates/footer.php");}
+
+else {
+    require_once ("../../templates/header.php");
+
+    include($page);
+    include("../../templates/continue.php");
+
+
+    require_once ("../../templates/footer.php");
+
+}
 
 ?>

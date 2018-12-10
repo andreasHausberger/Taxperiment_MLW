@@ -6,11 +6,8 @@
  * Time: 12:25
  */
 
-$totalScore = $_POST['score'];
-$data;
-parse_str($_GET['data'], $data);
+$totalScore = $_GET['score'];
 
 echo "Got Score: " . $totalScore;
 
-echo " and got presentation " . $data['presentation'];
 ?>
