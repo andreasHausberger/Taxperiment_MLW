@@ -8,17 +8,21 @@
 
 require_once('./resources/config.php');
 
-require_once (TEMPLATES_PATH . "/header.php");
+require_once ("public/templates/header.php");
 
 ?>
 
 <div>
-    <h1>Welcome to Mouselab Web</h1>
-    <h2> This is the main page content </h2>
+    <h1>Welcome, researcher</h1>
+    <p> please enter the participant's name or experiment number below. </p>
 
     <div>
         <iframe src="./resources/library/mlwebphp_100beta/mlweb_start_random.html" frameborder="0"></iframe>
     </div>
+
+    <div>
+        <a href="resources/library/designer_100beta/index.html"> Link to Designer</a>
+    </div>
 </div>
 
-<?php require_once(TEMPLATES_PATH . "/footer.php");
+<?php require_once("public/templates/footer.php"); ?>

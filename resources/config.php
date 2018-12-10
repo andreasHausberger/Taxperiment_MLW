@@ -25,10 +25,10 @@ $config = array(
         "baseUrl" => "http://mouselabweb:8888"
     ),
     "paths" => array(
-        "resources" => "/path/to/resources",
+        "resources" => "public/templates/",
         "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/images/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
+            "content" => $_SERVER["DOCUMENT_ROOT"] . "/public/img",
+            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/public/css"
         )
     )
 );
