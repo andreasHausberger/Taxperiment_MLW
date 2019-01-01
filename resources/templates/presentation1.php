@@ -42,8 +42,8 @@ if (isset($_GET['condnum'])) {
     state = "1^1`"
         + "1^1";
 
-    box = "^`"
-        + "^";
+    box = "Audit Probability^FineRate`"
+        + "Tax Rate^Income";
 
     CBCol = "0^0";
     CBRow = "0^0";

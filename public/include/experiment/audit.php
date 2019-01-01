@@ -7,7 +7,7 @@
 <?php var_dump($expRounds[$_GET['round'] - 1]); ?>
 
 
-<iframe  style="width: 500px;" src="/resources/templates/presentation1.php?score= <?php
+<iframe  style="width: 500px;" src="/resources/templates/presentation2.php?score= <?php
 
 $round = $expRounds[$_GET['round'] - 1];
 
