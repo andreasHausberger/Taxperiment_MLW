@@ -15,42 +15,42 @@
             switch (r) {
                 case 1:
                     // link for condition 1
-                    linkstr =  "/public/exp_config.php?condition=1";
+                    linkstr =  "/public/include/intro/index.php?condition=1";
                     break;
 
                 case 2:
                     // link for condition 2
-                    linkstr = "/public/exp_config.php?condition=2";
+                    linkstr = "/public/include/intro/index.php?condition=2";
                     break;
 
                 case 3:
                     // link for condition 3
-                    linkstr = "/public/exp_config.php?condition=3";
+                    linkstr = "/public/include/intro/index.php?condition=3";
                     break;
 
                 case 4:
                     // link for condition 4
-                    linkstr = "/public/exp_config.php?condition=4";
+                    linkstr = "/public/include/intro/index.php?condition=4";
                     break;
 
                 case 5:
                     // link for condition 5
-                    linkstr = "/public/exp_config.php?condition=5";
+                    linkstr = "/public/include/intro/index.php?condition=5";
                     break;
 
                 case 6:
                     // link for condition 6
-                    linkstr = "/public/exp_config.php?condition=6";
+                    linkstr = "/public/include/intro/index.php?condition=6";
                     break;
 
                 case 7:
                     // link for condition 7
-                    linkstr = "/public/exp_config.php?condition=7";
+                    linkstr = "/public/include/intro/index.php?condition=7";
                     break;
 
                 case 8:
                     // link for condition 8
-                    linkstr = "/public/exp_config.php?condition=8";
+                    linkstr = "/public/include/intro/index.php?condition=8";
                     break;
             }
 
@@ -63,7 +63,7 @@
             document.cookie = "mlweb_condnum=" + condnum + "; path=/";
             document.cookie = "mlweb_subject=" + subject + "; path=/";
 
-            var newWind = window.open(linkstr + "&sname=" + subject, "survey", "height=" + (screen.availHeight - 60).toString() + ",width=" + (screen.availWidth - 30).toString() + ",scrollbars,status,resizable, left=2, top=2")
+            var newWind = window.open(linkstr + "&sname=" + subject + "&page=1", "survey", "height=" + (800).toString() + ",width=" + (600).toString() + ",scrollbars,status,resizable, left=2, top=2")
 
         }
     </script>

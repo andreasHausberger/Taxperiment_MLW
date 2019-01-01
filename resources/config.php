@@ -6,19 +6,25 @@
  * Time: 10:06
  */
 
+function console_log($data) {
+    echo '<script>';
+    echo 'console.log('. json_encode( $data ) .')';
+    echo '</script>';
+}
+
 $config = array(
     "db" => array(
         "db1" => array(
             "servername" => "localhost",
             "username" => "root",
             "password" => "root",
-            "dbname" => "mouselabWEB"
+            "dbname" => "mlweb"
         ),
         "db2" => array(
             "dbname" => "mouselabWEB",
             "username" => "root",
             "password" => "root",
-            "host" => "localhost"
+            "host" => "mlweb"
         )
     ),
     "urls" => array(
@@ -37,15 +43,16 @@ $config = array(
 $connection = new mysqli("localhost",
              "root",
              "root",
-             "mouselabWEB");
+             "mlweb");
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
 else {
-    echo "Connected successfully";
-
+    console_log( "Connected successfully");
 }
+
+
 
 
 
@@ -56,4 +63,4 @@ defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__)
 ini_set("error_reporting", "true");
 error_reporting(E_ALL|E_STRCT);
 
-// require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');
+require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');

@@ -13,3 +13,18 @@
 .sliderInput {
     width: 200px;
 }
+
+.timerContainer {
+    height: 100px;
+    width: 150px;
+    background-color: white;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
+
+#time {
+    font-size: 48px;
+    font-weight: 900;
+}
+

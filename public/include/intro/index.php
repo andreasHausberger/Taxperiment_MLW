@@ -7,6 +7,8 @@
  */
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
+$condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
+$participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 $pages = array(
     -1 => "error.html",
@@ -23,24 +25,30 @@ $pages = array(
 
 $page = $pages[$index];
 
-if ($index == 9) {
-    require_once ("../../templates/header.php");
-
-    include($page);
-    include("../../templates/redirect.php");
-
-
-    require_once ("../../templates/footer.php");}
-
-else {
-    require_once ("../../templates/header.php");
-
-    include($page);
-    include("../../templates/continue.php");
-
-
-    require_once ("../../templates/footer.php");
-
+if ($condition == -1) {
+    echo "Something went wrong: Index is " . $index . " and condition is " . $condition;
 }
+else {
+    if ($index == 9) {
+        require_once ("../../templates/header.php");
+
+        include($page);
+        include("../../templates/redirect.php");
+
+
+        require_once ("../../templates/footer.php");}
+
+    else {
+        require_once ("../../templates/header.php");
+
+        include($page);
+        include("../../templates/continue.php");
+
+
+        require_once ("../../templates/footer.php");
+
+    }
+}
+
 
 ?>

@@ -20,11 +20,14 @@
 //    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 $DBhost = "localhost"; 		// hostname of the mySQL database 
-$DBuser = "username"; 		// username of user on this database
-$DBpass = "password";		// user password
-$DBName = "dbname";			// name of the database
+$DBuser = "root"; 		// username of user on this database
+$DBpass = "root";		// user password
+$DBName = "";			// name of the database
 $table = "mlweb";			// name of the table containing MLWEB Data (can be left to mlweb)
 
-mysql_connect($DBhost,$DBuser,$DBpass) or die("Unable toconnect to database");
+mysql_connect($DBhost,$DBuser,$DBpass) or die("Unable to connect to database");
 @mysql_select_db("$DBName") or die("Unable to select database $DBName"); 
 ?>
+
+
+<!--This is just a simple setup page. Since the database config happens in /resources/config.php, this file should not be included. -->

@@ -26,9 +26,6 @@ $sqlquery =
     (id INTEGER PRIMARY KEY, expname VARCHAR(50), subject VARCHAR(50), ip varchar(20), condnum INTEGER, choice VARCHAR(50), submitted DATETIME, procdata VARCHAR(2000), addvar VARCHAR(2000), adddata VARCHAR(2000))";
 
 if ($connection->query($sqlquery) === TRUE) {
-    echo "Table mlweb created successfully!";
-}
-else {
-    echo "Error creating table: " . $connection->error;
+    console_log( "Table mlweb created successfully!");
 }
 ?>

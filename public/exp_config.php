@@ -6,22 +6,20 @@
  * Time: 10:38
  */
 
-$condition = $_GET['condition'];
-$participantName = $_GET['sname'];
+require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
-require_once ('../resources/config.php');
-require_once ("./templates/header.php");
+// include ("./templates/header.php");
 
 $participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
 
-$participantQuery->bind_param("s", $participantName);
+$participantQuery->bind_param("s", $participant);
 
 $participantID = -1;
 $experimentID = -1;
 
 if ($participantQuery->execute()) {
     $participantID = $connection->insert_id;
-    echo "Participant with id " . $participantID . " saved successfully";
+    console_log(" Participant with id " . $participantID . " saved successfully");
 }
 else {
     echo "Error saving participant: " . $connection->error;
@@ -31,45 +29,47 @@ $experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, 
 
 $experimentQuery->bind_param("ii", $condition, $participantID);
 
-echo " trying to execute exp query...";
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
-    echo "Experiment data with ID " . $experimentID . "saved successfully! \n";
+    console_log(" Experiment data with ID " . $experimentID . " saved successfully! \n");
+
 
 }
 else {
     echo "Error saving experiment data: " . $connection->error . "\n";
 }
 
-$conditionQuery = "SELECT * FROM exp_condition AS c WHERE c.id = " . $condition;
+$conditionQuery = $connection->prepare("SELECT * FROM exp_condition AS c WHERE c.id = (?)");
+$conditionQuery->bind_param('s', $condition);
 
-$conditionResult = $connection->query($conditionQuery);
+if ($conditionQuery->execute()) {
+    echo "executed conditionQuery";
+    if($conditionQuery->bind_result($condition, $order, $feedback, $presentation)) {
+        echo "loaded condition data successfully!";
 
-$feedback = -1; $order = -1; $presentation = -1;
+        while ($conditionQuery->fetch()) {
+            $conditionData = array(0 => $condition, 1 => $order, 2 => $feedback, 3 => $presentation);
+        }
 
-if ($conditionResult->num_rows > 0) {
-    while ($row = $conditionResult->fetch_assoc()) {
-         $feedback = $row['feedback'];
-         $order = $row['order'];
-         $presentation = $row['presentation'];
     }
+    console_log("condition data for condition " . $condition . " loaded successfully");
 }
 else {
-    echo "Connection error: " . $connection->error;
+    echo "Connection error while retrieving condition: " . $connection->error;
 }
 
-$roundQueryAsc = "SELECT * FROM round ORDER BY id ASC";
-$roundQueryDesc = "SELECT * FROM round ORDER BY id DESC";
+$roundQueryAsc = "SELECT * FROM exp_round ORDER BY id ASC";
+$roundQueryDesc = "SELECT * FROM exp_round ORDER BY id DESC";
 
-$roundsResult = $connection->query($order == 1 ? $roundQueryAsc : $roundQueryDesc);
-global $expRounds;
+$roundsResult = $connection->query($conditionData[1] == 0 ? $roundQueryAsc : $roundQueryDesc);
+global $expRounds, $dataArray;
 
 if ($roundsResult->num_rows > 0) {
     while ($row = $roundsResult->fetch_assoc()) {
 
         $expRounds[] = $row;
     }
-    echo "loaded rounds in order " . ($order == 1 ? 'standard' : 'reverse') . " \n";
+    console_log("loaded rounds in order " . ($conditionData[1] == 0 ? 'standard' : 'reverse') . " \n");
 }
 else {
     echo "Connection error: " . $connection->error;
@@ -80,20 +80,10 @@ $dataArray = array(
         "test" => "test",
         "pname" => $participantName,
         "pid" => $participantID,
-        "condition" => $condition,
-        "feedback" => $feedback,
-        "order" => $order,
-        "presentation" => $presentation
+        "condition" => $conditionData[0],
+        "feedback" => $conditionData[2],
+        "order" => $conditionData[1],
+        "presentation" => $conditionData[3]
 );
 
 $data = http_build_query(array('data' => $dataArray));
-
-
-
-?>
-<br>
-
-
-<a href= <?php echo "include/intro/index.php?data=" . $data . "&roundnr=" . $roundNr . "&page=1" ?> > Weiter </a>
-
-<?php require_once ('./templates/footer.php');
