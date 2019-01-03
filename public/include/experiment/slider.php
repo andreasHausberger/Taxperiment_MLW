@@ -17,9 +17,9 @@
 
         </div>
         <div class="sliderTableContainer">
-            <form method="post" action= <?php echo "index.php?round=1&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?> >
+            <form method="post" action= <?php echo "index.php?round=" . $_GET['round'] . "&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?> >
                 <input type="hidden" name="score" id="score">
-                <input type="hidden" id="url" value=<?php echo "index.php?round=1&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?>>
+                <input type="hidden" id="url" value=<?php echo "index.php?round=" . $_GET['round'] . "&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?>>
                 <table class="sliderTable">
                     <tbody>
                     <tr>
@@ -75,7 +75,7 @@
                     </tbody>
                 </table>
 
-                <input type="submit" class="formButton" name="Weiter" content="Weiter">
+                <input type="submit" class="formButton" name="Continue" content="Continue">
             </form>
 
         </div>

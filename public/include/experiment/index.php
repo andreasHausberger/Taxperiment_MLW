@@ -7,13 +7,20 @@
  */
 
 
-$participant = (isset($_GET['sname']) ? $_GET['sname'] : "");
-$condition = (isset($_GET['condition']) ? $_GET['condition'] : -1);
+$participant = $dataArray['pname'];
+$condition = $dataArray['condition'];
+
+if (isset($_GET['data'])) {
+    $data = $_GET['data'];
+
+    $participant = $data['pname'];
+    $condition = $data['condition'];
+}
+
 
 $round = (isset($_GET['round']) ? $_GET['round'] : -1);
 $mode = (isset($_GET['mode']) ? $_GET['mode'] : 0); //mode: 1 is for slider and 2 is for audit
-$mostRecentScore = (isset($_POST['score']) ? $_POST['score'] : 0); // if we just had a slider round, there should be a most recent score posted
- include('../../exp_config.php'); // defines variables
+$mostRecentScore = (isset($_POST['score']) ? $_POST['score'] : -1); // if we just had a slider round, there should be a most recent score posted
 
 
 $round = (int) $round;
@@ -23,6 +30,7 @@ $mostRecentScore = (int) $mostRecentScore;
 if ($round < 1 || $mode == 0) {
     echo "There is a problem.";
 }
+
 elseif ($round <= 18) {
     $pages = array(
         -1 => "error.html",
