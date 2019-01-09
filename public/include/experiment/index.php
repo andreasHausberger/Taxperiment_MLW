@@ -6,15 +6,44 @@
  * Time: 16:58
  */
 
+// echo "made it here";
 
+$experimentID = -1;
+
+if (isset($_GET['expid'])) {
+    $experimentID = $_GET['expid'];
+}
+else {
+    echo "No Experiment ID!";
+    die();
+}
+
+require("../../../resources/config.php");
+require("../../dataLoader.php");
+
+
+parse_str($roundData, $expRounds);
+parse_str($_POST['data'], $dataStuff);
+
+$dataArray = $dataStuff['data'];
+
+var_dump($dataArray);
+
+global $expRounds, $dataArray;
 $participant = $dataArray['pname'];
+$participantID = $dataArray['pid'];
 $condition = $dataArray['condition'];
 
-if (isset($_GET['data'])) {
-    $data = $_GET['data'];
+if (isset($_POST['data']) && isset($_POST['roundData'])) {
+    $data = $_POST['data'];
+    $roundData = $_POST['roundData'];
 
-    $participant = $data['pname'];
-    $condition = $data['condition'];
+    parse_str($roundData, $expRounds);
+    parse_str($data, $dataArray);
+
+    $participant = $dataArray['pname'];
+    $condition = $dataArray['condition'];
+    $experimentID = $_GET['expid'];
 }
 
 

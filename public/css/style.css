@@ -1,5 +1,9 @@
 /*Stylesheet*/
 
+body {
+    margin: 30px !important;
+}
+
 
 .sliderTable {
     width: 800px;

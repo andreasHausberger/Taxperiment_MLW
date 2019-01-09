@@ -1,5 +1,5 @@
 
-
+<?php var_dump($dataArray); ?>
 <div class="siteContainer">
     <div class="contentContainer">
         <div class="timerContainer">
@@ -17,7 +17,7 @@
 
         </div>
         <div class="sliderTableContainer">
-            <form method="post" action= <?php echo "index.php?round=" . $_GET['round'] . "&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?> >
+            <form method="post" action= <?php echo "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID&pid=$participantID"?> >
                 <input type="hidden" name="score" id="score">
                 <input type="hidden" id="url" value=<?php echo "index.php?round=" . $_GET['round'] . "&mode=2&participant=" . $_GET['sname'] . "&condition=" . $_GET['condition'] ?>>
                 <table class="sliderTable">
@@ -75,7 +75,7 @@
                     </tbody>
                 </table>
 
-                <input type="submit" class="formButton" name="Continue" content="Continue">
+                <input type="submit" class="formButton" name="Continue" value="Continue">
             </form>
 
         </div>

@@ -8,7 +8,10 @@ if (isset($_GET['condnum'])) {
     $condnum = $_GET['condnum'];
 } else {
     $condnum = -1;
-} ?>
+}
+
+var_dump($experimentID);
+?>
 <HTML>
 <HEAD>
     <TITLE>MouselabWEB Survey</TITLE>
@@ -31,11 +34,11 @@ if (isset($_GET['condnum'])) {
         + "b0^b1";
 
 
-    let taxRate = <?php echo $_GET['taxRate'] ?> + "^";
-    let auditProbability = <?php echo $_GET['auditProbability'] ?> +  "^";
-    let fineRate = <?php echo $_GET['fineRate'] ?> + "`";
+    let taxRate = <?php echo $taxRate ?> + "^";
+    let auditProbability = <?php echo $auditProbability ?> +  "^";
+    let fineRate = <?php echo $fineRate ?> + "`";
 
-    txt = auditProbability + fineRate + taxRate +  <?php echo $_GET['score'] ?>;
+    txt = auditProbability + fineRate + taxRate +  <?php echo $mostRecentScore ?>;
 
     console.log(txt);
 
@@ -97,6 +100,9 @@ if (isset($_GET['condnum'])) {
 <FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
       action="/resources/library/mlwebphp_100beta/save.php"><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
+    <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
+    <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
+    <input type="hidden" name="round" value=<?php echo $currentRound ?>>
     <input type=hidden name="expname" value="">
     <input type=hidden name="nextURL" value="">
     <input type=hidden name="choice" value="">
@@ -207,6 +213,7 @@ if (isset($_GET['condnum'])) {
     <!-- END MOUSELAB TABLE -->
     <!--BEGIN postHTML-->
 
-    <!--END postHTML--><INPUT type="submit" value="Next Page" onClick=timefunction('submit','submit','submit')></FORM>
+    <!--END postHTML-->
+<!--    <INPUT type="submit" value="Next Page" onClick=timefunction('submit','submit','submit')></FORM>-->
 </body>
 </html>

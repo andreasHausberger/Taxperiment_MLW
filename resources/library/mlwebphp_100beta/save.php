@@ -22,61 +22,91 @@
 //    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 // include('mlwebdb.inc.php');
+include ("../../config.php");
 
-$expname = "";
-$subject = "";
-$condnum = "";
-$choice = "";
-$procdata = "";
-$nextURL = "";
-$addvar = "";
-$adddata = "";
+if (!isset($id)) {
+    $id = -1;
+}
 
-foreach ($_POST as $key => $value) { 
-     switch ($key) {
-			case "expname":
-				$expname = $value;
-				break;
-			case "subject":
-				$subject = $value;
-				break;
-			case "condnum":
-				$condnum= $value;
-				break;
-			case "choice":
-				$choice= $value;
-				break;
-			case "procdata":
-				$procdata= mysql_real_escape_string($value);
-				break;
-			case "nextURL":
-				$nextURL= $value;
-				break;
-			case "to_email":
-				// ignore emailaddress 
-				break;
-			default:
-			$addvar .= mysql_real_escape_string($key).";";
-			$adddata .= "\"".mysql_real_escape_string($value)."\";" ; 
-			}
-    }
+
+if (isset($_POST)) {
+    $expname = $_POST['expname'];
+    $subject = intval($_POST['subjectID']);
+    $condnum =$_POST['condnum'];
+    $choice = $_POST['choice'];
+    $procdata = $_POST['procdata'];
+    $currentRound = intval($_POST['round']);
+    $nextURL = $_POST['nextURL'];
+    $addvar = "null";
+    $adddata = "null";
+    $expID = intval($_POST['experimentID']);
+    var_dump($subject);
+    console_log("Process Data saved successfully!");
+}
+else {
+    echo "Error saving data: No data was found";
+    die();
+}
+$count = 0;
+
+
+
+//foreach ($_POST as $key => $value) {
+//    echo $count;
+//     switch ($key) {
+//			case "expname":
+//				$expname = $value;
+//				break;
+//			case "subject":
+//				$subject = $value;
+//				break;
+//			case "condnum":
+//				$condnum= $value;
+//				break;
+//			case "choice":
+//				$choice= $value;
+//				break;
+//			case "procdata":
+//				$procdata= mysql_real_escape_string($value);
+//				break;
+//			case "nextURL":
+//				$nextURL= $value;
+//				break;
+//			case "to_email":
+//				// ignore emailaddress
+//				break;
+//			default:
+//			$addvar .= mysql_real_escape_string($key).";";
+//			$adddata .= "\"".mysql_real_escape_string($value)."\";" ;
+//			}
+//        $count = $count + 1;
+//    }
+
+    // var_dump($procdata);
 
 $ipstr = $_SERVER['REMOTE_ADDR'];
 
-$sqlquery = "select MAX(id) from $table";
-$result = mysql_query($sqlquery);
+$table = 'mlweb';
 
-$id = mysql_result($result,0);
+$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID)";
+//var_dump($sqlquery);
+if (isset($connection)) {
+    if ($connection->query($sqlquery)) {
+        echo "Inserted data successfully - " . $connection->info;
+    }
+    else {
+        echo "Error inserting data - " . $connection->error;
+    }
+}
 
-if (is_null($id)) $id=0; else $id++; 
-
-$sqlquery = "INSERT INTO $table (id, expname, subject, ip, condnum, choice, submitted, procdata, addvar, adddata) VALUES ($id,'$expname','$subject','$ipstr', $condnum,'$choice',NOW(),'$procdata', '$addvar', '$adddata')";
-$result = mysql_query($sqlquery);
-mysql_close();
+//$result = mysql_query($sqlquery);
+//mysql_close();
+echo "finished SQL";
 
 /* Redirect to a different page in the current directory that was requested */
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-header("Location: http://$host$uri/$nextURL?subject=$subject&condnum=$condnum");
-exit;
+$nextRound = $currentRound + 1;
+header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=132&pid=133");
+//exit;
 ?>

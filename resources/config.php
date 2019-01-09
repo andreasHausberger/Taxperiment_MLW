@@ -12,6 +12,8 @@ function console_log($data) {
     echo '</script>';
 }
 
+// echo "made it to config";
+
 $config = array(
     "db" => array(
         "db1" => array(

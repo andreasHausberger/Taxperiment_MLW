@@ -22,8 +22,24 @@
 // include('mlwebdb.inc.php');
 
 $sqlquery =
-    "CREATE TABLE IF NOT EXISTS mlweb 
-    (id INTEGER PRIMARY KEY, expname VARCHAR(50), subject VARCHAR(50), ip varchar(20), condnum INTEGER, choice VARCHAR(50), submitted DATETIME, procdata VARCHAR(2000), addvar VARCHAR(2000), adddata VARCHAR(2000))";
+    "CREATE TABLE IF NOT EXISTS `mlweb` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `expname` varchar(50) DEFAULT NULL,
+  `subject` int(11) NOT NULL,
+  `ip` varchar(20) DEFAULT NULL,
+  `condnum` int(11) DEFAULT NULL,
+  `choice` varchar(50) DEFAULT NULL,
+  `submitted` datetime DEFAULT NULL,
+  `procdata` varchar(2000) DEFAULT NULL,
+  `addvar` varchar(2000) DEFAULT NULL,
+  `adddata` varchar(2000) DEFAULT NULL,
+  `experiment_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `subject_idx` (`subject`),
+  KEY `experiment_id_idx` (`experiment_id`),
+  CONSTRAINT `experiment_id` FOREIGN KEY (`experiment_id`) REFERENCES `experiment` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `subject` FOREIGN KEY (`subject`) REFERENCES `participant` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8";
 
 if ($connection->query($sqlquery) === TRUE) {
     console_log( "Table mlweb created successfully!");

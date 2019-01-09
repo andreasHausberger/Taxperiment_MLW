@@ -1,22 +1,37 @@
+<script>
+
+
+</script>
+
 <div>
     <div>
         <h1> Audit with most recent score: <?php echo $mostRecentScore; ?> </h1>
     </div>
 </div>
 
-<?php var_dump($expRounds[$_GET['round'] - 1]); ?>
+<?php
+$expRoundArray = $expRounds['data'];
+$currentRound = $expRoundArray[$_GET['round'] - 1];
+
+$taxRate = $currentRound['tax_rate'];
+$auditProbability = $currentRound['audit_probability'];
+$fineRate = $currentRound['fine_rate'];
+
+$subjectID = $dataArray['pid'];
+var_dump($subjectID);
+$experimentID = $_GET['expid'];
+$participantID = $_GET['pid'];
+$currentRound = $_GET['round'];
 
 
-<iframe  style="width: 500px;" src="/resources/templates/presentation1.php?score= <?php
+include ("../../../resources/templates/presentation1.php");
+?>
 
-$round = $expRounds[$_GET['round'] - 1];
+<form action=<?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID" ?> method="post">
 
-echo $mostRecentScore . "&taxRate=" . $round["tax_rate"] . "&auditProbability=" . $round["audit_probability"] . "&fineRate=" . $round["fine_rate"];
-?>" + "&" frameborder="0"></iframe>
+    <label for="inputValue">Value: </label>
+    <input type="text" id="inputValue">
+    <br>
 
-<form action=
-      <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&sname=" . $_GET['sname'] ?>
-      method="post"
->
-    <input type="submit" class="formButton" name="Continue" content="Continue">
+    <input type="submit" class="formButton" name="Continue" value="Continue" onclick="timefunction('submit','submit','submit')">
 </form>
