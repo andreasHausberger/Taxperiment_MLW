@@ -10,12 +10,21 @@ body {
     height: 400px;
 }
 
+.sliderTable tbody tr td {
+    display: inline-flex;
+    margin-right: 50px;
+}
+
 .sliderTable form table tbody {
 
 }
 
 .sliderInput {
     width: 200px;
+}
+
+.sliderOutput {
+    width: 50px !important;
 }
 
 .timerContainer {

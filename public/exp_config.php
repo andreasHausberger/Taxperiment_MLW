@@ -46,7 +46,7 @@ include ("dataLoader.php");
 //header("Location: include/experiment/index.php?round=1&mode=1&data=" . $data);
 
 echo ("
-   <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID' method='post'>
+   <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID&pid=$participantID' method='post'>
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
    <input type='submit' value='Start Experiment!'>

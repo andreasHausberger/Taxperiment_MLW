@@ -35,12 +35,16 @@ if (isset($_POST)) {
     $condnum =$_POST['condnum'];
     $choice = $_POST['choice'];
     $procdata = $_POST['procdata'];
+    $income = $_POST['income'];
+    $reportedIncome = $_POST['reportedIncome'];
+    $audit = $_POST['wsaAudited'];
+    $honesty = $_POST['wasHonest'];
     $currentRound = intval($_POST['round']);
     $nextURL = $_POST['nextURL'];
     $addvar = "null";
     $adddata = "null";
     $expID = intval($_POST['experimentID']);
-    var_dump($subject);
+    var_dump($_POST);
     console_log("Process Data saved successfully!");
 }
 else {
@@ -107,6 +111,7 @@ echo "finished SQL";
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $nextRound = $currentRound + 1;
-header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=132&pid=133");
+header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject");
+
 //exit;
 ?>

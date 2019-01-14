@@ -10,7 +10,7 @@ if (isset($_GET['condnum'])) {
     $condnum = -1;
 }
 
-var_dump($experimentID);
+// var_dump($experimentID);
 ?>
 <HTML>
 <HEAD>
@@ -100,6 +100,10 @@ var_dump($experimentID);
 <FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
       action="/resources/library/mlwebphp_100beta/save.php"><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
+    <input type="hidden" name="income" value=<?php echo $mostRecentScore?>>
+    <input type="hidden" id="reportedIncome" name="reportedIncome">
+    <input type="hidden" name="wasAudited">
+    <input type="hidden" name="wasHonest">
     <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
     <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
     <input type="hidden" name="round" value=<?php echo $currentRound ?>>

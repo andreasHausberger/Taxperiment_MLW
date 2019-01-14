@@ -23,11 +23,14 @@ require("../../dataLoader.php");
 
 
 parse_str($roundData, $expRounds);
-parse_str($_POST['data'], $dataStuff);
+if (isset($_POST['data'])) {
+    parse_str($_POST['data'], $dataStuff);
 
-$dataArray = $dataStuff['data'];
+    $dataArray = $dataStuff['data'];
+}
 
-var_dump($dataArray);
+
+//var_dump($dataArray);
 
 global $expRounds, $dataArray;
 $participant = $dataArray['pname'];
@@ -49,7 +52,15 @@ if (isset($_POST['data']) && isset($_POST['roundData'])) {
 
 $round = (isset($_GET['round']) ? $_GET['round'] : -1);
 $mode = (isset($_GET['mode']) ? $_GET['mode'] : 0); //mode: 1 is for slider and 2 is for audit
-$mostRecentScore = (isset($_POST['score']) ? $_POST['score'] : -1); // if we just had a slider round, there should be a most recent score posted
+
+$mostRecentScore = -1; // if we just had a slider round, there should be a most recent score posted
+
+if (isset($_GET['score'])) {
+    $mostRecentScore = $_GET['score'];
+}
+elseif (isset ($_POST['score'])) {
+    $mostRecentScore = $_POST['score'];
+}
 
 
 $round = (int) $round;
