@@ -49,12 +49,16 @@ $participantID = $_GET['pid'];
 $currentRound = $_GET['round'];
 ?>
 
+
+<?php include ("../../../resources/templates/presentation1.php");
+?>
+
 <script>
 
 
     //is always called after the button is pushed.
-    function performAudit(txt1, txt2, txt3) {
-        let reportedValue = parseInt(document.getElementById("inputValue")); //self reported score
+    function performAudit() {
+        let reportedValue = parseInt(document.getElementById("inputValue").value); //self reported score
         document.getElementById("reportedIncome").value = reportedValue;
 
         let probability = <?php echo $auditProbability?>;
@@ -87,20 +91,19 @@ $currentRound = $_GET['round'];
         }
         else {
 
-            let taxAmount = Math.(reportedValue * taxRate);
+            let taxAmount = Math.floor(reportedValue * taxRate);
             reportedValue = reportedValue - taxAmount;
 
             document.getElementById("income").value = "" + mostRecentScore;
 
-            document.getElementById("wasAudited").value = "false";
+            document.getElementById("wasAudited").value = false;
 
             document.getElementById("wasHonest").value = honesty;
 
             console.log("No Audit");
         }
 
-        //does JS stuff in MLWEB, calls save.php
-        //timefunction(txt1, txt2, txt3);
+        document.getElementById("submitButton").disabled = false;
 
 
     }
@@ -127,8 +130,6 @@ $currentRound = $_GET['round'];
 
 
 </script>
-<?php include ("../../../resources/templates/presentation1.php");
-?>
 
 
 
@@ -137,8 +138,9 @@ $currentRound = $_GET['round'];
 
     <label for="inputValue">Value: </label>
     <input type="text" id="inputValue">
+    <input type="button" id="auditButton" name="Audit" value="Audit" onclick="performAudit()">
     <br>
 
-    <input type="submit" class="formButton" name="Continue" value="Continue" onclick="performAudit('submit','submit','submit')">
+    <input id="submitButton" type="submit" class="formButton" name="Continue" value="Continue" onclick="timefunction('submit','submit','submit')" disabled="true">
 </form>
 

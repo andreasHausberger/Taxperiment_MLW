@@ -37,14 +37,13 @@ if (isset($_POST)) {
     $procdata = $_POST['procdata'];
     $income = $_POST['income'];
     $reportedIncome = $_POST['reportedIncome'];
-    $audit = $_POST['wsaAudited'];
+    $audit = $_POST['wasAudited'];
     $honesty = $_POST['wasHonest'];
     $currentRound = intval($_POST['round']);
     $nextURL = $_POST['nextURL'];
     $addvar = "null";
     $adddata = "null";
     $expID = intval($_POST['experimentID']);
-    var_dump($_POST);
     console_log("Process Data saved successfully!");
 }
 else {
@@ -92,26 +91,27 @@ $ipstr = $_SERVER['REMOTE_ADDR'];
 
 $table = 'mlweb';
 
-$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID)";
+$honesty = $_POST['wasHonest'] == "true" ? 1 : 0;
+$audited = $_POST['wasAudited'] == "true" ? 1 : 0;
+
+$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id, audit, honesty) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID, $audited, $honesty)";
 //var_dump($sqlquery);
 if (isset($connection)) {
     if ($connection->query($sqlquery)) {
-        echo "Inserted data successfully - " . $connection->info;
+        console_log( "Inserted data successfully - " . $connection->info);
     }
     else {
-        echo "Error inserting data - " . $connection->error;
+        console_log("Error inserting data - " . $connection->error);
     }
 }
 
 //$result = mysql_query($sqlquery);
 //mysql_close();
-echo "finished SQL";
 
 /* Redirect to a different page in the current directory that was requested */
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $nextRound = $currentRound + 1;
 header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject");
-
 //exit;
 ?>
