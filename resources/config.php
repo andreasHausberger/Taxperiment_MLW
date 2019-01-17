@@ -42,10 +42,27 @@ $config = array(
 );
 
 
-$connection = new mysqli("localhost",
-             "root",
-             "root",
-             "mlweb");
+
+
+if (getenv("CLEARDB_DATABASE_URL" != null)) {
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    $server = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $db = substr($url["path"], 1);
+
+    $connection = new mysqli($server, $username, $password, $db);
+}
+else {
+    $connection = new mysqli("localhost",
+        "root",
+        "root",
+        "mlweb");
+}
+
+
+
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
