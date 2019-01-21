@@ -34,7 +34,7 @@ if (isset($_POST['data'])) {
 
 global $expRounds, $dataArray;
 $participant = $dataArray['pname'];
-$participantID = $dataArray['pid'];
+$participantID = isset($dataArray['pid']) ? $dataArray['pid'] : $_GET['pid'];
 $condition = $dataArray['condition'];
 
 if (isset($_POST['data']) && isset($_POST['roundData'])) {

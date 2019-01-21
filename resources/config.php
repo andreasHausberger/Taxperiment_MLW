@@ -44,7 +44,7 @@ $config = array(
 
 
 
-if (getenv("CLEARDB_DATABASE_URL" != null)) {
+if (getenv("CLEARDB_DATABASE_URL") != null) {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
     $server = $url["host"];

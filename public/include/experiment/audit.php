@@ -1,6 +1,57 @@
+<?php
+$expRoundArray = $expRounds['data'];
+$currentRound = $expRoundArray[$_GET['round'] - 1];
+
+$taxRate = $currentRound['tax_rate'];
+$auditProbability = $currentRound['audit_probability'];
+$fineRate = $currentRound['fine_rate'];
+
+$subjectID = $dataArray['pid'];
+//var_dump($subjectID);
+$experimentID = $_GET['expid'];
+$participantID = $_GET['pid'];
+$currentRound = $_GET['round'];
+?>
 
 
+<div id="overlay">
+    <div class="feedbackContainer">
+        <table>
+            <tbody>
+            <tr>
+                <p>In the table below you will find out whether you were audited.</p>
+            </tr>
+            <tr>
+                <td>
+                    Audit:
+                </td>
+                <td id="auditCell">
+                    No audit
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Income:
+                </td>
+                <td id="incomeCell">
 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Reported (taxed):
+                </td>
+                <td id="reportedIncomeCell">
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <input type="button" value="Close Box" onclick="{document.getElementById('overlay').style.width = '0'; }">
+    </div>
+</div>
 
 <div>
     <div>
@@ -34,20 +85,6 @@
     </ul>
 </div>
 
-<?php
-$expRoundArray = $expRounds['data'];
-$currentRound = $expRoundArray[$_GET['round'] - 1];
-
-$taxRate = $currentRound['tax_rate'];
-$auditProbability = $currentRound['audit_probability'];
-$fineRate = $currentRound['fine_rate'];
-
-$subjectID = $dataArray['pid'];
-//var_dump($subjectID);
-$experimentID = $_GET['expid'];
-$participantID = $_GET['pid'];
-$currentRound = $_GET['round'];
-?>
 
 
 <?php include ("../../../resources/templates/presentation1.php");
@@ -58,29 +95,30 @@ $currentRound = $_GET['round'];
 
     //is always called after the button is pushed.
     function performAudit() {
-        let reportedValue = parseInt(document.getElementById("inputValue").value); //self reported score
-        document.getElementById("reportedIncome").value = reportedValue;
+        let reportedIncome = parseInt(document.getElementById("inputValue").value); //self reported score
+        document.getElementById("reportedIncome").value = reportedIncome;
 
         let probability = <?php echo $auditProbability?>;
-        let mostRecentScore = <?php echo $mostRecentScore ?>; //actual income
+        let income = <?php echo $mostRecentScore ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = mostRecentScore == reportedValue;
-
-
+        let honesty = income == reportedIncome;
 
         let randomNr = Math.random();
+        let audit = (randomNr <= probability);
+
+
 
         console.log("testing " + randomNr + " against probability " + probability);
 
-        if (randomNr <= probability) {
+        if (audit) {
 
 
-            let fine = audit(mostRecentScore);
+            let fine = startAudit(income);
 
-            mostRecentScore = mostRecentScore - fine;
+            income = income - fine;
 
-            document.getElementById("income").value = "" + mostRecentScore;
+            document.getElementById("income").value = "" + income;
 
             document.getElementById("wasAudited").value = "true";
 
@@ -91,10 +129,10 @@ $currentRound = $_GET['round'];
         }
         else {
 
-            let taxAmount = Math.floor(reportedValue * taxRate);
-            reportedValue = reportedValue - taxAmount;
+            let taxAmount = Math.floor(reportedIncome * taxRate);
+            reportedIncome = reportedIncome - taxAmount;
 
-            document.getElementById("income").value = "" + mostRecentScore;
+            document.getElementById("income").value = "" + income;
 
             document.getElementById("wasAudited").value = false;
 
@@ -103,24 +141,35 @@ $currentRound = $_GET['round'];
             console.log("No Audit");
         }
 
+        displayInformation(audit, income, reportedIncome);
+
         document.getElementById("submitButton").disabled = false;
 
 
     }
 
+    function displayInformation(audit, income, reportedIncome) {
+
+        document.getElementById("auditCell").innerText = audit ? "You were audited" : "You were not audited";
+        document.getElementById("incomeCell").innerText = income;
+        document.getElementById("reportedIncomeCell").innerText = reportedIncome;
+
+        document.getElementById("overlay").style.width = "100%";
+    }
+
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
-    function audit(mostRecentScore) {
+    function startAudit(income) {
         let input = document.getElementById('inputValue');
         input = parseInt(input);
         let fineRate = <?php echo $fineRate; ?>;
 
-        if (input < mostRecentScore) {
+        if (input < income) {
             //find the difference, and multiply it with the fine rate.
 
-            let fine = (mostRecentScore-input) * fineRate;
+            let fine = (income-input) * fineRate;
 
             alert("You were audited! You declared an income of " + input + " while you earned "
-                + mostRecentScore + " in the last round. As a result, a fine of " + fineRate + " was subtracted from your score" );
+                + income + " in the last round. As a result, a fine of " + fineRate + " was subtracted from your score" );
 
             return fine;
         }
@@ -143,4 +192,6 @@ $currentRound = $_GET['round'];
 
     <input id="submitButton" type="submit" class="formButton" name="Continue" value="Continue" onclick="timefunction('submit','submit','submit')" disabled="true">
 </form>
+
+
 
