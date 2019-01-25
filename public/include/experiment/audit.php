@@ -14,44 +14,7 @@ $currentRound = $_GET['round'];
 ?>
 
 
-<div id="overlay">
-    <div class="feedbackContainer">
-        <table>
-            <tbody>
-            <tr>
-                <p>In the table below you will find out whether you were audited.</p>
-            </tr>
-            <tr>
-                <td>
-                    Audit:
-                </td>
-                <td id="auditCell">
-                    No audit
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Income:
-                </td>
-                <td id="incomeCell">
 
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    Reported (taxed):
-                </td>
-                <td id="reportedIncomeCell">
-
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <input type="button" value="Close Box" onclick="{document.getElementById('overlay').style.width = '0'; }">
-    </div>
-</div>
 
 <div>
     <div>
@@ -143,7 +106,8 @@ $currentRound = $_GET['round'];
 
         displayInformation(audit, income, reportedIncome);
 
-        document.getElementById("submitButton").disabled = false;
+        // document.getElementById("submitButton").disabled = false;
+        //timefunction(txt1, txt2, txt3);
 
 
     }
@@ -155,6 +119,11 @@ $currentRound = $_GET['round'];
         document.getElementById("reportedIncomeCell").innerText = reportedIncome;
 
         document.getElementById("overlay").style.width = "100%";
+    }
+
+    function collapseInformation(txt1, txt2, txt3) {
+        document.getElementById('overlay').style.width = '0';
+        timefunction(txt1, txt2, txt3)
     }
 
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
@@ -187,10 +156,50 @@ $currentRound = $_GET['round'];
 
     <label for="inputValue">Value: </label>
     <input type="text" id="inputValue">
-    <input type="button" id="auditButton" name="Audit" value="Audit" onclick="performAudit()">
     <br>
 
-    <input id="submitButton" type="submit" class="formButton" name="Continue" value="Continue" onclick="timefunction('submit','submit','submit')" disabled="true">
+    <input id="submitButton" type="button"
+           class="formButton" name="Continue" value="Continue" onclick="performAudit()">
+
+    <div id="overlay">
+        <div class="feedbackContainer">
+            <table>
+                <tbody>
+                <tr>
+                    <p>Audit --> information whether you were audited. </p>
+                    <p>Income --> The total income you earned this round </p>
+                    <p>Net Income --> The net income that has been taxed </p>
+                </tr>
+                <tr>
+                    <td>
+                        Audit:
+                    </td>
+                    <td id="auditCell">
+                        No audit
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Income:
+                    </td>
+                    <td id="incomeCell">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Reported (taxed):
+                    </td>
+                    <td id="reportedIncomeCell">
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+             <input type="submit" value="Close Box & Continue" onclick="collapseInformation('submit','submit','submit')">
+        </div>
+    </div>
 </form>
 
 
