@@ -170,6 +170,5 @@ foreach ($queries as $query) {
         echo "\n" . " Problem with Query for table " . $currentKey . ": " . $connection->error();
     }
     $count = $count + 1;
-    echo $count;
 }
 ?>
