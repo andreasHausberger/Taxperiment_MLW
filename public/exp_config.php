@@ -6,6 +6,8 @@
  * Time: 10:38
  */
 
+"made it to exp Config";
+
 require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 // include ("./templates/header.php");

@@ -6,9 +6,10 @@
  * Time: 10:06
  */
 
-function console_log($data) {
+function console_log($data)
+{
     echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
+    echo 'console.log(' . json_encode($data) . ')';
     echo '</script>';
 }
 
@@ -42,10 +43,7 @@ $config = array(
 );
 
 
-
-
 if (getenv("CLEARDB_DATABASE_URL") != null) {
-    echo "ClearDB exists!";
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
     $server = $url["host"];
@@ -54,8 +52,7 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
     $db = substr($url["path"], 1);
 
     $connection = new mysqli($server, $username, $password, $db);
-}
-else {
+} else {
     $connection = new mysqli("localhost",
         "root",
         "root",
@@ -63,24 +60,16 @@ else {
 }
 
 
-
-
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
+} else {
+    console_log("Connected successfully");
 }
-else {
-    console_log( "Connected successfully");
-}
-
-
-
-
-
 
 defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
 defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
 
 ini_set("error_reporting", "true");
-error_reporting(E_ALL|E_STRCT);
+error_reporting(E_ALL | E_STRCT);
 
 require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');
