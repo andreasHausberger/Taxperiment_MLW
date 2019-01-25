@@ -70,7 +70,7 @@ $currentRound = $_GET['round'];
         let honesty = income == reportedIncome;
 
         let randomNr = Math.random();
-        let audit = true; //(randomNr <= probability);
+        let audit = (randomNr <= probability);
 
         let fine = 0
 
