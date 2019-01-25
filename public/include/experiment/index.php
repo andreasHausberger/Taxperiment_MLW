@@ -87,5 +87,7 @@ elseif ($round <= 18) {
 }
 else {
     // redirect to end of experiment
-    echo "You have reached the end of the experiment.";
+    require_once("../../templates/header.php");
+
+    require_once("../../templates/footer.php");
 }
