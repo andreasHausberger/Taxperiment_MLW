@@ -58,8 +58,10 @@ $currentRound = $_GET['round'];
 
     //is always called after the button is pushed.
     function performAudit() {
-        let reportedIncome = parseInt(document.getElementById("inputValue").value); //self reported score
+        let reportedIncome = parseInt(document.getElementById("inputValue").value); //self reported income
         document.getElementById("reportedIncome").value = reportedIncome;
+
+        let netIncome = 0;
 
         let probability = <?php echo $auditProbability?>;
         let income = <?php echo $mostRecentScore ?>; //actual income
@@ -70,6 +72,8 @@ $currentRound = $_GET['round'];
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
 
+        let fine = 0
+
 
 
         console.log("testing " + randomNr + " against probability " + probability);
@@ -78,6 +82,8 @@ $currentRound = $_GET['round'];
 
 
             let fine = startAudit(income);
+
+            netIncome = income - fine;
 
             income = income - fine;
 
@@ -93,7 +99,7 @@ $currentRound = $_GET['round'];
         else {
 
             let taxAmount = Math.floor(reportedIncome * taxRate);
-            reportedIncome = reportedIncome - taxAmount;
+            netIncome = income - taxAmount;
 
             document.getElementById("income").value = "" + income;
 
@@ -104,7 +110,7 @@ $currentRound = $_GET['round'];
             console.log("No Audit");
         }
 
-        displayInformation(audit, income, reportedIncome);
+        displayInformation(audit, income, netIncome, fine);
 
         // document.getElementById("submitButton").disabled = false;
         //timefunction(txt1, txt2, txt3);
@@ -112,11 +118,13 @@ $currentRound = $_GET['round'];
 
     }
 
-    function displayInformation(audit, income, reportedIncome) {
+    function displayInformation(audit, income, reportedIncome, fine) {
 
         document.getElementById("auditCell").innerText = audit ? "You were audited" : "You were not audited";
         document.getElementById("incomeCell").innerText = income;
         document.getElementById("reportedIncomeCell").innerText = reportedIncome;
+        document.getElementById("fineCell").innerText = fine;
+
 
         document.getElementById("overlay").style.width = "100%";
     }
@@ -166,16 +174,24 @@ $currentRound = $_GET['round'];
             <table>
                 <tbody>
                 <tr>
-                    <p>Audit --> information whether you were audited. </p>
-                    <p>Income --> The total income you earned this round </p>
-                    <p>Net Income --> The net income that has been taxed </p>
+                    <p>Please review the info below. "Audit" displays whether you were audited. "Income" is the total income of your last slider round.
+                        "Reported Income" is the value you declared. "Net Income" is amount you declared after taxes (minus a possible fine).   </p>
+
                 </tr>
                 <tr>
                     <td>
                         Audit:
                     </td>
                     <td id="auditCell">
-                        No audit
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fine:
+                    </td>
+                    <td id="fineCell">
+
                     </td>
                 </tr>
                 <tr>
@@ -189,7 +205,7 @@ $currentRound = $_GET['round'];
 
                 <tr>
                     <td>
-                        Reported (taxed):
+                        Net Income:
                     </td>
                     <td id="reportedIncomeCell">
 

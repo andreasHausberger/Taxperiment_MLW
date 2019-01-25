@@ -55,11 +55,12 @@ $mode = (isset($_GET['mode']) ? $_GET['mode'] : 0); //mode: 1 is for slider and 
 
 $mostRecentScore = -1; // if we just had a slider round, there should be a most recent score posted
 
+// mostRecentScore should always include the 1000 basic income.
 if (isset($_GET['score'])) {
-    $mostRecentScore = $_GET['score'];
+    $mostRecentScore = $_GET['score'] + 1000;
 }
 elseif (isset ($_POST['score'])) {
-    $mostRecentScore = $_POST['score'];
+    $mostRecentScore = $_POST['score'] + 1000;
 }
 
 
@@ -86,5 +87,5 @@ elseif ($round <= 18) {
 }
 else {
     // redirect to end of experiment
-    echo "Something went wrong. sorry.";
+    echo "You have reached the end of the experiment.";
 }
