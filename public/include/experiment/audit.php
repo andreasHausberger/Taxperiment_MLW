@@ -70,7 +70,7 @@ $currentRound = $_GET['round'];
         let honesty = income == reportedIncome;
 
         let randomNr = Math.random();
-        let audit = (randomNr <= probability);
+        let audit = true; //(randomNr <= probability);
 
         let fine = 0
 
@@ -81,19 +81,17 @@ $currentRound = $_GET['round'];
         if (audit) {
 
 
-            let fine = startAudit(income);
+            fine = startAudit(income, reportedIncome, taxRate);
 
             netIncome = income - fine;
 
-            income = income - fine;
 
-            document.getElementById("income").value = "" + income;
+            document.getElementById("income").value = "" + netIncome;
 
             document.getElementById("wasAudited").value = "true";
 
             document.getElementById("wasHonest").value = honesty;
 
-            console.log("Participant was audited");
 
         }
         else {
@@ -135,18 +133,17 @@ $currentRound = $_GET['round'];
     }
 
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
-    function startAudit(income) {
-        let input = document.getElementById('inputValue');
-        input = parseInt(input);
+    function startAudit(income, reported, taxRate) {
         let fineRate = <?php echo $fineRate; ?>;
 
-        if (input < income) {
-            //find the difference, and multiply it with the fine rate.
+        if (reported < income) {
+            //find the difference between the taxes, and multiply it with the fine rate.
 
-            let fine = (income-input) * fineRate;
+            let discrepancy = (income * taxRate) - (reported * taxRate);
 
-            alert("You were audited! You declared an income of " + input + " while you earned "
-                + income + " in the last round. As a result, a fine of " + fineRate + " was subtracted from your score" );
+            let fine = discrepancy * fineRate;
+
+            console.log("Participant was audited! Declared " + reported + " vs. actual amount " + income );
 
             return fine;
         }
