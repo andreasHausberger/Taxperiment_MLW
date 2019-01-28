@@ -56,6 +56,7 @@ $currentRound = $_GET['round'];
 <script>
 
 
+
     //is always called after the button is pushed.
     function performAudit() {
         let reportedIncome = parseInt(document.getElementById("inputValue").value); //self reported income
@@ -151,6 +152,21 @@ $currentRound = $_GET['round'];
         return 0;
     }
 
+    function validateInput() {
+        let input = document.getElementById("inputValue").value;
+        let inputInt = parseInt(input);
+
+        if (isNaN(inputInt)) {
+            document.getElementById("inputFeedback").innerText = "Please enter numbers only!";
+            document.getElementById("submitButton").disabled = true;
+
+        }
+        else {
+            console.log("valid input... " + inputInt);
+            document.getElementById("submitButton").disabled = false;
+        }
+    }
+
 
 </script>
 
@@ -160,11 +176,11 @@ $currentRound = $_GET['round'];
 
 
     <label for="inputValue">Value: </label>
-    <input type="text" id="inputValue">
+    <input type="text" id="inputValue" onblur="validateInput()"> <div id="inputFeedback"></div>
     <br>
 
     <input id="submitButton" type="button"
-           class="formButton" name="Continue" value="Continue" onclick="performAudit()">
+           class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">
 
     <div id="overlay">
         <div class="feedbackContainer">
