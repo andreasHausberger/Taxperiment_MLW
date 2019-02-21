@@ -5,7 +5,7 @@
                 <b>The examples are now finished. </b>
             </span>
             <span class="textSpan">
-                On the next page, the <b>real study</b> will begin.
+                On the next page, the <b>experiment</b> begins.
             </span>
             <br>
             <span class="textSpan">

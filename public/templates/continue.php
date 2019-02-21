@@ -4,6 +4,7 @@
     $page = (int)substr($uri, -1);
     $newPage = $page + 1;
     $newPageString = "page=" . $newPage;
+
     $uri = str_replace("page=" . $page, "page=" . $newPage, $uri);
     echo $uri;
     ?> >

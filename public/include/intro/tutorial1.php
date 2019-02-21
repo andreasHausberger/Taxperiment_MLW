@@ -2,9 +2,10 @@
     <div class="contentContainer">
             <b>Sampling?</b>
 
-        <form action="">
-            <input type="radio" name="sampling" value="test-week-eligible" onclick="enableButton()"> Test-week eligible <br>
-            <input type="radio" name="sampling" value="not-test-week" onclick="enableButton()"> Not a test-week student
+        <form>
+            <input type="hidden" id="testweek" name="testweek">
+            <input type="radio" name="sampling" value="test-week-eligible" onclick="enableButton(true)"> Test-week eligible <br>
+            <input type="radio" name="sampling" value="not-test-week" onclick="enableButton(false)"> Not a test-week student
         </form>
 
     </div>
@@ -16,7 +17,16 @@
        $('#continueButton').attr("disabled", "disabled");
     });
 
-    function enableButton() {
+    function enableButton(isTestweek) {
         document.getElementById('continueButton').disabled = false;
+
+        if (isTestweek) {
+            document.getElementById("testweek").value = "1"
+        }
+        else {
+            document.getElementById("testweek").value = "0"
+
+        }
     }
 </script>
+

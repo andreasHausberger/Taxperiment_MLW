@@ -16,41 +16,36 @@ $currentRound = $_GET['round'];
 
 
 
-<div>
-    <div>
-        <h1> Tax Audit </h1>
-    </div>
-    <br>
-    <div>
-        <h3>Don't Forget: </h3>
-    </div>
-    <ul>
-        <li>
-            <b>
-                Audit Probability
-            </b>
-            <p> The likelihood that you will be audited. A probability of 0.2 means that in two of ten cases, you will be audited. </p>
-        </li>
-        <li>
-            <b>
-                Fine Rate
-            </b>
-            <p> The number that determines how high your potential fine is. A fine rate of 3 means that that fine is 3 * ((actual income) - (self reported income)). (Note: Fines only have to be paid if you were audited and under-reported your earnings). </p>
-        </li>
-        <li>
-            <b>
-                Tax Rate:
-            </b>
-            <p>
-                The number that determines how much taxes you have to pay. A tax rate of 0.2 means that 20% of your reported income are automatically subtracted.
-            </p>
-        </li>
-    </ul>
-</div>
 
 
 
-<?php include ("../../../resources/templates/presentation1.php");
+
+<?php
+
+if (isset($_GET['feedback'])) {
+    $delayFeedback = $_GET['feedback'];
+    echo "Dev Notes: Checking feedback mode: " . ($delayFeedback == "0" ? "Immediate" : "Delayed");
+    echo "<br>";
+
+}
+else {
+    echo "WARNING: Could not find feedback information!";
+}
+if (isset($_GET['presentation'])) {
+    $presentationBool = $_GET['presentation'];
+    echo "Dev Notes: Checking presentation mode: " . ($presentation == "0" ? "Presentation 1" : "Presentation 2");
+    $mlwUrl = $presentationBool == "0" ? "../../../resources/templates/presentation1.php" : "../../../resources/templates/presentation2.php";
+    include($mlwUrl);
+}
+else {
+    echo "Could not load MLW table!";
+}
+
+
+
+//include ("../../../resources/templates/presentation1.php");
+
+
 ?>
 
 <script>
@@ -109,7 +104,16 @@ $currentRound = $_GET['round'];
             console.log("No Audit");
         }
 
-        displayInformation(audit, income, netIncome, fine);
+        let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
+
+        if (feedbackIsDelayed == 0) {
+            displayInformation(audit, income, netIncome, fine);
+        }
+        else {
+            collapseInformation("submit", "submit", "submit");
+            window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
+        }
+
 
         // document.getElementById("submitButton").disabled = false;
         //timefunction(txt1, txt2, txt3);
@@ -130,7 +134,7 @@ $currentRound = $_GET['round'];
 
     function collapseInformation(txt1, txt2, txt3) {
         document.getElementById('overlay').style.width = '0';
-        timefunction(txt1, txt2, txt3)
+        timefunction(txt1, txt2, txt3);
     }
 
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
@@ -154,6 +158,7 @@ $currentRound = $_GET['round'];
 
     function validateInput() {
         let input = document.getElementById("inputValue").value;
+        let income = <?php echo $mostRecentScore; ?> ;
         let inputInt = parseInt(input);
 
         if (isNaN(inputInt)) {
@@ -161,8 +166,16 @@ $currentRound = $_GET['round'];
             document.getElementById("submitButton").disabled = true;
 
         }
+
+        if (inputInt < 0 || inputInt > income) {
+            document.getElementById("inputFeedback").innerText = "Please enter values greater than 0 and smaller than your actual income!";
+            document.getElementById("submitButton").disabled = true;
+
+        }
         else {
             console.log("valid input... " + inputInt);
+
+            document.getElementById("inputFeedback").innerText = "";
             document.getElementById("submitButton").disabled = false;
         }
     }
@@ -172,10 +185,10 @@ $currentRound = $_GET['round'];
 
 
 
-<form action=<?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID" ?> method="post">
+<form action=<?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
 
 
-    <label for="inputValue">Value: </label>
+    <label for="inputValue">Income Declaration: </label>
     <input type="text" id="inputValue" onblur="validateInput()"> <div id="inputFeedback"></div>
     <br>
 

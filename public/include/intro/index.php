@@ -10,6 +10,7 @@ $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
 $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
+
 $pages = array(
     -1 => "error.html",
     1 => "tutorial1.php",

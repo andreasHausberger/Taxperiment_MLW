@@ -14,9 +14,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 
 
-$participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
+$participantQuery = $connection->prepare("INSERT INTO participant (name, testweek) VALUES (?, ?)");
 
-$participantQuery->bind_param("s", $_GET['sname']);
+$participantQuery->bind_param("si", $_GET['sname'], $_GET['tw']);
 
 $participantID = -1;
 $experimentID = -1;
@@ -27,6 +27,7 @@ if ($participantQuery->execute()) {
 }
 else {
     echo "Error saving participant: " . $connection->error;
+    var_dump($participantQuery);
 }
 
 $experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant) VALUES (?, ?)");
@@ -45,12 +46,17 @@ else {
 }
 
 include ("dataLoader.php");
-//header("Location: include/experiment/index.php?round=1&mode=1&data=" . $data);
+
+$condition = $dataArray['condition'];
+$feedback = $dataArray['feedback'];
+$order = $dataArray['order'];
+$presentation = $dataArray['presentation'];
 
 echo ("
-   <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID&pid=$participantID' method='post'>
+   <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation' method='post'>
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
+   <label>The Experiment Begins.</label>
    <input type='submit' value='Start Experiment!'>
 </form>
 ");

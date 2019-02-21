@@ -23,14 +23,7 @@ require("../../dataLoader.php");
 
 
 parse_str($roundData, $expRounds);
-if (isset($_POST['data'])) {
-    parse_str($_POST['data'], $dataStuff);
 
-    $dataArray = $dataStuff['data'];
-}
-
-
-//var_dump($dataArray);
 
 global $expRounds, $dataArray;
 $participant = $dataArray['pname'];
@@ -89,5 +82,6 @@ else {
     // redirect to end of experiment
     require_once("../../templates/header.php");
 
+    echo "this is the end of the experiment.";
     require_once("../../templates/footer.php");
 }

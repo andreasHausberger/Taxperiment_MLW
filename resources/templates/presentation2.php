@@ -31,10 +31,11 @@ if (isset($_GET['condnum'])) {
         + "b0^b1";
 
 
-    let taxRate = <?php echo $_GET['taxRate'] ?> + "`";
-    let auditProbability = <?php echo $_GET['auditProbability'] ?> +  "";
-    let fineRate = <?php echo $_GET['fineRate'] ?> + "^";
-    let income =  <?php echo $_GET['score'] ?> + "^";
+
+    let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "`";
+    let auditProbability = <?php echo $auditProbability*100 ?> + "% chance";
+    let fineRate = <?php echo $fineRate ?> + "x evaded amount" + "^";
+    let income =  <?php echo $mostRecentScore ?> + " ECU ^";
 
     txt = income + taxRate + fineRate + auditProbability;
 
@@ -95,9 +96,27 @@ if (isset($_GET['condnum'])) {
 </SCRIPT>
 <!--END TABLE STRUCTURE-->
 
+<?php
+//This is used to prepare GET variables we need for save.php
+$feedback = $_GET['feedback'];
+$presentation = $_GET['presentation'];
+$order = $_GET['order'];
+
+$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation"
+
+
+?>
+
 <FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
-      action="/resources/library/mlwebphp_100beta/save.php"><INPUT type=hidden name="procdata" value="">
+      action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
+    <input type="hidden" id="income" name="income" value=<?php echo $mostRecentScore?>>
+    <input type="hidden" id="reportedIncome" name="reportedIncome">
+    <input type="hidden" id="wasAudited" name="wasAudited" >
+    <input type="hidden" id="wasHonest" name="wasHonest">
+    <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
+    <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
+    <input type="hidden" name="round" value=<?php echo $currentRound ?>>
     <input type=hidden name="expname" value="">
     <input type=hidden name="nextURL" value="">
     <input type=hidden name="choice" value="">

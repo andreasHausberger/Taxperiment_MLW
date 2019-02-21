@@ -112,6 +112,11 @@ if (isset($connection)) {
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $nextRound = $currentRound + 1;
-header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject");
+$feedback = $_GET['feedback'];
+$order = $_GET['order'];
+$presentation = $_GET['presentation'];
+
+
+header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
 //exit;
 ?>

@@ -34,19 +34,20 @@ if (isset($_GET['condnum'])) {
         + "b0^b1";
 
 
-    let taxRate = <?php echo $taxRate ?> + "^";
-    let auditProbability = <?php echo $auditProbability ?> +  "^";
-    let fineRate = <?php echo $fineRate ?> + "`";
+    let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "^";
+    let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
+    let fineRate = <?php echo $fineRate ?> + "x evaded amount" + "`";
+    let income =  <?php echo $mostRecentScore ?> + " ECU";
 
-    txt = auditProbability + fineRate + taxRate +  <?php echo $mostRecentScore ?>;
+    txt = auditProbability + fineRate + taxRate + income;
 
     console.log(txt);
 
     state = "1^1`"
         + "1^1";
 
-    box = "Audit Probability^FineRate`"
-        + "Tax Rate^Income";
+    box = "Audit Probability^Fine`"
+        + "Tax^Income";
 
     CBCol = "0^0";
     CBRow = "0^0";
@@ -97,8 +98,20 @@ if (isset($_GET['condnum'])) {
 </SCRIPT>
 <!--END TABLE STRUCTURE-->
 
+<?php
+//This is used to prepare GET variables we need for save.php
+$feedback = $_GET['feedback'];
+$presentation = $_GET['presentation'];
+$order = $_GET['order'];
+
+$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation"
+
+
+?>
+
+
 <FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
-      action="/resources/library/mlwebphp_100beta/save.php"><INPUT type=hidden name="procdata" value="">
+      action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
     <input type="hidden" id="income" name="income" value=<?php echo $mostRecentScore?>>
     <input type="hidden" id="reportedIncome" name="reportedIncome">
