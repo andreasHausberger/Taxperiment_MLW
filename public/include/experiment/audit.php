@@ -111,7 +111,7 @@ else {
         }
         else {
             collapseInformation("submit", "submit", "submit");
-            window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
+           // window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
         }
 
 
@@ -157,19 +157,20 @@ else {
     }
 
     function validateInput() {
+        document.getElementById("submitButton").disabled = true;
         let input = document.getElementById("inputValue").value;
         let income = <?php echo $mostRecentScore; ?> ;
         let inputInt = parseInt(input);
 
         if (isNaN(inputInt)) {
             document.getElementById("inputFeedback").innerText = "Please enter numbers only!";
-            document.getElementById("submitButton").disabled = true;
+
 
         }
 
-        if (inputInt < 0 || inputInt > income) {
+        else if (inputInt < 0 || inputInt > income) {
             document.getElementById("inputFeedback").innerText = "Please enter values greater than 0 and smaller than your actual income!";
-            document.getElementById("submitButton").disabled = true;
+
 
         }
         else {
@@ -189,10 +190,10 @@ else {
 
 
     <label for="inputValue">Income Declaration: </label>
-    <input type="text" id="inputValue" onblur="validateInput()"> <div id="inputFeedback"></div>
+    <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
     <br>
 
-    <input id="submitButton" type="button"
+    <input id="submitButton" type="submit"
            class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">
 
     <div id="overlay">

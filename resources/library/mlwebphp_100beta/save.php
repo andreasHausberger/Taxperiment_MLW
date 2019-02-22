@@ -47,7 +47,7 @@ if (isset($_POST)) {
     console_log("Process Data saved successfully!");
 }
 else {
-    echo "Error saving data: No data was found";
+    echo "Error saving datas: No data was found";
     die();
 }
 $count = 0;
@@ -94,14 +94,14 @@ $table = 'mlweb';
 $honesty = $_POST['wasHonest'] == "true" ? 1 : 0;
 $audited = $_POST['wasAudited'] == "true" ? 1 : 0;
 
-$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id, audit, honesty) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID, $audited, $honesty)";
-//var_dump($sqlquery);
+$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id, income, reported_income, audit, honesty) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID, $income, $reportedIncome, $audited, $honesty)";
+
 if (isset($connection)) {
     if ($connection->query($sqlquery)) {
-        console_log( "Inserted data successfully - " . $connection->info);
+        echo( "Inserted data successfully - " . $connection->info);
     }
     else {
-        console_log("Error inserting data - " . $connection->error);
+        echo("Error inserting data - " . $connection->error);
     }
 }
 
@@ -115,6 +115,7 @@ $nextRound = $currentRound + 1;
 $feedback = $_GET['feedback'];
 $order = $_GET['order'];
 $presentation = $_GET['presentation'];
+
 
 
 header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
