@@ -70,6 +70,7 @@ elseif ($round <= 18) {
         -1 => "error.html",
         1 => "slider.php",
         2 => "audit.php" ,
+        3 => "feedback.php",
     );
 
     $page = (string) $pages[$mode];
@@ -81,7 +82,7 @@ elseif ($round <= 18) {
 else {
     // redirect to end of experiment
     require_once("../../templates/header.php");
-
+    include ("feedback.php");
     echo "this is the end of the experiment.";
     require_once("../../templates/footer.php");
 }

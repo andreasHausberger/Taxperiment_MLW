@@ -107,7 +107,7 @@ else {
         let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
 
         if (feedbackIsDelayed == 0) {
-            displayInformation(audit, income, netIncome, fine);
+            displayInformation(audit, income, reportedIncome, fine, taxRate);
         }
         else {
             collapseInformation("submit", "submit", "submit");
@@ -121,12 +121,19 @@ else {
 
     }
 
-    function displayInformation(audit, income, reportedIncome, fine) {
+    function displayInformation(audit, income, reportedIncome, fine, taxRate) {
 
-        document.getElementById("auditCell").innerText = audit ? "You were audited" : "You were not audited";
-        document.getElementById("incomeCell").innerText = income;
-        document.getElementById("reportedIncomeCell").innerText = reportedIncome;
-        document.getElementById("fineCell").innerText = fine;
+        let paidTaxAmount = Math.floor(reportedIncome * taxRate);
+        document.getElementById("earnedIncomeCell").innerText = income;
+        document.getElementById("declaredIncomeCell").innerText = reportedIncome;
+        document.getElementById("taxDueCell").innerText = Math.floor(income * taxRate);
+        document.getElementById("paidTaxCell").innerText = paidTaxAmount;
+        document.getElementById("netIncomeCell").innerText = income - paidTaxAmount;
+
+        if (audit) {
+            document.getElementById("missingTaxCell").innerText = fine;
+            document.getElementById("missingTextCell").style.display = "block";
+        }
 
 
         document.getElementById("overlay").style.width = "100%";
@@ -193,7 +200,7 @@ else {
     <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
     <br>
 
-    <input id="submitButton" type="submit"
+    <input id="submitButton" type= <?php echo($feedback == "0" ? "button" : "submit"); ?>
            class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">
 
     <div id="overlay">
@@ -207,25 +214,42 @@ else {
                 </tr>
                 <tr>
                     <td>
-                        Audit:
+                        Earned Income:
                     </td>
-                    <td id="auditCell">
+                    <td id="earnedIncomeCell">
 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Fine:
+                        Declared Income:
                     </td>
-                    <td id="fineCell">
+                    <td id="declaredIncomeCell">
 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Income:
+                        Tax due (in ECU):
                     </td>
-                    <td id="incomeCell">
+                    <td id="taxDueCell">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Paid Tax:
+                    </td>
+                    <td id="paidTaxCell">
+
+                    </td>
+                </tr>
+                <tr style="display: none;">
+                    <td>
+                        Missing Tax plus fine:
+                    </td>
+                    <td id="missingTaxCell">
 
                     </td>
                 </tr>
@@ -234,7 +258,7 @@ else {
                     <td>
                         Net Income:
                     </td>
-                    <td id="reportedIncomeCell">
+                    <td id="netIncomeCell">
 
                     </td>
                 </tr>
