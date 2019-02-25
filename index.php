@@ -12,6 +12,8 @@ require_once ("public/templates/header.php");
 
 ?>
 
+<p>Dev Notes: Version 0.82 (Feb 2019)</p>
+
 <div>
     <h1>Welcome, researcher</h1>
     <p> please enter the participant's name or experiment number below. </p>
