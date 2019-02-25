@@ -66,9 +66,9 @@ else {
         let honesty = income == reportedIncome;
 
         let randomNr = Math.random();
-        let audit = (randomNr <= probability);
+        let audit = true; // (randomNr <= probability);
 
-        let fine = 0
+        let fine = 0;
 
 
 
@@ -124,15 +124,22 @@ else {
     function displayInformation(audit, income, reportedIncome, fine, taxRate) {
 
         let paidTaxAmount = Math.floor(reportedIncome * taxRate);
+        let actualTaxAmount = Math.floor(income * taxRate);
+        let taxDiscrepancy = actualTaxAmount - paidTaxAmount;
+
+        let totalFineAmount = audit ? fine + taxDiscrepancy : 0;
         document.getElementById("earnedIncomeCell").innerText = income;
         document.getElementById("declaredIncomeCell").innerText = reportedIncome;
         document.getElementById("taxDueCell").innerText = Math.floor(income * taxRate);
         document.getElementById("paidTaxCell").innerText = paidTaxAmount;
-        document.getElementById("netIncomeCell").innerText = income - paidTaxAmount;
+        document.getElementById("netIncomeCell").innerText = income - paidTaxAmount - totalFineAmount;
 
         if (audit) {
-            document.getElementById("missingTaxCell").innerText = fine;
-            document.getElementById("missingTextCell").style.display = "block";
+            document.getElementById("missingTaxCell").innerText = totalFineAmount;
+            document.getElementById("missingTaxRow").style.display = "table-row";
+        }
+        else {
+            document.getElementById("missingTaxRow").style.display = "none";
         }
 
 
@@ -208,8 +215,7 @@ else {
             <table>
                 <tbody>
                 <tr>
-                    <p>Please review the info below. "Audit" displays whether you were audited. "Income" is the total income of your last slider round.
-                        "Reported Income" is the value you declared. "Net Income" is amount you declared after taxes (minus a possible fine).   </p>
+                    <p>Please review the info below. If you were audited, you will also see whether you had to pay a fine.   </p>
 
                 </tr>
                 <tr>
@@ -245,7 +251,7 @@ else {
 
                     </td>
                 </tr>
-                <tr style="display: none;">
+                <tr id="missingTaxRow">
                     <td>
                         Missing Tax plus fine:
                     </td>
