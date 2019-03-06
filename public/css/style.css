@@ -2,6 +2,16 @@
 
 body {
     margin: 30px !important;
+    font-size: 15px;
+}
+
+.pageContainer {
+    max-width: 800px;
+
+}
+
+* {
+    font-size: 16px;
 }
 
 
@@ -79,4 +89,33 @@ body {
 .feedbackContainer table td, th {
     border: 1px solid black;
     text-align: left;
+}
+
+/* Mouselab Web Stuff*/
+
+.boxTD {
+    font-size: 16px !important;
+    font-weight: 900;
+}
+
+/*Questionnaire */
+
+.radioDisplayHorizontal {
+    display: inline-flex;
+}
+
+.radioDisplayHorizontal .radioItemFlex {
+    margin: 25px;
+    display: block;
+    width: 20px;
+    text-align: center;
+}
+
+.radioItemFlex {
+    display: flex;
+    font-size: 17px;
+}
+
+.radioItemFlex input {
+    margin-right: 10px;
 }

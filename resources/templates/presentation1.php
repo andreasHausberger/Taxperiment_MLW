@@ -51,8 +51,8 @@ if (isset($_GET['condnum'])) {
 
     CBCol = "0^0";
     CBRow = "0^0";
-    W_Col = "200^200";
-    H_Row = "50^50";
+    W_Col = "250^250";
+    H_Row = "80^80";
 
     chkchoice = "nobuttons";
     btnFlg = 0;

@@ -26,7 +26,7 @@ require_once ("public/templates/header.php");
         <a href="resources/library/designer_100beta/index.html"> Link to Designer</a>
     </div>
     <div>
-        <a href="resources/library/mlwebphp_100beta/datalyser.php">Link to Datalyser</a>
+        <a href="download.php">Link to Datalyser</a>
     </div>
 </div>
 

@@ -154,9 +154,21 @@ CREATE TABLE IF NOT EXISTS `mlweb` (
 )
 ";
 
+$memAttnQuery = "
+CREATE TABLE IF NOT EXISTS `questionnaire` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(11) DEFAULT NULL,
+  `ma1` int(11) DEFAULT NULL,
+  `ma2` int(11) DEFAULT NULL,
+  `ma3` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pid` (`pid`),
+  CONSTRAINT `q_memattn_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `participant` (`id`)
+)";
+
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
-    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery);
+    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Memory&Attention Check" => $memAttnQuery);
 
 $count = 0;
 $keys = array_keys($queries);

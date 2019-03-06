@@ -13,15 +13,14 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 $pages = array(
     -1 => "error.html",
-    1 => "tutorial1.php",
-    2 => "tutorial2.php",
-    3 => "tutorial3.php",
-    4 => "tutorial4.php",
-    5 => "tutorial5.php",
-    6 => "sliderTutorial1.php",
-    7 => "tutorial6.php",
-    8 => "exam1.php",
-    9 => "tutorial_end.php"
+    1 => "tutorial2.php",
+    2 => "tutorial3.php",
+    3 => "tutorial4.php",
+    4 => "tutorial5.php",
+    5 => "sliderTutorial1.php",
+    6 => "tutorial6.php",
+    7 => "exam1.php",
+    8 => "tutorial_end.php"
 );
 
 $page = $pages[$index];
@@ -30,7 +29,7 @@ if ($condition == -1) {
     echo "Something went wrong: Index is " . $index . " and condition is " . $condition;
 }
 else {
-    if ($index == 9) {
+    if ($index == 8) {
         require_once ("../../templates/header.php");
 
         include($page);
@@ -43,6 +42,7 @@ else {
         require_once ("../../templates/header.php");
 
         include($page);
+
         include("../../templates/continue.php");
 
 

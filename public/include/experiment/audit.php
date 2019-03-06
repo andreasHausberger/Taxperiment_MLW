@@ -52,21 +52,27 @@ else {
 
 
 
+    function newPerformAudit() {
+        let reportedTax = parseInt(document.getElementById("inputValue").value);
+        document.getElementById(("reported"))
+    }
+
     //is always called after the button is pushed.
     function performAudit() {
-        let reportedIncome = parseInt(document.getElementById("inputValue").value); //self reported income
+        let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported income
         document.getElementById("reportedIncome").value = reportedIncome;
+        let actualIncome = <?php echo $mostRecentScore?> ;
 
         let netIncome = 0;
 
         let probability = <?php echo $auditProbability?>;
-        let income = <?php echo $mostRecentScore ?>; //actual income
+        let actualTax = <?php echo $mostRecentScore * $taxRate ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = income == reportedIncome;
+        let honesty = actualTax == reportedTax;
 
         let randomNr = Math.random();
-        let audit = (randomNr <= probability);
+        let audit = false; //(randomNr <= probability);
 
         let fine = 0;
 
@@ -77,9 +83,9 @@ else {
         if (audit) {
 
 
-            fine = startAudit(income, reportedIncome, taxRate);
+            fine = startAudit(actualTax, reportedTax);
 
-            netIncome = income - fine;
+            netIncome = actualIncome - fine;
 
 
             document.getElementById("income").value = "" + netIncome;
@@ -91,9 +97,7 @@ else {
 
         }
         else {
-
-            let taxAmount = Math.floor(reportedIncome * taxRate);
-            netIncome = income - taxAmount;
+            netIncome = reportedIncome - reportedTax;
 
             document.getElementById("income").value = "" + income;
 
@@ -152,15 +156,15 @@ else {
     }
 
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
-    function startAudit(income, reported, taxRate) {
+    function startAudit(actualTax, reportedTax) {
         let fineRate = <?php echo $fineRate; ?>;
 
-        if (reported < income) {
+        if (reportedTax < actualTax) {
             //find the difference between the taxes, and multiply it with the fine rate.
 
-            let discrepancy = (income * taxRate) - (reported * taxRate);
+            let discrepancy = actualTax - reportedTax;
 
-            let fine = discrepancy * fineRate;
+            let fine = discrepancy + (actualTax * fineRate);
 
             console.log("Participant was audited! Declared " + reported + " vs. actual amount " + income );
 
@@ -203,7 +207,7 @@ else {
 <form action=<?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
 
 
-    <label for="inputValue">Income Declaration: </label>
+    <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>
     <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
     <br>
 

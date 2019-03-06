@@ -29,7 +29,10 @@
 $password = "mlweb";
 // set a larger memory limit required for processing large files
 ini_set('memory_limit', '64M'); 
-include('mlwebdb.inc.php');
+//include('mlwebdb.inc.php');
+include ("../../config.php");
+
+echo "Made it to datalyser!";
 
 function multi2dSortAsc(&$arr, $key1, $key2){ 
   $sort_col1 = array(); 
@@ -38,7 +41,6 @@ function multi2dSortAsc(&$arr, $key1, $key2){
   foreach ($arr as $sub) $sort_col2[] = $sub[$key2]; 
   array_multisort($sort_col1, $sort_col2, $arr); 
 }
-
 function extractTag($datastr, $tagstr)
 {
 //this function returns the content of information that is in between <$tagstr> </$tagstr>
@@ -58,7 +60,7 @@ $procvars = array();
 //add fields to headerarr if first procdata is not empty
 $prockey = array_search("procdata",$rowarr[0]);
 $procdata = $rowarr[1][$prockey];
-if ($procdata!="") 	 	
+if ($procdata!="")
 			{$rowarr[0]=array_merge(array_slice($rowarr[0],0,$prockey),array("event", "name", "value", "time"),array_slice($rowarr[0],$prockey+1));}
 	
 $outarr[0] = $rowarr[0];		
@@ -741,8 +743,11 @@ font-color: #000000;
 	if ($act=="play") 
 		{// start of play part
 		$expname = $_POST['expname'];
+		$table = "mlweb";
+		$expname = "presentation1";
 		
 	$sqlQuery = "SELECT id, subject, submitted, procdata, condnum from $table where expname='$expname'";
+
 
     # Execute SQL query 
     $result=mysql_query($sqlQuery) or die("Invalid Query : ".mysql_error()); 
@@ -854,18 +859,36 @@ for ($i=0;$i<count($rowarr);$i++)
 } // end of action part  
   else 
 {
+
+    $table = "mlweb";
+
+    echo "made it here with $table";
+
+
 // startup code for making a selection (if form is not submitted, first opening)
   
 
-$sqlQuery = "SELECT DISTINCT expname from $table";
+$checkQuery = $connection->prepare("SELECT DISTINCT expname FROM $table");
 
-    # Execute SQL query 
-    $result=mysql_query($sqlQuery) or die("Invalid Query : ".mysql_error()); 
-    
-    # Check whether NULL records found 
-    if(!mysql_num_rows($result)) 
-        die("No records found.XX"); 
-	
+if ($checkQuery->execute()) {
+    console_log("datalyser checking for experiments");
+    if ($checkQuery->bind_result($expname)) {
+        echo "data found!";
+    }
+    else {
+        echo "No Records found!";
+    }
+}
+
+
+
+//    # Execute SQL query
+//    $result=mysql_query($sqlQuery) or die("Invalid Query : ".mysql_error());
+//
+//    # Check whether NULL records found
+//    if(!mysql_num_rows($result))
+//        die("No records found.XX");
+//
 ?>
 <HTML>
 <HEAD>

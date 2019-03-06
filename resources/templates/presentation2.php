@@ -33,8 +33,8 @@ if (isset($_GET['condnum'])) {
 
 
     let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "`";
-    let auditProbability = <?php echo $auditProbability*100 ?> + "% chance";
-    let fineRate = <?php echo $fineRate ?> + "x evaded amount" + "^";
+    let auditProbability = <?php echo $auditProbability*100 ?> + "% Chance";
+    let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "^";
     let income =  <?php echo $mostRecentScore ?> + " ECU ^";
 
     txt = income + taxRate + fineRate + auditProbability;
@@ -49,8 +49,8 @@ if (isset($_GET['condnum'])) {
 
     CBCol = "0^0";
     CBRow = "0^0";
-    W_Col = "200^200";
-    H_Row = "50^50";
+    W_Col = "250^250";
+    H_Row = "80^80";
 
     chkchoice = "nobuttons";
     btnFlg = 0;

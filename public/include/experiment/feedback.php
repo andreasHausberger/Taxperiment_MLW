@@ -6,9 +6,15 @@
  * Time: 16:43
  */
 
-include "../../roundDataLoader.php";
+// include "../../roundDataLoader.php";
 
 ?>
 
+<h1> Overview </h1>
 
-<h2> This is where our feedback boxes (for both delayed and immediate feedback) will be displayed!</h2>
+<p> Here goes our overview table -> to be built</p>
+
+
+<p> In the following segments, you will be asked some questions about your opinions and impressions about the experiment. </p>
+
+<a href="../questionnaire/index.php?page=1"> <input type="button" value="Continue to Questionnaire!"></a>

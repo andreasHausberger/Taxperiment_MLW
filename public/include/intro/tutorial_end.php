@@ -2,15 +2,9 @@
     <div class="contentContainer">
         <p>
             <span class="textSpan">
-                <b>The examples are now finished. </b>
+                The examples are now finished. On the next page the experiment begins. Information on earned income, the tax rate, audit probability, and fine levels for each round will be displayed with MouselabWEB. This means that this information is hidden behind boxes. These boxes are labeled. To access the respective information, you have to move the mouse pointer over the box on the screen. As long as the pointer is over the box, it will display the information. Whenever the pointer moves out of the box, the box closes and the information is hidden again. See the example below and please make yourself familiar with how the boxed open and close.
             </span>
-            <span class="textSpan">
-                On the next page, the <b>experiment</b> begins.
-            </span>
-            <br>
-            <span class="textSpan">
-                Click on 'Next' when you are ready to start the study. The study will start with the same effort task that you have practiced, for which you get 20 seconds to place as many sliders as possible to 50%.
-            </span>
+
         </p>
     </div>
 </div>
