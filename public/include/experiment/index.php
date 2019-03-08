@@ -65,7 +65,7 @@ if ($round < 1 || $mode == 0) {
     echo "There is a problem.";
 }
 
-elseif ($round <= 1) {
+elseif ($round <= 18) {
     $pages = array(
         -1 => "error.html",
         1 => "slider.php",

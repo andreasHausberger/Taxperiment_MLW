@@ -100,7 +100,9 @@ if (isset($_GET['presentation'])) {
 
 }
 
-$nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation&score=";
+$condition = $_GET['condition'];
+
+$nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation&score=";
 ?>
 
 

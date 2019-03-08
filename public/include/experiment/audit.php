@@ -50,29 +50,22 @@ else {
 
 <script>
 
-
-
-    function newPerformAudit() {
-        let reportedTax = parseInt(document.getElementById("inputValue").value);
-        document.getElementById(("reported"))
-    }
-
     //is always called after the button is pushed.
     function performAudit() {
-        let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported income
+        let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported tax
         document.getElementById("reportedIncome").value = reportedIncome;
-        let actualIncome = <?php echo $mostRecentScore?> ;
+        let actualIncome = <?php echo $mostRecentScore?> ; //before tax
 
-        let netIncome = 0;
+        let netIncome = 0; //what the participant earns after tax
 
         let probability = <?php echo $auditProbability?>;
         let actualTax = <?php echo $mostRecentScore * $taxRate ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = actualTax == reportedTax;
+        let honesty = actualTax == reportedTax; //true or false, depending on the declaration
 
         let randomNr = Math.random();
-        let audit = false; //(randomNr <= probability);
+        let audit = (randomNr <= probability);
 
         let fine = 0;
 
@@ -97,9 +90,9 @@ else {
 
         }
         else {
-            netIncome = reportedIncome - reportedTax;
+            netIncome = actualIncome - reportedTax;
 
-            document.getElementById("income").value = "" + income;
+            document.getElementById("income").value = "" + netIncome;
 
             document.getElementById("wasAudited").value = false;
 
@@ -111,7 +104,7 @@ else {
         let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
 
         if (feedbackIsDelayed == 0) {
-            displayInformation(audit, income, reportedIncome, fine, taxRate);
+            displayInformation(audit, actualIncome, netIncome, fine, taxRate);
         }
         else {
             collapseInformation("submit", "submit", "submit");
@@ -127,16 +120,16 @@ else {
 
     function displayInformation(audit, income, reportedIncome, fine, taxRate) {
 
-        let paidTaxAmount = Math.floor(reportedIncome * taxRate);
+        let paidTaxAmount = income - reportedIncome;
         let actualTaxAmount = Math.floor(income * taxRate);
         let taxDiscrepancy = actualTaxAmount - paidTaxAmount;
 
-        let totalFineAmount = audit ? fine + taxDiscrepancy : 0;
+        let totalFineAmount = audit ? fine : 0;
         document.getElementById("earnedIncomeCell").innerText = income;
         document.getElementById("declaredIncomeCell").innerText = reportedIncome;
         document.getElementById("taxDueCell").innerText = Math.floor(income * taxRate);
         document.getElementById("paidTaxCell").innerText = paidTaxAmount;
-        document.getElementById("netIncomeCell").innerText = income - paidTaxAmount - totalFineAmount;
+        document.getElementById("netIncomeCell").innerText = reportedIncome;
 
         if (audit) {
             document.getElementById("missingTaxCell").innerText = totalFineAmount;
@@ -166,7 +159,7 @@ else {
 
             let fine = discrepancy + (actualTax * fineRate);
 
-            console.log("Participant was audited! Declared " + reported + " vs. actual amount " + income );
+            console.log("Participant was audited! Declared " + reportedTax + " vs. actual amount " + actualTax );
 
             return fine;
         }
