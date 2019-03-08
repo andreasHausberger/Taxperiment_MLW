@@ -8,6 +8,7 @@
 
 // include "../../roundDataLoader.php";
 
+echo $participantID;
 ?>
 
 <h1> Overview </h1>
@@ -17,4 +18,4 @@
 
 <p> In the following segments, you will be asked some questions about your opinions and impressions about the experiment. </p>
 
-<a href="../questionnaire/index.php?page=1"> <input type="button" value="Continue to Questionnaire!"></a>
+<a href=<?php echo "../questionnaire/index.php?page=1&pid=" . $participantID; ?>> <input type="button" value="Continue to Questionnaire!"></a>

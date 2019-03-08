@@ -65,7 +65,7 @@ if ($round < 1 || $mode == 0) {
     echo "There is a problem.";
 }
 
-elseif ($round <= 18) {
+elseif ($round <= 1) {
     $pages = array(
         -1 => "error.html",
         1 => "slider.php",
@@ -83,6 +83,5 @@ else {
     // redirect to end of experiment
     require_once("../../templates/header.php");
     include ("feedback.php");
-    echo "this is the end of the experiment.";
     require_once("../../templates/footer.php");
 }

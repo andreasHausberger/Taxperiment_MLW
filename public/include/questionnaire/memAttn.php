@@ -8,7 +8,7 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) > 0) {
+if (sizeof($_POST) >= 3) {
 
     $ma1 = $_POST["ma1"];
     $ma2 = $_POST["ma2"];
@@ -22,12 +22,15 @@ if (sizeof($_POST) > 0) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?sname=$participant&page=2");
+            header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
         }
         else {
             echo "Problem! " + $connection->error();
         }
     }
+}
+else {
+    echo "Please fill out every question on the page!";
 }
 ?>
 

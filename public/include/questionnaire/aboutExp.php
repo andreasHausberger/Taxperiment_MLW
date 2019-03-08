@@ -8,7 +8,7 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) > 0) {
+if (sizeof($_POST) >= 5) {
 
     $exp1 = $_POST["exp1"];
     $exp2 = $_POST["exp2"];
@@ -17,7 +17,7 @@ if (sizeof($_POST) > 0) {
     $exp5 = $_POST["exp5"];
 
 
-    $participant = $_GET['sname'];
+    $participant = $_GET['pid'];
 
     $updateQuery = "UPDATE questionnaire SET exp1 = $exp1, exp2 = $exp2, exp3 = $exp3, exp4 = $exp4, exp5 = $exp5  WHERE pid = $participant";
     if (isset($connection)) {
@@ -26,12 +26,15 @@ if (sizeof($_POST) > 0) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?sname=$participant&page=3");
+            header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=3");
         }
         else {
             echo "Problem: " . $connection->error();
         }
     }
+}
+else {
+    echo "Please fill out every question on the page!";
 }
 ?>
 
