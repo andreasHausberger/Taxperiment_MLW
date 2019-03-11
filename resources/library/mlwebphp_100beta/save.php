@@ -32,11 +32,14 @@ if (!isset($id)) {
 if (isset($_POST)) {
     $expname = $_POST['expname'];
     $subject = intval($_POST['subjectID']);
-    $condnum =$_POST['condnum'];
+    $condnum =$_POST['condition'];
     $choice = $_POST['choice'];
     $procdata = $_POST['procdata'];
-    $income = $_POST['income'];
-    $reportedIncome = $_POST['reportedIncome'];
+
+    $actualIncome = $_POST['actual_income'];
+    $netIncome = $_POST['net_income'];
+    $actualTax = $_POST['tax'];
+    $reportedTax = $_POST['reported_tax'];
     $audit = $_POST['wasAudited'];
     $honesty = $_POST['wasHonest'];
     $currentRound = intval($_POST['round']);
@@ -94,8 +97,7 @@ $table = 'mlweb';
 $honesty = $_POST['wasHonest'] == "true" ? 1 : 0;
 $audited = $_POST['wasAudited'] == "true" ? 1 : 0;
 
-$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata, experiment_id, income, reported_income, audit, honesty) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata', $expID, $income, $reportedIncome, $audited, $honesty)";
-
+$sqlquery = "INSERT INTO $table (expname, subject, ip, condnum, choice, submitted, round, procdata, addvar, adddata) VALUES ('$expname','$subject','$ipstr', $condnum,'$choice', NOW(), $currentRound, '$procdata', '$addvar', '$adddata' )";
 if (isset($connection)) {
     if ($connection->query($sqlquery)) {
         echo( "Inserted data successfully - " . $connection->info);
@@ -105,6 +107,17 @@ if (isset($connection)) {
     }
 }
 
+
+
+$auditQuery = "INSERT INTO audit (exp_id, pid, round, actual_income, net_income, actual_tax, declared_tax, honesty, audit) VALUES ($expID, $subject, $currentRound, $actualIncome, $netIncome,  $actualTax, $reportedTax, $honesty, $audited)";
+if (isset($connection)) {
+    if ($connection->query($auditQuery)) {
+        echo ("Inserted audit data successfully for ExpID $expID and round $currentRound");
+    }
+    else {
+        echo "there was a problem inserting audit data" . $connection->error;
+    }
+}
 //$result = mysql_query($sqlquery);
 //mysql_close();
 
@@ -118,6 +131,6 @@ $presentation = $_GET['presentation'];
 
 
 
-header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
+header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&&condition=$condnum&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
 //exit;
 ?>

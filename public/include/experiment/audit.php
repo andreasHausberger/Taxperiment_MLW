@@ -11,6 +11,7 @@ $subjectID = $dataArray['pid'];
 $experimentID = $_GET['expid'];
 $participantID = $_GET['pid'];
 $currentRound = $_GET['round'];
+$condition = $_GET['condition'];
 ?>
 
 
@@ -53,7 +54,7 @@ else {
     //is always called after the button is pushed.
     function performAudit() {
         let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported tax
-        document.getElementById("reportedIncome").value = reportedIncome;
+        document.getElementById("tax").value = <?php echo $mostRecentScore * $taxRate ?>;
         let actualIncome = <?php echo $mostRecentScore?> ; //before tax
 
         let netIncome = 0; //what the participant earns after tax
@@ -81,25 +82,24 @@ else {
             netIncome = actualIncome - fine;
 
 
-            document.getElementById("income").value = "" + netIncome;
-
             document.getElementById("wasAudited").value = "true";
-
-            document.getElementById("wasHonest").value = honesty;
-
 
         }
         else {
             netIncome = actualIncome - reportedTax;
 
-            document.getElementById("income").value = "" + netIncome;
 
             document.getElementById("wasAudited").value = false;
 
-            document.getElementById("wasHonest").value = honesty;
-
             console.log("No Audit");
         }
+
+        document.getElementById("reported_tax").value = "" + reportedTax;
+        document.getElementById("actual_income").value = "" + actualIncome;
+        document.getElementById("net_income").value = "" + netIncome;
+        document.getElementById("wasHonest").value = honesty;
+
+
 
         let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
 
@@ -197,7 +197,9 @@ else {
 
 
 
-<form action=<?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
+<form action=<?php
+$condition = $_GET['condition'];
+echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
 
 
     <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>

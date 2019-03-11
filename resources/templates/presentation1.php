@@ -4,14 +4,15 @@ if (isset($_GET['subject'])) {
 } else {
     $subject = "anonymous";
 }
-if (isset($_GET['condnum'])) {
-    $condnum = $_GET['condnum'];
+if (isset($_GET['condition'])) {
+    $condnum = $_GET['condition'];
 } else {
     $condnum = -1;
 }
 
-// var_dump($experimentID);
 ?>
+<!--Since the "condnum" input field is broken, we'll use our own with the name "condition". save.php is rewritten accordingly.-->
+
 <HTML>
 <HEAD>
     <TITLE>MouselabWEB Survey</TITLE>
@@ -104,7 +105,7 @@ $feedback = $_GET['feedback'];
 $presentation = $_GET['presentation'];
 $order = $_GET['order'];
 
-$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation"
+$saveURL = "/resources/library/mlwebphp_100beta/save.php?condition=$condition&feedback=$feedback&order=$order&presentation=$presentation";
 
 
 ?>
@@ -113,8 +114,10 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
 <FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
       action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
-    <input type="hidden" id="income" name="income" value=<?php echo $mostRecentScore?>>
-    <input type="hidden" id="reportedIncome" name="reportedIncome">
+    <input type="hidden" id="tax" name="tax" value=<?php echo $mostRecentScore?>>
+    <input type="hidden" id="reported_tax" name="reported_tax">
+    <input type="hidden" id="actual_income" name="actual_income">
+    <input type="hidden" id="net_income" name="net_income">
     <input type="hidden" id="wasAudited" name="wasAudited" >
     <input type="hidden" id="wasHonest" name="wasHonest">
     <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
@@ -123,7 +126,8 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
     <input type=hidden name="expname" value="">
     <input type=hidden name="nextURL" value="">
     <input type=hidden name="choice" value="">
-    <input type=hidden name="condnum" value="">
+    <input type=hidden name="condnum" value="42">
+    <input type="hidden" name="condition" value=<?php echo $condnum ?>>
     <input type=hidden name="to_email" value="">
     <!--BEGIN preHTML-->
 
