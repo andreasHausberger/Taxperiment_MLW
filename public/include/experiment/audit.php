@@ -66,7 +66,7 @@ else {
         let honesty = actualTax == reportedTax; //true or false, depending on the declaration
 
         let randomNr = Math.random();
-        let audit = (randomNr <= probability);
+        let audit = true; //(randomNr <= probability);
 
         let fine = 0;
 
@@ -80,6 +80,8 @@ else {
             fine = startAudit(actualTax, reportedTax);
 
             netIncome = actualIncome - fine;
+
+            if (netIncome < 0) { netIncome = 0; }
 
 
             document.getElementById("wasAudited").value = "true";
@@ -134,9 +136,14 @@ else {
         if (audit) {
             document.getElementById("missingTaxCell").innerText = totalFineAmount;
             document.getElementById("missingTaxRow").style.display = "table-row";
+            document.getElementById("auditText").innerHTML = "You were <b> audited! </b> "
+            document.getElementById("paidTaxRow").style.display = "none";
+            document.getElementById("declaredIncomeRow").style.display = "none";
         }
         else {
             document.getElementById("missingTaxRow").style.display = "none";
+            document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
+
         }
 
 
@@ -215,7 +222,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                 <tbody>
                 <tr>
                     <p>Please review the info below. If you were audited, you will also see whether you had to pay a fine.   </p>
-
+                    <p id="auditText"></p>
                 </tr>
                 <tr>
                     <td>
@@ -225,7 +232,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
                     </td>
                 </tr>
-                <tr>
+                <tr id="declaredIncomeRow">
                     <td>
                         Declared Income:
                     </td>
@@ -242,7 +249,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                     </td>
                 </tr>
 
-                <tr>
+                <tr id="paidTaxRow">
                     <td>
                         Paid Tax:
                     </td>
