@@ -19,7 +19,7 @@ if (sizeof($_POST) >= 3) {
     $participant = $_GET['pid'];
 
 
-    $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES $participant, $ma1, $ma2, $ma3, NOW()";
+    $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES ($participant, $ma1, $ma2, $ma3, NOW())";
     if (isset($connection)) {
         if ($connection->query($insertQuery)) {
             echo("MA inserted successfully!");
