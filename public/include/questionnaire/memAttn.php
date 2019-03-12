@@ -16,7 +16,6 @@ if (sizeof($_POST) >= 3) {
 
     $participant = $_GET['pid'];
 
-    $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES ($participant, $ma1, $ma2, $ma3, NOW())";
 
     var_dump($insertQuery);
     if (isset($connection)) {
@@ -32,6 +31,9 @@ if (sizeof($_POST) >= 3) {
         else {
             echo "Problem! " + $connection->error();
         }
+    }
+    else {
+        echo "Could not connect to database!";
     }
 }
 else {
