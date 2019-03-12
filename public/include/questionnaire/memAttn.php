@@ -22,7 +22,7 @@ if (sizeof($_POST) >= 3) {
     $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES $participant, $ma1, $ma2, $ma3, NOW()";
     if (isset($connection)) {
         if ($connection->query($insertQuery)) {
-            console_log("MA inserted successfully!");
+            echo("MA inserted successfully!");
 
             $herokuURL = getenv('HEROKU_URL');
 
@@ -33,8 +33,10 @@ if (sizeof($_POST) >= 3) {
                 $host  = $_SERVER['HTTP_HOST'];
             }
 
+            $urlString = "https://$host/public/include/questionnaire/index.php?pid=$participant&page=2";
+            var_dump($urlString);
             
-            header("Location: https://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
+            header("Location: $urlString");
         }
         else {
             echo "Problem! " . $connection->error();
