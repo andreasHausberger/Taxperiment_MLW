@@ -16,11 +16,9 @@ if (sizeof($_POST) >= 3) {
 
     $participant = $_GET['pid'];
 
-    var_dump($_POST);
-    var_dump($participant);
-
     $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES ($participant, $ma1, $ma2, $ma3, NOW())";
 
+    var_dump($insertQuery);
     if (isset($connection)) {
         if ($connection->query($insertQuery)) {
             console_log("MA inserted successfully!");
