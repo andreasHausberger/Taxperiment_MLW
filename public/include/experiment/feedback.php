@@ -9,7 +9,8 @@
 // include "../../roundDataLoader.php";
 
 if (!isset($participantID)) {
-    $participantID = -12; // test data
+    $participantID = 123; // test data
+    echo "No PID was detected - using test data with PID = 123!";
 }
 ?>
 
