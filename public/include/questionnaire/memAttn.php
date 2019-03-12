@@ -10,15 +10,6 @@ include "../../../resources/config.php";
 
 $herokuURL = getenv('HEROKU_URL');
 
-if (isset($herokuURL)) {
-    $host = $herokuURL;
-}
-else {
-    $host  = $_SERVER['HTTP_HOST'];
-}
-
-var_dump($host);
-
 if (sizeof($_POST) >= 3) {
 
     $ma1 = $_POST["ma1"];
@@ -28,7 +19,7 @@ if (sizeof($_POST) >= 3) {
     $participant = $_GET['pid'];
 
 
-    var_dump($insertQuery);
+    $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES $participant, $ma1, $ma2, $ma3, NOW()";
     if (isset($connection)) {
         if ($connection->query($insertQuery)) {
             console_log("MA inserted successfully!");
@@ -46,7 +37,7 @@ if (sizeof($_POST) >= 3) {
             header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
         }
         else {
-            echo "Problem! " + $connection->error();
+            echo "Problem! " . $connection->error();
         }
     }
     else {
