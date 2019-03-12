@@ -37,7 +37,7 @@
         <counts>
           <entry key="CSS" value="1562" />
           <entry key="HTML" value="1200" />
-          <entry key="PHP" value="48482" />
+          <entry key="PHP" value="48601" />
           <entry key="PLAIN_TEXT" value="1820" />
           <entry key="SQL" value="9" />
         </counts>
@@ -137,8 +137,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/memAttn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="465">
+              <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -481,7 +481,7 @@
       <workItem from="1552291901494" duration="6156000" />
       <workItem from="1552335251489" duration="13000" />
       <workItem from="1552380096580" duration="3837000" />
-      <workItem from="1552387241221" duration="251000" />
+      <workItem from="1552387241221" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1542625508121</created>
@@ -777,11 +777,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552385261308</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Trying to fix q demo">
+      <created>1552387505117</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1552387505117</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Trying to fix q demo">
+      <created>1552387748986</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1552387748986</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234536000" />
+    <option name="totallyTimeSpent" value="234851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1391" height="972" extended-state="0" />
@@ -1231,8 +1245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/memAttn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="465">
+          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>

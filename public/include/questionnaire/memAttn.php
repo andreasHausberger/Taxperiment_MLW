@@ -34,7 +34,7 @@ if (sizeof($_POST) >= 3) {
             }
 
             
-            header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
+            header("Location: https://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
         }
         else {
             echo "Problem! " . $connection->error();
