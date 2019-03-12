@@ -37,9 +37,9 @@
         <counts>
           <entry key="CSS" value="1562" />
           <entry key="HTML" value="1200" />
-          <entry key="PHP" value="48109" />
-          <entry key="PLAIN_TEXT" value="1672" />
-          <entry key="SQL" value="8" />
+          <entry key="PHP" value="48170" />
+          <entry key="PLAIN_TEXT" value="1775" />
+          <entry key="SQL" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -119,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="213" column="1" selection-start-line="213" selection-start-column="1" selection-end-line="213" selection-end-column="1" />
+            <state relative-caret-position="650">
+              <caret line="212" column="20" lean-forward="true" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -483,7 +483,7 @@
       <workItem from="1552048746388" duration="11145000" />
       <workItem from="1552291901494" duration="6156000" />
       <workItem from="1552335251489" duration="13000" />
-      <workItem from="1552380096580" duration="2364000" />
+      <workItem from="1552380096580" duration="2949000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1542625508121</created>
@@ -730,11 +730,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552382590682</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Updated create_table to account for new tables 'audit' and 'questionnaire'">
+      <created>1552382930226</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1552382930226</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Hot Fix Create tables">
+      <created>1552383109161</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1552383109161</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232812000" />
+    <option name="totallyTimeSpent" value="233397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1391" height="972" extended-state="0" />
@@ -819,8 +833,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Audit works, writes data to save.php, which can save it." />
-    <MESSAGE value="added heroku cleardb url" />
     <MESSAGE value="Overlay works" />
     <MESSAGE value="ClearDB" />
     <MESSAGE value="start.php" />
@@ -844,7 +856,9 @@
     <MESSAGE value="Rewrote save.php for more clarity &amp; to account for tax declarations (not income declarations" />
     <MESSAGE value="fixed display information to account for declaration of taxes, clarified some labels." />
     <MESSAGE value="Build Demo link for questionnaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build Demo link for questionnaire" />
+    <MESSAGE value="Updated create_table to account for new tables 'audit' and 'questionnaire'" />
+    <MESSAGE value="Hot Fix Create tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hot Fix Create tables" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start.html">
@@ -1189,8 +1203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="213" column="1" selection-start-line="213" selection-start-column="1" selection-end-line="213" selection-end-column="1" />
+        <state relative-caret-position="650">
+          <caret line="212" column="20" lean-forward="true" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
         </state>
       </provider>
     </entry>

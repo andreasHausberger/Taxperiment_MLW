@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `mlweb` (
 )
 ";
 
-$auditQuery = "CREATE TABLE `audit` (
+$auditQuery = "CREATE TABLE IF NOT EXISTS`audit` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `exp_id` int(11) DEFAULT NULL,
   `pid` int(11) DEFAULT NULL,
@@ -169,7 +169,7 @@ $auditQuery = "CREATE TABLE `audit` (
 ) ";
 
 $questionnaire = "
-CREATE TABLE `questionnaire` (
+CREATE TABLE IF NOT EXISTS `questionnaire` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(11) DEFAULT NULL,
   `ma1` int(11) DEFAULT NULL,
@@ -204,20 +204,18 @@ CREATE TABLE `questionnaire` (
   `dgs7` int(11) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `gender` int(11) DEFAULT NULL,
-  `nationality` int(11) DEFAULT NULL COMMENT '0 ... Dutch, 1 ... International',
+  `nationality` int(11) DEFAULT NULL,
   `participation_before` int(11) NOT NULL,
   `care` int(11) DEFAULT NULL,
   `understanding` int(11) DEFAULT NULL,
   `english` int(11) DEFAULT NULL,
   `created` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `pid` (`pid`),
-  CONSTRAINT `questionnaire_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `participant` (`id`)
+  PRIMARY KEY (`id`)
 )";
 
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
-    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Questionnaire" => $questionnaire, "Audit Data" => $auditQuery);
+    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit Data" => $auditQuery, "Questionnaire" => $questionnaire);
 
 $count = 0;
 $keys = array_keys($queries);
