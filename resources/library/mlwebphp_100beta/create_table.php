@@ -166,9 +166,56 @@ CREATE TABLE IF NOT EXISTS `questionnaire` (
   CONSTRAINT `q_memattn_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `participant` (`id`)
 )";
 
+$auditQuery = "
+CREATE TABLE `questionnaire` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(11) DEFAULT NULL,
+  `ma1` int(11) DEFAULT NULL,
+  `ma2` int(11) DEFAULT NULL,
+  `ma3` int(11) DEFAULT NULL,
+  `exp1` int(11) DEFAULT NULL,
+  `exp2` int(11) DEFAULT NULL,
+  `exp3` int(11) DEFAULT NULL,
+  `exp4` int(11) DEFAULT NULL,
+  `exp5` int(11) DEFAULT NULL,
+  `num1` int(11) DEFAULT NULL,
+  `num2` int(11) DEFAULT NULL,
+  `num3` int(11) DEFAULT NULL,
+  `cog1` int(11) DEFAULT NULL,
+  `rsk1` int(11) DEFAULT NULL,
+  `rsk2` int(11) DEFAULT NULL,
+  `rsk3` int(11) DEFAULT NULL,
+  `com1` int(11) DEFAULT NULL,
+  `com2` int(11) DEFAULT NULL,
+  `com3` int(11) DEFAULT NULL,
+  `com4` int(11) DEFAULT NULL,
+  `com5` int(11) DEFAULT NULL,
+  `com6` int(11) DEFAULT NULL,
+  `com7` int(11) DEFAULT NULL,
+  `com8` int(11) DEFAULT NULL,
+  `dgs1` int(11) DEFAULT NULL,
+  `dgs2` int(11) DEFAULT NULL,
+  `dgs3` int(11) DEFAULT NULL,
+  `dgs4` int(11) DEFAULT NULL,
+  `dgs5` int(11) DEFAULT NULL,
+  `dgs6` int(11) DEFAULT NULL,
+  `dgs7` int(11) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `gender` int(11) DEFAULT NULL,
+  `nationality` int(11) DEFAULT NULL COMMENT '0 ... Dutch, 1 ... International',
+  `participation_before` int(11) NOT NULL,
+  `care` int(11) DEFAULT NULL,
+  `understanding` int(11) DEFAULT NULL,
+  `english` int(11) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pid` (`pid`),
+  CONSTRAINT `questionnaire_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `participant` (`id`)
+)";
+
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
-    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Memory&Attention Check" => $memAttnQuery);
+    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Questionnaire" => $memAttnQuery, "Audit Data" => $auditQuery);
 
 $count = 0;
 $keys = array_keys($queries);
