@@ -8,6 +8,17 @@
 
 include "../../../resources/config.php";
 
+$herokuURL = getenv('HEROKU_URL');
+
+if (isset($herokuURL)) {
+    $host = $herokuURL;
+}
+else {
+    $host  = $_SERVER['HTTP_HOST'];
+}
+
+var_dump($host);
+
 if (sizeof($_POST) >= 3) {
 
     $ma1 = $_POST["ma1"];
@@ -22,10 +33,16 @@ if (sizeof($_POST) >= 3) {
         if ($connection->query($insertQuery)) {
             console_log("MA inserted successfully!");
 
-            $host  = $_SERVER['HTTP_HOST'];
+            $herokuURL = getenv('HEROKU_URL');
 
-            var_dump($host);
+            if (isset($herokuURL)) {
+                $host = $herokuURL;
+            }
+            else {
+                $host  = $_SERVER['HTTP_HOST'];
+            }
 
+            
             header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
         }
         else {
