@@ -8,7 +8,9 @@
 
 // include "../../roundDataLoader.php";
 
-echo $participantID;
+if (!isset($participantID)) {
+    $participantID = -12; // test data
+}
 ?>
 
 <h1> Overview </h1>

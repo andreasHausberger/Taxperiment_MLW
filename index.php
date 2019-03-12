@@ -12,7 +12,7 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.82 (Feb 2019)</p>
+<p>Dev Notes: Version 0.9 (Mar 2019)</p>
 
 <div>
     <h1>Welcome, researcher</h1>
@@ -27,6 +27,9 @@ require_once ("public/templates/header.php");
     </div>
     <div>
         <a href="download.php">Link to Datalyser</a>
+    </div>
+    <div>
+        <a href="public/include/experiment/feedback.php"> Link to Questionnaire (Demo)</a>
     </div>
 </div>
 

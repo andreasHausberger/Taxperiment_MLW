@@ -66,7 +66,7 @@ else {
         let honesty = actualTax == reportedTax; //true or false, depending on the declaration
 
         let randomNr = Math.random();
-        let audit = true; //(randomNr <= probability);
+        let audit = (randomNr <= probability);
 
         let fine = 0;
 
