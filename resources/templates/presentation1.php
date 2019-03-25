@@ -91,7 +91,7 @@ if (isset($_GET['condition'])) {
     boxClass = "boxTD";
     cssname = "mlweb.css";
     nextURL = "thanks.html";
-    expname = "presentation1";
+    expname = "exp_ml1";
     randomOrder = false;
     recOpenCells = false;
     masterCond = 1;
