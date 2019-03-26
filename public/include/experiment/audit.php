@@ -177,7 +177,7 @@ else {
     function validateInput() {
         document.getElementById("submitButton").disabled = true;
         let input = document.getElementById("inputValue").value;
-        let income = <?php echo $mostRecentScore; ?> ;
+        let taxAmount = <?php echo $mostRecentScore * $taxRate; ?> ;
         let inputInt = parseInt(input);
 
         if (isNaN(inputInt)) {
@@ -186,8 +186,8 @@ else {
 
         }
 
-        else if (inputInt < 0 || inputInt > income) {
-            document.getElementById("inputFeedback").innerText = "Please enter values greater than 0 and smaller than your actual income!";
+        else if (inputInt < 0 || inputInt > taxAmount) {
+            document.getElementById("inputFeedback").innerText = "Please enter values greater than 0 and smaller than or equal to the actual tax amount!";
 
 
         }

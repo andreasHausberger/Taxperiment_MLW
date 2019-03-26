@@ -53,7 +53,7 @@ if (sizeof($_POST) > 7) {
     function validateAndActiateButton(numberOfRequiredElements) {
         if (items.length == numberOfRequiredElements) {
             document.getElementById("submitButton").disabled = false;
-            console.log("Disabled Continue Button")
+            console.log("Disabled Continue Button");
         }
     }
 </script>
