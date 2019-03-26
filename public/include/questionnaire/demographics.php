@@ -8,7 +8,7 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) > 0) {
+if (sizeof($_POST) > 7) {
     $gender = $_POST['gender'];
     $nationality = $_POST['nationality'];
     $participation = $_POST['participation'];
@@ -35,6 +35,29 @@ if (sizeof($_POST) > 0) {
 
 ?>
 
+
+<script>
+    let items =[];
+
+    function addToArray(element) {
+        if (!items.includes(element)) {
+            items.push(element);
+            console.log("Added " + element + " to array!");
+        }
+        else {
+            console.log("Did not add " + element + " to the array, already in it!");
+        }
+        validateAndActiateButton(7);
+    }
+
+    function validateAndActiateButton(numberOfRequiredElements) {
+        if (items.length == numberOfRequiredElements) {
+            document.getElementById("submitButton").disabled = false;
+            console.log("Disabled Continue Button")
+        }
+    }
+</script>
+
 <h1> Demographics </h1>
 <form method="post">
 
@@ -42,7 +65,7 @@ if (sizeof($_POST) > 0) {
         <p class="questionText"> What is your age in years?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="text" name="age">
+            <input type="text" name="age" onblur="addToArray('age')">
 
         </div>
     </div>
@@ -51,9 +74,9 @@ if (sizeof($_POST) > 0) {
         <p class="questionText"> What is your gender?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="radio" name="gender" value="0"> <p>Male</p>
-            <input type="radio" name="gender" value="1"> <p>Female</p>
-            <input type="radio" name="gender" value="2"> <p>Other</p>
+            <input type="radio" name="gender" value="0" onclick="addToArray('gender')"> <p>Male</p>
+            <input type="radio" name="gender" value="1" onclick="addToArray('gender')"> <p>Female</p>
+            <input type="radio" name="gender" value="2" onclick="addToArray('gender')"> <p>Other</p>
 
         </div>
     </div>
@@ -62,8 +85,8 @@ if (sizeof($_POST) > 0) {
         <p class="questionText"> Are you a Dutch student or an international student?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="radio" name="nationality" value="0"> <p>Dutch</p>
-            <input type="radio" name="nationality" value="1"> <p>International</p>
+            <input type="radio" name="nationality" value="0" onclick="addToArray('nationality')"> <p>Dutch</p>
+            <input type="radio" name="nationality" value="1" onclick="addToArray('nationality')"> <p>International</p>
         </div>
     </div>
 
@@ -71,8 +94,8 @@ if (sizeof($_POST) > 0) {
         <p class="questionText"> Have you participated in a study on tax compliance before?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="radio" name="participation" value="0"> <p>Yes</p>
-            <input type="radio" name="participation" value="1"> <p>No</p>
+            <input type="radio" name="participation" value="0" onclick="addToArray('participation')"> <p>Yes</p>
+            <input type="radio" name="participation" value="1" onclick="addToArray('participation')"> <p>No</p>
         </div>
     </div>
 
@@ -106,7 +129,7 @@ if (sizeof($_POST) > 0) {
         </div>
     </div>
 
-    <input type="submit" value="Finish the Questionnaire!">
+    <input id="submitButton" type="submit" value="Finish the Questionnaire!" disabled="true">
 
 
 </form>

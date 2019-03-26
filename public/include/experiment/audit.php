@@ -232,7 +232,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
                     </td>
                 </tr>
-                <tr id="declaredIncomeRow">
+                <tr id="declaredIncomeRow" style="display: none;">
                     <td>
                         Declared Income:
                     </td>

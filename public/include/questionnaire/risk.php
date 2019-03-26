@@ -37,6 +37,29 @@ else {
 
 ?>
 
+
+<script>
+    let items =[];
+
+    function addToArray(element) {
+        if (!items.includes(element)) {
+            items.push(element);
+            console.log("Added " + element + " to array!");
+        }
+        else {
+            console.log("Did not add " + element + " to the array, already in it!");
+        }
+        validateAndActiateButton(3);
+    }
+
+    function validateAndActiateButton(numberOfRequiredElements) {
+        if (items.length == numberOfRequiredElements) {
+            document.getElementById("submitButton").disabled = false;
+            console.log("Disabled Continue Button")
+        }
+    }
+</script>
+
 <h1>Risk Taking</h1>
 
 <p>
@@ -53,7 +76,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 1. How would you describe your risk-related behavior in financial decisions?
+        <p class="questionText"> 2. How would you describe your risk-related behavior in financial decisions?
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk2"); ?>
@@ -62,7 +85,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 1. How would you describe your risk-related behavior in situations involving tax payments?
+        <p class="questionText"> 3. How would you describe your risk-related behavior in situations involving tax payments?
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk3"); ?>
@@ -70,6 +93,6 @@ else {
         </div>
     </div>
 
-    <input type="submit" value="Next Page">
+    <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
 </form>

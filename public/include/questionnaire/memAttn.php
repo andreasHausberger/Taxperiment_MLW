@@ -30,10 +30,11 @@ if (sizeof($_POST) >= 3) {
                 $host = $herokuURL;
             }
             else {
-                $host  = $_SERVER['HTTP_HOST'];
+                $host = $_SERVER['HTTP_HOST'];
             }
 
-            $urlString = "https://$host/public/include/questionnaire/index.php?pid=$participant&page=2";
+
+            $urlString = "http://$host/public/include/questionnaire/index.php?pid=$participant&page=2";
             var_dump($urlString);
             
             header("Location: $urlString");
@@ -46,10 +47,29 @@ if (sizeof($_POST) >= 3) {
         echo "Could not connect to database!";
     }
 }
-else {
-    echo "Please fill out every question on the page!";
-}
 ?>
+
+<script>
+    let items =[];
+
+    function addToArray(element) {
+        if (!items.includes(element)) {
+            items.push(element);
+            console.log("Added " + element + " to array!");
+        }
+        else {
+            console.log("Did not add " + element + " to the array, already in it!");
+        }
+        validateAndActiateButton(3);
+    }
+
+    function validateAndActiateButton(numberOfRequiredElements) {
+        if (items.length == numberOfRequiredElements) {
+            document.getElementById("submitButton").disabled = false;
+            console.log("Disabled Continue Button")
+        }
+    }
+</script>
 
 <h1> Memory / Attention Check </h1>
 <form method="post">
@@ -57,17 +77,17 @@ else {
         <div class="radioDisplayVertical">
             <p> 1. What were the tax rates in the tax game?</p>
             <div class="radioItemFlex">
-                <input type="radio" name="ma1" value="0">
+                <input type="radio" name="ma1" value="0" onclick="addToArray('ma1')">
                 <p> 20% and 40%</p>
             </div>
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma1" value="1">
+                <input type="radio" name="ma1" value="1" onclick="addToArray('ma1')">
                 <p> 20% and 30% </p>
             </div>
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma1" value="2">
+                <input type="radio" name="ma1" value="2" onclick="addToArray('ma1')">
                 <p> 10% and 20%</p>
             </div>
 
@@ -78,19 +98,19 @@ else {
         <div class="radioDisplayVertical">
             <p> 2. What were the audit probabilities in the tax game?</p>
             <div class="radioItemFlex">
-                <input type="radio" name="ma2" value="0">
-                <p> 20% and 30%</p>
+                <input type="radio" name="ma2" value="0" onclick="addToArray('ma2')">
+                <p> 5%, 15%, and 25%</p>
             </div>
 
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma2" value="1">
-                <p> 10% and 20% </p>
+                <input type="radio" name="ma2" value="1" onclick="addToArray('ma2')">
+                <p> 10%, 20%, and 30%</p>
             </div>
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma2" value="2">
-                <p> 10% and 30%</p>
+                <input type="radio" name="ma2" value="2" onclick="addToArray('ma2')">
+                <p> 10%, 30%, and 50%</p>
             </div>
 
         </div>
@@ -100,24 +120,24 @@ else {
         <div class="radioDisplayVertical">
             <p> 3. What were the fine levels in the tax game?</p>
             <div class="radioItemFlex">
-                <input type="radio" name="ma3" value="0">
+                <input type="radio" name="ma3" value="0" onclick="addToArray('ma3')">
                 <p> 1, 2, or 3 times the evaded amount</p>
             </div>
 
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma3" value="1">
+                <input type="radio" name="ma3" value="1" onclick="addToArray('ma3')">
                 <p> 2, 3, or 4 times the evaded amount </p>
             </div>
 
             <div class="radioItemFlex">
-                <input type="radio" name="ma3" value="2">
+                <input type="radio" name="ma3" value="2" onclick="addToArray('ma3')">
                 <p> 2, 4, or 6 times the evaded amount</p>
             </div>
 
         </div>
     </div>
 
-    <input type="submit" value="Next Page">
+    <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
 </form>

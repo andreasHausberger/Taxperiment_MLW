@@ -35,11 +35,31 @@ if (sizeof($_POST) >= 3) {
         echo "Could not find connection!";
     }
 }
-else {
-    echo "Please fill out every question on the page!";
-}
 
 ?>
+
+
+<script>
+    let items =[];
+
+    function addToArray(element) {
+        if (!items.includes(element)) {
+            items.push(element);
+            console.log("Added " + element + " to array!");
+        }
+        else {
+            console.log("Did not add " + element + " to the array, already in it!");
+        }
+        validateAndActiateButton(3);
+    }
+
+    function validateAndActiateButton(numberOfRequiredElements) {
+        if (items.length == numberOfRequiredElements) {
+            document.getElementById("submitButton").disabled = false;
+            console.log("Disabled Continue Button")
+        }
+    }
+</script>
 
 <h1>Numeracy</h1>
 
@@ -65,6 +85,6 @@ else {
         </div>
     </div>
 
-    <input type="submit" value="Next Page">
+    <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
 </form>

@@ -32,10 +32,11 @@ if (!function_exists("createLikert")) {
     {
         $html = "";
 
+
         $count = 1;
         while ($count <= $number) {
-            $html = $html . " <div class=\"radioItemFlex\">
-                    <input type=\"radio\" name=\"$name\" value=\"$count\">
+            $html = $html . " <div class=\"radioItemFlex\" >
+                    <input type=\"radio\" name=\"$name\" value=\"$count\" onclick=\"addToArray('$name')\"}>
                     <p> $count </p>
                    </div>";
 
