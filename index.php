@@ -12,7 +12,24 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.9 (Mar 2019)</p>
+<p>Dev Notes: Version 0.95 (Mar 2019)</p>
+
+<b>Recent Changes</b>
+<ul>
+    <li>Download of Experiment data via Datalyser works</li>
+    <li>Overview of Round performance after experiment</li>
+    <li>Demo of Mouselab Tables in tutorial</li>
+    <li>Various fixes for bugs, typos etc. </li>
+</ul>
+
+<br>
+<b> To Do
+</b>
+<ul>
+    <li>Download of Round performance data in .csv Format (also in Datalyser)</li>
+    <li>Hiding "Dev Notes" (will do for production)</li>
+    <li>Run exp. a couple of times, see how it goes.</li>
+</ul>
 
 <div>
     <h1>Welcome, researcher</h1>

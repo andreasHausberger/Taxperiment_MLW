@@ -124,7 +124,7 @@ body {
     width: 80vw;
 }
 
-#overviewTable, tr, td {
+#overviewTable tr td {
     border: 1px solid black;
 }
 
