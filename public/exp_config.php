@@ -50,11 +50,14 @@ $feedback = $dataArray['feedback'];
 $order = $dataArray['order'];
 $presentation = $dataArray['presentation'];
 
+
+include ("./templates/header.php");
 echo ("
    <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation' method='post'>
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
-   <label>The Experiment Begins.</label>
+   <label></label>
    <input type='submit' value='Start Experiment!'>
 </form>
 ");
+include ("./templates/footer.php");
