@@ -43,7 +43,7 @@ require_once ("public/templates/header.php");
         <a href="resources/library/designer_100beta/index.html"> Link to Designer</a>
     </div>
     <div>
-        <a href="download.php">Link to Datalyser</a>
+        <a href="download.php">Link to Data Download</a>
     </div>
     <div>
         <a href="public/include/experiment/feedback.php"> Link to Questionnaire (Demo)</a>

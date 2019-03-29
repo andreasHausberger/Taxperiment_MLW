@@ -10,6 +10,11 @@ require_once('./resources/config.php');
 
 require_once ("public/templates/header.php");
 
+echo "<h1>Downloads </h1>";
+
+echo "<br>";
+
+
 if (getenv("CLEARDB_DATABASE_URL") != null) {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -34,6 +39,9 @@ if ($result->num_rows == 0) {
     echo "No Records found";
 }
 else {
+
+    echo "<h2> Download of Proc Data (Mouselab Table data)</h2>";
+
     $rows = $result->fetch_all();
     $index = 0;
     foreach ($rows as $row) {
@@ -51,6 +59,16 @@ else {
     }
 }
 ?>
+
+<?php
+
+echo "<h2> Download of Questionnaire data and Audit Data </h2>";
+
+include "./resources/dataDownloader.php";
+
+?>
+
+
 
 
 <?php
