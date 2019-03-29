@@ -209,8 +209,11 @@ $condition = $_GET['condition'];
 echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
 
 
-    <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>
-    <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
+    <div id="taxInputContainer">
+        <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>
+        <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
+    </div>
+
     <br>
 
     <input id="submitButton" type= <?php echo($feedback == "0" ? "button" : "submit"); ?>

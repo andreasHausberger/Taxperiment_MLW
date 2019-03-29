@@ -1,17 +1,22 @@
 /*Stylesheet*/
 
 body {
-    margin: 30px !important;
+    margin: 30px 20vw !important;
     font-size: 15px;
 }
 
-.pageContainer {
+.pageContainer #header #footer {
+    min-width: 650px;
     max-width: 800px;
 
 }
 
 * {
     font-size: 16px;
+}
+
+label {
+    font-size: 16px !important;
 }
 
 
@@ -49,6 +54,14 @@ body {
 #time {
     font-size: 48px;
     font-weight: 900;
+}
+
+/*
+Audit Page
+ */
+
+#taxInputContainer {
+    width: 400px;
 }
 
 

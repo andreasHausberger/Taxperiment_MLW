@@ -34,7 +34,7 @@ if (sizeof($_POST) >= 3) {
             }
 
 
-            $urlString = "http://$host/public/include/questionnaire/index.php?pid=$participant&page=2";
+            $urlString = "https://$host/public/include/questionnaire/index.php?pid=$participant&page=2";
             var_dump($urlString);
             
             header("Location: $urlString");
