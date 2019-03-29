@@ -9,6 +9,10 @@
 // include "../../roundDataLoader.php";
 
 
+$feedback = $_GET['feedback'];
+
+
+
 if (!isset($participantID)) {
     $participantID = 123; // test data
     echo "No PID was detected - using test data with PID = 123!";
@@ -52,13 +56,12 @@ else {
 
     }
 }
-?>
 
-<h1> Overview </h1>
+echo "<h1> Overview </h1>";
 
-<p> Here is an overview of your results during the 18 rounds of the experiment. </p>
-
-<table id="overviewTable">
+if ($feedback == 1 ) {
+    echo "
+    <table id=\"overviewTable\">
     <thead>
     <tr>
         <td>Round Nr. </td>
@@ -71,11 +74,25 @@ else {
     </tr>
     </thead>
     <tbody>
-    <?php
-    if (isset($rows)) {
+    
+    ";
+}
+
+
+
+
+
+    if (isset($rows) && $feedback == "1") {
+        echo "<p> Here is an overview of your results during the 18 rounds of the experiment. </p>";
         foreach ($rows as $row) {
             echo buildResultsRow($row);
         }
+    }
+    else if (!isset($feedback)) {
+        echo "Error: Could not load feedback!";
+    }
+    else {
+        echo "<p> Please follow the instructions below! </p>";
     }
 
     ?>
