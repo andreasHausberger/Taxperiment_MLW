@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/dataDownloader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/download.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +37,8 @@
         <counts>
           <entry key="CSS" value="1897" />
           <entry key="HTML" value="1206" />
-          <entry key="PHP" value="57404" />
-          <entry key="PLAIN_TEXT" value="2533" />
+          <entry key="PHP" value="57710" />
+          <entry key="PLAIN_TEXT" value="2610" />
           <entry key="SQL" value="9" />
         </counts>
       </usages-collector>
@@ -147,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="505">
-              <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -165,11 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="435">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -297,10 +294,10 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/memAttn.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/download.php" />
         <option value="$PROJECT_DIR$/datalyser.php" />
         <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -447,14 +444,7 @@
       <workItem from="1553510680247" duration="13399000" />
       <workItem from="1553591400156" duration="10878000" />
       <workItem from="1553672606151" duration="993000" />
-      <workItem from="1553846921143" duration="10542000" />
-    </task>
-    <task id="LOCAL-00006" summary="MLWEB Boxes work">
-      <created>1546348451856</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1546348451856</updated>
+      <workItem from="1553846921143" duration="10718000" />
     </task>
     <task id="LOCAL-00007" summary="Presentation2 included">
       <created>1546349093743</created>
@@ -792,11 +782,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553856487567</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Added Download functionality for Audit data, questionnaire data.">
+      <created>1553874763716</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1553874763716</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277309000" />
+    <option name="totallyTimeSpent" value="277485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1630" height="972" extended-state="0" />
@@ -859,7 +856,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="HOTFIX: Disabled auto-audit" />
     <MESSAGE value="input validation for text fields ---&gt; only numbers allowed!" />
     <MESSAGE value="Version 0.8" />
     <MESSAGE value="Version 0.81 --&gt; save.php works properly now, saves all the data." />
@@ -884,7 +880,8 @@
     <MESSAGE value="Small bug fixes, added pretty design to start exp. page." />
     <MESSAGE value="Layout: Centered Page container, min width: 500px, max width: 800 px." />
     <MESSAGE value="Overview only for participants in &quot;Delayed FB&quot; condition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Overview only for participants in &quot;Delayed FB&quot; condition." />
+    <MESSAGE value="Added Download functionality for Audit data, questionnaire data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Download functionality for Audit data, questionnaire data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1187,13 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/redirect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1244,7 +1234,14 @@
     <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
-          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
