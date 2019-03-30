@@ -8,7 +8,8 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) > 7) {
+if (sizeof($_POST) >= 7) {
+    $age = $_POST['age'];
     $gender = $_POST['gender'];
     $nationality = $_POST['nationality'];
     $participation = $_POST['participation'];
@@ -17,7 +18,7 @@ if (sizeof($_POST) > 7) {
     $english = $_POST['english'];
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET gender = $gender, nationality = $nationality, participation_before = $participation, care = $care, understanding = $understanding, english = $english, created = NOW() WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, nationality = $nationality, participation_before = $participation, care = $care, understanding = $understanding, english = $english, created = NOW() WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -34,7 +35,6 @@ if (sizeof($_POST) > 7) {
 }
 
 ?>
-
 
 <script>
     let items =[];
@@ -129,7 +129,7 @@ if (sizeof($_POST) > 7) {
         </div>
     </div>
 
-    <input id="submitButton" type="submit" value="Finish the Questionnaire!" disabled="true">
+    <input id="submitButton" type="submit" value="Finish the Questionnaire!" disabled="false">
 
 
 </form>
