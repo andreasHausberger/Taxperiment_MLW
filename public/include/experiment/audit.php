@@ -51,6 +51,14 @@ else {
 
 <script>
 
+    $('form').on('keydown', function(event) {
+        var x = event.which;
+        if (x === 13) {
+            event.preventDefault();
+            console.log("Prevented Enter");
+        }
+    });
+
     //is always called after the button is pushed.
     function performAudit() {
         let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported tax
@@ -211,7 +219,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
     <div id="taxInputContainer">
         <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>
-        <input type="text" id="inputValue" onkeyup="validateInput()"> <div id="inputFeedback"></div>
+        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>
     </div>
 
     <br>
