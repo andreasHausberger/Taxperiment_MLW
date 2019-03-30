@@ -51,6 +51,10 @@ else {
 
 <script>
 
+    $(document).ready(function() {
+        $("#footer").focus();
+    });
+
     $('form').on('keydown', function(event) {
         var x = event.which;
         if (x === 13) {
