@@ -15,13 +15,17 @@
             <br>
         </p>
 
+
         <form action="">
             <span>I hereby state that I want to participate in this study:
             </span> <br>
             <br>
             <input type="radio" name="sampling" value="consent-yes" onclick="enableButton()"> Yes, I confirm and want to participate <br>
-            <input type="radio" name="sampling" value="consent-no"> No, I don't want to participate
+            <input type="radio" name="sampling" value="consent-no" onclick="displayMessage()"> No, I don't want to participate
         </form>
+
+        <div id="messageDisplay"></div>
+
 
     </div>
 </div>
@@ -33,6 +37,13 @@
     });
 
     function enableButton() {
+        document.getElementById("messageDisplay").innerText = "";
         document.getElementById('continueButton').disabled = false;
+    }
+
+    function displayMessage() {
+        document.getElementById('continueButton').disabled = true;
+
+        document.getElementById("messageDisplay").innerText = "If you don't want to participate, please contact the experimenter wia the black intercom button."
     }
 </script>
