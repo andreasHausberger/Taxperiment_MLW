@@ -187,7 +187,7 @@ else {
         }
 
         else if (inputInt < 0 || inputInt > taxAmount) {
-            document.getElementById("inputFeedback").innerText = "Please enter values greater than 0 and smaller than or equal to the actual tax amount!";
+            document.getElementById("inputFeedback").innerText = "Please enter values of a minimum of 0 and a maximum of the amount of tax due!";
 
 
         }
