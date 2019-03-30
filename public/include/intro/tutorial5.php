@@ -33,5 +33,27 @@
             </span>
             <br>
         </p>
+
+        <h3> Feedback </h3>
+
+        <?php
+        $condition = $_GET['condition'];
+
+        if (!isset($condition) || $condition <= 0) {
+            echo "WARNING: COULD NOT READ CONDITION!";
+        }
+        else if ($condition == 1 || $condition == 2 || $condition == 5 || $condition == 6) {
+            echo "
+            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after each round. </span>
+            ";
+        }
+        else {
+            echo "
+            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after the last round in an overview of all rounds. </span> 
+            ";
+        }
+
+        ?>
+
     </div>
 </div>
