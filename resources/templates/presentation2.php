@@ -47,7 +47,7 @@ if (isset($_GET['condition'])) {
     state = "1^1`"
         + "1^1";
 
-    box = "Income^Tax Rate`"
+    box = "Income^Tax Due`"
         + "Fine Rate^Audit Probability";
 
     CBCol = "0^0";
