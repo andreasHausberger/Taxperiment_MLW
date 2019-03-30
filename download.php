@@ -47,7 +47,6 @@ else {
     foreach ($rows as $row) {
         echo ("
         <form action=\"datalyser.php\" method=\"post\">
-    <input type=\"hidden\" value=\"mlweb\" name=\"pwd\">
     <input type=\"hidden\" value= $row[0] name=\"exp_name\">
     <input type=\"hidden\" value=\"true\" name=\"unpack\">
     <input type=\"hidden\" value=\"download\" name=\"act\">

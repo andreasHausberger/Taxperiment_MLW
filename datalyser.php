@@ -238,9 +238,6 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
     // get action
     $act = $_POST['act'];
     $pwd = $_POST['pwd'];
-    if ($pwd != $password) {
-        die("incorrect password");
-    }
 
     if ($act == "download") // action is download
     {
@@ -906,39 +903,27 @@ else {
         <link rel="stylesheet" href="mlweb.css" type="text/css">
         <script language="javascript">
             function show(exp1) {
-                if (document.forms[0].pwd.value == "") {
-                    alert("First type your password!");
-                    return;
-                }
+
                 document.forms[0].act.value = "show";
                 document.forms[0].expname.value = exp1;
                 document.forms[0].submit();
             }
 
             function replay(exp1) {
-                if (document.forms[0].pwd.value == "") {
-                    alert("First type your password!");
-                    return;
-                }
+
                 document.forms[0].act.value = "play";
                 document.forms[0].expname.value = exp1;
                 document.forms[0].submit();
             }
 
             function download() {
-                if (document.forms[0].pwd.value == "") {
-                    alert("First type your password!");
-                    return;
-                }
+
                 document.forms[0].act.value = "download";
                 document.forms[0].submit();
             }
 
             function process() {
-                if (document.forms[0].pwd.value == "") {
-                    alert("First type your password!");
-                    return;
-                }
+
                 document.forms[0].act.value = "process";
                 document.forms[0].submit();
             }
@@ -1028,7 +1013,7 @@ else {
                 <TD>&nbsp;</TD>
             </TR>
             <TR>
-                <TD rowspan=2>Password: <input type=password name="pwd" size=10 value="mlweb"></TD>
+                <TD rowspan=2>Password: <input type=password name="pwd" size=10 value="mlweb"> <p>If you can read this for some reason: Don't bother with a password.</p></TD>
                 <TD colspan=3><input type=button value="download selected" onClick="download()"><br><input type=checkbox
                                                                                                            name=unpack
                                                                                                            value=true

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datalyser.php" beforeDir="false" afterPath="$PROJECT_DIR$/datalyser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/download.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +16,14 @@
     <session id="415043947">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="51" />
+          <entry key="project.closed" value="52" />
           <entry key="project.open.time.0" value="10" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="12" />
           <entry key="project.open.time.4" value="22" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="52" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -37,8 +38,8 @@
         <counts>
           <entry key="CSS" value="1897" />
           <entry key="HTML" value="1206" />
-          <entry key="PHP" value="57710" />
-          <entry key="PLAIN_TEXT" value="2610" />
+          <entry key="PHP" value="57802" />
+          <entry key="PLAIN_TEXT" value="2646" />
           <entry key="SQL" value="9" />
         </counts>
       </usages-collector>
@@ -85,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/public/templates/redirect.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -94,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/public/include/intro/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -111,17 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="97" column="6" lean-forward="true" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+            <state relative-caret-position="1380">
+              <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state relative-caret-position="606">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -129,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datalyser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="322" lean-forward="true" selection-start-line="322" selection-end-line="322" />
+            <state relative-caret-position="373">
+              <caret line="246" column="47" lean-forward="true" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
               <folding>
                 <element signature="e#6#72#0#PHP" expanded="true" />
                 <element signature="n#multi2dSortAsc#0;n#!!top" />
@@ -147,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="1470">
               <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
@@ -156,17 +157,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="600">
               <caret line="45" selection-start-line="45" selection-end-line="59" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="420">
+              <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -183,7 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$income</find>
       <find>subject</find>
       <find>data</find>
       <find>var_dump</find>
@@ -213,6 +213,7 @@
       <find>headers</find>
       <find>fopen</find>
       <find>download</find>
+      <find>pwd</find>
     </findStrings>
     <replaceStrings>
       <replace>exp</replace>
@@ -294,10 +295,10 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/memAttn.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
-        <option value="$PROJECT_DIR$/download.php" />
-        <option value="$PROJECT_DIR$/datalyser.php" />
         <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/datalyser.php" />
+        <option value="$PROJECT_DIR$/download.php" />
       </list>
     </option>
   </component>
@@ -308,7 +309,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-2135" />
+    <option name="y" value="-196" />
     <option name="width" value="1630" />
     <option name="height" value="972" />
   </component>
@@ -320,7 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,6 +343,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,14 +446,8 @@
       <workItem from="1553510680247" duration="13399000" />
       <workItem from="1553591400156" duration="10878000" />
       <workItem from="1553672606151" duration="993000" />
-      <workItem from="1553846921143" duration="10718000" />
-    </task>
-    <task id="LOCAL-00007" summary="Presentation2 included">
-      <created>1546349093743</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1546349093743</updated>
+      <workItem from="1553846921143" duration="11008000" />
+      <workItem from="1553955872274" duration="994000" />
     </task>
     <task id="LOCAL-00008" summary="Rounds work properly, data storage works.">
       <created>1546510181828</created>
@@ -789,17 +785,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553874763716</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Updated Version nr., feature list.">
+      <created>1553874909203</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1553874909203</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277485000" />
+    <option name="totallyTimeSpent" value="278769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1630" height="972" extended-state="0" />
+    <frame x="-2135" y="-196" width="1630" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4971623" visible="true" weight="0.15806045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4971623" visible="true" weight="0.15994962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50283766" side_tool="true" weight="0.14900449" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -856,7 +859,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="input validation for text fields ---&gt; only numbers allowed!" />
     <MESSAGE value="Version 0.8" />
     <MESSAGE value="Version 0.81 --&gt; save.php works properly now, saves all the data." />
     <MESSAGE value="Started working on feedback, immedaite feedback is still broken." />
@@ -881,19 +883,20 @@
     <MESSAGE value="Layout: Centered Page container, min width: 500px, max width: 800 px." />
     <MESSAGE value="Overview only for participants in &quot;Delayed FB&quot; condition." />
     <MESSAGE value="Added Download functionality for Audit data, questionnaire data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Download functionality for Audit data, questionnaire data." />
+    <MESSAGE value="Updated Version nr., feature list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Version nr., feature list." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/datalyser.php</url>
-          <line>271</line>
+          <line>268</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/datalyser.php</url>
-          <line>259</line>
+          <line>256</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
@@ -1135,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/intro/tutorial_end.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/memAttn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1177,48 +1173,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="97" column="6" lean-forward="true" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tmp/audit.csv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/redirect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/include/intro/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/intro/tutorial_end.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="600">
           <caret line="45" selection-start-line="45" selection-end-line="59" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/audit.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/download.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="33" column="76" lean-forward="true" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datalyser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="322" lean-forward="true" selection-start-line="322" selection-end-line="322" />
+        <state relative-caret-position="373">
+          <caret line="246" column="47" lean-forward="true" selection-start-line="246" selection-start-column="47" selection-end-line="246" selection-end-column="47" />
           <folding>
             <element signature="e#6#72#0#PHP" expanded="true" />
             <element signature="n#multi2dSortAsc#0;n#!!top" />
@@ -1231,17 +1241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
+    <entry file="file://$PROJECT_DIR$/download.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="606">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
