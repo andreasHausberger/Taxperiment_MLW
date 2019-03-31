@@ -63,15 +63,15 @@ if (sizeof($_POST) >= 8) {
 </script>
 
 
-<h1>Motivational Postures (Commitment)</h1>
+
 
 <p>
-    Please rate the following statements. 1 = do not agree at all, 7 = fully agree.
+    Please rate the following statements. (1 = do not agree at all, 7 = fully agree)
 </p>
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Paying tax is the right thing to do.
+        <p class="questionText"> 1. Paying tax is the right thing to do. (1 = do not agree at all, 7 = fully agree)
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -80,7 +80,7 @@ if (sizeof($_POST) >= 8) {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Paying tax is a responsibility that should be willingly accepted by all citizens.
+        <p class="questionText"> 2. Paying tax is a responsibility that should be willingly accepted by all citizens. (1 = do not agree at all, 7 = fully agree)
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -90,7 +90,7 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. I feel a moral obligation to pay my tax.
+        <p class="questionText"> 3. I feel a moral obligation to pay my tax. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com3"); ?>
@@ -99,7 +99,7 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. Paying my tax ultimately advantages everyone.
+        <p class="questionText"> 4. Paying my tax ultimately advantages everyone. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com4"); ?>
@@ -108,7 +108,7 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. I think of tax paying as helping the government do worthwhile things.
+        <p class="questionText"> 5. I think of tax paying as helping the government do worthwhile things. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com5"); ?>
@@ -117,7 +117,7 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. Overall, I pay my tax with good will.
+        <p class="questionText"> 6. Overall, I pay my tax with good will. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com6"); ?>
@@ -126,7 +126,7 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 7. I resent paying tax.
+        <p class="questionText"> 7. I resent paying tax. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com7"); ?>
@@ -135,7 +135,8 @@ if (sizeof($_POST) >= 8) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 8. I accept responsibility for paying my fair share of tax.        </p>
+        <p class="questionText"> 8. I accept responsibility for paying my fair share of tax. (1 = do not agree at all, 7 = fully agree)
+        </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "com8"); ?>
 

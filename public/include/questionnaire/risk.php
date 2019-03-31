@@ -60,14 +60,9 @@ else {
     }
 </script>
 
-<h1>Risk Taking</h1>
-
-<p>
-    For each of the following statements, provide an answer on a scale ranging from 1 (= extremely risk-averse) to 7 (= extremely risk-seeking)
-</p>
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Would you describe yourself as a risk-averse or a risk-seeking person?
+        <p class="questionText"> 1. Would you describe yourself as a risk-averse or a risk-seeking person? (1 = extremely risk-averse; 7 = extremely risk-seeking)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk1"); ?>
@@ -76,7 +71,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 2. How would you describe your risk-related behavior in financial decisions?
+        <p class="questionText"> 2. How would you describe your risk-related behavior in financial decisions? (1 = extremely risk-averse; 7 = extremely risk-seeking)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk2"); ?>
@@ -85,7 +80,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. How would you describe your risk-related behavior in situations involving tax payments?
+        <p class="questionText"> 3. How would you describe your risk-related behavior in situations involving tax payments? (1 = extremely risk-averse; 7 = extremely risk-seeking)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk3"); ?>

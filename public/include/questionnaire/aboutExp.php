@@ -60,15 +60,14 @@ else {
     }
 </script>
 
-<h1>About The Experiment</h1>
 
 <p>
-    Please rate the following statements. 1 = do not agree at all, 7 = fully agree.
+    Please rate the following statements.
 </p>
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. The timing of feedback on whether I was audited was unfair
+        <p class="questionText"> 1. The timing of feedback on whether I was audited was unfair. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp1"); ?>
@@ -76,7 +75,7 @@ else {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. I was fairly treated by the tax authorities in the experiment
+        <p class="questionText"> 2. I was fairly treated by the tax authorities in the experiment. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp2"); ?>
@@ -84,7 +83,7 @@ else {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 3. During the experiment I felt fearful waiting for audits
+        <p class="questionText"> 3. During the experiment I felt fearful waiting for feedback whether I was audited or not. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp3"); ?>
@@ -93,7 +92,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. During the experiment I felt angry waiting for audits
+        <p class="questionText"> 4. During the experiment I felt angry waiting for feedback whether I was audited or not. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp4"); ?>
@@ -102,7 +101,7 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. During the experiment, I felt uncertain about my decisions to pay my taxes honestly or not
+        <p class="questionText"> 5. During the experiment, I felt uncertain about my decisions to pay my taxes honestly or not. (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp5"); ?>

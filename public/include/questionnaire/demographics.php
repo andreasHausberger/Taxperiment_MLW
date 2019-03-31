@@ -58,7 +58,7 @@ if (sizeof($_POST) >= 7) {
     }
 </script>
 
-<h1> Demographics </h1>
+
 <form method="post">
 
     <div class="item">

@@ -62,71 +62,71 @@ if (sizeof($_POST) >= 7) {
     }
 </script>
 
-<h1> Greed </h1>
 
-<p>Please rate the statements below. (1 - "Do not agree at all"; 7 - "Strongly agree")</p>
+
+<p>Please rate the statements below. </p>
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. I always want more.
+        <p class="questionText"> 1. I always want more. (1 - "Do not agree at all"; 5 - "Strongly agree")
 
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs1"); ?>
+            <?php echo createLikert(5, "dgs1"); ?>
 
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Actually, I’m kind of greedy.
+        <p class="questionText"> 2. Actually, I’m kind of greedy. (1 - "Do not agree at all"; 5 - "Strongly agree")
 
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs2"); ?>
-
-        </div>
-    </div>
-
-    <div class="item">
-        <p class="questionText"> 3. One can never have too much money.
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs3"); ?>
+            <?php echo createLikert(5, "dgs2"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. As soon as I have acquired something. I start to think about the next thing I want.
+        <p class="questionText"> 3. One can never have too much money. (1 - "Do not agree at all"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs4"); ?>
+            <?php echo createLikert(5, "dgs3"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. It doesn’t matter how much I have. I’m never completely satisfied.
+        <p class="questionText"> 4. As soon as I have acquired something. I start to think about the next thing I want. (1 - "Do not agree at all"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs5"); ?>
+            <?php echo createLikert(5, "dgs4"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. My life motto is “more is better.
+        <p class="questionText"> 5. It doesn’t matter how much I have. I’m never completely satisfied. (1 - "Do not agree at all"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs6"); ?>
+            <?php echo createLikert(5, "dgs5"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 7. I can’t imagine having too many things.
+        <p class="questionText"> 6. My life motto is “more is better. (1 - "Do not agree at all"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "dgs7"); ?>
+            <?php echo createLikert(5, "dgs6"); ?>
+
+        </div>
+    </div>
+
+    <div class="item">
+        <p class="questionText"> 7. I can’t imagine having too many things. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        </p>
+        <div class="radioDisplayHorizontal">
+            <?php echo createLikert(5, "dgs7"); ?>
 
         </div>
     </div>
