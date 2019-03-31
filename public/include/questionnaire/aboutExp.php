@@ -61,9 +61,6 @@ else {
 </script>
 
 
-<p>
-    Please rate the following statements.
-</p>
 
 <form method="post">
     <div class="item">

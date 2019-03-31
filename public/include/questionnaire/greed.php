@@ -64,7 +64,6 @@ if (sizeof($_POST) >= 7) {
 
 
 
-<p>Please rate the statements below. </p>
 
 <form method="post">
     <div class="item">

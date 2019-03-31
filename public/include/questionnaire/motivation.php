@@ -65,10 +65,6 @@ if (sizeof($_POST) >= 8) {
 
 
 
-<p>
-    Please rate the following statements. (1 = do not agree at all, 7 = fully agree)
-</p>
-
 <form method="post">
     <div class="item">
         <p class="questionText"> 1. Paying tax is the right thing to do. (1 = do not agree at all, 7 = fully agree)
