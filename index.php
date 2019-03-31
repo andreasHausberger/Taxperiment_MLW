@@ -12,13 +12,17 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.96 (Mar 2019)</p>
+<p>Dev Notes: Version 0.97 (Mar 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
-   <li>Layout revision: Experiment page is centered in screen, with a minimal width of 650px</li>
-   <li>New: Download of questionnaire and audit/round data --> All Conditions in one file. </li>
-   <li>Fix: Overview is presented only for participants in "delayed feedback" condition. </li>
+   <li>New: Tutorial informs participants whether they will receive instant or delayed feeback. </li>
+   <li>New: Random round selection at the end of the Questionnaire (randomly selects a single round, informs participant how much they earned). </li>
+   <li>Fix: Tax Input field ignores "Enter" key, preventing illicit submissions.</li>
+   <li>Fix: Tax Input field no longer provides suggestions.</li>
+   <li>Fix: Questionnaire items are reworded, scales are adapted, all headlines are deleted. </li>
+   <li>Fix: Questionnaire ends properly after "Demographics" page.</li>
+   <li>Fix: Download page no longer required password. </li>
 </ul>
 
 <br>
@@ -26,6 +30,7 @@ require_once ("public/templates/header.php");
 </b>
 <ul>
     <li>Hiding "Dev Notes" (will do for production)</li>
+    <li>"Extra Page" between Slider and Audit to prevent accidental Mouselab input. --> Still working on a solution.</li>
     <li>Run exp. a couple of times, see how it goes.</li>
 </ul>
 
