@@ -183,7 +183,7 @@ else {
             return fine;
         }
 
-        return 0;
+        return actualTax; // if the participant was honest, the actual tax has to be payed regardless!
     }
 
     function validateInput() {
