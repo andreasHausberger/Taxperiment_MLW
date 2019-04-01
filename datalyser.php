@@ -160,7 +160,7 @@ function ExpfromDB($nameofexp, $table)
     # Execute SQL query
     $result = $connection->query($sqlQuery);
     if ($result->num_rows == 0) {
-        echo "No records found";
+        echo "No records found with query $sqlQuery";
     }
 
     $rows = $result->fetch_all();
@@ -353,7 +353,7 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
             $outrow_s = array();
             $glprocvars = array(); // this array is used to save names of the boxes to count the process vars...
             $gladdvars = array();
-            $rowarr = ExpfromDB($arr[$expcount], $table);
+            $rowarr = ExpfromDB($arr[$expcount], "mlweb");
             for ($j = 0; $j < count($rowarr); $j++) {
                 $gladdvars[$j] = array();
                 $glcnt++;

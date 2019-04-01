@@ -31,7 +31,7 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
         "mlweb");
 }
 
-$sqlQuery = "select distinct expname from mlweb";
+$sqlQuery = "select distinct expname from mlweb order by expname asc";
 
 $result = $connection->query($sqlQuery);
 
@@ -46,12 +46,25 @@ else {
     $index = 0;
     foreach ($rows as $row) {
         echo ("
-        <form action=\"datalyser.php\" method=\"post\">
-    <input type=\"hidden\" value= $row[0] name=\"exp_name\">
-    <input type=\"hidden\" value=\"true\" name=\"unpack\">
-    <input type=\"hidden\" value=\"download\" name=\"act\">
-    <input type=\"submit\" value=\"Download .csv data for $row[0]\">
+<div class='downloadButtonDiv'style='display: inline-flex;'>
+  <form action='datalyser.php' method='post' style='margin: 0 10px;'>
+    <input type='hidden' value= $row[0] name='exp_name'>
+    <input type='hidden' value='true' name='unpack'>
+    <input type='hidden' value='download' name='act'>
+    <input type='submit' value='Download  raw .csv data for $row[0]'>
 </form>
+
+<form action='datalyser.php' method='post'>
+    <input type='hidden' value= $row[0] name='exp_name'>
+    <input type='hidden' value='true' name='unpack'>
+    <input type='hidden' value='150' name='threshold'>
+    <input type='hidden' value='process' name='act'>
+    <input type='submit' value='Download  processed .csv data for $row[0]'>
+</form>
+
+</div>
+      
+
         "
         );
 

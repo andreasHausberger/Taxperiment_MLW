@@ -42,6 +42,8 @@ require_once ("public/templates/header.php");
 
     <div>
         <iframe src="./resources/library/mlwebphp_100beta/mlweb_start_random.html" frameborder="0"></iframe>
+        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 8), a random condition is selected.
+        </p>
     </div>
 
     <div>
