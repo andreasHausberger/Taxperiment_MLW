@@ -44,6 +44,6 @@
     function displayMessage() {
         document.getElementById('continueButton').disabled = true;
 
-        document.getElementById("messageDisplay").innerText = "If you don't want to participate, please contact the experimenter wia the black intercom button."
+        document.getElementById("messageDisplay").innerText = "If you don't want to participate, please contact the experimenter via the black intercom button."
     }
 </script>

@@ -22,7 +22,7 @@ All data obtained from participants will be kept anonymous. There will be no rec
     <p class="MsoNormal">
         <span xml:lang="en-us" lang="en-us"><span class="textSpan">This study has been approved by the Ethical Review Board (ERB).  If you have any remarks or complaints regarding this research, you may also contact the Ethics Review Board of Tilburg School of Social and Behavioral Sciences via <a
                         href="mailto:erb@tilburguniversity.edu">ERB@tilburguniversity.edu</a>. If you have any further questions regarding this study, you may contact Christoph Kogler at <a
-                        href="mailto:c.kogler@tilburguniversity.edu">c.kogler@tilburguniversity.edu</a> c.kogler@tilburguniversity.edu. </span></span>
+                        href="mailto:c.kogler@tilburguniversity.edu">c.kogler@tilburguniversity.edu</a>. </span></span>
     </p>
 </div>
 </body>
