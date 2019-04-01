@@ -32,7 +32,7 @@ if (!isset($participant)) {
 
 $randomRound = rand(1, 18);
 
-if ($participant = 123) { $participant = 181; echo "<b> Test Mode! No meaningful data will be displayed here! </b>"; }
+if ($participant == 123) { $participant = 181; echo "<b> Test Mode! No meaningful data will be displayed here! </b>"; }
 $selectString = "SELECT pid, round, net_income FROM audit WHERE pid = $participant and round = $randomRound";
 
 
