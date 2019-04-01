@@ -12,19 +12,14 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.97.1 (Mar 2019)</p>
+<p>Dev Notes: Version 0.98 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
-   <li>New: Tutorial informs participants whether they will receive instant or delayed feeback. </li>
-   <li>New: Random round selection at the end of the Questionnaire (randomly selects a single round, informs participant how much they earned). </li>
-   <li>Fix: Tax Input field ignores "Enter" key, preventing illicit submissions.</li>
-   <li>Fix: Tax Input field no longer provides suggestions.</li>
-   <li>Fix: Questionnaire items are reworded, scales are adapted, all headlines are deleted. </li>
-   <li>Fix: Questionnaire ends properly after "Demographics" page.</li>
-   <li>Fix: Download page no longer required password. </li>
-    <li style="color:darkgreen">Fix: Incorrect tax due was subtracted in case of an honest audit </li>
-    <li style="color: darkgreen">Fix: Test mode was activated erroneously at the end of questionnaire. </li>
+   <li>New: Extra overlay for audits prevents accidental input.</li>
+   <li>New: Processed Exp Data can be downloaded. </li>
+   <li>New: Clearer information how to select a condition.  </li>
+   <li>Fix: Condition selection works.  </li>
 </ul>
 
 <br>
@@ -32,7 +27,6 @@ require_once ("public/templates/header.php");
 </b>
 <ul>
     <li>Hiding "Dev Notes" (will do for production)</li>
-    <li>"Extra Page" between Slider and Audit to prevent accidental Mouselab input. --> Still working on a solution.</li>
     <li>Run exp. a couple of times, see how it goes.</li>
 </ul>
 
