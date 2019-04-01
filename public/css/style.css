@@ -149,3 +149,15 @@ Audit Page
     font-size: 20px;
     font-weight: 800;
 }
+
+/*
+Downloads
+ */
+
+.downloadButtonDiv {
+    display: flex !important;
+}
+
+.downloadButtonDiv form {
+    margin: auto 40px;
+}

@@ -10,9 +10,14 @@
 // it also sets the subject and condnum in a cookie
 
 //calculate random number
-            var r = Math.floor(Math.random() * 8) + 1;
+            var selectedCondition = parseInt(document.getElementById("condnum").value);
 
-            switch (r) {
+            if (typeof selectedCondition != "number" || selectedCondition == "" || selectedCondition <= 0) {
+                selectedCondition = Math.floor(Math.random() * 8) + 1;
+
+            }
+
+            switch (selectedCondition) {
                 case 1:
                     // link for condition 1
                     linkstr =  "/public/include/intro/index.php?condition=1";
@@ -77,7 +82,7 @@
             <TD><input name="subject" type="text" id="subject"></TD>
         </TR>
         <TR>
-            <TD>condition number:</TD>
+            <TD>Condition number: </TD>
             <TD><input name="condnum" type="text" id="condnum" size="10"></TD>
         </TR>
         <TR>
