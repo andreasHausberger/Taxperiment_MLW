@@ -68,9 +68,7 @@ Audit Page
 
 /*Audit overlay*/
 
-#overlay {
-    display: hidden;
-    width: 0;
+.overlay {
     height: 100%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
@@ -80,6 +78,26 @@ Audit Page
     overflow: hidden;
     position: fixed;
     transition: 0.2s;
+}
+
+#introOverlay {
+    width: 100%;
+    z-index: 100;
+
+}
+
+#introOverlay #infoContainer {
+    height: 25vh;
+}
+
+#innerInfoContainer {
+    padding-top: 8vh;
+}
+
+#feedbackOverlay {
+    width: 0;
+    display: none;
+
 }
 
 .feedbackContainer {

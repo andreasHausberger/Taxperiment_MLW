@@ -159,11 +159,11 @@ else {
         }
 
 
-        document.getElementById("overlay").style.width = "100%";
+        document.getElementById("feedbackOverlay").style.width = "100%";
     }
 
     function collapseInformation(txt1, txt2, txt3) {
-        document.getElementById('overlay').style.width = '0';
+        document.getElementById('feedbackOverlay').style.width = '0';
         timefunction(txt1, txt2, txt3);
     }
 
@@ -211,6 +211,10 @@ else {
         }
     }
 
+    function collapseIntroOverlay() {
+        document.getElementById("introOverlay").style.width = 0;
+    }
+
 
 </script>
 
@@ -231,7 +235,18 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
     <input id="submitButton" type= <?php echo($feedback == "0" ? "button" : "submit"); ?>
            class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">
 
-    <div id="overlay">
+    <div class="overlay" id="introOverlay">
+        <div class="feedbackContainer" id="infoContainer">
+            <div id="innerInfoContainer">
+                <h3> Audit </h3>
+                <p> Your audit will now begin. Please click "Continue".</p>
+                <input type="button" value="Continue" onclick="collapseIntroOverlay()">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay" id="feedbackOverlay">
         <div class="feedbackContainer">
             <table>
                 <tbody>
