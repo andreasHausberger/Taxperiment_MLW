@@ -29,7 +29,7 @@ $headerQuery = "SHOW columns FROM audit";
 $resultQuery = "SELECT distinct a.*, m.condnum FROM audit a JOIN mlweb m ON a.pid = m.subject";
 
 $questionnaireHeaderQuery = "SHOW columns FROM questionnaire";
-$questionnaireResultQuery = "SELECT * FROM questionnaire";
+$questionnaireResultQuery = "SELECT * FROM questionnaire where pid != 123";
 
 if (isset($connection)) {
 
