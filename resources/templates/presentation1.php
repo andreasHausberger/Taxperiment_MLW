@@ -37,7 +37,7 @@ if (isset($_GET['condition'])) {
 
     let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "^";
     let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
-    let fineRate = <?php echo $fineRate ?> + "x evaded amount" + "`";
+    let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
     let income =  <?php echo $mostRecentScore ?> + " ECU";
 
     txt = auditProbability + fineRate + taxRate + income;
