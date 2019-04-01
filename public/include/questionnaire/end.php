@@ -32,7 +32,7 @@ if (!isset($participant)) {
 
 $randomRound = rand(1, 18);
 
-if ($participant == 123) { $participant = 181; echo "<b> Test Mode! No meaningful data will be displayed here! </b>"; }
+if ($participant == 123) { $participant = 181; echo "<b style='color: red'> WARNING! You are in Test Mode. If you are a participant and see this message, please let the test supervisor know. </b>"; }
 $selectString = "SELECT pid, round, net_income FROM audit WHERE pid = $participant and round = $randomRound";
 
 
@@ -66,8 +66,8 @@ $euros = round($income / 300, 2);
     Please tell the experimenter that you are finished and you will be paid the amount.
 </p>
 
-<b>
-    DO NOT CLOSE THIS PAGE!
+<b style="color: darkred">
+    DO NOT CLOSE OR RELOAD THIS PAGE!
 </b>
-<p> If you close this page, you cannot be paid.</p>
+<p> If you close or this page, you cannot be paid. </p>
 
