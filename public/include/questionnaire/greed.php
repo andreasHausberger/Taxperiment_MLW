@@ -67,7 +67,7 @@ if (sizeof($_POST) >= 7) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. I always want more. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 1. I always want more. (1 - "Strongly disagree"; 5 - "Strongly agree")
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -76,7 +76,7 @@ if (sizeof($_POST) >= 7) {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Actually, I’m kind of greedy. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 2. Actually, I’m kind of greedy. (1 - "Strongly disagree"; 5 - "Strongly agree")
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -86,7 +86,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. One can never have too much money. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 3. One can never have too much money. (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs3"); ?>
@@ -95,7 +95,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. As soon as I have acquired something. I start to think about the next thing I want. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 4. As soon as I have acquired something. I start to think about the next thing I want. (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs4"); ?>
@@ -104,7 +104,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. It doesn’t matter how much I have. I’m never completely satisfied. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 5. It doesn’t matter how much I have. I’m never completely satisfied. (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs5"); ?>
@@ -113,7 +113,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. My life motto is “more is better. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 6. My life motto is “more is better. (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs6"); ?>
@@ -122,7 +122,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 7. I can’t imagine having too many things. (1 - "Do not agree at all"; 5 - "Strongly agree")
+        <p class="questionText"> 7. I can’t imagine having too many things. (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs7"); ?>
