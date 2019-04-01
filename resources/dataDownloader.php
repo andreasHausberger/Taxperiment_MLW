@@ -26,7 +26,7 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
 }
 
 $headerQuery = "SHOW columns FROM audit";
-$resultQuery = "SELECT a.*, m.condnum FROM audit a JOIN mlweb m ON a.pid = m.subject";
+$resultQuery = "SELECT distinct a.*, m.condnum FROM audit a JOIN mlweb m ON a.pid = m.subject";
 
 $questionnaireHeaderQuery = "SHOW columns FROM questionnaire";
 $questionnaireResultQuery = "SELECT * FROM questionnaire";
