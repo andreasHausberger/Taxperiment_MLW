@@ -57,7 +57,8 @@ else {
 <form action='datalyser.php' method='post'>
     <input type='hidden' value= $row[0] name='exp_name'>
     <input type='hidden' value='true' name='unpack'>
-    <input type='hidden' value='150' name='threshold'>
+    <input type='hidden' value='100' name='threshold'>
+    <input type='hidden' value='2' name='divisions'>
     <input type='hidden' value='process' name='act'>
     <input type='submit' value='Download  processed .csv data for $row[0]'>
 </form>
