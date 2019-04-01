@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +36,8 @@
         <counts>
           <entry key="CSS" value="1897" />
           <entry key="HTML" value="1207" />
-          <entry key="PHP" value="60864" />
-          <entry key="PLAIN_TEXT" value="3225" />
+          <entry key="PHP" value="61050" />
+          <entry key="PLAIN_TEXT" value="3365" />
           <entry key="SQL" value="9" />
         </counts>
       </usages-collector>
@@ -93,8 +92,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="977">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -484,21 +487,7 @@
       <workItem from="1553591400156" duration="10878000" />
       <workItem from="1553672606151" duration="993000" />
       <workItem from="1553846921143" duration="11008000" />
-      <workItem from="1553955872274" duration="9976000" />
-    </task>
-    <task id="LOCAL-00020" summary="Fines work">
-      <created>1548420619440</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1548420619440</updated>
-    </task>
-    <task id="LOCAL-00021" summary="added end page.">
-      <created>1548420729767</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1548420729767</updated>
+      <workItem from="1553955872274" duration="10242000" />
     </task>
     <task id="LOCAL-00022" summary="removed echo count">
       <created>1548420771249</created>
@@ -829,11 +818,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554105979810</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Fixed a bug where test mode was displayed for all participants at the end of questionnaire.">
+      <created>1554106067272</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1554106067272</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Reworded instructions and error message.">
+      <created>1554106281991</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1554106281991</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287751000" />
+    <option name="totallyTimeSpent" value="288017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1630" height="972" extended-state="0" />
@@ -896,8 +899,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Build Demo link for questionnaire" />
-    <MESSAGE value="Updated create_table to account for new tables 'audit' and 'questionnaire'" />
     <MESSAGE value="Hot Fix Create tables" />
     <MESSAGE value="Hot Fix Create tables but this time it works." />
     <MESSAGE value="Trying to fix q demo" />
@@ -921,7 +922,9 @@
     <MESSAGE value="Questionnaire: Reworded questions, deleted headlines, fixed scales." />
     <MESSAGE value="Changed version number, added change list." />
     <MESSAGE value="Fixed a bug where no tax had to be payed in case of an audit/honesty situation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where no tax had to be payed in case of an audit/honesty situation." />
+    <MESSAGE value="Fixed a bug where test mode was displayed for all participants at the end of questionnaire." />
+    <MESSAGE value="Reworded instructions and error message." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworded instructions and error message." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1280,8 +1283,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="977">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

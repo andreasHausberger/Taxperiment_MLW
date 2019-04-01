@@ -69,5 +69,5 @@ $euros = round($income / 300, 2);
 <b style="color: darkred">
     DO NOT CLOSE OR RELOAD THIS PAGE!
 </b>
-<p> If you close or this page, you cannot be paid. </p>
+<p> If you close or reload this page, you cannot be paid. </p>
 
