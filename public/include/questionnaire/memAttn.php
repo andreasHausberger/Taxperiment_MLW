@@ -109,18 +109,18 @@ if (sizeof($_POST) >= 3) {
             <p> 3. What were the fine levels in the tax experiment?</p>
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="0" onclick="addToArray('ma3')">
-                <p> 1, 2, or 3 times the evaded amount</p>
+                <p>Payback +  1, 2, or 3 times the evaded amount</p>
             </div>
 
 
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="1" onclick="addToArray('ma3')">
-                <p> 2, 3, or 4 times the evaded amount </p>
+                <p>Payback +  2, 3, or 4 times the evaded amount </p>
             </div>
 
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="2" onclick="addToArray('ma3')">
-                <p> 2, 4, or 6 times the evaded amount</p>
+                <p>Payback +  2, 4, or 6 times the evaded amount</p>
             </div>
 
         </div>
