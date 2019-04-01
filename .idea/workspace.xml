@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +37,7 @@
         <counts>
           <entry key="CSS" value="1897" />
           <entry key="HTML" value="1207" />
-          <entry key="PHP" value="61050" />
+          <entry key="PHP" value="61269" />
           <entry key="PLAIN_TEXT" value="3365" />
           <entry key="SQL" value="9" />
         </counts>
@@ -89,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="977">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="466">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#1;n#!!top" expanded="true" />
@@ -138,11 +139,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="422">
+              <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#li#7;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -299,9 +304,9 @@
         <option value="$PROJECT_DIR$/public/include/questionnaire/aboutExp.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/greed.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/motivation.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/end.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -487,14 +492,7 @@
       <workItem from="1553591400156" duration="10878000" />
       <workItem from="1553672606151" duration="993000" />
       <workItem from="1553846921143" duration="11008000" />
-      <workItem from="1553955872274" duration="10242000" />
-    </task>
-    <task id="LOCAL-00022" summary="removed echo count">
-      <created>1548420771249</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1548420771249</updated>
+      <workItem from="1553955872274" duration="10403000" />
     </task>
     <task id="LOCAL-00023" summary="HOTFIX: Disabled auto-audit">
       <created>1548421067348</created>
@@ -832,11 +830,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554106281991</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Reworded instructions and error message.">
+      <created>1554106448067</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1554106448067</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288017000" />
+    <option name="totallyTimeSpent" value="288178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1630" height="972" extended-state="0" />
@@ -1267,13 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1283,11 +1281,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="977">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="466">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#li#7;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#8;n#ul#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,7 +12,7 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.97 (Mar 2019)</p>
+<p>Dev Notes: Version 0.97.1 (Mar 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
@@ -23,6 +23,8 @@ require_once ("public/templates/header.php");
    <li>Fix: Questionnaire items are reworded, scales are adapted, all headlines are deleted. </li>
    <li>Fix: Questionnaire ends properly after "Demographics" page.</li>
    <li>Fix: Download page no longer required password. </li>
+    <li style="color:darkgreen">Fix: Incorrect tax due was subtracted in case of an honest audit </li>
+    <li style="color: darkgreen">Fix: Test mode was activated erroneously at the end of questionnaire. </li>
 </ul>
 
 <br>
