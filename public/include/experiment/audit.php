@@ -238,7 +238,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
     <div class="overlay" id="introOverlay">
         <div class="feedbackContainer" id="infoContainer">
             <div id="innerInfoContainer">
-                <h3> Audit </h3>
+                <br>
                 <br>
                 <br>
                 <input type="button" value="Click here to continue" onclick="collapseIntroOverlay()">
