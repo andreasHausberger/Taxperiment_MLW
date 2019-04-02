@@ -40,7 +40,7 @@ if (isset($_GET['condition'])) {
     let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
     let income =  <?php echo $mostRecentScore ?> + " ECU";
 
-    txt = "10% chance ^" + "2 x evaded amount `" + "40%: 400 ECU ^" + "1000 ECU";
+    txt = "10% chance ^" + "Payback + 200% `" + "40%: 400 ECU ^" + "1000 ECU";
 
     console.log(txt);
 
