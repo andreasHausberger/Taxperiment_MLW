@@ -35,6 +35,8 @@ $randomRound = rand(1, 18);
 if ($participant == 123) { $participant = 181; echo "<b style='color: red'> WARNING! You are in Test Mode. If you are a participant and see this message, please let the test supervisor know. </b>"; }
 $selectString = "SELECT pid, round, net_income FROM audit WHERE pid = $participant and round = $randomRound";
 
+$updateString = "UPDATE audit SET selected = 1 WHERE pid = $participant AND round = $randomRound";
+
 
 $results = $connection->query($selectString);
 
