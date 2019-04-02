@@ -96,7 +96,7 @@ Audit Page
 
 #feedbackOverlay {
     width: 0;
-    display: none;
+    display: block;
 
 }
 

@@ -157,9 +157,11 @@ else {
             document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
 
         }
+        console.log("finished calculations, now displaying...");
 
 
         document.getElementById("feedbackOverlay").style.width = "100%";
+        document.getElementById("feedbackOverlay").style.display = "block";
     }
 
     function collapseInformation(txt1, txt2, txt3) {
