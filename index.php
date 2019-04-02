@@ -12,7 +12,7 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Dev Notes: Version 0.98 (Apr 2019)</p>
+<p>Dev Notes: Version 0.98.1 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
@@ -20,6 +20,8 @@ require_once ("public/templates/header.php");
    <li>New: Processed Exp Data can be downloaded. </li>
    <li>New: Clearer information how to select a condition.  </li>
    <li>Fix: Condition selection works.  </li>
+    <li>Fix: Audit Overlay only contains button</li>
+    <li>Fix: divisions = 1 is set.</li>
 </ul>
 
 <br>
