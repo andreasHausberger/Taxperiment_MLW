@@ -21,8 +21,9 @@ else {
     if (!isset($connection)) {
         echo "Could not connect to database!";
     }
+
     else {
-        $sqlString = "SELECT round, actual_income, net_income, actual_tax, declared_tax, honesty, audit FROM audit WHERE pid = $participantID";
+        $sqlString = "SELECT round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, r.fine_rate FROM audit a join exp_round r on r.id = $participantID";
 
         $result = $connection->query($sqlString);
 
@@ -30,23 +31,44 @@ else {
         if (!function_exists(buildResultsRow)) {
             function buildResultsRow($row) {
                 $round = $row[0];
-                $actualIncome = $row[1];
+                $actualIncome = $row[1]; // earned income
                 $netIncome = $row[2];
-                $actualTax = $row[3];
-                $declaredTax = $row[4];
-                $honesty = $row[5] == 1 ? "You were honest" : "You evaded taxes";
-                $audit = $row[6] == 1 ? "You were audited" : "You were not audited";
+                $actualTax = $row[3]; // tax due
+                $declaredTax = $row[4]; // paid tax
+                $honesty = $row[5];
+                $auditValue = $row[6];
+                $audit = $auditValue  == 1 ? "Audited" : "Not Audited";
+                $missingTax = $actualTax - $declaredTax;
+                $fine = 0;
+
+                // fine is calculated if participant was audited AND dishonest.
+                if ($auditValue == 1 && $honesty == 0) {
+                    console_log("determining fine for overview");
+
+                    $fineRate = $row[7];
+                    $fine = $actualTax * $fineRate;
+                }
+
+                $mtPlusFine = $missingTax + $fine;
 
 
+
+                /**
+                 * "Round" (passt schon),
+                 * "Earned Income" (passt schon),
+                 * "Tax Due (in ECU)" muss rein, "Paid Tax" muss rein, dann
+                 * "Audit" also not audited/audited,
+                 * "Missing Tax Plus Fine" wo einfach der Betrag angegeben wird, also bei keiner Strafe/keinem Audit 0, und am Schluss dann
+                 * "Net Income".
+                 */
                 $htmlTableRow = "
                 <tr>
                     <td> $round </td>
                     <td> $actualIncome </td>
-                    <td> $netIncome </td>
                     <td> $actualTax </td>
-                    <td> $declaredTax </td>
-                    <td> $honesty </td>
                     <td> $audit </td>
+                    <td> $mtPlusFine </td>
+                    <td> $netIncome </td>
                 </tr>";
 
                 return $htmlTableRow;
@@ -59,6 +81,8 @@ else {
 
 echo "<h1> Overview </h1>";
 
+
+
 if ($feedback == 1 ) {
     echo "
     <table id=\"overviewTable\">
@@ -66,11 +90,10 @@ if ($feedback == 1 ) {
     <tr>
         <td>Round Nr. </td>
         <td>Earned Income</td>
-        <td>Net Income</td>
-        <td>Actual Tax</td>
-        <td>Declared Tax</td>
-        <td>Honesty</td>
+        <td>Tax Due (in ECU)</td>
         <td>Audit</td>
+        <td>Missing Tax Plus Fine</td>
+        <td>Net Income</td>
     </tr>
     </thead>
     <tbody>
