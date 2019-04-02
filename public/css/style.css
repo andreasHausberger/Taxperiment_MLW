@@ -151,9 +151,6 @@ Audit Page
     margin-right: 10px;
 }
 
-#overviewTable {
-    width: 80vw;
-}
 
 #overviewTable tr td {
     border: 1px solid black;
@@ -164,7 +161,7 @@ Audit Page
 }
 
 #overviewTable thead tr td {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 

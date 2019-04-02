@@ -23,7 +23,7 @@ else {
     }
 
     else {
-        $sqlString = "SELECT round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, r.fine_rate FROM audit a join exp_round r on r.id = $participantID";
+        $sqlString = "SELECT distinct round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, r.fine_rate FROM audit a join exp_round r on r.id = a.round WHERE pid = $participantID";
 
         $result = $connection->query($sqlString);
 
