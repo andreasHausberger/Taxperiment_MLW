@@ -42,6 +42,17 @@ $config = array(
     )
 );
 
+/**
+ * Enter database credentials here!
+ * First value: Constant var name (DO NOT CHANGE)
+ * Second value: Defined value (CHANGE THIS).
+ */
+define("DB_Host", "localhost");
+define("DB_User", "root");
+define("DB_Password", "root");
+define("DB_Name", "mlweb");
+
+
 
 if (getenv("CLEARDB_DATABASE_URL") != null) {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -53,10 +64,10 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
 
     $connection = new mysqli($server, $username, $password, $db);
 } else {
-    $connection = new mysqli("localhost",
-        "root",
-        "root",
-        "mlweb");
+    $connection = new mysqli(DB_Host,
+        DB_User,
+        DB_Password,
+        DB_Name);
 }
 
 

@@ -25,8 +25,7 @@ $condition = $_GET['condition'];
 
 if (isset($_GET['feedback'])) {
     $delayFeedback = $_GET['feedback'];
-    echo "Dev Notes: Checking feedback mode: " . ($delayFeedback == "0" ? "Immediate" : "Delayed");
-    echo "<br>";
+
 
 }
 else {
@@ -34,7 +33,6 @@ else {
 }
 if (isset($_GET['presentation'])) {
     $presentationBool = $_GET['presentation'];
-    echo "Dev Notes: Checking presentation mode: " . ($presentation == "0" ? "Presentation 1" : "Presentation 2");
     $mlwUrl = $presentationBool == "0" ? "../../../resources/templates/presentation1.php" : "../../../resources/templates/presentation2.php";
     include($mlwUrl);
 }
@@ -50,10 +48,6 @@ else {
 ?>
 
 <script>
-
-    $(document).ready(function() {
-        $("#footer").focus();
-    });
 
     $('form').on('keydown', function(event) {
         var x = event.which;
@@ -124,10 +118,6 @@ else {
             collapseInformation("submit", "submit", "submit");
            // window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
         }
-
-
-        // document.getElementById("submitButton").disabled = false;
-        //timefunction(txt1, txt2, txt3);
 
 
     }
@@ -202,8 +192,6 @@ else {
 
         else if (inputInt < 0 || inputInt > taxAmount) {
             document.getElementById("inputFeedback").innerText = "Please enter values of a minimum of 0 and a maximum of the amount of tax due!";
-
-
         }
         else {
             console.log("valid input... " + inputInt);

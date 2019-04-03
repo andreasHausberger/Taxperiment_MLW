@@ -111,7 +111,6 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
     var totalScore = 0;
 
     function addToScore(event) {
-        //console.log("hey");
         let inputScore = event.target.value;
         if (inputScore == 50) {
             let score = 100;
@@ -120,13 +119,12 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
             console.log("called addToScore with score " + score + " and a totalScore of: " + totalScore);
 
             document.getElementById('score').setAttribute('value', totalScore);
-            // enableButton();
             event.target.disabled = true;
         }
 
     }
 
-    var time = 20; //TODO: Change this.
+    var time = 20;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {
