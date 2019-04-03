@@ -40,6 +40,12 @@ $updateString = "UPDATE audit SET selected = 1 WHERE pid = $participant AND roun
 
 $results = $connection->query($selectString);
 
+$updated = $connection->query($updateString);
+
+if (!$updated) {
+    echo "Could not update selected round!";
+}
+
 $rows = $results->fetch_all();
 
 $income = $rows[0][2];

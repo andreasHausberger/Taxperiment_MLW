@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +39,8 @@
           <entry key="CSS" value="2162" />
           <entry key="HTML" value="1770" />
           <entry key="Markdown" value="1620" />
-          <entry key="PHP" value="64344" />
-          <entry key="PLAIN_TEXT" value="4470" />
+          <entry key="PHP" value="64345" />
+          <entry key="PLAIN_TEXT" value="4494" />
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -94,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+            <state relative-caret-position="141">
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -144,7 +142,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
@@ -298,8 +296,8 @@
         <option value="$PROJECT_DIR$/resources/templates/presentation_demo.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" />
-        <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/end.php" />
+        <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
       </list>
     </option>
   </component>
@@ -497,14 +495,7 @@
       <workItem from="1553955872274" duration="25010000" />
       <workItem from="1554216055411" duration="1961000" />
       <workItem from="1554274346380" duration="1887000" />
-      <workItem from="1554303489541" duration="4619000" />
-    </task>
-    <task id="LOCAL-00044" summary="Trying to fix q demo">
-      <created>1552387748986</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1552387748986</updated>
+      <workItem from="1554303489541" duration="4649000" />
     </task>
     <task id="LOCAL-00045" summary="http --&gt; https">
       <created>1552387949780</created>
@@ -842,11 +833,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554307985593</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Added &quot;fine&quot; data point.">
+      <created>1554308381097</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1554308381097</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311665000" />
+    <option name="totallyTimeSpent" value="311695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2208" y="-122" width="1630" height="972" extended-state="0" />
@@ -909,7 +907,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Questionnaire: Reworded questions, deleted headlines, fixed scales." />
     <MESSAGE value="Changed version number, added change list." />
     <MESSAGE value="Fixed a bug where no tax had to be payed in case of an audit/honesty situation." />
     <MESSAGE value="Fixed a bug where test mode was displayed for all participants at the end of questionnaire." />
@@ -934,7 +931,8 @@
     <MESSAGE value="Reworded intro text" />
     <MESSAGE value="Reworded questionnaire items." />
     <MESSAGE value="Fixed calculations for fine and tax amount --&gt; now works according to specifications." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed calculations for fine and tax amount --&gt; now works according to specifications." />
+    <MESSAGE value="Added &quot;fine&quot; data point." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;fine&quot; data point." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1272,13 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1286,6 +1277,13 @@
           <folding>
             <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
         </state>
       </provider>
     </entry>
