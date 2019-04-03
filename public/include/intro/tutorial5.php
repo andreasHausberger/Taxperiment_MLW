@@ -15,6 +15,7 @@
             <span class="textSpan">
                 The <b>tax due</b>, your chance of getting checked (<b>audit probability</b>), and the potential <b>fine</b> for detected evasion will <b>vary</b> each round, so carefully read all the information.            <br>
             <span class="textSpan">
+                <br>
                 <i>Definitions: </i>
 
             </span>

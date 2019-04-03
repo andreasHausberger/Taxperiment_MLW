@@ -254,7 +254,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                 </tr>
                 <tr>
                     <td>
-                        Earned Income:
+                        Earned income:
                     </td>
                     <td id="earnedIncomeCell">
 
@@ -262,7 +262,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                 </tr>
                 <tr id="declaredIncomeRow" style="display: none;">
                     <td>
-                        Declared Income:
+                        Declared income:
                     </td>
                     <td id="declaredIncomeCell">
 
@@ -270,7 +270,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                 </tr>
                 <tr>
                     <td>
-                        Tax due (in ECU):
+                        Tax due:
                     </td>
                     <td id="taxDueCell">
 
@@ -279,7 +279,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
                 <tr id="paidTaxRow">
                     <td>
-                        Paid Tax:
+                        Paid tax:
                     </td>
                     <td id="paidTaxCell">
 
@@ -287,7 +287,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
                 </tr>
                 <tr id="missingTaxRow">
                     <td>
-                        Missing Tax plus fine:
+                        Fine + payback:
                     </td>
                     <td id="missingTaxCell">
 
@@ -296,7 +296,7 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
                 <tr>
                     <td>
-                        Net Income:
+                        Net income:
                     </td>
                     <td id="netIncomeCell">
 
