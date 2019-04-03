@@ -76,6 +76,9 @@ else {
 
         let fine = 0;
 
+        netIncome = actualIncome - reportedTax;
+
+
 
 
         console.log("testing " + randomNr + " against probability " + probability);
@@ -85,11 +88,9 @@ else {
 
             fine = startAudit(actualTax, reportedTax);
 
-            if (fine === 0) {
-                netIncome = actualIncome - reportedTax;
-            }
-            else {
-                netIncome = actualIncome - fine;
+
+            if (fine !== 0) {
+                netIncome = netIncome - fine;
             }
 
 
@@ -100,7 +101,6 @@ else {
 
         }
         else {
-            netIncome = actualIncome - reportedTax;
 
 
             document.getElementById("wasAudited").value = false;
@@ -142,16 +142,17 @@ else {
         document.getElementById("paidTaxCell").innerText = reportedTax;
         document.getElementById("netIncomeCell").innerText = reportedIncome;
         document.getElementById("missingTaxCell").innerText = totalFineAmount;
-        document.getElementById("missingTaxRow").style.display = "table-row";
+
 
         if (audit) {
-
+            document.getElementById("missingTaxRow").style.display = "table-row";
             document.getElementById("auditText").innerHTML = "You were <b> audited! </b> "
             // document.getElementById("paidTaxRow").style.display = "none";
             // document.getElementById("declaredIncomeRow").style.display = "none";
         }
         else {
             document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
+            document.getElementById("missingTaxRow").style.display = "none";
 
         }
         console.log("finished calculations, now displaying...");
