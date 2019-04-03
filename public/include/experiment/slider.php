@@ -124,7 +124,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
 
     }
 
-    var time = 20;
+    var time = 5; //20;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {

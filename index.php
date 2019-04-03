@@ -12,14 +12,13 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.0 (Apr 2019)</p>
+<p>Production Version 1.0.1 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
 
-    <li>Fix: divisions = 1 is set.</li>
-    <li>Bugfix: Immediate Feedback overlay shows up again.</li>
-    <li>New: Hidden "Dev Notes" annotations for Production version.</li>
+   <li>Fix: Round selection is now saved in database.</li>
+   <li>Fix: Content of items reworked</li>
 </ul>
 
 <br>

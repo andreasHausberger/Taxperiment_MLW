@@ -72,7 +72,7 @@ else {
         let honesty = actualTax == reportedTax; //true or false, depending on the declaration
 
         let randomNr = Math.random();
-        let audit = (randomNr <= probability);
+        let audit = true; //(randomNr <= probability);
 
         let fine = 0;
 
@@ -85,7 +85,13 @@ else {
 
             fine = startAudit(actualTax, reportedTax);
 
-            netIncome = actualIncome - fine;
+            if (fine === 0) {
+                netIncome = actualIncome - reportedTax;
+            }
+            else {
+                netIncome = actualIncome - fine;
+            }
+
 
             if (netIncome < 0) { netIncome = 0; }
 
@@ -133,7 +139,7 @@ else {
         document.getElementById("earnedIncomeCell").innerText = income;
         document.getElementById("declaredIncomeCell").innerText = reportedIncome;
         document.getElementById("taxDueCell").innerText = Math.floor(income * taxRate);
-        document.getElementById("paidTaxCell").innerText = paidTaxAmount;
+        document.getElementById("paidTaxCell").innerText = reportedTax;
         document.getElementById("netIncomeCell").innerText = reportedIncome;
         document.getElementById("missingTaxCell").innerText = totalFineAmount;
         document.getElementById("missingTaxRow").style.display = "table-row";
@@ -141,8 +147,8 @@ else {
         if (audit) {
 
             document.getElementById("auditText").innerHTML = "You were <b> audited! </b> "
-            document.getElementById("paidTaxRow").style.display = "none";
-            document.getElementById("declaredIncomeRow").style.display = "none";
+            // document.getElementById("paidTaxRow").style.display = "none";
+            // document.getElementById("declaredIncomeRow").style.display = "none";
         }
         else {
             document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
