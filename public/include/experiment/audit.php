@@ -106,13 +106,14 @@ else {
         document.getElementById("actual_income").value = "" + actualIncome;
         document.getElementById("net_income").value = "" + netIncome;
         document.getElementById("wasHonest").value = honesty;
+        document.getElementById("fine").value = "" + fine;
 
 
 
         let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
 
         if (feedbackIsDelayed == 0) {
-            displayInformation(audit, actualIncome, netIncome, fine, taxRate);
+            displayInformation(audit, actualIncome, netIncome, fine, taxRate, reportedTax);
         }
         else {
             collapseInformation("submit", "submit", "submit");
@@ -122,28 +123,28 @@ else {
 
     }
 
-    function displayInformation(audit, income, reportedIncome, fine, taxRate) {
+    function displayInformation(audit, income, reportedIncome, fine, taxRate, reportedTax) {
 
         let paidTaxAmount = income - reportedIncome;
         let actualTaxAmount = Math.floor(income * taxRate);
-        let taxDiscrepancy = actualTaxAmount - paidTaxAmount;
+        let taxDiscrepancy = actualTaxAmount - reportedTax;
 
-        let totalFineAmount = audit ? fine : 0;
+        let totalFineAmount = audit ?  fine : taxDiscrepancy;
         document.getElementById("earnedIncomeCell").innerText = income;
         document.getElementById("declaredIncomeCell").innerText = reportedIncome;
         document.getElementById("taxDueCell").innerText = Math.floor(income * taxRate);
         document.getElementById("paidTaxCell").innerText = paidTaxAmount;
         document.getElementById("netIncomeCell").innerText = reportedIncome;
+        document.getElementById("missingTaxCell").innerText = totalFineAmount;
+        document.getElementById("missingTaxRow").style.display = "table-row";
 
         if (audit) {
-            document.getElementById("missingTaxCell").innerText = totalFineAmount;
-            document.getElementById("missingTaxRow").style.display = "table-row";
+
             document.getElementById("auditText").innerHTML = "You were <b> audited! </b> "
             document.getElementById("paidTaxRow").style.display = "none";
             document.getElementById("declaredIncomeRow").style.display = "none";
         }
         else {
-            document.getElementById("missingTaxRow").style.display = "none";
             document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
 
         }
@@ -168,14 +169,14 @@ else {
 
             let discrepancy = actualTax - reportedTax;
 
-            let fine = discrepancy + (actualTax * fineRate);
+            let fine = discrepancy + (discrepancy * fineRate); // fine is the amount of evaded tax + fine rate * the amount of evaded tax
 
             console.log("Participant was audited! Declared " + reportedTax + " vs. actual amount " + actualTax );
 
             return fine;
         }
 
-        return actualTax; // if the participant was honest, the actual tax has to be payed regardless!
+        return 0;
     }
 
     function validateInput() {
@@ -186,7 +187,6 @@ else {
 
         if (isNaN(inputInt)) {
             document.getElementById("inputFeedback").innerText = "Please enter numbers only!";
-
 
         }
 

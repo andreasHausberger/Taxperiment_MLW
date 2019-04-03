@@ -120,6 +120,7 @@ $saveURL = "../../exp_config.php?&tw=0&sname=$participant&condition=$condition";
     <input type="hidden" id="net_income" name="net_income">
     <input type="hidden" id="wasAudited" name="wasAudited" >
     <input type="hidden" id="wasHonest" name="wasHonest">
+    <input type="hidden" id="fine" name="fine">
     <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
     <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
     <input type="hidden" name="round" value=<?php echo $currentRound ?>>
