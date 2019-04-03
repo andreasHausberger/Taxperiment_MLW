@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/experiment/feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/feedback.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +38,8 @@
           <entry key="CSS" value="2162" />
           <entry key="HTML" value="1770" />
           <entry key="Markdown" value="1620" />
-          <entry key="PHP" value="64345" />
-          <entry key="PLAIN_TEXT" value="4494" />
+          <entry key="PHP" value="64355" />
+          <entry key="PLAIN_TEXT" value="4565" />
           <entry key="SQL" value="13" />
         </counts>
       </usages-collector>
@@ -63,7 +62,7 @@
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="443" />
+          <entry key="PHP" value="444" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -83,16 +82,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/templates/presentation2.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="121" column="47" selection-start-line="121" selection-start-column="47" selection-end-line="121" selection-end-column="47" />
+            <state relative-caret-position="95">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
@@ -145,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+            <state relative-caret-position="276">
+              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
               </folding>
@@ -279,7 +278,6 @@
         <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
         <option value="$PROJECT_DIR$/datalyser.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" />
-        <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
         <option value="$PROJECT_DIR$/download.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/slider.php" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -298,6 +296,7 @@
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/end.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
+        <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
       </list>
     </option>
   </component>
@@ -495,14 +494,7 @@
       <workItem from="1553955872274" duration="25010000" />
       <workItem from="1554216055411" duration="1961000" />
       <workItem from="1554274346380" duration="1887000" />
-      <workItem from="1554303489541" duration="4649000" />
-    </task>
-    <task id="LOCAL-00045" summary="http --&gt; https">
-      <created>1552387949780</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1552387949780</updated>
+      <workItem from="1554303489541" duration="4751000" />
     </task>
     <task id="LOCAL-00046" summary="http --&gt; https">
       <created>1552388695574</created>
@@ -840,11 +832,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554308381097</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Selection of rounds is now remarked in database.">
+      <created>1554308421374</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1554308421374</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311695000" />
+    <option name="totallyTimeSpent" value="311797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2208" y="-122" width="1630" height="972" extended-state="0" />
@@ -907,7 +906,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Changed version number, added change list." />
     <MESSAGE value="Fixed a bug where no tax had to be payed in case of an audit/honesty situation." />
     <MESSAGE value="Fixed a bug where test mode was displayed for all participants at the end of questionnaire." />
     <MESSAGE value="Reworded instructions and error message." />
@@ -932,7 +930,8 @@
     <MESSAGE value="Reworded questionnaire items." />
     <MESSAGE value="Fixed calculations for fine and tax amount --&gt; now works according to specifications." />
     <MESSAGE value="Added &quot;fine&quot; data point." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;fine&quot; data point." />
+    <MESSAGE value="Selection of rounds is now remarked in database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Selection of rounds is now remarked in database." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1121,13 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/experiment/slider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
@@ -1270,20 +1262,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="56" />
+        <state relative-caret-position="276">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        <state relative-caret-position="95">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>

@@ -23,7 +23,7 @@ else {
     }
 
     else {
-        $sqlString = "SELECT distinct round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, r.fine_rate FROM audit a join exp_round r on r.id = a.round WHERE pid = $participantID";
+        $sqlString = "SELECT distinct round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, fine FROM audit WHERE pid = $participantID";
 
         $result = $connection->query($sqlString);
 
@@ -39,15 +39,8 @@ else {
                 $auditValue = $row[6];
                 $audit = $auditValue  == 1 ? "Audited" : "Not Audited";
                 $missingTax = $actualTax - $declaredTax;
-                $fine = 0;
+                $fine = $row[7];
 
-                // fine is calculated if participant was audited AND dishonest.
-                if ($auditValue == 1 && $honesty == 0) {
-                    console_log("determining fine for overview");
-
-                    $fineRate = $row[7];
-                    $fine = $actualTax * $fineRate;
-                }
 
                 $mtPlusFine = $missingTax + $fine;
 
