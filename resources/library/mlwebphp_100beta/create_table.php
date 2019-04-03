@@ -165,6 +165,7 @@ $auditQuery = "CREATE TABLE IF NOT EXISTS`audit` (
   `declared_tax` int(11) DEFAULT NULL,
   `honesty` tinyint(4) DEFAULT NULL,
   `audit` tinyint(4) DEFAULT NULL,
+  `fine` int(11) DEFAULT NULL,
   `selected` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ";

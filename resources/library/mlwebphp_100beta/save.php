@@ -43,6 +43,7 @@ if (isset($_POST)) {
     $audit = $_POST['wasAudited'];
     $honesty = $_POST['wasHonest'];
     $currentRound = intval($_POST['round']);
+    $fine = intval($_POST['fine']);
     $nextURL = $_POST['nextURL'];
     $addvar = "null";
     $adddata = "null";
@@ -109,7 +110,7 @@ if (isset($connection)) {
 
 
 
-$auditQuery = "INSERT INTO audit (exp_id, pid, round, actual_income, net_income, actual_tax, declared_tax, honesty, audit) VALUES ($expID, $subject, $currentRound, $actualIncome, $netIncome,  $actualTax, $reportedTax, $honesty, $audited)";
+$auditQuery = "INSERT INTO audit (exp_id, pid, round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, fine) VALUES ($expID, $subject, $currentRound, $actualIncome, $netIncome,  $actualTax, $reportedTax, $honesty, $audited, $fine)";
 if (isset($connection)) {
     if ($connection->query($auditQuery)) {
         echo ("Inserted audit data successfully for ExpID $expID and round $currentRound");
