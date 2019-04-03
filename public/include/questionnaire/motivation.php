@@ -62,7 +62,9 @@ if (sizeof($_POST) >= 8) {
     }
 </script>
 
-
+<p>
+    Please indicate to what extent you agree with the following statements. Note that these statements refer to real life and are not specifically about the lab experiment you just completed.
+</p>
 
 
 <form method="post">

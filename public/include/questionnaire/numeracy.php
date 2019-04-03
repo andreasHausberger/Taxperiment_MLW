@@ -63,7 +63,7 @@ if (sizeof($_POST) >= 3) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. "Concerning general mathematical abilities, how good are you at working with fractions? (1 = not good at all to 7 = extremely good)</p>
+        <p class="questionText"> 1. Concerning general mathematical abilities, how good are you at working with fractions? (1 = not good at all to 7 = extremely good)</p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "num1"); ?>
         </div>
