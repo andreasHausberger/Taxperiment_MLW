@@ -115,12 +115,12 @@ if (sizeof($_POST) >= 3) {
 
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="1" onclick="addToArray('ma3')">
-                <p>Payback + 100%, 200%, or 300% of the evaded amount</p>
+                <p>Payback + 200%, 300%, or 400% of the evaded amount</p>
             </div>
 
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="2" onclick="addToArray('ma3')">
-                <p>Payback + 100%, 200%, or 300% of the evaded amount</p>
+                <p>Payback + 200%, 400%, or 600% of the evaded amount</p>
             </div>
 
         </div>
