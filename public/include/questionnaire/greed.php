@@ -113,7 +113,7 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. My life motto is “more is better. (1 - "Strongly disagree"; 5 - "Strongly agree")
+        <p class="questionText"> 6. My life motto is “more is better". (1 - "Strongly disagree"; 5 - "Strongly agree")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "dgs6"); ?>
