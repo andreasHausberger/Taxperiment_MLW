@@ -34,9 +34,6 @@ if (!function_exists("checkIfTableEmpty")) {
     function checkIfTableEmpty($connection, $table_name) {
 
         $result = $connection->query("SELECT * FROM $table_name");
-
-        echo "Checking if table $table_name has rows: " . $result->num_rows;
-        echo "<br>";
         return $result->num_rows == 0;
     }
 }
