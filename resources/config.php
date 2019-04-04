@@ -50,7 +50,7 @@ $config = array(
 define("DB_Host", "localhost");
 define("DB_User", "root");
 define("DB_Password", "root");
-define("DB_Name", "mlweb");
+define("DB_Name", "mlnew");
 
 
 
