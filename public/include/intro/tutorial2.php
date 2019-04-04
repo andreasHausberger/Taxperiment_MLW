@@ -17,7 +17,7 @@
 
     <p class="MsoNormal">
         <span class="textSpan">
-All data obtained from participants will be kept anonymous. There will be no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. The data will be stored for 10 years. </span>
+All data obtained from participants will be kept anonymous. There will be no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. The data will be stored for at least 10 years. </span>
     </p>
     <p class="MsoNormal">
         <span xml:lang="en-us" lang="en-us"><span class="textSpan">This study has been approved by the Ethical Review Board (ERB).  If you have any remarks or complaints regarding this research, you may also contact the Ethics Review Board of Tilburg School of Social and Behavioral Sciences via <a

@@ -66,8 +66,8 @@ $euros = round($income / 300, 2);
 <p>
     Round <?php echo $randomRound ?> was randomly chosen.
     In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to <?php echo $euros ?> Euro (300 ECU = 1 Euro).
-    Together with the show-up fee of 1 Euro, your payment for participating in this study is <?php echo ($euros + 1) ?> Euro.
+    This amounts to <?php echo $euros ?> Euros (300 ECU = 1 Euros).
+    Together with the show-up fee of 1 Euros, your payment for participating in this study is <?php echo ($euros + 1) ?> Euros.
 </p>
 <br>
 <p>
