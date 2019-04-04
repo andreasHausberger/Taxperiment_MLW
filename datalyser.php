@@ -139,20 +139,8 @@ function ExpfromDB($nameofexp, $table)
 {
 // get first experiment data
 
-    if (getenv("CLEARDB_DATABASE_URL") != null) {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-        $server = $url["host"];
-        $username = $url["user"];
-        $password = $url["pass"];
-        $db = substr($url["path"], 1);
-
-        $connection = new mysqli($server, $username, $password, $db);
-    } else {
-        $connection = new mysqli("localhost",
-            "root",
-            "root",
-            "mlweb");
+    if (!isset($connection)) {
+        $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
     }
 
     $sqlQuery = "SELECT * from $table where expname='" . $nameofexp . "'";
@@ -484,7 +472,7 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
                         if ($boxtime > $th) {
                             //$outrow[]=array_merge($temprow2[count($temprow)], array($roword, $colord, $evttype, $key, $glprocvars[$key], $boxtime, $localcount));
                             $outrowtmp[$glproccount[$key]] = array_merge(array_slice($temprow2[$c - 1], 0, $timeKey - 2), array($roword, $colord, $evttype, $key, $glprocvars[$key], $boxtime));
-                        }
+                        }$
                         $glprocvars[$key] = 0;
                         $glproccount[$key] = 0;
                     }

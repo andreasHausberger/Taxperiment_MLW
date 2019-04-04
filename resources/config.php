@@ -42,33 +42,40 @@ $config = array(
     )
 );
 
-/**
- * Enter database credentials here!
- * First value: Constant var name (DO NOT CHANGE)
- * Second value: Defined value (CHANGE THIS).
- */
-define("DB_Host", "localhost");
-define("DB_User", "root");
-define("DB_Password", "root");
-define("DB_Name", "mlnew");
-
-
 
 if (getenv("CLEARDB_DATABASE_URL") != null) {
+
+    /*
+     * This is just for a heroku setup --> can be ignored in production.
+     */
+
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-    $server = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $db = substr($url["path"], 1);
-
-    $connection = new mysqli($server, $username, $password, $db);
-} else {
-    $connection = new mysqli(DB_Host,
-        DB_User,
-        DB_Password,
-        DB_Name);
+    define("DB_Host", $url["host"]);
+    define("DB_User", $url["user"]);
+    define("DB_Password", $url["pass"]);
+    define("DB_Name", substr($url["path"], 1));
 }
+else {
+    /**
+     * Enter database credentials here!
+     * First value: Constant var name (DO NOT CHANGE)
+     * Second value: Defined value (CHANGE THIS).
+     */
+    define("DB_Host", "localhost");
+    define("DB_User","root");
+    define("DB_Password", "root");
+    define("DB_Name", "mlnew");
+}
+
+
+if (!isset($connection)) {
+        $connection = new mysqli(DB_Host,
+            DB_User,
+            DB_Password,
+            DB_Name);
+}
+
 
 
 if ($connection->connect_error) {

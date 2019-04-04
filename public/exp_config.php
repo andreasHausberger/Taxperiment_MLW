@@ -8,20 +8,24 @@
 
 require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
+
 // include ("./templates/header.php");
 
+if (!isset($connection)) {
+    $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
+    echo "Reestablished connection";
+}
 
+$participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
 
-$participantQuery = $connection->prepare("INSERT INTO participant (name, testweek) VALUES (?, ?)");
-
-$participantQuery->bind_param("si", $_GET['sname'], $_GET['tw']);
+$participantQuery->bind_param("s", $_GET['sname']);
 
 $participantID = -1;
 $experimentID = -1;
 
 if ($participantQuery->execute()) {
     $participantID = $connection->insert_id;
-    console_log(" Participant with id " . $participantID . " saved successfully");
+    echo (" Participant with id " . $participantID . " saved successfully");
 }
 else {
     echo "Error saving participant: " . $connection->error;
@@ -35,7 +39,7 @@ $experimentQuery->bind_param("ii", $condition, $participantID);
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
 
-    console_log(" Experiment data with ID " . $experimentID . " saved successfully! \n");
+    echo (" Experiment data with ID " . $experimentID . " saved successfully! \n");
 
 
 }

@@ -183,13 +183,13 @@ VALUES
 	(1,'delayed');";
 
 $insertOrderQuery = "
-INSERT INTO round_order (id, name)
+REPLACE INTO round_order (id, name)
 VALUES
 	(0,'standard'),
 	(1,'reversed');";
 
 $insertPresentationQuery = "
-INSERT INTO presentation (id, name)
+REPLACE INTO presentation (id, name)
 VALUES
 	(0,'one'),
 	(1,'two');";
@@ -270,4 +270,3 @@ foreach ($insertQueries as $insertQuery) {
     }
     $insertCount = $insertCount + 1;
 }
-?>

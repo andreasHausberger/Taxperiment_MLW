@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Changed some">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datalyser.php" beforeDir="false" afterPath="$PROJECT_DIR$/datalyser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/download.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/dataDownloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dataDownloader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +44,8 @@
           <entry key="CSS" value="2162" />
           <entry key="HTML" value="1770" />
           <entry key="Markdown" value="1620" />
-          <entry key="PHP" value="65765" />
-          <entry key="PLAIN_TEXT" value="4771" />
+          <entry key="PHP" value="66344" />
+          <entry key="PLAIN_TEXT" value="4817" />
           <entry key="SQL" value="19" />
         </counts>
       </usages-collector>
@@ -63,7 +68,7 @@
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="458" />
+          <entry key="PHP" value="466" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="TypeScript" value="1" />
         </counts>
@@ -85,22 +90,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/include/experiment/index.php">
+        <entry file="file://$PROJECT_DIR$/public/include/questionnaire/aboutExp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -115,66 +108,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="438">
+              <caret line="271" column="1" lean-forward="true" selection-start-line="271" selection-start-column="1" selection-end-line="271" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            <state relative-caret-position="470">
+              <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+        <entry file="file://$PROJECT_DIR$/public/exp_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="490">
+              <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php">
+        <entry file="file://$PROJECT_DIR$/download.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+            <state relative-caret-position="271">
+              <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/dataLoader.php">
+        <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+            <state relative-caret-position="406">
+              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/include/experiment/slider.php">
+        <entry file="file://$PROJECT_DIR$/datalyser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+            <state relative-caret-position="376">
+              <caret line="463" column="21" lean-forward="true" selection-start-line="463" selection-start-column="21" selection-end-line="463" selection-end-column="21" />
+              <folding>
+                <element signature="e#6#72#0#PHP" expanded="true" />
+                <element signature="n#multi2dSortAsc#0;n#!!top" />
+                <element signature="n#extractTag#0;n#!!top" />
+                <element signature="n#unpackProc#0;n#!!top" />
+                <element signature="e#22#28#1" expanded="true" />
+                <element signature="e#22#28#1" expanded="true" />
+                <element signature="e#22#28#1" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/roundDataLoader.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/start.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -189,7 +192,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>download</find>
       <find>pwd</find>
       <find>greater</find>
       <find>Tax Rate</find>
@@ -219,6 +221,7 @@
       <find>Dev</find>
       <find>`</find>
       <find>order</find>
+      <find>Made</find>
     </findStrings>
     <replaceStrings>
       <replace>exp</replace>
@@ -278,7 +281,6 @@
         <option value="$PROJECT_DIR$/public/include/questionnaire/index.php" />
         <option value="$PROJECT_DIR$/public/include/intro/tutorial_end.php" />
         <option value="$PROJECT_DIR$/public/templates/redirect.php" />
-        <option value="$PROJECT_DIR$/public/exp_config.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/cognitive.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/demographics.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/risk.php" />
@@ -286,10 +288,7 @@
         <option value="$PROJECT_DIR$/public/include/intro/tutorial2.php" />
         <option value="$PROJECT_DIR$/public/include/intro/tutorial3.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/greed.php" />
-        <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
-        <option value="$PROJECT_DIR$/datalyser.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" />
-        <option value="$PROJECT_DIR$/download.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/include/intro/tutorial6.php" />
@@ -306,8 +305,12 @@
         <option value="$PROJECT_DIR$/public/include/intro/tutorial5.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/memAttn.php" />
-        <option value="$PROJECT_DIR$/resources/config.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" />
+        <option value="$PROJECT_DIR$/public/exp_config.php" />
+        <option value="$PROJECT_DIR$/download.php" />
+        <option value="$PROJECT_DIR$/datalyser.php" />
+        <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
+        <option value="$PROJECT_DIR$/resources/config.php" />
       </list>
     </option>
   </component>
@@ -356,17 +359,6 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Taxperiment_MLW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taxperiment_MLW" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Taxperiment_MLW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taxperiment_MLW" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Taxperiment_MLW" type="b2602c69:ProjectViewProjectNode" />
@@ -484,14 +476,7 @@
       <workItem from="1554216055411" duration="1961000" />
       <workItem from="1554274346380" duration="1887000" />
       <workItem from="1554303489541" duration="9482000" />
-      <workItem from="1554364321067" duration="4719000" />
-    </task>
-    <task id="LOCAL-00053" summary="Layout: Centered Page container, min width: 500px, max width: 800 px.">
-      <created>1553854147139</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1553854147139</updated>
+      <workItem from="1554364321067" duration="6003000" />
     </task>
     <task id="LOCAL-00054" summary="Overview only for participants in &quot;Delayed FB&quot; condition.">
       <created>1553856487566</created>
@@ -829,17 +814,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554362241225</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Rewrote Create table syntax.">
+      <created>1554369358495</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1554369358495</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321247000" />
+    <option name="totallyTimeSpent" value="322531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1630" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.1649874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.1649874" />
       <window_info id="Structure" order="1" sideWeight="0.50323623" side_tool="true" weight="0.15806045" />
       <window_info id="Favorites" order="2" sideWeight="0.50283766" side_tool="true" weight="0.14900449" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -853,7 +845,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49685138" visible="true" weight="0.2977273" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.29903537" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5031486" side_tool="true" visible="true" weight="0.2977273" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5031486" side_tool="true" visible="true" weight="0.2977273" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -896,7 +888,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added &quot;Payback + &quot; to fine level attention question." />
     <MESSAGE value="Hotfix: Select distinct --&gt; no duplicate .csv rows." />
     <MESSAGE value="Hotfix: Ignore test data for questionnaire." />
     <MESSAGE value="Data processing works. Download of experiment data ordered by condition number works." />
@@ -921,10 +912,10 @@
     <MESSAGE value="Changed Version nr." />
     <MESSAGE value="Formatting" />
     <MESSAGE value="Removed duplicate answers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate answers." />
+    <MESSAGE value="Rewrote Create table syntax." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrote Create table syntax." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dat2.php" />
     <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/playback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1015,33 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/mlweb_public.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2415">
           <caret line="161" column="1" lean-forward="true" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datalyser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="486" column="25" lean-forward="true" selection-start-line="486" selection-start-column="25" selection-end-line="486" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#72#0#PHP" expanded="true" />
-            <element signature="n#multi2dSortAsc#0;n#!!top" />
-            <element signature="n#extractTag#0;n#!!top" />
-            <element signature="n#unpackProc#0;n#!!top" />
-            <element signature="e#22#28#1" expanded="true" />
-            <element signature="e#22#28#1" expanded="true" />
-            <element signature="e#22#28#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,17 +1030,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/download.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/exp.php" />
-    <entry file="file://$PROJECT_DIR$/public/roundDataLoader.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1159,24 +1117,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/questionnaire/aboutExp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/memAttn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
           <caret line="122" column="69" selection-start-line="122" selection-start-column="69" selection-end-line="122" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/exp_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1239,6 +1183,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="271" column="1" lean-forward="true" selection-start-line="271" selection-start-column="1" selection-end-line="271" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/exp_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1845">
@@ -1246,17 +1204,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.php">
+    <entry file="file://$PROJECT_DIR$/datalyser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="376">
+          <caret line="463" column="21" lean-forward="true" selection-start-line="463" selection-start-column="21" selection-end-line="463" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#72#0#PHP" expanded="true" />
+            <element signature="n#multi2dSortAsc#0;n#!!top" />
+            <element signature="n#extractTag#0;n#!!top" />
+            <element signature="n#unpackProc#0;n#!!top" />
+            <element signature="e#22#28#1" expanded="true" />
+            <element signature="e#22#28#1" expanded="true" />
+            <element signature="e#22#28#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
+    <entry file="file://$PROJECT_DIR$/public/roundDataLoader.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/start.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+        <state relative-caret-position="271">
+          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/dataDownloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/questionnaire/aboutExp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
         </state>
       </provider>
     </entry>
