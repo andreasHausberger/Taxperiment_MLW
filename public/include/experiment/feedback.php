@@ -42,7 +42,12 @@ else {
                 $fine = $row[7];
 
 
-                $mtPlusFine = $missingTax + $fine;
+                if ($auditValue == 0) {
+                    $mtPlusFine = 0;
+                }
+                else {
+                    $mtPlusFine = $missingTax + $fine;
+                }
 
 
 
@@ -59,6 +64,7 @@ else {
                     <td> $round </td>
                     <td> $actualIncome </td>
                     <td> $actualTax </td>
+                    <td> $declaredTax </td>
                     <td> $audit </td>
                     <td> $mtPlusFine </td>
                     <td> $netIncome </td>
@@ -81,12 +87,13 @@ if ($feedback == 1 ) {
     <table id=\"overviewTable\">
     <thead>
     <tr>
-        <td>Round Nr. </td>
-        <td>Earned Income</td>
-        <td>Tax Due (in ECU)</td>
+        <td>Round number </td>
+        <td>Earned income</td>
+        <td>Tax due </td>
+        <td>Paid tax </td>
         <td>Audit</td>
-        <td>Missing Tax Plus Fine</td>
-        <td>Net Income</td>
+        <td>Fine + payback</td>
+        <td>Net income</td>
     </tr>
     </thead>
     <tbody>
