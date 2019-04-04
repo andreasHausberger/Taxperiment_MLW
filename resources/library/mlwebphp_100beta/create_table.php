@@ -30,6 +30,17 @@ else {
     console_log("Connection established!");
 }
 
+if (!function_exists("checkIfTableEmpty")) {
+    function checkIfTableEmpty($connection, $table_name) {
+
+        $result = $connection->query("SELECT * FROM $table_name");
+
+        echo "Checking if table $table_name has rows: " . $result->num_rows;
+        echo "<br>";
+        return $result->num_rows == 0;
+    }
+}
+
 
 $expRoundQuery = "
 CREATE TABLE IF NOT EXISTS exp_round (
@@ -236,8 +247,8 @@ $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQ
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
     "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit" => $auditQuery, "Questionnaire" => $questionnaire);
 
-$insertQueries = array("Presentation Data" => $insertPresentationQuery, "Order Data" => $insertOrderQuery, "Feedback Data" => $insertFeedbackQuery,
-    "Experiment Condition Data" => $insertConditionQuery, "Experiment Rounds Data" => $insertRoundsQuery);
+$insertQueries = array("presentation" => $insertPresentationQuery, "round_order" => $insertOrderQuery, "feedback" => $insertFeedbackQuery,
+    "exp_condition" => $insertConditionQuery, "exp_round" => $insertRoundsQuery);
 
 $count = 0;
 $insertCount = 0;
@@ -259,14 +270,19 @@ foreach ($queries as $query) {
 }
 
 foreach ($insertQueries as $insertQuery) {
-    if ($connection->query($insertQuery)) {
-        $currentKey = $insertKeys[$insertCount];
-        console_log("Inserted data for $currentKey!");
-    } else {
-        $currentKey = $insertKeys[$insertCount];
-        echo "\n" . "INSERT: Problem with Insert for table " . $currentKey . ": " . $connection->error;
-        echo "<br>";
+    $currentKey = $insertKeys[$insertCount];
 
+    if (checkIfTableEmpty($connection, $currentKey)) {
+        if ($connection->query($insertQuery)) {
+            console_log("Inserted data for $currentKey!");
+        } else {
+            echo "\n" . "INSERT: Problem with Insert for table " . $currentKey . ": " . $connection->error;
+            echo "<br>";
+
+        }
     }
+    else { console_log("Data already inserted in $currentKey");
+    }
+
     $insertCount = $insertCount + 1;
 }
