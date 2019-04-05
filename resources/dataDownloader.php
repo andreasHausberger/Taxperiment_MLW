@@ -14,22 +14,14 @@ if (!isset($connection)) {
 }
 
 $headerQuery = "SHOW columns FROM audit";
-$resultQuery = "SELECT distinct a.*, m.condnum FROM audit a JOIN mlweb m ON a.pid = m.subject";
+$resultQuery = "select p.id as person_id, p.name, e.id as experiment_id, e.start, e.finished_experiment, e.finished_questionnaire, a.round, a.actual_income, a.net_income, a.actual_tax, a.declared_tax, a.honesty, a.audit, a.fine, a.selected  from participant p, audit a, experiment e where a.pid = p.id and a.exp_id = e.id";
 
 $questionnaireHeaderQuery = "SHOW columns FROM questionnaire";
 $questionnaireResultQuery = "SELECT * FROM questionnaire where pid != 123";
 
 if (isset($connection)) {
 
-    // get audit data
-    $headerResult = $connection->query($headerQuery);
-    if ($headerResult != null) {
-        while ($row = $headerResult->fetch_assoc()) {
-            $headers[] = $row["Field"];
-        }
-        $headers[] = "condnum";
-
-    }
+    $headers = array("participant_id", "participant_id", "experiment_id", "started", "finished_experiment", "finished_questionnaire", "experiment_round", "actual_income", "net_income", "actual_tax", "declared_tax", "honesty", "audit", "fine", "selected");
 
 
     $auditResult = $connection->query($resultQuery);
