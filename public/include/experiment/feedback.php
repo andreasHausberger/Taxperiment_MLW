@@ -52,7 +52,7 @@ else {
                 $auditValue = $row[6];
                 $audit = $auditValue  == 1 ? "Audited" : "Not Audited";
                 $missingTax = $actualTax - $declaredTax;
-                $fine = $row[7];
+                $fine = $row[7]; //this already includes fine + payback!
 
 
                 if ($auditValue == 0) {
@@ -79,7 +79,7 @@ else {
                     <td> $actualTax </td>
                     <td> $declaredTax </td>
                     <td> $audit </td>
-                    <td> $mtPlusFine </td>
+                    <td> $fine </td>
                     <td> $netIncome </td>
                 </tr>";
 
