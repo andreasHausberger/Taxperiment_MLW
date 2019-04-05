@@ -9,6 +9,9 @@
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $participant = isset($_GET['pid']) ? $_GET['pid'] : "";
 
+$experimentId = $_GET["expid"];
+
+
 if ($participant == "" || !isset($participant)) {
     echo "Problem: No participant ID is found!";
 }

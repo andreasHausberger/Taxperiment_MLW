@@ -11,18 +11,31 @@
 
 $feedback = $_GET['feedback'];
 
-
+$experimentId = $_GET['expid'];
 
 if (!isset($participantID)) {
     $participantID = 123; // test data
     echo "No PID was detected - using test data with PID = 123!";
 }
+
+if (!isset($experimentId)) {
+    echo "No ExperimentID was detected!";
+}
+
+
 else {
     if (!isset($connection)) {
         echo "Could not connect to database!";
     }
 
     else {
+
+        $dateString = "UPDATE experiment SET finished_experiment = NOW() WHERE id = $experimentId";
+
+        if ($connection->query($dateString)) {
+            console_log("Added finished_experiment for $experimentId");
+        }
+
         $sqlString = "SELECT distinct round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, fine FROM audit WHERE pid = $participantID";
 
         $result = $connection->query($sqlString);
@@ -125,4 +138,4 @@ if ($feedback == 1 ) {
 
 <p> In the following segments, you will be asked some questions about your opinions and impressions about the experiment. </p>
 
-<a href=<?php echo "../questionnaire/index.php?page=1&pid=" . $participantID; ?>> <input type="button" value="Continue to Questionnaire!"></a>
+<a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Continue to Questionnaire!"></a>

@@ -47,6 +47,16 @@ else {
     echo "Error saving experiment data: " . $connection->error . "\n";
 }
 
+$dateQuery = $connection->prepare("UPDATE experiment SET start = NOW() WHERE id = ?");
+$dateQuery->bind_param("i", $experimentID);
+
+if ($dateQuery->execute()) {
+    console_log("Added start date for Experiment $experimentID");
+}
+else {
+    echo "Error setting start date for experiment $experimentID: $connection->error";
+}
+
 include ("dataLoader.php");
 
 $condition = $dataArray['condition'];

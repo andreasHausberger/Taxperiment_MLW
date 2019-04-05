@@ -10,6 +10,7 @@ include "../../../resources/config.php";
 
 $herokuURL = getenv('HEROKU_URL');
 
+
 if (sizeof($_POST) >= 3) {
 
     $ma1 = $_POST["ma1"];
@@ -25,7 +26,7 @@ if (sizeof($_POST) >= 3) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=2");
+            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=2");
 
         }
         else {

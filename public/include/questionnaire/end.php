@@ -8,20 +8,16 @@
 
 include "../../../resources/config.php";
 
-if (getenv("CLEARDB_DATABASE_URL") != null) {
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$experimentId = $_GET['expid'];
 
-    $server = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $db = substr($url["path"], 1);
+if (!isset($experimentId)) {
+    echo "WARNING: COULD NOT READ EXPERIMENT ID!";
+}
 
-    $connection = new mysqli($server, $username, $password, $db);
-} else {
-    $connection = new mysqli("localhost",
-        "root",
-        "root",
-        "mlweb");
+$dateString = "UPDATE experiment SET finished_questionnaire = NOW() WHERE id = $experimentId";
+
+if ($connection->query($dateString)) {
+    console_log("Added finished_questionnaire for experiment $experimentId");
 }
 
 $participant = $_GET['pid'];

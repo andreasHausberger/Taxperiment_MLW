@@ -26,7 +26,7 @@ if (sizeof($_POST) >= 5) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?pid=$participant&page=3");
+            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=3");
         }
         else {
             echo "Problem: " . $connection->error();
