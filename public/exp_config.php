@@ -25,7 +25,7 @@ $experimentID = -1;
 
 if ($participantQuery->execute()) {
     $participantID = $connection->insert_id;
-    echo (" Participant with id " . $participantID . " saved successfully");
+    console_log(" Participant with id " . $participantID . " saved successfully");
 }
 else {
     echo "Error saving participant: " . $connection->error;
@@ -39,7 +39,7 @@ $experimentQuery->bind_param("ii", $condition, $participantID);
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
 
-    echo (" Experiment data with ID " . $experimentID . " saved successfully! \n");
+    console_log(" Experiment data with ID " . $experimentID . " saved successfully! \n");
 
 
 }
