@@ -83,5 +83,3 @@ $dataArray = array(
 
 $data = http_build_query(array('data' => $dataArray));
 $roundData = http_build_query(array('data' => $expRounds));
-
-// echo "Data loaded successfully!";
