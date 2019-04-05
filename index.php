@@ -12,13 +12,14 @@ require_once ("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.0.2 (Apr 2019)</p>
+<p>Production Version 1.1 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
 
-   <li>Fix: Round selection is now saved in database.</li>
-   <li>Fix: Content of items reworked</li>
+ <li>Fix: Recording start/end times works correctly</li>
+ <li>Fix: Deleted all debug messages --> now everything is in browser console</li>
+ <li>Fix: Text and content adjustments.</li>
 </ul>
 
 <br>
