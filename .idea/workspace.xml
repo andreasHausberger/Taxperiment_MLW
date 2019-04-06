@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/cognitive.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/cognitive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +38,8 @@
           <entry key="CSS" value="2162" />
           <entry key="HTML" value="1770" />
           <entry key="Markdown" value="1620" />
-          <entry key="PHP" value="68603" />
-          <entry key="PLAIN_TEXT" value="5110" />
+          <entry key="PHP" value="68655" />
+          <entry key="PLAIN_TEXT" value="5163" />
           <entry key="SQL" value="19" />
         </counts>
       </usages-collector>
@@ -119,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="22" column="36" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -146,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/questionnaire/cognitive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="60" column="180" selection-start-line="60" selection-start-column="180" selection-end-line="60" selection-end-column="180" />
+            <state relative-caret-position="672">
+              <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -284,9 +284,9 @@
         <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
         <option value="$PROJECT_DIR$/public/include/experiment/slider.php" />
         <option value="$PROJECT_DIR$/resources/dataDownloader.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" />
         <option value="$PROJECT_DIR$/public/include/questionnaire/cognitive.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -474,14 +474,7 @@
       <workItem from="1554303489541" duration="9482000" />
       <workItem from="1554364321067" duration="6376000" />
       <workItem from="1554468772154" duration="5592000" />
-      <workItem from="1554556439960" duration="128000" />
-    </task>
-    <task id="LOCAL-00063" summary="Audit: Prevented Enter key. Prevented Auto suggestions.">
-      <created>1553962898053</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1553962898053</updated>
+      <workItem from="1554556439960" duration="183000" />
     </task>
     <task id="LOCAL-00064" summary="Audit: Prevented Enter key. Prevented Auto suggestions.">
       <created>1553963232523</created>
@@ -819,11 +812,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554475834759</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Usual scale descriptions for the cognitive item.">
+      <created>1554556584461</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1554556584461</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329900000" />
+    <option name="totallyTimeSpent" value="329955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="287" y="23" width="1144" height="972" extended-state="0" />
@@ -908,7 +908,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Version nr. feature list." />
     <MESSAGE value="Bugfix: Immediate feedback shows up again." />
     <MESSAGE value="Now saves which round is selected for Payment as &quot;selected&quot;." />
     <MESSAGE value="Reworded intro text" />
@@ -933,7 +932,8 @@
     <MESSAGE value="Bugfix: in the overview, the correct fine amount is displayed." />
     <MESSAGE value="Download now is correctly labeled." />
     <MESSAGE value="Version Number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version Number" />
+    <MESSAGE value="Usual scale descriptions for the cognitive item." />
+    <option name="LAST_COMMIT_MESSAGE" value="Usual scale descriptions for the cognitive item." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/playback.html">
@@ -1220,13 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/end.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1257,8 +1250,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/include/questionnaire/cognitive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="60" column="180" selection-start-line="60" selection-start-column="180" selection-end-line="60" selection-end-column="180" />
+        <state relative-caret-position="672">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="36" selection-end-line="58" />
         </state>
       </provider>
     </entry>

@@ -8,18 +8,19 @@
 
 require_once('./resources/config.php');
 
-require_once ("public/templates/header.php");
+require_once("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.1 (Apr 2019)</p>
+<p>Production Version 1.1.1 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
 
- <li>Fix: Recording start/end times works correctly</li>
- <li>Fix: Deleted all debug messages --> now everything is in browser console</li>
- <li>Fix: Text and content adjustments.</li>
+    <li>Fix: Recording start/end times works correctly</li>
+    <li>Fix: Deleted all debug messages --> now everything is in browser console</li>
+    <li>Fix: Text and content adjustments.</li>
+    <li>Fix: Adapted cognitive item.</li>
 </ul>
 
 <br>
@@ -38,7 +39,8 @@ require_once ("public/templates/header.php");
         <?php
         include("./resources/library/mlwebphp_100beta/mlweb_start_random.html");
         ?>
-        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 8), a random condition is selected.
+        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 8), a
+            random condition is selected.
         </p>
     </div>
 
