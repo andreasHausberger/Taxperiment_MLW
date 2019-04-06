@@ -58,7 +58,7 @@ if (sizeof($_POST) >= 1) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. I feel relief rather than satisfaction after completing a task that required a lot of mental effort.  (1 = extremely uncharacteristic; 7 = extremely characertistic)
+        <p class="questionText"> 1. I feel relief rather than satisfaction after completing a task that required a lot of mental effort.  (1 = do not agree at all, 7 = fully agree)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "cog1"); ?>
