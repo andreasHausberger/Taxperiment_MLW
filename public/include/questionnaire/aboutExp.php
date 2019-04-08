@@ -15,7 +15,7 @@ if (sizeof($_POST) >= 5) {
     $exp3 = $_POST["exp3"];
     $exp4 = $_POST["exp4"];
     $exp5 = $_POST["exp5"];
-    $exp6 = $_POST['exp6'];
+    $exp6 = $_POST["exp6"];
 
 
     $participant = $_GET['pid'];
@@ -37,6 +37,7 @@ if (sizeof($_POST) >= 5) {
 else {
     echo "Please fill out every question on the page!";
 }
+
 ?>
 
 <script>
@@ -50,7 +51,7 @@ else {
         else {
             console.log("Did not add " + element + " to the array, already in it!");
         }
-        validateAndActiateButton(5);
+        validateAndActiateButton(6); //number of required items
     }
 
     function validateAndActiateButton(numberOfRequiredElements) {
