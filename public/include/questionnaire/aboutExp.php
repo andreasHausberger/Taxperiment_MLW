@@ -15,11 +15,12 @@ if (sizeof($_POST) >= 5) {
     $exp3 = $_POST["exp3"];
     $exp4 = $_POST["exp4"];
     $exp5 = $_POST["exp5"];
+    $exp6 = $_POST['exp6'];
 
 
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET exp1 = $exp1, exp2 = $exp2, exp3 = $exp3, exp4 = $exp4, exp5 = $exp5  WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET exp1 = $exp1, exp2 = $exp2, exp3 = $exp3, exp4 = $exp4, exp5 = $exp5, exp6 = $exp6  WHERE pid = $participant";
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
             console_log("EXP data inserted successfully!");
@@ -102,6 +103,15 @@ else {
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp5"); ?>
+
+        </div>
+    </div>
+
+    <div class="item">
+        <p class="questionText"> 6. The probability of detection of tax evasion in the experiment was high. (1 = do not agree at all, 7 = fully agree)
+        </p>
+        <div class="radioDisplayHorizontal">
+            <?php echo createLikert(7, "exp6"); ?>
 
         </div>
     </div>

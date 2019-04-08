@@ -152,6 +152,7 @@ CREATE TABLE IF NOT EXISTS questionnaire (
   exp3 int(11) DEFAULT NULL,
   exp4 int(11) DEFAULT NULL,
   exp5 int(11) DEFAULT NULL,
+  exp6 int(11) DEFAULT NULL,
   num1 int(11) DEFAULT NULL,
   num2 int(11) DEFAULT NULL,
   num3 int(11) DEFAULT NULL,

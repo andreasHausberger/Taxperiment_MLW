@@ -12,23 +12,18 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.1.1 (Apr 2019)</p>
+<p>Production Version 1.1.2 (Apr 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
 
-    <li>Fix: Recording start/end times works correctly</li>
-    <li>Fix: Deleted all debug messages --> now everything is in browser console</li>
-    <li>Fix: Text and content adjustments.</li>
-    <li>Fix: Adapted cognitive item.</li>
+   <li>Added item "exp6" to questionnaire items about experiment</li>
 </ul>
 
 <br>
 <b> To Do
 </b>
-<ul>
-    <li>Run exp. a couple of times, see how it goes.</li>
-</ul>
+
 
 <div>
     <h1>Welcome, researcher</h1>
