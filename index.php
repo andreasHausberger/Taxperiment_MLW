@@ -22,6 +22,9 @@ require_once("public/templates/header.php");
 
 <br>
 <b> To Do
+    <ul>
+        <li>All done</li>
+    </ul>
 </b>
 
 

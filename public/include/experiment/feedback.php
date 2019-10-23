@@ -42,7 +42,9 @@ else {
 
         $rows = $result->fetch_all();
         if (!function_exists(buildResultsRow)) {
+            //------------------------------------------------
             function buildResultsRow($row) {
+            //------------------------------------------------
                 $round = $row[0];
                 $actualIncome = $row[1]; // earned income
                 $netIncome = $row[2];

@@ -14,7 +14,7 @@ Make sure your PHP runtime is at least 5.3. Later versions should work fine, ear
 
 The project uses a standard MySQL database connection to write/read/export data. 
 
-#### Initial setup: 
+#### Initial database setup: 
 * resources/config.php. Here you can enter your database credentials at the specified line. 
 * public/exp_config.php. Make your this file is executed before every experiment. It also calls the syntax to set up all required tables if none exists. To see whether all tables were set up, check the output in the browser console.  
 

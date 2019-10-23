@@ -17,16 +17,18 @@ if (sizeof($_POST) >= 3) {
     $ma2 = $_POST["ma2"];
     $ma3 = $_POST["ma3"];
 
-    $participant = $_GET['pid'];
+    $participant = $_GET["pid"];
 
 
     $insertQuery = "INSERT INTO questionnaire (pid, ma1, ma2, ma3, created) VALUES ($participant, $ma1, $ma2, $ma3, NOW())";
+
     if (isset($connection)) {
         if ($connection->query($insertQuery)) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
             header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=2");
+
 
         }
         else {
