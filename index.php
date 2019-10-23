@@ -16,7 +16,7 @@ require_once("public/templates/header.php");
 
 <b>Recent Changes</b>
 <ul>
-
+<li> added new dev</li>
    <li>Added item "exp6" to questionnaire items about experiment</li>
 </ul>
 
