@@ -12,12 +12,13 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.1.2 (Apr 2019)</p>
+<p>Development Version 1.1.2 (Oct 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
-<li> added new dev</li>
-   <li>Added item "exp6" to questionnaire items about experiment</li>
+    <li> added new dev</li>
+    <li>Added item "exp6" to questionnaire items about experiment</li>
+    <li>New Branch Develop</li>
 </ul>
 
 <br>
