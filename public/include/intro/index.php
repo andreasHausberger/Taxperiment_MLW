@@ -19,8 +19,9 @@ $pages = array(
     4 => "tutorial5.php",
     5 => "sliderTutorial1.php",
     6 => "tutorial6.php",
-    7 => "exam1.php",
-    8 => "tutorial_end.php"
+    7 => "tutorial7.php",
+    8 => "exam1.php",
+    9 => "tutorial_end.php"
 );
 
 $page = $pages[$index];
@@ -29,7 +30,7 @@ if ($condition == -1) {
     echo "Something went wrong: Index is " . $index . " and condition is " . $condition;
 }
 else {
-    if ($index == 8) {
+    if ($index == 9) {
         require_once ("../../templates/header.php");
 
         include($page);
