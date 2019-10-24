@@ -68,7 +68,7 @@ if ($round < 1 || $mode == 0) {
 elseif ($round <= 18) {
     $pages = array(
         -1 => "error.html",
-        1 => "slider.php",
+        1 => "fixation.php",
         2 => "audit.php" ,
         3 => "feedback.php",
     );
