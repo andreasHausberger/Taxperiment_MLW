@@ -10,12 +10,14 @@
 // it also sets the subject and condnum in a cookie
 
 //calculate random number
-            var selectedCondition = parseInt(document.getElementById("condnum").value);
+            var selectedCondition = document.getElementById("condnum").value;
 
-            if (typeof selectedCondition != "number" || selectedCondition == "" || selectedCondition <= 0) {
+            if ( selectedCondition == "" || selectedCondition <= 0 || selectedCondition > 8 ) {
                 selectedCondition = Math.floor(Math.random() * 8) + 1;
-
+                console.log("Selected randomly: " + selectedCondition);
             }
+
+            selectedCondition = parseInt(selectedCondition);
 
             switch (selectedCondition) {
                 case 1:
@@ -60,15 +62,22 @@
             }
 
 
+
+
 // get values from form
             subject = formlink.subject.value;
             condnum = parseInt(formlink.condnum.value);
 
 // set cookies
-            document.cookie = "mlweb_condnum=" + condnum + "; path=/";
-            document.cookie = "mlweb_subject=" + subject + "; path=/";
+            if (subject == "") {
+                alert("Subject name is empty!");
+            }
+            else {
+                document.cookie = "mlweb_condnum=" + condnum + "; path=/";
+                document.cookie = "mlweb_subject=" + subject + "; path=/";
 
-            var newWind = window.open(linkstr + "&sname=" + subject + "&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+                var newWind = window.open(linkstr + "&sname=" + subject + "&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+            }
 
         }
     </script>

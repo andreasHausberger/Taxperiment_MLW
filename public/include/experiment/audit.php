@@ -14,13 +14,6 @@ $currentRound = $_GET['round'];
 $condition = $_GET['condition'];
 ?>
 
-
-
-
-
-
-
-
 <?php
 
 if (isset($_GET['feedback'])) {
@@ -49,6 +42,18 @@ else {
 
 <script>
 
+    $(function() {
+        $("#complyButton").click(function() {
+            console.log("Comply Button clicked");
+            performAudit(100);
+        });
+
+        $("#evadeButton").click(function() {
+            console.log("Evade Button clicked");
+            performAudit(0);
+        });
+    });
+
     $('form').on('keydown', function(event) {
         var x = event.which;
         if (x === 13) {
@@ -58,10 +63,10 @@ else {
     });
 
     //is always called after the button is pushed.
-    function performAudit() {
-        let reportedTax = parseInt(document.getElementById("inputValue").value); //self reported tax
+    function performAudit(paraTaxAmount) {
+        let reportedTax = parseInt(paraTaxAmount) //parseInt(document.getElementById("inputValue").value); //self reported tax
         document.getElementById("tax").value = <?php echo $mostRecentScore * $taxRate ?>;
-        let actualIncome = <?php echo $mostRecentScore?> ; //before tax
+        let actualIncome = 3000 //TODO: Get More Info
 
         let netIncome = 0; //what the participant earns after tax
 
@@ -223,8 +228,12 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
 
 
     <div id="taxInputContainer">
-        <label for="inputValue">Please indicate the amount of tax you decide to pay: </label>
-        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>
+        <label for="inputValue">Please choose whether to pay the taxes stated above or to evade completely: </label>
+<!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
+        <br>
+        <input type="button" class="formButton" id="complyButton" value="Pay Taxes" >
+        <input type="button" class="formButton" id="evadeButton" value="Evade Taxes" >
+
     </div>
 
     <br>
