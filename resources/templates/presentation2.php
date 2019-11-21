@@ -105,7 +105,7 @@ $feedback = $_GET['feedback'];
 $presentation = $_GET['presentation'];
 $order = $_GET['order'];
 
-$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation"
+$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation";
 
 
 ?>

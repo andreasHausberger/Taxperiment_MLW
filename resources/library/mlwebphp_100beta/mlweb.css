@@ -160,3 +160,36 @@ label{
 	color: #334d55;
 	background-image: none;
 }
+
+.tableCell {
+	height: 80px !important;
+	width: 200px !important;
+}
+
+.tableCellContent {
+	position: relative;
+}
+
+.tableCellText {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	clip: rect(0px 100px 50px 0px);
+	z-index: 1;
+}
+
+.tableCellBox {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	clip: rect(0px 100px 50px 0px);
+	z-index: 2;
+}
+
+.tableCellImage {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+    z-index: 5;
+}

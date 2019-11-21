@@ -12,6 +12,8 @@ $experimentID = $_GET['expid'];
 $participantID = $_GET['pid'];
 $currentRound = $_GET['round'];
 $condition = $_GET['condition'];
+$nextRound = $_GET['round'] + 1;
+$nextMode = $_GET['mode'] == 2 ? 1 : 2;
 ?>
 
 <?php
@@ -26,17 +28,11 @@ else {
 }
 if (isset($_GET['presentation'])) {
     $presentationBool = $_GET['presentation'];
-    $mlwUrl = $presentationBool == "0" ? "../../../resources/templates/presentation1.php" : "../../../resources/templates/presentation2.php";
-    include($mlwUrl);
+    include("../../../resources/templates/group1.php");
 }
 else {
     echo "Could not load MLW table!";
 }
-
-
-
-//include ("../../../resources/templates/presentation1.php");
-
 
 ?>
 
@@ -224,7 +220,8 @@ else {
 
 <form action=<?php
 $condition = $_GET['condition'];
-echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation" ?> method="post">
+$link = "index.php?round=$nextRound&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation";
+echo $link?> method="post">
 
 
     <div id="taxInputContainer">
@@ -237,9 +234,9 @@ echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pi
     </div>
 
     <br>
-
-    <input id="submitButton" type= <?php echo($feedback == "0" ? "button" : "submit"); ?>
-           class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">
+<!---->
+<!--    <input id="submitButton" type= --><?php //echo($feedback == "0" ? "button" : "submit"); ?>
+<!--           class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">-->
 
     <div class="overlay" id="introOverlay">
         <div class="feedbackContainer" id="infoContainer">
