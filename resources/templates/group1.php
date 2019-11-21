@@ -1,4 +1,7 @@
 <?php
+
+require_once ("../../../resources/templateConfig.php");
+
 if (isset($_GET['subject'])) {
     $subject = $_GET['subject'];
 } else {
@@ -39,17 +42,13 @@ if (isset($_GET['condition'])) {
     let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
     let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
     let income =  <?php echo $mostRecentScore ?> + " ECU" + "`";
-    let
-
-    txt = auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
+    let txt = auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
 
     state = "1^1`"
         + "1^1`"
         + "1^1";
 
-    box = "income^tax`"
-        + "audit^fine`"
-        + "sure gain^EV risky";
+    box = "income^tax`audit^fine`sure gain^EV risky";
 
     CBCol = "0^0";
     CBRow = "0^0^0";

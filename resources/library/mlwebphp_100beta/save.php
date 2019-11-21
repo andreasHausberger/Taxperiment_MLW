@@ -132,6 +132,6 @@ $presentation = $_GET['presentation'];
 
 
 
-header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&&condition=$condnum&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
+header("Location: http://$host/public/include/experiment/index.php?round=$nextRound&condition=$condnum&mode=1&expid=$expID&pid=$subject&feedback=$feedback&order=$order&presentation=$presentation");
 //exit;
 ?>
