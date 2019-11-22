@@ -21,8 +21,6 @@ if (!isset($participantID)) {
 if (!isset($experimentId)) {
     echo "No ExperimentID was detected!";
 }
-
-
 else {
     if (!isset($connection)) {
         echo "Could not connect to database!";
@@ -97,7 +95,7 @@ echo "<h1> Overview </h1>";
 
 
 
-if ($feedback == 1 ) {
+
     echo "
     <table id=\"overviewTable\">
     <thead>
@@ -114,13 +112,13 @@ if ($feedback == 1 ) {
     <tbody>
     
     ";
-}
 
 
 
 
 
-    if (isset($rows) && $feedback == "1") {
+
+    if (isset($rows)) {
         echo "<p> Here is an overview of your results during the 18 rounds of the experiment. </p>";
         foreach ($rows as $row) {
             echo buildResultsRow($row);

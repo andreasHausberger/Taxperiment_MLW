@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Round Order fixed. Config File included.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/experiment/feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/feedback.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/experiment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/roundDataLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/roundDataLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +23,7 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="67" />
+          <entry key="PHP" value="75" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -39,16 +39,17 @@
         <counts>
           <entry key="CSS" value="341" />
           <entry key="HTML" value="193" />
-          <entry key="PHP" value="3720" />
-          <entry key="PLAIN_TEXT" value="233" />
+          <entry key="PHP" value="4239" />
+          <entry key="PLAIN_TEXT" value="284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -59,49 +60,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/include/experiment/fixation.php">
+        <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+            <state relative-caret-position="335">
+              <caret line="168" column="69" lean-forward="true" selection-start-line="168" selection-start-column="69" selection-end-line="168" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
+        <entry file="file://$PROJECT_DIR$/resources/templates/group1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="340">
+              <caret line="126" column="65" lean-forward="true" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/templates/presentation2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="101" selection-start-line="101" selection-end-line="110" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/roundDataLoader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/templates/group1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="81" selection-start-line="15" selection-start-column="2" selection-end-line="16" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/templateConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/include/experiment/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+            <state relative-caret-position="331">
+              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="104" column="25" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -201,11 +226,13 @@
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb.css" />
         <option value="$PROJECT_DIR$/resources/templates/presentation1.php" />
         <option value="$PROJECT_DIR$/resources/templates/presentation2.php" />
-        <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
-        <option value="$PROJECT_DIR$/public/include/experiment/index.php" />
         <option value="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" />
         <option value="$PROJECT_DIR$/resources/templateConfig.php" />
+        <option value="$PROJECT_DIR$/public/include/experiment/index.php" />
+        <option value="$PROJECT_DIR$/public/include/experiment/audit.php" />
         <option value="$PROJECT_DIR$/resources/templates/group1.php" />
+        <option value="$PROJECT_DIR$/public/include/experiment/feedback.php" />
+        <option value="$PROJECT_DIR$/public/roundDataLoader.php" />
       </list>
     </option>
   </component>
@@ -221,8 +248,9 @@
     </servers>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="234" />
     <option name="y" value="23" />
-    <option name="width" value="1226" />
+    <option name="width" value="1362" />
     <option name="height" value="972" />
   </component>
   <component name="ProjectId" id="1SbcGPHm7sQvuUFqLlOvrJHacDa" />
@@ -237,7 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,10 +295,24 @@
               <item name="Taxperiment_MLW" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Taxperiment_MLW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Taxperiment_MLW" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Taxperiment_MLW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Taxperiment_MLW" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="mlwebphp_100beta" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +323,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -397,14 +438,8 @@
       <workItem from="1571816635800" duration="1502000" />
       <workItem from="1571835649657" duration="126000" />
       <workItem from="1574323476533" duration="5380000" />
-      <workItem from="1574331288326" duration="3531000" />
-    </task>
-    <task id="LOCAL-00070" summary="Reworded instructions and error message.">
-      <created>1554106281991</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1554106281991</updated>
+      <workItem from="1574331288326" duration="3755000" />
+      <workItem from="1574410167563" duration="3988000" />
     </task>
     <task id="LOCAL-00071" summary="Reworded instructions and error message.">
       <created>1554106448067</created>
@@ -742,23 +777,30 @@
       <option name="project" value="LOCAL" />
       <updated>1571919047661</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Round Order fixed. Config File included.">
+      <created>1574335390652</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1574335390653</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22980000" />
+    <option name="totallyTimeSpent" value="27192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1226" height="972" extended-state="0" />
+    <frame x="234" y="23" width="1362" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.2035473" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18560606" />
       <window_info id="Structure" order="1" sideWeight="0.50323623" side_tool="true" weight="0.15806045" />
       <window_info id="Favorites" order="2" sideWeight="0.50283766" side_tool="true" weight="0.14900449" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32826748" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4983108" visible="true" weight="0.19204545" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49772727" visible="true" weight="0.19204545" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -766,7 +808,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49685138" weight="0.15704153" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.29903537" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016892" side_tool="true" visible="true" weight="0.19204545" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022727" side_tool="true" visible="true" weight="0.19204545" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -824,7 +866,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Selection of rounds is now remarked in database." />
     <MESSAGE value="Feedback directly queries the fine from each round, no more calculations." />
     <MESSAGE value="Reworked fine calculation, again." />
     <MESSAGE value="Removed dev variables." />
@@ -849,7 +890,8 @@
     <MESSAGE value="Initial Commit Develop" />
     <MESSAGE value="Changed text input field to dichotomous buttons (Audit kinda works, exact tax due not correct)" />
     <MESSAGE value="Fixation cross between rounds. 2 Second timer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixation cross between rounds. 2 Second timer." />
+    <MESSAGE value="Round Order fixed. Config File included." />
+    <option name="LAST_COMMIT_MESSAGE" value="Round Order fixed. Config File included." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,9 +902,24 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/templateConfig.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php</url>
+          <line>93</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/public/include/experiment/index.php</url>
-          <line>85</line>
-          <option name="timeStamp" value="21" />
+          <line>86</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1002,31 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/fixation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/presentation2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
@@ -1040,41 +1076,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="134" column="84" selection-start-line="134" selection-start-column="84" selection-end-line="134" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templateConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="574">
+          <caret line="63" column="44" lean-forward="true" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/dataLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="80" column="2" lean-forward="true" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="219" column="24" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/fixation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/audit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="168" column="69" lean-forward="true" selection-start-line="168" selection-start-column="69" selection-end-line="168" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/presentation2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="101" selection-start-line="101" selection-end-line="110" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/group1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="81" selection-start-line="15" selection-start-column="2" selection-end-line="16" selection-end-column="81" />
+        <state relative-caret-position="340">
+          <caret line="126" column="65" lean-forward="true" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/feedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="104" column="25" lean-forward="true" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/roundDataLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/include/experiment/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
         </state>
       </provider>
     </entry>

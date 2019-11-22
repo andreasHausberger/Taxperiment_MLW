@@ -25,10 +25,6 @@ else {
 if (!function_exists(buildResultsBlock)) {
     function buildResultsBlock($subject, $round, $income, $reportedIncome, $audit, $honesty) {
         $html = "";
-
-
-
-
         return $html;
     }
 }

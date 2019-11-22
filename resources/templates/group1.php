@@ -2,6 +2,8 @@
 
 require_once ("../../../resources/templateConfig.php");
 
+$box = $currentBox;
+
 if (isset($_GET['subject'])) {
     $subject = $_GET['subject'];
 } else {
@@ -38,17 +40,24 @@ if (isset($_GET['condition'])) {
         + "b0^b1`"
         + "c0^c1";
 
+    let boxArray = <?php echo json_encode($currentBox) ?>;
+
+    let boxLabels = boxArray.label;
+    let boxContents = boxArray.content;
+
+
     let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "^";
     let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
     let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
     let income =  <?php echo $mostRecentScore ?> + " ECU" + "`";
-    let txt = auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
+    let txt = boxContents; //auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
+
 
     state = "1^1`"
         + "1^1`"
         + "1^1";
 
-    box = "income^tax`audit^fine`sure gain^EV risky";
+    box = boxLabels; //"income^tax`audit^fine`sure gain^EV risky";
 
     CBCol = "0^0";
     CBRow = "0^0^0";
@@ -101,7 +110,16 @@ if (isset($_GET['condition'])) {
 </SCRIPT>
 <!--END TABLE STRUCTURE-->
 
-<FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST"
+<?php
+//This is used to prepare GET variables we need for save.php
+$feedback = $_GET['feedback'];
+$presentation = $_GET['presentation'];
+$order = $_GET['order'];
+
+$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation";
+?>
+
+<FORM name="mlwebform" id="mlwebform" onSubmit="return checkForm(this)" method="POST"
       action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
     <input type="hidden" id="tax" name="tax" value=<?php echo $mostRecentScore?>>

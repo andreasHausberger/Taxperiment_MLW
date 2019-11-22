@@ -80,8 +80,6 @@ else {
         netIncome = actualIncome - reportedTax;
 
 
-
-
         console.log("testing " + randomNr + " against probability " + probability);
 
         if (audit) {
@@ -116,16 +114,19 @@ else {
         document.getElementById("fine").value = "" + fine;
 
 
+        submitInformation("submit", "submit", "submit");
 
-        let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
-
-        if (feedbackIsDelayed == 0) {
-            displayInformation(audit, actualIncome, netIncome, fine, taxRate, reportedTax);
-        }
-        else {
-            collapseInformation("submit", "submit", "submit");
-           // window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
-        }
+        //let feedbackIsDelayed = <?php //echo $delayFeedback ?>// ;
+        //
+        //
+        //
+        //if (feedbackIsDelayed == 0) {
+        //    displayInformation(audit, actualIncome, netIncome, fine, taxRate, reportedTax);
+        //}
+        //else {
+        //    collapseInformation("submit", "submit", "submit");
+        //   // window.location.href = "  <?php //echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>//";
+        //}
 
 
     }
@@ -163,9 +164,11 @@ else {
         document.getElementById("feedbackOverlay").style.display = "block";
     }
 
-    function collapseInformation(txt1, txt2, txt3) {
+    function submitInformation(txt1, txt2, txt3) {
+
         document.getElementById('feedbackOverlay').style.width = '0';
         timefunction(txt1, txt2, txt3);
+        // document.getElementById("mlwebform").submit();
     }
 
     //checks the input value in case of an audit, and calculates a fine if needed. Returns 0 (in case of honest input) or else the amount of the fine in int.
@@ -228,8 +231,8 @@ echo $link?> method="post">
         <label for="inputValue">Please choose whether to pay the taxes stated above or to evade completely: </label>
 <!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
         <br>
-        <input type="button" class="formButton" id="complyButton" value="Pay Taxes" >
-        <input type="button" class="formButton" id="evadeButton" value="Evade Taxes" >
+        <input type="submit" class="formButton" id="complyButton" value="Pay Taxes" >
+        <input type="submit" class="formButton" id="evadeButton" value="Evade Taxes" >
 
     </div>
 
@@ -310,7 +313,7 @@ echo $link?> method="post">
                 </tr>
                 </tbody>
             </table>
-             <input type="submit" value="Close Box & Continue" onclick="collapseInformation('submit','submit','submit')">
+             <input type="submit" value="Close Box & Continue" onclick="submitInformation('submit','submit','submit')">
         </div>
     </div>
 </form>
