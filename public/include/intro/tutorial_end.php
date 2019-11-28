@@ -6,7 +6,6 @@
             </span>
             <br>
 
-            <?php include "../../../resources/templates/presentation_demo.php" ?>
         </p>
     </div>
 </div>

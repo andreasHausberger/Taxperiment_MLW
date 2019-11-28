@@ -5,6 +5,8 @@ $currentRound = $expRoundArray[$_GET['round'] - 1];
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
 $fineRate = $currentRound['fine_rate'];
+$sureGain = $currentRound['ev_gain'];
+$income = $currentRound['income'];
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
@@ -39,14 +41,18 @@ else {
 <script>
 
     $(function() {
+
+        let income = <?php echo $income ?>;
+        let taxRate = <?php echo $taxRate ?>;
         $("#complyButton").click(function() {
             console.log("Comply Button clicked");
-            performAudit(100);
+            let taxAmount = income * taxRate;
+            performAudit(taxAmount, true);
         });
 
         $("#evadeButton").click(function() {
             console.log("Evade Button clicked");
-            performAudit(0);
+            performAudit(0, false);
         });
     });
 
@@ -59,18 +65,18 @@ else {
     });
 
     //is always called after the button is pushed.
-    function performAudit(paraTaxAmount) {
+    function performAudit(paraTaxAmount, paraHonesty = true) {
         let reportedTax = parseInt(paraTaxAmount) //parseInt(document.getElementById("inputValue").value); //self reported tax
-        document.getElementById("tax").value = <?php echo $mostRecentScore * $taxRate ?>;
-        let actualIncome = 3000 //TODO: Get More Info
+        document.getElementById("tax").value = <?php echo $income * $taxRate ?>;
+        let actualIncome = <?php echo $income ?>
 
         let netIncome = 0; //what the participant earns after tax
 
         let probability = <?php echo $auditProbability?>;
-        let actualTax = <?php echo $mostRecentScore * $taxRate ?>; //actual income
+        let actualTax = <?php echo $income * $taxRate ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = actualTax == reportedTax; //true or false, depending on the declaration
+        let honesty = paraHonesty; //true or false, depending on the declaration
 
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
@@ -83,25 +89,17 @@ else {
         console.log("testing " + randomNr + " against probability " + probability);
 
         if (audit) {
-
-
             fine = startAudit(actualTax, reportedTax);
-
 
             if (fine !== 0) {
                 netIncome = netIncome - fine;
             }
 
-
             if (netIncome < 0) { netIncome = 0; }
-
-
             document.getElementById("wasAudited").value = "true";
 
         }
         else {
-
-
             document.getElementById("wasAudited").value = false;
 
             console.log("No Audit");
@@ -193,7 +191,7 @@ else {
     function validateInput() {
         document.getElementById("submitButton").disabled = true;
         let input = document.getElementById("inputValue").value;
-        let taxAmount = <?php echo $mostRecentScore * $taxRate; ?> ;
+        let taxAmount = <?php echo $income * $taxRate; ?> ;
         let inputInt = parseInt(input);
 
         if (isNaN(inputInt)) {

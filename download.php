@@ -69,6 +69,12 @@ include "./resources/dataDownloader.php";
 
 ?>
 
+<br>
+<br>
+<br>
+
+<a href="index.php">< Return to Home Page</a>
+
 
 
 

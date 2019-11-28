@@ -12,21 +12,25 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Development Version 1.1.2 (Oct 2019)</p>
+<p>Development Version 1.1.3 (Nov 2019)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li> added new dev</li>
-    <li>Added item "exp6" to questionnaire items about experiment</li>
-    <li>New Branch Develop</li>
+    <li>Implemented new round content (24 rounds)</li>
+    <li>Implemented new Mouselab Fields (8 variants)</li>
+    <li>Implemented 2 second Fixation period between experiments</li>
+    <li>Configured Audits to work with dichotomous input</li>
+    <li>Bugfix: Randomisation of Conditions works properly</li>
+    <li>Bugfix: Round data display</li>
 </ul>
 
 <br>
-<b> To Do
-    <ul>
-        <li>All done</li>
-    </ul>
-</b>
+<b> To Do </b>
+<ul>
+    <li>Content: Introduction / Tutorial pages</li>
+    <li>Content: Post-Experiment Questionnaire</li>
+    <li>Review of all Changes</li>
+</ul>
 
 
 <div>

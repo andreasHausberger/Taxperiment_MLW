@@ -40,8 +40,6 @@ if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
 
     console_log(" Experiment data with ID " . $experimentID . " saved successfully! \n");
-
-
 }
 else {
     echo "Error saving experiment data: " . $connection->error . "\n";

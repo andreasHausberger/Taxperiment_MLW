@@ -21,16 +21,16 @@ $evRiskyLabel = "EV risky";
     let txt = auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
  */
 
-$taxPercentage = intval($taxRate) * 100;
-$auditPercentage = intval($auditProbability) * 100;
-$taxDue = intVal($mostRecentScore) * intval($taxRate);
+$taxPercentage = doubleval($taxRate) * 100;
+$auditPercentage = doubleval($auditProbability) * 100;
+$taxDue = intVal($income) * doubleval($taxRate);
 
-$incomeContent = "$mostRecentScore ECU";
+$incomeContent = "$income ECU";
 $taxContent = "Tax($taxPercentage): $taxDue ECU";
 $auditContent = "$auditPercentage% chance";
-$fineContent = "Payback + $fineRate 00%";
+$fineContent = "Payback + " . $fineRate . "00%";
 $evRiskyContent = "ev_risky_content";
-$sureGainContent = "sure_Gain_content";
+$sureGainContent = "sure_gain_content";
 
 
 

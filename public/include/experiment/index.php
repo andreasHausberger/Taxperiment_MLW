@@ -48,30 +48,30 @@ $round = (isset($_GET['round']) ? $_GET['round'] : -1);
 $mode = (isset($_GET['mode']) ? $_GET['mode'] : 0); //mode: 1 is for slider and 2 is for audit
 
 
-$mostRecentScore = -1; // if we just had a slider round, there should be a most recent score posted
+$income = -1; // if we just had a slider round, there should be a most recent score posted
 
 // mostRecentScore should always include the 1000 basic income.
 if (isset($_GET['score'])) {
-    $mostRecentScore = $_GET['score'] + 1000;
+    $income = $_GET['score'] + 1000;
 }
 elseif (isset ($_POST['score'])) {
-    $mostRecentScore = $_POST['score'] + 1000;
+    $income = $_POST['score'] + 1000;
 }
-
 
 $round = (int) $round;
 $mode = (int) $mode;
-$mostRecentScore = (int) $mostRecentScore;
+$income = (int) $income;
 
 if ($round < 1 || $mode == 0) {
     echo "There is a problem.";
 }
 
-elseif ($round <= 18) {
+//TODO: Change this back for production --> Should have 24 rounds
+elseif ($round <= 24) {
     $pages = array(
         -1 => "error.html",
         1 => "fixation.php",
-        2 => "audit.php" ,
+        2 => "audit.php",
         3 => "feedback.php",
     );
 

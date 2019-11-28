@@ -41,12 +41,15 @@ if (!function_exists("checkIfTableEmpty")) {
 
 $expRoundQuery = "
 CREATE TABLE IF NOT EXISTS exp_round (
-  id int(11) NOT NULL,
-  tax_rate float DEFAULT NULL,
+  id int(11) NOT NULL AUTO_INCREMENT,
+  tax_rate float DEFAULT NULL,  
+  income int(11) DEFAULT NULL,
   audit_probability float DEFAULT NULL,
   fine_rate float DEFAULT NULL,
-  prediction varchar(45) DEFAULT 'evade',
-  PRIMARY KEY (id))";
+  fine_amount int(11) DEFAULT NULL,
+  ev_gain int(11) DEFAULT NULL,
+  PRIMARY KEY (id)
+)";
 
 
 $feedbackQuery = "
@@ -206,26 +209,32 @@ VALUES
 	(0,'one'),
 	(1,'two');";
 
-$insertRoundsQuery = "REPLACE INTO exp_round (id, tax_rate, audit_probability, fine_rate, prediction)
-VALUES
-(1,0.4,0.1,1,'evade'),
-	(2,0.2,0.2,2,'evade'),
-	(3,0.4,0.1,2,'evade'),
-	(4,0.2,0.1,1,'evade'),
-	(5,0.2,0.2,1,'evade'),
-	(6,0.4,0.2,3,'evade'),
-	(7,0.2,0.3,1,'evade'),
-	(8,0.4,0.2,2,'evade'),
-	(9,0.2,0.3,2,'evade'),
-	(10,0.2,0.2,3,'evade'),
-	(11,0.4,0.3,1,'evade'),
-	(12,0.2,0.1,2,'evade'),
-	(13,0.2,0.3,3,'comply'),
-	(14,0.4,0.2,1,'evade'),
-	(15,0.2,0.1,3,'evade'),
-	(16,0.4,0.3,2,'evade'),
-	(17,0.4,0.3,3,'comply'),
-	(18,0.4,0.1,3,'evade');";
+$insertRoundsQuery = "REPLACE INTO exp_round (id, tax_rate, income, audit_probability, fine_rate, fine_amount, ev_gain) VALUES
+
+        (1,0.3,1000,0.1,1,300,940),
+        (2,0.5,3000,0.25,3,4500,1500),
+        (3,0.3,1000,0.4,3,900,520),
+        (4,0.5,3000,0.4,3,4500,600),
+        (5,0.5,1000,0.25,3,1500,500),
+        (6,0.5,1000,0.4,3,1500,200),
+        (7,0.3,3000,0.1,3,2700,2640),
+        (8,0.3,1000,0.25,3,900,700),
+        (9,0.3,1000,0.25,1,300,850),
+        (10,0.3,1000,0.4,1,300,760),
+        (11,0.3,3000,0.25,1,900,2550),
+        (12,0.5,1000,0.4,1,500,600),
+        (13,0.5,3000,0.1,1,1500,2700),
+        (14,0.3,3000,0.25,3,2700,2100),
+        (15,0.5,1000,0.1,3,1500,800),
+        (16,0.3,1000,0.1,3,900,880),
+        (17,0.5,3000,0.1,3,4500,2400),
+        (18,0.5,1000,0.25,1,500,750),
+        (19,0.5,3000,0.4,1,1500,1800),
+        (20,0.3,3000,0.1,1,900,2820),
+        (21,0.5,1000,0.1,1,500,900),
+        (22,0.3,3000,0.4,1,900,2280),
+        (23,0.3,3000,0.4,3,2700,1560),
+        (24,0.5,3000,0.25,1,1500,2250)";
 
 $insertConditionQuery = "
 REPLACE INTO exp_condition (id, round_order, feedback, presentation)
@@ -241,7 +250,6 @@ VALUES
 ";
 
 //NOTE: Please don't try to run the insert queries - they don't work & will break it.
-
 
 
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,

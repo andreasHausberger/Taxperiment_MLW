@@ -46,10 +46,10 @@ if (isset($_GET['condition'])) {
     let boxContents = boxArray.content;
 
 
-    let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "^";
+    let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $income*$taxRate; ?> + " ECU " + "^";
     let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
     let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
-    let income =  <?php echo $mostRecentScore ?> + " ECU" + "`";
+    let income =  <?php echo $income ?> + " ECU" + "`";
     let txt = boxContents; //auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
 
 
@@ -102,7 +102,7 @@ if (isset($_GET['condition'])) {
     boxClass = "boxTD";
     cssname = "mlweb.css";
     nextURL = "thanks.html";
-    expname = "group_1";
+    expname = "condition_" + <?php echo $condnum; ?>;
     randomOrder = false;
     recOpenCells = false;
     masterCond = 1;
@@ -122,7 +122,7 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
 <FORM name="mlwebform" id="mlwebform" onSubmit="return checkForm(this)" method="POST"
       action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
     <input type=hidden name="subject" value="">
-    <input type="hidden" id="tax" name="tax" value=<?php echo $mostRecentScore?>>
+    <input type="hidden" id="tax" name="tax" value=<?php echo $income?>>
     <input type="hidden" id="reported_tax" name="reported_tax">
     <input type="hidden" id="actual_income" name="actual_income">
     <input type="hidden" id="net_income" name="net_income">
