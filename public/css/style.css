@@ -169,6 +169,19 @@ Audit Page
     margin-right: 10px;
 }
 
+.mlwTable tr td {
+    border: 1px solid black;
+}
+
+.mlwTable thead {
+    background-color: #c9c9c9;
+}
+
+.mlwTable thead tr td {
+    font-size: 16px;
+    font-weight: 800;
+}
+
 
 #overviewTable tr td {
     border: 1px solid black;
@@ -193,4 +206,13 @@ Downloads
 
 .downloadButtonDiv form {
     margin: auto 40px;
+}
+
+/*
+Text
+ */
+
+.tutorialText {
+    font-size: 16px;
+    margin-top: 0;
 }

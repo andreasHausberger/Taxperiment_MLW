@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="New exp_round table read methods. Dichotomous tax">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/templates/mlw_demo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/download.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial_end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial_end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/exam1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_exam2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_agreement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial3.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_incentivization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial4.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_risk_aversion_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial5.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_explanation_cond_1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial6.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial7.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_explanation_mlw_exam1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial_end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_reminder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation2.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation_demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation_demo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +63,11 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="create&#9;FILE&#9;file:///Users/andreas/Developer/Web/Taxperiment_MLW/resources/library/mlwebphp_100beta/create_table.php" />
@@ -71,7 +77,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,22 +94,22 @@
       <recent name="$PROJECT_DIR$/public/css" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Debug" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="mlweb">
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="StructuralSearchPlugin">
     <searchConfiguration name="user defined" created="1549968764204" text="Real Study" recursive="true" caseInsensitive="false" type="PHP" history="1" />
@@ -190,6 +196,10 @@
       <workItem from="1574410167563" duration="4183000" />
       <workItem from="1574929191877" duration="56000" />
       <workItem from="1574929258017" duration="6405000" />
+      <workItem from="1574940582241" duration="1000" />
+      <workItem from="1575554309184" duration="1720000" />
+      <workItem from="1578558935732" duration="8445000" />
+      <workItem from="1578579584092" duration="4377000" />
     </task>
     <task id="LOCAL-00072" summary="Changes list updated.">
       <created>1554106566653</created>
@@ -583,6 +593,108 @@
     <MESSAGE value="Automatic template generation (according to PDF document), delayed FB only, automatic round overview." />
     <option name="LAST_COMMIT_MESSAGE" value="Automatic template generation (according to PDF document), delayed FB only, automatic round overview." />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="-1684" y="-116" key="CommitChangelistDialog2" timestamp="1578584561139">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state x="-1684" y="-116" key="CommitChangelistDialog2/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584561139" />
+    <state width="1866" height="182" key="GridCell.Tab.0.bottom" timestamp="1578584655510">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.0.bottom/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047293" />
+    <state width="1638" height="329" key="GridCell.Tab.0.bottom/-1112.239.1112.811/0.0.1680.995@0.0.1680.995" timestamp="1578567103118" />
+    <state width="1866" height="182" key="GridCell.Tab.0.bottom/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655510" />
+    <state width="1638" height="329" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479126" />
+    <state width="1866" height="182" key="GridCell.Tab.0.center" timestamp="1578584655510">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.0.center/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047292" />
+    <state width="1638" height="329" key="GridCell.Tab.0.center/-1112.239.1112.811/0.0.1680.995@0.0.1680.995" timestamp="1578567103116" />
+    <state width="1866" height="182" key="GridCell.Tab.0.center/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655510" />
+    <state width="1638" height="329" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479125" />
+    <state width="1866" height="182" key="GridCell.Tab.0.left" timestamp="1578584655509">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.0.left/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047287" />
+    <state width="1638" height="329" key="GridCell.Tab.0.left/-1112.216.1112.834/0.0.1680.1050@0.0.1680.995" timestamp="1578567103112" />
+    <state width="1866" height="182" key="GridCell.Tab.0.left/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655509" />
+    <state width="1638" height="329" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479125" />
+    <state width="1866" height="182" key="GridCell.Tab.0.right" timestamp="1578584655510">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.0.right/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047292" />
+    <state width="1638" height="329" key="GridCell.Tab.0.right/-1112.239.1112.811/0.0.1680.995@0.0.1680.995" timestamp="1578567103117" />
+    <state width="1866" height="182" key="GridCell.Tab.0.right/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655510" />
+    <state width="1638" height="329" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479125" />
+    <state width="1866" height="182" key="GridCell.Tab.1.bottom" timestamp="1578584680705">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.1.bottom/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047173" />
+    <state width="1638" height="329" key="GridCell.Tab.1.bottom/-1112.239.1112.811/0.23.1680.972@0.23.1680.972" timestamp="1578567494886" />
+    <state width="1866" height="182" key="GridCell.Tab.1.bottom/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584680705" />
+    <state width="1638" height="329" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479127" />
+    <state width="1866" height="182" key="GridCell.Tab.1.center" timestamp="1578584680704">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.1.center/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047172" />
+    <state width="1638" height="329" key="GridCell.Tab.1.center/-1112.239.1112.811/0.23.1680.972@0.23.1680.972" timestamp="1578567494885" />
+    <state width="1866" height="182" key="GridCell.Tab.1.center/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584680704" />
+    <state width="1638" height="329" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479127" />
+    <state width="1866" height="182" key="GridCell.Tab.1.left" timestamp="1578584680704">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.1.left/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047171" />
+    <state width="1638" height="329" key="GridCell.Tab.1.left/-1112.239.1112.811/0.23.1680.972@0.23.1680.972" timestamp="1578567494884" />
+    <state width="1866" height="182" key="GridCell.Tab.1.left/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584680704" />
+    <state width="1638" height="329" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479126" />
+    <state width="1866" height="182" key="GridCell.Tab.1.right" timestamp="1578584680705">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.1.right/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047172" />
+    <state width="1638" height="329" key="GridCell.Tab.1.right/-1112.239.1112.811/0.23.1680.972@0.23.1680.972" timestamp="1578567494885" />
+    <state width="1866" height="182" key="GridCell.Tab.1.right/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584680705" />
+    <state width="1638" height="329" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479127" />
+    <state width="1866" height="182" key="GridCell.Tab.2.bottom" timestamp="1578584655448">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.2.bottom/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047175" />
+    <state width="1866" height="182" key="GridCell.Tab.2.bottom/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655448" />
+    <state width="1638" height="329" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479129" />
+    <state width="1866" height="182" key="GridCell.Tab.2.center" timestamp="1578584655447">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.2.center/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047174" />
+    <state width="1866" height="182" key="GridCell.Tab.2.center/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655447" />
+    <state width="1638" height="329" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479128" />
+    <state width="1866" height="182" key="GridCell.Tab.2.left" timestamp="1578584655447">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.2.left/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047173" />
+    <state width="1866" height="182" key="GridCell.Tab.2.left/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655447" />
+    <state width="1638" height="329" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479128" />
+    <state width="1866" height="182" key="GridCell.Tab.2.right" timestamp="1578584655448">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state width="1638" height="329" key="GridCell.Tab.2.right/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578570047175" />
+    <state width="1866" height="182" key="GridCell.Tab.2.right/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578584655448" />
+    <state width="1638" height="329" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578570479129" />
+    <state x="-1801" y="72" key="NewPhpFileDialog" timestamp="1578580032687">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state x="-1801" y="72" key="NewPhpFileDialog/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578580032687" />
+    <state x="-1731" y="-80" key="SettingsEditor" timestamp="1578582266278">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state x="-1731" y="-80" key="SettingsEditor/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578582266278" />
+    <state x="-1683" y="24" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578583620619">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state x="-1683" y="24" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1578583620619" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1578568893653">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/-1112.216.1112.834/0.0.1680.1050@0.0.1680.1050" timestamp="1578568893653" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -595,6 +707,21 @@
           <url>file://$PROJECT_DIR$/public/include/experiment/index.php</url>
           <line>85</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
+          <line>96</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

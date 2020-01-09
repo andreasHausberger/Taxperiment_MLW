@@ -12,8 +12,8 @@
 //calculate random number
             var selectedCondition = document.getElementById("condnum").value;
 
-            if ( selectedCondition == "" || selectedCondition <= 0 || selectedCondition > 8 ) {
-                selectedCondition = Math.floor(Math.random() * 8) + 1;
+            if ( selectedCondition == "" || selectedCondition <= 0 || selectedCondition > 4 ) {
+                selectedCondition = Math.floor(Math.random() * 4) + 1;
                 console.log("Selected randomly: " + selectedCondition);
             }
 
@@ -38,26 +38,6 @@
                 case 4:
                     // link for condition 4
                     linkstr = "/public/include/intro/index.php?condition=4";
-                    break;
-
-                case 5:
-                    // link for condition 5
-                    linkstr = "/public/include/intro/index.php?condition=5";
-                    break;
-
-                case 6:
-                    // link for condition 6
-                    linkstr = "/public/include/intro/index.php?condition=6";
-                    break;
-
-                case 7:
-                    // link for condition 7
-                    linkstr = "/public/include/intro/index.php?condition=7";
-                    break;
-
-                case 8:
-                    // link for condition 8
-                    linkstr = "/public/include/intro/index.php?condition=8";
                     break;
             }
 

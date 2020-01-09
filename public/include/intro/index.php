@@ -13,22 +13,87 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 $pages = array(
     -1 => "error.html",
-    1 => "tutorial2.php",
-    2 => "tutorial3.php",
-    3 => "tutorial4.php",
-    4 => "tutorial5.php",
-    5 => "sliderTutorial1.php",
-    6 => "tutorial6.php",
-    7 => "tutorial7.php",
-    8 => "exam1.php",
-    9 => "tutorial_end.php"
+    1 => "tut_info.php",
+    2 => "tut_agreement.php",
+    3 => "tut_incentivization.php",
+    4 => "tut_risk_aversion_task.php",
+    5 => "tut_explanation_cond_1.php",
+    6 => "tut_definitions.php", //this varies depending on the condition, is skipped completely in cond 4
+    7 => "tut_explanation_mlw_exam1.php",
+    8 => "tut_exam2.php",
+    9 => "tut_reminder.php"
 );
 
 $page = $pages[$index];
 
+if( !function_exists("createRiskAversionRow") ) {
+    function createRiskAversionRow($rowName, $probA1, $ecuA1, $probA2, $ecuA2, $probB1, $ecuB1,  $probB2, $ecuB2) {
+
+        echo "
+<tr>
+                <td>
+                    <span> Probability $probA1%, ECU $ecuA1</span> <br>
+                    <span> Probability $probA2%, ECU $ecuA2</span>
+                </td>
+                <td>
+                    <input type=\"radio\" name=\"$rowName\"> A
+                    <input type=\"radio\" name=\"$rowName\"> B
+                </td>
+                <td>
+                    <span> Probability $probB1%, ECU $ecuB1</span> <br>
+                    <span> Probability $probB2%, ECU $ecuA2</span>
+                </td>
+            </tr>
+";
+
+    }
+}
+
+if ( !function_exists("createRiskAversionTask") ) {
+    function createRiskAversionTask($taskArray) {
+        echo "
+<table class=\"mlwTable\">
+            <thead>
+            <tr>
+                <td>
+                    Option A
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    Option B
+                </td>
+            </tr>
+
+            </thead>
+            <tbody>
+";
+        foreach ($taskArray as $item) {
+             createRiskAversionRow(
+                $item['rowName'],
+                $item['probA1'],
+                $item['ecuA1'],
+                $item['probA2'],
+                $item['ecuA2'],
+                $item['probB1'],
+                $item['ecuB1'],
+                $item['probB2'],
+                $item['ecuB2']
+            );
+        }
+
+        echo "
+ </tbody>
+        </table>
+";
+    }
+}
+
 if ($condition == -1) {
     echo "Something went wrong: Index is " . $index . " and condition is " . $condition;
 }
+
 else {
     if ($index == 9) {
         require_once ("../../templates/header.php");
@@ -36,9 +101,7 @@ else {
         include($page);
         include("../../templates/redirect.php");
 
-
         require_once ("../../templates/footer.php");}
-
     else {
         require_once ("../../templates/header.php");
 
@@ -46,11 +109,10 @@ else {
 
         include("../../templates/continue.php");
 
-
         require_once ("../../templates/footer.php");
-
     }
 }
+
 
 
 ?>

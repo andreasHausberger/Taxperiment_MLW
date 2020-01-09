@@ -13,14 +13,6 @@ $fineLabel = "fine";
 $sureGainLabel = "sure gain";
 $evRiskyLabel = "EV risky";
 
-/*
- *     let taxRate = "Tax (" +  <?php echo $taxRate*100 ?> + "%): " + <?php echo $mostRecentScore*$taxRate; ?> + " ECU " + "^";
-    let auditProbability = <?php echo $auditProbability*100 ?> + "% chance" +  "^";
-    let fineRate = "Payback + " +  <?php echo $fineRate ?> + "00%" + "`";
-    let income =  <?php echo $mostRecentScore ?> + " ECU" + "`";
-    let txt = auditProbability + fineRate + taxRate + income + "c0_inner^" + "c1_inner";
- */
-
 $taxPercentage = doubleval($taxRate) * 100;
 $auditPercentage = doubleval($auditProbability) * 100;
 $taxDue = intVal($income) * doubleval($taxRate);
