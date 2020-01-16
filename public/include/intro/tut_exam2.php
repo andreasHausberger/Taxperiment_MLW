@@ -3,10 +3,10 @@
 
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>2. Prüfung </h2>
+        <h2>Übungsaufgabe 2 </h2>
 
         <p class="tutorialText">
-            Hier steht ein Text.
+            Sehen Sie sich das Beispiel unten an und machen Sie sich bitte mit dem Öffnen und Schließen der Boxen vertraut.
         </p>
 
 

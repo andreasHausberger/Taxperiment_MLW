@@ -1,14 +1,17 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Incentivization</h2>
+        <h2>Auszahlung</h2>
         <p class="tutorialText">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like Aldus PageMaker including versions of Lorem Ipsum.
+            In dieser Studie arbeiten Sie für echtes Geld. Das bedeutet, dass Ihre Entscheidungen in dieser Studie Ihre Bezahlung am Ende der Studie beeinflussen. <br>
+            <br>
+            Als Show-Up-Gebühr erhalten Sie sicher 1 Euro. Darüber hinaus können Sie zusätzliches Geld verdienen. Die Höhe hängt von Ihren Entscheidungen in dieser Studie ab. <br>
+            <br>
+            Die in dieser Studie verwendete Währung (ECU) hat einen Umrechnungskurs von 250 ECU = 1 Euro (1000 ECU = 4 Euro). 
+            Am Ende der Studie wird aus beiden Teilen der Studie jeweils eine der Runden nach dem Zufallsprinzip ausgewählt und in Euro ausbezahlt. <br>
+            <br>
+            Sie verdienen also 1 Euro Anmeldegebühr plus das Geld von zwei ausgewählten Runden. Wenn Sie die Studie abbrechen, ist es nicht möglich, 
+            Ihnen mehr als die Show-Up-Gebühr zu bezahlen.
+          
         </p>
     </div>
 </div>

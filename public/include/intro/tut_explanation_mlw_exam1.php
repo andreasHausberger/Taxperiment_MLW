@@ -1,8 +1,15 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Erklärung und 1. Prüfung</h2>
+        <h2>Übungsaufgabe</h2>
         <p class="tutorialText">
-            Hier steht ein Erklärungstext, anschließend gibt es ein Beispiel, dessen Daten nicht ausgewertet werden. Alles, was innerhalb der php-Klammer steht, sollte besser nicht verändert werden.
+            Wie bereits erklärt, erhalten Sie in jeder Runde verschiedene Informationen, 
+            um Ihre Entscheidung zu treffen. Diese Informationen sind hinter Boxen verborgen. 
+            Sie können diese Informationen einsehen indem Sie mit der Maus über die jeweilige Box fahren. 
+            Solange Sie mit der Maus auf der Box bleiben wird der dahinter liegenden Inhalt angezeigt. 
+            Bewegen Sie die Maus aus der Box hinaus, schließt sich diese wieder. <br>
+            <br>
+            Bevor Sie mit dem eigentlichen Experiment beginnen, folgen nun zwei Übungsaufgaben um Sie mit diesem System vertraut zu machen. 
+            Sehen Sie sich das Beispiel unten an und machen Sie sich bitte mit dem Öffnen und Schließen der Boxen vertraut.
         </p>
 
         <?php

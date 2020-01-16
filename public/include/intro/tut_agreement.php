@@ -4,7 +4,25 @@
         <h3>Einwilligung zur Teilnahme</h3>
 
         <p class="tutorialText">
-            Lorem Ipsum Dolor Sit Amet.
+            Ich erkläre mich bereit, an der Studie „Untersuchung zu finanziellen Entscheidungen“ teilzunehmen. <br>
+            <br>
+            Ich bin von einem der Testleiterinnen bzw. Testleiter ausführlich und verständlich über Zielsetzung, 
+            Bedeutung und Tragweite der Studie und die sich für mich daraus ergebenden Anforderungen aufgeklärt worden. 
+            Ich habe darüber hinaus den Text dieser Teilnehmerinnen Information und Einwilligungserklärung gelesen. 
+            Aufgetretene Fragen wurden mir von der Testleitung verständlich und ausreichend beantwortet. 
+            Ich hatte genügend Zeit, mich zu entscheiden, ob ich an der Studie teilnehmen möchte. Ich habe zurzeit keine weiteren Fragen mehr. <br>
+            <br>
+            Ich werde die Hinweise, die für die Durchführung der Studie erforderlich sind, befolgen, 
+            behalte mir jedoch das Recht vor, meine freiwillige Mitwirkung jederzeit zu beenden, ohne dass mir daraus Nachteile entstehen. <br>
+            <br>
+            Ich bin zugleich damit einverstanden, dass die im Rahmen dieser Studie von mir erhobenen Daten anonym aufgezeichnet und gruppenbezogen ausgewertet werden. 
+            Ich stimme zu, dass meine Daten dauerhaft in anonymisierter Form elektronisch gespeichert werden. <br>
+            <br>
+            Den Aufklärungsteil habe ich gelesen und verstanden. Ich konnte im Aufklärungsgespräch alle mich interessierenden Fragen stellen. 
+            Sie wurden vollständig und verständlich beantwortet. <br>
+            <br>
+            Diese Einwilligung verbleibt bei der Projektleitung, die ich bei weiteren Fragen kontaktieren kann (Martin Müller, martin.mueller82@univie.ac.at).          
+         
         </p>
 
         <p class="tutorialText">
