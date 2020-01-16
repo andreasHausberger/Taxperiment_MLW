@@ -24,6 +24,10 @@
 
     <div class="riskAversionQuestionnaireContainer">
 
+        <form action="../../templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
+            <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
+            <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
+            <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
         <?php
         $rowArray = [
             [
@@ -137,8 +141,10 @@
                 "ecuB2" => "10",
             ],
         ];
-        echo createRiskAversionTask($rowArray);
+        createRiskAversionTask($rowArray);
         ?>
+            <input type="submit" name="Submit" value="Next">
+        </form>
     </div>
 </div>
 

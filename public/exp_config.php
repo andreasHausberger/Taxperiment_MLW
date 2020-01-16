@@ -16,9 +16,11 @@ if (!isset($connection)) {
     echo "Reestablished connection";
 }
 
+$subjectName = $_GET['sname'];
+
 $participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
 
-$participantQuery->bind_param("s", $_GET['sname']);
+$participantQuery->bind_param("s", $subjectName);
 
 $participantID = -1;
 $experimentID = -1;
@@ -30,7 +32,12 @@ if ($participantQuery->execute()) {
 else {
     echo "Error saving participant: " . $connection->error;
     var_dump($participantQuery);
+    die;
 }
+
+$riskAversionQuery = $connection->prepare("UPDATE risk_aversion SET subject_id = (?) WHERE subject_name = (?)");
+
+$riskAversionQuery->bind_param('is', $participantID, $subjectName);
 
 $experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant) VALUES (?, ?)");
 

@@ -249,12 +249,23 @@ VALUES
 	(8,1,1,1)
 ";
 
-//NOTE: Please don't try to run the insert queries - they don't work & will break it.
 
+$riskAversionQuery = "
+CREATE TABLE `risk_aversion` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `subject_name` varchar(255) DEFAULT NULL,
+  `subject_id` int(11) DEFAULT NULL,
+  `row` int(1) DEFAULT NULL,
+  `result` char(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `participant_id_risk_aversion_subject_id` (`subject_id`),
+  CONSTRAINT `participant_id_risk_aversion_subject_id` FOREIGN KEY (`subject_id`) REFERENCES `participant` (`id`)
+)
+";
 
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
-    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit" => $auditQuery, "Questionnaire" => $questionnaire);
+    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit" => $auditQuery, "Questionnaire" => $questionnaire, "Risk Aversion" => $riskAversionQuery);
 
 $insertQueries = array("presentation" => $insertPresentationQuery, "round_order" => $insertOrderQuery, "feedback" => $insertFeedbackQuery,
     "exp_condition" => $insertConditionQuery, "exp_round" => $insertRoundsQuery);

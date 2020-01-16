@@ -36,8 +36,8 @@ if( !function_exists("createRiskAversionRow") ) {
                     <span> Probability $probA2%, ECU $ecuA2</span>
                 </td>
                 <td>
-                    <input type=\"radio\" name=\"$rowName\"> A
-                    <input type=\"radio\" name=\"$rowName\"> B
+                    <input type=\"radio\" value='A' name=\"$rowName\"> A
+                    <input type=\"radio\" value='B' name=\"$rowName\"> B
                 </td>
                 <td>
                     <span> Probability $probB1%, ECU $ecuB1</span> <br>
@@ -95,13 +95,25 @@ if ($condition == -1) {
 }
 
 else {
-    if ($index == 9) {
+
+    if ($index == 4) {
+        //risk aversion has its own Next button (submit, save, & redirect).
+
+        require_once ("../../templates/header.php");
+
+        include($page);
+
+        require_once ("../../templates/footer.php");
+
+    }
+    else if ($index == 9) {
         require_once ("../../templates/header.php");
 
         include($page);
         include("../../templates/redirect.php");
 
-        require_once ("../../templates/footer.php");}
+        require_once ("../../templates/footer.php");
+    }
     else {
         require_once ("../../templates/header.php");
 
@@ -110,6 +122,8 @@ else {
         include("../../templates/continue.php");
 
         require_once ("../../templates/footer.php");
+
+
     }
 }
 
