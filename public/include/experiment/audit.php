@@ -210,9 +210,6 @@ else {
         }
     }
 
-    function collapseIntroOverlay() {
-        document.getElementById("introOverlay").style.width = 0;
-    }
 
 
 </script>
@@ -238,18 +235,6 @@ echo $link?> method="post">
 <!---->
 <!--    <input id="submitButton" type= --><?php //echo($feedback == "0" ? "button" : "submit"); ?>
 <!--           class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">-->
-
-    <div class="overlay" id="introOverlay">
-        <div class="feedbackContainer" id="infoContainer">
-            <div id="innerInfoContainer">
-                <br>
-                <br>
-                <br>
-                <input type="button" value="Click here to continue" onclick="collapseIntroOverlay()">
-            </div>
-
-        </div>
-    </div>
 
     <div class="overlay" id="feedbackOverlay">
         <div class="feedbackContainer">
