@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +184,7 @@
       <workItem from="1575554309184" duration="1720000" />
       <workItem from="1578558935732" duration="8445000" />
       <workItem from="1578579584092" duration="4377000" />
-      <workItem from="1579249854554" duration="7205000" />
-    </task>
-    <task id="LOCAL-00076" summary="Added &quot;Payback + &quot; to fine level attention question.">
-      <created>1554108301129</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1554108301129</updated>
+      <workItem from="1579249854554" duration="7271000" />
     </task>
     <task id="LOCAL-00077" summary="Hotfix: Select distinct --&gt; no duplicate .csv rows.">
       <created>1554112471373</created>
@@ -531,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579262231270</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Fixed definitions page for conditions 1-3">
+      <created>1579263674719</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1579263674719</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +551,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Formatting" />
     <MESSAGE value="Removed duplicate answers." />
     <MESSAGE value="Rewrote Create table syntax." />
     <MESSAGE value="Reworked Database config --&gt; should now create it instantly." />
@@ -578,13 +575,14 @@
     <MESSAGE value="Fix: Added SQL syntax for table creation." />
     <MESSAGE value="Removed popup Box when opening a new audit page." />
     <MESSAGE value="Added different display modes for conditions, in Experiment and Intro." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added different display modes for conditions, in Experiment and Intro." />
+    <MESSAGE value="Fixed definitions page for conditions 1-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed definitions page for conditions 1-3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1684" y="-116" key="CommitChangelistDialog2" timestamp="1579262231106">
+    <state x="-1684" y="-116" key="CommitChangelistDialog2" timestamp="1579263674596">
       <screen x="-2560" y="-367" width="2560" height="1417" />
     </state>
-    <state x="-1684" y="-116" key="CommitChangelistDialog2/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579262231106" />
+    <state x="-1684" y="-116" key="CommitChangelistDialog2/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579263674596" />
     <state width="2117" height="328" key="GridCell.Tab.0.bottom" timestamp="1579263362699">
       <screen x="-2560" y="-367" width="2560" height="1417" />
     </state>
@@ -677,10 +675,14 @@
       <screen x="-2560" y="-367" width="2560" height="1417" />
     </state>
     <state x="-2266" y="-222" width="1480" height="772" key="ShowDiffWithBranchDialog/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579183967195" />
-    <state x="-2266" y="-222" width="1480" height="772" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1579183967196">
+    <state x="-1875" y="21" key="Vcs.Push.Dialog.v2" timestamp="1579263692665">
       <screen x="-2560" y="-367" width="2560" height="1417" />
     </state>
-    <state x="-2266" y="-222" width="1480" height="772" key="com.intellij.dvcs.ui.CompareBranchesDialog/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579183967196" />
+    <state x="-1875" y="21" key="Vcs.Push.Dialog.v2/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579263692665" />
+    <state x="-2266" y="-222" width="1480" height="772" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1579263728721">
+      <screen x="-2560" y="-367" width="2560" height="1417" />
+    </state>
+    <state x="-2266" y="-222" width="1480" height="772" key="com.intellij.dvcs.ui.CompareBranchesDialog/-2560.-367.2560.1417/0.23.1680.972@-2560.-367.2560.1417" timestamp="1579263728721" />
     <state x="-1683" y="24" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578583620619">
       <screen x="-2560" y="-367" width="2560" height="1417" />
     </state>

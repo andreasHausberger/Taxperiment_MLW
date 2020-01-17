@@ -12,7 +12,7 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Development Version 1.1.5 (Jan 2020)</p>
+<p>Staging Version 1.1.5 (Jan 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
