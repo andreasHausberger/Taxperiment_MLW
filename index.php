@@ -12,19 +12,21 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Development Version 1.1.4 (Jan 2020)</p>
+<p>Development Version 1.1.5 (Jan 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Rework of Tutorial: New Page names, simpler layout</li>
-    <li>Risk Aversion Questionnaire</li>
-    <li>2 Examples of Audits</li>
+    <li>Added Saving for Risk Aversion Questionnaire</li>
+    <li>Conditions now call the correct MLW Table</li>
+    <li>Various adaptions and fixes</li>
 </ul>
 
 <br>
 <b> To Do </b>
 <ul>
-    <li>Conditions & Randomization --> Implementaiton & Review</li>
+    <li>Randomization --> Implementaiton & Review</li>
+    <li>Disable the Next-Button when the RA questionnaire is not yet complete</li>
+    <li>Intro Condition 4: Automatically skip the definitions page. </li>
     <li>Content: Post-Experiment Questionnaire</li>
     <li>Review of all Changes</li>
 </ul>
@@ -39,7 +41,7 @@ require_once("public/templates/header.php");
         <?php
         include("./resources/library/mlwebphp_100beta/mlweb_start_random.html");
         ?>
-        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 8), a
+        <p>Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
             random condition is selected.
         </p>
     </div>
