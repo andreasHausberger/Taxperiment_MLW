@@ -96,8 +96,9 @@ if ($condition == -1) {
 
 else {
 
-    if ($index == 4) {
+    if ($index == 4 || $index == 7 || $index == 8) {
         //risk aversion has its own Next button (submit, save, & redirect).
+        //exams 1 and 2 have tax evade/pay buttons, which work as "Next" Buttons.
 
         require_once ("../../templates/header.php");
 

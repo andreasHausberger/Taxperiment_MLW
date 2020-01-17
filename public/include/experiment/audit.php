@@ -28,9 +28,17 @@ if (isset($_GET['feedback'])) {
 else {
     echo "WARNING: Could not find feedback information!";
 }
-if (isset($_GET['presentation'])) {
-    $presentationBool = $_GET['presentation'];
-    include("../../../resources/templates/group1.php");
+if (isset($_GET['condition'])) {
+
+    if ($condition == 1 || $condition == 2) {
+        include("../../../resources/templates/group1.php");
+    }
+    elseif ($condition == 3 || $condition == 4) {
+        include("../../../resources/templates/group2.php");
+    }
+    else {
+        echo "Could not read condition!";
+    }
 }
 else {
     echo "Could not load MLW table!";

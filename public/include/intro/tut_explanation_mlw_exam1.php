@@ -22,8 +22,22 @@
 
         $nextPage = 8;
 
-        include("../../../resources/templates/mlw_demo.php");
+        if (isset($_GET['condition'])) {
+            $condition = $_GET['condition'];
 
+            if ($condition == 1 || $condition == 2) {
+                include("../../../resources/templates/presentation_demo_group1.php");
+            }
+            elseif ($condition == 3 || $condition == 4) {
+                include("../../../resources/templates/presentation_demo_group1.php");
+            }
+            else {
+                echo "Could not read condition!";
+            }
+        }
+        else {
+            echo "Could not load MLW table!";
+        }
         ?>
 
         <div id="taxInputContainer">
