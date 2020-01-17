@@ -251,7 +251,7 @@ VALUES
 
 
 $riskAversionQuery = "
-CREATE TABLE `risk_aversion` (
+CREATE TABLE IF NOT EXISTS `risk_aversion` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `subject_name` varchar(255) DEFAULT NULL,
   `subject_id` int(11) DEFAULT NULL,
