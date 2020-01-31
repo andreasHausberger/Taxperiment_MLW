@@ -50,18 +50,16 @@ else {
 }
 
 
-$roundQueryAsc = "SELECT * FROM exp_round ORDER BY id ASC";
-$roundQueryDesc = "SELECT * FROM exp_round ORDER BY id DESC";
 
-$roundsResult = $connection->query($conditionData[1] == 0 ? $roundQueryAsc : $roundQueryDesc);
+$roundQueryAsc = "SELECT * FROM exp_round";
+
+$roundsResult = $connection->query($roundQueryAsc);
 global $expRounds, $dataArray;
 
 if ($roundsResult->num_rows > 0) {
     while ($row = $roundsResult->fetch_assoc()) {
-
         $expRounds[] = $row;
     }
-    console_log("loaded rounds in order " . ($conditionData[1] == 0 ? 'standard' : 'reverse') . " \n");
 }
 else {
     echo "Connection error: " . $connection->error;

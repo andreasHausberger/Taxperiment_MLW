@@ -12,20 +12,18 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Staging Version 1.1.5 (Jan 2020)</p>
+<p>Staging Version 1.1.6 (Jan 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Added Saving for Risk Aversion Questionnaire</li>
-    <li>Conditions now call the correct MLW Table</li>
-    <li>Various adaptions and fixes</li>
+   <li>Risk Aversion Questionnaire: Next Button is disabled until all answers are selected</li>
+    <li>New Layout for MouselabWeb Tables (broader margins, ">" sign for Conditions 1 & 2</li>
 </ul>
 
 <br>
 <b> To Do </b>
 <ul>
-    <li>Randomization --> Implementaiton & Review</li>
-    <li>Disable the Next-Button when the RA questionnaire is not yet complete</li>
+    <li>Randomization --> Implementation & Review</li>
     <li>Intro Condition 4: Automatically skip the definitions page. </li>
     <li>Content: Post-Experiment Questionnaire</li>
     <li>Review of all Changes</li>
