@@ -29,7 +29,7 @@
                 include("../../../resources/templates/presentation_demo_group1.php");
             }
             elseif ($condition == 3 || $condition == 4) {
-                include("../../../resources/templates/presentation_demo_group1.php");
+                include("../../../resources/templates/presentation_demo_group2.php");
             }
             else {
                 echo "Could not read condition!";

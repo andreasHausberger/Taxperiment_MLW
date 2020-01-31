@@ -143,16 +143,29 @@
         ];
         createRiskAversionTask($rowArray);
         ?>
-            <input type="submit" name="Submit" value="Next">
+            <input id="riskAversionNextButton" type="submit" name="Submit" value="Next">
         </form>
     </div>
 </div>
 
-<?php
+<script type="application/javascript">
+$(function() {
+    $('#riskAversionNextButton').prop('disabled', true);
+    var answers = [];
 
+    $(".riskAversionInput").on('click', function() {
+        let name = $(this).attr('name');
 
+        if (!answers.includes(name)) {
+            answers.push(name);
+        }
 
-?>
+        if (answers.length == 10) {
+            $("#riskAversionNextButton").prop('disabled', false);
+        }
+    })
+})
+</script>
 
 <!-- Anmerkungen:
     <h2> Headline </h2> für Überschriften

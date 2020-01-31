@@ -147,6 +147,37 @@ Audit Page
     font-weight: 900;
 }
 
+.tableContainer .signContainer {
+    position: absolute;
+    background: gray;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    margin: 200px 251px 10px;
+    text-align: center;
+    border-top: 2px solid #c1c1c1;
+    border-left: 2px solid #c1c1c1;
+}
+
+.tableContainer .signContainer p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.mlwTrackingTable {
+
+}
+
+.mlwTrackingTable tbody tr .leftColumnCell {
+    padding-right: 20px;
+}
+
+.mlwTrackingTable tbody tr .rightColumnCell {
+    padding-left: 20px;
+}
+
+
 /*Questionnaire */
 
 .radioDisplayHorizontal {

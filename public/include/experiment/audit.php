@@ -6,6 +6,7 @@ $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
 $fineRate = $currentRound['fine_rate'];
 $sureGain = $currentRound['ev_gain'];
+$evEvasion = $currentRound['ev_evasion'];
 $income = $currentRound['income'];
 
 $subjectID = $dataArray['pid'];

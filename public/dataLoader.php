@@ -7,13 +7,11 @@
  */
 
 /*
- * This should be called everytime experiment/index.php is called, to re-fetch the round data.
+ * This should be called every time experiment/index.php is called, to re-fetch the round data.
  * Thus, the actuality of data is ensured.
  *
  * THIS FILE DOES NOT SAVE ANYTHING.
  */
-
-// require("../resources/config.php"); // establishes connection, just in case
 
 $conditionQuery = $connection->prepare("SELECT * FROM exp_condition AS c WHERE c.id = (?)");
 $conditionQuery->bind_param('s', $_GET['condition']);

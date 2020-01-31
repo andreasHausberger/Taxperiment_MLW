@@ -36,8 +36,8 @@ if( !function_exists("createRiskAversionRow") ) {
                     <span> Probability $probA2%, ECU $ecuA2</span>
                 </td>
                 <td>
-                    <input type=\"radio\" value='A' name=\"$rowName\"> A
-                    <input type=\"radio\" value='B' name=\"$rowName\"> B
+                    <input class='riskAversionInput' type=\"radio\" value='A' name=\"$rowName\"> A
+                    <input class='riskAversionInput' type=\"radio\" value='B' name=\"$rowName\"> B
                 </td>
                 <td>
                     <span> Probability $probB1%, ECU $ecuB1</span> <br>
