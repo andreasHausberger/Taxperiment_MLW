@@ -48,8 +48,7 @@ if ($experimentQuery->execute()) {
 else {
     echo "Connection error while retrieving experiment: " . $connection->error;
 }
-
-
+global $expRounds, $dataArray;
 
 $roundQueryAsc = "SELECT * FROM exp_round";
 
@@ -63,6 +62,10 @@ if ($roundsResult->num_rows > 0) {
 }
 else {
     echo "Connection error: " . $connection->error;
+}
+
+if (!$expRounds || !isset($expRounds)) {
+    echo "Could not load round data!";
 }
 $roundNr = 1;
 $dataArray = array(

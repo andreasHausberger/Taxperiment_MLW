@@ -22,129 +22,132 @@
         </p>
     </div>
 
-    <div class="riskAversionQuestionnaireContainer">
+    <div class="mlwContentContainer">
+        <div class="riskAversionQuestionnaireContainer">
 
-        <form action="../../templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
-            <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
-            <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
-            <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
-        <?php
-        $rowArray = [
-            [
-                "rowName" => "row_1",
-                "probA1" => "10",
-                "ecuA1" => "200",
-                "probA2" => "90",
-                "ecuA2" => "160",
-                "probB1" => "10",
-                "ecuB1" => "385",
-                "probB2" => "90",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_2",
-                "probA1" => "20",
-                "ecuA1" => "200",
-                "probA2" => "80",
-                "ecuA2" => "160",
-                "probB1" => "20",
-                "ecuB1" => "385",
-                "probB2" => "80",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_3",
-                "probA1" => "30",
-                "ecuA1" => "200",
-                "probA2" => "70",
-                "ecuA2" => "160",
-                "probB1" => "30",
-                "ecuB1" => "385",
-                "probB2" => "70",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_4",
-                "probA1" => "40",
-                "ecuA1" => "200",
-                "probA2" => "60",
-                "ecuA2" => "160",
-                "probB1" => "40",
-                "ecuB1" => "385",
-                "probB2" => "60",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_5",
-                "probA1" => "50",
-                "ecuA1" => "200",
-                "probA2" => "50",
-                "ecuA2" => "160",
-                "probB1" => "50",
-                "ecuB1" => "385",
-                "probB2" => "50",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_6",
-                "probA1" => "60",
-                "ecuA1" => "200",
-                "probA2" => "40",
-                "ecuA2" => "160",
-                "probB1" => "60",
-                "ecuB1" => "385",
-                "probB2" => "90",
-                "ecuB2" => "40",
-            ],
-            [
-                "rowName" => "row_7",
-                "probA1" => "700",
-                "ecuA1" => "200",
-                "probA2" => "30",
-                "ecuA2" => "160",
-                "probB1" => "700",
-                "ecuB1" => "385",
-                "probB2" => "30",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_8",
-                "probA1" => "80",
-                "ecuA1" => "200",
-                "probA2" => "20",
-                "ecuA2" => "160",
-                "probB1" => "80",
-                "ecuB1" => "385",
-                "probB2" => "90",
-                "ecuB2" => "20",
-            ],
-            [
-                "rowName" => "row_9",
-                "probA1" => "90",
-                "ecuA1" => "200",
-                "probA2" => "10",
-                "ecuA2" => "160",
-                "probB1" => "90",
-                "ecuB1" => "385",
-                "probB2" => "10",
-                "ecuB2" => "10",
-            ],
-            [
-                "rowName" => "row_10",
-                "probA1" => "100",
-                "ecuA1" => "200",
-                "probA2" => "00",
-                "ecuA2" => "160",
-                "probB1" => "100",
-                "ecuB1" => "385",
-                "probB2" => "0",
-                "ecuB2" => "10",
-            ],
-        ];
-        createRiskAversionTask($rowArray);
-        ?>
-            <input id="riskAversionNextButton" type="submit" name="Submit" value="Next">
-        </form>
+            <form action="../../templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
+                <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
+                <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
+                <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
+                <?php
+                $rowArray = [
+                    [
+                        "rowName" => "row_1",
+                        "probA1" => "10",
+                        "ecuA1" => "200",
+                        "probA2" => "90",
+                        "ecuA2" => "160",
+                        "probB1" => "10",
+                        "ecuB1" => "385",
+                        "probB2" => "90",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_2",
+                        "probA1" => "20",
+                        "ecuA1" => "200",
+                        "probA2" => "80",
+                        "ecuA2" => "160",
+                        "probB1" => "20",
+                        "ecuB1" => "385",
+                        "probB2" => "80",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_3",
+                        "probA1" => "30",
+                        "ecuA1" => "200",
+                        "probA2" => "70",
+                        "ecuA2" => "160",
+                        "probB1" => "30",
+                        "ecuB1" => "385",
+                        "probB2" => "70",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_4",
+                        "probA1" => "40",
+                        "ecuA1" => "200",
+                        "probA2" => "60",
+                        "ecuA2" => "160",
+                        "probB1" => "40",
+                        "ecuB1" => "385",
+                        "probB2" => "60",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_5",
+                        "probA1" => "50",
+                        "ecuA1" => "200",
+                        "probA2" => "50",
+                        "ecuA2" => "160",
+                        "probB1" => "50",
+                        "ecuB1" => "385",
+                        "probB2" => "50",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_6",
+                        "probA1" => "60",
+                        "ecuA1" => "200",
+                        "probA2" => "40",
+                        "ecuA2" => "160",
+                        "probB1" => "60",
+                        "ecuB1" => "385",
+                        "probB2" => "90",
+                        "ecuB2" => "40",
+                    ],
+                    [
+                        "rowName" => "row_7",
+                        "probA1" => "700",
+                        "ecuA1" => "200",
+                        "probA2" => "30",
+                        "ecuA2" => "160",
+                        "probB1" => "700",
+                        "ecuB1" => "385",
+                        "probB2" => "30",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_8",
+                        "probA1" => "80",
+                        "ecuA1" => "200",
+                        "probA2" => "20",
+                        "ecuA2" => "160",
+                        "probB1" => "80",
+                        "ecuB1" => "385",
+                        "probB2" => "90",
+                        "ecuB2" => "20",
+                    ],
+                    [
+                        "rowName" => "row_9",
+                        "probA1" => "90",
+                        "ecuA1" => "200",
+                        "probA2" => "10",
+                        "ecuA2" => "160",
+                        "probB1" => "90",
+                        "ecuB1" => "385",
+                        "probB2" => "10",
+                        "ecuB2" => "10",
+                    ],
+                    [
+                        "rowName" => "row_10",
+                        "probA1" => "100",
+                        "ecuA1" => "200",
+                        "probA2" => "00",
+                        "ecuA2" => "160",
+                        "probB1" => "100",
+                        "ecuB1" => "385",
+                        "probB2" => "0",
+                        "ecuB2" => "10",
+                    ],
+                ];
+                createRiskAversionTask($rowArray);
+                ?>
+                <input id="riskAversionNextButton" style="margin-right: 99%" type="submit" name="Submit" value="Next">
+            </form>
+        </div>
+
     </div>
 </div>
 

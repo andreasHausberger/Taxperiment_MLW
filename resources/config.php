@@ -6,12 +6,9 @@
  * Time: 10:06
  */
 
-function console_log($data)
-{
-    echo '<script>';
-    echo 'console.log(' . json_encode($data) . ')';
-    echo '</script>';
-}
+require_once ('code/code.php');
+
+
 
 // echo "made it to config";
 
@@ -43,11 +40,11 @@ $config = array(
 );
 
 
+/**
+ * HEROKU SETUP
+ * This is used for Heruku Setup with a ClearDB database.
+ */
 if (getenv("CLEARDB_DATABASE_URL") != null) {
-
-    /*
-     * This is just for a heroku setup --> can be ignored in production.
-     */
 
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -76,12 +73,17 @@ if (!isset($connection)) {
             DB_Name);
 }
 
-
-
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 } else {
     console_log("Connected successfully");
+}
+
+$globalExpRounds = loadRoundData($connection);
+
+
+if (!$_COOKIE['GLOBAL_ROUNDS']) {
+    setcookie('GLOBAL_ROUNDS', json_encode($globalExpRounds));
 }
 
 defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));

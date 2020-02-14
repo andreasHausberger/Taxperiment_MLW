@@ -76,11 +76,41 @@ label {
 }
 
 /*
+Intro - Risk Aversion questionnaire
+ */
+
+.riskAversionQuestionnaireContainer {
+    width: 700px;
+    margin: auto;
+}
+
+.riskaversionTable tbody tr td {
+    padding: 5px 8px;
+}
+
+/*
 Audit Page
  */
 
+.mlwContentContainer {
+    text-align: center;
+}
+
+.tableContainer {
+    width: 554px;
+    margin: auto;
+}
+
 #taxInputContainer {
-    width: 400px;
+    width: 100%;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.buttonContainer input {
+    margin: auto 50px;
 }
 
 
@@ -176,7 +206,6 @@ Audit Page
 .mlwTrackingTable tbody tr .rightColumnCell {
     padding-left: 20px;
 }
-
 
 /*Questionnaire */
 

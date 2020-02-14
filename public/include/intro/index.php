@@ -6,6 +6,9 @@
  * Time: 09:28
  */
 
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php' );
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
+
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
 $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
@@ -25,70 +28,6 @@ $pages = array(
 );
 
 $page = $pages[$index];
-
-if( !function_exists("createRiskAversionRow") ) {
-    function createRiskAversionRow($rowName, $probA1, $ecuA1, $probA2, $ecuA2, $probB1, $ecuB1,  $probB2, $ecuB2) {
-
-        echo "
-<tr>
-                <td>
-                    <span> Probability $probA1%, ECU $ecuA1</span> <br>
-                    <span> Probability $probA2%, ECU $ecuA2</span>
-                </td>
-                <td>
-                    <input class='riskAversionInput' type=\"radio\" value='A' name=\"$rowName\"> A
-                    <input class='riskAversionInput' type=\"radio\" value='B' name=\"$rowName\"> B
-                </td>
-                <td>
-                    <span> Probability $probB1%, ECU $ecuB1</span> <br>
-                    <span> Probability $probB2%, ECU $ecuA2</span>
-                </td>
-            </tr>
-";
-
-    }
-}
-
-if ( !function_exists("createRiskAversionTask") ) {
-    function createRiskAversionTask($taskArray) {
-        echo "
-<table class=\"mlwTable\">
-            <thead>
-            <tr>
-                <td>
-                    Option A
-                </td>
-                <td>
-
-                </td>
-                <td>
-                    Option B
-                </td>
-            </tr>
-
-            </thead>
-            <tbody>
-";
-        foreach ($taskArray as $item) {
-             createRiskAversionRow(
-                $item['rowName'],
-                $item['probA1'],
-                $item['ecuA1'],
-                $item['probA2'],
-                $item['ecuA2'],
-                $item['probB1'],
-                $item['ecuB1'],
-                $item['probB2'],
-                $item['ecuB2']
-            );
-        }
-
-        echo "
- </tbody>
-        </table>
-";
-    }
-}
 
 if ($condition == -1) {
     echo "Something went wrong: Index is " . $index . " and condition is " . $condition;

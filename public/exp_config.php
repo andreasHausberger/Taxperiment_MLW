@@ -13,7 +13,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
-    echo "Reestablished connection";
+    //echo "Reestablished connection";
 }
 
 $subjectName = $_GET['sname'];

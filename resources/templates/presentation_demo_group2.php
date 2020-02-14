@@ -61,7 +61,7 @@ if (isset($_GET['condition'])) {
 
     CBCol = "0^0";
     CBRow = "0^0";
-    W_Col = "200^200";
+    W_Col = "250^250";
     H_Row = "80^80";
 
     chkchoice = "nobuttons";
@@ -142,7 +142,8 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
 
     <!--END preHTML-->
     <!-- MOUSELAB TABLE -->
-    <div class="tableContainer">
+    <div class="mlwContentContainer">
+        <div class="tableContainer">
         <TABLE class="mlwTrackingTable" border=1>
             <TR>
                 <!--cell a0(tag:a0)-->
@@ -239,6 +240,7 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
                 </TD>
                 <!--end cell--></TR>
         </TABLE>
+    </div>
     </div>
 
     <!-- END MOUSELAB TABLE -->

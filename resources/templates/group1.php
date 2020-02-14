@@ -144,7 +144,8 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
 
     <!--END preHTML-->
     <!-- MOUSELAB TABLE -->
-    <div class="tableContainer">
+    <div class="mlwContentContainer">
+        <div class="tableContainer">
         <div class="signContainer">
             <p> > </p>
         </div>
@@ -294,6 +295,7 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
                 <!--end cell--></TR>
         </TABLE>
 
+    </div>
     </div>
     <!-- END MOUSELAB TABLE -->
     <!--BEGIN postHTML-->

@@ -46,12 +46,22 @@
         }
         ?>
 
+        <script>
+            $(function() {
+                let condition = <?php echo $condition ?>;
+
+                if (condition && condition == 1) {
+                    $(".signContainer").hide();
+                    console.log("Hid sign container for condition 1");
+                }
+            })
+        </script>
+
         <div id="taxInputContainer">
-            <label for="inputValue">Please choose whether to pay the taxes stated above or to evade completely: </label>
             <!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
             <br>
-            <input type="submit" class="formButton" id="complyButton" value="Pay Taxes" >
-            <input type="submit" class="formButton" id="evadeButton" value="Evade Taxes" >
+            <?php getAuditButtons(); ?>
+
 
         </div>
     </div>

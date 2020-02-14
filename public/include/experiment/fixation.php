@@ -5,7 +5,7 @@
             <div class="timerContent">
                 <div>
                     <p>
-                        Remaining...
+                        Verbleibend...
                     </p>
                 </div>
                 <div>
