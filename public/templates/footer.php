@@ -3,8 +3,8 @@
 <div id="footer">
     <hr style="width: 100%;">
     <p>
-        Christoph Kogler, <br>
-        Tilburg University – 2019
+        Martin Müller, <br>
+        Universität Wien – 2020
     </p>
 </div>
 </body>

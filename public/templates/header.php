@@ -13,7 +13,7 @@
 
 <body>
 <div id="header">
-    <img src="/public/img/logo.eng.0681.jpg" alt="">
+    <img src="/public/img/Uni_Logo_2016.png" alt="" style="height: 125px">
     <hr style="width: 100%;">
 </div>
 <div class="pageContainer">

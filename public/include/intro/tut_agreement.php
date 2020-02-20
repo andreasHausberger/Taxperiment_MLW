@@ -1,7 +1,8 @@
 <div class="siteContainer">
+    <h2>Einwilligung zur Teilnahme</h2>
+
     <div class="contentContainer">
 
-        <h3>Einwilligung zur Teilnahme</h3>
 
         <p class="tutorialText">
             Ich erkläre mich bereit, an der Studie „Untersuchung zu finanziellen Entscheidungen“ teilzunehmen. <br>

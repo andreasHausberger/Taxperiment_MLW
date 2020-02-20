@@ -11,6 +11,14 @@ body {
 
 }
 
+#header, #footer {
+    text-align: center;
+}
+
+#header img {
+    margin: auto;
+}
+
 * {
     font-size: 16px;
 }
@@ -183,7 +191,7 @@ Audit Page
     height: 50px;
     width: 50px;
     z-index: 100;
-    margin: 200px 251px 10px;
+    margin: 185px 269px 10px;
     text-align: center;
     border-top: 2px solid #c1c1c1;
     border-left: 2px solid #c1c1c1;
@@ -191,7 +199,7 @@ Audit Page
 
 .tableContainer .signContainer p {
     font-size: 16px;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -200,11 +208,11 @@ Audit Page
 }
 
 .mlwTrackingTable tbody tr .leftColumnCell {
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .mlwTrackingTable tbody tr .rightColumnCell {
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 /*Questionnaire */
