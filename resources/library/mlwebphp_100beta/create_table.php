@@ -212,30 +212,30 @@ VALUES
 
 $insertRoundsQuery = "REPLACE INTO exp_round (id, tax_rate, income, audit_probability, fine_rate, fine_amount, ev_gain, ev_evasion) VALUES
 
-     (1,0.3,1000,0.1,1,300,700,940),
-	(2,0.5,3000,0.25,3,4500,1500,1500),
-	(3,0.3,1000,0.4,3,900,700,520),
-	(4,0.5,3000,0.4,3,4500,1500,600),
-	(5,0.5,1000,0.25,3,1500,500,500),
-	(6,0.5,1000,0.4,3,1500,500,200),
-	(7,0.3,3000,0.1,3,2700,2100,2640),
-	(8,0.3,1000,0.25,3,900,700,700),
-	(9,0.3,1000,0.25,1,300,700,850),
-	(10,0.3,1000,0.4,1,300,700,760),
-	(11,0.3,3000,0.25,1,900,2100,2550),
-	(12,0.5,1000,0.4,1,500,500,600),
-	(13,0.5,3000,0.1,1,1500,1500,2700),
-	(14,0.3,3000,0.25,3,2700,2100,2100),
-	(15,0.5,1000,0.1,3,1500,500,800),
-	(16,0.3,1000,0.1,3,900,700,880),
-	(17,0.5,3000,0.1,3,4500,1500,2400),
-	(18,0.5,1000,0.25,1,500,500,750),
-	(19,0.5,3000,0.4,1,1500,1500,1800),
-	(20,0.3,3000,0.1,1,900,2100,2820),
-	(21,0.5,1000,0.1,1,500,500,900),
-	(22,0.3,3000,0.4,1,900,2100,2880),
-	(23,0.3,3000,0.4,3,2700,2100,1560),
-	(24,0.5,3000,0.25,1,1500,1500,2250);";
+     (0,0.3,1000,0.1,1,300,700,940),
+	(1,0.5,3000,0.25,3,4500,1500,1500),
+	(2,0.3,1000,0.4,3,900,700,520),
+	(3,0.5,3000,0.4,3,4500,1500,600),
+	(4,0.5,1000,0.25,3,1500,500,500),
+	(5,0.5,1000,0.4,3,1500,500,200),
+	(6,0.3,3000,0.1,3,2700,2100,2640),
+	(7,0.3,1000,0.25,3,900,700,700),
+	(8,0.3,1000,0.25,1,300,700,850),
+	(9,0.3,1000,0.4,1,300,700,760),
+	(10,0.3,3000,0.25,1,900,2100,2550),
+	(11,0.5,1000,0.4,1,500,500,600),
+	(12,0.5,3000,0.1,1,1500,1500,2700),
+	(13,0.3,3000,0.25,3,2700,2100,2100),
+	(14,0.5,1000,0.1,3,1500,500,800),
+	(15,0.3,1000,0.1,3,900,700,880),
+	(16,0.5,3000,0.1,3,4500,1500,2400),
+	(17,0.5,1000,0.25,1,500,500,750),
+	(18,0.5,3000,0.4,1,1500,1500,1800),
+	(19,0.3,3000,0.1,1,900,2100,2820),
+	(20,0.5,1000,0.1,1,500,500,900),
+	(21,0.3,3000,0.4,1,900,2100,2880),
+	(22,0.3,3000,0.4,3,2700,2100,1560),
+	(23,0.5,3000,0.25,1,1500,1500,2250);";
 
 $insertConditionQuery = "
 REPLACE INTO exp_condition (id, round_order, feedback, presentation)
@@ -264,9 +264,18 @@ CREATE TABLE IF NOT EXISTS `risk_aversion` (
 )
 ";
 
+$roundOrderQuery = "
+CREATE TABLE IF NOT EXISTS `exp_round_order` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `exp_id` int(10) unsigned DEFAULT NULL,
+  `round_order` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+";
+
 $queries = array("Experiment Rounds" => $expRoundQuery, "Feedback" => $feedbackQuery, "Order" => $orderQuery,
     "Participant" => $participantQuery, "Presentation" => $presentationQuery, "Experiment Conditions" => $expConditionQuery,
-    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit" => $auditQuery, "Questionnaire" => $questionnaire, "Risk Aversion" => $riskAversionQuery);
+    "Experiment" => $experimentQuery, "ML Web" => $mlwebQuery, "Audit" => $auditQuery, "Questionnaire" => $questionnaire, "Risk Aversion" => $riskAversionQuery, "Round Order Lookup" => $roundOrderQuery);
 
 $insertQueries = array("presentation" => $insertPresentationQuery, "round_order" => $insertOrderQuery, "feedback" => $insertFeedbackQuery,
     "exp_condition" => $insertConditionQuery, "exp_round" => $insertRoundsQuery);
