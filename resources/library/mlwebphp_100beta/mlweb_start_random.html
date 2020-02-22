@@ -12,7 +12,7 @@
 //calculate random number
             var selectedCondition = document.getElementById("condnum").value;
 
-            if ( selectedCondition == "" || selectedCondition <= 0 || selectedCondition > 4 ) {
+            if (selectedCondition == "" || selectedCondition <= 0 || selectedCondition > 4) {
                 selectedCondition = Math.floor(Math.random() * 4) + 1;
                 console.log("Selected randomly: " + selectedCondition);
             }
@@ -51,8 +51,7 @@
 // set cookies
             if (subject == "") {
                 alert("Subject name is empty!");
-            }
-            else {
+            } else {
                 document.cookie = "mlweb_condnum=" + condnum + "; path=/";
                 document.cookie = "mlweb_subject=" + subject + "; path=/";
 
@@ -68,10 +67,12 @@
     <TABLE>
         <TR>
             <TD>Subject name:</TD>
-            <TD><input name="subject" type="text" id="subject"></TD>
+            <TD>
+                <input name="subject" type="text" id="subject">
+            </TD>
         </TR>
         <TR>
-            <TD>Condition number: </TD>
+            <TD>Condition number:</TD>
             <TD><input name="condnum" type="text" id="condnum" size="10"></TD>
         </TR>
         <TR>

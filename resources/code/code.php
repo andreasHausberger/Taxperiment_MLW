@@ -16,15 +16,15 @@ function console_log($data) {
 if (!function_exists("loadRoundData")) {
     /**
      * Fetches round data from Database and shuffles it by default.
-     * @param bool $shuffle: Specifies whether the array should be in random order.
-     * @param $connection: Valid mysqli connection.
+     * @param bool $paraShuffle: Specifies whether the array should be in random order.
+     * @param $paraConnection: Valid mysqli connection.
      * @return array|bool: Returns array with round data if connection succeeds, false if it doesn't.
      */
-    function loadRoundData($connection, $shuffle = true) {
+    function loadRoundData($paraConnection, $paraShuffle = true) {
         console_log('loadRoundData');
         $roundQueryAsc = "SELECT * FROM exp_round";
 
-        $roundsResult = $connection->query($roundQueryAsc);
+        $roundsResult = $paraConnection->query($roundQueryAsc);
         global $expRounds, $dataArray;
 
         if ($roundsResult->num_rows > 0) {
@@ -33,16 +33,54 @@ if (!function_exists("loadRoundData")) {
             }
 
 
-            if ($shuffle)
+            if ($paraShuffle)
                 shuffle($expRounds);
 
             return $expRounds;
         }
         else {
-            echo "Connection error: " . $connection->error;
+            echo "Connection error: " . $paraConnection->error;
         }
         return false;
     }
+}
+
+if(!function_exists('getRandomOrder')) {
+    function getRandomOrder($paraConnection, $paraExpID) {
+        $randomOrderQuery = $paraConnection->prepare('SELECT ero.round_order FROM exp_round_order ero WHERE exp_id = (?)');
+
+        $randomOrderQuery->bind_param('i', $paraExpID);
+
+        if ($randomOrderQuery->execute()) {
+            $result = $randomOrderQuery->get_result();
+
+            if ($result->num_rows > 0 ) {
+                while ($row = $result->fetch_row()) {
+                    return $row[0];
+                }
+            }
+            else {
+                return createNewRandomOrder($paraConnection, $paraExpID);
+            }
+        }
+    }
+}
+
+function createNewRandomOrder($paraConnection, $paraExpID) {
+    $roundArray = range(0, 23);
+
+    shuffle($roundArray);
+
+    $arrayString = json_encode($roundArray);
+
+    $insertRandomOrderQuery = $paraConnection->prepare('INSERT INTO exp_round_order (exp_id, round_order) VALUES (?, ?)');
+    $insertRandomOrderQuery->bind_param('is', $paraExpID, $arrayString);
+
+    if ($insertRandomOrderQuery->execute()) {
+        return $roundArray;
+    }
+    return null;
+
 }
 
 

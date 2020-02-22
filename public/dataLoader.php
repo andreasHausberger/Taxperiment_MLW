@@ -64,9 +64,8 @@ else {
     echo "Connection error: " . $connection->error;
 }
 
-if (!$expRounds || !isset($expRounds)) {
-    echo "Could not load round data!";
-}
+$roundOrder = getRandomOrder($connection, $experimentID);
+
 $roundNr = 1;
 $dataArray = array(
     "test" => "test",
@@ -76,7 +75,8 @@ $dataArray = array(
     "condition" => $conditionData[0],
     "feedback" => $conditionData[2],
     "order" => $conditionData[1],
-    "presentation" => $conditionData[3]
+    "presentation" => $conditionData[3],
+    "roundOrder" => $roundOrder
 );
 
 

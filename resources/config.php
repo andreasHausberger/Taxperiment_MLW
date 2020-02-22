@@ -79,13 +79,6 @@ if ($connection->connect_error) {
     console_log("Connected successfully");
 }
 
-$globalExpRounds = loadRoundData($connection);
-
-
-if (!$_COOKIE['GLOBAL_ROUNDS']) {
-    setcookie('GLOBAL_ROUNDS', json_encode($globalExpRounds));
-}
-
 defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
 defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
 

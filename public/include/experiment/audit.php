@@ -1,6 +1,8 @@
 <?php
 $expRoundArray = $expRounds['data'];
-$currentRound = $expRoundArray[$_GET['round'] - 1];
+$randomisedRoundOrderArray = json_decode($roundOrder);
+$currentRoundIndex = $_GET['round'] - 1;
+$currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
 
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
@@ -69,8 +71,11 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             if ((sureGain && evEvasion) &&sureGain > evEvasion) {
                 $(".signContainer").html("<p> > </p>");
             }
-            else {
+            else if (sureGain < evEvasion) {
                 $(".signContainer").html("<p> < </p>");
+            }
+            else {
+                $(".signContainer").html("<p> = </p>");
             }
         }
 
