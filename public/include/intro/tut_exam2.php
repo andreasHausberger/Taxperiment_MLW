@@ -12,11 +12,12 @@
 
         <?php
 
-        $taxRate = 0.2;
-        $auditProbability = 0.3;
-        $fineRate = 1;
-        $sureGain = 1600;
-        $income = 200;
+        $taxRate = 0.5;
+        $auditProbability = 0.25;
+        $fineRate = 3;
+        $sureGain = 1500;
+        $income = 3000;
+        $evEvasion = 1500;
 
         $subjectID = $dataArray['pid'];
         //var_dump($subjectID);
@@ -53,6 +54,26 @@
                 if (condition && condition == 1) {
                     $(".signContainer").hide();
                     console.log("Hid sign container for condition 1");
+                }
+
+                let sureGain = <?php echo $sureGain ?>;
+                let evEvasion = <?php echo $evEvasion ?>;
+
+                //no sign box for condition 1!
+                if (condition && condition == 1) {
+                    $(".signContainer").hide();
+                    console.log("Hid sign container for condition 1");
+                }
+                else {
+                    if ((sureGain && evEvasion) &&sureGain > evEvasion) {
+                        $(".signContainer").html("<p> > </p>");
+                    }
+                    else if (sureGain < evEvasion) {
+                        $(".signContainer").html("<p> < </p>");
+                    }
+                    else {
+                        $(".signContainer").html("<p> = </p>");
+                    }
                 }
             })
         </script>

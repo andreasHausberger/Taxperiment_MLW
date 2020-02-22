@@ -14,12 +14,12 @@
 
         <?php
 
-        $taxRate = 0.4;
-        $auditProbability = 0.2;
+        $taxRate = 0.3;
+        $auditProbability = 0.1;
         $fineRate = 1;
-        $sureGain = 900;
-        $income = 1500;
-        $evEvasion = 780;
+        $sureGain = 700;
+        $income = 1000;
+        $evEvasion = 940;
 
         $nextPage = 8;
 

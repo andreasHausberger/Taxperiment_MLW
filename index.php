@@ -12,19 +12,23 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Staging Version 1.1.6 (Jan 2020)</p>
+<p>Staging Version 1.1.7 (Feb 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-   <li>Risk Aversion Questionnaire: Next Button is disabled until all answers are selected</li>
-    <li>New Layout for MouselabWeb Tables (broader margins, ">" sign for Conditions 1 & 2</li>
+    <li>Randomization of Round Data --> Implementation & Review</li>
+    <li>Visual Changes: Centered stuff, new Logo, new Footer</li>
+    <li>Bugfix where the wrong "> < =" would be displayed </li>
+    <li>Bugfix where the Exam MLW tables in Intro would display wrong data</li>
+
 </ul>
 
 <br>
 <b> To Do </b>
 <ul>
-    <li>Randomization --> Implementation & Review</li>
     <li>Intro Condition 4: Automatically skip the definitions page. </li>
+    <li>Randomization of MLW Fields --> Under Construction</li>
+    <li>Refactor exp_config as a function --> More flexibility in Intro</li>
     <li>Content: Post-Experiment Questionnaire</li>
     <li>Review of all Changes</li>
 </ul>

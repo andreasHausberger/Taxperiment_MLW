@@ -76,20 +76,11 @@ include ("./templates/header.php");
 
 
         $condition = $_GET['condition'];
-        echo "<b> Remember: </b>";
-
         if (!isset($condition) || $condition <= 0) {
             echo "WARNING: COULD NOT READ CONDITION!";
         }
-        else if ($condition == 1 || $condition == 2 || $condition == 5 || $condition == 6) {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after each round. </span>
-            ";
-        }
         else {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after the last round in an overview of all rounds. </span> 
-            ";
+            include ("include/intro/tut_reminder.php");
         }
 
 echo ("
@@ -97,7 +88,7 @@ echo ("
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
    <label></label>
-   <input type='submit' value='Start Experiment!'>
+   <input type='submit' value='Experiment starten'>
 </form>
 ");
 include ("./templates/footer.php");

@@ -8,6 +8,8 @@
 
 // echo "made it here";
 
+
+
 $experimentID = -1;
 
 if (isset($_GET['expid'])) {
@@ -40,6 +42,7 @@ if (isset($_POST['data']) && isset($_POST['roundData'])) {
     $participant = $dataArray['pname'];
     $condition = $dataArray['condition'];
     $experimentID = $_GET['expid'];
+
 }
 
 
