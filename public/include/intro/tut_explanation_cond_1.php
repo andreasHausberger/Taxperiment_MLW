@@ -9,10 +9,17 @@
             <br>
             In jeder Runde erhalten Sie Informationen über Ihr Einkommen, die fällige Steuer, 
             Ihre Chance überprüft zu werden (Prüfwahrscheinlichkeit) und die potenzielle Geldstrafe für erkannte Hinterziehung. 
-            Diese Informationen (z.B. Höhe des Einkommens) ändern sich von Runde zu Runde. 
-            Auf der nächsten Seite werden diese Begriffe genau definiert. 
+            Diese Informationen (z.B. Höhe des Einkommens) ändern sich von Runde zu Runde.
+            <?php
+            if ($_GET['condition'] != 4) {
+                echo "
+                 Auf der nächsten Seite werden diese Begriffe genau definiert. 
             Bitte lesen Sie die Definitionen aufmerksam durch bevor Sie fortfahren. 
             Am Ende der Studie werden Sie nach dem Verständnis der Begriffe gefragt. 
+                ";
+            }
+            ?>
+
         </p>
     </div>
 </div>

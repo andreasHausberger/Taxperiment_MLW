@@ -151,7 +151,7 @@ $mouselabBoxArray = array(
         "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent"),
 );
 
-$currentBox = $mouselabBoxArray[$condition];
+$currentBox = $mouselabBoxArray[$currentCondition];
 
 $mlwFieldArray = [$incomeBox, $taxRateBox, $fineRateBox, $auditProbabilityBox];
 
@@ -160,7 +160,7 @@ $mlwFields = getRandomizedMLWFields([$incomeBox, $taxRateBox], [$fineRateBox, $a
 function getRandomizedMLWFields($paraRow1, $paraRow2)
 {
 //    shuffle($paraRow1);
-    shuffle($paraRow2);
+//    shuffle($paraRow2);
 
     return "
     <tr>

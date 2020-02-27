@@ -64,7 +64,10 @@ else {
     echo "Connection error: " . $connection->error;
 }
 
-$roundOrder = getRandomOrder($connection, $experimentID);
+$test = getRandomOrder($connection, $experimentID);
+
+$roundOrder = getRandomOrder($connection, $experimentID)["roundArray"];
+$conditionOrder = getRandomOrder($connection, $experimentID)["conditionArray"];
 
 $roundNr = 1;
 $dataArray = array(
@@ -76,7 +79,8 @@ $dataArray = array(
     "feedback" => $conditionData[2],
     "order" => $conditionData[1],
     "presentation" => $conditionData[3],
-    "roundOrder" => $roundOrder
+    "roundOrder" => $roundOrder,
+    "conditionOrder" => $conditionOrder
 );
 
 

@@ -62,7 +62,8 @@ else {
     echo "Error setting start date for experiment $experimentID: $connection->error";
 }
 
-$randomRoundOrder = getRandomOrder($connection, $experimentID);
+$randomRoundOrder = getRandomOrder($connection, $experimentID)['roundOrder'];
+$randomConditionOrder = getRandomOrder($connection, $experimentID)['conditionOrder'];
 
 include ("dataLoader.php");
 

@@ -4,6 +4,14 @@
     <link rel="stylesheet" href="mlweb.css" type="text/css">
 
     <script language="javascript">
+        var introWillBeSkipped = false;
+
+        $(function() {
+            $("#skipIntro").on('click', function() {
+                introWillBeSkipped = document.getElementById('skipIntro').checked;
+                console.log("introWillBeSkipped", introWillBeSkipped);
+            });
+        });
         function startExp(formlink) {
 // randomizer for 6 conditions
 // this script will choose one of six links randomly 
@@ -53,7 +61,15 @@
                 document.cookie = "mlweb_condnum=" + condnum + "; path=/";
                 document.cookie = "mlweb_subject=" + subject + "; path=/";
 
-                var newWind = window.open(linkstr + "&sname=" + subject + "&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+                let pageString = "&page=1";
+
+                let skipIntroBox = $('#skipIntro');
+
+                if (introWillBeSkipped) {
+                    pageString = "&page=9";
+                }
+
+                var newWind = window.open(linkstr + "&sname=" + subject + pageString, "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
             }
 
         }
@@ -74,7 +90,9 @@
             <TD><input name="condnum" type="text" id="condnum" size="10"></TD>
         </TR>
         <TR>
-            <TD colspan=2><input type="button" name="Button" value="Start Experiment" onClick="startExp(this.form)">
+            <TD colspan=2>
+                <input type="button" name="Button" value="Start Experiment" onClick="startExp(this.form)">
+                <input type="checkbox" id="skipIntro" name="skipIntro" value="0"> Skip Intro
             </TD>
         </TR>
     </TABLE>

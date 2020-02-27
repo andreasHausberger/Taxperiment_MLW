@@ -47,7 +47,7 @@ if (!function_exists("loadRoundData")) {
 
 if(!function_exists('getRandomOrder')) {
     function getRandomOrder($paraConnection, $paraExpID) {
-        $randomOrderQuery = $paraConnection->prepare('SELECT ero.round_order FROM exp_round_order ero WHERE exp_id = (?)');
+        $randomOrderQuery = $paraConnection->prepare('SELECT ero.round_order, ero.condition_order FROM exp_round_order ero WHERE exp_id = (?)');
 
         $randomOrderQuery->bind_param('i', $paraExpID);
 
@@ -56,6 +56,7 @@ if(!function_exists('getRandomOrder')) {
 
             if ($result->num_rows > 0 ) {
                 while ($row = $result->fetch_row()) {
+                    return ["roundArray" => $row[0], "conditionArray" => $row[1]];
                     return $row[0];
                 }
             }
@@ -69,15 +70,21 @@ if(!function_exists('getRandomOrder')) {
 function createNewRandomOrder($paraConnection, $paraExpID) {
     $roundArray = range(0, 23);
 
+    $conditionArray = array_merge(array_fill(0, 12, 1), array_fill(12, 12, 7));
+
+
+
     shuffle($roundArray);
+    shuffle($conditionArray);
 
     $arrayString = json_encode($roundArray);
+    $conditionArrayString = json_encode($conditionArray);
 
-    $insertRandomOrderQuery = $paraConnection->prepare('INSERT INTO exp_round_order (exp_id, round_order) VALUES (?, ?)');
-    $insertRandomOrderQuery->bind_param('is', $paraExpID, $arrayString);
+    $insertRandomOrderQuery = $paraConnection->prepare('INSERT INTO exp_round_order (exp_id, round_order, condition_order) VALUES (?, ?, ?)');
+    $insertRandomOrderQuery->bind_param('iss', $paraExpID, $arrayString, $conditionArrayString);
 
     if ($insertRandomOrderQuery->execute()) {
-        return $roundArray;
+        return ["roundArray" => $roundArray, "conditionArray" => $conditionArray];
     }
     return null;
 
@@ -163,10 +170,20 @@ if ( !function_exists("createRiskAversionTask") ) {
 }
 
 if (!function_exists('getAuditButtons')) {
-    function getAuditButtons() {
-        echo "<div class=\"buttonContainer\">
+    function getAuditButtons($paraShouldBeMirrored = false) {
+        if ($paraShouldBeMirrored) {
+            echo "<div class=\"buttonContainer\">
+                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Steuern hinterziehen\" >
+                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Steuern bezahlen\" >
+            </div>";
+        }
+        else
+        {
+            echo "<div class=\"buttonContainer\">
                 <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Steuern bezahlen\" >
                 <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Steuern hinterziehen\" >
             </div>";
+        }
+
     }
 }

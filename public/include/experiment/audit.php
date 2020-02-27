@@ -1,8 +1,10 @@
 <?php
 $expRoundArray = $expRounds['data'];
 $randomisedRoundOrderArray = json_decode($roundOrder);
+$randomisedConditionArray = json_decode($conditionOrder);
 $currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
+$currentCondition = $randomisedConditionArray[$currentRoundIndex];
 
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
@@ -62,6 +64,8 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         let sureGain = <?php echo $sureGain ?>;
         let evEvasion = <?php echo $evEvasion ?>;
 
+        let randomCondition = <?php echo $randomCondition ?>;
+
         //no sign box for condition 1!
         if (condition && condition == 1) {
             $(".signContainer").hide();
@@ -69,10 +73,20 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         }
         else {
             if ((sureGain && evEvasion) &&sureGain > evEvasion) {
-                $(".signContainer").html("<p> > </p>");
+                if (randomCondition == 1) {
+                    $(".signContainer").html("<p> > </p>");
+                }
+                else {
+                    $(".signContainer").html("<p> < </p>");
+                }
             }
             else if (sureGain < evEvasion) {
-                $(".signContainer").html("<p> < </p>");
+                if (randomCondition == 1) {
+                    $(".signContainer").html("<p> < </p>");
+                }
+                else {
+                    $(".signContainer").html("<p> > </p>");
+                }
             }
             else {
                 $(".signContainer").html("<p> = </p>");
@@ -263,7 +277,9 @@ echo $link?> method="post">
 <!--        <label for="inputValue">Please choose whether to pay the taxes stated above or to evade completely: </label>-->
 <!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
         <br>
-        <?php getAuditButtons(); ?>
+        <?php
+        $buttonsShouldBeMirrored = $currentCondition == 7;
+        getAuditButtons($buttonsShouldBeMirrored); ?>
 
 
     </div>

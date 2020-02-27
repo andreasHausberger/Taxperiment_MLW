@@ -269,6 +269,7 @@ CREATE TABLE IF NOT EXISTS `exp_round_order` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `exp_id` int(10) unsigned DEFAULT NULL,
   `round_order` varchar(255) DEFAULT NULL,
+  `condition_order` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 )
 ";

@@ -20,6 +20,7 @@
         $sureGain = 700;
         $income = 1000;
         $evEvasion = 940;
+        $currentCondition = 1;
 
         $nextPage = 8;
 

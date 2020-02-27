@@ -18,6 +18,8 @@
         $sureGain = 1500;
         $income = 3000;
         $evEvasion = 1500;
+        $currentCondition = 7;
+
 
         $subjectID = $dataArray['pid'];
         //var_dump($subjectID);

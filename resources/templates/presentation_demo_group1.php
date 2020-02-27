@@ -130,16 +130,16 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
     <input type="hidden" id="wasHonest" name="wasHonest">
     <input type="hidden" id="fine" name="fine">
     <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
-    <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
-    <input type="hidden" name="round" value=<?php echo $currentRound ?>>
+    <input type="hidden" name="experimentID" value="0">
+    <input type="hidden" name="round" value="1">
     <input type=hidden name="expname" value="">
     <input type=hidden name="nextURL" value="">
     <input type=hidden name="choice" value="">
     <input type=hidden name="condnum" value="42">
     <input type="hidden" name="condition" value=<?php echo $condnum ?>>
     <input type=hidden name="to_email" value="">
-    <input type=hidden name="nextRound" value=<?php echo $nextRound ?>>
-    <input type=hidden name="nextMode" value=<?php echo $nextMode ?>>
+    <input type=hidden name="nextRound" value="2">
+    <input type=hidden name="nextMode" value="2">
     <!--BEGIN preHTML-->
 
     <!--END preHTML-->
