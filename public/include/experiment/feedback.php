@@ -91,7 +91,7 @@ else {
     }
 }
 
-echo "<h1> Overview </h1>";
+echo "<h1> Übersicht </h1>";
 
 
 
@@ -100,13 +100,13 @@ echo "<h1> Overview </h1>";
     <table id=\"overviewTable\">
     <thead>
     <tr>
-        <td>Round number </td>
-        <td>Earned income</td>
-        <td>Tax due </td>
-        <td>Paid tax </td>
-        <td>Audit</td>
-        <td>Fine + payback</td>
-        <td>Net income</td>
+        <td>Runde </td>
+        <td>Einkommen</td>
+        <td>Steuerbetrag </td>
+        <td>Bezahlte Steuer </td>
+        <td>Steuerprüfung</td>
+        <td>Strafzahlung</td>
+        <td>Netto-Einkommen</td>
     </tr>
     </thead>
     <tbody>
@@ -119,7 +119,7 @@ echo "<h1> Overview </h1>";
 
 
     if (isset($rows)) {
-        echo "<p> Here is an overview of your results during the 18 rounds of the experiment. </p>";
+        echo "<p> Hier ist eine Übersicht über Ihre Ergebnisse aus den einzelnen Runden.  </p>";
         foreach ($rows as $row) {
             echo buildResultsRow($row);
         }
@@ -136,6 +136,6 @@ echo "<h1> Overview </h1>";
 </table>
 
 
-<p> In the following segments, you will be asked some questions about your opinions and impressions about the experiment. </p>
+<p> Im folgenden Abschnitt werden Sie einige Fragen über Ihre Einstellungen und Eindrücke über das Experiment beantworten.  </p>
 
-<a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Continue to Questionnaire!"></a>
+<a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Weiter zum Fragebogen"></a>

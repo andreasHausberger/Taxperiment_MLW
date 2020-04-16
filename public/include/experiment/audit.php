@@ -28,8 +28,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
     if (isset($_GET['feedback'])) {
         $delayFeedback = $_GET['feedback'];
-
-
     }
     else {
         echo "WARNING: Could not find feedback information!";
@@ -64,7 +62,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         let sureGain = <?php echo $sureGain ?>;
         let evEvasion = <?php echo $evEvasion ?>;
 
-        let randomCondition = <?php echo $randomCondition ?>;
+        let randomCondition = condition;
 
         //no sign box for condition 1!
         if (condition && condition == 1) {

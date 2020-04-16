@@ -31,7 +31,7 @@ $randomRound = rand(1, 18);
 if ($participant == 123) { $participant = 181; echo "<b style='color: red'> WARNING! You are in Test Mode. If you are a participant and see this message, please let the test supervisor know. </b>"; }
 $selectString = "SELECT pid, round, net_income FROM audit WHERE pid = $participant and round = $randomRound";
 
-$updateString = "UPDATE audit SET selected = 1 WHERE pid = $participant AND round = $randomRound";
+$updateString = "UPDATE audit SET selected = 1  WHERE pid = $participant AND round = $randomRound";
 
 
 $results = $connection->query($selectString);
@@ -52,26 +52,34 @@ $euros = round($income / 300, 2);
 
 ?>
 
-<h1> Thank you for your participation!</h1>
+<h1> Danke für die Teilnahme!</h1>
 
 <br>
 
-<b> This is the last page. Thank you for your participation in this study.</b>
+<b> Das ist die letzte Seite. Danke für Ihre Teilnahme an diesem Experiment. </b>
 
 <br>
 <p>
-    Round <?php echo $randomRound ?> was randomly chosen.
-    In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to <?php echo $euros ?> Euros (300 ECU = 1 Euros).
-    Together with the show-up fee of 1 Euros, your payment for participating in this study is <?php echo ($euros + 1) ?> Euros.
+    Runde <?php echo $randomRound ?> wurde zufällig ausgewählt. .
+    In dieser Runde haben Sie ein Einkommen von <?php echo $income ?> ECU verdient.
+    Daraus ergeben sich <?php echo $euros ?> Euro (300 ECU = 1 Euro).
+    Gemeinsam mit der Show-Up-Fee von 1 Euro, beträgt Ihre Bezahlung für die Teilnahme an diesem Experiment <?php echo ($euros + 1) ?> Euro.
 </p>
 <br>
 <p>
-    Please tell the experimenter that you are finished and you will be paid the amount.
+
 </p>
 
-<b style="color: darkred">
-    DO NOT CLOSE OR RELOAD THIS PAGE!
-</b>
-<p> If you close or reload this page, you cannot be paid. </p>
+<?php
+if (!$updated) {
+    echo "<b style=\"color: darkred\">
+    Beim Speichern der Runde trat ein Fehler auf. Um Ihre Bezahlung zu erhalten, ...
+</b>";
+}
+else {
+    echo "<b> Die Information über die Runde, die zur Bezahlung ausgewählt wurde, wurde erfolgreich gespeichert. </b> <br> Sie können diese Seite nun verlassen.";
+}?>
+<br>
+<br>
+<a href="#">Klicken Sie auf diesen Link, um weiterzumachen. </a>
 

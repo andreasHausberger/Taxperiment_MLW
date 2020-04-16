@@ -8,20 +8,43 @@
 
 include "../public/templates/header.php";
 include "./config.php";
+require_once "resources/code/code.php";
 
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
 }
 
 $headerQuery = "SHOW columns FROM audit";
-$resultQuery = "select p.id as person_id, p.name, e.id as experiment_id, e.start, e.finished_experiment, e.finished_questionnaire, a.round, a.actual_income, a.net_income, a.actual_tax, a.declared_tax, a.honesty, a.audit, a.fine, a.selected  from participant p, audit a, experiment e where a.pid = p.id and a.exp_id = e.id";
+$resultQuery = "select 
+                    p.id as person_id, 
+                    p.name, 
+                    e.id as experiment_id, 
+                    e.start, 
+                    e.finished_experiment, 
+                    e.finished_questionnaire, 
+                    a.round, 
+                    a.actual_income, 
+                    a.net_income,
+                    a.actual_tax, 
+                    a.declared_tax, 
+                    a.honesty, 
+                    a.audit, 
+                    a.fine, 
+                    a.selected  
+                from 
+                    participant p, 
+                    audit a, 
+                    experiment e 
+                where 
+                    a.pid = p.id and 
+                    a.exp_id = e.id";
 
 $questionnaireHeaderQuery = "SHOW columns FROM questionnaire";
 $questionnaireResultQuery = "SELECT * FROM questionnaire where pid != 123";
 
 if (isset($connection)) {
 
-    $headers = array("participant_id", "participant_id", "experiment_id", "started", "finished_experiment", "finished_questionnaire", "experiment_round", "actual_income", "net_income", "actual_tax", "declared_tax", "honesty", "audit", "fine", "selected");
+    $headers = array("participant_id", "participant_name", "experiment_id", "started", "finished_experiment", "finished_questionnaire", "experiment_round", "actual_income", "net_income", "actual_tax", "declared_tax", "honesty", "audit", "fine", "selected");
 
 
     $auditResult = $connection->query($resultQuery);
@@ -100,7 +123,22 @@ if (isset($connection)) {
     echo "<p> Download Questionnaire data: </p> <a href='./tmp/questionnaire.csv'>questionnaire.csv</a>";
 
 
+    $expRoundQuery = "
+                    SELECT 
+                        ero.id,
+                        ero.exp_id as experiment_id,
+                        ero.round_order,
+                        ero.condition_order
+                    FROM
+                        exp_round_order ero 
+    ";
+    $expRoundHeadersQuery = "SHOW columns FROM exp_round_order";
 
+    $expRoundsFilename = "./tmp/expRounds.csv";
+
+    $expRoundsText = "Download Round Metadata (Round Order, Condition Order): ";
+
+    createDownloadLink($connection, $expRoundHeadersQuery, $expRoundQuery, $filename, $expRoundsText);
 
 }
 else {

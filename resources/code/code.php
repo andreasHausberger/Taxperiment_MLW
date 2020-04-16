@@ -187,3 +187,43 @@ if (!function_exists('getAuditButtons')) {
 
     }
 }
+
+if (!function_exists('createDownloadLink')) {
+    function createDownloadLink($paraDBConnection, $paraHeaderQuery, $paraQuery, $paraFilename, $paraText) {
+        $headerResults = $paraDBConnection->query($paraHeaderQuery);
+        $headers = [];
+        if ($headerResults != null) {
+            while ($headerRow = $headerResults->fetch_assoc()) {
+                $headers[] = $headerRow["Field"];
+            }
+        }
+
+        $results = $paraDBConnection->query($paraQuery);
+        $resultRows = [];
+
+        if ($results != null) {
+            while ($row = $results->fetch_row()) {
+                $resultRows[] = $row;
+            }
+        }
+
+        $dataString = implode(";", $headers);
+
+        foreach ($resultRows as $resultRow) {
+            $rowString = " \n " . implode(";", $resultRow);
+            $dataString .= $rowString;
+        }
+
+        if (!$handle = fopen($paraFilename, 'w+')) {
+            die("Cannot open file ($paraFilename");
+        }
+
+        if (!fwrite($handle, $dataString)) {
+            die("Cannot write to file ($paraFilename");
+        }
+
+        fclose($handle);
+
+        echo "<p> $paraText </p> <a href='$paraFilename'>$paraFilename</a>";
+    }
+}
