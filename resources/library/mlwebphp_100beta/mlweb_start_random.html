@@ -12,7 +12,7 @@
                 console.log("introWillBeSkipped", introWillBeSkipped);
             });
         });
-        function startExp(formlink) {
+        function startExp(formlink, linkGen = false) {
 // randomizer for 6 conditions
 // this script will choose one of six links randomly 
 // it also sets the subject and condnum in a cookie
@@ -69,9 +69,31 @@
                     pageString = "&page=9";
                 }
 
-                var newWind = window.open(linkstr + "&sname=" + subject + pageString, "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+                let linkString = linkstr + "&sname=" + subject + pageString;
+
+                if (!linkGen) {
+                var newWind = window.open(linkString, "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+                }
+                else {
+                    // Display Link in Text field.
+                    linkString = window.location.hostname + linkString;
+                    let linkTextElement = $("#linkText");
+                    linkTextElement.val(linkString);
+                    linkTextElement.prop('disabled', false);
+                    $("#exportButtonContainer").show();
+
+                }
+
             }
 
+        }
+
+        function copyToClipboard() {
+            let linkTextElement = $("#linkText");
+            linkTextElement.select();
+            // linkTextElement.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            console.log("Copied Text: " + linkTextElement.val());
         }
     </script>
 </head>
@@ -92,7 +114,13 @@
         <TR>
             <TD colspan=2>
                 <input type="button" name="Button" value="Start Experiment" onClick="startExp(this.form)">
+                <input type="button" name="Button" value="Generate Link" onClick="startExp(this.form, true)">
                 <input type="checkbox" id="skipIntro" name="skipIntro" value="0"> Skip Intro
+                <br>
+                <input type="text" id="linkText" placeholder="Link for Experiment" disabled="true" style="width: 400px">
+                <div id="exportButtonContainer" style="display: none">
+                    <input type="button" name="clipboardButton" value="Copy To Clipboard" onClick="copyToClipboard()">
+                </div>
             </TD>
         </TR>
     </TABLE>

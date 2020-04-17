@@ -12,14 +12,13 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Staging Version 1.1.8 (Feb 2020)</p>
+<p>Staging Version 1.1.9 (April 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Randomization of Round Data --> Implementation & Review</li>
-    <li>Randomization of MLW Fields --> Review </li>
-    <li>Condition 4 no longer displays references definitions page.</li>
-    <li>QoL improvement: "Skip Intro" Option</li>
+    <li>Link Export in Start Page</li>
+    <li>Updated Round data in Database</li>
+    <li>Translation Fixes & Bug Fixes</li>
 </ul>
 
 <br>
