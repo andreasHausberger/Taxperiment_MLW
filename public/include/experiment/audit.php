@@ -57,39 +57,33 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
     $(function() {
 
-        let condition = <?php echo $condition ?>;
+        let condition = <?php echo $condition ?>
 
         let sureGain = <?php echo $sureGain ?>;
         let evEvasion = <?php echo $evEvasion ?>;
 
-        let randomCondition = condition;
+        let signContainer = $(".signContainer");
+
+        let randomCondition = <?php echo $currentCondition ?>;
+
+        displayContentForSignContainer(condition, sureGain, evEvasion, false);
+
+        signContainer.mouseenter( function(e) {
+            console.log("Mouse Over Sign Container!");
+            let value = displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, true);
+            ShowCont('box', e, true, value);
+        });
+
+        signContainer.mouseleave( function(e) {
+            console.log("Mouse Leave Sign Container!");
+            displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, false);
+            HideCont('box', e, true);
+        });
+
+
 
         //no sign box for condition 1!
-        if (condition && condition == 1) {
-            $(".signContainer").hide();
-            console.log("Hid sign container for condition 1");
-        }
-        else {
-            if ((sureGain && evEvasion) &&sureGain > evEvasion) {
-                if (randomCondition == 1) {
-                    $(".signContainer").html("<p> > </p>");
-                }
-                else {
-                    $(".signContainer").html("<p> < </p>");
-                }
-            }
-            else if (sureGain < evEvasion) {
-                if (randomCondition == 1) {
-                    $(".signContainer").html("<p> < </p>");
-                }
-                else {
-                    $(".signContainer").html("<p> > </p>");
-                }
-            }
-            else {
-                $(".signContainer").html("<p> = </p>");
-            }
-        }
+
 
         let income = <?php echo $income ?>;
         let taxRate = <?php echo $taxRate ?>;
@@ -112,6 +106,45 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             console.log("Prevented Enter");
         }
     });
+
+    function displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, mouseIsOver = false) {
+        if (mouseIsOver) {
+            if (condition && condition == 1) {
+                $(".signContainer").hide();
+                console.log("Hid sign container for condition 1");
+            }
+            else {
+                if ((sureGain && evEvasion) &&sureGain > evEvasion) {
+                    if (randomCondition == 1) {
+                        $(".signContainer").html("<p> > </p>");
+                        return ">";
+                    }
+                    else {
+                        $(".signContainer").html("<p> < </p>");
+                        return "<";
+                    }
+                }
+                else if (sureGain < evEvasion) {
+                    if (randomCondition == 1) {
+                        $(".signContainer").html("<p> < </p>");
+                        return "<";
+                    }
+                    else {
+                        $(".signContainer").html("<p> > </p>");
+                        return ">";
+                    }
+                }
+                else {
+                    $(".signContainer").html("<p> = </p>");
+                    return "=";
+                }
+            }
+        }
+        else {
+            $(".signContainer").html("");
+            return "";
+        }
+    }
 
     //is always called after the button is pushed.
     function performAudit(paraTaxAmount, paraHonesty = true) {

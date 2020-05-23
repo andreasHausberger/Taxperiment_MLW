@@ -149,7 +149,6 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
     <div class="mlwContentContainer">
         <div class="tableContainer">
             <div class="signContainer">
-                <p> > </p>
             </div>
             <TABLE border=1 class="mlwTrackingTable">
 <!--                --><?php //echo $mlwFields ?>

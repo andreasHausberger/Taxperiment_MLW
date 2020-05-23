@@ -203,6 +203,15 @@ Audit Page
     font-weight: bold;
 }
 
+.signContainer:hover {
+    background-color: white;
+    color: black;
+}
+
+.signContainer:hover p {
+    color: black;
+}
+
 .mlwTrackingTable {
 
 }
