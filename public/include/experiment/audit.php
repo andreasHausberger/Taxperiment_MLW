@@ -57,7 +57,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
     $(function() {
 
-        let condition = <?php echo $condition ?>
+        let condition = <?php echo $condition ?>;
 
         let sureGain = <?php echo $sureGain ?>;
         let evEvasion = <?php echo $evEvasion ?>;
@@ -66,7 +66,12 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         let randomCondition = <?php echo $currentCondition ?>;
 
-        displayContentForSignContainer(condition, sureGain, evEvasion, false);
+        if (condition == 1) {
+            signContainer.hide();
+        }
+        else {
+            displayContentForSignContainer(condition, sureGain, evEvasion, false);
+        }
 
         signContainer.mouseenter( function(e) {
             console.log("Mouse Over Sign Container!");
