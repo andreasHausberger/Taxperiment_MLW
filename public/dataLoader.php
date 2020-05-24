@@ -18,7 +18,9 @@ $conditionQuery->bind_param('s', $_GET['condition']);
 $conditionData;
 
 if ($conditionQuery->execute()) {
-    console_log( "executed conditionQuery");
+    if ($conditionQuery->affected_rows > 0) {
+        console_log( "executed conditionQuery");
+    }
     if($conditionQuery->bind_result($condition, $order, $feedback, $presentation)) {
         console_log("loaded condition data successfully!");
 
@@ -72,7 +74,7 @@ $conditionOrder = getRandomOrder($connection, $experimentID)["conditionArray"];
 $roundNr = 1;
 $dataArray = array(
     "test" => "test",
-    "pname" => $_GET['sname'],
+    "pname" => null,
     "pid" => $participantID,
     "expID" => $experimentID,
     "condition" => $conditionData[0],

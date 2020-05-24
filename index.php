@@ -12,20 +12,18 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Staging Version 1.1.9 (April 2020)</p>
+<p>Staging Version 1.1.10 (May 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Link Export in Start Page</li>
-    <li>Updated Round data in Database</li>
-    <li>Translation Fixes & Bug Fixes</li>
+    <li>Sign Container behaves like a Mouselab Field (Hover Reveal, Data Tracking)</li>
+    <li>Condition 4 skips Definitions Page</li>
+    <li>Last Page in Intro is no longer duplicate</li>
 </ul>
 
 <br>
 <b> To Do </b>
 <ul>
-    <li>Intro Condition 4: Automatically skip the definitions page. </li>
-    <li>Bug to fix: Last page in Intro should not be duplicate</li>
     <li>Content: Post-Experiment Questionnaire</li>
     <li>Review of all Changes</li>
 </ul>

@@ -46,6 +46,18 @@ else {
         require_once ("../../templates/footer.php");
 
     }
+    else if ($index == 6 && $condition == 4) {
+        $index++;
+        require_once ("../../templates/header.php");
+
+        $newPage = $pages[$index];
+        include($newPage);
+
+//        include("../../templates/continue.php");
+
+        require_once ("../../templates/footer.php");
+
+    }
     else if ($index == 9) {
         require_once ("../../templates/header.php");
 
@@ -62,8 +74,6 @@ else {
         include("../../templates/continue.php");
 
         require_once ("../../templates/footer.php");
-
-
     }
 }
 

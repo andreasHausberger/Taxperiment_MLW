@@ -83,7 +83,15 @@
         <div id="taxInputContainer">
             <!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
             <br>
-            <?php getAuditButtons(); ?>
+            <?php echo "<div class=\"buttonContainer\">
+                            <a href='/public/exp_config.php?&tw=0&sname=$participant&condition=$condition'>
+                                <input type=\"button\" class=\"formButton\" id=\"complyButton\" value=\"Steuern bezahlen\" >
+                            </a>
+                            <a href='/public/exp_config.php?&tw=0&sname=$participant&condition=$condition'>
+                                <input type=\"button\" class=\"formButton\" id=\"evadeButton\" value=\"Steuern hinterziehen\" >
+                            </a>
+                        </div>"
+            ?>
 
 
         </div>
