@@ -6,14 +6,18 @@
  * Time: 14:16
  */
 
+
 include "../../../resources/config.php";
 
-if (sizeof($_POST) >= 1) {
+if (sizeof($_POST) >= 3) {
     $cog1 = $_POST["cog1"];
+    $cog2 = $_POST["cog2"];
+    $cog3 = $_POST["cog3"];
+
 
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET cog1 = $cog1 WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET cog1 = $cog1, cog2 = $cog2, cog3 = $cog3  WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -43,7 +47,7 @@ if (sizeof($_POST) >= 1) {
         else {
             console.log("Did not add " + element + " to the array, already in it!");
         }
-        validateAndActiateButton(1);
+        validateAndActiateButton(3);
     }
 
     function validateAndActiateButton(numberOfRequiredElements) {
@@ -58,13 +62,31 @@ if (sizeof($_POST) >= 1) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. I feel relief rather than satisfaction after completing a task that required a lot of mental effort.  (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 1. Do you think you should honestly declare cash earnings on your tax return? (1 = no!!, 5 = yes!!)
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "cog1"); ?>
+            <?php echo createLikert(5, "cog1"); ?>
 
         </div>
     </div>
+    <div class="item">
+        <p class="questionText"> 2. Do you think it is acceptable to overstate tax deductions on your tax return? (1 = no!!, 5 = yes!!)
+        </p>
+        <div class="radioDisplayHorizontal">
+            <?php echo createLikert(5, "cog2"); ?>
+
+        </div>
+    </div>
+    <div class="item">
+        <p class="questionText"> 3. Do you think working for cash-in-hand payments without paying tax is a trivial offence? (1 = no!!, 5 = yes!!)
+
+        </p>
+        <div class="radioDisplayHorizontal">
+            <?php echo createLikert(5, "cog3"); ?>
+
+        </div>
+    </div>
+    
 
     <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
