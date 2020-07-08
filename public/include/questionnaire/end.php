@@ -46,7 +46,7 @@ $rows = $results->fetch_all();
 
 $income = $rows[0][2];
 
-$euros = round($income / 300, 2);
+$euros = round($income / 500, 2);
 
 
 
@@ -62,16 +62,16 @@ $euros = round($income / 300, 2);
 <p>
     Round <?php echo $randomRound ?> was randomly chosen.
     In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to <?php echo $euros ?> Euros (300 ECU = 1 Euros).
-    Together with the show-up fee of 1 Euros, your payment for participating in this study is <?php echo ($euros + 1) ?> Euros.
+    This amounts to £ <?php echo $euros ?> (500 ECU = 1 £).
+    Together with the show-up fee of £ 3.50, your payment for participating in this study is £ <?php echo ($euros + 3.50) ?>.
 </p>
 <br>
 <p>
-    Please tell the experimenter that you are finished and you will be paid the amount.
+    The purpose of this study was to investigate how factors like social norms, audit probability, fine level, or tax rate influence tax honesty and which information is attended in making the decision whether to pay the tax due or to evade taxes.
 </p>
 
-<b style="color: darkred">
-    DO NOT CLOSE OR RELOAD THIS PAGE!
-</b>
-<p> If you close or reload this page, you cannot be paid. </p>
+<p>
+    If you have more questions you can contact the researchers involved in this study: Christoph Kogler (c.kogler@tilburguniversity.edu)
+</p>  
+
 
