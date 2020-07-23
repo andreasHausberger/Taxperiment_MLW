@@ -8,17 +8,16 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) >= 7) {
+if (sizeof($_POST) >= 6) {
     $age = $_POST['age'];
     $gender = $_POST['gender'];
-    $nationality = $_POST['nationality'];
     $participation = $_POST['participation'];
     $care = $_POST['care'];
     $understanding = $_POST['understanding'];
-    $english = $_POST['english'];
+    $english = $_POST['about'];
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, nationality = $nationality, participation_before = $participation, care = $care, understanding = $understanding, english = $english, created = NOW() WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, participation_before = $participation, care = $care, understanding = $understanding, about = $about, created = NOW() WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -47,7 +46,7 @@ if (sizeof($_POST) >= 7) {
         else {
             console.log("Did not add " + element + " to the array, already in it!");
         }
-        validateAndActiateButton(7);
+        validateAndActiateButton(6);
     }
 
     function validateAndActiateButton(numberOfRequiredElements) {
@@ -74,21 +73,13 @@ if (sizeof($_POST) >= 7) {
         <p class="questionText"> What is your gender?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="radio" name="gender" value="0" onclick="addToArray('gender')"> <p>Male</p>
-            <input type="radio" name="gender" value="1" onclick="addToArray('gender')"> <p>Female</p>
+            <input type="radio" name="gender" value="0" onclick="addToArray('gender')"> <p>Man</p>
+            <input type="radio" name="gender" value="1" onclick="addToArray('gender')"> <p>Woman</p>
             <input type="radio" name="gender" value="2" onclick="addToArray('gender')"> <p>Other</p>
 
         </div>
     </div>
 
-    <div class="item">
-        <p class="questionText"> Are you a Dutch student or an international student?
-        </p>
-        <div class="radioDisplayHorizontal">
-            <input type="radio" name="nationality" value="0" onclick="addToArray('nationality')"> <p>Dutch</p>
-            <input type="radio" name="nationality" value="1" onclick="addToArray('nationality')"> <p>International</p>
-        </div>
-    </div>
 
     <div class="item">
         <p class="questionText"> Have you participated in a study on tax compliance before?
@@ -120,11 +111,10 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> How would you rate your English language skills? (1: Very Low; 7: Very High)
-
+        <p class="questionText"> What do you think this study was about exactly?
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "english"); ?>
+            <input type="text" name="about" >
 
         </div>
     </div>

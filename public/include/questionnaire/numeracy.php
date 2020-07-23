@@ -16,7 +16,7 @@ if (sizeof($_POST) >= 3) {
 
     $participant = $_GET["pid"];
 
-    $updateQuery = "UPDATE questionnaire SET num1 = $num1, num2 = $num2, num3 = $num1 WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET num1 = $num1, num2 = $num2, num3 = $num3 WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -63,23 +63,26 @@ if (sizeof($_POST) >= 3) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Concerning general mathematical abilities, how good are you at working with fractions? (1 = not good at all to 7 = extremely good)</p>
+        <p class="questionText"> 1. Do most UK citizens think they should honestly declare cash earnings on their tax return? (1 = no!!, 5 = yes!!)
+</p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num1"); ?>
+            <?php echo createLikert(5, "num1"); ?>
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 2. How good are you at figuring out how much a shirt will cost if you get a discount of 25%? (1 = not good at all, 7 = extremely good)</p>
+        <p class="questionText"> 2. Do most UK citizens think it is acceptable to overstate tax deductions on their tax return? (1 = no!!, 5 = yes!!)
+</p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num2"); ?>
+            <?php echo createLikert(5, "num2"); ?>
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. How often do you find numerical information to be useful? (1 = never to 7 = very often). </p>
+        <p class="questionText"> 3. Do most UK citizens think working for cash-in-hand payments without paying tax is a trivial offence? (1 = no!!, 5 = yes!!)
+ </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num3"); ?>
+            <?php echo createLikert(5, "num3"); ?>
         </div>
     </div>
 

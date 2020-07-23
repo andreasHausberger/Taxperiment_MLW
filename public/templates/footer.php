@@ -4,7 +4,7 @@
     <hr style="width: 100%;">
     <p>
         Christoph Kogler, <br>
-        Tilburg University – 2019
+        Tilburg University – 2020
     </p>
 </div>
 </body>

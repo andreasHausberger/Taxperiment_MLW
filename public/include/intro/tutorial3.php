@@ -2,7 +2,7 @@
     <div class="contentContainer">
         <p>
             <span class="textSpan">
-                I hereby confirm that I have read all the information and that I was given the opportunity to ask questions.
+                I hereby confirm that I have read all the information.
             </span>
             <br>
             <span class="textSpan">
@@ -10,7 +10,7 @@
             </span>
             <br>
             <span class="textSpan">
-                I give permission for the processing of the anonymous data as mentioned in the information letter and I give permission for the storing of the research data online for an undetermined period of time.
+                I give permission for the processing of the anonymous data and I give permission for the storing of the research data online for an undetermined period of time.
             </span>
             <br>
         </p>
@@ -44,6 +44,6 @@
     function displayMessage() {
         document.getElementById('continueButton').disabled = true;
 
-        document.getElementById("messageDisplay").innerText = "If you don't want to participate, please contact the experimenter via the black intercom button."
+        document.getElementById("messageDisplay").innerText = "If you don't want to participate, please simply close your internet browser."
     }
 </script>

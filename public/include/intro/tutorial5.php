@@ -24,35 +24,21 @@
                 Tax rate is the percentage of your income you have to pay as tax. It determines the <b>tax due</b>, the concrete amount you have to pay as tax.            </span>
             <br>
             <span class="textSpan">
-                An audit can take place to check whether you have paid all tax due. The <b>audit probability</b> is provided as a percentage. If you did not pay enough tax you will have to pay back the missing amount and pay an additional fine (see below).
+                An audit can take place to check whether you have paid all tax due. The <b>audit probability</b> is provided as a percentage. In case of an audit, if you did not pay enough tax you will have to pay back the missing amount and pay an additional fine (see below).
             </span>
             <br>
             <span class="textSpan">
                 Fine is what you have to pay in case you did not pay all of your tax due and get audited. The <b>fine</b> is determined based on how much of your tax due you evaded.
             </span>
             <br>
+              </span>
+            <br>
+            <span class="textSpan">
+                Information on whether you have been audited and whether this audit results in a fine will be communicated after each round.
+            </span>
+            <br>  
         </p>
 
-        <h3> Feedback </h3>
-
-        <?php
-        $condition = $_GET['condition'];
-
-        if (!isset($condition) || $condition <= 0) {
-            echo "WARNING: COULD NOT READ CONDITION!";
-        }
-        else if ($condition == 1 || $condition == 2 || $condition == 5 || $condition == 6) {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after each round. </span>
-            ";
-        }
-        else {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after the last round in an overview of all rounds. </span> 
-            ";
-        }
-
-        ?>
 
     </div>
 </div>

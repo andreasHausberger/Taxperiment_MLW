@@ -8,15 +8,14 @@
 
 include "../../../resources/config.php";
 
-if (sizeof($_POST) >= 3) {
+if (sizeof($_POST) >= 2) {
 
     $rsk1 = $_POST['rsk1'];
     $rsk2 = $_POST['rsk3'];
-    $rsk3 = $_POST['rsk3'];
 
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET rsk1 = $rsk1, rsk2 = $rsk2, rsk3 = $rsk3 WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET rsk1 = $rsk1, rsk2 = $rsk2 WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -49,7 +48,7 @@ else {
         else {
             console.log("Did not add " + element + " to the array, already in it!");
         }
-        validateAndActiateButton(3);
+        validateAndActiateButton(2);
     }
 
     function validateAndActiateButton(numberOfRequiredElements) {
@@ -62,8 +61,9 @@ else {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Would you describe yourself as a risk-averse or a risk-seeking person? (1 = extremely risk-averse; 7 = extremely risk-seeking)
-        </p>
+        <p class="questionText"> 1. The UK Tax Office is trustworthy. (1 = Strongly disagree , 7 = Strongly agree)
+
+
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk1"); ?>
 
@@ -71,7 +71,8 @@ else {
     </div>
 
     <div class="item">
-        <p class="questionText"> 2. How would you describe your risk-related behavior in financial decisions? (1 = extremely risk-averse; 7 = extremely risk-seeking)
+        <p class="questionText"> 2. The UK Tax Office has extensive means to force citizens to be honest about tax. (1 = Strongly disagree , 7 = Strongly agree)
+
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "rsk2"); ?>
@@ -79,14 +80,7 @@ else {
         </div>
     </div>
 
-    <div class="item">
-        <p class="questionText"> 3. How would you describe your risk-related behavior in situations involving tax payments? (1 = extremely risk-averse; 7 = extremely risk-seeking)
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "rsk3"); ?>
-
-        </div>
-    </div>
+ 
 
     <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
