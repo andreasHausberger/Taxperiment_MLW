@@ -7,7 +7,7 @@
     var correctItems = 0;
 
 
-    function checkResult(event, correctValue) {
+    function checkResult(event, correctValue, resultFieldId = "", incorrectValueResponseText = "") {
         let inputScore = parseInt(event.target.value);
         let feedbackID = "feedback_" + event.target.id;
 
@@ -16,7 +16,14 @@
             event.target.disabled = true;
             console.log("input value: " + inputScore + " vs. correct value: " + correctValue);
             correctItems += 1;
-            alert("Correct!");
+
+            if (resultFieldId !== "") {
+                document.getElementById(resultFieldId).innerText = "Correct!"
+            }
+            else {
+                alert("Correct!");
+            }
+
 
 
             if (correctItems == 3) {
@@ -25,7 +32,12 @@
             event.target.disabled = true;
         }
         else {
-            alert ("Try again!");
+            if (resultFieldId !== "" && incorrectValueResponseText !== "") {
+                document.getElementById(resultFieldId).innerText = incorrectValueResponseText;
+            }
+            else {
+                alert ("Try again!");
+            }
         }
 
     }
@@ -49,7 +61,9 @@
             <div>
                 <label for="exam_1">What is your total income after tax in this round?
                 </label>
-                <input type="text" id="exam_1" onblur="checkResult(event, 1080)">
+                <br>
+                <input type="text" id="exam_1" onblur="checkResult(event, 1080, 'result-1', 'Incorrect! The total income is 1080 ECU!')">
+                <div id="result-1"></div>
             </div>
         </div>
         <div class="example">
@@ -61,7 +75,9 @@
             <div>
                 <label for="exam_1">What is your total income after tax in this round?
                 </label>
-                <input type="text" id="exam_1" onblur="checkResult(event, 1800)">
+                <br>
+                <input type="text" id="exam_1" onblur="checkResult(event, 1800, 'result-2', 'Incorrect! The total income is 1800 ECU!')">
+                <div id="result-2"></div>
             </div>
         </div>
         <div class="example">
@@ -73,7 +89,9 @@
             <div>
                 <label for="exam_1">What is your total income after tax in this round?
                 </label>
-                <input type="text" id="exam_1" onblur="checkResult(event, 820)">
+                <br>
+                <input type="text" id="exam_1" onblur="checkResult(event, 820, 'result-3', 'Incorrect! The total income is 820 ECU!')">
+                <div id="result-3"></div>
             </div>
         </div>
 

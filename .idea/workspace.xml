@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Version Nr, Change List, removed tutorial4.php from Tutorial list.">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial4.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/memAttn.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/memAttn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/exam1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/exam1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,14 +212,7 @@
       <workItem from="1593611476605" duration="935000" />
       <workItem from="1595523012021" duration="688000" />
       <workItem from="1595601515668" duration="593000" />
-      <workItem from="1595602128993" duration="561000" />
-    </task>
-    <task id="LOCAL-00065" summary="Questionnaire: Reworded questions, deleted headlines, fixed scales.">
-      <created>1554023340978</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1554023340978</updated>
+      <workItem from="1595602128993" duration="1460000" />
     </task>
     <task id="LOCAL-00066" summary="Questionnaire: Reworded questions, deleted headlines, fixed scales.">
       <created>1554023461555</created>
@@ -560,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554556632032</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Version Nr, Change List, removed tutorial4.php from Tutorial list.">
+      <created>1595602719498</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1595602719498</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +579,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Now saves which round is selected for Payment as &quot;selected&quot;." />
     <MESSAGE value="Reworded intro text" />
     <MESSAGE value="Reworded questionnaire items." />
     <MESSAGE value="Fixed calculations for fine and tax amount --&gt; now works according to specifications." />
@@ -607,13 +603,22 @@
     <MESSAGE value="Version Number" />
     <MESSAGE value="Usual scale descriptions for the cognitive item." />
     <MESSAGE value="Version nr, Change list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version nr, Change list." />
+    <MESSAGE value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="695" y="214" key="CommitChangelistDialog2" timestamp="1595602689084">
+    <state x="699" y="275" key="#Servers" timestamp="1595603110820">
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
-    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1595602689084" />
+    <state x="699" y="275" key="#Servers/0.23.3008.1605@0.23.3008.1605" timestamp="1595603110820" />
+    <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595603111973">
+      <screen x="0" y="23" width="3008" height="1605" />
+    </state>
+    <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3008.1605@0.23.3008.1605" timestamp="1595603111973" />
+    <state x="695" y="214" key="CommitChangelistDialog2" timestamp="1595602719336">
+      <screen x="0" y="23" width="3008" height="1605" />
+    </state>
+    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1595602719336" />
     <state x="-2614" y="-267" width="2022" height="1227" key="DiffContextDialog" timestamp="1595523483420">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>

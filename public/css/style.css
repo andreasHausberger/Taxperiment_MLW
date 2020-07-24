@@ -19,6 +19,12 @@ label {
     font-size: 16px !important;
 }
 
+/* Tutorial */
+
+.example {
+    margin-bottom: 32px;
+}
+
 
 .sliderTable {
     width: 800px;
