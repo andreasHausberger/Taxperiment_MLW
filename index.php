@@ -12,12 +12,11 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Production Version 1.1.2 (Apr 2019)</p>
+<p>Demo Version 1.1.2 (July 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-
-   <li>Added item "exp6" to questionnaire items about experiment</li>
+    <li>Added Merge Request for Content changes.</li>
 </ul>
 
 <br>

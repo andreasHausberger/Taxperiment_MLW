@@ -15,12 +15,11 @@ $pages = array(
     -1 => "error.html",
     1 => "tutorial2.php",
     2 => "tutorial3.php",
-    3 => "tutorial4.php",
-    4 => "tutorial5.php",
-    5 => "sliderTutorial1.php",
-    6 => "tutorial6.php",
-    7 => "exam1.php",
-    8 => "tutorial_end.php"
+    3 => "tutorial5.php",
+    4 => "sliderTutorial1.php",
+    5 => "tutorial6.php",
+    6 => "exam1.php",
+    7 => "tutorial_end.php"
 );
 
 $page = $pages[$index];

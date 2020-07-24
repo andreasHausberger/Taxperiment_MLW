@@ -79,7 +79,6 @@ if (sizeof($_POST) >= 3) {
                 <input type="radio" name="ma1" value="2" onclick="addToArray('ma1')">
                 <p> 10% and 20%</p>
             </div>
-
         </div>
     </div>
 
