@@ -55,8 +55,9 @@ if ($dateQuery->execute()) {
 include("dataLoader.php");
 
 $condition = $dataArray['condition'];
-$feedback = $dataArray['feedback'];
-$order = $dataArray['order'];
+//CKogler-Branch: Always delayed feedback, always in order.
+$feedback = 1; //$dataArray['feedback'];
+$order = 0; // $dataArray['order'];
 $presentation = $dataArray['presentation'];
 
 

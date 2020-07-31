@@ -6,6 +6,8 @@ $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
 $fineRate = $currentRound['fine_rate'];
 
+$fineRate = $fineRate * 100;
+
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
 $experimentID = $_GET['expid'];
