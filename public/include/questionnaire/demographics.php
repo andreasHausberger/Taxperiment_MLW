@@ -16,6 +16,7 @@ if (sizeof($_POST) >= 6) {
     $understanding = $_POST['understanding'];
     $english = $_POST['about'];
     $participant = $_GET['pid'];
+    $about = $_POST['about'];
 
     $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, participation_before = $participation, care = $care, understanding = $understanding, about = $about, created = NOW() WHERE pid = $participant";
 
@@ -114,8 +115,7 @@ if (sizeof($_POST) >= 6) {
         <p class="questionText"> What do you think this study was about exactly?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="text" name="about" >
-
+            <input type="text" name="about" onblur="addToArray('about')">
         </div>
     </div>
 

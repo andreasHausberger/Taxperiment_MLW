@@ -72,6 +72,10 @@ $euros = round($income / 500, 2);
 
 <p>
     If you have more questions you can contact the researchers involved in this study: Christoph Kogler (c.kogler@tilburguniversity.edu)
-</p>  
+</p>
+
+<p>
+    Your experiment data has been saved successfully. You can safely close this browser window.
+</p>
 
 

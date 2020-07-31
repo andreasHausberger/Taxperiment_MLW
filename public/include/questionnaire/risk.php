@@ -11,7 +11,7 @@ include "../../../resources/config.php";
 if (sizeof($_POST) >= 2) {
 
     $rsk1 = $_POST['rsk1'];
-    $rsk2 = $_POST['rsk3'];
+    $rsk2 = $_POST['rsk2'];
 
     $participant = $_GET['pid'];
 
