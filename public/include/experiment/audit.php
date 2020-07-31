@@ -173,6 +173,8 @@ else {
     function startAudit(actualTax, reportedTax) {
         let fineRate = <?php echo $fineRate; ?>;
 
+        fineRate = fineRate / 100;
+
         if (reportedTax < actualTax) {
             //find the difference between the taxes, and multiply it with the fine rate.
 

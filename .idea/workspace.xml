@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/demographics.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/demographics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/risk.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/risk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +227,7 @@
       <workItem from="1595523012021" duration="688000" />
       <workItem from="1595601515668" duration="593000" />
       <workItem from="1595602128993" duration="2012000" />
-      <workItem from="1596181999507" duration="8556000" />
-    </task>
-    <task id="LOCAL-00069" summary="Fixed a bug where test mode was displayed for all participants at the end of questionnaire.">
-      <created>1554106067272</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1554106067272</updated>
+      <workItem from="1596181999507" duration="8854000" />
     </task>
     <task id="LOCAL-00070" summary="Reworded instructions and error message.">
       <created>1554106281991</created>
@@ -575,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596188469474</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Questionnaire fixes.">
+      <created>1596195965092</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1596195965092</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +594,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added &quot;fine&quot; data point." />
     <MESSAGE value="Selection of rounds is now remarked in database." />
     <MESSAGE value="Feedback directly queries the fine from each round, no more calculations." />
     <MESSAGE value="Reworked fine calculation, again." />
@@ -622,7 +618,8 @@
     <MESSAGE value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
     <MESSAGE value="Reworked Tutorial to reflect the different presentation modes." />
     <MESSAGE value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
+    <MESSAGE value="Questionnaire fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Questionnaire fixes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -651,10 +648,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1596188469344">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1596195964940">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596188469344" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596195964940" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1595603667437" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
       <screen x="-3008" y="-367" width="3008" height="1605" />
