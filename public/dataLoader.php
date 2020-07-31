@@ -17,17 +17,20 @@
 
 $conditionQuery = $connection->prepare("SELECT * FROM exp_condition AS c WHERE c.id = (?)");
 $conditionQuery->bind_param('s', $_GET['condition']);
-$conditionData;
+$conditionData; $tutorial;
 
 if ($conditionQuery->execute()) {
     console_log( "executed conditionQuery");
-    if($conditionQuery->bind_result($condition, $order, $feedback, $presentation)) {
+    if($conditionQuery->bind_result($condition, $order, $feedback, $presentation, $tutorial)) {
         console_log("loaded condition data successfully!");
 
         while ($conditionQuery->fetch()) {
-            $conditionData = array(0 => $condition, 1 => $order, 2 => $feedback, 3 => $presentation);
+            $conditionData = array(0 => $condition, 1 => $order, 2 => $feedback, 3 => $presentation, 4 => $tutorial);
         }
 
+    }
+    else {
+        console_log("[ERROR] Could not bind condition result to variables!");
     }
     console_log("condition data for condition " . $condition . " loaded successfully");
 }

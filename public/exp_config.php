@@ -8,13 +8,13 @@
 
 require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
-
 // include ("./templates/header.php");
 
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
     echo "Reestablished connection";
 }
+
 
 $participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
 
@@ -26,8 +26,7 @@ $experimentID = -1;
 if ($participantQuery->execute()) {
     $participantID = $connection->insert_id;
     console_log(" Participant with id " . $participantID . " saved successfully");
-}
-else {
+} else {
     echo "Error saving participant: " . $connection->error;
     var_dump($participantQuery);
 }
@@ -40,10 +39,7 @@ if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
 
     console_log(" Experiment data with ID " . $experimentID . " saved successfully! \n");
-
-
-}
-else {
+} else {
     echo "Error saving experiment data: " . $connection->error . "\n";
 }
 
@@ -52,12 +48,11 @@ $dateQuery->bind_param("i", $experimentID);
 
 if ($dateQuery->execute()) {
     console_log("Added start date for Experiment $experimentID");
-}
-else {
+} else {
     echo "Error setting start date for experiment $experimentID: $connection->error";
 }
 
-include ("dataLoader.php");
+include("dataLoader.php");
 
 $condition = $dataArray['condition'];
 $feedback = $dataArray['feedback'];
@@ -65,27 +60,62 @@ $order = $dataArray['order'];
 $presentation = $dataArray['presentation'];
 
 
-include ("./templates/header.php");
+include("./templates/header.php");
+switch ($tutorial) {
+    case 0:
+        break;
+    case 1:
+        echo "
+                <p>
+                    Before you start making decisions about paying taxes in this study, we would like to give you an idea 
+                    about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
+                    might underestimate whereas some might overestimate the number of people that are compliant (i.e., 
+                    people that do not cheat when reporting their taxes). To make sure that every participant in this study 
+                    has access to the official statistics before they make their tax decisions, we present you with an 
+                    overview of how other UK citizens think about tax compliance:
+                 </p>
+                 <p>
+                     The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
+                     since 1981. These surveys are nationally representative and reach out to almost 400,000 participants 
+                     per year. 
+                 </p>
+                 <p>
+                     As part of the most recent World Values Survey, UK citizens were asked to rate the justifiability of 
+                     cheating on taxes. When asked about it their evaluation of this behaviour on a scale from 1 = never 
+                     justifiable, to 10 = always justifiable, only about 9 out of each 100 citizens (8.5 % to be exact) 
+                     selected an option above 5. Based on this information, we can see that only a very small portion 
+                     (less than 9%) of UK citizens think that it can be justifiable to cheat on taxes.
+                </p>
+                ";
+        break;
+    case 2:
+        echo "
+                <p>
+                    Before you start making decisions about paying taxes in this study, we would like to give you an idea 
+                    about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
+                    might underestimate whereas some might overestimate the number of people that are compliant (i.e., 
+                    people that do not cheat when reporting their taxes). To make sure that every participant in this study 
+                    has access to the official statistics before they make their tax decisions, we present you with an 
+                    overview of how other UK citizens think about tax compliance:
+                 </p>
+                 <p>
+                     The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
+                     since 1981. These surveys are nationally representative and reach out to almost 400,000 participants 
+                     per year. 
+                 </p>
+                 <p>
+                      As part of the most recent World Values Survey, UK citizens were asked about the justifiability of
+                      cheating on taxes. About 56 out of each 100 citizens (56.1 % to be exact) said that it is never 
+                      justifiable to cheat on taxes. Based on this information, we can see that a large portion (almost 
+                      half) of UK citizens think it may be justifiable to cheat on taxes.
+                </p>
+                ";
+        break;
+    default:
+        echo "WARNING: Could not find presentation info!";
+}
 
-
-        $condition = $_GET['condition'];
-        echo "<b> Remember: </b>";
-
-        if (!isset($condition) || $condition <= 0) {
-            echo "WARNING: COULD NOT READ CONDITION!";
-        }
-        else if ($condition == 1 || $condition == 2 || $condition == 5 || $condition == 6) {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after each round. </span>
-            ";
-        }
-        else {
-            echo "
-            <span class='textSpan'> Information on whether you have been audited and whether this audit results in a fine will be communicated after the last round in an overview of all rounds. </span> 
-            ";
-        }
-
-echo ("
+echo("
    <form action='include/experiment/index.php?round=1&mode=1&expid=$experimentID&pid=$participantID&condition=$condition&feedback=$feedback&order=$order&presentation=$presentation' method='post'>
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
@@ -93,4 +123,4 @@ echo ("
    <input type='submit' value='Start Experiment!'>
 </form>
 ");
-include ("./templates/footer.php");
+include("./templates/footer.php");

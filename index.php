@@ -17,6 +17,7 @@ require_once("public/templates/header.php");
 <b>Recent Changes</b>
 <ul>
     <li>Added Merge Request for Content changes.</li>
+    <li>Reworked tutorial. </li>
 </ul>
 
 <br>
@@ -33,7 +34,7 @@ require_once("public/templates/header.php");
         <?php
         include("./resources/library/mlwebphp_100beta/mlweb_start_random.html");
         ?>
-        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 8), a
+        <p>Note: If you leave the condition nr. field empty (or enter anything else than value between 1 and 6), a
             random condition is selected.
         </p>
     </div>

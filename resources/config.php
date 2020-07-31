@@ -65,7 +65,7 @@ else {
     define("DB_Host", "localhost");
     define("DB_User","root");
     define("DB_Password", "root");
-    define("DB_Name", "mlnew");
+    define("DB_Name", "ml_ck");
 }
 
 

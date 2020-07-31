@@ -13,8 +13,7 @@
             var selectedCondition = parseInt(document.getElementById("condnum").value);
 
             if (typeof selectedCondition != "number" || selectedCondition == "" || selectedCondition <= 0) {
-                selectedCondition = Math.floor(Math.random() * 8) + 1;
-
+                selectedCondition = Math.floor(Math.random() * 6) + 1;
             }
 
             switch (selectedCondition) {
@@ -48,14 +47,7 @@
                     linkstr = "/public/include/intro/index.php?condition=6";
                     break;
 
-                case 7:
-                    // link for condition 7
-                    linkstr = "/public/include/intro/index.php?condition=7";
-                    break;
-
-                case 8:
-                    // link for condition 8
-                    linkstr = "/public/include/intro/index.php?condition=8";
+                default:
                     break;
             }
 

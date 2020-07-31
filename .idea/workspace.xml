@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/exam1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/exam1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dataLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/dataLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +96,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -102,6 +106,15 @@
       </set>
     </option>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="400189db-92fe-427c-8cea-b743ef2fb268" name="Localhost" port="9000" />
+      <server host="mlweb" id="4ec9e582-8777-4a56-a104-d52881d790c6" name="mlweb" port="8888" />
+    </servers>
+  </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="mlweb:8888" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1e5VWbYB5i1zWqpNGrqMwJ4O384" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -120,7 +133,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -136,6 +149,11 @@
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/templates" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="Localhost">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="StructuralSearchPlugin">
     <searchConfiguration name="user defined" created="1549968764204" text="Real Study" recursive="true" caseInsensitive="false" type="PHP" history="1" />
@@ -212,14 +230,8 @@
       <workItem from="1593611476605" duration="935000" />
       <workItem from="1595523012021" duration="688000" />
       <workItem from="1595601515668" duration="593000" />
-      <workItem from="1595602128993" duration="1460000" />
-    </task>
-    <task id="LOCAL-00066" summary="Questionnaire: Reworded questions, deleted headlines, fixed scales.">
-      <created>1554023461555</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1554023461555</updated>
+      <workItem from="1595602128993" duration="2012000" />
+      <workItem from="1596181999507" duration="4428000" />
     </task>
     <task id="LOCAL-00067" summary="Changed version number, added change list.">
       <created>1554024266843</created>
@@ -557,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595602719498</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered.">
+      <created>1595603667555</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1595603667555</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +598,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Reworded intro text" />
     <MESSAGE value="Reworded questionnaire items." />
     <MESSAGE value="Fixed calculations for fine and tax amount --&gt; now works according to specifications." />
     <MESSAGE value="Added &quot;fine&quot; data point." />
@@ -604,29 +622,109 @@
     <MESSAGE value="Usual scale descriptions for the cognitive item." />
     <MESSAGE value="Version nr, Change list." />
     <MESSAGE value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
+    <MESSAGE value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="699" y="275" key="#Servers" timestamp="1595603110820">
-      <screen x="0" y="23" width="3008" height="1605" />
+    <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
+    <state x="-1528" y="-151" key="#CLI_Interpreters/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183359891" />
+    <state x="-2309" y="-115" key="#Servers" timestamp="1596183467372">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state x="-2309" y="-115" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183467372" />
+    <state x="446" y="208" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183266500" />
+    <state x="-2309" y="-105" key="#Servers/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182679496" />
     <state x="699" y="275" key="#Servers/0.23.3008.1605@0.23.3008.1605" timestamp="1595603110820" />
-    <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595603111973">
-      <screen x="0" y="23" width="3008" height="1605" />
+    <state x="368" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596183326917">
+      <screen x="0" y="23" width="1920" height="1177" />
     </state>
+    <state x="-2432" y="-115" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596182786799" />
+    <state x="368" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183326917" />
+    <state x="-2432" y="-105" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182686563" />
     <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3008.1605@0.23.3008.1605" timestamp="1595603111973" />
-    <state x="695" y="214" key="CommitChangelistDialog2" timestamp="1595602719336">
+    <state x="-2214" y="63" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1596182544678">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
+    </state>
+    <state x="-2214" y="63" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182544678" />
+    <state x="673" y="281" key="#debug" timestamp="1596183321543">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
+    <state x="695" y="214" key="CommitChangelistDialog2" timestamp="1595603667437">
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
-    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1595602719336" />
+    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1595603667437" />
+    <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="468" height="466" key="DebuggerActiveHint/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596184120201" />
     <state x="-2614" y="-267" width="2022" height="1227" key="DiffContextDialog" timestamp="1595523483420">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2614" y="-267" width="2022" height="1227" key="DiffContextDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1595523483420" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1595523481916">
+    <state width="1894" height="378" key="GridCell.Tab.0.bottom" timestamp="1596186780859">
       <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.0.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780859" />
+    <state width="1894" height="378" key="GridCell.Tab.0.center" timestamp="1596186780858">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.0.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780858" />
+    <state width="1894" height="378" key="GridCell.Tab.0.left" timestamp="1596186780857">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.0.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780857" />
+    <state width="1894" height="378" key="GridCell.Tab.0.right" timestamp="1596186780858">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.0.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780858" />
+    <state width="1894" height="378" key="GridCell.Tab.1.bottom" timestamp="1596186780860">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.1.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780860" />
+    <state width="1894" height="378" key="GridCell.Tab.1.center" timestamp="1596186780859">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.1.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780859" />
+    <state width="1894" height="378" key="GridCell.Tab.1.left" timestamp="1596186780859">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.1.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780859" />
+    <state width="1894" height="378" key="GridCell.Tab.1.right" timestamp="1596186780859">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.1.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780859" />
+    <state width="1894" height="378" key="GridCell.Tab.2.bottom" timestamp="1596186780861">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.2.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780861" />
+    <state width="1894" height="378" key="GridCell.Tab.2.center" timestamp="1596186780860">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.2.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780860" />
+    <state width="1894" height="378" key="GridCell.Tab.2.left" timestamp="1596186780860">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.2.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780860" />
+    <state width="1894" height="378" key="GridCell.Tab.2.right" timestamp="1596186780861">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="1894" height="378" key="GridCell.Tab.2.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596186780861" />
+    <state x="-1672" y="90" key="SettingsEditor" timestamp="1596183392210">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state x="-1672" y="90" key="SettingsEditor/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183392210" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2" timestamp="1595603847796">
+      <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1595523481916" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1595603847795" />
+    <state x="789" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596183188586">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="789" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183188586" />
   </component>
 </project>
