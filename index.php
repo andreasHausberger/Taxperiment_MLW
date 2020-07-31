@@ -18,11 +18,10 @@ require_once("public/templates/header.php");
 <ul>
     <li>Added Merge Request for Content changes.</li>
     <li>Reworked tutorial. </li>
+    <li>Reworked quesitonnaire saving. </li>
+    <li>Fixes & Testing. </li>
 </ul>
 
-<br>
-<b> To Do
-</b>
 
 
 <div>
