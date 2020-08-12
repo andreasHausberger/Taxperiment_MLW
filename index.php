@@ -12,14 +12,11 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Demo Version 1.1.2 (July 2020)</p>
+<p>Demo Version 1.1.3 (August 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Added Merge Request for Content changes.</li>
-    <li>Reworked tutorial. </li>
-    <li>Reworked quesitonnaire saving. </li>
-    <li>Fixes & Testing. </li>
+    <li>Immediate Feedback, Regular Round order for all conditions. </li>
 </ul>
 
 
