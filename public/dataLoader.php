@@ -54,7 +54,6 @@ else {
     echo "Connection error while retrieving experiment: " . $connection->error;
 }
 
-
 $roundQueryAsc = "SELECT * FROM exp_round ORDER BY id ASC";
 $roundQueryDesc = "SELECT * FROM exp_round ORDER BY id DESC";
 

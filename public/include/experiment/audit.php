@@ -14,8 +14,8 @@ $experimentID = $_GET['expid'];
 $participantID = $_GET['pid'];
 $currentRound = $_GET['round'];
 $condition = $_GET['condition'];
-?>
 
+?>
 
 
 
@@ -77,34 +77,21 @@ else {
         let audit = (randomNr <= probability);
 
         let fine = 0;
-
         netIncome = actualIncome - reportedTax;
-
-
-
-
         console.log("testing " + randomNr + " against probability " + probability);
 
         if (audit) {
-
-
             fine = startAudit(actualTax, reportedTax);
-
 
             if (fine !== 0) {
                 netIncome = netIncome - fine;
             }
 
-
             if (netIncome < 0) { netIncome = 0; }
 
-
             document.getElementById("wasAudited").value = "true";
-
         }
         else {
-
-
             document.getElementById("wasAudited").value = false;
 
             console.log("No Audit");
@@ -116,8 +103,6 @@ else {
         document.getElementById("wasHonest").value = honesty;
         document.getElementById("fine").value = "" + fine;
 
-
-
         let feedbackIsDelayed = <?php echo $delayFeedback ?> ;
 
         if (feedbackIsDelayed == 0) {
@@ -127,8 +112,6 @@ else {
             collapseInformation("submit", "submit", "submit");
            // window.location.href = "  <?php echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>";
         }
-
-
     }
 
     function displayInformation(audit, income, reportedIncome, fine, taxRate, reportedTax) {
@@ -145,7 +128,6 @@ else {
         document.getElementById("netIncomeCell").innerText = reportedIncome;
         document.getElementById("missingTaxCell").innerText = totalFineAmount;
 
-
         if (audit) {
             document.getElementById("missingTaxRow").style.display = "table-row";
             document.getElementById("auditText").innerHTML = "You were <b> audited! </b> "
@@ -155,11 +137,8 @@ else {
         else {
             document.getElementById("auditText").innerHTML = "You were <b> not audited! </b> "
             document.getElementById("missingTaxRow").style.display = "none";
-
         }
         console.log("finished calculations, now displaying...");
-
-
         document.getElementById("feedbackOverlay").style.width = "100%";
         document.getElementById("feedbackOverlay").style.display = "block";
     }

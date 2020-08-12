@@ -13,8 +13,6 @@ function console_log($data)
     echo '</script>';
 }
 
-// echo "made it to config";
-
 $config = array(
     "db" => array(
         "db1" => array(
@@ -59,8 +57,6 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
 else {
     /**
      * Enter database credentials here!
-     * First value: Constant var name (DO NOT CHANGE)
-     * Second value: Defined value (CHANGE THIS).
      */
     define("DB_Host", "localhost");
     define("DB_User","root");
