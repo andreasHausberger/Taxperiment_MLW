@@ -72,7 +72,7 @@ else {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. . I feel a sense of pride in being a member of the community of UK citizens. (1 = do not agree at all, 7 = agree completely)
+        <p class="questionText"> 2. I feel a sense of pride in being a member of the community of UK citizens. (1 = do not agree at all, 7 = agree completely)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "exp2"); ?>
