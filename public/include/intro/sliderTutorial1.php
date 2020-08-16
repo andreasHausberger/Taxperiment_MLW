@@ -31,10 +31,7 @@
     <div class="contentContainer">
         <p>
             <span class="textSpan">
-This study looks at tax compliance behavior.
-            </span>
-            <br>
-            <span class="textSpan">
+
 To earn <b>extra income</b> you will perform an effort task, the slider task, each round.
 
 
