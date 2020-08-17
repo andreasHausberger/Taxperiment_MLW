@@ -55,12 +55,15 @@
 // get values from form
             subject = formlink.subject.value;
             condnum = parseInt(formlink.condnum.value);
+            let prolificPID = formlink.prolificPID.value;
+            let studyID = formlink.studyID.value;
+            let sessionID = formlink.sessionID.value;
 
 // set cookies
             document.cookie = "mlweb_condnum=" + condnum + "; path=/";
             document.cookie = "mlweb_subject=" + subject + "; path=/";
 
-            var newWind = window.open(linkstr + "&sname=" + subject + "&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+            var newWind = window.open(linkstr + "&sname=" + subject + "&prolificPID=" + prolificPID + "&studyID=" + studyID + "&sessionID=" + sessionID +"&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
 
         }
     </script>
@@ -68,6 +71,9 @@
 <body>
 <h1>Start of experiment</h1>
 <form>
+    <input type="hidden" name="prolificPID" id="prolificPID" value=<?php echo $prolificPID; ?> >
+    <input type="hidden" name="studyID" id="studyID" value=<?php echo $studyID; ?> >
+    <input type="hidden" name="sessionID" id="sessionID" value=<?php echo $sessionID; ?> >
     <TABLE>
         <TR>
             <TD>Subject name:</TD>

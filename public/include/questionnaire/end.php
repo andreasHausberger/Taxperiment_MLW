@@ -46,7 +46,7 @@ $rows = $results->fetch_all();
 
 $income = $rows[0][2];
 
-$euros = round($income / 500, 2);
+$pound = round($income / 400, 2);
 
 
 
@@ -62,8 +62,8 @@ $euros = round($income / 500, 2);
 <p>
     Round <?php echo $randomRound ?> was randomly chosen.
     In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to £ <?php echo $euros ?> (500 ECU = 1 £).
-    Together with the show-up fee of £ 3.50, your payment for participating in this study is £ <?php echo ($euros + 3.50) ?>.
+    This amounts to £ <?php echo $pound ?> (400 ECU = 1 £).
+    Together with the show-up fee of £ 3.50, your payment for participating in this study is £ <?php echo ($pound + 3.50) ?>.
 </p>
 <br>
 <p>
@@ -75,7 +75,8 @@ $euros = round($income / 500, 2);
 </p>
 
 <p>
-    Your experiment data has been saved successfully. You can safely close this browser window.
+    Your experiment data has been saved successfully. <br>
+    You can safely click the following link to continue: <a href="https://app.prolific.co/submissions/complete?cc=6C150B1E"> Link </a>
 </p>
 
 
