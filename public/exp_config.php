@@ -70,10 +70,10 @@ switch ($tutorial) {
                 <p>
                     Before you start making decisions about paying taxes in this study, we would like to give you an idea 
                     about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
-                    might underestimate whereas some might overestimate the number of people that are compliant (i.e., 
-                    people that do not cheat when reporting their taxes). To make sure that every participant in this study 
-                    has access to the official statistics before they make their tax decisions, we present you with an 
-                    overview of how other UK citizens think about tax compliance:
+                    might underestimate, whereas some might overestimate the number of citizens who believe people should be 
+                    honest when reporting their taxes. To make sure that every participant in this study has access to the 
+                    official statistics before they make their tax decisions, we present you with an overview of how other 
+                    UK citizens think about tax compliance:
                  </p>
                  <p>
                      The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
@@ -94,10 +94,10 @@ switch ($tutorial) {
                 <p>
                     Before you start making decisions about paying taxes in this study, we would like to give you an idea 
                     about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
-                    might underestimate whereas some might overestimate the number of people that are compliant (i.e., 
-                    people that do not cheat when reporting their taxes). To make sure that every participant in this study 
-                    has access to the official statistics before they make their tax decisions, we present you with an 
-                    overview of how other UK citizens think about tax compliance:
+                    might underestimate, whereas some might overestimate the number of citizens who believe people should be 
+                    honest when reporting their taxes. To make sure that every participant in this study has access to the 
+                    official statistics before they make their tax decisions, we present you with an overview of how other 
+                    UK citizens think about tax compliance:
                  </p>
                  <p>
                      The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
