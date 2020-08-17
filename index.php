@@ -19,13 +19,20 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.3 (August 2020)</p>
+<p>Demo Version 1.1.4 (August 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Immediate Feedback, Regular Round order for all conditions. </li>
+    <li>Index page can parse Prolific URL parameters. </li>
+    <li>Adapted payment calculation according to mail. </li>
+    <li>Tutorial table now has correct payment indicator. </li>
 </ul>
 
+<b> To Do</b>
+<ul>
+    <li>Ensure correct saving of Prolific parameters --> not yet live. </li>
+    <li>Tutorial table should display correct positions of table cells. --> not yet live. </li>
+</ul>
 
 
 <div>
