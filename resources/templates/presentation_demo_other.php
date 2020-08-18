@@ -136,6 +136,79 @@ $saveURL = "../../exp_config.php?&tw=0&sname=$participant&condition=$condition&p
     <!-- MOUSELAB TABLE -->
     <TABLE border=1>
         <TR>
+
+            <!--cell b1(tag:b1)-->
+            <TD align=center valign=middle>
+                <DIV ID="b1_cont" style="position: relative; height: 50px; width: 200px;">
+                    <DIV ID="b1_txt"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
+                        <TABLE>
+                            <TD ID="b1_td" align=center valign=center width=195 height=45 class="actTD"><?php echo "hello" ?></TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="b1_box"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
+                        <TABLE>
+                            <TD ID="b1_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="b1_img"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
+                            HREF="javascript:void(0);" NAME="b1" onMouseOver="ShowCont('b1',event)"
+                            onMouseOut="HideCont('b1',event)"><IMG NAME="b1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
+                                                                   height=50></A></DIV>
+                </DIV>
+            </TD>
+            <!--end cell-->
+            <!--cell b0(tag:b0)-->
+            <TD align=center valign=middle>
+                <DIV ID="b0_cont" style="position: relative; height: 50px; width: 200px;">
+                    <DIV ID="b0_txt"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
+                        <TABLE>
+                            <TD ID="b0_td" align=center valign=center width=195 height=45 class="actTD">$taxRate</TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="b0_box"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
+                        <TABLE>
+                            <TD ID="b0_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="b0_img"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
+                            HREF="javascript:void(0);" NAME="b0" onMouseOver="ShowCont('b0',event)"
+                            onMouseOut="HideCont('b0',event)"><IMG NAME="b0" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
+                                                                   height=50></A></DIV>
+                </DIV>
+            </TD>
+            <!--end cell-->
+        </TR>
+        <TR>
+
+            <!--cell a1(tag:a1)-->
+            <TD align=center valign=middle>
+                <DIV ID="a1_cont" style="position: relative; height: 50px; width: 200px;">
+                    <DIV ID="a1_txt"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
+                        <TABLE>
+                            <TD ID="a1_td" align=center valign=center width=195 height=45 class="actTD">$fineRate</TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="a1_box"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
+                        <TABLE>
+                            <TD ID="a1_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
+                        </TABLE>
+                    </DIV>
+                    <DIV ID="a1_img"
+                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
+                            HREF="javascript:void(0);" NAME="a1" onMouseOver="ShowCont('a1',event)"
+                            onMouseOut="HideCont('a1',event)"><IMG NAME="a1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
+                                                                   height=50></A></DIV>
+                </DIV>
+            </TD>
+            <!--end cell-->
             <!--cell a0(tag:a0)-->
             <TD align=center valign=middle>
                 <DIV ID="a0_cont" style="position: relative; height: 50px; width: 200px;">
@@ -161,76 +234,7 @@ $saveURL = "../../exp_config.php?&tw=0&sname=$participant&condition=$condition&p
                 </DIV>
             </TD>
             <!--end cell-->
-            <!--cell a1(tag:a1)-->
-            <TD align=center valign=middle>
-                <DIV ID="a1_cont" style="position: relative; height: 50px; width: 200px;">
-                    <DIV ID="a1_txt"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
-                        <TABLE>
-                            <TD ID="a1_td" align=center valign=center width=195 height=45 class="actTD">$fineRate</TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="a1_box"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
-                        <TABLE>
-                            <TD ID="a1_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="a1_img"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
-                            HREF="javascript:void(0);" NAME="a1" onMouseOver="ShowCont('a1',event)"
-                            onMouseOut="HideCont('a1',event)"><IMG NAME="a1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
-                                                                   height=50></A></DIV>
-                </DIV>
-            </TD>
-            <!--end cell--></TR>
-        <TR>
-            <!--cell b0(tag:b0)-->
-            <TD align=center valign=middle>
-                <DIV ID="b0_cont" style="position: relative; height: 50px; width: 200px;">
-                    <DIV ID="b0_txt"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
-                        <TABLE>
-                            <TD ID="b0_td" align=center valign=center width=195 height=45 class="actTD">$taxRate</TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="b0_box"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
-                        <TABLE>
-                            <TD ID="b0_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="b0_img"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
-                            HREF="javascript:void(0);" NAME="b0" onMouseOver="ShowCont('b0',event)"
-                            onMouseOut="HideCont('b0',event)"><IMG NAME="b0" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
-                                                                   height=50></A></DIV>
-                </DIV>
-            </TD>
-            <!--end cell-->
-            <!--cell b1(tag:b1)-->
-            <TD align=center valign=middle>
-                <DIV ID="b1_cont" style="position: relative; height: 50px; width: 200px;">
-                    <DIV ID="b1_txt"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 1;">
-                        <TABLE>
-                            <TD ID="b1_td" align=center valign=center width=195 height=45 class="actTD"><?php echo "hello" ?></TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="b1_box"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; clip: rect(0px 200px 50px 0px); z-index: 2;">
-                        <TABLE>
-                            <TD ID="b1_tdbox" align=center valign=center width=195 height=45 class="boxTD"></TD>
-                        </TABLE>
-                    </DIV>
-                    <DIV ID="b1_img"
-                         STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 200px; z-index: 5;"><A
-                            HREF="javascript:void(0);" NAME="b1" onMouseOver="ShowCont('b1',event)"
-                            onMouseOut="HideCont('b1',event)"><IMG NAME="b1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=200
-                                                                   height=50></A></DIV>
-                </DIV>
-            </TD>
-            <!--end cell--></TR>
+        </TR>
     </TABLE>
     <!-- END MOUSELAB TABLE -->
     <!--BEGIN postHTML-->

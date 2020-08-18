@@ -6,7 +6,15 @@
             </span>
             <br>
 
-            <?php include "../../../resources/templates/presentation_demo.php" ?>
+            <?php
+            $condition = $_GET['condition'];
+            if ( $condition == 1 || $condition == 2 || $condition == 3) {
+                include "../../../resources/templates/presentation_demo.php";
+            }
+            else {
+                include "../../../resources/templates/presentation_demo_other.php";
+            }
+             ?>
         </p>
     </div>
 </div>

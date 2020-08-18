@@ -26,12 +26,13 @@ if (count($_GET) > 0) {
     <li>Index page can parse Prolific URL parameters. </li>
     <li>Adapted payment calculation according to mail. </li>
     <li>Tutorial table now has correct payment indicator. </li>
+    <li> Prolific parameters and Device / Browser info are saved.  </li>
+    <li>Tutorial table now displays correct positions of table cells for conditions 4-6 </li>
 </ul>
 
 <b> To Do</b>
 <ul>
-    <li>Ensure correct saving of Prolific parameters --> not yet live. </li>
-    <li>Tutorial table should display correct positions of table cells. --> not yet live. </li>
+
 </ul>
 
 

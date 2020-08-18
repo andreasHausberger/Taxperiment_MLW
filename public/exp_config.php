@@ -10,6 +10,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 // include ("./templates/header.php");
 
+$prolificPID = $_GET['prolificPID'];
+$studyID = $_GET['studyID'];
+$sessionID = $_GET['sessionID'];
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
     echo "Reestablished connection";
@@ -31,9 +35,9 @@ if ($participantQuery->execute()) {
     var_dump($participantQuery);
 }
 
-$experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant) VALUES (?, ?)");
+$experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type) VALUES (?, ?, ?, ?, ?, ?)");
 
-$experimentQuery->bind_param("ii", $condition, $participantID);
+$experimentQuery->bind_param("iissss", $condition, $participantID, strval($prolificPID), strval($studyID), strval($sessionID), strval($userAgent));
 
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
