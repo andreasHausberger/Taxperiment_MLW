@@ -10,9 +10,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 // include ("./templates/header.php");
 
-$prolificPID = $_GET['prolificPID'];
-$studyID = $_GET['studyID'];
-$sessionID = $_GET['sessionID'];
+$prolificPID = isset($_GET['prolificPID']) ? $_GET['prolificPID'] : "" ;
+$studyID = isset($_GET['studyID']) ? $_GET['studyID'] : "";
+$sessionID = isset($_GET['sessionID']) ? $_GET['sessionID'] : "";
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
