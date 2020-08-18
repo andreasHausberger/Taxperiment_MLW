@@ -15,10 +15,10 @@ $studyID = "";
 $sessionID = "";
 $userAgent = "";
 
-$prolificPID = isset($_GET['prolificPID']) ? $_GET['prolificPID'] : "" ;
-$studyID = isset($_GET['studyID']) ? $_GET['studyID'] : "";
-$sessionID = isset($_GET['sessionID']) ? $_GET['sessionID'] : "";
-$userAgent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : "";
+//$prolificPID = isset($_GET['prolificPID']) ? $_GET['prolificPID'] : "" ;
+//$studyID = isset($_GET['studyID']) ? $_GET['studyID'] : "";
+//$sessionID = isset($_GET['sessionID']) ? $_GET['sessionID'] : "";
+//$userAgent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : "";
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
     echo "Reestablished connection";
