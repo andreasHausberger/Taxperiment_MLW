@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,14 +184,7 @@
       <workItem from="1596181999507" duration="10971000" />
       <workItem from="1597255362327" duration="2319000" />
       <workItem from="1597689003646" duration="3261000" />
-      <workItem from="1597772718085" duration="5218000" />
-    </task>
-    <task id="LOCAL-00086" summary="divisions = 1">
-      <created>1554216099075</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1554216099076</updated>
+      <workItem from="1597772718085" duration="5242000" />
     </task>
     <task id="LOCAL-00087" summary="Version nr. feature list.">
       <created>1554217282075</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597778192751</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="removed Saving, threw bugs.">
+      <created>1597778439609</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1597778439609</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +551,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Hotfix: DB creation" />
     <MESSAGE value="removed echo" />
     <MESSAGE value="Removed echo." />
     <MESSAGE value="Fine Rate --&gt; Fine" />
@@ -577,7 +575,8 @@
     <MESSAGE value="Version nr., changes." />
     <MESSAGE value="Prolific data &amp; device info saving. Tutorial table now displays correctly for conditions 4-6." />
     <MESSAGE value="Hotfix: Fixed issue where Exp Config would crash." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotfix: Fixed issue where Exp Config would crash." />
+    <MESSAGE value="removed Saving, threw bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed Saving, threw bugs." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -606,10 +605,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1597778192652">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1597778439506">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597778192652" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597778439506" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597691858027" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
