@@ -15,11 +15,13 @@ if (count($_GET) > 0) {
     $prolificPID = $_GET["PROLIFIC_PID"];
     $studyID = $_GET["STUDY_ID"];
     $sessionID = $_GET["SESSION_ID"];
+
+    $autoStart = $_GET["auto"];
 }
 
 ?>
 
-<p>Demo Version 1.1.4 (August 2020)</p>
+<p>Demo Version 1.1.5 (August 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
@@ -27,6 +29,7 @@ if (count($_GET) > 0) {
     <li>Adapted payment calculation according to mail. </li>
     <li>Tutorial table now has correct payment indicator. </li>
     <li>Tutorial table now displays correct positions of table cells for conditions 4-6 </li>
+    <li>Autostart with only Prolific parameters is possible: /autostart.php </li>
 </ul>
 
 <b> To Do</b>
