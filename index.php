@@ -25,16 +25,12 @@ if (count($_GET) > 0) {
 
 <b>Recent Changes</b>
 <ul>
-    <li>Index page can parse Prolific URL parameters. </li>
-    <li>Adapted payment calculation according to mail. </li>
-    <li>Tutorial table now has correct payment indicator. </li>
-    <li>Tutorial table now displays correct positions of table cells for conditions 4-6 </li>
-    <li>Autostart with only Prolific parameters is possible: /autostart.php </li>
+    <li> Saving of Parameters, Device Infos works now. </li>
+    <li> Handling of missing parameters for autostart. </li>
 </ul>
 
 <b> To Do</b>
 <ul>
-    <li> Prolific parameters and Device / Browser info are not saved.  </li>
 
 </ul>
 
