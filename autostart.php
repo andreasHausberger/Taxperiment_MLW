@@ -1,28 +1,13 @@
 <?php
 
+require_once ('code/code.php');
 require_once ('resources/config.php');
 require_once ('public/templates/header.php');
 
-if (count($_GET) > 0) {
-    $active = false;
-    $prolificPID = $_GET["PROLIFIC_PID"];
-    $studyID = $_GET["STUDY_ID"];
-    $sessionID = $_GET["SESSION_ID"];
-
-    $autoStart = $_GET["auto"];
-
+    $prolificPID = getParamValue("PROLIFIC_PID", "noName");
+    $studyID = getParamValue("STUDY_ID");
+    $sessionID = getParamValue("SESSION_ID");
     $randomCondition = rand(1, 6);
-
-    $linkString = "";
-    if ($prolificPID != null && $studyID != null && $sessionID != null) {
-        $active = true;
-        $linkString = "/public/include/intro/index.php?condition=$randomCondition";
-    }
-
-}
-
-
-
 
 ?>
 
@@ -88,24 +73,12 @@ if (count($_GET) > 0) {
 
 <h1> Welcome Participant!</h1>
 
-<div style="margin-top: 15px;">
-    <b>Prolific PID:</b>
-    <p> <?php echo $prolificPID ?></p>
-    <b>Study ID:</b>
-    <p> <?php echo $studyID ?></p>
-    <b>Session ID:</b>
-    <p> <?php echo $sessionID ?></p>
-</div>
+<br>
 
     <?php
-    if ($active) {
         echo "<button onclick=\"startExp($prolificPID)\"> 
         Start experiment
     </button> ";
-    }
-    else {
-        echo "<h2 style='color: darkred'> Warning: Cannot start experiment without all required parameters! </h2>";
-    }
 
 ?>
 
