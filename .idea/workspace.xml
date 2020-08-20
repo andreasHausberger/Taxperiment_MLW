@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="exp_config.php Reactivated parameter check.">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autostart.php" beforeDir="false" afterPath="$PROJECT_DIR$/autostart.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +186,7 @@
       <workItem from="1597255362327" duration="2319000" />
       <workItem from="1597689003646" duration="3261000" />
       <workItem from="1597772718085" duration="8358000" />
-      <workItem from="1597932593147" duration="2191000" />
-    </task>
-    <task id="LOCAL-00092" summary="Fixed calculations for fine and tax amount --&gt; now works according to specifications.">
-      <created>1554307985593</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1554307985593</updated>
+      <workItem from="1597932593147" duration="2352000" />
     </task>
     <task id="LOCAL-00093" summary="Added &quot;fine&quot; data point.">
       <created>1554308381097</created>
@@ -531,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597937510878</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Changelist update.">
+      <created>1597937594100</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1597937594100</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +553,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Bugfix: in the overview, the correct fine amount is displayed." />
     <MESSAGE value="Download now is correctly labeled." />
     <MESSAGE value="Version Number" />
     <MESSAGE value="Usual scale descriptions for the cognitive item." />
@@ -578,7 +577,8 @@
     <MESSAGE value="Created Autostart" />
     <MESSAGE value="exp_config.php Reactivated parameter check." />
     <MESSAGE value="Missing parameters are being handled." />
-    <option name="LAST_COMMIT_MESSAGE" value="Missing parameters are being handled." />
+    <MESSAGE value="Changelist update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changelist update." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -607,11 +607,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1597937510690">
+    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1597937593942">
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
-    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937510690" />
+    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937593942" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
       <screen x="-3008" y="-367" width="3008" height="1605" />
@@ -720,12 +720,12 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1597934289264">
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1597937601865">
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848920990" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1597934289264" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937601865" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597692183571">
       <screen x="0" y="0" width="1920" height="1200" />
@@ -747,11 +747,6 @@
           <url>file://$PROJECT_DIR$/public/include/questionnaire/cognitive.php</url>
           <line>11</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/autostart.php</url>
-          <line>6</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>

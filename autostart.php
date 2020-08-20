@@ -76,7 +76,7 @@ require_once ('public/templates/header.php');
 <br>
 
     <?php
-        echo "<button onclick=\"startExp($prolificPID)\"> 
+        echo "<button onclick=startExp(\"$prolificPID\")> 
         Start experiment
     </button> ";
 
