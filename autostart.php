@@ -77,7 +77,7 @@ require_once ('public/templates/header.php');
 
     <?php
         echo "<button onclick=startExp(\"$prolificPID\")> 
-        Start experiment
+        Start Study!
     </button> ";
 
 ?>
