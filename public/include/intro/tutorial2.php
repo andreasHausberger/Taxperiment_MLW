@@ -4,7 +4,7 @@
         <span style="font-size:16px;"><span class="textSpan">Dear Participant,</span></span>
     </p>
     <p class="MsoNormal">
-        <span style="font-size:16px;"><span class="textSpan">Thank you for your interest in this study! The study will take about 30 minutes to complete. In return for your participation, you will receive a guaranteed payment of £3.50. Additionally, you will receive a payment that depends on your decisions in the study. This additional payment can be as high as £4.00. This study does not include any deception. This means that you will not be presented with false  information.
+        <span style="font-size:16px;"><span class="textSpan">Thank you for your interest in this study! The study will take about 30 minutes to complete. In return for your participation, you will receive a guaranteed payment of £3.50. Additionally, you will receive a payment that depends on your decisions in the study. This additional payment can be as high as £5.00. This study does not include any deception. This means that you will not be presented with ANY false information.
 
 </span></span>
     </p>
@@ -18,7 +18,7 @@
     </p>
 
     <p class="MsoNormal">
-        <span class="textSpan">All data obtained from participants will be kept anonymous. There will be no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). Once anonymized, these data may be made available to researchers via accessible data repositories and possibly used for novel purposes. The data will be stored for at least 10 years. 
+        <span class="textSpan">All data obtained from participants will be kept anonymous. There will be no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). The anonymized data will be stored in an open online repository for at least 10 years.
  </span>
     </p>
     <p class="MsoNormal">
