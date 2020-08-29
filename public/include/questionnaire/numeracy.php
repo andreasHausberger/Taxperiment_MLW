@@ -63,7 +63,7 @@ if (sizeof($_POST) >= 3) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Do most UK citizens think they should honestly declare cash earnings on their tax return? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 1. Do most UK citizens think they should honestly declare cash earnings on their tax return? (1 = no, 5 = yes)
 </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "num1"); ?>
@@ -71,7 +71,7 @@ if (sizeof($_POST) >= 3) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 2. Do most UK citizens think it is acceptable to overstate tax deductions on their tax return? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 2. Do most UK citizens think it is acceptable to overstate tax deductions on their tax return? (1 = no, 5 = yes)
 </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "num2"); ?>
@@ -79,7 +79,7 @@ if (sizeof($_POST) >= 3) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. Do most UK citizens think working for cash-in-hand payments without paying tax is a trivial offence? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 3. Do most UK citizens think working for cash-in-hand payments without paying tax is a trivial offence? (1 = no, 5 = yes)
  </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "num3"); ?>
