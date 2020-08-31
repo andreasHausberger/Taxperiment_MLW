@@ -95,10 +95,10 @@ switch ($tutorial) {
                  </p>
                  <p>
                      As part of the most recent World Values Survey, UK citizens were asked to rate the justifiability of 
-                     cheating on taxes. When asked about it their evaluation of this behaviour on a scale from 1 = never 
+                     cheating on taxes. When asked about their evaluation of this behaviour on a scale from 1 = never 
                      justifiable, to 10 = always justifiable, only about 9 out of each 100 citizens (8.5 % to be exact) 
-                     selected an option above 5. Based on this information, we can see that only a very small portion 
-                     (less than 9%) of UK citizens think that it can be justifiable to cheat on taxes.
+                     selected an option above 5. Based on this information, we can see that only a very <b>small portion</b> 
+                     (less than 9%) <b>of UK citizens think that it can be justifiable to cheat on taxes</b> more often than not.
                 </p>
                 ";
         break;
@@ -120,8 +120,8 @@ switch ($tutorial) {
                  <p>
                       As part of the most recent World Values Survey, UK citizens were asked about the justifiability of
                       cheating on taxes. About 56 out of each 100 citizens (56.1 % to be exact) said that it is never 
-                      justifiable to cheat on taxes. Based on this information, we can see that a large portion (almost 
-                      half) of UK citizens think it may be justifiable to cheat on taxes.
+                      justifiable to cheat on taxes. Based on this information, we can see that a <b>large portion</b> (almost 
+                      half) <b>of UK citizens think it may</b> (at least sometimes) <b>be justifiable to cheat on taxes</b>.
                 </p>
                 ";
         break;
