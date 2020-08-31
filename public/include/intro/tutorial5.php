@@ -31,7 +31,6 @@
                 <b>Fine</b> is what you would have to pay in case you were audited and evaded tax. It consists of paying back the evaded tax plus an additional fine which is proportional to the evaded amount.
             </span>
             <br>
-              </span>
             <br>
             
 
