@@ -83,7 +83,7 @@
         <div class="example">
             <h3>Example 3: </h3>
             <p>
-                You have guaranteed earnings of 1000 ECU and you earn an extra 700 ECU. Your total income before tax is 1700 ECU. The tax rate is 40% and leads to a tax due of 680 ECU. You pay 280 ECU of the required tax. An audit takes place, the fine that you are asked to pay is payment + 50%. This means that you have to pay the missing 400 ECU, plus a fine of another 200 ECU (50% of the missing amount).
+                You have guaranteed earnings of 1000 ECU and you earn an extra 700 ECU. Your total income before tax is 1700 ECU. The tax rate is 40% and leads to a tax due of 680 ECU. You pay 280 ECU of the required tax. An audit (check) takes place, the fine that you are asked to pay is payment + 50%. This means that you have to pay the missing 400 ECU, plus a fine of another 200 ECU (50% of the missing amount).
             </p>
 
             <div>
