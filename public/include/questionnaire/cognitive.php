@@ -62,7 +62,7 @@ if (sizeof($_POST) >= 3) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Do you think you should honestly declare cash earnings on your tax return? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 1. Do you think you should honestly declare cash earnings on your tax return? (1 = No, 5 = Yes)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "cog1"); ?>
@@ -70,7 +70,7 @@ if (sizeof($_POST) >= 3) {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Do you think it is acceptable to overstate tax deductions on your tax return? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 2. Do you think it is acceptable to overstate tax deductions on your tax return? (1 = No, 5 = Yes)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "cog2"); ?>
@@ -78,7 +78,7 @@ if (sizeof($_POST) >= 3) {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 3. Do you think working for cash-in-hand payments without paying tax is a trivial offence? (1 = no!!, 5 = yes!!)
+        <p class="questionText"> 3. Do you think working for cash-in-hand payments without paying tax is a trivial offence? (1 = No, 5 = Yes)
 
         </p>
         <div class="radioDisplayHorizontal">
