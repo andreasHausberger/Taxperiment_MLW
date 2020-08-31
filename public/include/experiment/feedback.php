@@ -91,7 +91,7 @@ else {
     }
 }
 
-echo "<h1> Overview </h1>";
+echo "<h1>  </h1>";
 
 
 
@@ -128,7 +128,7 @@ if ($feedback == 1 ) {
         echo "Error: Could not load feedback!";
     }
     else {
-        echo "<p> Please follow the instructions below! </p>";
+        echo "<p> First part of the study is over. </p>";
     }
 
     ?>
@@ -136,6 +136,6 @@ if ($feedback == 1 ) {
 </table>
 
 
-<p> In the following segments, you will be asked some questions about your opinions and impressions about the experiment. </p>
+<p> In the following part, you will be asked some questions about your opinions and impressions about the study. </p>
 
 <a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Continue to Questionnaire!"></a>
