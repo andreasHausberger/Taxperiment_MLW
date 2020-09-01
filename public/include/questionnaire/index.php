@@ -26,7 +26,8 @@ $pages = array(
     6 => "motivation.php",
     7 => "greed.php",
     8 => "demographics.php",
-    9 => "end.php"
+    9 => "tech.php",
+    10 => "end.php"
 );
 
 $page = $pages[$index];

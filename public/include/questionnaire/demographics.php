@@ -17,8 +17,9 @@ if (sizeof($_POST) >= 6) {
     $english = $_POST['about'];
     $participant = $_GET['pid'];
     $about = $_POST['about'];
+    $about = "'". addslashes($about) . "'";
 
-    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, participation_before = $participation, care = $care, understanding = $understanding, about = $about, created = NOW() WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, participation_before = $participation, care = $care, understanding = $understanding, about = $about WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -119,7 +120,7 @@ if (sizeof($_POST) >= 6) {
         </div>
     </div>
 
-    <input id="submitButton" type="submit" value="Finish the Questionnaire!" disabled="false">
+    <input id="submitButton" type="submit" value="Next Page" disabled="false">
 
 
 </form>

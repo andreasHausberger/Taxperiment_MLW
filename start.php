@@ -13,7 +13,7 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.5 (August 2020)</p>
+<p>Demo Version 1.1.6 (August 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
