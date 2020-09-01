@@ -27,7 +27,7 @@ if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
 }
 else {
-    console_log("Connection established!");
+//    console_log("Connection established!");
 }
 
 if (!function_exists("checkIfTableEmpty")) {
@@ -291,7 +291,7 @@ foreach ($queries as $query) {
     if ($connection->query($query) === TRUE) {
         $currentKey = $keys[$count];
 
-        console_log("Query for table " . $currentKey . " successful!");
+//        console_log("Query for table " . $currentKey . " successful!");
     } else {
         $currentKey = $keys[$count];
         echo "\n" . "CREATE: Problem with Query for table " . $currentKey . ": " . $connection->error;
@@ -305,14 +305,15 @@ foreach ($insertQueries as $insertQuery) {
 
     if (checkIfTableEmpty($connection, $currentKey)) {
         if ($connection->query($insertQuery)) {
-            console_log("Inserted data for $currentKey!");
+//            console_log("Inserted data for $currentKey!");
         } else {
             echo "\n" . "INSERT: Problem with Insert for table " . $currentKey . ": " . $connection->error;
             echo "<br>";
 
         }
     }
-    else { console_log("Data already inserted in $currentKey");
+    else {
+//        console_log("Data already inserted in $currentKey");
     }
 
     $insertCount = $insertCount + 1;

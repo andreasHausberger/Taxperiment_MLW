@@ -6,7 +6,7 @@
  * Time: 10:06
  */
 
-require_once ('code/code.php');
+//require_once ('code/code.php');
 
 
 
@@ -76,11 +76,12 @@ if (!isset($connection)) {
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 } else {
-    console_log("Connected successfully");
+//    console_log("Connected successfully");
 }
 
 defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
 defined("TEMPLATES_PATH") or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
+defined("PASSWORD") or define("PASSWORD", "city-mouse-2659");
 
 ini_set("error_reporting", "true");
 error_reporting(E_ALL | E_STRICT);

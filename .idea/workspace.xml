@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/code/code.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group2.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/start.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/create_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ckogler" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,45 +43,59 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/andreasHausberger/Taxperiment_MLW.git" />
+      </set>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
-      <server host="mlweb" id="00608060-07a2-41ae-9681-96bc2a69e0e4" name="mlweb" port="8888" />
+      <server host="localhost" id="400189db-92fe-427c-8cea-b743ef2fb268" name="Localhost" port="9000" />
+      <server host="mlweb" id="4ec9e582-8777-4a56-a104-d52881d790c6" name="mlweb" port="8888" />
     </servers>
   </component>
-  <component name="ProjectId" id="1SbcGPHm7sQvuUFqLlOvrJHacDa" />
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="mlweb:8888" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectId" id="1e5VWbYB5i1zWqpNGrqMwJ4O384" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="1" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Constants" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="create&#9;FILE&#9;file:///Users/andreas/Developer/Web/Taxperiment_MLW/resources/library/mlwebphp_100beta/create_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/include/experiment" />
       <recent name="$PROJECT_DIR$/public/include/intro" />
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/include/questionnaire" />
       <recent name="$PROJECT_DIR$/public/include/experiment" />
       <recent name="$PROJECT_DIR$/public/include/intro" />
@@ -86,7 +103,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Debug" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" server_name="mlweb">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="mlweb">
+      <method v="2" />
+    </configuration>
+    <configuration name="debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="NOT_FILTER" server_name="mlweb">
       <method v="2" />
     </configuration>
   </component>
@@ -173,63 +193,19 @@
       <workItem from="1554364321067" duration="6376000" />
       <workItem from="1554468772154" duration="5592000" />
       <workItem from="1554556439960" duration="780000" />
-      <workItem from="1554750062337" duration="1192000" />
-      <workItem from="1554807059120" duration="924000" />
-      <workItem from="1555488361829" duration="836000" />
-      <workItem from="1561919698189" duration="20000" />
-      <workItem from="1570782361147" duration="1227000" />
-      <workItem from="1571213521191" duration="250000" />
-      <workItem from="1571229590222" duration="1652000" />
-      <workItem from="1571816635800" duration="1502000" />
-      <workItem from="1571835649657" duration="126000" />
-      <workItem from="1574323476533" duration="5380000" />
-      <workItem from="1574331288326" duration="3755000" />
-      <workItem from="1574410167563" duration="4183000" />
-      <workItem from="1574929191877" duration="56000" />
-      <workItem from="1574929258017" duration="6405000" />
-      <workItem from="1574940582241" duration="1000" />
-      <workItem from="1575554309184" duration="1720000" />
-      <workItem from="1578558935732" duration="8445000" />
-      <workItem from="1578579584092" duration="4377000" />
-      <workItem from="1579249854554" duration="7842000" />
-      <workItem from="1580461176882" duration="10981000" />
-      <workItem from="1580650720446" duration="5054000" />
-      <workItem from="1581258871231" duration="2000" />
-      <workItem from="1581511578251" duration="868000" />
-      <workItem from="1581586255097" duration="648000" />
-      <workItem from="1581605296368" duration="598000" />
-      <workItem from="1581671481669" duration="7606000" />
-      <workItem from="1582206446752" duration="4094000" />
-      <workItem from="1582273424371" duration="273000" />
-      <workItem from="1582291231103" duration="15123000" />
-      <workItem from="1582726671566" duration="3555000" />
-      <workItem from="1582808861365" duration="9391000" />
-      <workItem from="1583396652076" duration="5236000" />
-      <workItem from="1586346904669" duration="703000" />
-      <workItem from="1587026281201" duration="7215000" />
-      <workItem from="1587117657573" duration="4666000" />
-      <workItem from="1590223404981" duration="5641000" />
-      <workItem from="1590246851707" duration="1848000" />
-      <workItem from="1590311907917" duration="1960000" />
-      <workItem from="1590321174162" duration="3357000" />
-      <workItem from="1599650309574" duration="191000" />
-      <workItem from="1599652050859" duration="664000" />
-      <workItem from="1599655743535" duration="209000" />
-      <workItem from="1599825733856" duration="2562000" />
-    </task>
-    <task id="LOCAL-00093" summary="Added &quot;fine&quot; data point.">
-      <created>1554308381097</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1554308381097</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Selection of rounds is now remarked in database.">
-      <created>1554308421374</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1554308421374</updated>
+      <workItem from="1554750062337" duration="430000" />
+      <workItem from="1593611476605" duration="935000" />
+      <workItem from="1595523012021" duration="688000" />
+      <workItem from="1595601515668" duration="593000" />
+      <workItem from="1595602128993" duration="2012000" />
+      <workItem from="1596181999507" duration="10971000" />
+      <workItem from="1597255362327" duration="2319000" />
+      <workItem from="1597689003646" duration="3261000" />
+      <workItem from="1597772718085" duration="8358000" />
+      <workItem from="1597932593147" duration="2488000" />
+      <workItem from="1597937894343" duration="1891000" />
+      <workItem from="1598860353807" duration="279000" />
+      <workItem from="1598950369956" duration="2348000" />
     </task>
     <task id="LOCAL-00095" summary="Feedback directly queries the fine from each round, no more calculations.">
       <created>1554308510690</created>
@@ -364,203 +340,217 @@
       <option name="project" value="LOCAL" />
       <updated>1554556632032</updated>
     </task>
-    <task id="LOCAL-00114" summary="Added exp6 item.">
-      <created>1554750516498</created>
+    <task id="LOCAL-00114" summary="Version Nr, Change List, removed tutorial4.php from Tutorial list.">
+      <created>1595602719498</created>
       <option name="number" value="00114" />
       <option name="presentableId" value="LOCAL-00114" />
       <option name="project" value="LOCAL" />
-      <updated>1554750516498</updated>
+      <updated>1595602719498</updated>
     </task>
-    <task id="LOCAL-00115" summary="fix: forgot validation.">
-      <created>1554751137775</created>
+    <task id="LOCAL-00115" summary="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered.">
+      <created>1595603667555</created>
       <option name="number" value="00115" />
       <option name="presentableId" value="LOCAL-00115" />
       <option name="project" value="LOCAL" />
-      <updated>1554751137775</updated>
+      <updated>1595603667555</updated>
     </task>
-    <task id="LOCAL-00116" summary="Initial Commit Develop">
-      <created>1571904366261</created>
+    <task id="LOCAL-00116" summary="Reworked Tutorial to reflect the different presentation modes.">
+      <created>1596186920016</created>
       <option name="number" value="00116" />
       <option name="presentableId" value="LOCAL-00116" />
       <option name="project" value="LOCAL" />
-      <updated>1571904366262</updated>
+      <updated>1596186920017</updated>
     </task>
-    <task id="LOCAL-00117" summary="Changed text input field to dichotomous buttons (Audit kinda works, exact tax due not correct)">
-      <created>1571918947336</created>
+    <task id="LOCAL-00117" summary="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order.">
+      <created>1596188469474</created>
       <option name="number" value="00117" />
       <option name="presentableId" value="LOCAL-00117" />
       <option name="project" value="LOCAL" />
-      <updated>1571918947336</updated>
+      <updated>1596188469474</updated>
     </task>
-    <task id="LOCAL-00118" summary="Fixation cross between rounds. 2 Second timer.">
-      <created>1571919047661</created>
+    <task id="LOCAL-00118" summary="Questionnaire fixes.">
+      <created>1596195965092</created>
       <option name="number" value="00118" />
       <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1571919047661</updated>
+      <updated>1596195965092</updated>
     </task>
-    <task id="LOCAL-00119" summary="Round Order fixed. Config File included.">
-      <created>1574335390652</created>
+    <task id="LOCAL-00119" summary="Fixed bug where fines were too high.">
+      <created>1596196258990</created>
       <option name="number" value="00119" />
       <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1574335390653</updated>
+      <updated>1596196258990</updated>
     </task>
-    <task id="LOCAL-00120" summary="Automatic template generation (according to PDF document), delayed FB only, automatic round overview.">
-      <created>1574415812059</created>
+    <task id="LOCAL-00120" summary="Fixed bug where fines were too high.">
+      <created>1596197064436</created>
       <option name="number" value="00120" />
       <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1574415812059</updated>
+      <updated>1596197064436</updated>
     </task>
-    <task id="LOCAL-00121" summary="Saving of Risk Aversion questionnaire data into DB. Added creation syntax for new Table &quot;Risk Aversion&quot;.">
-      <created>1579189151728</created>
+    <task id="LOCAL-00121" summary="Fixed bug where fines were too high.">
+      <created>1596197184088</created>
       <option name="number" value="00121" />
       <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1579189151728</updated>
+      <updated>1596197184088</updated>
     </task>
-    <task id="LOCAL-00122" summary="Fix: Added SQL syntax for table creation.">
-      <created>1579250012887</created>
+    <task id="LOCAL-00122" summary="Procfile">
+      <created>1596197494289</created>
       <option name="number" value="00122" />
       <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1579250012887</updated>
+      <updated>1596197494289</updated>
     </task>
-    <task id="LOCAL-00123" summary="Removed popup Box when opening a new audit page.">
-      <created>1579251414543</created>
+    <task id="LOCAL-00123" summary="Procfile">
+      <created>1596197702672</created>
       <option name="number" value="00123" />
       <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1579251414543</updated>
+      <updated>1596197702672</updated>
     </task>
-    <task id="LOCAL-00124" summary="Added different display modes for conditions, in Experiment and Intro.">
-      <created>1579262231270</created>
+    <task id="LOCAL-00124" summary="Fixes for Order, Feedback bugs. Some small code refactorings.">
+      <created>1597256969976</created>
       <option name="number" value="00124" />
       <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1579262231270</updated>
+      <updated>1597256969976</updated>
     </task>
-    <task id="LOCAL-00125" summary="Fixed definitions page for conditions 1-3">
-      <created>1579263674719</created>
+    <task id="LOCAL-00125" summary="New Version Number.">
+      <created>1597257262381</created>
       <option name="number" value="00125" />
       <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1579263674719</updated>
+      <updated>1597257262381</updated>
     </task>
-    <task id="LOCAL-00126" summary="Changed Name">
-      <created>1579263740308</created>
+    <task id="LOCAL-00126" summary="Slider Rounds are now 20 seconds again (my bad).">
+      <created>1597257480365</created>
       <option name="number" value="00126" />
       <option name="presentableId" value="LOCAL-00126" />
       <option name="project" value="LOCAL" />
-      <updated>1579263740308</updated>
+      <updated>1597257480365</updated>
     </task>
-    <task id="LOCAL-00127" summary="New Layout for MLW tables, includes Extra Sign for Conditions 1, 2.">
-      <created>1580481713949</created>
+    <task id="LOCAL-00127" summary="Start page can parse Prolific GET parameters. Adapted payment calculation.">
+      <created>1597691220449</created>
       <option name="number" value="00127" />
       <option name="presentableId" value="LOCAL-00127" />
       <option name="project" value="LOCAL" />
-      <updated>1580481713949</updated>
+      <updated>1597691220449</updated>
     </task>
-    <task id="LOCAL-00128" summary="Release Notes, new Create Table Syntax for Exp.Round">
-      <created>1580484143627</created>
+    <task id="LOCAL-00128" summary="Tutorial table now has correct payback indicator.">
+      <created>1597691748355</created>
       <option name="number" value="00128" />
       <option name="presentableId" value="LOCAL-00128" />
       <option name="project" value="LOCAL" />
-      <updated>1580484143627</updated>
+      <updated>1597691748355</updated>
     </task>
-    <task id="LOCAL-00129" summary="Visual Changes, some code restructuring.">
-      <created>1581688305948</created>
+    <task id="LOCAL-00129" summary="Version nr., changes.">
+      <created>1597691858126</created>
       <option name="number" value="00129" />
       <option name="presentableId" value="LOCAL-00129" />
       <option name="project" value="LOCAL" />
-      <updated>1581688305948</updated>
+      <updated>1597691858126</updated>
     </task>
-    <task id="LOCAL-00130" summary="Logo change, visual &amp; layout fixes.">
-      <created>1582211031158</created>
+    <task id="LOCAL-00130" summary="Prolific data &amp; device info saving. Tutorial table now displays correctly for conditions 4-6.">
+      <created>1597777189516</created>
       <option name="number" value="00130" />
       <option name="presentableId" value="LOCAL-00130" />
       <option name="project" value="LOCAL" />
-      <updated>1582211031159</updated>
+      <updated>1597777189516</updated>
     </task>
-    <task id="LOCAL-00131" summary="Randomization of Rounds: Works, uses additional lookup table in DB.">
-      <created>1582383142668</created>
+    <task id="LOCAL-00131" summary="Hotfix: Fixed issue where Exp Config would crash.">
+      <created>1597777592747</created>
       <option name="number" value="00131" />
       <option name="presentableId" value="LOCAL-00131" />
       <option name="project" value="LOCAL" />
-      <updated>1582383142668</updated>
+      <updated>1597777592747</updated>
     </task>
-    <task id="LOCAL-00132" summary="Randomization of Rounds: Works, uses additional lookup table in DB.">
-      <created>1582383852071</created>
+    <task id="LOCAL-00132" summary="Hotfix: Fixed issue where Exp Config would crash.">
+      <created>1597778004168</created>
       <option name="number" value="00132" />
       <option name="presentableId" value="LOCAL-00132" />
       <option name="project" value="LOCAL" />
-      <updated>1582383852071</updated>
+      <updated>1597778004168</updated>
     </task>
-    <task id="LOCAL-00133" summary="Fixes, new Changelog.">
-      <created>1582386202840</created>
+    <task id="LOCAL-00133" summary="Hotfix: Fixed issue where Exp Config would crash.">
+      <created>1597778056972</created>
       <option name="number" value="00133" />
       <option name="presentableId" value="LOCAL-00133" />
       <option name="project" value="LOCAL" />
-      <updated>1582386202840</updated>
+      <updated>1597778056972</updated>
     </task>
-    <task id="LOCAL-00134" summary="Randomized variation of Table Fields, Pay/Don't pay buttons. Several fixes and improvements.">
-      <created>1582824148851</created>
+    <task id="LOCAL-00134" summary="Hotfix: Fixed issue where Exp Config would crash.">
+      <created>1597778192751</created>
       <option name="number" value="00134" />
       <option name="presentableId" value="LOCAL-00134" />
       <option name="project" value="LOCAL" />
-      <updated>1582824148851</updated>
+      <updated>1597778192751</updated>
     </task>
-    <task id="LOCAL-00135" summary="Fixed Bugs, translated 2 Pages. Re-Checked random round selection for payment --&gt; works.">
-      <created>1587047398607</created>
+    <task id="LOCAL-00135" summary="removed Saving, threw bugs.">
+      <created>1597778439609</created>
       <option name="number" value="00135" />
       <option name="presentableId" value="LOCAL-00135" />
       <option name="project" value="LOCAL" />
-      <updated>1587047398608</updated>
+      <updated>1597778439609</updated>
     </task>
-    <task id="LOCAL-00136" summary="Added Link Export, updated Change Log, Version Nr.">
-      <created>1587135149026</created>
+    <task id="LOCAL-00136" summary="Updated Todo list.">
+      <created>1597778465896</created>
       <option name="number" value="00136" />
       <option name="presentableId" value="LOCAL-00136" />
       <option name="project" value="LOCAL" />
-      <updated>1587135149026</updated>
+      <updated>1597778465896</updated>
     </task>
-    <task id="LOCAL-00137" summary="Added Mouselab Support for &quot;&gt;&lt;=&quot; Box: Hover reveal, data tracking.">
-      <created>1590248366878</created>
+    <task id="LOCAL-00137" summary="Created Autostart">
+      <created>1597848912933</created>
       <option name="number" value="00137" />
       <option name="presentableId" value="LOCAL-00137" />
       <option name="project" value="LOCAL" />
-      <updated>1590248366878</updated>
+      <updated>1597848912933</updated>
     </task>
-    <task id="LOCAL-00138" summary="Fix: Condition 1 Display">
-      <created>1590322194014</created>
+    <task id="LOCAL-00138" summary="exp_config.php Reactivated parameter check.">
+      <created>1597934064760</created>
       <option name="number" value="00138" />
       <option name="presentableId" value="LOCAL-00138" />
       <option name="project" value="LOCAL" />
-      <updated>1590322194015</updated>
+      <updated>1597934064760</updated>
     </task>
-    <task id="LOCAL-00139" summary="Fixed svg display.">
-      <created>1599655784551</created>
+    <task id="LOCAL-00139" summary="exp_config.php Reactivated parameter check.">
+      <created>1597934280779</created>
       <option name="number" value="00139" />
       <option name="presentableId" value="LOCAL-00139" />
       <option name="project" value="LOCAL" />
-      <updated>1599655784552</updated>
+      <updated>1597934280779</updated>
     </task>
-    <task id="LOCAL-00140" summary="Rotation / display works.">
-      <created>1599748747612</created>
+    <task id="LOCAL-00140" summary="Missing parameters are being handled.">
+      <created>1597937510878</created>
       <option name="number" value="00140" />
       <option name="presentableId" value="LOCAL-00140" />
       <option name="project" value="LOCAL" />
-      <updated>1599748747612</updated>
+      <updated>1597937510878</updated>
     </task>
-    <task id="LOCAL-00141" summary="Rotation from DB values.">
-      <created>1599829349103</created>
+    <task id="LOCAL-00141" summary="Changelist update.">
+      <created>1597937594100</created>
       <option name="number" value="00141" />
       <option name="presentableId" value="LOCAL-00141" />
       <option name="project" value="LOCAL" />
-      <updated>1599829349103</updated>
+      <updated>1597937594100</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Syntax error. my bad.">
+      <created>1597937755499</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1597937755499</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Changed Button Text.">
+      <created>1597937908325</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1597937908326</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,139 +572,220 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Initial Commit Develop" />
-    <MESSAGE value="Changed text input field to dichotomous buttons (Audit kinda works, exact tax due not correct)" />
-    <MESSAGE value="Fixation cross between rounds. 2 Second timer." />
-    <MESSAGE value="Round Order fixed. Config File included." />
-    <MESSAGE value="Automatic template generation (according to PDF document), delayed FB only, automatic round overview." />
-    <MESSAGE value="Saving of Risk Aversion questionnaire data into DB. Added creation syntax for new Table &quot;Risk Aversion&quot;." />
-    <MESSAGE value="Fix: Added SQL syntax for table creation." />
-    <MESSAGE value="Removed popup Box when opening a new audit page." />
-    <MESSAGE value="Added different display modes for conditions, in Experiment and Intro." />
-    <MESSAGE value="Fixed definitions page for conditions 1-3" />
-    <MESSAGE value="Ready for Heroku Deploy" />
-    <MESSAGE value="New Layout for MLW tables, includes Extra Sign for Conditions 1, 2." />
-    <MESSAGE value="Release Notes, new Create Table Syntax for Exp.Round" />
-    <MESSAGE value="Visual Changes, some code restructuring." />
-    <MESSAGE value="Logo change, visual &amp; layout fixes." />
-    <MESSAGE value="Randomization of Rounds: Works, uses additional lookup table in DB." />
-    <MESSAGE value="Fixes, new Changelog." />
-    <MESSAGE value="Randomized variation of Table Fields, Pay/Don't pay buttons. Several fixes and improvements." />
-    <MESSAGE value="Fixed Bugs, translated 2 Pages. Re-Checked random round selection for payment --&gt; works." />
-    <MESSAGE value="Added Link Export, updated Change Log, Version Nr." />
-    <MESSAGE value="Added Mouselab Support for &quot;&gt;&lt;=&quot; Box: Hover reveal, data tracking." />
-    <MESSAGE value="Fix: Condition 1 Display" />
-    <MESSAGE value="Fixed svg display." />
-    <MESSAGE value="Rotation / display works." />
-    <MESSAGE value="Rotation from DB values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rotation from DB values." />
+    <MESSAGE value="Usual scale descriptions for the cognitive item." />
+    <MESSAGE value="Version nr, Change list." />
+    <MESSAGE value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
+    <MESSAGE value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
+    <MESSAGE value="Reworked Tutorial to reflect the different presentation modes." />
+    <MESSAGE value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
+    <MESSAGE value="Questionnaire fixes." />
+    <MESSAGE value="Fixed bug where fines were too high." />
+    <MESSAGE value="Procfile" />
+    <MESSAGE value="Fixes for Order, Feedback bugs. Some small code refactorings." />
+    <MESSAGE value="New Version Number." />
+    <MESSAGE value="Slider Rounds are now 20 seconds again (my bad)." />
+    <MESSAGE value="Start page can parse Prolific GET parameters. Adapted payment calculation." />
+    <MESSAGE value="Tutorial table now has correct payback indicator." />
+    <MESSAGE value="Version nr., changes." />
+    <MESSAGE value="Prolific data &amp; device info saving. Tutorial table now displays correctly for conditions 4-6." />
+    <MESSAGE value="Hotfix: Fixed issue where Exp Config would crash." />
+    <MESSAGE value="removed Saving, threw bugs." />
+    <MESSAGE value="Updated Todo list." />
+    <MESSAGE value="Created Autostart" />
+    <MESSAGE value="exp_config.php Reactivated parameter check." />
+    <MESSAGE value="Missing parameters are being handled." />
+    <MESSAGE value="Changelist update." />
+    <MESSAGE value="Syntax error. my bad." />
+    <MESSAGE value="Changed Button Text." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Button Text." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-2355" y="-141" key="CommitChangelistDialog2" timestamp="1599829348884">
+    <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2355" y="-141" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599829348884" />
-    <state x="417" y="180" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599655784314" />
-    <state x="100" y="123" width="1467" height="913" key="DiffContextDialog" timestamp="1599652156968">
-      <screen x="0" y="23" width="1920" height="1113" />
-    </state>
-    <state x="100" y="123" width="1467" height="913" key="DiffContextDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599652156968" />
-    <state width="1878" height="419" key="GridCell.Tab.0.bottom" timestamp="1601039569806">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
-    <state width="1878" height="419" key="GridCell.Tab.0.center" timestamp="1601039569806">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
-    <state width="1878" height="419" key="GridCell.Tab.0.left" timestamp="1601039569805">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569805" />
-    <state width="1878" height="419" key="GridCell.Tab.0.right" timestamp="1601039569806">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
-    <state width="1878" height="419" key="GridCell.Tab.1.bottom" timestamp="1601039569808">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
-    <state width="1878" height="419" key="GridCell.Tab.1.center" timestamp="1601039569807">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
-    <state width="1878" height="419" key="GridCell.Tab.1.left" timestamp="1601039569807">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
-    <state width="1878" height="419" key="GridCell.Tab.1.right" timestamp="1601039569807">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
-    <state width="1878" height="419" key="GridCell.Tab.2.bottom" timestamp="1601039569809">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569809" />
-    <state width="1878" height="419" key="GridCell.Tab.2.center" timestamp="1601039569808">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
-    <state width="1878" height="419" key="GridCell.Tab.2.left" timestamp="1601039569808">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
-    <state width="1878" height="419" key="GridCell.Tab.2.right" timestamp="1601039569809">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1878" height="419" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569809" />
-    <state x="-2472" y="98" key="Vcs.Push.Dialog.v2" timestamp="1599829580098">
+    <state x="-1528" y="-151" key="#CLI_Interpreters/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183359891" />
+    <state x="-2309" y="-115" key="#Servers" timestamp="1596183467372">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2472" y="98" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599829580098" />
-    <state x="832" y="503" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599650312136">
-      <screen x="0" y="23" width="1920" height="1113" />
-    </state>
-    <state x="832" y="503" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599650312136" />
-    <state x="-2491" y="83" width="837" height="550" key="find.popup" timestamp="1599828955108">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
-    </state>
-    <state x="-2491" y="83" width="837" height="550" key="find.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599828955108" />
-    <state x="580" y="299" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599724896296">
-      <screen x="0" y="23" width="1920" height="1113" />
-    </state>
-    <state x="580" y="299" key="git4idea.branch.GitSmartOperationDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599724896296" />
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1601039344192">
+    <state x="-2309" y="-115" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183467372" />
+    <state x="446" y="208" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183266500" />
+    <state x="-2309" y="-105" key="#Servers/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182679496" />
+    <state x="699" y="275" key="#Servers/0.23.3008.1605@0.23.3008.1605" timestamp="1595603110820" />
+    <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601039344192" />
+    <state x="-2432" y="-115" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596182786799" />
+    <state x="368" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183326917" />
+    <state x="-2432" y="-105" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182686563" />
+    <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601039983650" />
+    <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3008.1605@0.23.3008.1605" timestamp="1595603111973" />
+    <state x="-2214" y="63" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1596182544678">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
+    </state>
+    <state x="-2214" y="63" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182544678" />
+    <state x="673" y="281" key="#debug" timestamp="1596183321543">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
+    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1597937908173">
+      <screen x="0" y="23" width="1920" height="1113" />
+    </state>
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
+    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937908173" />
+    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
+    <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state width="468" height="466" key="DebuggerActiveHint/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596184120201" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog" timestamp="1601039774449">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-2614" y="-267" width="2022" height="1227" key="DiffContextDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1595523483420" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601039774449" />
+    <state x="251" y="75" width="1291" height="918" key="DiffContextDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1598860398683" />
+    <state width="1878" height="419" key="GridCell.Tab.0.bottom" timestamp="1601040140557">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388903" />
+    <state width="1878" height="496" key="GridCell.Tab.0.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139704" />
+    <state width="1878" height="419" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140557" />
+    <state width="1878" height="421" key="GridCell.Tab.0.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942731" />
+    <state width="1878" height="419" key="GridCell.Tab.0.center" timestamp="1601040140556">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388902" />
+    <state width="1878" height="496" key="GridCell.Tab.0.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139702" />
+    <state width="1878" height="419" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140556" />
+    <state width="1878" height="421" key="GridCell.Tab.0.center/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942730" />
+    <state width="1878" height="419" key="GridCell.Tab.0.left" timestamp="1601040140556">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388901" />
+    <state width="1878" height="496" key="GridCell.Tab.0.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139702" />
+    <state width="1878" height="419" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140556" />
+    <state width="1878" height="421" key="GridCell.Tab.0.left/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942729" />
+    <state width="1878" height="419" key="GridCell.Tab.0.right" timestamp="1601040140556">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.0.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388902" />
+    <state width="1878" height="496" key="GridCell.Tab.0.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139703" />
+    <state width="1878" height="419" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140556" />
+    <state width="1878" height="421" key="GridCell.Tab.0.right/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942730" />
+    <state width="1878" height="419" key="GridCell.Tab.1.bottom" timestamp="1601040140558">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388903" />
+    <state width="1878" height="496" key="GridCell.Tab.1.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139705" />
+    <state width="1878" height="419" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140558" />
+    <state width="1878" height="419" key="GridCell.Tab.1.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1601039989714" />
+    <state width="1878" height="419" key="GridCell.Tab.1.center" timestamp="1601040140557">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388903" />
+    <state width="1878" height="496" key="GridCell.Tab.1.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139704" />
+    <state width="1878" height="419" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140557" />
+    <state width="1878" height="419" key="GridCell.Tab.1.center/0.23.1920.1113@0.23.1920.1113" timestamp="1601039989714" />
+    <state width="1878" height="419" key="GridCell.Tab.1.left" timestamp="1601040140557">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388903" />
+    <state width="1878" height="496" key="GridCell.Tab.1.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139704" />
+    <state width="1878" height="419" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140557" />
+    <state width="1878" height="419" key="GridCell.Tab.1.left/0.23.1920.1113@0.23.1920.1113" timestamp="1601039989713" />
+    <state width="1878" height="419" key="GridCell.Tab.1.right" timestamp="1601040140558">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.1.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388903" />
+    <state width="1878" height="496" key="GridCell.Tab.1.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139704" />
+    <state width="1878" height="419" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140558" />
+    <state width="1878" height="419" key="GridCell.Tab.1.right/0.23.1920.1113@0.23.1920.1113" timestamp="1601039989714" />
+    <state width="1878" height="419" key="GridCell.Tab.2.bottom" timestamp="1601040140559">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388904" />
+    <state width="1878" height="496" key="GridCell.Tab.2.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139706" />
+    <state width="1878" height="419" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140559" />
+    <state width="1878" height="421" key="GridCell.Tab.2.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942740" />
+    <state width="1878" height="419" key="GridCell.Tab.2.center" timestamp="1601040140559">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388904" />
+    <state width="1878" height="496" key="GridCell.Tab.2.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139705" />
+    <state width="1878" height="419" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140559" />
+    <state width="1878" height="421" key="GridCell.Tab.2.center/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942739" />
+    <state width="1878" height="419" key="GridCell.Tab.2.left" timestamp="1601040140558">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388904" />
+    <state width="1878" height="496" key="GridCell.Tab.2.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139705" />
+    <state width="1878" height="419" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140558" />
+    <state width="1878" height="421" key="GridCell.Tab.2.left/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942738" />
+    <state width="1878" height="419" key="GridCell.Tab.2.right" timestamp="1601040140559">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="496" key="GridCell.Tab.2.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776388904" />
+    <state width="1878" height="496" key="GridCell.Tab.2.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139706" />
+    <state width="1878" height="419" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601040140559" />
+    <state width="1878" height="421" key="GridCell.Tab.2.right/0.23.1920.1113@0.23.1920.1113" timestamp="1598952942739" />
+    <state x="668" y="489" key="NewPhpFileDialog" timestamp="1598950684757">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1962" y="287" key="NewPhpFileDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776136060" />
+    <state x="668" y="489" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1598950684757" />
+    <state x="668" y="477" key="NewPhpFileDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1597998381505" />
+    <state x="-1672" y="90" key="SettingsEditor" timestamp="1596183392210">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state x="-1672" y="90" key="SettingsEditor/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183392210" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1597257682209">
+      <screen x="0" y="23" width="3008" height="1605" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1597937935409">
+      <screen x="0" y="23" width="1920" height="1113" />
+    </state>
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848920990" />
+    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937935409" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
+    <state x="100" y="100" width="1720" height="1000" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1601039774450">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="100" y="100" width="1720" height="1000" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601039774450" />
+    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598864864376">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="789" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183188586" />
+    <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597689474786" />
+    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1598864864376" />
+    <state x="541" y="325" width="837" height="550" key="find.popup" timestamp="1601040077657">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="541" y="325" width="837" height="550" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601040077657" />
+    <state x="743" y="248" width="670" height="470" key="search.everywhere.popup" timestamp="1597936470783">
+      <screen x="0" y="23" width="1920" height="1113" />
+    </state>
+    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596188122209" />
+    <state x="743" y="243" width="670" height="506" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1597847012317" />
+    <state x="743" y="248" width="670" height="470" key="search.everywhere.popup/0.23.1920.1113@0.23.1920.1113" timestamp="1597936470783" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/intro/tut_definitions.php</url>
-          <line>193</line>
-          <option name="timeStamp" value="44" />
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/cognitive.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/intro/tut_definitions.php</url>
-          <line>192</line>
-          <option name="timeStamp" value="45" />
+          <url>file://$PROJECT_DIR$/index.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/experiment/index.php</url>
-          <line>9</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/code/code.php</url>
-          <line>59</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/experiment/index.php</url>
-          <line>87</line>
-          <option name="timeStamp" value="79" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
