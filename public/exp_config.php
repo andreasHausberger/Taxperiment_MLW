@@ -9,11 +9,21 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
 
 // include ("./templates/header.php");
+require_once("../code/code.php");
 
 $prolificPID = "";
 $studyID = "";
 $sessionID = "";
 $userAgent = "";
+
+$screenHeight = postParamValue("screen_height");
+$screenWidth = postParamValue("screen_width");
+
+$resolution = "";
+
+if ($screenHeight != "" && $screenWidth != "") {
+    $resolution = $screenWidth . " * " . $screenHeight;
+}
 
 $prolificPID = isset($_GET['prolificPID']) ? $_GET['prolificPID'] : "" ;
 $studyID = isset($_GET['studyID']) ? $_GET['studyID'] : "";
@@ -40,13 +50,13 @@ if ($participantQuery->execute()) {
     var_dump($participantQuery);
 }
 
-$experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type) VALUES (?, ?, ?, ?, ?, ?)");
+$experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type, resolution) VALUES (?, ?, ?, ?, ?, ?, ?)");
 
 if ($experimentQuery == false) {
     echo "Could not create query string!";
 }
 
-$experimentQuery->bind_param("iissss", $condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent); 
+$experimentQuery->bind_param("iisssss", $condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent, $resolution);
 
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;

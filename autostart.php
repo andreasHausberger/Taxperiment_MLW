@@ -67,7 +67,6 @@ require_once ('public/templates/header.php');
         document.cookie = "mlweb_subject=" + subject + "; path=/";
 
         var newWind = window.open(linkstr + "&sname=" + subject + "&prolificPID=" + prolificPID + "&studyID=" + studyID + "&sessionID=" + sessionID +"&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
-
     }
 </script>
 

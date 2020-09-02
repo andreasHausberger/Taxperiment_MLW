@@ -1,6 +1,6 @@
 <?php
 
-require_once("resources/config.php");
+require_once("../resources/config.php");
 
 function getParamValue($paramName, $fallback = "") {
     if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
@@ -36,8 +36,7 @@ function performLogin($passwordInput) {
             return true;
         }
     }
-    else
-    {
+    else {
         $cookieHash = $_COOKIE["mlhash"];
         return password_verify($passwordInput, $cookieHash);
     }

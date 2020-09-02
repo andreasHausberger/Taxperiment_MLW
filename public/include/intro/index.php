@@ -6,6 +6,7 @@
  * Time: 09:28
  */
 
+
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
 $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
@@ -13,6 +14,7 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 $prolificPID = isset($_GET['prolificPID']) ? $_GET['prolificPID'] : "";
 $studyID = isset($_GET['studyID']) ? $_GET['studyID'] : "";
 $sessionID = isset($_GET['sessionID']) ? $_GET['sessionID'] : "";
+
 
 
 $pages = array(

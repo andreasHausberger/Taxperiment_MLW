@@ -130,6 +130,8 @@ $saveURL = "../../exp_config.php?&tw=0&sname=$participant&condition=$condition&p
     <input type=hidden name="condnum" value="42">
     <input type="hidden" name="condition" value=<?php echo $condnum ?>>
     <input type=hidden name="to_email" value="">
+    <input type="hidden" name="screen_height" id="screen_height">
+    <input type="hidden" name="screen_width" id="screen_width">
     <!--BEGIN preHTML-->
 
     <!--END preHTML-->
@@ -241,5 +243,9 @@ $saveURL = "../../exp_config.php?&tw=0&sname=$participant&condition=$condition&p
 
     <!--END postHTML-->
     <!--    <INPUT type="submit" value="Next Page" onClick=timefunction('submit','submit','submit')></FORM>-->
+    <script>
+        document.getElementById("screen_width").value = screen.width;
+        document.getElementById("screen_height").value = screen.height;
+    </script>
 </body>
 </html>
