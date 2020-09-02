@@ -13,12 +13,14 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.6 (August 2020)</p>
+<p>Demo Version 1.1.7 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li> Saving of Parameters, Device Infos works now. </li>
-    <li> Handling of missing parameters for autostart. </li>
+    <li> This page is now secured by password.  </li>
+    <li> Screen resolution is now captured when the experiment begins. </li>
+    <li> Questionnaire questions about device / input method are included.  </li>
+    <li> Pull Requests (content changes) are merged, and slightly adapted. </li>
 </ul>
 
 <b> To Do</b>

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/code.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +196,7 @@
       <workItem from="1597932593147" duration="2488000" />
       <workItem from="1597937894343" duration="1891000" />
       <workItem from="1598860353807" duration="279000" />
-      <workItem from="1598950369956" duration="7514000" />
-    </task>
-    <task id="LOCAL-00098" summary="audit redo.">
-      <created>1554318980044</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1554318980044</updated>
+      <workItem from="1598950369956" duration="7640000" />
     </task>
     <task id="LOCAL-00099" summary="Changed Version nr.">
       <created>1554319051968</created>
@@ -542,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599037057293</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="fix.">
+      <created>1599037792833</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1599037792833</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +563,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
     <MESSAGE value="Reworked Tutorial to reflect the different presentation modes." />
     <MESSAGE value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
     <MESSAGE value="Questionnaire fixes." />
@@ -589,7 +587,8 @@
     <MESSAGE value="Simple Login system with cookie saving." />
     <MESSAGE value="Tech Questions in Questionnaire." />
     <MESSAGE value="Screen Resolution capture &amp; saving, some bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Screen Resolution capture &amp; saving, some bug fixes." />
+    <MESSAGE value="fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -618,12 +617,12 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1599037057129">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1599037792715">
+      <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
-    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937908173" />
+    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599037792715" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
       <screen x="-3008" y="-367" width="3008" height="1605" />
