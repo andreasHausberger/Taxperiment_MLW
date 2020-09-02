@@ -5,8 +5,8 @@
  * Date: 19.11.18
  * Time: 10:01
  */
-
-require_once ("code/code.php");
+require_once('./resources/config.php');
+require_once ("./code/code.php");
 
 $password = postParamValue("password", "");
 
@@ -18,7 +18,6 @@ else {
 }
 
 
-require_once('./resources/config.php');
 
 require_once("public/templates/header.php");
 

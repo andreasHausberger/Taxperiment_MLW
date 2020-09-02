@@ -1,7 +1,5 @@
 <?php
 
-require_once("../resources/config.php");
-
 function getParamValue($paramName, $fallback = "") {
     if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
         return $_GET[$paramName];
