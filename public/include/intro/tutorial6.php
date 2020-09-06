@@ -9,7 +9,7 @@
             </span>
             <br>
             <span class="textSpan">
-            You will receive a fixed amount of <b>£ 3.5 as a show up fee</b>. In addition to this, you earn extra money that is based on your decisions in this study.
+            You will receive a fixed amount of <b>£ 3.5 as a show up fee</b>. In addition to this, you earn extra money that is based on your decisions in this study. This additional payment can be as high as £ 5.00.
 
             </span>
             <br>
