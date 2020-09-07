@@ -18,7 +18,7 @@
     </p>
 
     <p class="MsoNormal">
-        <span class="textSpan">All data obtained from participants will be kept anonymous. There will be no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). The anonymized data will be stored in an open online repository for at least 10 years.
+        <span class="textSpan">All data obtained from participants is anonymous. There is no record that links the data collected from you with any personal data from which you could be identified (e.g., your name, address, email, etc.). The anonymized data will be stored in an open online repository for at least 10 years.
  </span>
     </p>
     <p class="MsoNormal">
