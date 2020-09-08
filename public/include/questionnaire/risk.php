@@ -15,7 +15,7 @@ if (sizeof($_POST) >= 1) {
 
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET com1 = $com1 WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET ris1 = $com1 WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {

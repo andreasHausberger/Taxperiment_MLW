@@ -13,14 +13,12 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.7 (September 2020)</p>
+<p>Demo Version 1.1.8 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li> This page is now secured by password.  </li>
-    <li> Screen resolution is now captured when the experiment begins. </li>
-    <li> Questionnaire questions about device / input method are included.  </li>
-    <li> Pull Requests (content changes) are merged, and slightly adapted. </li>
+    <li>Small changes to Layout in Questionnaire & Tutorial</li>
+    <li>Questionnaire .csv-Download has no more empty fields, shows more meaningful labels.</li>
 </ul>
 
 <b> To Do</b>
