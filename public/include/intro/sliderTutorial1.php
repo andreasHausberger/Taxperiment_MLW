@@ -9,8 +9,8 @@
     function addToScore(event) {
         let inputScore = event.target.value;
         if (inputScore == 50) {
-             let score = 100;
-             event.target.disabled = true;
+            let score = 100;
+            event.target.disabled = true;
             totalScore += score;
             console.log("called addToScore with score " + score + " and a totalScore of: " + totalScore);
 
@@ -30,28 +30,23 @@
 <div class="siteContainer">
     <div class="contentContainer">
         <p>
-            <span class="textSpan">
+        <p class="textSpan">
 
-To earn <b>extra income</b> you will perform an effort task, the slider task, each round.
+            To earn <b>extra income</b> you will perform an effort task, the slider task, each round.
 
 
-            </span>
-            <br>
-            <span class="textSpan">
-You will see 10 sliders and a timer with 20 seconds to complete the task. Your task is to place each slider <b>exactly in the middle</b> at <b>(50%)</b> of the slider. You will receive <b>100 ECU</b>  for each correctly placed slider.
-            </span>
-            <br>
-            <span class="textSpan">
-Notice that you will only get the payment if the slider is placed <b>exactly</b> at 50%. If the slider is placed for example at 49%, you will not receive a payment for this, there is no difference between placing the slider at 49% or 0%, both cases are treated as incorrect completion of the task.            </span>
-            <br>
-            <span class="textSpan">
-                On this page you find an example slider. Place it at 50% and click on 'next'.
-            </span>
-            <br>
-            <span class="textSpan">
-                <b>Note:</b> It is not necessary to pull the slider. You can place it directly by mouse clicks.
-            </span>
-            <br>
+        </p>
+        <p class="textSpan">
+            You will see 10 sliders and a timer with 20 seconds to complete the task. Your task is to place each slider <b>exactly in the middle</b> at <b>(50%)</b> of the slider. You will receive <b>100 ECU</b>  for each correctly placed slider.
+        </p>
+        <p class="textSpan">
+            Notice that you will only get the payment if the slider is placed <b>exactly</b> at 50%. If the slider is placed for example at 49%, you will not receive a payment for this, there is no difference between placing the slider at 49% or 0%, both cases are treated as incorrect completion of the task.            </p>
+        <p class="textSpan">
+            On this page you find an example slider. Place it at 50% and click on 'next'.
+        </p>
+        <p class="textSpan">
+            <b>Note:</b> It is not necessary to pull the slider. You can place it directly by mouse clicks.
+        </p>
 
         </p>
     </div>

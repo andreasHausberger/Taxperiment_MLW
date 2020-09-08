@@ -90,7 +90,7 @@ switch ($tutorial) {
         break;
     case 1:
         echo "
-                <p>
+                <p class='textSpan'>
                     Before you start making decisions about paying taxes in this study, we would like to give you an idea 
                     about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
                     might underestimate, whereas some might overestimate the number of citizens who believe people should
@@ -98,12 +98,12 @@ switch ($tutorial) {
                     this information before they make their tax decisions, we present you with an overview of how other 
                     UK citizens think about tax compliance:
                  </p>
-                 <p>
+                 <p class='textSpan'>
                      The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
                      since 1981. These surveys are nationally representative and reach out to almost 400,000 participants 
                      per year. 
                  </p>
-                 <p>
+                 <p class='textSpan'>
                      As part of the recent World Values Survey, UK citizens were asked to rate the justifiability of 
                      cheating on taxes. When asked about their evaluation of this behaviour on a scale from 1 = never 
                      justifiable, to 10 = always justifiable, only about 9 out of each 100 citizens (8.5 % to be exact) 
@@ -114,7 +114,7 @@ switch ($tutorial) {
         break;
     case 2:
         echo "
-                <p>
+                <p class='textSpan'>
                     Before you start making decisions about paying taxes in this study, we would like to give you an idea 
                     about the tax norms in the UK. People may have different ideas about other citizens’ tax morals. Some 
                     might underestimate, whereas some might overestimate the number of citizens who believe people should
@@ -122,12 +122,12 @@ switch ($tutorial) {
                     this information before they make their tax decisions, we present you with an overview of how other 
                     UK citizens think about tax compliance:
                  </p>
-                 <p>
+                 <p class='textSpan'>
                      The World Values Survey is one of the most credible worldwide surveys, and it has been carried out 
                      since 1981. These surveys are nationally representative and reach out to almost 400,000 participants 
                      per year. 
                  </p>
-                 <p>
+                 <p class='textSpan'>
                       As part of the recent World Values Survey, UK citizens were asked about the justifiability of
                       cheating on taxes. About 56 out of each 100 citizens (56.1 % to be exact) said that it is never 
                       justifiable to cheat on taxes. Based on this information, we can see that a <b>large portion</b> (almost 
