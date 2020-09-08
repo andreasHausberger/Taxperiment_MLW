@@ -50,7 +50,7 @@ if (sizeof($_POST) >= 2) {
 <form method="post">
 
     <div class="item">
-        <p class="questionText"> What type of device did you use for this study?
+        <p class="questionText textSpan"> What type of device did you use for this study?
         </p>
         <div class="radioDisplayHorizontal">
                 <input type="radio" value="phone" name="tech1" onclick="addToArray('tech1')">Mobile Phone</option>
@@ -60,7 +60,7 @@ if (sizeof($_POST) >= 2) {
     </div>
 
     <div class="item">
-        <p class="questionText"> What kind of input device did you use?
+        <p class="questionText textSpan"> What kind of input device did you use?
         </p>
         <div class="radioDisplayHorizontal">
             <input type="radio" value="touchscreen" name="tech2" onclick="addToArray('tech2')">Touchscreen</option>

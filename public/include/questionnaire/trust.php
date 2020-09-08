@@ -3,19 +3,19 @@
  * Created by PhpStorm.
  * User: andreas
  * Date: 08.03.19
- * Time: 14:54
+ * Time: 14:21
  */
 
 include "../../../resources/config.php";
 
+if (sizeof($_POST) >= 2) {
 
-if (sizeof($_POST) >= 1) {
-    $com1 = $_POST['com1'];
-
+    $rsk1 = $_POST['rsk1'];
+    $rsk2 = $_POST['rsk2'];
 
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET com1 = $com1 WHERE pid = $participant";
+    $updateQuery = "UPDATE questionnaire SET rsk1 = $rsk1, rsk2 = $rsk2 WHERE pid = $participant";
 
     if (isset($connection)) {
         if ($connection->query($updateQuery)) {
@@ -23,12 +23,15 @@ if (sizeof($_POST) >= 1) {
 
             $host  = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=7");
+            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=6");
         }
         else {
             echo "Problem: " . $connection->error();
         }
     }
+}
+else {
+    echo "Please fill out every question on the page!";
 }
 
 ?>
@@ -45,7 +48,7 @@ if (sizeof($_POST) >= 1) {
         else {
             console.log("Did not add " + element + " to the array, already in it!");
         }
-        validateAndActiateButton(1);
+        validateAndActiateButton(2);
     }
 
     function validateAndActiateButton(numberOfRequiredElements) {
@@ -56,22 +59,29 @@ if (sizeof($_POST) >= 1) {
     }
 </script>
 
-
 <form method="post">
-
     <div class="item">
-        <p class="questionText"> How do you see yourself: are you generally a person who is fully prepared to take risks or do you try to avoid taking risks? (1 = Definitely avoiding risks, 7 = Fully prepared to take risks)
+        <p class="questionText"> 1. The UK Tax Office is trustworthy. (1 = Strongly disagree , 7 = Strongly agree)
 
-        </p>
+
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com1"); ?>
+            <?php echo createLikert(7, "rsk1"); ?>
 
         </div>
     </div>
 
+    <div class="item">
+        <p class="questionText"> 2. The UK Tax Office has extensive means to force citizens to be honest about tax. (1 = Strongly disagree , 7 = Strongly agree)
+
+        </p>
+        <div class="radioDisplayHorizontal">
+            <?php echo createLikert(7, "rsk2"); ?>
+
+        </div>
+    </div>
+
+ 
 
     <input id="submitButton" type="submit" value="Next Page" disabled="true">
 
-
 </form>
-

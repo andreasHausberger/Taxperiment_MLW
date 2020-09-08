@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/include/questionnaire/trust.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/sliderTutorial1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/sliderTutorial1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial5.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/aboutExp.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/patriotism.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/cognitive.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/honesty_self.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/motivation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/numeracy.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/honesty_other.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/risk.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/risk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/tech.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/tech.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,13 +205,6 @@
       <workItem from="1597937894343" duration="1891000" />
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="7640000" />
-    </task>
-    <task id="LOCAL-00099" summary="Changed Version nr.">
-      <created>1554319051968</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1554319051968</updated>
     </task>
     <task id="LOCAL-00100" summary="Formatting">
       <created>1554321442158</created>
@@ -544,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599037792833</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="Added more clear line breaks for tutorial pages.">
+      <created>1599572191005</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1599572191006</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +571,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Reworked Tutorial to reflect the different presentation modes." />
     <MESSAGE value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
     <MESSAGE value="Questionnaire fixes." />
     <MESSAGE value="Fixed bug where fines were too high." />
@@ -591,7 +595,8 @@
     <MESSAGE value="Tech Questions in Questionnaire." />
     <MESSAGE value="Screen Resolution capture &amp; saving, some bug fixes." />
     <MESSAGE value="fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix." />
+    <MESSAGE value="Added more clear line breaks for tutorial pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more clear line breaks for tutorial pages." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -620,10 +625,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1599037792715">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="-1919" y="-367" key="CommitChangelistDialog2" timestamp="1599572190730">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
+    <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1599572190730" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599037792715" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
@@ -773,6 +779,11 @@
           <url>file://$PROJECT_DIR$/public/include/questionnaire/memAttn.php</url>
           <line>15</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/index.php</url>
+          <line>15</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

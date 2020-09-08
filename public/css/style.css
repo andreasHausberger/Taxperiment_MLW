@@ -145,6 +145,7 @@ Audit Page
 
 .radioDisplayHorizontal {
     display: inline-flex;
+    margin-bottom: 16px;
 }
 
 .radioDisplayHorizontal .radioItemFlex {
