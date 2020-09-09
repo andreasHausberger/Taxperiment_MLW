@@ -3,53 +3,46 @@
 <h2>Information</h2>
 <div class="contentContainer">
 
-    <h3>Ziel der Studie</h3>
+    <h3>Aim of this Study</h3>
     <p class="tutorialText">
-        Diese Studie dient dazu Erkenntnisse über finanzielle Entscheidungen zu gewinnen.
-        Die Durchführung der Studie dauert etwa 30 Minuten.
-        Als Gegenleistung für Ihre Teilnahme erhalten Sie eine Auszahlung, welche von Ihrer
-        Leistung und Ihren Entscheidungen im Experiment abhängt, sowie eine Show-Up-Gebühr von 1 Euro.
+        This study is designed to gain insights into financial decision making. The study duration will
+        be roughly 30 minutes. As compensation for your participation you will receive a guaranteed payment
+        of £X. Additionally, you can earn between £Y and £Z, depending on your decisions in this study. 
     </p>
 
-    <h3>Ablauf der Studie</h3>
+    <h3>Procedure</h3>
     <p class="tutorialText">
-        Diese Studie besteht aus zwei Teilen. Im ersten Teil werden Ihnen 10 Entscheidungspaare präsentiert
-        und Ihre Aufgabe ist es sich für jeweils eine Option zu entscheiden. Der zweite Teil der Studie
-        besteht aus etwa 20 Runden. In jeder Runde müssen Sie eine finanzielle Entscheidung treffen.
-        Konkret geht es dabei um Entscheidungen zum Zahlen von Steuern. Sie werden bei beiden Teilen
-        der Studie echtes Geld verdienen. Der Auszahlungsbetrag ist abhängig von Ihren Entscheidungen in
-        der Studie. Dafür wird aus beiden Studienteilen jeweils eine Entscheidung zufällig ausgewählt und
-        in Euro umgerechnet ausgezahlt. Zum genauen Ablauf erhalten Sie noch detaillierte Informationen.
+        The present study consists of two parts. In the first part you will be presented with 10 decision pairs. 
+        Your task will be to choose one option from each of the pairs. The second part of the study consists of 24 rounds. 
+        You will make a financial decision in each round, i.e., a decision on tax payments. You will earn money 
+        in both parts of the study. The size of the additional payment will depend on the decisions you make 
+        during the study. For each of the two parts, one of the decisions will be randomly drawn and the respective
+        outcome converted to Pounds and payed to you in addition to the guaranteed payment (£X). You will receive
+        more detailed information about this procedure in the following. 
     </p>
 
-    <h3>Vorteile der Studienteilnahme</h3>
+    <h3>Voluntary Participation</h3>
     <p class="tutorialText">
-        Mit dem Abschluss dieser Studie tragen Sie zum wissenschaftlichen
-        Verständnis von finanziellen Entscheidungen bei.
+        The present study consists of two parts. In the first part you will be presented with 10 decision pairs. 
+        Your task will be to choose one option from each of the pairs. The second part of the study consists of 24 rounds. 
+        You will make a financial decision in each round, i.e., a decision on tax payments. You will earn money 
+        in both parts of the study. The size of the additional payment will depend on the decisions you make during the study. 
+        For each of the two parts, one of the decisions will be randomly drawn and the respective outcome converted to Pounds 
+        and payed to you in addition to the guaranteed payment (£X). You will receive more detailed information 
+        about this procedure in the following. 
     </p>
 
-    <h3> Freiwilligkeit der Teilnahme, Rücktrittsrecht ohne nachteilige Folgen </h3>
+    <h3>Privacy</h3>
     <p class="tutorialText">
-        Ihre Teilnahme an dieser Studie erfolgt freiwillig. Sie können jederzeit, ohne Angabe
-        von Gründen, Ihre Bereitschaft zur Teilnahme ablehnen oder auch jederzeit im
-        Verlauf der Studie zurückziehen. Die Ablehnung der Teilnahme oder ein vorzeitiges
-        Ausscheiden aus dieser Studie hat keine nachteiligen Folgen für Sie. Bei Fragen
-        können Sie sich jederzeit an die Testleiterin bzw. den Testleiter wenden.
-    </p>
-
-    <h3>Datenschutz</h3>
-    <p class="tutorialText">
-        Alle Informationen, die wir in dieser Studie sammeln, werden vertraulich behandelt
-        und nur für wissenschaftliche Zwecke verwendet. Jegliche Angaben von Ihnen
-        werden anonym ausgewertet, d.h. können im Nachhinein nicht mit Ihrer Person in
-        Verbindung gebracht werden. Bitte antworten Sie deshalb ehrlich und bearbeiten Sie
-        die Aufgaben ernsthaft. Ihre Daten können sonst die Ergebnisse sowie die daraus
-        gezogenen Schlussfolgerungen verfälschen. <br>
-        <br>
-        Falls Sie mit einer Teilnahme einverstanden sind, bitten wir Sie die
-        Einwilligungserklärung zu unterzeichnen. Sollten Sie weitere Fragen haben, können
-        Sie sich jederzeit an Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>) wenden.
-        Vielen Dank für Ihre Teilnahme!
+        All data obtained from participants is anonymous. There will be no record that links data collected from you 
+        to any personal data that could be used to identify you (e.g. your name, address, email, etc). 
+        The anonymized data may be made available to researchers via accessible data repositories and possibly used for novel purposes.
+        In light of that, please do answer honestly and seriously. Otherwise your data may distort the results and any conclusions drawn from them. 
+ 
+        Should you have any further questions, please contact Martin Müller at the University of Vienna, Department of Occupational, Economic and Social Psychology
+        (<a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>).
+        
+        Thank you for your participation!
     </p>
 
 </div>

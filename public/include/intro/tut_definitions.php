@@ -6,11 +6,14 @@
       -->
     <div class="contentContainer">
         <div id="explanationCondition1" style="display: none">
-            <h2>Definitionen</h2>
+            
+            <img src="Cond1_p20.svg" alt="SVG mit img Tag laden" width="600" height="350" >
+            
+            <h2>Decision</h2>
 
-            <b>Einkommen</b>
             <p class="tutorialText">
-                Stellt den Geldbetrag für die aktuelle Runde dar.
+               For each of the decisions, you will receive all the relevant information in an information matrix similar to the one below. 
+               You can consider this information in your decision to either pay or evade the taxes, by clicking on one of the two options highlighted in yellow.
             </p>
 
             <b>Steuersatz</b>
