@@ -7,7 +7,7 @@
     <div class="contentContainer">
         <div id="explanationCondition1" style="display: none">
             
-            <img src="Cond1_p20.svg" alt="SVG mit img Tag laden" width="600" height="350" >
+            <embed src="/public/img/Cond1_p20.svg" alt="SVG mit img Tag laden" height="575">
             
             <h2>Decision</h2>
 
