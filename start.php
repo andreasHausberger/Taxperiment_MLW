@@ -13,12 +13,11 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.8 (September 2020)</p>
+<p>Demo Version 1.1.9 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Small changes to Layout in Questionnaire & Tutorial</li>
-    <li>Questionnaire .csv-Download has no more empty fields, shows more meaningful labels.</li>
+    <li>Design Fix: Tutorial Pages have same text size. </li>
 </ul>
 
 <b> To Do</b>
