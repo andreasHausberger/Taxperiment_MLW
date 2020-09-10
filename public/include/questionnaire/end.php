@@ -75,7 +75,7 @@ $pound = round($income / 400, 2);
 </p>
 
 <p>
-    Your experiment data has been saved successfully. <br>
+    Your study data has been saved successfully. <br>
     You can safely click the following link to continue: <a href="https://app.prolific.co/submissions/complete?cc=6C150B1E"> Link </a>
 </p>
 
