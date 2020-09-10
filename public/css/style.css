@@ -238,14 +238,15 @@ Audit Page
 .cue-overlay {
     position: absolute;
     color: #f1f1f1;
-    width: 100%;
+    width: 82%;
     height: auto;
-    transition: 0.5s ease;
+    bottom: -10px;
+    left: 8px;
     opacity: 1;
     font-size: 20px;
     padding: 20px;
     text-align: center;
-    transform: rotate(100deg);
+    transform: rotate(0deg);
 }
 
 /*Questionnaire */

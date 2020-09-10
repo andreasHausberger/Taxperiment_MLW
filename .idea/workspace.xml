@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/pointer_adjusted.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/visual_cue_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/visual_cue_pointer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="ckogler" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

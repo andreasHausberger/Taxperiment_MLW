@@ -66,22 +66,30 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         let randomCondition = <?php echo $currentCondition ?>;
 
+        let angle = 90;
+
         if (condition == 1) {
             signContainer.hide();
         }
         else {
-           // displayContentForSignContainer(condition, sureGain, evEvasion, false);
+           //displayContentForSignContainer(condition, sureGain, evEvasion, false);
+        }
+
+
+        if (condition == 2) {
+            $("#c0Container").hide();
+            $("#c1Container").hide();
         }
 
         signContainer.mouseenter( function(e) {
             console.log("Mouse Over Sign Container!");
-            //let value = displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, true);
+            let value = displayContentForSignContainer(condition, randomCondition, angle, true);
             ShowCont('box', e, true, value);
         });
 
         signContainer.mouseleave( function(e) {
             console.log("Mouse Leave Sign Container!");
-            //displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, false);
+            displayContentForSignContainer(condition, randomCondition, angle, false);
             HideCont('box', e, true);
         });
 
@@ -112,43 +120,57 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         }
     });
 
-    function displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, mouseIsOver = false) {
+    function displayContentForSignContainer(condition, randomCondition, angle, mouseIsOver = false) {
         if (mouseIsOver) {
-            if (condition && condition == 1) {
-                $(".signContainer").hide();
-                console.log("Hid sign container for condition 1");
-            }
-            else {
-                if ((sureGain && evEvasion) &&sureGain > evEvasion) {
-                    if (randomCondition == 1) {
-                        $(".signContainer").html("<p> > </p>");
-                        return ">";
-                    }
-                    else {
-                        $(".signContainer").html("<p> < </p>");
-                        return "<";
-                    }
-                }
-                else if (sureGain < evEvasion) {
-                    if (randomCondition == 1) {
-                        $(".signContainer").html("<p> < </p>");
-                        return "<";
-                    }
-                    else {
-                        $(".signContainer").html("<p> > </p>");
-                        return ">";
-                    }
-                }
-                else {
-                    $(".signContainer").html("<p> = </p>");
-                    return "=";
-                }
-            }
+            showRotatedIndicator(angle);
         }
-        else {
-            $(".signContainer").html("");
-            return "";
+        else
+        {
+            $('#signContainerInner').hide();
         }
+        // if (mouseIsOver) {
+        //     if (condition && condition == 1) {
+        //         $(".signContainer").hide();
+        //         console.log("Hid sign container for condition 1");
+        //     }
+        //     else {
+        //         if ((sureGain && evEvasion) &&sureGain > evEvasion) {
+        //             if (randomCondition == 1) {
+        //                 $(".signContainer").html("<p> > </p>");
+        //                 return ">";
+        //             }
+        //             else {
+        //                 $(".signContainer").html("<p> < </p>");
+        //                 return "<";
+        //             }
+        //         }
+        //         else if (sureGain < evEvasion) {
+        //             if (randomCondition == 1) {
+        //                 $(".signContainer").html("<p> < </p>");
+        //                 return "<";
+        //             }
+        //             else {
+        //                 $(".signContainer").html("<p> > </p>");
+        //                 return ">";
+        //             }
+        //         }
+        //         else {
+        //             $(".signContainer").html("<p> = </p>");
+        //             return "=";
+        //         }
+        //     }
+        // }
+        // else {
+        //     $(".signContainer").html("");
+        //     return "";
+        // }
+
+    }
+
+    function showRotatedIndicator(angle) {
+        $('#signContainerInner').show();
+        let rotation = 'rotate(' + angle + 'deg)';
+        document.getElementById("cue_arrow").style.transform = rotation;
     }
 
     //is always called after the button is pushed.
