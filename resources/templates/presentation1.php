@@ -53,7 +53,7 @@ if (isset($_GET['condition'])) {
     CBCol = "0^0";
     CBRow = "0^0";
     W_Col = "250^250";
-    H_Row = "80^80";
+    H_Row = "250^250";
 
     chkchoice = "nobuttons";
     btnFlg = 0;

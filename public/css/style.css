@@ -188,10 +188,10 @@ Audit Page
 .tableContainer .signContainer {
     position: absolute;
     background: gray;
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 250px;
     z-index: 100;
-    margin: 185px 269px 10px;
+    margin: 510px 171px 0;
     text-align: center;
     border-top: 2px solid #c1c1c1;
     border-left: 2px solid #c1c1c1;
@@ -222,6 +222,30 @@ Audit Page
 
 .mlwTrackingTable tbody tr .rightColumnCell {
     padding: 0 20px;
+}
+
+.container {
+    position: relative;
+    max-width: 250px;
+}
+
+.cue-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cue-overlay {
+    position: absolute;
+    color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    opacity: 1;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    transform: rotate(100deg);
 }
 
 /*Questionnaire */

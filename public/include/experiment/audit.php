@@ -70,18 +70,18 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             signContainer.hide();
         }
         else {
-            displayContentForSignContainer(condition, sureGain, evEvasion, false);
+           // displayContentForSignContainer(condition, sureGain, evEvasion, false);
         }
 
         signContainer.mouseenter( function(e) {
             console.log("Mouse Over Sign Container!");
-            let value = displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, true);
+            //let value = displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, true);
             ShowCont('box', e, true, value);
         });
 
         signContainer.mouseleave( function(e) {
             console.log("Mouse Leave Sign Container!");
-            displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, false);
+            //displayContentForSignContainer(condition, randomCondition, sureGain, evEvasion, false);
             HideCont('box', e, true);
         });
 

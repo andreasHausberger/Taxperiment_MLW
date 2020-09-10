@@ -64,7 +64,7 @@ if (isset($_GET['condition'])) {
     CBCol = "0^0";
     CBRow = "0^0^0";
     W_Col = "250^250";
-    H_Row = "80^80^80";
+    H_Row = "250^250^250";
 
     chkchoice = "nobuttons";
     btnFlg = 0;
@@ -149,6 +149,10 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
     <div class="mlwContentContainer">
         <div class="tableContainer">
             <div class="signContainer">
+                <div class="container">
+                    <img src="/public/img/visual_cue_background.png" class="cue-image">
+                    <img id="arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">
+                </div>
             </div>
             <TABLE border=1 class="mlwTrackingTable">
 <!--                --><?php //echo $mlwFields ?>
@@ -160,35 +164,35 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
                     <?php echo $fineRateBox ?>
                     <?php echo $auditProbabilityBox ?>
                 </TR>
-                <TR>
+                <TR style="height: 250px">
                     <!--cell c0(tag:c0)-->
                     <TD class="leftColumnCell">
-                        <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;">
-                            <DIV ID="c0_txt"
-                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 1;">
-                                <TABLE>
-                                    <TD ID="c0_td" align=center valign=center width=95 height=45 class="actTD">
-                                        sure_gain_inner
-                                    </TD>
-                                </TABLE>
-                            </DIV>
-                            <DIV ID="c0_box"
-                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 2;">
-                                <TABLE>
-                                    <TD ID="c0_tdbox" align=center valign=center width=95 height=45 class="boxTD">sure
-                                        gain
-                                    </TD>
-                                </TABLE>
-                            </DIV>
-                            <DIV ID="c0_img"
-                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;">
-                                <A
-                                        HREF="javascript:void(0);" NAME="c0" onMouseOver="ShowCont('c0',event)"
-                                        onMouseOut="HideCont('c0',event)"><IMG NAME="c0"
-                                                                               SRC="/resources/library/mlwebphp_100beta/transp.gif"
-                                                                               border=0 width=100
-                                                                               height=50></A></DIV>
-                        </DIV>
+<!--                        <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;">-->
+<!--                            <DIV ID="c0_txt"-->
+<!--                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 1;">-->
+<!--                                <TABLE>-->
+<!--                                    <TD ID="c0_td" align=center valign=center width=95 height=45 class="actTD">-->
+<!--                                        sure_gain_inner-->
+<!--                                    </TD>-->
+<!--                                </TABLE>-->
+<!--                            </DIV>-->
+<!--                            <DIV ID="c0_box"-->
+<!--                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 2;">-->
+<!--                                <TABLE>-->
+<!--                                    <TD ID="c0_tdbox" align=center valign=center width=95 height=45 class="boxTD">sure-->
+<!--                                        gain-->
+<!--                                    </TD>-->
+<!--                                </TABLE>-->
+<!--                            </DIV>-->
+<!--                            <DIV ID="c0_img"-->
+<!--                                 STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;">-->
+<!--                                <A-->
+<!--                                        HREF="javascript:void(0);" NAME="c0" onMouseOver="ShowCont('c0',event)"-->
+<!--                                        onMouseOut="HideCont('c0',event)"><IMG NAME="c0"-->
+<!--                                                                               SRC="/resources/library/mlwebphp_100beta/transp.gif"-->
+<!--                                                                               border=0 width=100-->
+<!--                                                                               height=50></A></DIV>-->
+<!--                        </DIV>-->
                     </TD>
                     <!--end cell-->
                     <!--cell c1(tag:c1)-->
