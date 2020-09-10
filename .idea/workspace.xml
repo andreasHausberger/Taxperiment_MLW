@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/greed.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/greed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/honesty_other.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/honesty_other.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/honesty_self.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/honesty_self.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/patriotism.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/patriotism.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/risk.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/risk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/trust.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/trust.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial3.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial6.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tutorial_end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tutorial_end.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

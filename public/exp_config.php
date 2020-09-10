@@ -144,7 +144,7 @@ echo("
    <input type='hidden' value='$data' id='data' name='data' >
    <input type='hidden' value='$roundData' id='roundData' name='roundData'>
    <label></label>
-   <input type='submit' value='Start Experiment!'>
+   <input type='submit' value='Start Study!'>
 </form>
 ");
 include("./templates/footer.php");
