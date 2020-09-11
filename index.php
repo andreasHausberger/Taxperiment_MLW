@@ -12,13 +12,13 @@ require_once("public/templates/header.php");
 
 ?>
 
-<p>Staging Version 1.1.10 (May 2020)</p>
+<p>Staging Version 1.2.0 (May 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Sign Container behaves like a Mouselab Field (Hover Reveal, Data Tracking)</li>
-    <li>Condition 4 skips Definitions Page</li>
-    <li>Last Page in Intro is no longer duplicate</li>
+    <li>New Experiment Visualization: Gauge metric for Pay/Don't Pay</li>
+    <li>SVG Support in Tutorial</li>
+    <li>New Version Nr to avoid confusion. </li>
 </ul>
 
 <br>

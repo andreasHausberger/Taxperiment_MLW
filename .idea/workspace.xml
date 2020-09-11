@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group2.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,14 +212,7 @@
       <workItem from="1599650309574" duration="191000" />
       <workItem from="1599652050859" duration="664000" />
       <workItem from="1599655743535" duration="209000" />
-      <workItem from="1599825733856" duration="2094000" />
-    </task>
-    <task id="LOCAL-00092" summary="Fixed calculations for fine and tax amount --&gt; now works according to specifications.">
-      <created>1554307985593</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1554307985593</updated>
+      <workItem from="1599825733856" duration="2562000" />
     </task>
     <task id="LOCAL-00093" summary="Added &quot;fine&quot; data point.">
       <created>1554308381097</created>
@@ -559,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599748747612</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Rotation from DB values.">
+      <created>1599829349103</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1599829349103</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +579,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix: forgot validation." />
     <MESSAGE value="Initial Commit Develop" />
     <MESSAGE value="Changed text input field to dichotomous buttons (Audit kinda works, exact tax due not correct)" />
     <MESSAGE value="Fixation cross between rounds. 2 Second timer." />
@@ -606,18 +603,23 @@
     <MESSAGE value="Fix: Condition 1 Display" />
     <MESSAGE value="Fixed svg display." />
     <MESSAGE value="Rotation / display works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rotation / display works." />
+    <MESSAGE value="Rotation from DB values." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rotation from DB values." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-2355" y="-141" key="CommitChangelistDialog2" timestamp="1599748747467">
+    <state x="-2355" y="-141" key="CommitChangelistDialog2" timestamp="1599829348884">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2355" y="-141" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599748747467" />
+    <state x="-2355" y="-141" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599829348884" />
     <state x="417" y="180" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599655784314" />
     <state x="100" y="123" width="1467" height="913" key="DiffContextDialog" timestamp="1599652156968">
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="100" y="123" width="1467" height="913" key="DiffContextDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599652156968" />
+    <state x="-2472" y="98" key="Vcs.Push.Dialog.v2" timestamp="1599829580098">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
+    </state>
+    <state x="-2472" y="98" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599829580098" />
     <state x="832" y="503" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599650312136">
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
