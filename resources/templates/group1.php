@@ -166,7 +166,7 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
                 </TR>
                 <TR style="height: 250px">
                     <!--cell c0(tag:c0)-->
-                    <TD class="leftColumnCell" id="c0Container">
+                    <TD class="leftColumnCell" id="c0Container" >
                         <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;">
                             <DIV ID="c0_txt"
                                  STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 1; visib">

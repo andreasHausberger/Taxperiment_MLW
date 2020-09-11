@@ -9,9 +9,10 @@ $currentCondition = $randomisedConditionArray[$currentRoundIndex];
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
 $fineRate = $currentRound['fine_rate'];
-$sureGain = $currentRound['ev_gain'];
+$sureGain = $currentRound['honest_gain'];
 $evEvasion = $currentRound['ev_evasion'];
 $income = $currentRound['income'];
+$angle = $currentRound['angle'];
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
@@ -60,25 +61,20 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         let condition = <?php echo $condition ?>;
 
         let sureGain = <?php echo $sureGain ?>;
-        let evEvasion = <?php echo $evEvasion ?>;
 
         let signContainer = $(".signContainer");
 
         let randomCondition = <?php echo $currentCondition ?>;
 
-        let angle = 90;
-
-        if (condition == 1) {
-            signContainer.hide();
-        }
-        else {
-           //displayContentForSignContainer(condition, sureGain, evEvasion, false);
-        }
-
+        let angle = <?php echo $angle ?>;
 
         if (condition == 2) {
             $("#c0Container").hide();
             $("#c1Container").hide();
+        }
+        else
+        {
+            signContainer.hide();
         }
 
         signContainer.mouseenter( function(e) {
