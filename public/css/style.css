@@ -148,6 +148,11 @@ Audit Page
     margin-bottom: 16px;
 }
 
+.radioDisplayVertical {
+    display: block;
+    margin-bottom: 16px;
+}
+
 .radioDisplayHorizontal .radioItemFlex {
     margin: 25px;
     display: block;
