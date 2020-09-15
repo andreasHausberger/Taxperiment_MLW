@@ -628,10 +628,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1600191141285">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1600193519085">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600191141285" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193519085" />
     <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1599572190730" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726176763" />
@@ -731,13 +731,15 @@
     <state width="1878" height="496" key="GridCell.Tab.2.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597848139706" />
     <state width="1878" height="421" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1599036963059" />
     <state width="1878" height="377" key="GridCell.Tab.2.right/0.23.1920.1113@0.23.1920.1113" timestamp="1599037532982" />
-    <state x="66" y="123" key="MergeDialog" timestamp="1599726227088">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="-2905" y="-223" width="2155" height="1166" key="MergeDialog" timestamp="1600193555462">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
+    <state x="-2905" y="-223" width="2155" height="1166" key="MergeDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193555462" />
     <state x="66" y="123" key="MergeDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599726227088" />
-    <state x="545" y="302" key="MultipleFileMergeDialog" timestamp="1599726227145">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="-2154" y="35" key="MultipleFileMergeDialog" timestamp="1600193555537">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
+    <state x="-2154" y="35" key="MultipleFileMergeDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193555537" />
     <state x="545" y="302" key="MultipleFileMergeDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599726227145" />
     <state x="668" y="489" key="NewPhpFileDialog" timestamp="1598950684757">
       <screen x="0" y="0" width="1920" height="1200" />
@@ -753,10 +755,10 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1599726241173">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1600193525517">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1599576658140" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193525517" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726241173" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
