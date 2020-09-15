@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Intro: Cleaned up some redundancy, made text size uniform.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/tech.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/tech.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,20 +201,6 @@
       <workItem from="1597937894343" duration="1891000" />
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="7640000" />
-    </task>
-    <task id="LOCAL-00102" summary="Rewrote Create table syntax.">
-      <created>1554369358495</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1554369358495</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Reworked Database config --&gt; should now create it instantly.">
-      <created>1554370645071</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1554370645071</updated>
     </task>
     <task id="LOCAL-00104" summary="Hotfix: DB creation">
       <created>1554378429621</created>
@@ -547,7 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599726176960</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Style changes, added new Tech Problems question.">
+      <created>1600193519305</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193519305</updated>
+    </task>
+    <task id="LOCAL-00152" summary="Resolved Conflict.">
+      <created>1600193579568</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1600193579568</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +567,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixed bug where fines were too high." />
-    <MESSAGE value="Procfile" />
     <MESSAGE value="Fixes for Order, Feedback bugs. Some small code refactorings." />
     <MESSAGE value="New Version Number." />
     <MESSAGE value="Slider Rounds are now 20 seconds again (my bad)." />
@@ -594,7 +590,9 @@
     <MESSAGE value="Added more clear line breaks for tutorial pages." />
     <MESSAGE value="Questionnaire: Renamed file names, some layout issues solved." />
     <MESSAGE value="Intro: Cleaned up some redundancy, made text size uniform." />
-    <option name="LAST_COMMIT_MESSAGE" value="Intro: Cleaned up some redundancy, made text size uniform." />
+    <MESSAGE value="Style changes, added new Tech Problems question." />
+    <MESSAGE value="Resolved Conflict." />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved Conflict." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -628,10 +626,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1600193519085">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1600193579435">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193519085" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193579435" />
     <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1599572190730" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726176763" />
@@ -755,10 +753,10 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1600193525517">
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1600193583581">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193525517" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600193583581" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726241173" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />

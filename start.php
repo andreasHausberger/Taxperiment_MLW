@@ -13,14 +13,15 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.9 (September 2020)</p>
+<p>Demo Version 1.1.10 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Design Fix: Tutorial Pages have same text size. </li>
+    <li>Last Fixes </li>
 </ul>
 
 <b> To Do</b>
+<li>Processing of Condition 6 is unreliable. </li>
 <ul>
 
 </ul>
