@@ -5,7 +5,7 @@ include "../../../resources/config.php";
 if (sizeof($_POST) >= 2) {
     $tech1 = "'" . $_POST["tech1"] . "'";
     $tech2 = "'" . $_POST["tech2"] . "'";
-    $tech3 = "'" . $_POST["tech3"] . "'";
+    $tech3 = "'" . addslashes($_POST["tech3"]) . "'";
 
     $updateQuery = "UPDATE questionnaire SET tech1 = $tech1, tech2 = $tech2, problems = $tech3, created = NOW() WHERE pid = $participant";
 

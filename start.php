@@ -18,10 +18,10 @@ if (count($_GET) > 0) {
 <b>Recent Changes</b>
 <ul>
     <li>Last Fixes </li>
+    <li>Fixed issue with Tech Problems question.  </li>
 </ul>
 
 <b> To Do</b>
-<li>Processing of Condition 6 is unreliable. </li>
 <ul>
 
 </ul>
