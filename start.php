@@ -17,8 +17,8 @@ if (count($_GET) > 0) {
 
 <b>Recent Changes</b>
 <ul>
-    <li>Last Fixes </li>
-    <li>Fixed issue with Tech Problems question.  </li>
+    <li>Age validation for Demographics.   </li>
+    <li>Added Info about DB host for more clarity on this page. </li>
 </ul>
 
 <b> To Do</b>
