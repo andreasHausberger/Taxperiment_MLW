@@ -10,6 +10,9 @@ include "../../../resources/config.php";
 
 if (sizeof($_POST) >= 6) {
     $age = $_POST['age'];
+    if (!intval($age) || intval($age) < 16 || intval($age) > 99) {
+        $age = 0;
+    }
     $gender = $_POST['gender'];
     $participation = $_POST['participation'];
     $care = $_POST['care'];
@@ -40,7 +43,22 @@ if (sizeof($_POST) >= 6) {
 <script>
     let items =[];
 
+    function validateNumberAndAdd(element, min, max) {
+        let value = document.getElementById(element).value;
+
+        let intVal = parseInt(value);
+
+        if (intVal && intVal >= min && intVal <= max) {
+           addToArray(element);
+        }
+        else
+        {
+            alert("Please enter a valid number between 16 and 99 for your age!");
+        }
+    }
+
     function addToArray(element) {
+
         if (!items.includes(element)) {
             items.push(element);
             console.log("Added " + element + " to array!");
@@ -66,7 +84,7 @@ if (sizeof($_POST) >= 6) {
         <p class="questionText"> What is your age in years?
         </p>
         <div class="radioDisplayHorizontal">
-            <input type="text" name="age" onblur="addToArray('age')">
+            <input type="text" name="age" id="age" onblur="validateNumberAndAdd('age', 16, 99)">
 
         </div>
     </div>

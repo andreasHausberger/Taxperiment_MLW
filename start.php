@@ -30,6 +30,7 @@ if (count($_GET) > 0) {
 <div>
     <h1>Welcome, researcher</h1>
     <p> please enter the participant's name or experiment number below. </p>
+    <p>The current DB host is <?php echo DB_Host ?>. </p>
 
 
     <div>
