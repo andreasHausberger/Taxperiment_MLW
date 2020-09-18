@@ -18,13 +18,13 @@ require_once ('public/templates/header.php');
 // it also sets the subject and condnum in a cookie
 
 //calculate random number
-    var selectedCondition = Math.floor(Math.random() * 6) + 1;
-
-
+    var selectedCondition = 1;
         switch (selectedCondition) {
             case 1:
                 // link for condition 1
-                linkstr =  "/public/include/intro/index.php?condition=1";
+                var conditionIncrement = Math.floor(Math.random() * 5) + 1;
+                var adjustedCondition = conditionIncrement + 1;
+                linkstr =  "/public/include/intro/index.php?condition=" + adjustedCondition;
                 break;
 
             case 2:
