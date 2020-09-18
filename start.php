@@ -17,9 +17,7 @@ if (count($_GET) > 0) {
 
 <b>Recent Changes</b>
 <ul>
-    <li>Age validation for Demographics.   </li>
-    <li>Added Info about DB host for more clarity on this page. </li>
-    <li>No condition 1 from auto-start. </li>
+    <li>No condition 1 from auto-start. Automatic redirect C1 -> C6</li>
 </ul>
 
 <b> To Do</b>

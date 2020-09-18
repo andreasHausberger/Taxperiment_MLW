@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Intro: Cleaned up some redundancy, made text size uniform.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autostart.php" beforeDir="false" afterPath="$PROJECT_DIR$/autostart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
     </list>
@@ -202,14 +203,7 @@
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="7640000" />
       <workItem from="1600323812215" duration="2319000" />
-      <workItem from="1600415724597" duration="464000" />
-    </task>
-    <task id="LOCAL-00109" summary="Bugfix: in the overview, the correct fine amount is displayed.">
-      <created>1554474148770</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1554474148770</updated>
+      <workItem from="1600415724597" duration="1210000" />
     </task>
     <task id="LOCAL-00110" summary="Download now is correctly labeled.">
       <created>1554475768616</created>
@@ -547,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600416271140</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Intro: Cleaned up some redundancy, made text size uniform.">
+      <created>1600416298820</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1600416298820</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +587,6 @@
     <MESSAGE value="fix." />
     <MESSAGE value="Added more clear line breaks for tutorial pages." />
     <MESSAGE value="Questionnaire: Renamed file names, some layout issues solved." />
-    <MESSAGE value="Intro: Cleaned up some redundancy, made text size uniform." />
     <MESSAGE value="Style changes, added new Tech Problems question." />
     <MESSAGE value="Resolved Conflict." />
     <MESSAGE value="Version number, changelog." />
@@ -594,7 +594,8 @@
     <MESSAGE value="Simple Validation for age." />
     <MESSAGE value="Changelog, DB host info." />
     <MESSAGE value="Autostart: Condition 1 is automatically re-directed to other conditions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Autostart: Condition 1 is automatically re-directed to other conditions." />
+    <MESSAGE value="Intro: Cleaned up some redundancy, made text size uniform." />
+    <option name="LAST_COMMIT_MESSAGE" value="Intro: Cleaned up some redundancy, made text size uniform." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -628,11 +629,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-1919" y="-367" key="CommitChangelistDialog2" timestamp="1600416270886">
+    <state x="-1919" y="-367" key="CommitChangelistDialog2" timestamp="1600416308199">
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325392655" />
-    <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416270886" />
+    <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416308199" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726176763" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
@@ -755,11 +756,11 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2" timestamp="1600416294023">
+    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2" timestamp="1600416311762">
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325397115" />
-    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416294023" />
+    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416311762" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726241173" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599554106197">
