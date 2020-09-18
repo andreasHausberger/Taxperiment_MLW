@@ -13,12 +13,13 @@ if (count($_GET) > 0) {
 
 ?>
 
-<p>Demo Version 1.1.10 (September 2020)</p>
+<p>Demo Version 1.1.11 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
     <li>Age validation for Demographics.   </li>
     <li>Added Info about DB host for more clarity on this page. </li>
+    <li>No condition 1 from auto-start. </li>
 </ul>
 
 <b> To Do</b>

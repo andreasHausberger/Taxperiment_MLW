@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Intro: Cleaned up some redundancy, made text size uniform.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autostart.php" beforeDir="false" afterPath="$PROJECT_DIR$/autostart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,14 +202,7 @@
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="7640000" />
       <workItem from="1600323812215" duration="2319000" />
-      <workItem from="1600415724597" duration="416000" />
-    </task>
-    <task id="LOCAL-00108" summary="Added Date writing functionality.">
-      <created>1554473683417</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1554473683417</updated>
+      <workItem from="1600415724597" duration="464000" />
     </task>
     <task id="LOCAL-00109" summary="Bugfix: in the overview, the correct fine amount is displayed.">
       <created>1554474148770</created>
@@ -547,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600325392746</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Autostart: Condition 1 is automatically re-directed to other conditions.">
+      <created>1600416271139</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1600416271140</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +569,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Tutorial table now has correct payback indicator." />
     <MESSAGE value="Version nr., changes." />
     <MESSAGE value="Prolific data &amp; device info saving. Tutorial table now displays correctly for conditions 4-6." />
     <MESSAGE value="Hotfix: Fixed issue where Exp Config would crash." />
@@ -594,7 +593,8 @@
     <MESSAGE value="Fix: Tech Problems question." />
     <MESSAGE value="Simple Validation for age." />
     <MESSAGE value="Changelog, DB host info." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changelog, DB host info." />
+    <MESSAGE value="Autostart: Condition 1 is automatically re-directed to other conditions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Autostart: Condition 1 is automatically re-directed to other conditions." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -628,11 +628,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1600325392655">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="-1919" y="-367" key="CommitChangelistDialog2" timestamp="1600416270886">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325392655" />
-    <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600274235596" />
+    <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416270886" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726176763" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
@@ -755,11 +755,11 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1600325397115">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2" timestamp="1600416294023">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325397115" />
-    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600274242767" />
+    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600416294023" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726241173" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599554106197">
