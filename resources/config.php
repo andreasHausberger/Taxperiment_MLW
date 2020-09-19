@@ -41,11 +41,7 @@ $config = array(
 );
 
 
-if (getenv("CLEARDB_DATABASE_URL") != null) {
-
-    /*
-     * This is just for a heroku setup --> can be ignored in production.
-     */
+if (getenv("CLEARDB_COPPER_URL") != null) {
 
     $url = parse_url(getenv("CLEARDB_COPPER_URL"));
 

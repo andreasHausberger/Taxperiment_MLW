@@ -203,14 +203,7 @@
       <workItem from="1598950369956" duration="7640000" />
       <workItem from="1600323812215" duration="2319000" />
       <workItem from="1600415724597" duration="1812000" />
-      <workItem from="1600501084846" duration="17000" />
-    </task>
-    <task id="LOCAL-00111" summary="Version Number">
-      <created>1554475834759</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1554475834759</updated>
+      <workItem from="1600501084846" duration="231000" />
     </task>
     <task id="LOCAL-00112" summary="Usual scale descriptions for the cognitive item.">
       <created>1554556584461</created>
@@ -548,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600417492714</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="DB Change">
+      <created>1600501117141</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1600501117142</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +570,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Prolific data &amp; device info saving. Tutorial table now displays correctly for conditions 4-6." />
     <MESSAGE value="Hotfix: Fixed issue where Exp Config would crash." />
     <MESSAGE value="removed Saving, threw bugs." />
     <MESSAGE value="Updated Todo list." />
@@ -595,7 +594,8 @@
     <MESSAGE value="Autostart: Condition 1 is automatically re-directed to other conditions." />
     <MESSAGE value="Intro: Cleaned up some redundancy, made text size uniform." />
     <MESSAGE value="Automatic redirect C1 to C6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Automatic redirect C1 to C6" />
+    <MESSAGE value="DB Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB Change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -629,13 +629,13 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-1919" y="-367" key="CommitChangelistDialog2" timestamp="1600417492569">
-      <screen x="-3008" y="-367" width="3008" height="1669" />
+    <state x="695" y="23" key="CommitChangelistDialog2" timestamp="1600501116813">
+      <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325392655" />
     <state x="-1919" y="-367" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600417492569" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1599037057129" />
-    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726176763" />
+    <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1600501116813" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
       <screen x="-3008" y="-367" width="3008" height="1605" />
@@ -756,12 +756,12 @@
       <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.3008.1605@0.23.3008.1605" timestamp="1597257682209" />
-    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2" timestamp="1600417531924">
-      <screen x="-3008" y="-367" width="3008" height="1669" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1600501236075">
+      <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1600325397115" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1600417531924" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1599726241173" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1600501236075" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599554106197">
       <screen x="-3008" y="-367" width="3008" height="1669" />
