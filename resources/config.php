@@ -47,7 +47,7 @@ if (getenv("CLEARDB_DATABASE_URL") != null) {
      * This is just for a heroku setup --> can be ignored in production.
      */
 
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $url = parse_url(getenv("CLEARDB_COPPER_URL"));
 
     define("DB_Host", $url["host"]);
     define("DB_User", $url["user"]);
