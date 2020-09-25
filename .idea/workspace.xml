@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)&#10;&#10;# Conflicts:&#10;#&#9;index.php">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/templates/saveAndRedirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/saveAndRedirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/save.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -207,13 +205,6 @@
       <workItem from="1597937894343" duration="1891000" />
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="2348000" />
-    </task>
-    <task id="LOCAL-00098" summary="audit redo.">
-      <created>1554318980044</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1554318980044</updated>
     </task>
     <task id="LOCAL-00099" summary="Changed Version nr.">
       <created>1554319051968</created>
@@ -551,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601040269836</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Code Refactoring">
+      <created>1601044057486</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1601044057486</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +583,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Version Nr, Change List, removed tutorial4.php from Tutorial list." />
     <MESSAGE value="Changes to exam1.php in Tutorial: No more Alerts, correct value is shown when incorrect value is entered." />
     <MESSAGE value="Reworked Tutorial to reflect the different presentation modes." />
     <MESSAGE value="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order." />
@@ -610,7 +607,8 @@
     <MESSAGE value="Changed Button Text." />
     <MESSAGE value="Simple Login system with cookie saving.&#10;&#10;(cherry picked from commit 63654be8ba589081c44c2b4e5502180063c65a33)&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;code/code.php&#10;#&#9;index.php" />
     <MESSAGE value="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)&#10;&#10;# Conflicts:&#10;#&#9;index.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)&#10;&#10;# Conflicts:&#10;#&#9;index.php" />
+    <MESSAGE value="Code Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -640,11 +638,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1601040878308">
+    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1601044057270">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
-    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601040878308" />
+    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601044057270" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937908173" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
@@ -792,11 +790,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="541" y="325" width="837" height="550" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601040077657" />
-    <state x="743" y="243" width="670" height="506" key="search.everywhere.popup" timestamp="1601042234198">
+    <state x="743" y="243" width="670" height="506" key="search.everywhere.popup" timestamp="1601044127523">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596188122209" />
-    <state x="743" y="243" width="670" height="506" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601042234198" />
+    <state x="743" y="243" width="670" height="506" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601044127523" />
     <state x="743" y="248" width="670" height="470" key="search.everywhere.popup/0.23.1920.1113@0.23.1920.1113" timestamp="1597936470783" />
   </component>
   <component name="XDebuggerManager">

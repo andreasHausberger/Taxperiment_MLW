@@ -8,20 +8,19 @@
 
 ?>
 
-<p>Staging Version 1.2.0 (May 2020)</p>
+<p>Staging Version 1.2.1 (September 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>New Experiment Visualization: Gauge metric for Pay/Don't Pay</li>
-    <li>SVG Support in Tutorial</li>
-    <li>New Version Nr to avoid confusion. </li>
+    <li>New Box sizes, Table Layout fixes for Experiment</li>
+    <li>Added Autostart with PROLIFIC Info parsing. </li>
+    <li>Password Protection added. </li>
 </ul>
 
 <br>
 <b> To Do </b>
 <ul>
     <li>Content: Post-Experiment Questionnaire</li>
-    <li>Review of all Changes</li>
 </ul>
 
 

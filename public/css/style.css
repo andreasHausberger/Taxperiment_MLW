@@ -105,7 +105,7 @@ Audit Page
 }
 
 .tableContainer {
-    width: 554px;
+    width: 500px;
     margin: auto;
 }
 
@@ -184,6 +184,8 @@ Audit Page
     font-size: 16px !important;
     font-weight: 900;
 }
+
+
 
 .tableContainer .signContainer {
     position: absolute;
