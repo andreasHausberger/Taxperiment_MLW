@@ -2,6 +2,7 @@
  $postArray = $_POST;
 
 require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php');
 
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
@@ -31,7 +32,7 @@ foreach ($results as $result) {
     $query->bind_param('sis', $subjectName, $rowNumber, $result);
 
     if ($query->execute()) {
-        console_log("Inserted row $rowNumber for subject $subjectName with result $result!");
+//        console_log("Inserted row $rowNumber for subject $subjectName with result $result!");
     }
     else {
         echo "Could not insertrow $rowNumber for subject $subjectName with result $result!";

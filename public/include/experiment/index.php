@@ -21,7 +21,8 @@ else {
 }
 
 require("../../../resources/config.php");
-require("../../dataLoader.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/resources/code/code.php");
+require($_SERVER['DOCUMENT_ROOT'] . "/public/dataLoader.php");
 
 
 parse_str($roundData, $expRounds);

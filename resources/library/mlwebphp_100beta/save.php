@@ -22,7 +22,8 @@
 //    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 // include('mlwebdb.inc.php');
-include ("../../config.php");
+include ($_SERVER["DOCUMENT_ROOT"] ."/resources/config.php");
+include ($_SERVER["DOCUMENT_ROOT"] ."/resources/code/code.php");
 
 if (!isset($id)) {
     $id = -1;
