@@ -13,9 +13,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php');
 
 // include ("./templates/header.php");
 
-$prolificPID = $_GET['prolificPID'];
-$studyID = $_GET['studyID'];
-$sessionID = $_GET['sessionID'];
+$prolificPID = getParamValue('prolificPID');
+$studyID = getParamValue('studyID');
+$sessionID = getParamValue('sessionID');
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);

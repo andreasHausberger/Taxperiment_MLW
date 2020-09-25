@@ -226,4 +226,28 @@ if (!function_exists('createDownloadLink')) {
 
         echo "<p> $paraText </p> <a href='$paraFilename'>$paraFilename</a>";
     }
+
+
+    if (!function_exists("getParamValue")) {
+        function getParamValue($paramName, $fallback = "")
+        {
+            if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
+                return $_GET[$paramName];
+            } else {
+                return $fallback;
+            }
+        }
+    }
+
+
+    if (!function_exists("postMaramValue")) {
+        function postParamValue($paramName, $fallback = "")
+        {
+            if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
+                return $_POST[$paramName];
+            } else {
+                return $fallback;
+            }
+        }
+    }
 }
