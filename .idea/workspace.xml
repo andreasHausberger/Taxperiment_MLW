@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templates/group2.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -616,6 +619,54 @@
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="100" y="123" width="1467" height="913" key="DiffContextDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599652156968" />
+    <state width="1878" height="419" key="GridCell.Tab.0.bottom" timestamp="1601039569806">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
+    <state width="1878" height="419" key="GridCell.Tab.0.center" timestamp="1601039569806">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
+    <state width="1878" height="419" key="GridCell.Tab.0.left" timestamp="1601039569805">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569805" />
+    <state width="1878" height="419" key="GridCell.Tab.0.right" timestamp="1601039569806">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569806" />
+    <state width="1878" height="419" key="GridCell.Tab.1.bottom" timestamp="1601039569808">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
+    <state width="1878" height="419" key="GridCell.Tab.1.center" timestamp="1601039569807">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
+    <state width="1878" height="419" key="GridCell.Tab.1.left" timestamp="1601039569807">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
+    <state width="1878" height="419" key="GridCell.Tab.1.right" timestamp="1601039569807">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569807" />
+    <state width="1878" height="419" key="GridCell.Tab.2.bottom" timestamp="1601039569809">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569809" />
+    <state width="1878" height="419" key="GridCell.Tab.2.center" timestamp="1601039569808">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
+    <state width="1878" height="419" key="GridCell.Tab.2.left" timestamp="1601039569808">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569808" />
+    <state width="1878" height="419" key="GridCell.Tab.2.right" timestamp="1601039569809">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="419" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1601039569809" />
     <state x="-2472" y="98" key="Vcs.Push.Dialog.v2" timestamp="1599829580098">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
@@ -632,6 +683,10 @@
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="580" y="299" key="git4idea.branch.GitSmartOperationDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1599724896296" />
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1601039344192">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601039344192" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -660,11 +715,6 @@
           <url>file://$PROJECT_DIR$/public/include/experiment/index.php</url>
           <line>87</line>
           <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/experiment/audit.php</url>
-          <line>1</line>
-          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

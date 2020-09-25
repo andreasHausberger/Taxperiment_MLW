@@ -63,8 +63,8 @@ if (isset($_GET['condition'])) {
 
     CBCol = "0^0";
     CBRow = "0^0^0";
-    W_Col = "250^250";
-    H_Row = "250^250^250";
+    W_Col = "200^200";
+    H_Row = "200^200^200";
 
     chkchoice = "nobuttons";
     btnFlg = 0;

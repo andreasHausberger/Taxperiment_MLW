@@ -25,6 +25,9 @@ $fineContent = "$fine ECU";
 $evRiskyContent = "$evEvasion ECU";
 $sureGainContent = "$sureGain ECU";
 
+$cellHeight = "200";
+$cellWidth = "200";
+
 $incomeBox = "<!--cell a0(tag:a0)-->
                 <TD class=\"leftColumnCell\">
                     <DIV ID=\"a0_cont\" style=\"position: relative; height: 50px; width: 100px;\">
