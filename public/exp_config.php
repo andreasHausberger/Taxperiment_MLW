@@ -47,7 +47,7 @@ $riskAversionQuery->bind_param('is', $participantID, $subjectName);
 
 $experimentQuery = $connection->prepare("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type) VALUES (?, ?, ?, ?, ?, ?)");
 
-$experimentQuery->bind_param("iissss", $condition, $participantID, strval($prolificPID), strval($studyID), strval($sessionID), strval($userAgent));
+$experimentQuery->bind_param("iissss", $condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent);
 
 if ($experimentQuery->execute()) {
     $experimentID = $connection->insert_id;
