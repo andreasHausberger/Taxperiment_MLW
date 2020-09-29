@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/exam.js" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Reworked Tutorial.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Cond1_p20.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/Cond1_p20.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_exam2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_exam2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_explanation_mlw_exam1.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_explanation_mlw_exam1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/code/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/code/code.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation_demo_group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation_demo_group1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation_demo_group2.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation_demo_group2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -214,14 +206,7 @@
       <workItem from="1597937894343" duration="1891000" />
       <workItem from="1598860353807" duration="279000" />
       <workItem from="1598950369956" duration="2348000" />
-      <workItem from="1601314552756" duration="4891000" />
-    </task>
-    <task id="LOCAL-00102" summary="Rewrote Create table syntax.">
-      <created>1554369358495</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1554369358495</updated>
+      <workItem from="1601314552756" duration="5114000" />
     </task>
     <task id="LOCAL-00103" summary="Reworked Database config --&gt; should now create it instantly.">
       <created>1554370645071</created>
@@ -559,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601045386253</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Reworked Tutorial.">
+      <created>1601396459365</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1601396459365</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +574,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Questionnaire fixes." />
     <MESSAGE value="Fixed bug where fines were too high." />
     <MESSAGE value="Procfile" />
     <MESSAGE value="Fixes for Order, Feedback bugs. Some small code refactorings." />
@@ -607,7 +598,8 @@
     <MESSAGE value="Changelog, Version Nr. Design fix." />
     <MESSAGE value="Fix: Missing Method." />
     <MESSAGE value="Hotfix: MYSQL Call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotfix: MYSQL Call" />
+    <MESSAGE value="Reworked Tutorial." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked Tutorial." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -637,11 +629,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1601045386058">
+    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1601396758286">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848912827" />
-    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601045386058" />
+    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396758286" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937908173" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
@@ -746,11 +738,11 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="671" y="323" key="MultipleFileMergeDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601040212034" />
-    <state x="668" y="489" key="NewPhpFileDialog" timestamp="1598950684757">
+    <state x="668" y="489" key="NewPhpFileDialog" timestamp="1601396780248">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1962" y="287" key="NewPhpFileDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597776136060" />
-    <state x="668" y="489" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1598950684757" />
+    <state x="668" y="489" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601396780248" />
     <state x="668" y="477" key="NewPhpFileDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1597998381505" />
     <state x="-1672" y="90" key="SettingsEditor" timestamp="1596183392210">
       <screen x="-3008" y="-367" width="3008" height="1605" />
@@ -764,12 +756,12 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1601396443631">
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1601396588907">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1597848920990" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396443631" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396588907" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937935409" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="713" y="341" key="VcsDiffUtil.ChangesDialog" timestamp="1601040827951">

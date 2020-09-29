@@ -18,7 +18,7 @@
 </ul>
 
 <br>
-<b> To Do </b>
+<b> To Do</b>
 <ul>
     <li>Content: Post-Experiment Questionnaire</li>
 </ul>
