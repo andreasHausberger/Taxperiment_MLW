@@ -124,43 +124,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         {
             $('#signContainerInner').hide();
         }
-        // if (mouseIsOver) {
-        //     if (condition && condition == 1) {
-        //         $(".signContainer").hide();
-        //         console.log("Hid sign container for condition 1");
-        //     }
-        //     else {
-        //         if ((sureGain && evEvasion) &&sureGain > evEvasion) {
-        //             if (randomCondition == 1) {
-        //                 $(".signContainer").html("<p> > </p>");
-        //                 return ">";
-        //             }
-        //             else {
-        //                 $(".signContainer").html("<p> < </p>");
-        //                 return "<";
-        //             }
-        //         }
-        //         else if (sureGain < evEvasion) {
-        //             if (randomCondition == 1) {
-        //                 $(".signContainer").html("<p> < </p>");
-        //                 return "<";
-        //             }
-        //             else {
-        //                 $(".signContainer").html("<p> > </p>");
-        //                 return ">";
-        //             }
-        //         }
-        //         else {
-        //             $(".signContainer").html("<p> = </p>");
-        //             return "=";
-        //         }
-        //     }
-        // }
-        // else {
-        //     $(".signContainer").html("");
-        //     return "";
-        // }
-
     }
 
     function showRotatedIndicator(angle) {

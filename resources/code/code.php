@@ -232,7 +232,7 @@ if (!function_exists('createDownloadLink')) {
         function getParamValue($paramName, $fallback = "")
         {
             if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
-                return $_GET[$paramName];
+                return addslashes($_GET[$paramName]);
             } else {
                 return $fallback;
             }

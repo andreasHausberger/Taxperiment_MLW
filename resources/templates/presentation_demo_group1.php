@@ -61,8 +61,8 @@ if (isset($_GET['condition'])) {
 
     CBCol = "0^0";
     CBRow = "0^0^0";
-    W_Col = "250^250";
-    H_Row = "80^80^80";
+    W_Col = "200^200";
+    H_Row = "200^200^200";
 
     chkchoice = "nobuttons";
     btnFlg = 0;
@@ -147,6 +147,10 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
     <div class="mlwContentContainer">
         <div class="tableContainer">
             <div class="signContainer">
+                <div class="container" id="signContainerInner" style="display: none">
+                    <img src="/public/img/visual_cue_background.png" class="cue-image">
+                    <img id="cue_arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">
+                </div>
             </div>
             <TABLE border=1 class="mlwTrackingTable">
                 <TR>
@@ -243,10 +247,10 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
                         </DIV>
                     </TD>
                     <!--end cell--></TR>
-                <TR>
+                <TR style="height: 250px;">
                     <!--cell c0(tag:c0)-->
-                    <TD class="leftColumnCell">
-                        <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;">
+                    <TD class="leftColumnCell" >
+                        <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;" id="c0ColumnCell">
                             <DIV ID="c0_txt"
                                  STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 1;">
                                 <TABLE>
@@ -269,7 +273,7 @@ $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$co
                     </TD>
                     <!--end cell-->
                     <!--cell c1(tag:c1)-->
-                    <TD class="rightColumnCell">
+                    <TD class="rightColumnCell" >
                         <DIV ID="c1_cont" style="position: relative; height: 50px; width: 100px;">
                             <DIV ID="c1_txt"
                                  STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; clip: rect(0px 100px 50px 0px); z-index: 1;">

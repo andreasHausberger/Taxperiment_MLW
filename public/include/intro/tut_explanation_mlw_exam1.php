@@ -43,33 +43,19 @@
         ?>
 
         <script>
-            $(function() {
                 let condition = <?php echo $condition ?>;
 
                 let sureGain = <?php echo $sureGain ?>;
                 let evEvasion = <?php echo $evEvasion ?>;
 
-                //no sign box for condition 1!
-                if (condition && condition == 1) {
-                    $(".signContainer").hide();
-                    console.log("Hid sign container for condition 1");
-                }
-                else {
-                    if ((sureGain && evEvasion) &&sureGain > evEvasion) {
-                        $(".signContainer").html("<p> > </p>");
-                    }
-                    else {
-                        $(".signContainer").html("<p> < </p>");
-                    }
-                }
-
-            })
+                let angle = 135;
+        </script>
+        <script src="/public/js/exam.js">
         </script>
 
         <div id="taxInputContainer">
             <br>
             <?php getAuditButtons() ?>
-
 
         </div>
     </div>
