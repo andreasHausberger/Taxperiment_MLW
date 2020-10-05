@@ -63,6 +63,8 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         let sureGain = <?php echo $sureGain ?>;
 
         let signContainer = $(".signContainer");
+        let cueContainer = $("#cue_container");
+
 
         let randomCondition = <?php echo $currentCondition ?>;
 
@@ -72,9 +74,9 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             $("#c0Container").hide();
             $("#c1Container").hide();
         }
-        else
-        {
+        else if(condition == 1) {
             signContainer.hide();
+            cueContainer.hide();
         }
 
         signContainer.mouseenter( function(e) {

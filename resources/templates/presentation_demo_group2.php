@@ -61,8 +61,8 @@ if (isset($_GET['condition'])) {
 
     CBCol = "0^0";
     CBRow = "0^0";
-    W_Col = "200^200";
-    H_Row = "200^200";
+    W_Col = " <?php echo strval($widthString); ?>";
+    H_Row = "<?php echo strval($widthString); ?>";
 
     chkchoice = "nobuttons";
     btnFlg = 0;

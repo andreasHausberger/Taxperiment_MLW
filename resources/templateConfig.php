@@ -6,10 +6,10 @@
  * Time: 11:36
  */
 
-$incomeLabel = "Einkommen";
-$taxLabel = "Steuerrate";
-$auditLabel = "Prüfwahrscheinlichkeit";
-$fineLabel = "Strafe";
+$incomeLabel = "Income";
+$taxLabel = "Tax Rate";
+$auditLabel = "Audit Probability";
+$fineLabel = "Fine";
 $sureGainLabel = "Sicherer Ausgang";
 $evRiskyLabel = "EW: Hinterziehung";
 
@@ -25,8 +25,11 @@ $fineContent = "$fine ECU";
 $evRiskyContent = "$evEvasion ECU";
 $sureGainContent = "$sureGain ECU";
 
-$cellHeight = "200";
-$cellWidth = "200";
+$cellHeight = "150";
+$cellWidth = "150";
+
+$heightString = $cellHeight . "^" . $cellHeight . "^" . $cellHeight;
+$widthString = $cellWidth . "^" . $cellWidth;
 
 $incomeBox = "<!--cell a0(tag:a0)-->
                 <TD class=\"leftColumnCell\">
@@ -158,7 +161,7 @@ $currentBox = $mouselabBoxArray[$currentCondition];
 
 $mlwFieldArray = [$incomeBox, $taxRateBox, $fineRateBox, $auditProbabilityBox];
 
-$mlwFields = getRandomizedMLWFields([$incomeBox, $taxRateBox], [$fineRateBox, $auditProbabilityBox]);
+//$mlwFields = getRandomizedMLWFields([$incomeBox, $taxRateBox], [$fineRateBox, $auditProbabilityBox]);
 
 function getRandomizedMLWFields($paraRow1, $paraRow2)
 {

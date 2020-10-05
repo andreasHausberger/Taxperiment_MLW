@@ -92,8 +92,19 @@ Intro - Risk Aversion questionnaire
     margin: auto;
 }
 
-.riskaversionTable tbody tr td {
-    padding: 5px 8px;
+.riskAversionTable {
+    border: 1px solid black;
+}
+
+.riskAversionTable thead td {
+    background-color: gray;
+    height: 32px;
+}
+
+
+.riskAversionTable tbody tr td {
+    border: 1px solid black;
+    padding: 8px 8px;
 }
 
 /*
@@ -105,7 +116,7 @@ Audit Page
 }
 
 .tableContainer {
-    width: 500px;
+    width: 100%;
     margin: auto;
 }
 
@@ -118,7 +129,7 @@ Audit Page
 }
 
 .buttonContainer input {
-    margin: auto 50px;
+    margin: auto 10px;
 }
 
 
@@ -190,10 +201,10 @@ Audit Page
 .tableContainer .signContainer {
     position: absolute;
     background: gray;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     z-index: 100;
-    margin: 430px 145px 0;
+    margin: -76px 73px 0;
     text-align: center;
     border-top: 2px solid #c1c1c1;
     border-left: 2px solid #c1c1c1;
@@ -215,15 +226,16 @@ Audit Page
 }
 
 .mlwTrackingTable {
-
+    width: 300px;
+    margin: auto;
 }
 
 .mlwTrackingTable tbody tr .leftColumnCell {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 .mlwTrackingTable tbody tr .rightColumnCell {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 .container {
@@ -234,6 +246,7 @@ Audit Page
 .cue-image {
     display: block;
     width: 100%;
+    max-width: 240px;
     height: auto;
 }
 
@@ -242,8 +255,8 @@ Audit Page
     color: #f1f1f1;
     width: 82%;
     height: auto;
-    bottom: -10px;
-    left: 8px;
+    bottom: -14px;
+    left: -4px;
     opacity: 1;
     font-size: 20px;
     padding: 20px;

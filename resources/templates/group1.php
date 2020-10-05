@@ -63,8 +63,8 @@ if (isset($_GET['condition'])) {
 
     CBCol = "0^0";
     CBRow = "0^0^0";
-    W_Col = "200^200";
-    H_Row = "200^200^200";
+    W_Col = " <?php echo strval($widthString); ?>";
+    H_Row = "<?php echo strval($heightString); ?>>";
 
     chkchoice = "nobuttons";
     btnFlg = 0;
@@ -148,12 +148,12 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
     <!-- MOUSELAB TABLE -->
     <div class="mlwContentContainer">
         <div class="tableContainer">
-            <div class="signContainer">
-                <div class="container" id="signContainerInner" style="display: none">
-                    <img src="/public/img/visual_cue_background.png" class="cue-image">
-                    <img id="cue_arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">
-                </div>
-            </div>
+<!--            <div class="signContainer">-->
+<!--                <div class="container" id="signContainerInner" style="display: none">-->
+<!--                    <img src="/public/img/visual_cue_background.png" class="cue-image">-->
+<!--                    <img id="cue_arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">-->
+<!--                </div>-->
+<!--            </div>-->
             <TABLE border=1 class="mlwTrackingTable">
 <!--                --><?php //echo $mlwFields ?>
                 <TR>
@@ -164,8 +164,16 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
                     <?php echo $fineRateBox ?>
                     <?php echo $auditProbabilityBox ?>
                 </TR>
-                <TR style="height: 250px">
+                <TR style="height: <?php echo $cellHeight; ?>px">
                     <!--cell c0(tag:c0)-->
+                    <td style="border: none" id="cue_container">
+                        <div class="signContainer">
+                            <div class="container" id="signContainerInner" style="display: none">
+                                <img src="/public/img/visual_cue_background.png" class="cue-image">
+                                <img id="cue_arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">
+                            </div>
+                        </div>
+                    </td>
                     <TD class="leftColumnCell" id="c0Container" >
                         <DIV ID="c0_cont" style="position: relative; height: 50px; width: 100px;">
                             <DIV ID="c0_txt"

@@ -5,6 +5,8 @@ $(function() {
 
     let signContainer = $(".signContainer");
 
+    let cueContainer = $("#cue_container");
+
     signContainer.mouseenter( function(e) {
         console.log("Mouse Over Sign Container!");
         let value = displayContentForSignContainer(condition, randomCondition, angle, true);
@@ -19,6 +21,7 @@ $(function() {
     //no sign box for condition 1!
     if (condition && condition == 1) {
         $(".signContainer").hide();
+        cueContainer.hide();
         console.log("Hid sign container for condition 1");
     }
     else if(condition == 2) {

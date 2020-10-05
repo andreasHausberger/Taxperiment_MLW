@@ -144,7 +144,7 @@
                 ];
                 createRiskAversionTask($rowArray);
                 ?>
-                <input id="riskAversionNextButton" style="margin-right: 99%" type="submit" name="Submit" value="Next">
+                <input id="riskAversionNextButton" style="margin-right: 99%; margin-top: 32px" type="submit" name="Submit" value="Next">
             </form>
         </div>
 

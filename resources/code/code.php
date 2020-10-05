@@ -104,9 +104,12 @@ if( !function_exists("createRiskAversionRow") ) {
      * @param $ecuB2: ECU amount for this field
      */
     function createRiskAversionRow($rowName, $probA1, $ecuA1, $probA2, $ecuA2, $probB1, $ecuB1,  $probB2, $ecuB2) {
-
+        $index = substr($rowName, 4, 2);
         echo "
 <tr>
+                <td>
+                $index
+                </td>
                 <td>
                     <span> Wahrscheinlichkeit $probA1%, ECU $ecuA1</span> <br>
                     <span> Wahrscheinlichkeit $probA2%, ECU $ecuA2</span>
@@ -131,9 +134,12 @@ if ( !function_exists("createRiskAversionTask") ) {
      */
     function createRiskAversionTask($taskArray) {
         echo "
-<table class=\"mlwTable riskAversionTable\">
+<table class=\"riskAversionTable\">
             <thead>
             <tr>
+                <td style='text-align: center; width: 32px;'>
+                #
+                </td>
                 <td style='text-align: center'>
                     <span style='margin: auto'>Option A</span>
                 </td>
