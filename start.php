@@ -8,18 +8,19 @@
 
 ?>
 
-<p>Staging Version 1.2.1 (September 2020)</p>
+<p>Staging Version 1.2.2 (October 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
     <li>New Box sizes, Table Layout fixes for Experiment</li>
-    <li>Added Autostart with PROLIFIC Info parsing. </li>
-    <li>Password Protection added. </li>
+    <li>Refactoring for Exp Config, changed label names. </li>
+    <li>Fix: Visual Cue is now properly aligned. </li>
 </ul>
 
 <br>
 <b> To Do</b>
 <ul>
+    <li>Tutorial: SVG Graphics?</li>
     <li>Content: Post-Experiment Questionnaire</li>
 </ul>
 
