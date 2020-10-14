@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:10px;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:#231F20;}
+	.st10{fill:none;}
+	.st11{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<rect x="324.5" y="143.6" class="st2" width="70.9" height="70.9"/>
+<rect x="248.5" y="219.6" class="st2" width="70.9" height="70.9"/>
+<rect x="324.5" y="219.6" class="st2" width="70.9" height="70.9"/>
+<rect x="248.5" y="295.6" class="st2" width="70.9" height="70.9"/>
+<rect x="324.5" y="295.6" class="st2" width="70.9" height="70.9"/>
+<rect x="248.5" y="384.2" class="st0" width="70.9" height="28.3"/>
+<rect x="324.5" y="384.2" class="st0" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.2212 401.75)" class="st5 st6">Pay tax</text>
+<text transform="matrix(1 0 0 1 330.2218 401.75)" class="st5 st6">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 339.3825 183.3321)" class="st4 st7 st8">Tax due</text>
+<text transform="matrix(1 0 0 1 348.4277 257.9988)" class="st4 st7 st8">Fine</text>
+<text transform="matrix(1 0 0 1 271.0904 322.3333)"><tspan x="0" y="0" class="st4 st7 st8">Sure </tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">outcome:</tspan><tspan x="-5.3" y="25.2" class="st4 st7 st8">Pay tax</tspan></text>
+<text transform="matrix(1 0 0 1 270.3086 250.9988)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan></text>
+<text transform="matrix(1 0 0 1 335.8769 322.3333)"><tspan x="0" y="0" class="st4 st7 st8">Expected</tspan><tspan x="-6.7" y="12.6" class="st4 st7 st8">value: Don’t</tspan><tspan x="5.2" y="25.2" class="st4 st7 st8">pay tax</tspan></text>
+<rect x="35.3" y="36.3" class="st10" width="570.7" height="69.3"/>
+<text transform="matrix(1 0 0 1 35.3035 43.8516)"><tspan x="0" y="0" class="st7 st8">Income</tspan><tspan x="0" y="12.6" class="st5 st8">Is the amount of money in the current round.</tspan></text>
+<rect x="248.5" y="143.6" class="st1" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 265.8704 183.3321)" class="st9 st7 st8">Income</text>
+<rect x="323.9" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 347.8534 257.7556)" class="st4 st7 st8">Fine</text>
+</svg>

@@ -21,7 +21,7 @@ $pages = array(
     3 => "tut_incentivization.php",
     4 => "tut_risk_aversion_task.php",
     5 => "tut_explanation_cond_1.php",
-    6 => "tut_definitions.php", //this varies depending on the condition, is skipped completely in cond 4
+    6 => "tut_definitions.php", //this varies depending on the condition
     7 => "tut_explanation_mlw_exam1.php",
     8 => "tut_exam2.php",
     9 => "tut_reminder.php"
@@ -42,18 +42,6 @@ else {
         require_once ("../../templates/header.php");
 
         include($page);
-
-        require_once ("../../templates/footer.php");
-
-    }
-    else if ($index == 6 && $condition == 4) {
-        $index++;
-        require_once ("../../templates/header.php");
-
-        $newPage = $pages[$index];
-        include($newPage);
-
-//        include("../../templates/continue.php");
 
         require_once ("../../templates/footer.php");
 

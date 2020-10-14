@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:none;}
+	.st3{font-family:'Arial-BoldMT';}
+	.st4{font-size:10.5px;}
+	.st5{font-family:'ArialMT';}
+	.st6{fill:#888888;}
+	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st8{font-size:10px;}
+	.st9{fill:#FFFFFF;}
+	.st10{fill:#231F20;}
+	.st11{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<rect x="237.7" y="375.8" class="st1" width="168.2" height="45.5"/>
+<rect x="36.3" y="36.3" class="st2" width="570.7" height="69.3"/>
+<text transform="matrix(1 0 0 1 36.3335 43.8516)"><tspan x="0" y="0" class="st3 st4">Decision</tspan><tspan x="0" y="12.6" class="st5 st4">For each of the decisions, you will receive all the relevant information in an information matrix similar to the one below. You </tspan><tspan x="0" y="25.2" class="st5 st4">can consider this information in your decision to either pay or evade the taxes, by clicking on one of the two options </tspan><tspan x="0" y="37.8" class="st5 st4">highlighted in yellow.</tspan></text>
+<rect x="35.3" y="472.5" class="st2" width="566.7" height="26"/>
+<text transform="matrix(1 0 0 1 35.3365 480.0182)" class="st5 st4">On the following pages we will explain each term (Income, Tax rate, etc.) step by step.</text>
+<rect x="248.5" y="143.6" class="st6" width="70.9" height="70.9"/>
+<rect x="324.5" y="143.6" class="st6" width="70.9" height="70.9"/>
+<rect x="248.5" y="219.6" class="st6" width="70.9" height="70.9"/>
+<rect x="324.5" y="219.6" class="st6" width="70.9" height="70.9"/>
+<rect x="248.5" y="384.2" class="st7" width="70.9" height="28.3"/>
+<rect x="324.5" y="384.2" class="st7" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.2512 401.75)" class="st5 st8">Pay tax</text>
+<text transform="matrix(1 0 0 1 330.2518 401.75)" class="st5 st8">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 265.8704 183.3321)" class="st9 st3 st4">Income</text>
+<text transform="matrix(1 0 0 1 339.4125 183.3321)" class="st9 st3 st4">Tax due</text>
+<text transform="matrix(1 0 0 1 348.4577 257.9988)" class="st9 st3 st4">Fine</text>
+<text transform="matrix(1 0 0 1 270.3387 250.9988)"><tspan x="0" y="0" class="st9 st3 st4">Audit</tspan><tspan x="-13.4" y="12.6" class="st9 st3 st4">probability</tspan></text>
+<rect x="323.9" y="219.3" class="st6" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 347.8533 257.7556)" class="st9 st3 st4">Fine</text>
+</svg>

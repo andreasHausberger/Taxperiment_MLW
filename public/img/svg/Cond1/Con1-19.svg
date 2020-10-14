@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:none;}
+	.st10{font-family:'ArialMT';}
+	.st11{font-size:10px;}
+</style>
+<rect x="432.9" y="160.7" class="st1" width="171.3" height="46.3"/>
+<rect x="243.9" y="216.1" class="st1" width="156.8" height="76.3"/>
+<rect x="248.7" y="219.1" class="st2" width="70.9" height="70.9"/>
+<rect x="324.7" y="219.1" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 348.6468 251.1783)"><tspan x="0" y="0" class="st4 st7 st8">Fine</tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">720 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 270.5277 245.5087)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan><tspan x="2.9" y="25.2" class="st4 st7 st8">25%</tspan></text>
+<rect x="35.5" y="35.3" class="st9" width="570.7" height="74.7"/>
+<text transform="matrix(1 0 0 1 35.4896 42.8644)"><tspan x="0" y="0" class="st7 st8">Expected value: Do not pay tax</tspan><tspan x="0" y="12.6" class="st10 st8">.</tspan></text>
+<rect x="248.6" y="142.6" class="st2" width="70.9" height="70.9"/>
+<rect x="324.6" y="142.6" class="st2" width="70.9" height="70.9"/>
+<rect x="248.6" y="294.6" class="st2" width="70.9" height="70.9"/>
+<rect x="324.6" y="294.6" class="st2" width="70.9" height="70.9"/>
+<rect x="248.6" y="383.2" class="st0" width="70.9" height="28.3"/>
+<rect x="324.6" y="383.2" class="st6" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.4085 400.7629)" class="st10 st11">Pay tax</text>
+<text transform="matrix(1 0 0 1 328.4076 400.7629)" class="st7 st11">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 266.0274 175.3461)"><tspan x="0" y="0" class="st4 st7 st8">Income</tspan><tspan x="-5.8" y="12.6" class="st4 st7 st8">1200 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 339.5697 170.3461)"><tspan x="0" y="0" class="st4 st7 st8">Tax due</tspan><tspan x="3.3" y="12.6" class="st4 st7 st8">30% = </tspan><tspan x="-1.5" y="25.2" class="st4 st7 st8">360 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 271.2774 321.3463)"><tspan x="0" y="0" class="st4 st7 st8">Sure </tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">outcome:</tspan><tspan x="-5.3" y="25.2" class="st4 st7 st8">Pay tax</tspan></text>
+<text transform="matrix(1 0 0 1 336.0638 321.3463)"><tspan x="0" y="0" class="st4 st7 st8">Expected</tspan><tspan x="-6.7" y="12.6" class="st4 st7 st8">value: Don’t</tspan><tspan x="5.2" y="25.2" class="st4 st7 st8">pay tax</tspan></text>
+<rect x="35.2" y="142.3" class="st9" width="169.4" height="214.7"/>
+<text transform="matrix(1 0 0 1 35.2096 149.8525)"><tspan x="0" y="0" class="st10 st8">Example:</tspan><tspan x="0" y="12.6" class="st10 st8">If you do not pay the tax of 30% = </tspan><tspan x="0" y="25.2" class="st10 st8">360 ECU on your gross income of </tspan><tspan x="0" y="37.8" class="st10 st8">1200 ECU, there are two possible </tspan><tspan x="0" y="50.4" class="st10 st8">outcomes:</tspan><tspan x="0" y="63" class="st10 st8"> </tspan><tspan x="0" y="75.6" class="st10 st8">1.  With a probability of 25% you will </tspan><tspan x="15" y="88.2" class="st10 st8">be audited and have to pay the </tspan><tspan x="15" y="100.8" class="st10 st8">fine of 720 ECU. In this case you </tspan><tspan x="15" y="113.4" class="st10 st8">can keep 480 ECU of your </tspan><tspan x="15" y="126" class="st10 st8">income (1200 ECU).</tspan><tspan x="0" y="151.2" class="st10 st8">2.  With the counter-probability of </tspan><tspan x="15" y="163.8" class="st10 st8">75% you will not be audited and </tspan><tspan x="15" y="176.4" class="st10 st8">you can keep the entire income </tspan><tspan x="15" y="189" class="st10 st8">(1200 ECU).</tspan></text>
+<rect x="439.5" y="142.9" class="st9" width="169.4" height="214.7"/>
+<text transform="matrix(1 0 0 1 439.5128 150.4425)"><tspan x="0" y="0" class="st10 st8">You can form two expectations. </tspan><tspan x="0" y="25.2" class="st7 st8">For outcome 2 - audit - the </tspan><tspan x="0" y="37.8" class="st7 st8">expected value is:</tspan><tspan x="0" y="50.4" class="st7 st8">0.75 * 1200 = 900 ECU.</tspan></text>
+<rect x="523.1" y="271.1" class="st1" width="80.5" height="30.8"/>
+<g>
+	<line class="st0" x1="563.5" y1="220.2" x2="563.5" y2="262.8"/>
+	<polygon points="563.5,260.3 565.6,260.3 564.6,262.1 563.5,263.9 562.5,262.1 561.5,260.3 	"/>
+</g>
+<text transform="matrix(1 0 0 1 527.694 283.6033)"><tspan x="0" y="0" class="st7 st8">Expectation 2:</tspan><tspan x="14.6" y="12.6" class="st7 st8">900 ECU</tspan></text>
+</svg>

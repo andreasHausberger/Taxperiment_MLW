@@ -2,8 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-04.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-05.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-06.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-07.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-08.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-09.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond1/Con1-23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-04.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-05.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-06.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-07.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-08.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-09.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond2/Con2-23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-04.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-05.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-06.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-07.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-08.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-09.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond3/Con3-23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-04.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-05.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-06.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-07.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-08.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-09.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/svg/Cond4/Con4-14.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_definitions.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -33,7 +118,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="pull-request-tutorial" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,18 +172,18 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public/include/experiment" />
-      <recent name="$PROJECT_DIR$/public/include/intro" />
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/include/questionnaire" />
       <recent name="$PROJECT_DIR$/public/include/experiment" />
       <recent name="$PROJECT_DIR$/public/include/intro" />
       <recent name="$PROJECT_DIR$/public/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/svg" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/include/experiment" />
+      <recent name="$PROJECT_DIR$/public/include/intro" />
+      <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,14 +292,9 @@
       <workItem from="1598950369956" duration="2348000" />
       <workItem from="1601314552756" duration="7420000" />
       <workItem from="1601885331968" duration="8833000" />
-      <workItem from="1602010721420" duration="87000" />
-    </task>
-    <task id="LOCAL-00105" summary="removed echo">
-      <created>1554378563798</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1554378563798</updated>
+      <workItem from="1602010721420" duration="671000" />
+      <workItem from="1602080488290" duration="1910000" />
+      <workItem from="1602683023863" duration="3792000" />
     </task>
     <task id="LOCAL-00106" summary="Removed echo.">
       <created>1554469423641</created>
@@ -552,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601907898735</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="Changelog, Version Nr.">
+      <created>1602010833461</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1602010833461</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +662,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Fixes for Order, Feedback bugs. Some small code refactorings." />
     <MESSAGE value="New Version Number." />
     <MESSAGE value="Slider Rounds are now 20 seconds again (my bad)." />
     <MESSAGE value="Start page can parse Prolific GET parameters. Adapted payment calculation." />
@@ -600,7 +686,8 @@
     <MESSAGE value="Reworked Tutorial." />
     <MESSAGE value="Autostart Re-Add." />
     <MESSAGE value="Visual Fixes: Layout, Box Size, Numbers. Some Refactoring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Visual Fixes: Layout, Box Size, Numbers. Some Refactoring." />
+    <MESSAGE value="Changelog, Version Nr." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changelog, Version Nr." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -630,10 +717,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1601907898544">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1602010833352">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1601907898544" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1602010833352" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396789061" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937908173" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
@@ -757,11 +844,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1602010728939">
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1602010835788">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1602010728939" />
-    <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1593610682211" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1602010835788" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396793380" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1597937935409" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
@@ -780,10 +866,11 @@
     <state x="789" y="507" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183188586" />
     <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1597689474786" />
     <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1598864864376" />
-    <state x="-2160" y="68" width="1312" height="736" key="find.popup" timestamp="1601902142740">
+    <state x="-2160" y="68" width="1312" height="736" key="find.popup" timestamp="1602685972551">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2160" y="68" width="1312" height="736" key="find.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1601902142740" />
+    <state x="-2160" y="68" width="1312" height="736" key="find.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1602685972551" />
+    <state x="-2160" y="85" width="1312" height="766" key="find.popup/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1602684961283" />
     <state x="541" y="325" width="837" height="550" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601395579573" />
     <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup" timestamp="1601905829670">
       <screen x="-3008" y="-367" width="3008" height="1605" />
