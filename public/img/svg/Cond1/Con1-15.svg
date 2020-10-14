@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:none;}
+	.st10{font-family:'ArialMT';}
+	.st11{font-size:10px;}
+</style>
+<rect x="248.6" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 270.4144 245.7525)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan><tspan x="2.9" y="25.2" class="st4 st7 st8">25%</tspan></text>
+<rect x="35.4" y="35.6" class="st9" width="570.7" height="74.7"/>
+<text transform="matrix(1 0 0 1 35.3763 43.1082)"><tspan x="0" y="0" class="st7 st8">Expected value: Do not pay tax</tspan><tspan x="0" y="12.6" class="st10 st8">If you decide to evade the tax, there are - as already explained - two possible outcomes: With a certain probability you will </tspan><tspan x="0" y="25.2" class="st10 st8">be audited and have to pay a fine. In this case you will be left with the income minus the fine. With the counter-probability </tspan><tspan x="0" y="37.8" class="st10 st8">you will not be audited and keep the entire income without having paid any tax. </tspan><tspan x="0" y="50.4" class="st10 st8">If you integrate both outcomes with their respective probabilities, you end up with the value of the average</tspan><tspan x="490.9" y="50.4" class="st7 st8"> </tspan><tspan x="493.8" y="50.4" class="st10 st8">outcome of the </tspan><tspan x="0" y="63" class="st10 st8">decision to evade tax.</tspan></text>
+<rect x="248.5" y="142.8" class="st2" width="70.9" height="70.9"/>
+<rect x="324.5" y="142.8" class="st2" width="70.9" height="70.9"/>
+<rect x="248.5" y="294.8" class="st2" width="70.9" height="70.9"/>
+<rect x="324.5" y="294.8" class="st1" width="70.9" height="70.9"/>
+<rect x="248.5" y="383.4" class="st0" width="70.9" height="28.3"/>
+<rect x="324.5" y="383.4" class="st0" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.2953 401.0068)" class="st10 st11">Pay tax</text>
+<text transform="matrix(1 0 0 1 329.2948 401.0068)" class="st10 st11">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 265.9142 175.59)"><tspan x="0" y="0" class="st4 st7 st8">Income</tspan><tspan x="-5.8" y="12.6" class="st4 st7 st8">1200 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 339.4562 170.59)"><tspan x="0" y="0" class="st4 st7 st8">Tax due</tspan><tspan x="3.3" y="12.6" class="st4 st7 st8">30% = </tspan><tspan x="-1.5" y="25.2" class="st4 st7 st8">360 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 271.1642 321.5901)"><tspan x="0" y="0" class="st4 st7 st8">Sure </tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">outcome:</tspan><tspan x="-5.3" y="25.2" class="st4 st7 st8">Pay tax</tspan></text>
+<text transform="matrix(1 0 0 1 335.9506 321.5901)"><tspan x="0" y="0" class="st7 st8">Expected</tspan><tspan x="-6.7" y="12.6" class="st7 st8">value: Don’t</tspan><tspan x="5.2" y="25.2" class="st7 st8">pay tax</tspan></text>
+<rect x="324.6" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 348.5634 251.4222)"><tspan x="0" y="0" class="st4 st7 st8">Fine</tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">720 ECU</tspan></text>
+</svg>

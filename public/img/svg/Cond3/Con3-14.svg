@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:none;}
+	.st10{font-family:'ArialMT';}
+	.st11{font-size:10px;}
+	.st12{fill:#ED1C24;}
+</style>
+<rect x="31.7" y="203.5" class="st1" width="170.8" height="54.3"/>
+<rect x="248.6" y="219.3" class="st2" width="70.9" height="70.9"/>
+<rect x="324.6" y="219.3" class="st1" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 348.5633 251.4222)"><tspan x="0" y="0" class="st7 st8">Fine</tspan><tspan x="-10.5" y="12.6" class="st7 st8">720 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 270.4444 245.7525)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan><tspan x="2.9" y="25.2" class="st4 st7 st8">25%</tspan></text>
+<rect x="35.4" y="35.6" class="st9" width="570.7" height="69.3"/>
+<text transform="matrix(1 0 0 1 35.4068 43.1082)" class="st7 st8">Fine</text>
+<rect x="248.6" y="142.8" class="st2" width="70.9" height="70.9"/>
+<rect x="324.6" y="142.8" class="st2" width="70.9" height="70.9"/>
+<rect x="248.6" y="383.4" class="st0" width="70.9" height="28.3"/>
+<rect x="324.6" y="383.4" class="st6" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.3253 401.0068)" class="st10 st11">Pay tax</text>
+<text transform="matrix(1 0 0 1 328.3243 401.0068)" class="st7 st11">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 265.9442 175.59)"><tspan x="0" y="0" class="st4 st7 st8">Income</tspan><tspan x="-5.8" y="12.6" class="st4 st7 st8">1200 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 339.4862 170.59)"><tspan x="0" y="0" class="st4 st7 st8">Tax due</tspan><tspan x="3.3" y="12.6" class="st4 st7 st8">30% = </tspan><tspan x="-1.5" y="25.2" class="st4 st7 st8">360 ECU</tspan></text>
+<rect x="34.6" y="143.8" class="st9" width="169.4" height="214.7"/>
+<text transform="matrix(1 0 0 1 34.5929 151.2831)"><tspan x="0" y="0" class="st10 st8">Example:</tspan><tspan x="0" y="12.6" class="st10 st8">At a fine rate of 100%, a tax rate of </tspan><tspan x="0" y="25.2" class="st10 st8">30%, and an income of 1200 ECU, </tspan><tspan x="0" y="37.8" class="st10 st8">you will first have to pay back the </tspan><tspan x="0" y="50.4" class="st10 st8">tax of 360 ECU.</tspan><tspan x="0" y="63" class="st7 st8">Additionally there is a fine of 360 </tspan><tspan x="0" y="75.6" class="st7 st8">ECU. This adds up to a total fine </tspan><tspan x="0" y="88.2" class="st7 st8">of 720 ECU, if you have evaded </tspan><tspan x="0" y="100.8" class="st7 st8">the tax and been audited. </tspan><tspan x="0" y="113.4" class="st7 st8"> </tspan></text>
+<rect x="404.6" y="164.4" class="st1" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 419.8243 182.0068)" class="st7 st8">360 ECU</text>
+<text transform="matrix(1 0 0 1 435.1576 202.6735)" class="st7 st8">+</text>
+<rect x="404.6" y="205.1" class="st1" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 419.8243 222.6735)" class="st7 st8">360 ECU</text>
+<g>
+	<polyline class="st0" points="439.2,233.4 439.2,257.9 396.6,257.9 	"/>
+	<polygon points="399,257.9 399,260 397.3,259 395.5,257.9 397.3,256.9 399,255.9 	"/>
+</g>
+</svg>

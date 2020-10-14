@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:none;}
+	.st10{font-family:'ArialMT';}
+	.st11{font-size:10px;}
+</style>
+<rect x="247.9" y="219.3" class="st2" width="70.9" height="70.9"/>
+<rect x="323.9" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 347.8533 257.7556)" class="st4 st7 st8">Fine</text>
+<text transform="matrix(1 0 0 1 269.7342 245.7525)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan><tspan x="2.9" y="25.2" class="st4 st7 st8">25%</tspan></text>
+<rect x="34.7" y="35.6" class="st9" width="570.7" height="69.3"/>
+<text transform="matrix(1 0 0 1 34.6969 43.1082)" class="st7 st8">Audit probability</text>
+<rect x="247.8" y="142.8" class="st1" width="70.9" height="70.9"/>
+<rect x="323.8" y="142.8" class="st2" width="70.9" height="70.9"/>
+<rect x="247.8" y="383.4" class="st0" width="70.9" height="28.3"/>
+<rect x="323.8" y="383.4" class="st6" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 266.6153 401.0068)" class="st10 st11">Pay tax</text>
+<text transform="matrix(1 0 0 1 328.615 401.0068)" class="st7 st11">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 265.234 175.59)"><tspan x="0" y="0" class="st7 st8">Income</tspan><tspan x="-5.8" y="12.6" class="st7 st8">1200 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 338.7762 170.59)"><tspan x="0" y="0" class="st4 st7 st8">Tax due</tspan><tspan x="3.3" y="12.6" class="st4 st7 st8">30% = </tspan><tspan x="-1.5" y="25.2" class="st4 st7 st8">360 ECU</tspan></text>
+<rect x="33.9" y="143.8" class="st9" width="169.4" height="214.7"/>
+<text transform="matrix(1 0 0 1 33.8829 151.2831)"><tspan x="0" y="0" class="st10 st8">Example:</tspan><tspan x="0" y="12.6" class="st10 st8">Conversely, at an audit </tspan><tspan x="0" y="25.2" class="st10 st8">probability of 25%, with a 3 in 4 </tspan><tspan x="0" y="37.8" class="st10 st8">chance, you will not be audited.</tspan><tspan x="146.5" y="37.8" class="st7 st8"> </tspan></text>
+<rect x="28.6" y="464.7" class="st1" width="584.4" height="25.2"/>
+<rect x="34.8" y="472.2" class="st9" width="573.2" height="26"/>
+<text transform="matrix(1 0 0 1 34.8453 479.6985)" class="st7 st8">If you are NOT audited and you have evaded the tax, you will keep the full income (1200 ECU). </text>
+<rect x="323.9" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 347.8533 257.7556)" class="st4 st7 st8">Fine</text>
+</svg>

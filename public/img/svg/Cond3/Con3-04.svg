@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFCC33;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{font-family:'Arial-BoldMT';}
+	.st7{font-size:10.5px;}
+	.st8{fill:none;}
+	.st9{font-family:'ArialMT';}
+	.st10{font-size:10px;}
+	.st11{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st12{fill:#ED1C24;}
+</style>
+<rect x="248.9" y="219.6" class="st2" width="70.9" height="70.9"/>
+<rect x="324.9" y="219.6" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 348.867 257.9988)" class="st4 st6 st7">Fine</text>
+<text transform="matrix(1 0 0 1 270.7479 250.9988)"><tspan x="0" y="0" class="st4 st6 st7">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st6 st7">probability</tspan></text>
+<rect x="35.7" y="35.8" class="st8" width="570.7" height="69.3"/>
+<text transform="matrix(1 0 0 1 35.7103 43.3516)"><tspan x="0" y="0" class="st6 st7">Tax rate</tspan><tspan x="0" y="12.6" class="st9 st7">The tax rate is the percentage of the income you have to pay as tax. If, for example, the tax rate is 30% on an income of </tspan><tspan x="0" y="25.2" class="st9 st7">1200 ECU, 360 ECU are claimed as tax.</tspan></text>
+<rect x="248.9" y="143.1" class="st2" width="70.9" height="70.9"/>
+<rect x="248.9" y="383.7" class="st0" width="70.9" height="28.3"/>
+<rect x="324.9" y="383.7" class="st0" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.6286 401.25)" class="st9 st10">Pay tax</text>
+<text transform="matrix(1 0 0 1 330.6292 401.25)" class="st9 st10">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 266.2477 175.8333)"><tspan x="0" y="0" class="st4 st6 st7">Income</tspan><tspan x="-5.8" y="12.6" class="st4 st6 st7">1200 ECU</tspan></text>
+<rect x="324.4" y="143.6" class="st1" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 339.3519 183.3321)" class="st5 st6 st7">Tax due</text>
+<rect x="323.9" y="219.3" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 347.8534 257.7556)" class="st4 st6 st7">Fine</text>
+</svg>

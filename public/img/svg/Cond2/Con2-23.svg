@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 644 515.9" style="enable-background:new 0 0 644 515.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFCC33;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#888888;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFCC33;stroke:#000000;stroke-miterlimit:10;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{font-size:10.5px;}
+	.st9{fill:none;}
+	.st10{font-family:'ArialMT';}
+	.st11{font-size:10px;}
+</style>
+<rect x="30.3" y="134.5" class="st0" width="174.7" height="286.4"/>
+<rect x="248.9" y="219.4" class="st2" width="70.9" height="70.9"/>
+<rect x="324.9" y="219.4" class="st2" width="70.9" height="70.9"/>
+<text transform="matrix(1 0 0 1 348.8904 251.5324)"><tspan x="0" y="0" class="st4 st7 st8">Fine</tspan><tspan x="-10.5" y="12.6" class="st4 st7 st8">720 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 270.7713 245.8627)"><tspan x="0" y="0" class="st4 st7 st8">Audit</tspan><tspan x="-13.4" y="12.6" class="st4 st7 st8">probability</tspan><tspan x="2.9" y="25.2" class="st4 st7 st8">25%</tspan></text>
+<rect x="35.7" y="35.7" class="st9" width="570.7" height="74.7"/>
+<text transform="matrix(1 0 0 1 35.7332 43.2184)"><tspan x="0" y="0" class="st7 st8">Comparison</tspan><tspan x="0" y="12.6" class="st10 st8">From a purely financial viewpoint, if the expected value exceeds the sure outcome, it is attractive to evade the tax. If, on </tspan><tspan x="0" y="25.2" class="st10 st8">the other hand, the expected value is lower than the sure outcome, it is attractive to pay the tax. Comparing the sure </tspan><tspan x="0" y="37.8" class="st10 st8">outcome to the expected value can therefore be helpful, if one wants to make financially optimal decisions </tspan><tspan x="0" y="63" class="st10 st8">.</tspan></text>
+<rect x="248.9" y="142.9" class="st2" width="70.9" height="70.9"/>
+<rect x="324.9" y="142.9" class="st2" width="70.9" height="70.9"/>
+<rect x="248.9" y="383.5" class="st1" width="70.9" height="28.3"/>
+<rect x="324.9" y="383.5" class="st6" width="70.9" height="28.3"/>
+<text transform="matrix(1 0 0 1 267.6522 401.1168)" class="st10 st11">Pay tax</text>
+<text transform="matrix(1 0 0 1 328.6513 401.1168)" class="st7 st11">Don’t pay tax</text>
+<text transform="matrix(1 0 0 1 266.2711 175.7001)"><tspan x="0" y="0" class="st4 st7 st8">Income</tspan><tspan x="-5.8" y="12.6" class="st4 st7 st8">1200 ECU</tspan></text>
+<text transform="matrix(1 0 0 1 339.8133 170.7001)"><tspan x="0" y="0" class="st4 st7 st8">Tax due</tspan><tspan x="3.3" y="12.6" class="st4 st7 st8">30% = </tspan><tspan x="-1.5" y="25.2" class="st4 st7 st8">360 ECU</tspan></text>
+<rect x="29.5" y="450.9" class="st0" width="584.4" height="39.5"/>
+<rect x="35.7" y="460.2" class="st9" width="573.2" height="26"/>
+<text transform="matrix(1 0 0 1 35.7266 467.7052)"><tspan x="0" y="0" class="st7 st8">Here you can see that the expected value of not paying tax is higher than the value of the sure outcome. This </tspan><tspan x="0" y="12.6" class="st7 st8">means that, from a purely financial viewpoint, it is attractive to evade the tax in this example.</tspan></text>
+<text transform="matrix(1 0 0 1 299.4063 322.3334)"><tspan x="0" y="0" class="st4 st7 st8">Expected</tspan><tspan x="8.5" y="12.6" class="st4 st7 st8">value </tspan><tspan x="-5.5" y="25.2" class="st4 st7 st8">information</tspan></text>
+<rect x="35.5" y="142.7" class="st9" width="169.4" height="280"/>
+<text transform="matrix(1 0 0 1 35.4827 150.2064)"><tspan x="0" y="0" class="st10 st8">To keep things simple, we will not </tspan><tspan x="0" y="12.6" class="st10 st8">show you the numerical expected </tspan><tspan x="0" y="25.2" class="st10 st8">value and sure outcome. Instead </tspan><tspan x="0" y="37.8" class="st10 st8">you will be presented with a visual </tspan><tspan x="0" y="50.4" class="st10 st8">representation of how financially </tspan><tspan x="0" y="63" class="st10 st8">attractive it is to pay or not pay the </tspan><tspan x="0" y="75.6" class="st10 st8">tax. The line that seperates the two </tspan><tspan x="0" y="88.2" class="st10 st8">parts indicates a neutral decision </tspan><tspan x="0" y="100.8" class="st10 st8">preference. The expected value of </tspan><tspan x="0" y="113.4" class="st10 st8">not paying tax is equal to the value </tspan><tspan x="0" y="126" class="st10 st8">of the sure outcome. </tspan><tspan x="0" y="151.2" class="st10 st8">If the pointer is above this line, the </tspan><tspan x="0" y="163.8" class="st10 st8">sure outcome is less than the </tspan><tspan x="0" y="176.4" class="st10 st8">“Expected value: Don’t pay tax”. </tspan><tspan x="0" y="189" class="st10 st8">Below this line, the sure outcome is </tspan><tspan x="0" y="201.6" class="st10 st8">higher than the “Expected value: </tspan><tspan x="0" y="214.2" class="st10 st8">Don’t pay tax”. The closer the </tspan><tspan x="0" y="226.8" class="st10 st8">pointer is to the endpoints, the </tspan><tspan x="0" y="239.4" class="st10 st8">higher is the difference between </tspan><tspan x="0" y="252" class="st10 st8">both options in favor of the </tspan><tspan x="0" y="264.6" class="st10 st8">respective option. </tspan></text>
+<image style="overflow:visible;" width="500" height="500" xlink:href="../../visual cue barometer/visual_cue_intro1.png"  transform="matrix(0.1419 0 0 0.1419 286.94 295.4967)">
+</image>
+<text transform="matrix(1 0 0 1 249.2456 356.8621)"><tspan x="0" y="0" class="st7 st8">840</tspan><tspan x="-2.3" y="12.6" class="st7 st8">ECU</tspan></text>
+<text transform="matrix(1 0 0 1 373.4443 356.8561)"><tspan x="0" y="0" class="st7 st8">1020 </tspan><tspan x="2.1" y="12.6" class="st7 st8">ECU</tspan></text>
+</svg>
