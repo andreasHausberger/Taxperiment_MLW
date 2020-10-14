@@ -8,19 +8,16 @@
 
 ?>
 
-<p>Staging Version 1.2.2 (October 2020)</p>
+<p>Staging Version 1.2.3 (October 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>New Box sizes, Table Layout fixes for Experiment</li>
-    <li>Refactoring for Exp Config, changed label names. </li>
-    <li>Fix: Visual Cue is now properly aligned. </li>
+    <li>Tutorial Definitions: Usage of SVG graphics</li>
 </ul>
 
 <br>
 <b> To Do</b>
 <ul>
-    <li>Tutorial: SVG Graphics?</li>
     <li>Content: Post-Experiment Questionnaire</li>
 </ul>
 
