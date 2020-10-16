@@ -276,12 +276,13 @@ Audit Page
 
 .radioDisplayHorizontal {
     display: inline-flex;
+    width: 100%;
 }
 
 .radioDisplayHorizontal .radioItemFlex {
     margin: 25px;
     display: block;
-    width: 20px;
+    min-width: 20px;
     text-align: center;
 }
 
