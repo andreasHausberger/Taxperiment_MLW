@@ -28,7 +28,7 @@ class QueryBuilder
         $count = 0;
         foreach ($this->varArray as $key => $value) {
 
-            $string = "$key = $value";
+            $string = "$key = '$value'";
             $string .= ($count < sizeof($this->varArray) - 1) ? ", " : " ";
             $insertString .= $string;
             $count++;

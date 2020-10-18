@@ -33,45 +33,10 @@ $pages = array(
     7 => "demographics.php",
     8 => "technical.php",
     9 => "end.php"
-//    1 => "memAttn.php",
-//    2 => "aboutExp.php",
-//    3 => "numeracy.php",
-//    4 => "cognitive.php",
-//    5 => "risk.php",
-//    6 => "motivation.php",
-//    7 => "greed.php",
-//    8 => "demographics.php",
-//    9 => "end.php"
 );
 
 $page = $pages[$index];
-if (!function_exists("createLikert")) {
-    function createLikert($number, $name,  $labels = null)
-    {
-        $html = "";
 
-
-        $count = 1;
-
-        while ($count <= $number) {
-            if ($labels && sizeof($labels) == $number) {
-                $label = $labels[$count - 1];
-            }
-            else {
-                $label = $count;
-            }
-
-            $html = $html . " <div class=\"radioItemFlex\" >
-                    <input type=\"radio\" name=\"$name\" value=\"$count\" onclick=\"addToArray('$name')\"}>
-                    <p> $label </p>
-                   </div>";
-
-            $count++;
-        }
-
-        return $html;
-    }
-}
 
 if ($condition == -1) {
     echo "Something went wrong: Index is " . $index . " and condition is " . $condition;
