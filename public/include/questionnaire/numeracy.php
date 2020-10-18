@@ -6,33 +6,27 @@
  * Time: 14:14
  */
 
+$numberOfQuestions = 3;
 
-include "../../../resources/config.php";
-
-if (sizeof($_POST) >= 3) {
-    $num1 = $_POST["num1"];
-    $num2 = $_POST["num2"];
-    $num3 = $_POST["num3"];
+if (sizeof($_POST) >= $numberOfQuestions) {
+    $num1 = postParamValue("num1");
+    $num2 = postParamValue("num2");
+    $num3 = postParamValue("num3");
 
     $participant = $_GET["pid"];
 
-    $updateQuery = "UPDATE questionnaire SET num1 = $num1, num2 = $num2, num3 = $num1 WHERE pid = $participant";
+    $qb->addString("num1", $num1);
+    $qb->addString("num2", $num2);
+    $qb->addString("num3", $num3);
 
-    if (isset($connection)) {
-        if ($connection->query($updateQuery)) {
-            console_log("NUM data inserted successfully!");
+    $query = $qb->buildInsert("WHERE pid = $participant", true);
 
-            $host = $_SERVER['HTTP_HOST'];
+    if ($db->insertQuery($query)) {
+        console_log("EXP data inserted successfully!");
 
-            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=4");
+        $host = $_SERVER['HTTP_HOST'];
 
-        }
-        else {
-            echo "Could not connect! " + $connection->error();
-        }
-    }
-    else {
-        echo "Could not find connection!";
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=6");
     }
 }
 
@@ -40,46 +34,38 @@ if (sizeof($_POST) >= 3) {
 
 
 <script>
-    let items =[];
-
-    function addToArray(element) {
-        if (!items.includes(element)) {
-            items.push(element);
-            console.log("Added " + element + " to array!");
-        }
-        else {
-            console.log("Did not add " + element + " to the array, already in it!");
-        }
-        validateAndActiateButton(3);
-    }
-
-    function validateAndActiateButton(numberOfRequiredElements) {
-        if (items.length == numberOfRequiredElements) {
-            document.getElementById("submitButton").disabled = false;
-            console.log("Disabled Continue Button")
-        }
-    }
+    const numberOfQuestions = 3;
 </script>
+<script src="/public/js/questionnaire.js"></script>
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Concerning general mathematical abilities, how good are you at working with fractions? (1 = not good at all to 7 = extremely good)</p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num1"); ?>
+        <p class="questionText"> 1. Out of 1,000 people in a small town 500 are members of a choir. Out of these 500
+            members in the choir 100 are men. Out of the 500 inhabitants that are not in the choir 300 are men. What is
+            the probability that a randomly drawn man is a member of the choir? <br>
+            Please indicate the probability in percent.
+        </p>
+        <div>
+            <input type="text" name="num1" onblur="addToArray('num1')">
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 2. How good are you at figuring out how much a shirt will cost if you get a discount of 25%? (1 = not good at all, 7 = extremely good)</p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num2"); ?>
+        <p class="questionText"> 2. Imagine we are throwing a five-sided die 50 times. On average, out of these 50
+            throws how many times would this five-sided die show an odd number (1, 3 or 5)?
+        </p>
+        <div>
+            <input type="text" name="num2" onblur="addToArray('num2')"> <p class="tutorialText">...out of 50 throws.</p>
         </div>
     </div>
 
-    <div class="item">
-        <p class="questionText"> 3. How often do you find numerical information to be useful? (1 = never to 7 = very often). </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "num3"); ?>
+    <div class="item" style="margin-bottom: 12px; ">
+        <p class="questionText"> 3. In a forest 20% of mushrooms are red, 50% brown and 30% white. A red mushroom is
+            poisonous with a probability of 20%. A mushroom that is not red is poisonous with a probability of 5%. <br>
+            What is the probability that a poisonous mushroom in the forest is red?
+        </p>
+        <div>
+            <input type="text" name="num3" onblur="addToArray('num3')">
         </div>
     </div>
 

@@ -13,6 +13,30 @@ function console_log($data) {
     echo '</script>';
 }
 
+if (!function_exists("createLikert")) {
+    function createLikert($number, $name,  $labels = null) {
+        $html = "";
+        $count = 1;
+
+        while ($count <= $number) {
+            if ($labels && sizeof($labels) == $number) {
+                $label = $labels[$count - 1];
+            }
+            else {
+                $label = $count;
+            }
+
+            $html = $html . " <div class=\"radioItemFlex\" >
+                    <input type=\"radio\" name=\"$name\" value=\"$count\" onclick=\"addToArray('$name')\"}>
+                    <p> $label </p>
+                   </div>";
+            $count++;
+        }
+
+        return $html;
+    }
+}
+
 if (!function_exists("loadRoundData")) {
     /**
      * Fetches round data from Database and shuffles it by default.
@@ -250,7 +274,7 @@ if (!function_exists('createDownloadLink')) {
         function postParamValue($paramName, $fallback = "")
         {
             if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
-                return $_POST[$paramName];
+                return addslashes($_POST[$paramName]);
             } else {
                 return $fallback;
             }

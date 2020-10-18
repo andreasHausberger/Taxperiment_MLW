@@ -6,137 +6,100 @@
  * Time: 14:54
  */
 
-include "../../../resources/config.php";
+$numberOfQuestions = 6;
 
+if (sizeof($_POST) >= $numberOfQuestions) {
+    $mot1 = postParamValue("mot1");
+    $mot2 = postParamValue("mot2");
+    $mot3 = postParamValue("mot3");
+    $mot4 = postParamValue("mot4");
+    $mot5 = postParamValue("mot5");
+    $mot6 = postParamValue("mot6");
 
-if (sizeof($_POST) >= 8) {
-    $com1 = $_POST['com1'];
-    $com2 = $_POST['com2'];
-    $com3 = $_POST['com3'];
-    $com4 = $_POST['com4'];
-    $com5 = $_POST['com5'];
-    $com6 = $_POST['com6'];
-    $com7 = $_POST['com7'];
-    $com8 = $_POST['com8'];
+    $participant = $_GET["pid"];
 
-    $participant = $_GET['pid'];
+    $qb->addString("mot1", $mot1);
+    $qb->addString("mot2", $mot2);
+    $qb->addString("mot3", $mot3);
+    $qb->addString("mot4", $mot4);
+    $qb->addString("mot5", $mot5);
+    $qb->addString("mot6", $mot6);
 
-    $updateQuery = "UPDATE questionnaire SET com1 = $com1, com2 = $com2, com3 = $com3, com4 = $com4, com5 = $com5, com6 = $com6, com7 = $com7, com8 = $com8 WHERE pid = $participant";
+    $query = $qb->buildInsert("WHERE pid = $participant", true);
 
-    if (isset($connection)) {
-        if ($connection->query($updateQuery)) {
-            console_log("EXP data inserted successfully!");
+    if ($db->insertQuery($query)) {
+        console_log("EXP data inserted successfully!");
 
-            $host  = $_SERVER['HTTP_HOST'];
+        $host = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=7");
-        }
-        else {
-            echo "Problem: " . $connection->error();
-        }
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=7");
     }
 }
 
 ?>
-
-
 <script>
-    let items =[];
-
-    function addToArray(element) {
-        if (!items.includes(element)) {
-            items.push(element);
-            console.log("Added " + element + " to array!");
-        }
-        else {
-            console.log("Did not add " + element + " to the array, already in it!");
-        }
-        validateAndActiateButton(8);
-    }
-
-    function validateAndActiateButton(numberOfRequiredElements) {
-        if (items.length == numberOfRequiredElements) {
-            document.getElementById("submitButton").disabled = false;
-            console.log("Disabled Continue Button")
-        }
-    }
+    const numberOfQuestions = 6; 
 </script>
+<script src="/public/js/questionnaire.js"></script>
 
 <p>
-    Please indicate to what extent you agree with the following statements. Note that these statements refer to real life and are not specifically about the lab experiment you just completed.
+    <b>Please indicate to what extent you agree with the following statements. </b> <br>
+    Note that these statements refer to the society you live in. <br>
+    (1 = Completely Disagree; 5 = Completely Agree)
 </p>
 
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Paying tax is the right thing to do. (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 1. Paying tax is the right thing to do.
 
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com1"); ?>
+            <?php echo createLikert(5, "mot1"); ?>
 
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Paying tax is a responsibility that should be willingly accepted by all citizens. (1 = do not agree at all, 7 = fully agree)
-
+        <p class="questionText"> 2. Paying my tax ultimately advantages everyone.
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com2"); ?>
-
-        </div>
-    </div>
-
-    <div class="item">
-        <p class="questionText"> 3. I feel a moral obligation to pay my tax. (1 = do not agree at all, 7 = fully agree)
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com3"); ?>
+            <?php echo createLikert(5, "mot2"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. Paying my tax ultimately advantages everyone. (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 3. I think of tax paying as helping the government do worthwhile things.
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com4"); ?>
+            <?php echo createLikert(5, "mot3"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. I think of tax paying as helping the government do worthwhile things. (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 4. I like to talk with friends about the gaps and loopholes in the tax system.
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com5"); ?>
+            <?php echo createLikert(5, "mot4"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. Overall, I pay my tax with good will. (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 5. I enjoy exploring the gaps and barriers of tax law.
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com6"); ?>
+            <?php echo createLikert(5, "mot5"); ?>
 
         </div>
     </div>
 
     <div class="item">
-        <p class="questionText"> 7. I resent paying tax. (1 = do not agree at all, 7 = fully agree)
+        <p class="questionText"> 6. I find pleasure in finding a way to minimize my tax payments.
         </p>
         <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com7"); ?>
-
-        </div>
-    </div>
-
-    <div class="item">
-        <p class="questionText"> 8. I accept responsibility for paying my fair share of tax. (1 = do not agree at all, 7 = fully agree)
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "com8"); ?>
+            <?php echo createLikert(5, "mot6"); ?>
 
         </div>
     </div>

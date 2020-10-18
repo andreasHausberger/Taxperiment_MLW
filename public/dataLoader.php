@@ -13,58 +13,23 @@
  * THIS FILE DOES NOT SAVE ANYTHING.
  */
 
-$conditionQuery = $connection->prepare("SELECT * FROM exp_condition AS c WHERE c.id = (?)");
-$conditionQuery->bind_param('s', $_GET['condition']);
-$conditionData;
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/code/Database.php");
 
-if ($conditionQuery->execute()) {
-    if ($conditionQuery->affected_rows > 0) {
-        console_log( "executed conditionQuery");
-    }
-    if($conditionQuery->bind_result($condition, $order, $feedback, $presentation)) {
-        console_log("loaded condition data successfully!");
+$db = new Database();
 
-        while ($conditionQuery->fetch()) {
-            $conditionData = array(0 => $condition, 1 => $order, 2 => $feedback, 3 => $presentation);
-        }
+$conditionQuery = "SELECT * FROM exp_condition AS c WHERE c.id = (?)";
+$conditionData = $db->selectQuery($conditionQuery, 's', $_GET['condition']);
 
-    }
-    console_log("condition data for condition " . $condition . " loaded successfully");
-}
-else {
-    echo "Connection error while retrieving condition: " . $connection->error;
-}
 
-$experimentQuery = $connection->prepare("SELECT * FROM experiment WHERE id = (?)");
+$experimentQuery = "SELECT * FROM experiment WHERE id = (?)";
+$experimentData = $db->selectQuery($experimentQuery, 'i', $experimentID);
 
-$experimentQuery->bind_param("i", $experimentID);
-
-if ($experimentQuery->execute()) {
-    console_log("loaded experiment data successfully");
-    $experimentQuery->bind_result($temp_eid, $temp_pid, $temp_cid);
-
-    while ($experimentQuery->fetch()) {
-        $experimentData = array(0 => $temp_eid, 1 => $temp_pid, 2 => $temp_cid);
-    }
-}
-else {
-    echo "Connection error while retrieving experiment: " . $connection->error;
-}
 global $expRounds, $dataArray;
 
 $roundQueryAsc = "SELECT * FROM exp_round";
 
-$roundsResult = $connection->query($roundQueryAsc);
 global $expRounds, $dataArray;
-
-if ($roundsResult->num_rows > 0) {
-    while ($row = $roundsResult->fetch_assoc()) {
-        $expRounds[] = $row;
-    }
-}
-else {
-    echo "Connection error: " . $connection->error;
-}
+$expRounds = $db->selectQuery($roundQueryAsc);
 
 $test = getRandomOrder($connection, $experimentID);
 

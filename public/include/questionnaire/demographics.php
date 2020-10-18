@@ -6,57 +6,42 @@
  * Time: 15:13
  */
 
-include "../../../resources/config.php";
+$numberOfQuestions = 5;
 
-if (sizeof($_POST) >= 7) {
-    $age = $_POST['age'];
-    $gender = $_POST['gender'];
-    $nationality = $_POST['nationality'];
-    $participation = $_POST['participation'];
-    $care = $_POST['care'];
-    $understanding = $_POST['understanding'];
-    $english = $_POST['english'];
+if (sizeof($_POST) >= $numberOfQuestions) {
+    $age = postParamValue("age");
+    $gender = postParamValue("gender");
+    $participation = postParamValue("participation");
+    $care = postParamValue("care");
+    $english = postParamValue("english");
+
     $participant = $_GET['pid'];
 
-    $updateQuery = "UPDATE questionnaire SET age = $age, gender = $gender, nationality = $nationality, participation_before = $participation, care = $care, understanding = $understanding, english = $english, created = NOW() WHERE pid = $participant";
+    $qb->addString("age", $age);
+    $qb->addString("gender", $gender);
+    $qb->addString("participation", $participation);
+    $qb->addString("care", $care);
+    $qb->addString("english", $english);
 
-    if (isset($connection)) {
-        if ($connection->query($updateQuery)) {
-            console_log("EXP data inserted successfully!");
+    $query = $qb->buildInsert("WHERE pid = $participant", true);
 
-            $host  = $_SERVER['HTTP_HOST'];
+    if ($db->insertQuery($query)) {
+        console_log("EXP data inserted successfully!");
 
-            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=9");
-        }
-        else {
-            echo "Problem: " . $connection->error();
-        }
+        $host = $_SERVER['HTTP_HOST'];
+
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=8");
     }
+
+
 }
 
 ?>
 
 <script>
-    let items =[];
-
-    function addToArray(element) {
-        if (!items.includes(element)) {
-            items.push(element);
-            console.log("Added " + element + " to array!");
-        }
-        else {
-            console.log("Did not add " + element + " to the array, already in it!");
-        }
-        validateAndActiateButton(7);
-    }
-
-    function validateAndActiateButton(numberOfRequiredElements) {
-        if (items.length == numberOfRequiredElements) {
-            document.getElementById("submitButton").disabled = false;
-            console.log("Disabled Continue Button");
-        }
-    }
+   const numberOfQuestions = 5;
 </script>
+<script src="/public/js/questionnaire.js"></script>
 
 
 <form method="post">
@@ -82,15 +67,6 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> Are you a Dutch student or an international student?
-        </p>
-        <div class="radioDisplayHorizontal">
-            <input type="radio" name="nationality" value="0" onclick="addToArray('nationality')"> <p>Dutch</p>
-            <input type="radio" name="nationality" value="1" onclick="addToArray('nationality')"> <p>International</p>
-        </div>
-    </div>
-
-    <div class="item">
         <p class="questionText"> Have you participated in a study on tax compliance before?
         </p>
         <div class="radioDisplayHorizontal">
@@ -110,16 +86,6 @@ if (sizeof($_POST) >= 7) {
     </div>
 
     <div class="item">
-        <p class="questionText"> Did you understand all of the information? (1: No, not at all; 7: Yes, completely)
-
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "understanding"); ?>
-
-        </div>
-    </div>
-
-    <div class="item">
         <p class="questionText"> How would you rate your English language skills? (1: Very Low; 7: Very High)
 
         </p>
@@ -129,7 +95,7 @@ if (sizeof($_POST) >= 7) {
         </div>
     </div>
 
-    <input id="submitButton" type="submit" value="Finish the Questionnaire!" disabled="false">
+    <input id="submitButton" type="submit" value="Next Page" disabled="false">
 
 
 </form>

@@ -10,12 +10,14 @@ function getParamValue($paramName, $fallback = "") {
     }
 }
 
-function postParamValue($paramName, $fallback = "") {
-    if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
-        return $_POST[$paramName];
-    }
-    else {
-        return $fallback;
+if( !function_exists("postParamValue")) {
+    function postParamValue($paramName, $fallback = "")
+    {
+        if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
+            return addslashes($_POST[$paramName]);
+        } else {
+            return $fallback;
+        }
     }
 }
 

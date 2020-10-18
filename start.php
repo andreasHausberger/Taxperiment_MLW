@@ -8,17 +8,18 @@
 
 ?>
 
-<p>Staging Version 1.2.3 (October 2020)</p>
+<p>Staging Version 1.2.4 (October 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
     <li>Tutorial Definitions: Usage of SVG graphics</li>
+    <li>Post-Experiment Questionnaire Implemented. </li>
+
 </ul>
 
 <br>
 <b> To Do</b>
 <ul>
-    <li>Content: Post-Experiment Questionnaire</li>
 </ul>
 
 
