@@ -27,7 +27,7 @@ class Database {
         echo "Error: " . $error . " <br>";
     }
 
-    public function selectQuery($query, $paramTypes, $paramVars = null) {
+    public function selectQuery($query, $paramTypes = null, $paramVars = null) {
         $this->open();
 
         $results = [];
