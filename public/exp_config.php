@@ -6,10 +6,10 @@
  * Time: 10:38
  */
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . "/code/Database.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/code/QueryBuilder.php");
 
-
+$db = new Database();
 
 // include ("./templates/header.php");
 
@@ -22,9 +22,15 @@ if (!isset($connection)) {
     //echo "Reestablished connection";
 }
 
-$subjectName = $_GET['sname'];
+$subjectName = getParamValue("sname");
 
-$participantQuery = $connection->prepare("INSERT INTO participant (name) VALUES (?)");
+$participantQueryBuilder = new QueryBuilder("participant");
+
+$participantQueryBuilder->addString("name", $subjectName);
+
+
+
+$connection->prepare("INSERT INTO participant (name) VALUES (?)");
 
 $participantQuery->bind_param("s", $subjectName);
 
