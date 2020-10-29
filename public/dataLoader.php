@@ -47,7 +47,8 @@ $dataArray = array(
     "order" => $conditionData[1],
     "presentation" => $conditionData[3],
     "roundOrder" => $roundOrder,
-    "conditionOrder" => $conditionOrder
+    "conditionOrder" => $conditionOrder,
+    "conditionData" => $conditionData
 );
 
 
