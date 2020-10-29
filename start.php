@@ -12,8 +12,7 @@
 
 <b>Recent Changes</b>
 <ul>
-    <li>Tutorial Definitions: Usage of SVG graphics</li>
-    <li>Post-Experiment Questionnaire Implemented. </li>
+    <li>Bug fixes: Visual bugs, Exp. Config redirect.</li>
 
 </ul>
 
