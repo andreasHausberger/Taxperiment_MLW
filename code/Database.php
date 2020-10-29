@@ -72,8 +72,6 @@ class Database {
 
             if($preparedQuery->execute()) {
                 $insertID = $preparedQuery->insert_id;
-
-
                 return $insertID;
             }
             else {
