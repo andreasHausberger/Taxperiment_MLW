@@ -31,7 +31,8 @@
         <?php
         include("./resources/library/mlwebphp_100beta/mlweb_start_random.html");
         ?>
-        <p>Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
+        <p>
+            Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
             random condition is selected.
         </p>
     </div>
