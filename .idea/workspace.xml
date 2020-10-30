@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_exam2.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_exam2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
@@ -220,14 +217,7 @@
       <workItem from="1603123789146" duration="456000" />
       <workItem from="1603285007056" duration="1809000" />
       <workItem from="1603890375944" duration="6001000" />
-      <workItem from="1604051206753" duration="1372000" />
-    </task>
-    <task id="LOCAL-00117" summary="Reworked Exp Rounds to reflect conditions. Removed immediate feedback, possibility to load rounds in reverse order.">
-      <created>1596188469474</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1596188469474</updated>
+      <workItem from="1604051206753" duration="1567000" />
     </task>
     <task id="LOCAL-00118" summary="Questionnaire fixes.">
       <created>1596195965092</created>
@@ -565,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603977553718</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Changed Labels to reflect SVG graphics. #30">
+      <created>1604053112556</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1604053112556</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +597,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Changelist update." />
     <MESSAGE value="Syntax error. my bad." />
     <MESSAGE value="Changed Button Text." />
     <MESSAGE value="Simple Login system with cookie saving.&#10;&#10;(cherry picked from commit 63654be8ba589081c44c2b4e5502180063c65a33)&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;code/code.php&#10;#&#9;index.php" />
@@ -625,7 +621,8 @@
     <MESSAGE value="Restored 1/x: Restored changes." />
     <MESSAGE value="Fix for issue #26: Exp Config now redirects properly." />
     <MESSAGE value="Changelog." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changelog." />
+    <MESSAGE value="Changed Labels to reflect SVG graphics. #30" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Labels to reflect SVG graphics. #30" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -655,10 +652,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-168" key="CommitChangelistDialog2" timestamp="1603977553566">
-      <screen x="-3008" y="-367" width="3008" height="1669" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1604053112363">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1603892031702" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604053112363" />
     <state x="-2313" y="-168" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1603977553566" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396789061" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1603123867642" />

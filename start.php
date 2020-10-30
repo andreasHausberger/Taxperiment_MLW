@@ -8,17 +8,21 @@
 
 ?>
 
-<p>Staging Version 1.2.4 (October 2020)</p>
+<p>Staging Version 1.2.5 (October 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
     <li>Bug fixes: Visual bugs, Exp. Config redirect.</li>
+    <li>Changed Labels to reflect SVG graphic infos. </li>
 
 </ul>
 
 <br>
 <b> To Do</b>
+
 <ul>
+    <li>Tutorial Texts - are they still correct?</li>
+    <li>SVGs will be updated - is everything working?</li>
 </ul>
 
 
