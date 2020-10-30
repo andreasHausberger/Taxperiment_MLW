@@ -59,16 +59,7 @@
         <script src="/public/js/exam.js"></script>
 
         <div id="taxInputContainer">
-            <br>
-            <?php echo "<div class=\"buttonContainer\">
-                            <a href='/public/exp_config.php?&tw=0&sname=$participant&condition=$condition'>
-                                <input type=\"button\" class=\"formButton\" id=\"complyButton\" value=\"Steuern bezahlen\" >
-                            </a>
-                            <a href='/public/exp_config.php?&tw=0&sname=$participant&condition=$condition'>
-                                <input type=\"button\" class=\"formButton\" id=\"evadeButton\" value=\"Steuern hinterziehen\" >
-                            </a>
-                        </div>"
-            ?>
+            <?php getAuditButtons() ?>
 
 
         </div>

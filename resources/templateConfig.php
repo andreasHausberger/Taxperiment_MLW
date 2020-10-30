@@ -7,11 +7,11 @@
  */
 
 $incomeLabel = "Income";
-$taxLabel = "Tax Rate";
+$taxLabel = "Tax Due";
 $auditLabel = "Audit Probability";
 $fineLabel = "Fine";
-$sureGainLabel = "Sicherer Ausgang";
-$evRiskyLabel = "EW: Hinterziehung";
+$sureGainLabel = "Sure Outcome: Pay Tax";
+$evRiskyLabel = "Expected Value: Don't Pay Tax";
 
 $taxPercentage = doubleval($taxRate) * 100;
 $auditPercentage = doubleval($auditProbability) * 100;
@@ -19,7 +19,7 @@ $taxDue = intVal($income) * doubleval($taxRate);
 $fine = $taxDue * $fineRate;
 
 $incomeContent = "$income ECU";
-$taxContent = "$taxPercentage%";
+$taxContent = "$taxDue ECU";
 $auditContent = "$auditPercentage%";
 $fineContent = "$fine ECU";
 $evRiskyContent = "$evEvasion ECU";

@@ -8,18 +8,21 @@
 
 ?>
 
-<p>Staging Version 1.2.4 (October 2020)</p>
+<p>Staging Version 1.2.5 (October 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Tutorial Definitions: Usage of SVG graphics</li>
-    <li>Post-Experiment Questionnaire Implemented. </li>
+    <li>Bug fixes: Visual bugs, Exp. Config redirect.</li>
+    <li>Changed Labels to reflect SVG graphic infos. </li>
 
 </ul>
 
 <br>
 <b> To Do</b>
+
 <ul>
+    <li>Tutorial Texts - are they still correct?</li>
+    <li>SVGs will be updated - is everything working?</li>
 </ul>
 
 
@@ -32,7 +35,8 @@
         <?php
         include("./resources/library/mlwebphp_100beta/mlweb_start_random.html");
         ?>
-        <p>Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
+        <p>
+            Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
             random condition is selected.
         </p>
     </div>

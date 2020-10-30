@@ -27,14 +27,14 @@ class Database {
         echo "Error: " . $error . " <br>";
     }
 
-    public function selectQuery($query, $paramTypes = null, $paramVars = null) {
+    public function selectQuery($query, $paramTypes = null, ...$paramVars) {
         $this->open();
 
         $results = [];
 
         if ($paramTypes && $paramVars) {
             $preparedQuery = $this->connection->prepare($query);
-            $preparedQuery->bind_param($paramTypes, $paramVars);
+            $preparedQuery->bind_param($paramTypes, ...$paramVars);
             if ($preparedQuery->execute()) {
                 $results = $preparedQuery->get_result()->fetch_assoc();
             }
@@ -61,18 +61,18 @@ class Database {
 
     }
 
-    public function insertQuery($query, $paramTypes = null, $paramVars = null) {
+    public function insertQuery($query, $paramTypes = null, ...$paramVars) {
         $this->open();
 
         $insertID = null;
 
         if ($paramTypes != null && $paramVars != null) {
             $preparedQuery = $this->connection->prepare($query);
-            $preparedQuery->bind_param($paramTypes, $paramVars);
+            $preparedQuery->bind_param($paramTypes, ...$paramVars);
 
             if($preparedQuery->execute()) {
                 $insertID = $preparedQuery->insert_id;
-
+                return $insertID;
             }
             else {
                 $this->displayError($preparedQuery->error, $query);
@@ -81,7 +81,11 @@ class Database {
         else {
             if($this->connection->query($query)) {
                 $this->close();
-                return true;
+                $insertID = $this->connection->insert_id;
+                if (!$insertID) {
+                    return true;
+                }
+                return $insertID;
             }
             else {
                 $this->displayError($this->connection->error, $query);

@@ -33,6 +33,7 @@ label {
 }
 
 .definitionButton {
+    display: flex;
 }
 
 .fixationCrossContainer {
