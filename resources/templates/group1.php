@@ -168,6 +168,11 @@ $saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&orde
                     <!--cell c0(tag:c0)-->
                     <td style="border: none" id="cue_container">
                         <div class="signContainer">
+                            <div class="container" id="signContainerOuter">
+                                <p>
+                                    Expected Value Information
+                                </p>
+                            </div>
                             <div class="container" id="signContainerInner" style="display: none">
                                 <img src="/public/img/visual_cue_background.png" class="cue-image">
                                 <img id="cue_arrow" src="/public/img/pointer_adjusted.png"class="cue-overlay">

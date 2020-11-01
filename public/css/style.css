@@ -234,6 +234,11 @@ Audit Page
     color: black;
 }
 
+#signContainerOuter {
+    top: 25%;
+    position: absolute;
+}
+
 .mlwTrackingTable {
     width: 300px;
     margin: auto;
