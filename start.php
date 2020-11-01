@@ -23,8 +23,8 @@
 <ul>
     <li>Tutorial Texts - are they still correct?</li>
     <li>SVGs will be updated - is everything working?</li>
+    <li>PROLIFIC Info, Resolution Capture Review</li>
 </ul>
-
 
 <div>
     <h1>Welcome, researcher</h1>

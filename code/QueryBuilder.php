@@ -16,27 +16,50 @@ class QueryBuilder
 
 
     function buildInsert($whereString, $isUpdate = false) {
-        if (!$whereString || !$this->table) {
+        if ((!$whereString && $isUpdate) || !$this->table) {
             return false;
         }
         if ($isUpdate) {
             $insertString = "UPDATE $this->table SET ";
+
+            $count = 0;
+            foreach ($this->varArray as $key => $value) {
+
+                $string = "$key = '$value'";
+                $string .= ($count < sizeof($this->varArray) - 1) ? ", " : " ";
+                $insertString .= $string;
+                $count++;
+            }
+
+            $insertString .= $whereString;
+            $this->cleanup();
+            return $insertString;
         }
         else {
-            $insertString = "INSERT INTO $this->table SET ";
-        }
-        $count = 0;
-        foreach ($this->varArray as $key => $value) {
+            $insertString = "INSERT INTO $this->table ";
 
-            $string = "$key = '$value'";
-            $string .= ($count < sizeof($this->varArray) - 1) ? ", " : " ";
-            $insertString .= $string;
-            $count++;
-        }
+            $tableString = "";
+            $valuesString = "";
 
-        $insertString .= $whereString;
-        $this->cleanup();
-        return $insertString;
+            $count = 0;
+            foreach ($this->varArray as $key => $value) {
+                $string = $key;
+                $string .= ($count < sizeof($this->varArray) - 1) ? ", " : " ";
+                $tableString .= $string;
+
+                $string = "'$value'";
+                $string .= ($count < sizeof($this->varArray) - 1) ? ", " : " ";
+                $valuesString .= $string;
+                $count++;
+            }
+
+            $insertString .= "(" . $tableString . ")";
+            $insertString .= " VALUES (" . $valuesString . ")";
+            $insertString .= $whereString;
+
+            $this->cleanup();
+            return $insertString;
+        }
     }
 
     function addString($name, $var) {

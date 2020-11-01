@@ -2,22 +2,29 @@
     <div class="contentContainer">
         <h2>Erster Teil</h2>
         <p class="tutorialText">
-            Nun beginnen Sie mit dem ersten Teil der Studie. Hier werden Ihnen 10 Entscheidungspaare präsentiert. 
-            Bitte wählen Sie für jedes dieser Entscheidungspaare entweder „Option A“ oder „Option B“. Sie werden 10 Entscheidungen treffen, 
-            aber nur eine dieser Entscheidungen wird am Ende der Studie ausgewählt und für Ihre Auszahlung herangezogen. 
-            Sie wissen daher nicht, welches Lotteriepaar am Ende ausgewählt wird. <br>
-            <br>
-            Bevor Sie Ihre Entscheidungen treffen, betrachten Sie die Struktur des Problems. 
-            Bitte sehen Sie sich Entscheidung 1 (1. Reihe) an: Option A zahlt 200 ECU mit einer Wahrscheinlichkeit von 10% und 160 ECU mit einer Wahrscheinlichkeit von 90%; 
-            Option B zahlt 385 ECU mit einer Wahrscheinlichkeit von 10% und 10 ECU mit einer Wahrscheinlichkeit von 90%. <br>
-            <br>
-            Die anderen Entscheidungen sind ähnlich, außer dass, wenn Sie sich in der Tabelle nach unten bewegen, 
-            die Chancen auf eine höhere Auszahlung für jede Option steigen. Tatsächlich erhalten Sie in Entscheidung 10, 
-            am Ende der Liste, in jeder Option sicher die höchste Auszahlung, so dass Ihre Wahl hier zwischen 200 ECU (Option A) und 385 ECU (Option B) liegt. <br>
-            <br>
-            Zusammenfassend lässt sich sagen, dass Sie zehn Entscheidungen treffen werden: Für jede Entscheidung müssen Sie zwischen Option A und Option B wählen. 
-            Sie können für einige Entscheidungspaare A und für andere B wählen. Außerdem können Sie Ihre Entscheidungen ändern und in beliebiger Reihenfolge treffen. 
-            Wenn Sie fertig sind, klicken Sie auf die Schaltfläche „Weiter“.
+            The first part of the study starts now. You will be presented with 10 lottery pairs. For each lottery pair,
+            please choose either “Option A” or “Option B”. You will make 10 decisions, however, only one of these
+            decisions will be randomly selected to determine your payment at the end of the study.
+        </p>
+        <p class="tutorialText" >
+            Before you make your decisions, please look at the structure of the lottery pairs. For decision 1 (first row): <br>
+            Option A pays 200 ECU with a probability of 10% and 160 ECU with a probability of 90%; <br>
+            Option B pays 385 ECU with a probability of 10% and 10 ECU with a probability of 90%.
+
+        </p>
+        <p class="tutorialText" >
+
+            The following lottery pairs (row 2 - row 10) are similar with the exception of increasing probabilities for
+            the higher payments the further down they are in the table. In row 10 the higher payment will be a sure
+            outcome for both Options, so that your decision is between 200 ECU (Option A) and 385 ECU (Option B).
+        </p>
+        <p class="tutorialText">
+            In conclusion, you will make 10 decisions: For each decision you will choose between Option A and Option B.
+            You may choose Option A for some lottery pairs and Option B for others. Furthermore, you may change your
+            decisions and make them in any order of your preference.
+
+        </p>
+
             
         </p>
     </div>
@@ -25,7 +32,7 @@
     <div class="mlwContentContainer">
         <div class="riskAversionQuestionnaireContainer">
 
-            <form action="../../templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
+            <form action="/public/templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
                 <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
                 <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
                 <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>

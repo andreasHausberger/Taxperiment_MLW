@@ -6,8 +6,10 @@
  * Time: 09:28
  */
 
-require_once( $_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php' );
-require_once( $_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
+
+$db = new Database();
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
@@ -19,12 +21,13 @@ $pages = array(
     1 => "tut_info.php",
     2 => "tut_agreement.php",
     3 => "tut_incentivization.php",
-    4 => "tut_risk_aversion_task.php",
-    5 => "tut_explanation_cond_1.php",
-    6 => "tut_definitions.php", //this varies depending on the condition
-    7 => "tut_explanation_mlw_exam1.php",
-    8 => "tut_exam2.php",
-    9 => "tut_reminder.php"
+    4 => "risk_attitude.php",
+    5 => "tut_risk_aversion_task.php",
+    6 => "tut_explanation_cond_1.php",
+    7 => "tut_definitions.php", //this varies depending on the condition
+    8 => "tut_comprehension.php",
+    9 => "tut_explanation_mlw_exam1.php",
+    10 => "tut_reminder.php"
 );
 
 $page = $pages[$index];
@@ -35,7 +38,7 @@ if ($condition == -1) {
 
 else {
 
-    if ($index == 4 || $index == 7 || $index == 8) {
+    if ($index == 5 || $index == 9) {
         //risk aversion has its own Next button (submit, save, & redirect).
         //exams 1 and 2 have tax evade/pay buttons, which work as "Next" Buttons.
 
@@ -46,7 +49,7 @@ else {
         require_once ("../../templates/footer.php");
 
     }
-    else if ($index == 9) {
+    else if ($index == 10) {
         require_once ("../../templates/header.php");
 
         include($page);

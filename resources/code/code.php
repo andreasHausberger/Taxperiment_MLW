@@ -135,16 +135,16 @@ if( !function_exists("createRiskAversionRow") ) {
                 $index
                 </td>
                 <td>
-                    <span> Wahrscheinlichkeit $probA1%, ECU $ecuA1</span> <br>
-                    <span> Wahrscheinlichkeit $probA2%, ECU $ecuA2</span>
+                    <span> Probability $probA1%, ECU $ecuA1</span> <br>
+                    <span> Probability $probA2%, ECU $ecuA2</span>
                 </td>
                 <td>
                     <input class='riskAversionInput' type=\"radio\" value='A' name=\"$rowName\"> A
                     <input class='riskAversionInput' type=\"radio\" value='B' name=\"$rowName\"> B
                 </td>
                 <td>
-                    <span> Wahrscheinlichkeit $probB1%, ECU $ecuB1</span> <br>
-                    <span> Wahrscheinlichkeit $probB2%, ECU $ecuA2</span>
+                    <span> Probability $ecuB1</span> <br>
+                    <span> Probability $probB2%, ECU $ecuA2</span>
                 </td>
             </tr>
 ";

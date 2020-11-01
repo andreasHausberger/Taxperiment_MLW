@@ -287,6 +287,20 @@ Audit Page
     text-align: center;
 }
 
+.riskSelfContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.riskSelfContainer .radioItemFlex {
+    display: block;
+    text-align: center;
+}
+
+.riskSelfContainer .radioItemFlex input {
+    margin: auto;
+}
+
 .radioItemFlex {
     display: flex;
     font-size: 17px;
