@@ -91,7 +91,7 @@ else {
     }
 }
 
-echo "<h1> Übersicht </h1>";
+echo "<h1> Overview </h1>";
 
 
 
@@ -100,13 +100,13 @@ echo "<h1> Übersicht </h1>";
     <table id=\"overviewTable\">
     <thead>
     <tr>
-        <td>Runde </td>
-        <td>Einkommen</td>
-        <td>Steuerbetrag </td>
-        <td>Bezahlte Steuer </td>
-        <td>Steuerprüfung</td>
-        <td>Strafzahlung</td>
-        <td>Netto-Einkommen</td>
+        <td>Round </td>
+        <td>Income</td>
+        <td>Tax Due </td>
+        <td>Paid Tax </td>
+        <td>Audit</td>
+        <td>Fine</td>
+        <td>Net Income</td>
     </tr>
     </thead>
     <tbody>
@@ -119,7 +119,7 @@ echo "<h1> Übersicht </h1>";
 
 
     if (isset($rows)) {
-        echo "<p> Hier ist eine Übersicht über Ihre Ergebnisse aus den einzelnen Runden.  </p>";
+        echo "<p> Here is an overview of your performance:   </p>";
         foreach ($rows as $row) {
             echo buildResultsRow($row);
         }
@@ -136,6 +136,7 @@ echo "<h1> Übersicht </h1>";
 </table>
 
 
-<p> Im folgenden Abschnitt werden Sie einige Fragen über Ihre Einstellungen und Eindrücke über das Experiment beantworten.  </p>
+<p> In the following section you will answer several questions regarding your opinions and impressions of the experiment.
+</p>
 
 <a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Weiter zum Fragebogen"></a>

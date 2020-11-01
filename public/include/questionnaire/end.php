@@ -46,24 +46,25 @@ $rows = $results->fetch_all();
 
 $income = $rows[0][2];
 
-$euros = round($income / 300, 2);
+$pounds = round($income / 400, 2);
 
 
 
 ?>
 
-<h1> Danke für die Teilnahme!</h1>
+<h1> Thank you for your participation!</h1>
 
 <br>
 
-<b> Das ist die letzte Seite. Danke für Ihre Teilnahme an diesem Experiment. </b>
+<b> This is the last page. Thank you for your participation in this experiment.
+</b>
 
 <br>
 <p>
-    Runde <?php echo $randomRound ?> wurde zufällig ausgewählt. .
-    In dieser Runde haben Sie ein Einkommen von <?php echo $income ?> ECU verdient.
-    Daraus ergeben sich <?php echo $euros ?> Euro (300 ECU = 1 Euro).
-    Gemeinsam mit der Show-Up-Fee von 1 Euro, beträgt Ihre Bezahlung für die Teilnahme an diesem Experiment <?php echo ($euros + 1) ?> Euro.
+    Round <?php echo $randomRound ?> was chosen randomly.
+    In this round you have earned an income of <?php echo $income ?> ECU.
+    That means that you will receive £ <?php echo $pounds ?> (400 ECU = £1) for this round. .
+    Including your showup fee of £ 1, you will be paid a total of £ <?php echo ($pounds + 1) ?>.
 </p>
 <br>
 <p>
@@ -73,13 +74,13 @@ $euros = round($income / 300, 2);
 <?php
 if (!$updated) {
     echo "<b style=\"color: darkred\">
-    Beim Speichern der Runde trat ein Fehler auf. Um Ihre Bezahlung zu erhalten, ...
+    While saving the round an error occurred. Please let the test supervisor know to make sure you will receive the amount specified. 
 </b>";
 }
 else {
-    echo "<b> Die Information über die Runde, die zur Bezahlung ausgewählt wurde, wurde erfolgreich gespeichert. </b> <br> Sie können diese Seite nun verlassen.";
+    echo "<b> The information about the round chosen for payment was saved successfully. </b> <br> You can now leave this page.";
 }?>
 <br>
 <br>
-<a href="#">Klicken Sie auf diesen Link, um weiterzumachen. </a>
+<a href="#">Please click the link to continue. </a>
 

@@ -5,7 +5,7 @@
             <div class="timerContent">
                 <div>
                     <p>
-                        Verbleibend...
+                        Round starts in...
                     </p>
                 </div>
                 <div>

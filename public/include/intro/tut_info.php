@@ -3,46 +3,51 @@
 <h2>Information</h2>
 <div class="contentContainer">
 
-    <h3>Aim of this Study</h3>
     <p class="tutorialText">
-        This study is designed to gain insights into financial decision making. The study duration will
-        be roughly 30 minutes. As compensation for your participation you will receive a guaranteed payment
-        of £X. Additionally, you can earn between £Y and £Z, depending on your decisions in this study. 
+        Dear Participant,
+    </p>
+    <p class="tutorialText">
+        Thank you for your interest in this study! <b>It is important that you only participate in this study using a
+        laptop or desktop computer. Some of the questions will not work on a smartphone or tablet device. Note that we
+            will only pay participants who did use a laptop or desktop computer.</b>
     </p>
 
-    <h3>Procedure</h3>
     <p class="tutorialText">
-        The present study consists of two parts. In the first part you will be presented with 10 decision pairs. 
-        Your task will be to choose one option from each of the pairs. The second part of the study consists of 24 rounds. 
-        You will make a financial decision in each round, i.e., a decision on tax payments. You will earn money 
-        in both parts of the study. The size of the additional payment will depend on the decisions you make 
-        during the study. For each of the two parts, one of the decisions will be randomly drawn and the respective
-        outcome converted to Pounds and payed to you in addition to the guaranteed payment (£X). You will receive
-        more detailed information about this procedure in the following. 
+        The study will take about 30 minutes to complete. In return for your participation, you will receive a
+        guaranteed payment of £ 3.00. Additionally, you will receive a payment that depends on your decisions in the
+        study. This additional payment can be as high as £ 6.00. This study does not include any deception. This means
+        that you will not be presented with ANY false information.
     </p>
 
-    <h3>Voluntary Participation</h3>
     <p class="tutorialText">
-        The present study consists of two parts. In the first part you will be presented with 10 decision pairs. 
-        Your task will be to choose one option from each of the pairs. The second part of the study consists of 24 rounds. 
-        You will make a financial decision in each round, i.e., a decision on tax payments. You will earn money 
-        in both parts of the study. The size of the additional payment will depend on the decisions you make during the study. 
-        For each of the two parts, one of the decisions will be randomly drawn and the respective outcome converted to Pounds 
-        and payed to you in addition to the guaranteed payment (£X). You will receive more detailed information 
-        about this procedure in the following. 
+        The present study consists of two parts. In the first part (the shorter part of the study) you will be presented
+        with two simple questions and 10 lottery decisions. In the second part (the longer part of the study) you will
+        be presented with about 20 financial decisions and a number of follow-up questions. Both parts will be
+        introduced in detail before they start. All you need to know for now is that the decisions will involve
+        financial aspects and use a currency we call ECU (experimental currency unit).
     </p>
 
-    <h3>Privacy</h3>
     <p class="tutorialText">
-        All data obtained from participants is anonymous. There will be no record that links data collected from you 
-        to any personal data that could be used to identify you (e.g. your name, address, email, etc). 
-        The anonymized data may be made available to researchers via accessible data repositories and possibly used for novel purposes.
-        In light of that, please do answer honestly and seriously. Otherwise your data may distort the results and any conclusions drawn from them. 
- 
-        Should you have any further questions, please contact Martin Müller at the University of Vienna, Department of Occupational, Economic and Social Psychology
-        (<a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>).
-        
-        Thank you for your participation!
+        For each of the two parts, one of the financial decisions you take will be randomly drawn, converted from ECU to
+        pounds, and paid to you as a bonus in addition to the guaranteed £ 3.00. You will receive more detailed
+        information about this procedure in the following.
+    </p>
+
+    <p class="tutorialText">
+        Participation in this study is completely voluntary and you have the right to decline to participate or to
+        withdraw from the study once the participation has begun, without an explanation and without any negative
+        consequences. If you desire to withdraw, please simply close your internet browser.
+    </p>
+
+    <p class="tutorialText">
+        All collected data is anonymous. There is no record that links the collected data to any personal information
+        from which you could be identified (e.g., your name, address, email, etc.). The anonymized data will be stored
+        in an open online repository for at least 10 years.
+        If you have any further questions or if you want to receive additional information, please contact the
+        researcher: Martin Müller via <a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>.
+    </p>
+    <p class="tutorialText">
+        We will now direct you to the informed consent.
     </p>
 
 </div>

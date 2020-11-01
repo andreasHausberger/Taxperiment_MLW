@@ -1,15 +1,13 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Übungsaufgabe</h2>
+        <h2>Exercise</h2>
         <p class="tutorialText">
-            Wie bereits erklärt, erhalten Sie in jeder Runde verschiedene Informationen, 
-            um Ihre Entscheidung zu treffen. Diese Informationen sind hinter Boxen verborgen. 
-            Sie können diese Informationen einsehen indem Sie mit der Maus über die jeweilige Box fahren. 
-            Solange Sie mit der Maus auf der Box bleiben wird der dahinter liegenden Inhalt angezeigt. 
-            Bewegen Sie die Maus aus der Box hinaus, schließt sich diese wieder. <br>
-            <br>
-            Bevor Sie mit dem eigentlichen Experiment beginnen, folgen nun zwei Übungsaufgaben um Sie mit diesem System vertraut zu machen. 
-            Sehen Sie sich das Beispiel unten an und machen Sie sich bitte mit dem Öffnen und Schließen der Boxen vertraut.
+            The examples are now finished. On the next page the actual study begins. Information on earned income,
+            tax rate, audit probability, and fine for each round will be displayed with MouselabWEB. This means that
+            the information is hidden in boxes. These boxes are labeled. To access the respective information, you
+            have to move the mouse pointer over the box on the screen. As long as the pointer is over the box, it will
+            display the information. Whenever the pointer moves out of the box, the box closes and the information is
+            hidden again. Please see the example below and make yourself familiar with how the boxes open and close.
         </p>
 
         <?php
@@ -22,7 +20,7 @@
         $evEvasion = 940;
         $currentCondition = 1;
 
-        $nextPage = 8;
+        $nextPage = 10;
 
         if (isset($_GET['condition'])) {
             $condition = $_GET['condition'];

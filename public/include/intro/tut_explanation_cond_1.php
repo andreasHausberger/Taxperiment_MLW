@@ -1,24 +1,21 @@
 <div class="siteContainer">
     <div class="contentContainer">
 
-        <h2>Zweiter Teil</h2>
+        <h2>Second Part</h2>
         <p class="tutorialText">
-            Nun folgt der zweite Teil der Studie. Dieser Teil besteht aus ca. 20 Entscheidungsrunden. 
-            In jeder dieser Runden erhalten Sie ein Einkommen. In diesem Teil der Studie fallen auf das Einkommen Steuern an. 
-            Ihre Aufgabe ist es in jeder Runde zu entscheiden, ob Sie die geforderten Steuern bezahlen oder die Steuer nicht zahlen. <br>
-            <br>
-            In jeder Runde erhalten Sie Informationen über Ihr Einkommen, die fällige Steuer, 
-            Ihre Chance überprüft zu werden (Prüfwahrscheinlichkeit) und die potenzielle Geldstrafe für erkannte Hinterziehung. 
-            Diese Informationen (z.B. Höhe des Einkommens) ändern sich von Runde zu Runde.
-            <?php
-            if ($_GET['condition'] != 4) {
-                echo "
-                 Auf der nächsten Seite werden diese Begriffe genau definiert. 
-            Bitte lesen Sie die Definitionen aufmerksam durch bevor Sie fortfahren. 
-            Am Ende der Studie werden Sie nach dem Verständnis der Begriffe gefragt. 
-                ";
-            }
-            ?>
+            You will now start with the second part of the study. <br>
+
+            You will face about 20 decision rounds. At the beginning of each round you receive an income. In this study
+            taxes apply to the income you receive. You will be shown how much tax is due in each round and you will then
+            be asked how much of the tax due you decide to pay.
+        </p>
+        <p class="tutorialText">
+            The income, the tax due, your chance of being audited (chance of getting checked) and the potential fine
+            size will vary each round, so carefully read all the information.
+        </p>
+        <p class="tutorialText">
+            On the next few pages, you will receive detailed information about what these terms mean and how the
+            information is presented so you can make your decision.
 
         </p>
     </div>

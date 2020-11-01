@@ -1,17 +1,18 @@
 <?php
  $postArray = $_POST;
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/config.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/resources/code/code.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
 
-if (!isset($connection)) {
-    $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
-    echo "Reestablished connection";
-}
+$db = new Database();
 
-$page = $postArray['page'];
- $condition = $postArray['condition'];
- $subjectName = $postArray['subject'];
+$riskQB = new QueryBuilder( 'risk_aversion');
+
+$page = postParamValue('page');
+$condition = postParamValue('condition');
+$subjectName = postParamValue('subject');
+
+
 
  $results = [
      $postArray['row_1'],
@@ -28,30 +29,27 @@ $page = $postArray['page'];
  $rowNumber = 1;
 
 foreach ($results as $result) {
-    $query = $connection->prepare("INSERT INTO risk_aversion (subject_name, row, result) VALUES (?, ?, ?) ");
-    $query->bind_param('sis', $subjectName, $rowNumber, $result);
-
-    if ($query->execute()) {
-//        console_log("Inserted row $rowNumber for subject $subjectName with result $result!");
-    }
-    else {
-        echo "Could not insertrow $rowNumber for subject $subjectName with result $result!";
-    }
-
+    $riskQB->addString("r" . $rowNumber, $results[$rowNumber - 1]);
     $rowNumber += 1;
-
  }
+$updateQuery = $riskQB->buildInsert("");
+$insertID = $db->insertQuery($updateQuery);
 
-$nextPage = intval($page) + 1;
+if (!$insertID) {
+    echo "Error!";
+} else {
+    $nextPage = intval($page) + 1;
 
-$host = $_SERVER['HTTP_HOST'];
-$url = $host . '/public/include/intro/index.php?condition=' . $condition . '&sname=' . $subjectName . '&page=' . $nextPage;
+    $host = $_SERVER['HTTP_HOST'];
+    $url = $host . '/public/include/intro/index.php?condition=' . $condition . '&sname=' . $subjectName . '&page=' . $nextPage;
 
-$ch = curl_init();
+    $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
 
-curl_exec($ch);
+    curl_exec($ch);
 
-curl_close($ch);
+    curl_close($ch);
+}
+
