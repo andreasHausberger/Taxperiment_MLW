@@ -18,8 +18,10 @@ $auditPercentage = doubleval($auditProbability) * 100;
 $taxDue = intVal($income) * doubleval($taxRate);
 $fine = $taxDue * $fineRate;
 
+$taxRatePercentagePoints = intval($taxRate * 100);
+
 $incomeContent = "$income ECU";
-$taxContent = "$taxDue ECU";
+$taxContent = "$taxRatePercentagePoints% = $taxDue ECU";
 $auditContent = "$auditPercentage%";
 $fineContent = "$fine ECU";
 $evRiskyContent = "$evEvasion ECU";
