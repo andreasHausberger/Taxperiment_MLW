@@ -8,20 +8,19 @@
 
 ?>
 
-<p>Staging Version 1.2.5 (October 2020)</p>
+<p>Staging Version 1.2.6 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>Bug fixes: Visual bugs, Exp. Config redirect.</li>
-    <li>Changed Labels to reflect SVG graphic infos. </li>
-
+    <li>Big Tutorial Rewrite: New Texts, new Pages, new Elements. </li>
+    <li>Added English Translations to Experiment pages. </li>
+    <li>Bug fixes and performance improvements </li>
 </ul>
 
 <br>
 <b> To Do</b>
 
 <ul>
-    <li>Tutorial Texts - are they still correct?</li>
     <li>SVGs will be updated - is everything working?</li>
     <li>PROLIFIC Info, Resolution Capture Review</li>
 </ul>
