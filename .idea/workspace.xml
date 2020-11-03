@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/group1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -17,12 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Taxperiment_MLW" />
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,13 +40,6 @@
     <option name="hiddenUrls">
       <set>
         <option value="https://github.com/andreasHausberger/Taxperiment_MLW.git" />
-      </set>
-    </option>
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
       </set>
     </option>
   </component>
@@ -90,20 +75,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/svg" />
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/resources/font" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/include/experiment" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/include/questionnaire" />
       <recent name="$PROJECT_DIR$/public/include/experiment" />
       <recent name="$PROJECT_DIR$/public/include/intro" />
       <recent name="$PROJECT_DIR$/public/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/resources/font" />
-      <recent name="$PROJECT_DIR$/public/img/svg" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public/include/experiment" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,18 +100,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructuralSearchPlugin">
     <searchConfiguration name="user defined" created="1549968764204" text="Real Study" recursive="true" caseInsensitive="false" type="PHP" history="1" />
   </component>
@@ -224,21 +199,10 @@
       <workItem from="1604051206753" duration="2363000" />
       <workItem from="1604073254656" duration="7149000" />
       <workItem from="1604233041514" duration="9384000" />
-      <workItem from="1604249957263" duration="587000" />
-    </task>
-    <task id="LOCAL-00123" summary="Procfile">
-      <created>1596197702672</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1596197702672</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Fixes for Order, Feedback bugs. Some small code refactorings.">
-      <created>1597256969976</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1597256969976</updated>
+      <workItem from="1604249957263" duration="1210000" />
+      <workItem from="1604344817516" duration="7000" />
+      <workItem from="1604345588531" duration="1216000" />
+      <workItem from="1604426151668" duration="219000" />
     </task>
     <task id="LOCAL-00125" summary="New Version Number.">
       <created>1597257262381</created>
@@ -569,11 +533,25 @@
       <option name="project" value="LOCAL" />
       <updated>1604244163096</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Added Label for cond 2 EV indicator. Added percentage points to tax due Box content.">
+      <created>1604250620882</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1604250620883</updated>
+    </task>
+    <task id="LOCAL-00173" summary="New SVGs">
+      <created>1604426291878</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1604426291878</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -593,19 +571,17 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Code Refactoring" />
-    <MESSAGE value="Changelog, Version Nr. Design fix." />
     <MESSAGE value="Fix: Missing Method." />
     <MESSAGE value="Hotfix: MYSQL Call" />
     <MESSAGE value="Reworked Tutorial." />
@@ -629,7 +605,9 @@
     <MESSAGE value="Added some missing translations." />
     <MESSAGE value="Version, Changelog." />
     <MESSAGE value="More Translations." />
-    <option name="LAST_COMMIT_MESSAGE" value="More Translations." />
+    <MESSAGE value="Added Label for cond 2 EV indicator. Added percentage points to tax due Box content." />
+    <MESSAGE value="New SVGs" />
+    <option name="LAST_COMMIT_MESSAGE" value="New SVGs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -642,7 +620,6 @@
     <state x="-2309" y="-115" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1596183467372" />
     <state x="446" y="208" key="#Servers/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183266500" />
     <state x="-2309" y="-105" key="#Servers/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182679496" />
-    <state x="699" y="275" key="#Servers/0.23.3008.1605@0.23.3008.1605" timestamp="1595603110820" />
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -650,7 +627,10 @@
     <state x="368" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183326917" />
     <state x="-2432" y="-105" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1596182686563" />
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601039983650" />
-    <state x="576" y="275" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3008.1605@0.23.3008.1605" timestamp="1595603111973" />
+    <state x="648" y="343" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604426003122">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="648" y="343" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1604426003122" />
     <state x="-2214" y="63" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1596182544678">
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
@@ -659,12 +639,12 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1604244162976">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="695" y="0" key="CommitChangelistDialog2" timestamp="1604426291346">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604244162976" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604250620695" />
     <state x="-2313" y="-168" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604242840071" />
-    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396789061" />
+    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1604426291346" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1603123867642" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="468" height="466" key="DebuggerActiveHint" timestamp="1596184120201">
@@ -791,12 +771,12 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1604244176694">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1604426401740">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604244176694" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604250630294" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1603976788916" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1601396793380" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1604426401740" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1603123872440" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="713" y="341" key="VcsDiffUtil.ChangesDialog" timestamp="1601040827951">

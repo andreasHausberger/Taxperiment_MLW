@@ -7,7 +7,7 @@ require_once ('public/templates/header.php');
 $prolificPID = getParamValue("PROLIFIC_PID", "noName");
 $studyID = getParamValue("STUDY_ID");
 $sessionID = getParamValue("SESSION_ID");
-$randomCondition = rand(1, 6);
+$randomCondition = rand(1, 4);
 
 ?>
 
