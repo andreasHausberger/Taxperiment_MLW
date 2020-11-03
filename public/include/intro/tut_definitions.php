@@ -77,7 +77,7 @@
                     break;
                 case 2:
                     document.getElementById('explanationCondition2').style.display = "block";
-                    definitionLimit = 22;
+                    definitionLimit = 24;
                     break;
                 case 3:
                     document.getElementById('explanationCondition3').style.display = "block";
@@ -97,6 +97,7 @@
 
             function getNextImage() {
                 let newValue = value + 1;
+                checkLimit(newValue);
                 let zeroString = newValue < 10 ? "0" : "";
                 let suffix = "-" + zeroString + newValue + ".svg";
                 let newSrc = "/public/img/svg/Cond" + condition + "/Con" + condition + suffix;
@@ -108,7 +109,6 @@
                 container.parentNode.replaceChild(clone, container);
 
                 value = newValue;
-                checkLimit(value);
             }
 
             function checkLimit(currentIndex) {
