@@ -12,16 +12,13 @@
 
 <b>Recent Changes</b>
 <ul>
-    <li>Big Tutorial Rewrite: New Texts, new Pages, new Elements. </li>
-    <li>Added English Translations to Experiment pages. </li>
-    <li>Bug fixes and performance improvements </li>
+    <li>New SVGs</li>
 </ul>
 
 <br>
 <b> To Do</b>
 
 <ul>
-    <li>SVGs will be updated - is everything working?</li>
     <li>PROLIFIC Info, Resolution Capture Review</li>
 </ul>
 
