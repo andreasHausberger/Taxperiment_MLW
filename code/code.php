@@ -1,18 +1,20 @@
 <?php
 
 
-function getParamValue($paramName, $fallback = "") {
-    if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
-        return $_GET[$paramName];
-    }
-    else {
-        return $fallback;
+if (!function_exists("getParamValue")) {
+
+
+    function getParamValue($paramName, $fallback = "") {
+        if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
+            return $_GET[$paramName];
+        } else {
+            return $fallback;
+        }
     }
 }
 
 if( !function_exists("postParamValue")) {
-    function postParamValue($paramName, $fallback = "")
-    {
+    function postParamValue($paramName, $fallback = "") {
         if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
             return addslashes($_POST[$paramName]);
         } else {
@@ -43,4 +45,10 @@ function performLogin($passwordInput) {
         return password_verify($passwordInput, $cookieHash);
     }
     return false;
+}
+
+if (!function_exists("saveRiskSelfAssessment")) {
+    function saveRiskSelfAssessment($paraPostArray) {
+
+    }
 }

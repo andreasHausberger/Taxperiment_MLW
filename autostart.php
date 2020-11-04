@@ -24,22 +24,22 @@ $randomCondition = rand(1, 4);
         switch (selectedCondition) {
             case 1:
                 // link for condition 1
-                linkstr =  "/public/include/intro/index.php?condition=1";
+                linkstr =  "/public/include/intro/index.php?action=create_participant&condition=1";
                 break;
 
             case 2:
                 // link for condition 2
-                linkstr = "/public/include/intro/index.php?condition=2";
+                linkstr = "/public/include/intro/index.php?action=create_participant&condition=2";
                 break;
 
             case 3:
                 // link for condition 3
-                linkstr = "/public/include/intro/index.php?condition=3";
+                linkstr = "/public/include/intro/index.php?action=create_participant&condition=3";
                 break;
 
             case 4:
                 // link for condition 4
-                linkstr = "/public/include/intro/index.php?condition=4";
+                linkstr = "/public/include/intro/index.php?action=create_participant&condition=4";
                 break;
 
             default:
@@ -66,7 +66,8 @@ $randomCondition = rand(1, 4);
 <br>
 
 <?php
-echo "<button onclick=startExp(\"$prolificPID\")> 
+$nameCypher = sha1($prolificPID);
+echo "<button onclick=startExp(\"$nameCypher\")> 
         Start Study
     </button> ";
 
