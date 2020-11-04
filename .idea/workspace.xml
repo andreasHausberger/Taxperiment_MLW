@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/RedirectHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/RedirectHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/risk_attitude.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/risk_attitude.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_risk_aversion_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_risk_aversion_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/code/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/code/code.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -206,14 +203,7 @@
       <workItem from="1604344817516" duration="7000" />
       <workItem from="1604345588531" duration="1216000" />
       <workItem from="1604426151668" duration="421000" />
-      <workItem from="1604501704172" duration="7826000" />
-    </task>
-    <task id="LOCAL-00127" summary="Start page can parse Prolific GET parameters. Adapted payment calculation.">
-      <created>1597691220449</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1597691220449</updated>
+      <workItem from="1604501704172" duration="7966000" />
     </task>
     <task id="LOCAL-00128" summary="Tutorial table now has correct payback indicator.">
       <created>1597691748355</created>
@@ -551,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604508961468</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Reorganization: Tutorial saves data between Pages.">
+      <created>1604510602407</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1604510602407</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +583,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Reworked Tutorial." />
     <MESSAGE value="Autostart Re-Add." />
     <MESSAGE value="Visual Fixes: Layout, Box Size, Numbers. Some Refactoring." />
     <MESSAGE value="SVG Tutorial Slides: Dynamic reloading, slight zoom to increase readability." />
@@ -611,7 +607,8 @@
     <MESSAGE value="New SVGs" />
     <MESSAGE value="Changelog" />
     <MESSAGE value="WIP: Reorg of Tutorial Index." />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP: Reorg of Tutorial Index." />
+    <MESSAGE value="Reorganization: Tutorial saves data between Pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganization: Tutorial saves data between Pages." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -643,10 +640,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1604508961254">
+    <state x="-2313" y="-176" key="CommitChangelistDialog2" timestamp="1604510602271">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604508961254" />
+    <state x="-2313" y="-176" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604510602271" />
     <state x="-2313" y="-168" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604242840071" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1604426426776" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1603123867642" />
@@ -809,10 +806,10 @@
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state width="600" height="424" key="javadoc.popup/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1602767977984" />
-    <state x="-1844" y="-30" width="1050" height="705" key="search.everywhere.popup" timestamp="1604242333929">
-      <screen x="-3008" y="-367" width="3008" height="1669" />
+    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup" timestamp="1604510707002">
+      <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1603891921347" />
+    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604510707002" />
     <state x="-1844" y="-30" width="1050" height="705" key="search.everywhere.popup/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604242333929" />
     <state x="743" y="243" width="670" height="506" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1601396970673" />
     <state x="743" y="248" width="670" height="470" key="search.everywhere.popup/0.23.1920.1113@0.23.1920.1113" timestamp="1603123802499" />

@@ -203,15 +203,15 @@ if (!function_exists('getAuditButtons')) {
     function getAuditButtons($paraShouldBeMirrored = false) {
         if ($paraShouldBeMirrored) {
             echo "<div class=\"buttonContainer\">
-                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Taxes\" >
-                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Taxes\" >
+                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Tax\" >
+                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Tax\" >
             </div>";
         }
         else
         {
             echo "<div class=\"buttonContainer\">
-                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Taxes\" >
-                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Taxes\" >
+                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Tax\" >
+                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Tax\" >
             </div>";
         }
 
