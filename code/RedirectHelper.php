@@ -23,14 +23,10 @@ class RedirectHelper {
     }
 
     function saveRiskSelfAssessment($paraPostArray) {
-
-    }
-
-    function saveRiskQuestionnaire($paraPostArray) {
         if ($this->verifyPostArray($paraPostArray)) {
             $selfRisk = $paraPostArray["risk_self"];
-            $subjectID = $paraPostArray["subject_id"];
-
+            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ?", "s", ...[ $paraPostArray['subject'] ] );
+            $subjectID = $idResults["id"];
             if ($selfRisk && $subjectID) {
                 return $this->database->insertQuery("INSERT INTO risk_aversion (subject_id, self_risk) VALUES (?, ?)", "ii", ...[$subjectID, $selfRisk]);
             }
@@ -41,6 +37,36 @@ class RedirectHelper {
         else {
             echo "Error: No PostArray found!";
         }
+    }
+
+    function saveRiskQuestionnaire($paraPostArray) {
+        if ($this->verifyPostArray($paraPostArray, 11) ) {
+            $results = [
+                $paraPostArray['row_1'],
+                $paraPostArray['row_2'],
+                $paraPostArray['row_3'],
+                $paraPostArray['row_4'],
+                $paraPostArray['row_5'],
+                $paraPostArray['row_6'],
+                $paraPostArray['row_7'],
+                $paraPostArray['row_8'],
+                $paraPostArray['row_9'],
+                $paraPostArray['row_10']
+            ];
+            $rowNumber = 1;
+
+            foreach ($results as $result) {
+                $this->queryBuilder->addString("r" . $rowNumber, $results[$rowNumber - 1]);
+                $rowNumber += 1;
+            }
+            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ?", "s", ...[ $paraPostArray['subject'] ] );
+            $subjectID = $idResults["id"];
+
+            $updateQuery = $this->queryBuilder->buildInsert("WHERE subject_id = ?", true);
+            return $insertID = $this->database->insertQuery($updateQuery, "i", $subjectID);
+
+        }
+        return false;
     }
 
     private function verifyPostArray($paraPostArray, $paraSize = 0) {

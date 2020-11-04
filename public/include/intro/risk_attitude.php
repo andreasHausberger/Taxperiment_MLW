@@ -10,7 +10,7 @@
             means: ‘very willing to take risks’.
         </b>
 
-    <form action="/public/include/intro/index.php?action=save_risk_self&condition=<?php echo $_GET['condition'] ?>&sname=noName&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=5" method="post">
+    <form action="/public/include/intro/index.php?action=save_risk_self&condition=<?php echo $_GET['condition'] ?>&sname=<?php echo $participant?>&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=5" method="post">
         <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
         <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
         <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
