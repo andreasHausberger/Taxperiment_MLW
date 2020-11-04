@@ -139,4 +139,4 @@ echo "<h1> Overview </h1>";
 <p> In the following section you will answer several questions regarding your opinions and impressions of the experiment.
 </p>
 
-<a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Weiter zum Fragebogen"></a>
+<a href=<?php echo "../questionnaire/index.php?page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Continue to the questionnaire"></a>

@@ -1,6 +1,6 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Erster Teil</h2>
+        <h2>First Part</h2>
         <p class="tutorialText">
             The first part of the study starts now. You will be presented with 10 lottery pairs. For each lottery pair,
             please choose either “Option A” or “Option B”. You will make 10 decisions, however, only one of these
