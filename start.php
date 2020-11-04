@@ -8,18 +8,22 @@
 
 ?>
 
-<p>Staging Version 1.2.6 (November 2020)</p>
+<p>Staging Version 1.2.7 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
     <li>New SVGs</li>
+    <li>Tutorial now properly saves data</li>
+    <li>Trello TODOs are implemented</li>
+    <li>Various Bugfixes</li>
+    <li>Prolific Data is saved properly.</li>
 </ul>
 
 <br>
 <b> To Do</b>
 
 <ul>
-    <li>PROLIFIC Info, Resolution Capture Review</li>
+    <li>Resolution Capture Review</li>
 </ul>
 
 <div>

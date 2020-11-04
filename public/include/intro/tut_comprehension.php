@@ -2,7 +2,7 @@
 ?>
 <div class="pageContainer">
 
-    <div style="text-align: center; ">
+    <div style="text-align: center; margin: 25px;">
         <table class="riskAversionTable" style="margin: auto">
             <tr>
                 <td> Income <br> 1000 ECU</td>

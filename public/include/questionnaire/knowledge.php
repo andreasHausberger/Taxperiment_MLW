@@ -40,6 +40,21 @@ if(sizeof($_POST) >= $numberOfQuestions) {
 
 <script>
     const numberOfQuestions = 9;
+
+    const doesNotKnow = false;
+
+    function conditionalAddToArray(value, caller) {
+        if (caller == "yes") {
+            document.getElementById("kno_input").disabled = false;
+        }
+        else if (caller == "no") {
+            addToArray(value);
+            addToArray('kno2');
+            document.getElementById("kno_input").disabled = true;
+        }
+
+    }
+
 </script>
 <script src="/public/js/questionnaire.js"></script>
 
@@ -49,7 +64,13 @@ if(sizeof($_POST) >= $numberOfQuestions) {
             1. Do you know what an expected value is?
         </p>
         <div>
-            <?php echo createLikert(2, "kno1", ["Yes", "No"]); ?>
+            <div class="radioItemFlex" >
+                <input type="radio" name="kno1" value="1" onclick="conditionalAddToArray('kno1', 'yes')"}>
+                <p> Yes </p>
+            </div> <div class="radioItemFlex" >
+                <input type="radio" name="kno1" value="2" onclick="conditionalAddToArray('kno1', 'no')"}>
+                <p> No </p>
+            </div>
         </div>
     </div>
     <div class="item">
@@ -57,7 +78,7 @@ if(sizeof($_POST) >= $numberOfQuestions) {
             2. Please try to explain in your own words what an expected value is!
         </p>
         <div>
-            <input type="text" name="kno2" style="width: 200px; margin-left: 12px;" onblur="addToArray('kno2')">
+            <input type="text" id="kno_input" name="kno2" style="width: 200px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
         </div>
     </div>
     <p>

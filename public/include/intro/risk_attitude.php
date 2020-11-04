@@ -10,13 +10,14 @@
             means: ‘very willing to take risks’.
         </b>
 
-    <form action="/public/templates/redirect_risk_self.php" method="post">
+    <form action="/public/include/intro/index.php?action=save_risk_self&condition=<?php echo $_GET['condition'] ?>&sname=<?php echo $participant?>&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=5" method="post">
         <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
         <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
         <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
         <div class="riskSelfContainer">
             <?php echo createLikert(10, "risk_self");  ?>
         </div>
+        <input type="submit" value="submit">
     </form>
     </p>
 </div>

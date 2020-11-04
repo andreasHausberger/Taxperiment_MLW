@@ -129,6 +129,7 @@ if( !function_exists("createRiskAversionRow") ) {
      */
     function createRiskAversionRow($rowName, $probA1, $ecuA1, $probA2, $ecuA2, $probB1, $ecuB1,  $probB2, $ecuB2) {
         $index = substr($rowName, 4, 2);
+
         echo "
 <tr>
                 <td>
@@ -143,7 +144,7 @@ if( !function_exists("createRiskAversionRow") ) {
                     <input class='riskAversionInput' type=\"radio\" value='B' name=\"$rowName\"> B
                 </td>
                 <td>
-                    <span> Probability $ecuB1</span> <br>
+                    <span> Probability $probB1%, ECU $ecuB1</span> <br>
                     <span> Probability $probB2%, ECU $ecuA2</span>
                 </td>
             </tr>
@@ -203,15 +204,15 @@ if (!function_exists('getAuditButtons')) {
     function getAuditButtons($paraShouldBeMirrored = false) {
         if ($paraShouldBeMirrored) {
             echo "<div class=\"buttonContainer\">
-                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Taxes\" >
-                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Taxes\" >
+                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Tax\" >
+                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Tax\" >
             </div>";
         }
         else
         {
             echo "<div class=\"buttonContainer\">
-                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Taxes\" >
-                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Taxes\" >
+                <input type=\"submit\" class=\"formButton\" id=\"complyButton\" value=\"Pay Tax\" >
+                <input type=\"submit\" class=\"formButton\" id=\"evadeButton\" value=\"Don't Pay Tax\" >
             </div>";
         }
 

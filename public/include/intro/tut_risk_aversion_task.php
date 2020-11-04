@@ -1,6 +1,6 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Erster Teil</h2>
+        <h2>First Part</h2>
         <p class="tutorialText">
             The first part of the study starts now. You will be presented with 10 lottery pairs. For each lottery pair,
             please choose either “Option A” or “Option B”. You will make 10 decisions, however, only one of these
@@ -32,7 +32,7 @@
     <div class="mlwContentContainer">
         <div class="riskAversionQuestionnaireContainer">
 
-            <form action="/public/templates/saveAndRedirect.php" method="POST" name="risk_aversion_form">
+            <form action="/public/include/intro/index.php?action=save_questionnaire&condition=<?php echo $_GET['condition'] ?>&sname=<?php echo $participant?>&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=7" method="post">
                 <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
                 <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
                 <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
@@ -141,7 +141,7 @@
                         "rowName" => "row_10",
                         "probA1" => "100",
                         "ecuA1" => "200",
-                        "probA2" => "00",
+                        "probA2" => "0",
                         "ecuA2" => "160",
                         "probB1" => "100",
                         "ecuB1" => "385",

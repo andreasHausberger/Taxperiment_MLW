@@ -8,12 +8,48 @@
 
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
-
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/RedirectHelper.php");
 $db = new Database();
+$riskQB = new QueryBuilder('risk_aversion');
+
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
 $condition = isset($_GET['condition']) ? $_GET['condition'] : -1;
 $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
+
+
+
+$action = getParamValue("action");
+$prolificPID = getParamValue("prolificPID");
+$studyID = getParamValue("studyID");
+$sessionID = getParamValue("sessionID");
+
+if($action == "create_participant" && $index === "1") {
+    $helper = new RedirectHelper($db, new QueryBuilder('participant'));
+    $userDataArray = [
+        "sname" => getParamValue("sname"),
+        "prolific_pid" => $prolificPID,
+        "study_id" => $studyID,
+        "session_id" => $sessionID
+    ];
+    $helper->createUser($userDataArray);
+}
+
+if ($action == "save_risk_self") {
+    //handle save risk self
+    $helper = new RedirectHelper($db, $riskQB);
+    $tempPostArray = $_POST;
+    $tempPostArray["sname"] = getParamValue("sname");
+
+    $insertID = $helper->saveRiskSelfAssessment($tempPostArray);
+}
+if ($action == "save_questionnaire" && $index === "6") {
+    //handle save questionnaire
+    $helper = new RedirectHelper($db, $riskQB);
+    $tempPostArray = $_POST;
+    $tempPostArray["sname"] = getParamValue("sname");
+    $insertID = $helper->saveRiskQuestionnaire($tempPostArray);
+}
 
 
 $pages = array(

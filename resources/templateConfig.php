@@ -16,7 +16,7 @@ $evRiskyLabel = "Expected Value: Don't Pay Tax";
 $taxPercentage = doubleval($taxRate) * 100;
 $auditPercentage = doubleval($auditProbability) * 100;
 $taxDue = intVal($income) * doubleval($taxRate);
-$fine = $taxDue * $fineRate;
+$fine = $taxDue + ($taxDue * $fineRate);
 
 $taxRatePercentagePoints = intval($taxRate * 100);
 
