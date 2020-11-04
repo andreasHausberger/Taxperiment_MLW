@@ -74,7 +74,7 @@ if ($condition == -1) {
 
 else {
 
-    if ($index == 5 || $index == 9) {
+    if ($index == 4 || $index == 5 || $index == 9) {
         //risk aversion has its own Next button (submit, save, & redirect).
         //exams 1 and 2 have tax evade/pay buttons, which work as "Next" Buttons.
 

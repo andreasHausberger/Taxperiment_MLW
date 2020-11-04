@@ -17,7 +17,7 @@
         <div class="riskSelfContainer">
             <?php echo createLikert(10, "risk_self");  ?>
         </div>
-        <input type="submit" value="submit">
+        <input type="submit" value="Next">
     </form>
     </p>
 </div>
