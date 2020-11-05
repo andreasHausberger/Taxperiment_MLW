@@ -625,7 +625,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Version, Changelog" />
     <MESSAGE value="First Page of new Questionnaire. Improved DB logic, Query handling." />
     <MESSAGE value="JS Refactor. Recall Questionnaire Page." />
     <MESSAGE value="Finished Questionnaire." />
@@ -650,7 +649,8 @@
     <MESSAGE value="Button Labels." />
     <MESSAGE value="Trello Issues Mostly done" />
     <MESSAGE value="Knowledge: Question is &quot;optional&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Knowledge: Question is &quot;optional&quot;" />
+    <MESSAGE value="Knowledge Fix: Fixed issue where answer count was incorrect." />
+    <option name="LAST_COMMIT_MESSAGE" value="Knowledge Fix: Fixed issue where answer count was incorrect." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
