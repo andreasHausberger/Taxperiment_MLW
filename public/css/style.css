@@ -105,6 +105,11 @@ Intro - Risk Aversion questionnaire
     border: 1px solid black;
 }
 
+.comprehensionTable tbody tr td {
+    height: 80px;
+    width: 80px;
+}
+
 .riskAversionTable thead td {
     background-color: gray;
     height: 32px;
@@ -312,7 +317,7 @@ Audit Page
 }
 
 .radioItemFlex input {
-    margin-right: 10px;
+    margin: 15px 10px;
 }
 
 .mlwTable tr td {

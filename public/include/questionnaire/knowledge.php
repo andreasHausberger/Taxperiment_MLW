@@ -1,12 +1,7 @@
 <?php
 $numberOfQuestions = 9;
 
-$kno1 = postParamValue("kno1");
-$kno2 = postParamValue("kno2");
 
-if ($kno1 == "2" && $kno2 == "") {
-    $_POST['kno2'] = " ";
-}
 
 if(sizeof($_POST) >= $numberOfQuestions) {
 
@@ -84,7 +79,7 @@ if(sizeof($_POST) >= $numberOfQuestions) {
             2. Please try to explain in your own words what an expected value is!
         </p>
         <div>
-            <input type="text" id="kno_input" name="kno2" style="width: 200px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
+            <input type="text" id="kno_input" name="kno2" style="width: 350px; height: 40px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
         </div>
     </div>
     <p>

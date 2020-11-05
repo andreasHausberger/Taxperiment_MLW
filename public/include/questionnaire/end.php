@@ -63,8 +63,8 @@ $pounds = round($income / 400, 2);
 <p>
     Round <?php echo $randomRound ?> was chosen randomly.
     In this round you have earned an income of <?php echo $income ?> ECU.
-    That means that you will receive £ <?php echo $pounds ?> (400 ECU = £1) for this round. .
-    Including your showup fee of £ 1, you will be paid a total of £ <?php echo ($pounds + 1) ?>.
+    That means that you will receive £ <?php echo $pounds ?> (400 ECU = £1) for this round.
+    Including your showup fee of £3.00, you will be paid a total of £ <?php echo ($pounds + 3) ?>.
 </p>
 <br>
 <p>
