@@ -67,7 +67,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. Do you know what an expected value is?
+        </b>
         </p>
         <div>
             <div class="radioItemFlex" >
@@ -81,19 +83,25 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             2. Please try to explain in your own words what an expected value is!
+        </b>
         </p>
         <div>
             <input type="text" id="kno_input" name="kno2" style="width: 200px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
         </div>
     </div>
     <p>
+    <b>
         How much do you agree with the following statements about the expected value information? <br>
         (1 = Fully disagree - 7 = Fully agree)
+    </b>
     </p>
     <div class="item">
         <p class="questionText">
+        <b>
             3. It was difficult to understand the expected value information.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno3"); ?>
@@ -101,7 +109,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             4. I based my decision purely on the expected value information.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno4"); ?>
@@ -109,8 +119,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             5. I was trying to make the best rational decision, based on the expected value information.
-
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno5"); ?>
@@ -118,7 +129,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             6. It was difficult to understand the expected value information.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno6"); ?>
@@ -126,8 +139,10 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             7. My moral principles concerning tax paying were more important to me than making decisions based on the
             expected value information.
+        </b>
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -136,7 +151,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             8. The expected value is negligible as a guideline for tax decisions.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno8"); ?>
@@ -144,8 +161,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             9. I did not let myself be influenced by the expected value in my decision.
-
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "kno9"); ?>

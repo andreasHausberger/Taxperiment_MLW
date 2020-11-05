@@ -4,7 +4,7 @@
     <hr style="width: 100%;">
     <p>
         Martin Müller, <br>
-        Universität Wien – 2020
+        University of Vienna – 2020
     </p>
 </div>
 </body>
