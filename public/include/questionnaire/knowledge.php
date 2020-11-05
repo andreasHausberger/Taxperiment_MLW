@@ -1,6 +1,13 @@
 <?php
 $numberOfQuestions = 9;
 
+$kno1 = postParamValue("kno1");
+$kno2 = postParamValue("kno2");
+
+if ($kno1 == "2" && $kno2 == "") {
+    $_POST['kno2'] = " ";
+}
+
 if(sizeof($_POST) >= $numberOfQuestions) {
 
     $participant = $_GET['pid'];
@@ -44,15 +51,14 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     const doesNotKnow = false;
 
     function conditionalAddToArray(value, caller) {
+        addToArray(value);
+        addToArray('kno2');
         if (caller == "yes") {
             document.getElementById("kno_input").disabled = false;
         }
         else if (caller == "no") {
-            addToArray(value);
-            addToArray('kno2');
             document.getElementById("kno_input").disabled = true;
         }
-
     }
 
 </script>
