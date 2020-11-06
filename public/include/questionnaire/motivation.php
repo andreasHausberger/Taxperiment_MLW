@@ -32,7 +32,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
         $host = $_SERVER['HTTP_HOST'];
 
-        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=7");
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=8");
     }
 }
 
@@ -51,7 +51,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
 <form method="post">
     <div class="item">
-        <p class="questionText"> 1. Paying tax is the right thing to do.
+        <p class="questionText"> <b> 1. Paying tax is the right thing to do. </b>
 
         </p>
         <div class="radioDisplayHorizontal">
@@ -60,7 +60,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
         </div>
     </div>
     <div class="item">
-        <p class="questionText"> 2. Paying my tax ultimately advantages everyone.
+        <p class="questionText"> <b> 2. Paying my tax ultimately advantages everyone. </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "mot2"); ?>
@@ -69,7 +69,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 3. I think of tax paying as helping the government do worthwhile things.
+        <p class="questionText"> <b> 3. I think of tax paying as helping the government do worthwhile things. </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "mot3"); ?>
@@ -78,7 +78,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 4. I like to talk with friends about the gaps and loopholes in the tax system.
+        <p class="questionText"> <b> 4. I like to talk with friends about the gaps and loopholes in the tax system. </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "mot4"); ?>
@@ -87,7 +87,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 5. I enjoy exploring the gaps and barriers of tax law.
+        <p class="questionText"> <b> 5. I enjoy exploring the gaps and barriers of tax law. </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "mot5"); ?>
@@ -96,7 +96,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> 6. I find pleasure in finding a way to minimize my tax payments.
+        <p class="questionText"> <b> 6. I find pleasure in finding a way to minimize my tax payments. </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "mot6"); ?>

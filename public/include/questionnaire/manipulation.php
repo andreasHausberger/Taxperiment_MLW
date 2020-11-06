@@ -59,21 +59,22 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 </script>
 
 <div>
-    <h3>Info</h3>
     <p>To conclude the study, you will be asked some questions about your personal opinions and impressions of the study.
-    </p>
+    </p><br><br>
 </div>
 
-<h3>Questions
-</h3>
 <p>
+<b>
     Think back to the instructions of the second part and answer whether the following statements are true or not.
+</b>
 </p>
 
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. The safe outcome of the tax decision in the experiment indicates the remaining amount after paying the tax.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man1", $array); ?>
@@ -81,7 +82,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             2. The audit probability indicates the probability of a tax inspection taking place in the respective round.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man2", $array); ?>
@@ -89,7 +92,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             3. The expected value of evasion represents the average outcome of choosing tax evasion.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man3", $array); ?>
@@ -97,7 +102,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             4. If the tax rate is 50% on an income of 1000 ECU, the resulting tax is 300 ECU.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man4", $array); ?>
@@ -105,8 +112,10 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             5. The comparison of the safe outcome with the expected value of choosing evasion is helpful
             if a purely mathematically optimal decision is to be made.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man5", $array); ?>
@@ -114,8 +123,10 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             6.The expected value of choosing evasion describes exactly how much money you have left in the
             respective round when you do not pay the tax.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man6", $array); ?>
@@ -123,7 +134,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             7. The fine consists of paying back the unpaid tax plus an additional fine.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man7", $array); ?>
@@ -131,8 +144,10 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             8. If the safe outcome is lower than the expected value of choosing evasion, from a mathematical point of
             view it pays off to pay the tax.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man8", $array); ?>

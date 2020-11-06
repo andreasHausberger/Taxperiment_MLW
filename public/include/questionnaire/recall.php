@@ -30,7 +30,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. Which tax rates were used over the repeated decisions in the second part?
+        </b>
         </p>
         <div>
             <?php echo createLikert(3, "rec1", ["25% and 40%", "20% and 30%", "10% and 20%"]); ?>
@@ -39,7 +41,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
     <div class="item">
         <p class="questionText">
+        <b>
             2. Which audit probabilities were used over the repeated decisions in the second part?
+        </b>
         </p>
         <div>
             <?php echo createLikert(3, "rec2", ["5%, 15%, and 25%", "10%, 30%, and 50%", "10%, 20%, and 30%"]); ?>

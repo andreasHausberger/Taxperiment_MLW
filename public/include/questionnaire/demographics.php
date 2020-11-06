@@ -30,7 +30,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
         $host = $_SERVER['HTTP_HOST'];
 
-        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=8");
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=9");
     }
 
 
@@ -47,7 +47,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 <form method="post">
 
     <div class="item">
-        <p class="questionText"> What is your age in years?
+        <p class="questionText"> <b> What is your age in years? </b>
         </p>
         <div class="radioDisplayHorizontal">
             <input type="text" name="age" onblur="addToArray('age')">
@@ -56,7 +56,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> What is your gender?
+        <p class="questionText"> <b> What is your gender? </b>
         </p>
         <div class="radioDisplayHorizontal">
             <input type="radio" name="gender" value="0" onclick="addToArray('gender')"> <p>Male</p>
@@ -67,7 +67,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> Have you participated in a study on tax compliance before?
+        <p class="questionText"> <b> Have you participated in a study on tax compliance before? </b>
         </p>
         <div class="radioDisplayHorizontal">
             <input type="radio" name="participation" value="0" onclick="addToArray('participation')"> <p>Yes</p>
@@ -76,8 +76,8 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> Did you carefully read all the information that was given? (1: No, not at all; 7: Yes, completely)
-
+        <p class="questionText"> <b> Did you carefully read all the information that was given? </b> <br> 
+        (1: No, not at all; 7: Yes, completely)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "care"); ?>
@@ -86,8 +86,8 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     </div>
 
     <div class="item">
-        <p class="questionText"> How would you rate your English language skills? (1: Very Low; 7: Very High)
-
+        <p class="questionText"> <b> How would you rate your English language skills? </b> <br> 
+        (1: Very Low; 7: Very High)
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "english"); ?>

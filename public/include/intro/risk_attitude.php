@@ -1,7 +1,5 @@
 
 <div class="pageContainer">
-    <h2>Risk Attitude (self-reported)</h2>
-
     <p class="tutorialText">
         How do you see yourself: are you generally a person who is fully prepared to take risks or do you try to avoid
         taking risks? <br>

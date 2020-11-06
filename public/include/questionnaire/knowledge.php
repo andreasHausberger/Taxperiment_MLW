@@ -1,12 +1,7 @@
 <?php
-$numberOfQuestions = 9;
+$numberOfQuestions = 1;
 
-$kno1 = postParamValue("kno1");
-$kno2 = postParamValue("kno2");
 
-if ($kno1 == "2" && $kno2 == "") {
-    $_POST['kno2'] = " ";
-}
 
 if(sizeof($_POST) >= $numberOfQuestions) {
 
@@ -37,16 +32,18 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     if($db->insertQuery($query)) {
         console_log("EXP data inserted successfully!");
 
+        $nextPage = $kno1 == "1" ? 4 : 5;
+
         $host = $_SERVER['HTTP_HOST'];
 
-        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=4");
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=$nextPage");
     }
 }
 ?>
 
 
 <script>
-    const numberOfQuestions = 9;
+    const numberOfQuestions = 1;
 
     const doesNotKnow = false;
 
@@ -67,7 +64,9 @@ if(sizeof($_POST) >= $numberOfQuestions) {
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. Do you know what an expected value is?
+        </b>
         </p>
         <div>
             <div class="radioItemFlex" >
@@ -81,74 +80,12 @@ if(sizeof($_POST) >= $numberOfQuestions) {
     </div>
     <div class="item">
         <p class="questionText">
+        <b>
             2. Please try to explain in your own words what an expected value is!
+        </b>
         </p>
         <div>
-            <input type="text" id="kno_input" name="kno2" style="width: 200px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
-        </div>
-    </div>
-    <p>
-        How much do you agree with the following statements about the expected value information? <br>
-        (1 = Fully disagree - 7 = Fully agree)
-    </p>
-    <div class="item">
-        <p class="questionText">
-            3. It was difficult to understand the expected value information.
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno3"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            4. I based my decision purely on the expected value information.
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno4"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            5. I was trying to make the best rational decision, based on the expected value information.
-
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno5"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            6. It was difficult to understand the expected value information.
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno6"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            7. My moral principles concerning tax paying were more important to me than making decisions based on the
-            expected value information.
-
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno7"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            8. The expected value is negligible as a guideline for tax decisions.
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno8"); ?>
-        </div>
-    </div>
-    <div class="item">
-        <p class="questionText">
-            9. I did not let myself be influenced by the expected value in my decision.
-
-        </p>
-        <div class="radioDisplayHorizontal">
-            <?php echo createLikert(7, "kno9"); ?>
+            <input type="text" id="kno_input" name="kno2" style="width: 350px; height: 40px; margin-left: 12px;" onblur="addToArray('kno2')" value=" ">
         </div>
     </div>
     <input id="submitButton" type="submit" value="Next Page" disabled="disabled">

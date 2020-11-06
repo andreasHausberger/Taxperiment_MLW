@@ -1,9 +1,8 @@
 <div class="siteContainer">
     <div class="contentContainer">
-        <h2>Exercise</h2>
         <p class="tutorialText">
             The examples are now finished. On the next page the actual study begins. Information on earned income,
-            tax rate, audit probability, and fine for each round will be displayed with MouselabWEB. This means that
+            tax due, audit probability, and fine for each round will be displayed with MouselabWEB. This means that
             the information is hidden in boxes. These boxes are labeled. To access the respective information, you
             have to move the mouse pointer over the box on the screen. As long as the pointer is over the box, it will
             display the information. Whenever the pointer moves out of the box, the box closes and the information is

@@ -8,15 +8,15 @@
 
 ?>
 
-<p>Staging Version 1.2.7 (November 2020)</p>
+<p>Staging Version 1.2.8 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>New SVGs</li>
-    <li>Tutorial now properly saves data</li>
-    <li>Trello TODOs are implemented</li>
-    <li>Various Bugfixes</li>
-    <li>Prolific Data is saved properly.</li>
+    <li>SVGs are centered, zoomed in</li>
+    <li>No more Presentation Randomization between rounds.</li>
+    <li>Post Exp. Knowledge pages: Now 2 pages, second one is conditional on first one.</li>
+    <li>Several Fixes and Improvements (Trello List)</li>
+    <li>Changes by Martin (04.11., 21:18)</li>
 </ul>
 
 <br>
@@ -24,6 +24,7 @@
 
 <ul>
     <li>Resolution Capture Review</li>
+    <li>Make Tables downloadable as .csv</li>
 </ul>
 
 <div>

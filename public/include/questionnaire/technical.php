@@ -19,7 +19,7 @@
 
             $host = $_SERVER['HTTP_HOST'];
 
-            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=9");
+            header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=10");
         }
     }
 ?>
@@ -32,7 +32,9 @@
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. Which device did you use to answer the questions?
+        </b>
         </p>
         <div>
             <?php echo createLikert(4, "tech1", ["Computer", "Laptop", "Phone", "Tablet"]); ?>
@@ -41,7 +43,9 @@
 
     <div class="item">
         <p class="questionText">
+        <b>
             2. Which input device did you use to answer the questions?
+        </b>
         </p>
         <div>
             <?php echo createLikert(4, "tech2", ["Computer Mouse", "Trackpad", "Touchscreen (Phone, Tablet)", "Stylus Pen (Apple Pencil, Wacom etc.)"]); ?>
@@ -50,7 +54,9 @@
 
     <div class="item" style="margin-bottom: 16px">
         <p class="questionText">
+        <b>
             3. Did you have any technical difficulties? (If yes, please explain in the following field).
+        </b>
         </p>
         <div>
             <input type="text" name="trouble">

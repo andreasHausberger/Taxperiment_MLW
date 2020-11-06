@@ -33,10 +33,12 @@ $(function() {
 
 function displayContentForSignContainer(condition, randomCondition, angle, mouseIsOver = false) {
     if (mouseIsOver) {
+        $('#signContainerOuter').hide();
         showRotatedIndicator(angle);
     }
     else
     {
+        $('#signContainerOuter').show();
         $('#signContainerInner').hide();
     }
 }
