@@ -130,7 +130,7 @@ $fineRateBox = "<!--cell b1(tag:b1)-->
                 <!--end cell-->";
 
 
-$mouselabBoxArray = array(
+    $mouselabBoxArray = array(
     1 => array(
         "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
         "content" => "$incomeContent^$taxContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent"),

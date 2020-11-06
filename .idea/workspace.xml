@@ -36,14 +36,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Knowledge Fix: Fixed issue where answer count was incorrect.">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_comprehension.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_comprehension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/knowledge.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/knowledge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/exam.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/exam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/presentation_demo_group1.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/presentation_demo_group1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/exp_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/experiment/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/audit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -244,14 +241,7 @@
       <workItem from="1604426151668" duration="421000" />
       <workItem from="1604501704172" duration="10780000" />
       <workItem from="1604564420377" duration="2140000" />
-      <workItem from="1604575364767" duration="3358000" />
-    </task>
-    <task id="LOCAL-00133" summary="Hotfix: Fixed issue where Exp Config would crash.">
-      <created>1597778056972</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1597778056972</updated>
+      <workItem from="1604575364767" duration="5103000" />
     </task>
     <task id="LOCAL-00134" summary="Hotfix: Fixed issue where Exp Config would crash.">
       <created>1597778192751</created>
@@ -589,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604570027910</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Some Trello Fixes.">
+      <created>1604592343093</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1604592343094</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +628,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="First Page of new Questionnaire. Improved DB logic, Query handling." />
     <MESSAGE value="JS Refactor. Recall Questionnaire Page." />
     <MESSAGE value="Finished Questionnaire." />
     <MESSAGE value="Version, Changelist." />
@@ -656,7 +652,8 @@
     <MESSAGE value="Trello Issues Mostly done" />
     <MESSAGE value="Knowledge: Question is &quot;optional&quot;" />
     <MESSAGE value="Knowledge Fix: Fixed issue where answer count was incorrect." />
-    <option name="LAST_COMMIT_MESSAGE" value="Knowledge Fix: Fixed issue where answer count was incorrect." />
+    <MESSAGE value="Some Trello Fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some Trello Fixes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1528" y="-151" key="#CLI_Interpreters" timestamp="1596183359891">
@@ -688,11 +685,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="673" y="281" key="#debug/-3008.-367.3008.1605/0.23.1920.1177@0.23.1920.1177" timestamp="1596183321543" />
-    <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2" timestamp="1604570043616">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="-2313" y="-168" width="899" height="1105" key="CommitChangelistDialog2" timestamp="1604592342811">
+      <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604570043616" />
-    <state x="-2313" y="-168" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604242840071" />
+    <state x="-2313" y="-168" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604592342811" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1604426426776" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1603123867642" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
