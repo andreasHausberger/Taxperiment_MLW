@@ -3,7 +3,7 @@
 <div class="pageContainer">
 
     <div style="text-align: center; margin: 25px;">
-        <table class="riskAversionTable" style="margin: auto">
+        <table class="riskAversionTable comprehensionTable" style="margin: auto">
             <tr>
                 <td> Income <br> 1000 ECU</td>
                 <td> Tax Rate <br> 300 (30%)</td>

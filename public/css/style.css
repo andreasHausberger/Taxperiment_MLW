@@ -28,7 +28,8 @@ label {
 }
 
 .svgContainer {
-    transform: scale(0.8);
+    width: 100%;
+    transform: scale(1.15);
     margin-bottom: 32px;
 }
 
@@ -103,6 +104,11 @@ Intro - Risk Aversion questionnaire
 
 .riskAversionTable {
     border: 1px solid black;
+}
+
+.comprehensionTable tbody tr td {
+    height: 80px;
+    width: 80px;
 }
 
 .riskAversionTable thead td {
@@ -312,7 +318,7 @@ Audit Page
 }
 
 .radioItemFlex input {
-    margin-right: 10px;
+    margin: 15px 10px;
 }
 
 .mlwTable tr td {

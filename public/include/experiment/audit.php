@@ -4,7 +4,7 @@ $randomisedRoundOrderArray = json_decode($roundOrder);
 $randomisedConditionArray = json_decode($conditionOrder);
 $currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
-$currentCondition = $randomisedConditionArray[$currentRoundIndex];
+$currentCondition = $randomisedConditionArray[0];
 
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
