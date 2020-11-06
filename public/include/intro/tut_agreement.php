@@ -24,7 +24,7 @@
             Yes, I confirm and want to participate.
             <br>
             <input type="radio" name="sampling" value="consent-no" onclick="displayMessage()">
-            No, I Do not want to participate.
+            No, I do not want to participate.
         </form>
         <br>
 

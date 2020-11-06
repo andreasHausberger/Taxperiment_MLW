@@ -33,15 +33,18 @@
 <script src="/public/js/questionnaire.js"></script>
 <div>
     <p>
+    <b>
         Please think back of the process of acquiring information to pay or not pay tax. Please state your agreement
-        with the following statements. <br>
+        with the following statements. </b><br>
         (1 = Fully Disagree; 5 = Fully Agree)
     </p>
 </div>
 <form method="post">
     <div class="item">
         <p class="questionText">
+        <b>
             1. The process was annoying.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "eff1"); ?>
@@ -50,7 +53,9 @@
 
     <div class="item">
         <p class="questionText">
+        <b>
             2. The process was difficult.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "eff2"); ?>
@@ -59,7 +64,9 @@
 
     <div class="item">
         <p class="questionText">
+        <b>
             3. I had to concentrate a lot during this process.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "eff3"); ?>
@@ -68,7 +75,9 @@
 
     <div class="item">
         <p class="questionText">
+        <b>
             4. The process was tiring.
+        </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(5, "eff4"); ?>

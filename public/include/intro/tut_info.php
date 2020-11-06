@@ -7,15 +7,15 @@
         Dear Participant,
     </p>
     <p class="tutorialText">
-        Thank you for your interest in this study! <b>It is important that you only participate in this study using a
-        laptop or desktop computer. Some of the questions will not work on a smartphone or tablet device. Note that we
+        thank you for your interest in this study! <b>It is important that you only participate in this study using a
+        laptop or desktop computer. Some of the questions will not work properly on a smartphone or tablet device. Note that we
             will only pay participants who did use a laptop or desktop computer.</b>
     </p>
 
     <p class="tutorialText">
         The study will take about 30 minutes to complete. In return for your participation, you will receive a
-        guaranteed payment of £ 3.00. Additionally, you will receive a payment that depends on your decisions in the
-        study. This additional payment can be as high as £ 6.00. This study does not include any deception. This means
+        guaranteed payment of £3.00. Additionally, you will receive a payment that depends on your decisions in the
+        study. This additional payment can be as high as £6.00. This study does not include any deception. This means
         that you will not be presented with ANY false information.
     </p>
 
@@ -29,7 +29,7 @@
 
     <p class="tutorialText">
         For each of the two parts, one of the financial decisions you take will be randomly drawn, converted from ECU to
-        pounds, and paid to you as a bonus in addition to the guaranteed £ 3.00. You will receive more detailed
+        pounds, and paid to you as a bonus in addition to the guaranteed £3.00. You will receive more detailed
         information about this procedure in the following.
     </p>
 
