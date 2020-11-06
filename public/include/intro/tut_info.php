@@ -8,15 +8,16 @@
     </p>
     <p class="tutorialText">
         thank you for your interest in this study! <b>It is important that you only participate in this study using a
-        laptop or desktop computer. Some of the questions will not work properly on a smartphone or tablet device. Note that we
-            will only pay participants who did use a laptop or desktop computer.</b>
+        laptop or desktop computer. Some of the questions will not work properly on a smartphone or tablet device. 
+        Note that we will only pay participants who did use a laptop or desktop computer.</b>
     </p>
 
     <p class="tutorialText">
         The study will take about 30 minutes to complete. In return for your participation, you will receive a
         guaranteed payment of £3.00. Additionally, you will receive a payment that depends on your decisions in the
-        study. This additional payment can be as high as £6.00. This study does not include any deception. This means
-        that you will not be presented with ANY false information.
+        study. This additional payment can be as high as £5.10. Thus, at the end of the study your total payment can 
+        be as high as £8.10. This study does not include any deception. This means that you will not be presented 
+        with ANY false information.
     </p>
 
     <p class="tutorialText">
@@ -43,6 +44,8 @@
         All collected data is anonymous. There is no record that links the collected data to any personal information
         from which you could be identified (e.g., your name, address, email, etc.). The anonymized data will be stored
         in an open online repository for at least 10 years.
+    </p>
+    <p class="tutorialText">
         If you have any further questions or if you want to receive additional information, please contact the
         researcher: Martin Müller via <a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>.
     </p>

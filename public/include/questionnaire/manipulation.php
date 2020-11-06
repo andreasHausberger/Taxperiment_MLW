@@ -124,7 +124,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            6.The expected value of choosing evasion describes exactly how much money you have left in the
+            6. The expected value of choosing evasion describes exactly how much money you have left in the
             respective round when you do not pay the tax.
         </b>
         </p>
