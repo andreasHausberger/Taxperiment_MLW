@@ -27,12 +27,13 @@ $pages = array(
     1 => "manipulation.php",
     2 => "recall.php",
     3 => "knowledge.php",
-    4 => "effort.php",
-    5 => "numeracy.php",
-    6 => "motivation.php",
-    7 => "demographics.php",
-    8 => "technical.php",
-    9 => "end.php"
+    4 => "knowledge2.php",
+    5 => "effort.php",
+    6 => "numeracy.php",
+    7 => "motivation.php",
+    8 => "demographics.php",
+    9 => "technical.php",
+    10 => "end.php"
 );
 
 $page = $pages[$index];
