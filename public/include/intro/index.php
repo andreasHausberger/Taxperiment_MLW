@@ -9,6 +9,7 @@
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/RedirectHelper.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/templateConfig.php");
 $db = new Database();
 $riskQB = new QueryBuilder('risk_aversion');
 

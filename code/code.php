@@ -52,3 +52,16 @@ if (!function_exists("saveRiskSelfAssessment")) {
 
     }
 }
+
+if (!function_exists("evaluateRiskTask")) {
+    function evaluateRiskTask($paraProbability, $paraSuccessReward, $paraFailureReward) {
+        $randomValue = rand(1, 100);
+
+        if ($randomValue <= $paraProbability) {
+            return $paraSuccessReward;
+        }
+        else {
+            return $paraFailureReward;
+        }
+    }
+}
