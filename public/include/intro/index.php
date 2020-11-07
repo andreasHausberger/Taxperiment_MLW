@@ -9,7 +9,6 @@
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/RedirectHelper.php");
-require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/templateConfig.php");
 $db = new Database();
 $riskQB = new QueryBuilder('risk_aversion');
 
@@ -44,7 +43,7 @@ if ($action == "save_risk_self") {
 
     $insertID = $helper->saveRiskSelfAssessment($tempPostArray);
 }
-if ($action == "save_questionnaire" && $index === "6") {
+if ($action == "save_questionnaire" && $index === "7") {
     //handle save questionnaire
     $helper = new RedirectHelper($db, $riskQB);
     $tempPostArray = $_POST;

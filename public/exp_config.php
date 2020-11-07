@@ -23,7 +23,8 @@ if (!isset($connection)) {
 }
 
 $subjectName = getParamValue("sname");
-$participantID = $db->insertQuery("INSERT INTO participant (name) VALUES (?)", "s", $subjectName);
+$participantResult = $db->selectQuery("SELECT id FROM participant WHERE name = ?", "s", $subjectName);
+$participantID = $participantResult["id"];
 
 $experimentID = $db->insertQuery("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type) VALUES (?, ?, ?, ?, ?, ?)", "iissss", ...[$condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent]);
 

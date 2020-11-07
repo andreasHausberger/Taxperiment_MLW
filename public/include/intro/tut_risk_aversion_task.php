@@ -1,3 +1,7 @@
+<?php
+require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/templateConfig.php");
+
+?>
 <div class="siteContainer">
     <div class="contentContainer">
         <h2>First Part</h2>

@@ -8,12 +8,21 @@
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/code/Database.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/code/QueryBuilder.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/code/RedirectHelper.php");
 
 $db = new Database();
 $qb = new QueryBuilder("questionnaire");
+$redirectHelper = new RedirectHelper($db, $qb);
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
-$participant = isset($_GET['pid']) ? $_GET['pid'] : "";
+$action = getParamValue("action");
+$participant = getParamValue("pid");
+
+if($action == "create_questionnaire" && $index === "1") {
+    if ($participant != "") {
+        $redirectHelper->createQuestionnaire($participant);
+    }
+}
 
 $experimentId = $_GET["expid"];
 
