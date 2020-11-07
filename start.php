@@ -8,15 +8,12 @@
 
 ?>
 
-<p>Staging Version 1.2.8 (November 2020)</p>
+<p>Staging Version 1.2.9 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>SVGs are centered, zoomed in</li>
-    <li>No more Presentation Randomization between rounds.</li>
-    <li>Post Exp. Knowledge pages: Now 2 pages, second one is conditional on first one.</li>
-    <li>Several Fixes and Improvements (Trello List)</li>
-    <li>Changes by Martin (04.11., 21:18)</li>
+   <li>Risk Task Round is now randomly chosen and selected for payment. </li>
+   <li>Fixed a bug where experiment data was saved as duplicate</li>
 </ul>
 
 <br>
