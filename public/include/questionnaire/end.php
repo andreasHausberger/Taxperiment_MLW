@@ -147,5 +147,5 @@ else {
 }?>
 <br>
 <br>
-<a href="#">Please click the link to continue. </a>
+<a href="https://app.prolific.co/submissions/complete?cc=4B5739EA">Please click the link to continue. </a>
 
