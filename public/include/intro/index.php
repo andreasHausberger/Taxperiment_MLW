@@ -20,9 +20,10 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 
 $action = getParamValue("action");
-$prolificPID = getParamValue("PROLIFIC_PID");
-$studyID = getParamValue("STUDY_ID");
-$sessionID = getParamValue("SESSION_ID");
+$prolificPID = getParamValue("prolificPID");
+$studyID = getParamValue("studyID");
+$sessionID = getParamValue("sessionID");
+
 
 if($action == "create_participant" && $index === "1") {
     $helper = new RedirectHelper($db, new QueryBuilder('participant'));
@@ -89,7 +90,7 @@ else {
         require_once ("../../templates/header.php");
 
         include($page);
-        include("../../templates/redirect.php");
+//        include("../../templates/redirect.php");
 
         require_once ("../../templates/footer.php");
     }
