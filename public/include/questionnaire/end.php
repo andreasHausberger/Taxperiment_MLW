@@ -114,28 +114,33 @@ else {
 
 <br>
 
-<b> This is the last page. Thank you for your participation in this experiment.
+<b> This is the last page. Thank you for your participation in this study.
 </b>
 
+<p>
+    For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
+    You choose Option x and earned <?php echo $message ?> ECU. 
+    This amounts to £<?php echo $riskPayment ?> (<?php echo $ecuToGBP ?> ECU = £1.00).
+<br>   
+    For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
+    In this round, you earned a net income of XXX ECU. 
+    This amounts to £<?php echo $pounds ?> (<?php echo $ecuToGBP ?> ECU = £1.00). 
+</p>
+
+<p>
+  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($pounds + $riskPayment + $showUpFee) ?>.  
+</p>
+
+<p>
+The purpose of this study was to investigate how factors like income, tax due, audit probability, fine, 
+or expected value information influence tax honesty and which information is attended in making the decision 
+whether to pay the tax due or to evade taxes.
+<br> 
+If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="martin.mueller82@univie.ac.at">)
+
+</p>
+   
 <br>
-<p>
-    Round <?php echo $randomRound ?> was chosen randomly.
-    In this round you have earned an income of <?php echo $income ?> ECU.
-    That means that you will receive £<?php echo $pounds ?> (<?php echo $ecuToGBP ?> ECU = £1.00) for this round. .
-</p>
-
-<p>
-    For the Risk Task, Round <?php echo $randomRiskRound ?> was chosen randomly. <br>
-    <?php echo $message ?>
-</p>
-<p>
-    Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($pounds + $riskPayment + $showUpFee) ?>.
-</p>
-<br>
-<p>
-
-</p>
-
 <?php
 if (!$updated) {
     echo "<b style=\"color: darkred\">
@@ -147,5 +152,5 @@ else {
 }?>
 <br>
 <br>
-<a href="https://app.prolific.co/submissions/complete?cc=4B5739EA">Please click the link to continue. </a>
+<a href="https://app.prolific.co/submissions/complete?cc=4B5739EA">Please click here to return to prolific. </a>
 
