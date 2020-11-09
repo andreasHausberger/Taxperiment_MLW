@@ -130,7 +130,7 @@ $fineRateBox = "<!--cell b1(tag:b1)-->
                 <!--end cell-->";
 
 
-    $mouselabBoxArray = array(
+$mouselabBoxArray = array(
     1 => array(
         "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
         "content" => "$incomeContent^$taxContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent"),
@@ -159,11 +159,11 @@ $fineRateBox = "<!--cell b1(tag:b1)-->
         "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent"),
 );
 
+
 $currentBox = $mouselabBoxArray[$currentCondition];
 
 $mlwFieldArray = [$incomeBox, $taxRateBox, $fineRateBox, $auditProbabilityBox];
 
-//$mlwFields = getRandomizedMLWFields([$incomeBox, $taxRateBox], [$fineRateBox, $auditProbabilityBox]);
 
 function getRandomizedMLWFields($paraRow1, $paraRow2)
 {
@@ -181,3 +181,118 @@ function getRandomizedMLWFields($paraRow1, $paraRow2)
     </tr>
     ";
 }
+
+//Section: Risk Tasks
+
+$riskTaskArray = [
+    [
+        "rowName" => "row_1",
+        "probA1" => "10",
+        "ecuA1" => "200",
+        "probA2" => "90",
+        "ecuA2" => "160",
+        "probB1" => "10",
+        "ecuB1" => "385",
+        "probB2" => "90",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_2",
+        "probA1" => "20",
+        "ecuA1" => "200",
+        "probA2" => "80",
+        "ecuA2" => "160",
+        "probB1" => "20",
+        "ecuB1" => "385",
+        "probB2" => "80",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_3",
+        "probA1" => "30",
+        "ecuA1" => "200",
+        "probA2" => "70",
+        "ecuA2" => "160",
+        "probB1" => "30",
+        "ecuB1" => "385",
+        "probB2" => "70",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_4",
+        "probA1" => "40",
+        "ecuA1" => "200",
+        "probA2" => "60",
+        "ecuA2" => "160",
+        "probB1" => "40",
+        "ecuB1" => "385",
+        "probB2" => "60",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_5",
+        "probA1" => "50",
+        "ecuA1" => "200",
+        "probA2" => "50",
+        "ecuA2" => "160",
+        "probB1" => "50",
+        "ecuB1" => "385",
+        "probB2" => "50",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_6",
+        "probA1" => "60",
+        "ecuA1" => "200",
+        "probA2" => "40",
+        "ecuA2" => "160",
+        "probB1" => "60",
+        "ecuB1" => "385",
+        "probB2" => "90",
+        "ecuB2" => "40",
+    ],
+    [
+        "rowName" => "row_7",
+        "probA1" => "70",
+        "ecuA1" => "200",
+        "probA2" => "30",
+        "ecuA2" => "160",
+        "probB1" => "70",
+        "ecuB1" => "385",
+        "probB2" => "30",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_8",
+        "probA1" => "80",
+        "ecuA1" => "200",
+        "probA2" => "20",
+        "ecuA2" => "160",
+        "probB1" => "80",
+        "ecuB1" => "385",
+        "probB2" => "90",
+        "ecuB2" => "20",
+    ],
+    [
+        "rowName" => "row_9",
+        "probA1" => "90",
+        "ecuA1" => "200",
+        "probA2" => "10",
+        "ecuA2" => "160",
+        "probB1" => "90",
+        "ecuB1" => "385",
+        "probB2" => "10",
+        "ecuB2" => "10",
+    ],
+    [
+        "rowName" => "row_10",
+        "probA1" => "100",
+        "ecuA1" => "200",
+        "probA2" => "0",
+        "ecuA2" => "160",
+        "probB1" => "100",
+        "ecuB1" => "385",
+        "probB2" => "0",
+        "ecuB2" => "10",
+    ],
+];

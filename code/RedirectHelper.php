@@ -69,6 +69,11 @@ class RedirectHelper {
         return false;
     }
 
+    function createQuestionnaire($paraID) {
+        return $this->database->insertQuery("INSERT INTO questionnaire (pid, created) VALUES (?, NOW())", "s", ...[$paraID]);
+
+    }
+
     private function verifyPostArray($paraPostArray, $paraSize = 0) {
         return !is_null($paraPostArray) && sizeof($paraPostArray) >= $paraSize;
     }

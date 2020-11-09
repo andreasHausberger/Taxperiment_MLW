@@ -68,14 +68,19 @@ class Database {
 
         if ($paramTypes != null && $paramVars != null) {
             $preparedQuery = $this->connection->prepare($query);
-            $preparedQuery->bind_param($paramTypes, ...$paramVars);
 
-            if($preparedQuery->execute()) {
-                $insertID = $preparedQuery->insert_id;
-                return $insertID;
+            if($preparedQuery) {
+                $preparedQuery->bind_param($paramTypes, ...$paramVars);
+
+                if ($preparedQuery->execute()) {
+                    $insertID = $preparedQuery->insert_id;
+                    return $insertID;
+                } else {
+                    $this->displayError($preparedQuery->error, $query);
+                }
             }
             else {
-                $this->displayError($preparedQuery->error, $query);
+                $this->displayError("Could not prepare query", $query);
             }
         }
         else {
@@ -93,7 +98,7 @@ class Database {
         }
 
         $this->close();
-        $this->displayError("Could not complete insert or update: No rows affected!", $query);
+        $this->displayError("DB Error: Could not complete insert or update!", $query);
         return false;
     }
 

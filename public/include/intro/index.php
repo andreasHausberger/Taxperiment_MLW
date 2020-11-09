@@ -20,9 +20,9 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 
 $action = getParamValue("action");
-$prolificPID = getParamValue("prolificPID");
-$studyID = getParamValue("studyID");
-$sessionID = getParamValue("sessionID");
+$prolificPID = getParamValue("PROLIFIC_PID");
+$studyID = getParamValue("STUDY_ID");
+$sessionID = getParamValue("SESSION_ID");
 
 if($action == "create_participant" && $index === "1") {
     $helper = new RedirectHelper($db, new QueryBuilder('participant'));
@@ -43,7 +43,7 @@ if ($action == "save_risk_self") {
 
     $insertID = $helper->saveRiskSelfAssessment($tempPostArray);
 }
-if ($action == "save_questionnaire" && $index === "6") {
+if ($action == "save_questionnaire" && $index === "7") {
     //handle save questionnaire
     $helper = new RedirectHelper($db, $riskQB);
     $tempPostArray = $_POST;

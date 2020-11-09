@@ -10,6 +10,11 @@ include "../public/templates/header.php";
 include "./config.php";
 require_once "resources/code/code.php";
 
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/DatabaseHelper.php");
+
+$dbHelper = new DatabaseHelper(new Database());
+
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
 }
@@ -73,7 +78,6 @@ if (isset($connection)) {
 
     if (!fwrite($handle, $dataString)) {
         die("Cannot write to file ($filename)");
-        exit;
     }
 
     fclose($handle);
@@ -124,21 +128,21 @@ if (isset($connection)) {
 
 
     $expRoundQuery = "
-                    SELECT 
+                    SELECT
                         ero.id,
                         ero.exp_id as experiment_id,
                         ero.round_order,
                         ero.condition_order
                     FROM
-                        exp_round_order ero 
+                        exp_round_order ero
     ";
     $expRoundHeadersQuery = "SHOW columns FROM exp_round_order";
 
     $expRoundsFilename = "./tmp/expRounds.csv";
 
-    $expRoundsText = "Download Round Metadata (Round Order, Condition Order): ";
-
-    createDownloadLink($connection, $expRoundHeadersQuery, $expRoundQuery, $filename, $expRoundsText);
+    $dbHelper->createCSV("risk_aversion", "risk_aversion", "Risk Aversion");
+    $dbHelper->createCSV("exp_round", "exp_round", "Experiment Round Data");
+    $dbHelper->createCSV("exp_round_order", "exp_round_order", "Experiment Round Metadata");
 
 }
 else {

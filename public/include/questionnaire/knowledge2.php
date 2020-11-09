@@ -1,6 +1,8 @@
 <?php
 $numberOfQuestions = 7;
 
+global $db, $qb;
+
 if (sizeof($_POST) >= $numberOfQuestions) {
 
     $participant = $_GET['pid'];
@@ -13,13 +15,13 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     $kno8 = postParamValue("kno8");
     $kno9 = postParamValue("kno9");
 
-    $qb->buildInsert("kno3", $kno3);
-    $qb->buildInsert("kno4", $kno4);
-    $qb->buildInsert("kno5", $kno5);
-    $qb->buildInsert("kno6", $kno6);
-    $qb->buildInsert("kno7", $kno7);
-    $qb->buildInsert("kno8", $kno8);
-    $qb->buildInsert("kno9", $kno9);
+    $qb->addString("kno3", $kno3);
+    $qb->addString("kno4", $kno4);
+    $qb->addString("kno5", $kno5);
+    $qb->addString("kno6", $kno6);
+    $qb->addString("kno7", $kno7);
+    $qb->addString("kno8", $kno8);
+    $qb->addString("kno9", $kno9);
 
     $query = $qb->buildInsert("WHERE pid = $participant", true);
      if ($db->insertQuery($query)) {
@@ -27,7 +29,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
          $host = $_SERVER['HTTP_HOST'];
 
-         header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=6");
+         header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=5");
      }
 
 }
