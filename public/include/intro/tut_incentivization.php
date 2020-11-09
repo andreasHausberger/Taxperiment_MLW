@@ -16,10 +16,6 @@
             The currency (ECU) used in this study has a conversion rate of <b>350 ECU = £1.00</b>. At the end of the study,
             one decision per part will be randomly selected and paid in pounds as a bonus.
         </p>
-        <p class="tutorialText">
-            To summarise, you earn a participation fee of £3.00 and, if you complete the study, additional money based
-            on two decisions that you make during this study, for a maximum of <b>£5.10 in total</b>.
-        </p>
     </div>
 </div>
 

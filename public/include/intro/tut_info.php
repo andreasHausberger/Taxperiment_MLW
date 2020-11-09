@@ -29,7 +29,7 @@
     </p>
 
     <p class="tutorialText">
-        For each of the two parts, one of the financial decisions you take will be randomly drawn, converted from ECU to
+        For each of the two parts, one of the financial decisions you make will be randomly drawn, converted from ECU to
         pounds, and paid to you as a bonus in addition to the guaranteed £3.00. You will receive more detailed
         information about this procedure in the following.
     </p>
