@@ -8,12 +8,14 @@
 
 ?>
 
-<p>Staging Version 1.2.9 (November 2020)</p>
+<p>Staging Version 1.2.10 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-   <li>Risk Task Round is now randomly chosen and selected for payment. </li>
-   <li>Fixed a bug where experiment data was saved as duplicate</li>
+   <li>Improved Download-ability for Database Tables</li>
+   <li>Improvements on Prolific Data Saving</li>
+   <li>Lots of fixes. </li>
+   <li>Martin's Changes (as of 09.11.2020, 20:00)</li>
 </ul>
 
 <br>
@@ -21,7 +23,6 @@
 
 <ul>
     <li>Resolution Capture Review</li>
-    <li>Make Tables downloadable as .csv</li>
 </ul>
 
 <div>
