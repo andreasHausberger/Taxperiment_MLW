@@ -38,7 +38,10 @@ if (!isset($participant)) {
 $randomRound = rand(1, 18);
 
 
-if ($participant == 123) { $participant = 181; echo "<b style='color: red'> WARNING! You are in Test Mode. If you are a participant and see this message, please let the test supervisor know. </b>"; }
+if ($participant == 123) {
+    $participant = 181;
+    echo "<b style='color: #ff0000'> WARNING! You are in Test Mode. If you are a participant and see this message, 
+            please let the test supervisor know. Any values displayed here may not be accurate.</b>"; }
 $selectString = "SELECT pid, round, net_income FROM audit WHERE pid = $participant and round = $randomRound";
 
 $updateString = "UPDATE audit SET selected = 1  WHERE pid = $participant AND round = $randomRound";
@@ -56,7 +59,13 @@ $rows = $results->fetch_all();
 
 $income = $rows[0][2];
 
+if($participant == 181) {
+    $income = 500;
+}
+
 $pounds = round($income / $ecuToGBP, 2);
+
+
 
 //Risk Calculation
 $randomRiskRound = rand(1, 10);
@@ -66,9 +75,6 @@ $results = $db->selectQuery("SELECT " . $riskRoundName .  " FROM risk_aversion W
 
 if($results && sizeof($results) > 0) {
     $chosenAnswer = $results[$riskRoundName];
-
-    echo "Answer is $chosenAnswer, round is $randomRiskRound";
-
     $roundData = $riskTaskArray[$randomRiskRound - 1];
     $isError = false;
 
@@ -90,14 +96,8 @@ if($results && sizeof($results) > 0) {
 
     if (!$isError) {
         $riskResult = evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
-
         $riskPayment = round(doubleval($riskResult) / doubleval($ecuToGBP), 2);
-
-        $message = "In this round, you chose Answer $chosenAnswer. You have received $riskResult ECU ($probability in 100 chance). <br>";
-        $message .= "That means, for your decision, you will receive an additional £$riskPayment as payment.";
-
         $riskAversionQuery = $riskQueryBuilder->buildInsert("WHERE subject_id = ?", true);
-
         $db->insertQuery($riskAversionQuery, "i", ...[$participant]);
     }
 }
@@ -119,11 +119,11 @@ else {
 
 <p>
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
-    You choose Option x and earned <?php echo $message ?> ECU. 
+    You choose Option <?php echo $chosenAnswer ?> and earned <?php echo $riskResult ?> ECU.
     This amounts to £<?php echo $riskPayment ?> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
-    In this round, you earned a net income of XXX ECU. 
+    In this round, you earned a net income of <?php echo $income ?> ECU.
     This amounts to £<?php echo $pounds ?> (<?php echo $ecuToGBP ?> ECU = £1.00). 
 </p>
 
@@ -136,7 +136,7 @@ The purpose of this study was to investigate how factors like income, tax due, a
 or expected value information influence tax honesty and which information is attended in making the decision 
 whether to pay the tax due or to evade taxes.
 <br> 
-If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="martin.mueller82@univie.ac.at">)
+If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at"> martin.mueller82@univie.ac.at</a>)
 
 </p>
    
