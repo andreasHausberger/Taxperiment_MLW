@@ -20,9 +20,9 @@ $participant = isset($_GET['sname']) ? $_GET['sname'] : "";
 
 
 $action = getParamValue("action");
-$prolificPID = getParamValue("prolificPID");
-$studyID = getParamValue("studyID");
-$sessionID = getParamValue("sessionID");
+$prolificPID = getParamValue("PROLIFIC_PID");
+$studyID = getParamValue("STUDY_ID");
+$sessionID = getParamValue("SESSION_ID");
 
 if($action == "create_participant" && $index === "1") {
     $helper = new RedirectHelper($db, new QueryBuilder('participant'));

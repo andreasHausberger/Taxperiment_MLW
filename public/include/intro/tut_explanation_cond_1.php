@@ -16,7 +16,6 @@
         <p class="tutorialText">
             On the next few pages, you will receive detailed information about what these terms mean and how the
             information is presented so you can make your decision.
-
         </p>
     </div>
 </div>

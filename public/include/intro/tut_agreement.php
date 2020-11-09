@@ -13,7 +13,7 @@
             explanation.
         </p>
         <p class="tutorialText">
-            I give permission for the processing of the anonymous data as mentioned in the information letter and I give
+            I give permission for the processing of the anonymous data as mentioned on the previous screen letter and I give
             permission for the storing of the research data online for an undetermined period of time.
 
         </p>

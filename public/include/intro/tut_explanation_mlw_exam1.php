@@ -6,7 +6,9 @@
             the information is hidden in boxes. These boxes are labeled. To access the respective information, you
             have to move the mouse pointer over the box on the screen. As long as the pointer is over the box, it will
             display the information. Whenever the pointer moves out of the box, the box closes and the information is
-            hidden again. Please see the example below and make yourself familiar with how the boxes open and close.
+            hidden again. Please see the example below and make yourself familiar with how the boxes open and close. 
+            Please click either on “Pay tax” or “Don’t pay tax” to make a decision. As noted, this is just an example 
+            and the actual decisions will follow shortly. 
         </p>
 
         <?php

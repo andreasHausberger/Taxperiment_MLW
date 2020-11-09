@@ -60,7 +60,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
 <div>
     <p>To conclude the study, you will be asked some questions about your personal opinions and impressions of the study.
-    </p><br><br>
+    </p>
 </div>
 
 <p>
@@ -124,7 +124,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            6.The expected value of choosing evasion describes exactly how much money you have left in the
+            6. The expected value of choosing evasion describes exactly how much money you have left in the
             respective round when you do not pay the tax.
         </b>
         </p>
@@ -146,7 +146,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
         <p class="questionText">
         <b>
             8. If the safe outcome is lower than the expected value of choosing evasion, from a mathematical point of
-            view it pays off to pay the tax.
+            view, it pays off to pay the tax.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
