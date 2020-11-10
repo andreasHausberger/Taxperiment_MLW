@@ -145,7 +145,7 @@ if( !function_exists("createRiskAversionRow") ) {
                 </td>
                 <td>
                     <span> Probability $probB1%, ECU $ecuB1</span> <br>
-                    <span> Probability $probB2%, ECU $ecuA2</span>
+                    <span> Probability $probB2%, ECU $ecuB2</span>
                 </td>
             </tr>
 ";

@@ -249,7 +249,7 @@ $riskTaskArray = [
         "probB1" => "60",
         "ecuB1" => "385",
         "probB2" => "40",
-        "ecuB2" => "40",
+        "ecuB2" => "10",
     ],
     [
         "rowName" => "row_7",
@@ -271,7 +271,7 @@ $riskTaskArray = [
         "probB1" => "80",
         "ecuB1" => "385",
         "probB2" => "20",
-        "ecuB2" => "20",
+        "ecuB2" => "10",
     ],
     [
         "rowName" => "row_9",
