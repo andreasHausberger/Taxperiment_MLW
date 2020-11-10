@@ -12,10 +12,13 @@
 
 <b>Recent Changes</b>
 <ul>
-   <li> Fixed bug where Tutorial page was skipped</li>
-   <li> Fixed issue where SVG graphics would partially cover button</li>
-   <li> Re-Ordered the display of Table Content in Exp Rounds</li>
-   <li> Edited HL Risk Task, should now display correct values. </li>
+    <li> Fixed bug where Tutorial page was skipped</li>
+    <li> Fixed issue where SVG graphics would partially cover button</li>
+    <li> Re-Ordered the display of Table Content in Exp Rounds</li>
+    <li> Edited HL Risk Task, should now display correct values. </li>
+    <li> Screen Resolution Capture should work now</li>
+    <li> Removed Answer Checks on comprehension questions</li>
+
 </ul>
 
 <br>
