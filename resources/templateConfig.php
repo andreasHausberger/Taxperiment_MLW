@@ -132,8 +132,8 @@ $fineRateBox = "<!--cell b1(tag:b1)-->
 
 $mouselabBoxArray = array(
     1 => array(
-        "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
-        "content" => "$incomeContent^$taxContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent"),
+        "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
+        "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$sureGainContent^$evRiskyContent"),
     2 => array(
         "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
         "content" => "$incomeContent^$taxContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent"),
@@ -152,8 +152,8 @@ $mouselabBoxArray = array(
         "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
         "content" => "$incomeContent^$taxContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent"),
     7 => array(
-        "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
-        "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$evRiskyContent^$sureGainContent"),
+        "label" => "$taxLabel^$incomeLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
+        "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent"),
     8 => array(
         "label" => "$taxLabel^$incomeLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
         "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent"),
@@ -248,7 +248,7 @@ $riskTaskArray = [
         "ecuA2" => "160",
         "probB1" => "60",
         "ecuB1" => "385",
-        "probB2" => "90",
+        "probB2" => "40",
         "ecuB2" => "40",
     ],
     [
@@ -270,7 +270,7 @@ $riskTaskArray = [
         "ecuA2" => "160",
         "probB1" => "80",
         "ecuB1" => "385",
-        "probB2" => "90",
+        "probB2" => "20",
         "ecuB2" => "20",
     ],
     [

@@ -16,7 +16,13 @@ $db = new Database();
 $prolificPID = getParamValue('prolificPID');
 $studyID = getParamValue('studyID');
 $sessionID = getParamValue('sessionID');
+$condition = getParamValue('condition');
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
+$height = postParamValue("screen_height");
+$width = postParamValue("screen_width");
+
+$resolution = $width . "x" . $height;
+
 if (!isset($connection)) {
     $connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
     //echo "Reestablished connection";
@@ -26,7 +32,7 @@ $subjectName = getParamValue("sname");
 $participantResult = $db->selectQuery("SELECT id FROM participant WHERE name = ?", "s", $subjectName);
 $participantID = $participantResult["id"];
 
-$experimentID = $db->insertQuery("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type) VALUES (?, ?, ?, ?, ?, ?)", "iissss", ...[$condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent]);
+$experimentID = $db->insertQuery("INSERT INTO experiment (exp_condition, participant, prolific_pid, study_id, session_id, device_type, resolution) VALUES (?, ?, ?, ?, ?, ?, ?)", "iisssss", ...[$condition, $participantID, $prolificPID, $studyID, $sessionID, $userAgent, $resolution]);
 
 $db->insertQuery("UPDATE experiment SET start = NOW() WHERE id = ?", "i", $experimentID);
 

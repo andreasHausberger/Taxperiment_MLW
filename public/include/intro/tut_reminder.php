@@ -1,3 +1,10 @@
+<script>
+    $(document).ready(function() {
+        $('#screen_height').val(screen.height);
+        $('#screen_width').val(screen.width);
+    });
+</script>
+
 <div class="siteContainer">
     <div class="contentContainer">
         <p>
@@ -9,6 +16,11 @@
             </span>
             <br>
 
+        <form action="<?php echo "/public/exp_config.php?&tw=0&sname=$participant&condition=$condition"?>" method="post">
+            <input type="hidden" name="screen_height" id="screen_height">
+            <input type="hidden" name="screen_width" id="screen_width">
+            <input type="submit" value="Submit this stuff">
+        </form>
         </p>
     </div>
 </div>

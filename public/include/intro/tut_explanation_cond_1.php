@@ -10,8 +10,8 @@
             be asked how much of the tax due you decide to pay.
         </p>
         <p class="tutorialText">
-            The income, the tax due, your chance of being audited (chance of getting checked) and the potential fine
-            size will vary each round, so carefully read all the information.
+            The <b>income</b>, the <b>tax due</b>, your <b>chance of being audited</b> (chance of getting checked) and
+            the potential <b>fine size</b> will <b>vary</b> each round, so carefully read all the information.
         </p>
         <p class="tutorialText">
             On the next few pages, you will receive detailed information about what these terms mean and how the

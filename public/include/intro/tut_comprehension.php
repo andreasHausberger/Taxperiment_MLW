@@ -65,17 +65,13 @@
     let numberOfQuestions = 4;
 
     function addToArray(element) {
-        let isCorrect = checkAnswer(element);
-        if (!items.includes(element) && isCorrect) {
+
+        if (!items.includes(element)) {
             items.push(element);
             console.log("Added " + element + " to array!");
         }
         else {
             console.log("Did not add " + element + " to the array, already in it!");
-
-            if (!isCorrect) {
-                alert("This is not the correct Answer!");
-            }
         }
         validateAndActiateButton(numberOfQuestions); //number of required items
     }

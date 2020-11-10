@@ -46,6 +46,8 @@ $randomCondition = rand(1, 4);
                 break;
         }
 
+
+        //http://mlweb:8888/public/include/intro/index.php?action=create_participant&condition=4&sname=bc1a1f5e1875e3916492b3b509f58cd420eba1d5&prolificPID=123&studyID=abc&sessionID=asdf&page=1
         subject = subjectName;
         condnum = selectedCondition;
 
@@ -56,7 +58,12 @@ $randomCondition = rand(1, 4);
         document.cookie = "mlweb_condnum=" + condnum + "; path=/";
         document.cookie = "mlweb_subject=" + subject + "; path=/";
 
-        var newWind = window.open(linkstr + "&sname=" + subject + "&prolificPID=" + prolificPID + "&studyID=" + studyID + "&sessionID=" + sessionID +"&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
+        let screenHeight = screen.height;
+        let screenWidth = screen.width;
+
+        let resolution = screenWidth + "x" + screenHeight
+
+        var newWind = window.open(linkstr + "&sname=" + subject + "&prolificPID=" + prolificPID + "&studyID=" + studyID + "&sessionID=" + sessionID + "&resolution=" + resolution + "&page=1", "survey", "height=" + (1000).toString() + ",width=" + (1200).toString() + ",scrollbars,status,resizable, left=2, top=2")
 
     }
 </script>

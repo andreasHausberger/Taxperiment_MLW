@@ -8,21 +8,24 @@
 
 ?>
 
-<p>Staging Version 1.2.10 (November 2020)</p>
+<p>Staging Version 1.2.12 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-   <li>Improved Download-ability for Database Tables</li>
-   <li>Improvements on Prolific Data Saving</li>
-   <li>Lots of fixes. </li>
-   <li>Martin's Changes (as of 09.11.2020, 20:00)</li>
+    <li> Fixed bug where Tutorial page was skipped</li>
+    <li> Fixed issue where SVG graphics would partially cover button</li>
+    <li> Re-Ordered the display of Table Content in Exp Rounds</li>
+    <li> Edited HL Risk Task, should now display correct values. </li>
+    <li> Screen Resolution Capture should work now</li>
+    <li> Removed Answer Checks on comprehension questions</li>
+
 </ul>
 
 <br>
 <b> To Do</b>
 
 <ul>
-    <li>Resolution Capture Review</li>
+
 </ul>
 
 <div>

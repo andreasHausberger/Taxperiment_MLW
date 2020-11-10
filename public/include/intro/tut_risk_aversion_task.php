@@ -36,7 +36,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/resources/templateConfig.php");
     <div class="mlwContentContainer">
         <div class="riskAversionQuestionnaireContainer">
 
-            <form action="/public/include/intro/index.php?action=save_questionnaire&condition=<?php echo $_GET['condition'] ?>&sname=<?php echo $participant?>&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=7" method="post">
+            <form action="/public/include/intro/index.php?action=save_questionnaire&condition=<?php echo $_GET['condition'] ?>&sname=<?php echo $participant?>&prolificPID=<?php echo $prolificPID?>&studyID=<?php echo $studyID?>&sessionID=<?php echo $sessionID?>&page=6" method="post">
                 <input type="hidden" name="page" value=<?php echo $_GET['page'] ?>>
                 <input type="hidden" name="condition" value=<?php echo $_GET['condition'] ?>>
                 <input type="hidden" name="subject" value=<?php echo $_GET['sname'] ?>>
