@@ -12,13 +12,9 @@
 
 <b>Recent Changes</b>
 <ul>
-    <li> Fixed bug where Tutorial page was skipped</li>
-    <li> Fixed issue where SVG graphics would partially cover button</li>
-    <li> Re-Ordered the display of Table Content in Exp Rounds</li>
-    <li> Edited HL Risk Task, should now display correct values. </li>
-    <li> Screen Resolution Capture should work now</li>
-    <li> Removed Answer Checks on comprehension questions</li>
-
+    <li>New Questionnaire Page: Concentration</li>
+    <li>Fixed Issue where Risk Aversion was not saved correctly</li>
+    <li>Fixed issue where Pay / Don't Pay buttons were reversed.</li>
 </ul>
 
 <br>
