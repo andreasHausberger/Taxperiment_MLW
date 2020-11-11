@@ -3,6 +3,21 @@
 $array = ["False", "True", "Do not know"];
 $numberOfQuestions = 8;
 
+global $db, $qb;
+$participant = $_GET['pid'];
+
+$expData = $db->selectQuery("SELECT exp_condition FROM experiment e WHERE e.participant = ?", "s", ...[$participant]);
+
+$condition = $expData["exp_condition"];
+
+if ($condition == 4) {
+    $numberOfQuestions = 3;
+}
+
+if(!$condition) {
+    echo "Warning: Condition could not be read!";
+}
+
 if (sizeof($_POST) >= $numberOfQuestions) {
    $man1 = postParamValue("man1");
    $man2 = postParamValue("man2");
@@ -13,7 +28,6 @@ if (sizeof($_POST) >= $numberOfQuestions) {
    $man7 = postParamValue("man7");
    $man8 = postParamValue("man8");
 
-    $participant = $_GET['pid'];
 
     $qb->addString("man1", $man1);
     $qb->addString("man2", $man2);
@@ -37,26 +51,27 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 ?>
 
 <script>
+    $(document).ready( function() {
+        numberOfQuestions = 8;
 
-    let items = [];
-    function addToArray(element) {
-        if (!items.includes(element)) {
-            items.push(element);
-            console.log("Added " + element + " to array!");
-        }
-        else {
-            console.log("Did not add " + element + " to the array, already in it!");
-        }
-        validateAndActiateButton(8); //number of required items
-    }
+        let condition = <?php echo $condition ?>;
 
-    function validateAndActiateButton(numberOfRequiredElements) {
-        if (items.length === numberOfRequiredElements) {
-            document.getElementById("submitButton").disabled = false;
-            console.log("Disabled Continue Button")
+        if(condition && condition == 4) {
+            numberOfQuestions = 3;
+
+            let elements = document.getElementsByClassName("conditional");
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "none";
+
+            }
+
+            console.log(elements);
         }
-    }
+    });
+
 </script>
+<script src="/public/js/questionnaire.js"></script>
 
 <div>
     <p>To conclude the study, you will be asked some questions about your personal opinions and impressions of the study.
@@ -70,10 +85,10 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 </p>
 
 <form method="post">
-    <div class="item">
+    <div class="item conditional">
         <p class="questionText">
         <b>
-            1. The safe outcome of the tax decision in the experiment indicates the remaining amount after paying the tax.
+            The safe outcome of the tax decision in the experiment indicates the remaining amount after paying the tax.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
@@ -83,17 +98,17 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            2. The audit probability indicates the probability of a tax inspection taking place in the respective round.
+            The audit probability indicates the probability of a tax inspection taking place in the respective round.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man2", $array); ?>
         </div>
     </div>
-    <div class="item">
+    <div class="item conditional">
         <p class="questionText">
         <b>
-            3. The expected value of evasion represents the average outcome of choosing tax evasion.
+            The expected value of evasion represents the average outcome of choosing tax evasion.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
@@ -103,17 +118,17 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            4. If the tax rate is 50% on an income of 1000 ECU, the resulting tax is 300 ECU.
+            If the tax rate is 50% on an income of 1000 ECU, the resulting tax is 300 ECU.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man4", $array); ?>
         </div>
     </div>
-    <div class="item">
+    <div class="item conditional">
         <p class="questionText">
         <b>
-            5. The comparison of the safe outcome with the expected value of choosing evasion is helpful
+            The comparison of the safe outcome with the expected value of choosing evasion is helpful
             if a purely mathematically optimal decision is to be made.
         </b>
         </p>
@@ -121,10 +136,10 @@ if (sizeof($_POST) >= $numberOfQuestions) {
             <?php echo createLikert(3, "man5", $array); ?>
         </div>
     </div>
-    <div class="item">
+    <div class="item conditional">
         <p class="questionText">
         <b>
-            6. The expected value of choosing evasion describes exactly how much money you have left in the
+            The expected value of choosing evasion describes exactly how much money you have left in the
             respective round when you do not pay the tax.
         </b>
         </p>
@@ -135,17 +150,17 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            7. The fine consists of paying back the unpaid tax plus an additional fine.
+            The fine consists of paying back the unpaid tax plus an additional fine.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(3, "man7", $array); ?>
         </div>
     </div>
-    <div class="item">
+    <div class="item conditional">
         <p class="questionText">
         <b>
-            8. If the safe outcome is lower than the expected value of choosing evasion, from a mathematical point of
+            If the safe outcome is lower than the expected value of choosing evasion, from a mathematical point of
             view, it pays off to pay the tax.
         </b>
         </p>
