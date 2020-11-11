@@ -25,7 +25,7 @@ $studyID = getParamValue("studyID");
 $sessionID = getParamValue("sessionID");
 
 
-if($action == "create_participant" && $index === "1") {
+if($action == "create_participant" && ($index === "1" || $index === "10")) {
     $helper = new RedirectHelper($db, new QueryBuilder('participant'));
     $userDataArray = [
         "sname" => getParamValue("sname"),
