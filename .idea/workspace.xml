@@ -39,7 +39,7 @@
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/include/experiment/feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/experiment/feedback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/manipulation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/manipulation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -244,14 +244,7 @@
       <workItem from="1604741445337" duration="12040000" />
       <workItem from="1604826159579" duration="3354000" />
       <workItem from="1604867647157" duration="6193000" />
-      <workItem from="1605099488206" duration="5980000" />
-    </task>
-    <task id="LOCAL-00161" summary="Hotfix: Overlooked Method signature change.">
-      <created>1603123867747</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1603123867747</updated>
+      <workItem from="1605099488206" duration="6170000" />
     </task>
     <task id="LOCAL-00162" summary="Fix for issue #27: Next Button is properly fixed in Definitions page.">
       <created>1603892031947</created>
@@ -589,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605106616268</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Blocked manipulation questions for Cond 4">
+      <created>1605118232215</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1605118232215</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +631,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Knowledge Fix: Fixed issue where answer count was incorrect." />
     <MESSAGE value="Some Trello Fixes." />
     <MESSAGE value="Removed Randomization for Round Presentation." />
     <MESSAGE value="Knowledge: Split Section into 2 Pages. Second one is skipped if &quot;no&quot; is selected on first." />
@@ -656,7 +655,8 @@
     <MESSAGE value="Overview Table: Color accents, padding." />
     <MESSAGE value="Bugfix: Quickstart save." />
     <MESSAGE value="Currency Format on Questionnaire/end.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Currency Format on Questionnaire/end.php" />
+    <MESSAGE value="Blocked manipulation questions for Cond 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blocked manipulation questions for Cond 4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -675,12 +675,12 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="695" y="23" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605106616150">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="695" y="0" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605118232038">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605038337859" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
-    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605034911088" />
+    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605118232038" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1605106616150" />
     <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
     <state width="441" height="324" key="DebuggerActiveHint" timestamp="1605102748573">
@@ -813,12 +813,12 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1605104009881">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1605118236099">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605038350174" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605035403423" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1604868665120" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605118236099" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1605104009881" />
     <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
     <state x="713" y="341" key="VcsDiffUtil.ChangesDialog" timestamp="1601040827951">
@@ -889,11 +889,6 @@
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/questionnaire/concentration.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
           <line>61</line>
           <option name="timeStamp" value="110" />
@@ -904,9 +899,9 @@
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/questionnaire/end.php</url>
-          <line>19</line>
-          <option name="timeStamp" value="115" />
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/manipulation.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>
