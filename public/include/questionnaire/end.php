@@ -17,7 +17,7 @@ global $db;
 $riskQueryBuilder = new QueryBuilder("risk_aversion");
 
 $ecuToGBP = 350;
-$showUpFee = 3.00;
+$showUpFee = number_format(3, 2, ".", ",");
 
 if (!isset($experimentId)) {
     echo "WARNING: COULD NOT READ EXPERIMENT ID!";
