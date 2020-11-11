@@ -136,7 +136,7 @@ echo "<h1> Overview </h1>";
 </table>
 
 
-<p> In the following section you will answer several questions regarding your opinions and impressions of the experiment.
+<p> In the following section you will be asked to answer a number of questions about the task and your own opinions.
 </p>
 
 <a href=<?php echo "../questionnaire/index.php?action=create_questionnaire&page=1&expid=$experimentId&pid=" . $participantID; ?>> <input type="button" value="Continue to the questionnaire"></a>

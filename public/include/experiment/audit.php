@@ -186,18 +186,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         submitInformation("submit", "submit", "submit");
 
-        //let feedbackIsDelayed = <?php //echo $delayFeedback ?>// ;
-        //
-        //
-        //
-        //if (feedbackIsDelayed == 0) {
-        //    displayInformation(audit, actualIncome, netIncome, fine, taxRate, reportedTax);
-        //}
-        //else {
-        //    collapseInformation("submit", "submit", "submit");
-        //   // window.location.href = "  <?php //echo "index.php?round=" . ($_GET['round'] + 1) . "&mode=1&expid=$experimentID&pid=$participantID&feedback=$feedback&order=$order&presentation=$presentation"; ?>//";
-        //}
-
 
     }
 
@@ -299,7 +287,7 @@ echo $link?> method="post">
 <!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
         <br>
         <?php
-        $buttonsShouldBeMirrored = $currentCondition == 7;
+        $buttonsShouldBeMirrored = $currentCondition == 1;
         getAuditButtons($buttonsShouldBeMirrored); ?>
 
 

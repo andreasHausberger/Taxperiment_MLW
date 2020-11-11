@@ -40,9 +40,10 @@ $pages = array(
     5 => "effort.php",
     6 => "numeracy.php",
     7 => "motivation.php",
-    8 => "demographics.php",
-    9 => "technical.php",
-    10 => "end.php"
+    8 => "concentration.php",
+    9 => "demographics.php",
+    10 => "technical.php",
+    11 => "end.php"
 );
 
 $page = $pages[$index];
