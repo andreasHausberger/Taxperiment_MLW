@@ -44,7 +44,7 @@ if ($action == "save_risk_self") {
 
     $insertID = $helper->saveRiskSelfAssessment($tempPostArray);
 }
-if ($action == "save_questionnaire" && $index === "7") {
+if ($action == "save_questionnaire" && $index === "6") {
     //handle save questionnaire
     $helper = new RedirectHelper($db, $riskQB);
     $tempPostArray = $_POST;
