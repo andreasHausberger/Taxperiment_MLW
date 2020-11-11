@@ -72,15 +72,21 @@ else {
                  * "Missing Tax Plus Fine" wo einfach der Betrag angegeben wird, also bei keiner Strafe/keinem Audit 0, und am Schluss dann
                  * "Net Income".
                  */
+
+                $style = "";
+
+                if($auditValue == 1) {
+                    $style = "background-color: #ff8d8d";
+                }
                 $htmlTableRow = "
-                <tr>
+                <tr >
                     <td> $round </td>
                     <td> $actualIncome </td>
                     <td> $actualTax </td>
                     <td> $declaredTax </td>
-                    <td> $audit </td>
+                    <td style='$style'> $audit </td>
                     <td> $fine </td>
-                    <td> $netIncome </td>
+                    <td style='$style'> $netIncome </td>
                 </tr>";
 
                 return $htmlTableRow;

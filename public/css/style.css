@@ -337,6 +337,7 @@ Audit Page
 
 #overviewTable tr td {
     border: 1px solid black;
+    padding: 3px 10px;
 }
 
 #overviewTable thead {
