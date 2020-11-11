@@ -15,6 +15,7 @@
     <li>New Questionnaire Page: Concentration</li>
     <li>Fixed Issue where Risk Aversion was not saved correctly</li>
     <li>Fixed issue where Pay / Don't Pay buttons were reversed.</li>
+    <li>Martin's changes as of 11.11.2020, 12:00</li>
 </ul>
 
 <br>
