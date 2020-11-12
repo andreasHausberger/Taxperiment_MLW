@@ -81,14 +81,17 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         signContainer.mouseenter( function(e) {
             console.log("Mouse Over Sign Container!");
+            let mouseEvent = new MouseEvent("mouseover");
             let value = displayContentForSignContainer(condition, randomCondition, angle, true);
-            ShowCont('box', e, true, value);
+            let angleInfo = "Angle: " + angle;
+            ShowCont('box', mouseEvent, true, angleInfo);
         });
 
         signContainer.mouseleave( function(e) {
             console.log("Mouse Leave Sign Container!");
+            let mouseEvent = new MouseEvent("mouseout");
             displayContentForSignContainer(condition, randomCondition, angle, false);
-            HideCont('box', e, true);
+            HideCont('box', mouseEvent, true);
         });
 
 
