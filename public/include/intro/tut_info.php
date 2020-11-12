@@ -9,7 +9,7 @@
     <p class="tutorialText">
         thank you for your interest in this study! <b>It is important that you only participate in this study using a
         laptop or desktop computer. Some of the questions will not work properly on a smartphone or tablet device. 
-        Note that we will only pay participants who did use a laptop or desktop computer.</b>
+        Note that we will only pay participants who have used a laptop or desktop computer.</b>
     </p>
 
     <p class="tutorialText">
