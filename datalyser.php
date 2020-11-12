@@ -135,7 +135,13 @@ function unpackProc($procdata)
     return $evtarr;
 }
 
-function ExpfromDB($nameofexp, $table)
+/**
+ * Gets Exp. Data from DB.
+ * @param $nameofexp
+ * @param $table
+ * @return array
+ */
+function getExpData($nameofexp, $table)
 {
 // get first experiment data
 
@@ -178,46 +184,6 @@ function ExpfromDB($nameofexp, $table)
         $result[$index] = $row;
         $index++;
     }
-    // Get all rows
-    // j is the index of the rowarr, a two dimension array that contains all rows of data
-    $j = 1;
-//    foreach ($rows as $row)
-//    {
-//        var_dump($row);
-//        $i=0;
-//        while (list($key, $value) = each($row))
-//        {
-//            $i++;
-//                # explode additional vars for this experiment
-//                if ($key=="adddata") {$newdataarr=explode(";",ereg_replace("\"","",$value));$last = array_pop($newdataarr);}
-//                else if ($key=="addvar") {$newvararr=explode(";",$value);$last = array_pop($newvararr);}
-//                else {$rowarr[$j][]=$value;}
-//        }
-//        //update varlist with possible new added variables
-//        foreach ($newvararr as $key => $value)
-//        {
-//            $varlistarr[$value]=0;
-//        }
-//        foreach ($newvararr as $key => $value)
-//        {$vararr[$j][$value] = $newdataarr[$key];}
-//        $j++;
-//    }
-//
-//    foreach ($varlistarr as $key => $value)
-//    {
-//        // add varnames at top row and update varlst with column positions
-//        $rowarr[0][]=$key;
-//        $varlistarr[$key]=count($rowarr[0]);
-//    }
-//
-//    for ($j=1;$j<count($rowarr);$j++)
-//    {
-//        //enter the value for each added var into the right column, using mapping from varlistarr
-//        foreach ($varlistarr as $key => $value)
-//        {
-//            $rowarr[$j][$value]=$vararr[$j][$key];
-//        }
-//    }
     return $result;
 }
 
@@ -242,7 +208,7 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
         {
             $outstr = "";
 
-            $rowarr = ExpfromDB($arr[$expcount], "mlweb");
+            $rowarr = getExpData($arr[$expcount], "mlweb");
             foreach ($rowarr as $item) {
                 if ($item[0] == "id") {
 
@@ -341,7 +307,7 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
             $outrow_s = array();
             $glprocvars = array(); // this array is used to save names of the boxes to count the process vars...
             $gladdvars = array();
-            $rowarr = ExpfromDB($arr[$expcount], "mlweb");
+            $rowarr = getExpData($arr[$expcount], "mlweb");
             for ($j = 0; $j < count($rowarr); $j++) {
                 $gladdvars[$j] = array();
                 $glcnt++;
@@ -682,7 +648,7 @@ if (isset($_POST['act'])) { // start action part (caused by a submitted form)
         $expname = $_POST['expname'];
         $outstr = "";
 
-        $rowarr = ExpfromDB($expname, $table);
+        $rowarr = getExpData($expname, $table);
         //if ($_POST['unpack']==="true") $outarr = unfoldEvent($rowarr); else $outarr = $rowarr;
         for ($j = 0; $j < count($rowarr); $j++) {
             if ($_POST['unpack'] === "true") {

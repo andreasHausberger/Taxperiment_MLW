@@ -31,7 +31,7 @@
     <p>
         <b>
             Please respond to the following two items. We guarantee that your responses will not affect your approval.
-        </b><br>
+        <br>
     </p>
 </div>
 
@@ -39,7 +39,7 @@
     <div class="item">
         <p class="questionText">
             <b>
-                1. Was your participation disturbed by surrounding circumstances like loud noise, a ringing phone, other people etc.?
+                Was your participation disturbed by surrounding circumstances like loud noise, a ringing phone, other people etc.?
             </b>
         </p>
         <?php echo createLikert(2, "con1", ["No", "Yes"]); ?>
@@ -48,9 +48,9 @@
     <div class="item">
         <p class="questionText">
             <b>
-                2. To what extent could you concentrate on the instructions and decision tasks? <br>
-                (1 = "Not At All", 7 = "Fully")
-            </b>
+                To what extent could you concentrate on the instructions and decision tasks? <br>
+            </b>   (1 = "Not At All", 7 = "Fully")
+            
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "con2"); ?>

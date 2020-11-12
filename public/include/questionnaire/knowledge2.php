@@ -37,7 +37,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
             <b>
-                2. Please try to explain in your own words what an expected value is! (open question)
+                Please try to explain in your own words what an expected value is! (open question)
             </b>
         </p>
         <div>
@@ -47,7 +47,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
     <div class="item">
         <p class="questionText">
-            3. Did you make use of the expected value when making a decision?
+            Did you make use of the expected value when making a decision?
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(2, "kno3", ["No", "Yes"]); ?>
