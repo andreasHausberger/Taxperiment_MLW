@@ -8,93 +8,41 @@
 
 // include "../../roundDataLoader.php";
 
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/code/Database.php");
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/code/QueryBuilder.php");
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/resources/code/code.php");
+
+$db = new Database();
+
 
 $feedback = $_GET['feedback'];
 
 $experimentId = $_GET['expid'];
 
 if (!isset($participantID)) {
-    $participantID = 123; // test data
-    echo "No PID was detected - using test data with PID = 123!";
+    $participantID = 1; // test data
+    echo "No PID was detected - using test data with PID = 1!";
 }
 
 if (!isset($experimentId)) {
     echo "No ExperimentID was detected!";
 }
 else {
-    if (!isset($connection)) {
-        echo "Could not connect to database!";
+
+    $dateQuery = "UPDATE experiment SET finished_experiment = NOW() WHERE id = ?";
+
+    if ($db->insertQuery($dateQuery, "i", ...[$experimentId])) {
+        console_log("Added finished_experiment for $experimentId");
     }
 
-    else {
-
-        $dateString = "UPDATE experiment SET finished_experiment = NOW() WHERE id = $experimentId";
-
-        if ($connection->query($dateString)) {
-            console_log("Added finished_experiment for $experimentId");
-        }
-
-        $sqlString = "SELECT distinct round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, fine FROM audit WHERE pid = $participantID";
-
-        $result = $connection->query($sqlString);
-
-        $rows = $result->fetch_all();
-        if (!function_exists(buildResultsRow)) {
-            //------------------------------------------------
-            function buildResultsRow($row) {
-            //------------------------------------------------
-                $round = $row[0];
-                $actualIncome = $row[1]; // earned income
-                $netIncome = $row[2];
-                $actualTax = $row[3]; // tax due
-                $declaredTax = $row[4]; // paid tax
-                $honesty = $row[5];
-                $auditValue = $row[6];
-                $audit = $auditValue  == 1 ? "Audited" : "Not Audited";
-                $missingTax = $actualTax - $declaredTax;
-                $fine = $row[7]; //this already includes fine + payback!
 
 
-                if ($auditValue == 0) {
-                    $mtPlusFine = 0;
-                }
-                else {
-                    $mtPlusFine = $missingTax + $fine;
-                }
+    $auditQuery = "SELECT round, actual_income, net_income, actual_tax, declared_tax, honesty, audit, fine FROM audit WHERE pid = $participantID AND exp_id = $experimentId";
 
+    $result = $db->selectQuery($auditQuery);
 
+    $rows = $result;
 
-                /**
-                 * "Round" (passt schon),
-                 * "Earned Income" (passt schon),
-                 * "Tax Due (in ECU)" muss rein, "Paid Tax" muss rein, dann
-                 * "Audit" also not audited/audited,
-                 * "Missing Tax Plus Fine" wo einfach der Betrag angegeben wird, also bei keiner Strafe/keinem Audit 0, und am Schluss dann
-                 * "Net Income".
-                 */
-
-                $style = "";
-
-                if($auditValue == 1) {
-                    $style = "background-color: #ff8d8d";
-                }
-                $htmlTableRow = "
-                <tr >
-                    <td> $round </td>
-                    <td> $actualIncome </td>
-                    <td> $actualTax </td>
-                    <td> $declaredTax </td>
-                    <td style='$style'> $audit </td>
-                    <td> $fine </td>
-                    <td style='$style'> $netIncome </td>
-                </tr>";
-
-                return $htmlTableRow;
-
-            }
-        }
-
-    }
 }
 
 echo "<h1> Overview </h1>";
