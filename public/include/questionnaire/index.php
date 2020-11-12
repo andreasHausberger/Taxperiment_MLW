@@ -46,6 +46,7 @@ $pages = array(
 );
 
 $page = $pages[$index];
+$nextPageIndex = intval($index) + 1;
 
 
 if ($condition == -1) {
@@ -62,6 +63,4 @@ else {
 
 
 }
-
-
 ?>

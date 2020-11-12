@@ -21,7 +21,7 @@
 
          $host = $_SERVER['HTTP_HOST'];
 
-         header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=6");
+         header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=$nextPageIndex");
      }
  }
 
