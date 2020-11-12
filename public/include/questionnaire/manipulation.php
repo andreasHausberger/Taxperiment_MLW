@@ -15,7 +15,8 @@ if ($condition == 4) {
 }
 
 if(!$condition) {
-    echo "Warning: Condition could not be read!";
+    echo "Warning: Condition could not be read! Default to 1";
+    $condition = 1;
 }
 
 if (sizeof($_POST) >= $numberOfQuestions) {
