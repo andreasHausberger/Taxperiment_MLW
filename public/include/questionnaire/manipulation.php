@@ -15,7 +15,8 @@ if ($condition == 4) {
 }
 
 if(!$condition) {
-    echo "Warning: Condition could not be read!";
+    echo "Warning: Condition could not be read! Default to 1";
+    $condition = 1;
 }
 
 if (sizeof($_POST) >= $numberOfQuestions) {
@@ -45,7 +46,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
         $host  = $_SERVER['HTTP_HOST'];
 
-        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=2");
+        header("Location: http://$host/public/include/questionnaire/index.php?expid=$experimentId&pid=$participant&page=$nextPageIndex");
     }
 }
 ?>

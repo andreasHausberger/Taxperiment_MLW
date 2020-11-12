@@ -38,15 +38,15 @@ $pages = array(
     3 => "knowledge.php",
     4 => "knowledge2.php",
     5 => "effort.php",
-    6 => "numeracy.php",
-    7 => "motivation.php",
-    8 => "concentration.php",
-    9 => "demographics.php",
-    10 => "technical.php",
-    11 => "end.php"
+    6 => "motivation.php",
+    7 => "concentration.php",
+    8 => "demographics.php",
+    9 => "technical.php",
+    10 => "end.php"
 );
 
 $page = $pages[$index];
+$nextPageIndex = intval($index) + 1;
 
 
 if ($condition == -1) {
@@ -63,6 +63,4 @@ else {
 
 
 }
-
-
 ?>
