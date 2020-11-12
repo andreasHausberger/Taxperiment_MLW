@@ -257,28 +257,68 @@ if (!function_exists('createDownloadLink')) {
 
         echo "<p> $paraText </p> <a href='$paraFilename'>$paraFilename</a>";
     }
+}
 
-
-    if (!function_exists("getParamValue")) {
-        function getParamValue($paramName, $fallback = "")
-        {
-            if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
-                return addslashes($_GET[$paramName]);
-            } else {
-                return $fallback;
-            }
+if (!function_exists("getParamValue")) {
+    function getParamValue($paramName, $fallback = "")
+    {
+        if (isset($_GET[$paramName]) && $_GET[$paramName] != '') {
+            return addslashes($_GET[$paramName]);
+        } else {
+            return $fallback;
         }
     }
+}
 
 
-    if (!function_exists("postMaramValue")) {
-        function postParamValue($paramName, $fallback = "")
-        {
-            if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
-                return addslashes($_POST[$paramName]);
-            } else {
-                return $fallback;
-            }
+if (!function_exists("postParamValue")) {
+    function postParamValue($paramName, $fallback = "")
+    {
+        if (isset($_POST[$paramName]) && $_POST[$paramName] != '') {
+            return addslashes($_POST[$paramName]);
+        } else {
+            return $fallback;
         }
+    }
+}
+
+if (!function_exists("buildResultsRow")) {
+    function buildResultsRow($row) {
+        $round = $row['round'];
+        $actualIncome = $row['actual_income']; // earned income
+        $netIncome = $row['net_income'];
+        $actualTax = $row['actual_tax']; // tax due
+        $declaredTax = $row['declared_tax']; // paid tax
+        $auditValue = $row['audit'];
+        $audit = $auditValue  == 1 ? "Audited" : "Not Audited";
+        $missingTax = $actualTax - $declaredTax;
+        $fine = $row['fine']; //this already includes fine + payback!
+
+
+        if ($auditValue == 0) {
+            $mtPlusFine = 0;
+        }
+        else {
+            $mtPlusFine = $missingTax + $fine;
+        }
+
+        $style = "";
+
+        if($auditValue == 1) {
+            $style = "background-color: #ff8d8d";
+        }
+        $htmlTableRow = "
+            <tr >
+                <td> $round </td>
+                <td> $actualIncome </td>
+                <td> $actualTax </td>
+                <td> $declaredTax </td>
+                <td style='$style'> $audit </td>
+                <td> $fine </td>
+                <td style='$style'> $netIncome </td>
+            </tr>";
+
+        return $htmlTableRow;
+
     }
 }
