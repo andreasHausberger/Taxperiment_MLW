@@ -43,7 +43,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            1. The process was annoying.
+            The process was annoying.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
@@ -54,7 +54,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            2. The process was difficult.
+            The process was difficult.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
@@ -65,7 +65,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            3. I had to concentrate a lot during this process.
+            I had to concentrate a lot during this process.
         </b>
         </p>
         <div class="radioDisplayHorizontal">
@@ -76,7 +76,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            4. The process was tiring.
+            The process was tiring.
         </b>
         </p>
         <div class="radioDisplayHorizontal">

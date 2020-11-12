@@ -66,7 +66,7 @@ if (sizeof($_POST) >= 3) {
 <form method="post">
     <div class="item">
         <div class="radioDisplayVertical">
-            <p> 1. What were the tax rates in the tax experiment?</p>
+            <p> What were the tax rates in the tax experiment?</p>
             <div class="radioItemFlex">
                 <input type="radio" name="ma1" value="0" onclick="addToArray('ma1')">
                 <p> 20% and 40%</p>
@@ -87,7 +87,7 @@ if (sizeof($_POST) >= 3) {
 
     <div class="item">
         <div class="radioDisplayVertical">
-            <p> 2. What were the audit probabilities in the tax experiment?</p>
+            <p> What were the audit probabilities in the tax experiment?</p>
             <div class="radioItemFlex">
                 <input type="radio" name="ma2" value="0" onclick="addToArray('ma2')">
                 <p> 5%, 15%, and 25%</p>
@@ -109,7 +109,7 @@ if (sizeof($_POST) >= 3) {
 
     <div class="item">
         <div class="radioDisplayVertical">
-            <p> 3. What were the fine levels in the tax experiment?</p>
+            <p> What were the fine levels in the tax experiment?</p>
             <div class="radioItemFlex">
                 <input type="radio" name="ma3" value="0" onclick="addToArray('ma3')">
                 <p>Payback + 100%, 200%, or 300% of the evaded amount</p>
