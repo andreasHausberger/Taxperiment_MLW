@@ -31,7 +31,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            1. Which tax rates were used over the repeated decisions in the second part?
+            Which tax rates were used over the repeated decisions in the second part?
         </b>
         </p>
         <div>
@@ -42,7 +42,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
         <b>
-            2. Which audit probabilities were used over the repeated decisions in the second part?
+            Which audit probabilities were used over the repeated decisions in the second part?
         </b>
         </p>
         <div>

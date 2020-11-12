@@ -33,7 +33,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            1. Which device did you use to answer the questions?
+            Which device did you use to answer the questions?
         </b>
         </p>
         <div>
@@ -44,7 +44,7 @@
     <div class="item">
         <p class="questionText">
         <b>
-            2. Which input device did you use to answer the questions?
+            Which input device did you use to answer the questions?
         </b>
         </p>
         <div>
@@ -55,7 +55,7 @@
     <div class="item" style="margin-bottom: 16px">
         <p class="questionText">
         <b>
-            3. Did you have any technical difficulties? (If yes, please explain in the following field).
+            Did you have any technical difficulties? (If yes, please explain in the following field).
         </b>
         </p>
         <div>
