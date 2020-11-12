@@ -8,23 +8,19 @@
 
 ?>
 
-<p>Staging Version 1.2.13 (November 2020)</p>
+<p>Staging Version 1.2.14 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-    <li>New Questionnaire Page: Concentration</li>
-    <li>Fixed Issue where Risk Aversion was not saved correctly</li>
-    <li>Fixed issue where Pay / Don't Pay buttons were reversed.</li>
-    <li>Martin's changes as of 11.11.2020, 12:00</li>
-    <li>Various Bugfixes</li>
-    <li>Questionnaire/Manipulation now only displays appropriate questions for Condition 4</li>
+  <li>Fix: Correct saving & processing of Visual Cue data</li>
+  <li>Visual Cue Box now has a Pointer as cursor</li>
+  <li>Martin's Changes as of 12.11.2020, 19:20</li>
 </ul>
 
 <br>
 <b> To Do</b>
 
 <ul>
-
 </ul>
 
 <div>
