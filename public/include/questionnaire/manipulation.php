@@ -21,14 +21,14 @@ if ($condition == 4) {
 
 
 if (sizeof($_POST) >= $numberOfQuestions) {
-   $man1 = postParamValue("man1");
-   $man2 = postParamValue("man2");
-   $man3 = postParamValue("man3");
-   $man4 = postParamValue("man4");
-   $man5 = postParamValue("man5");
-   $man6 = postParamValue("man6");
-   $man7 = postParamValue("man7");
-   $man8 = postParamValue("man8");
+   $man1 = postParamValue("man1", "0");
+   $man2 = postParamValue("man2", "0");
+   $man3 = postParamValue("man3", "0");
+   $man4 = postParamValue("man4", "0");
+   $man5 = postParamValue("man5", "0");
+   $man6 = postParamValue("man6", "0");
+   $man7 = postParamValue("man7", "0");
+   $man8 = postParamValue("man8", "0");
 
 
     $qb->addString("man1", $man1);
