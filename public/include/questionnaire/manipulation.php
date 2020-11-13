@@ -10,14 +10,15 @@ $expData = $db->selectQuery("SELECT exp_condition FROM experiment e WHERE e.part
 
 $condition = $expData["exp_condition"];
 
+if( !isset($condition) || !$condition) {
+    $condition = 2;
+}
+
 if ($condition == 4) {
     $numberOfQuestions = 3;
 }
 
-if(!$condition) {
-    echo "Warning: Condition could not be read! Default to 1";
-    $condition = 1;
-}
+
 
 if (sizeof($_POST) >= $numberOfQuestions) {
    $man1 = postParamValue("man1");
