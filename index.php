@@ -15,8 +15,8 @@ if ($password != "") {
 }
 else {
     $isLoggedIn = checkCookieHash();
+    $showNav = true;
 }
-
 
 require_once('./resources/config.php');
 
