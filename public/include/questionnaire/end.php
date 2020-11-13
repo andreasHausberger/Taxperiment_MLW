@@ -17,7 +17,9 @@ global $db;
 $riskQueryBuilder = new QueryBuilder("risk_aversion");
 
 $ecuToGBP = 350;
-$showUpFee = number_format(3, 2, ".", ",");
+$showUpFeeNumber = 3.00;
+
+$showUpFee = number_format($showUpFeeNumber, 2, ".", ",");
 
 if (!isset($experimentId)) {
     echo "WARNING: COULD NOT READ EXPERIMENT ID!";
@@ -105,6 +107,9 @@ else {
     echo "Warning: Could not retrieve answer for Risk Task!";
 }
 
+//total calculation
+$total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
+
 
 
 
@@ -128,7 +133,7 @@ else {
 </p>
 
 <p>
-  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($pounds + $riskPayment + $showUpFee) ?>.  
+  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($total) ?>.
 </p>
 
 <p>
