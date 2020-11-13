@@ -124,16 +124,16 @@ $total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
 
 <p>
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
-    You choose Option <?php echo $chosenAnswer ?> and earned <?php echo $riskResult ?> ECU.
-    This amounts to £<?php echo $riskPayment ?> (<?php echo $ecuToGBP ?> ECU = £1.00).
+    You choose Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
+    This amounts to <b>£<?php echo $riskPayment ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
-    In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to £<?php echo $pounds ?> (<?php echo $ecuToGBP ?> ECU = £1.00). 
+    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
+    This amounts to <b>£<?php echo $pounds ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00). 
 </p>
 
 <p>
-  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($total) ?>.
+  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of <b>£<?php echo ($total) ?></b>.
 </p>
 
 <p>
@@ -141,7 +141,7 @@ The purpose of this study was to investigate how factors like income, tax due, a
 or expected value information influence tax honesty and which information is attended in making the decision 
 whether to pay the tax due or to evade taxes.
 <br> 
-If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at"> martin.mueller82@univie.ac.at</a>)
+If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>)
 
 </p>
    

@@ -47,7 +47,9 @@ if (sizeof($_POST) >= $numberOfQuestions) {
 
     <div class="item">
         <p class="questionText">
+            <b>
             Did you make use of the expected value when making a decision?
+            </b>
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(2, "kno3", ["No", "Yes"]); ?>
