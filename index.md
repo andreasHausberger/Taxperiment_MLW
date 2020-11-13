@@ -8,7 +8,7 @@ Diese Seite fungiert als Blog für das Projekt Taxperiment_MLW. Hier schreibe ic
 * [Github](https://github.com/andreasHausberger)
 * [Twitter](https://twitter.com/andreasHausb)
 
-## Die Zukunft von Mouselab
+## Die Zukunft von Taxperiment
 
 Die Zukunft des Taxperiment-Projekts
 
