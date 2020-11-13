@@ -31,7 +31,7 @@
     <p>
         <b>
             Please respond to the following two items. We guarantee that your responses will not affect your approval.
-        <br>
+        </b>
     </p>
 </div>
 
