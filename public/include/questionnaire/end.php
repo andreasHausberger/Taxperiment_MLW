@@ -60,12 +60,14 @@ if (!$updated) {
 $rows = $results->fetch_all();
 
 $income = $rows[0][2];
+$incomeString = number_format($income, 2, ".", ",");
 
 if($participant == 181) {
     $income = 500;
 }
 
 $pounds = round($income / $ecuToGBP, 2);
+$poundString = number_format($pounds, 2, ".", ",");
 
 
 
@@ -119,24 +121,25 @@ $total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
 
 <br>
 
-<b> This is the last page. Thank you for your participation in this study.
-</b>
+<h3> This is the last page. Thank you for your participation in this study.
+</h3>
+<br>
 
-<p>
+<p class="tutorialText">
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
     You choose Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
     This amounts to <b>£<?php echo $riskPayment ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
-    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
-    This amounts to <b>£<?php echo $pounds ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00). 
+    In this round, you earned a net income of <b><?php echo $incomeString ?> ECU</b>.
+    This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 </p>
 
-<p>
+<p class="tutorialText">
   Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of <b>£<?php echo ($total) ?></b>.
 </p>
 
-<p>
+<p class="tutorialText">
 The purpose of this study was to investigate how factors like income, tax due, audit probability, fine, 
 or expected value information influence tax honesty and which information is attended in making the decision 
 whether to pay the tax due or to evade taxes.
@@ -153,7 +156,7 @@ if (!$updated) {
 </b>";
 }
 else {
-    echo "<b> The information about the round chosen for payment was saved successfully. </b> <br> You can now leave this page.";
+    echo "<p class='tutorialText'> <b>The information about the round chosen for payment was saved successfully. </b> <br> You can now leave this page.</p>";
 }?>
 <br>
 <br>
