@@ -27,28 +27,28 @@
     </p>
     <p class="tutorialText">
     <b>
-        1. How much would your remaining income be, if you choose "don't pay" and there is no audit? <br>
+        How much would your remaining income be, if you choose "don't pay" and there is no audit? <br>
     </b>
         <input type="text" name="comp1" id="comp1" onblur="addToArray('comp1')">
     </p>
 
     <p class="tutorialText">
     <b>
-        2. How much would your remaining income be if you choose "pay"? <br>
+        How much would your remaining income be if you choose "pay"? <br>
 	</b>
         <input type="text" name="comp1" id="comp2" onblur="addToArray('comp2')">
     </p>
 
     <p class="tutorialText">
     <b>
-        3. If you had to make this decision 10 times, how often could you expect to be audited? <br>
+        If you had to make this decision 10 times, how often could you expect to be audited? <br>
     </b>
             <input type="text" name="comp1" id="comp3" onblur="addToArray('comp3')">
     </p>
 
     <p class="tutorialText">
     <b>
-        4. How much would your remaining income be if you choose "do not pay" and you get audited? <br>
+        How much would your remaining income be if you choose "do not pay" and you get audited? <br>
     </b>
         <input type="text" name="comp1" id="comp4" onblur="addToArray('comp4')">
     </p>

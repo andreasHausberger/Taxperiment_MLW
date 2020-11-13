@@ -73,7 +73,7 @@ echo "<h1> Overview </h1>";
 
 
     if (isset($rows)) {
-        echo "<p> Here is an overview of your performance:   </p>";
+        echo "<p> Here is an overview of the tax rounds and whether you were audited:   </p>";
         foreach ($rows as $row) {
             echo buildResultsRow($row);
         }
