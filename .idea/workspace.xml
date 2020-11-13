@@ -38,7 +38,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/manipulation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/manipulation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/concentration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/concentration.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -247,13 +247,6 @@
       <workItem from="1605172041764" duration="7570000" />
       <workItem from="1605201496182" duration="3904000" />
       <workItem from="1605283571338" duration="1165000" />
-    </task>
-    <task id="LOCAL-00173" summary="New SVGs">
-      <created>1604426291878</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1604426291878</updated>
     </task>
     <task id="LOCAL-00174" summary="Changelog">
       <created>1604426426896</created>
@@ -591,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605287122767</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="Fallback for missing values in manipulation.php">
+      <created>1605293078124</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1605293078124</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +633,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Fixes: End Questionnaire Page" />
     <MESSAGE value="Screen Resolution, Meta data saving." />
     <MESSAGE value="Removed Comprehension Answer checks." />
     <MESSAGE value="Knowledge: Reduced number of questions." />
@@ -658,7 +657,8 @@
     <MESSAGE value="Fix: Condition 3, 4 Box Display, second try." />
     <MESSAGE value="Questionnaire: Graceful handling when no $condition is specified." />
     <MESSAGE value="Format currency function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Format currency function." />
+    <MESSAGE value="Fallback for missing values in manipulation.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fallback for missing values in manipulation.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -677,14 +677,14 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="-1273" y="-257" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605287122601">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="695" y="214" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605293077930">
+      <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605284526022" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1605106616150" />
-    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
+    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1605293077930" />
     <state width="468" height="485" key="DebuggerActiveHint" timestamp="1605202571119">
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
@@ -816,14 +816,14 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1605263703375">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2" timestamp="1605293082487">
+      <screen x="0" y="23" width="3008" height="1605" />
     </state>
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605263703375" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605035403423" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605118308940" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1605104009881" />
-    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1605293082487" />
     <state x="713" y="341" key="VcsDiffUtil.ChangesDialog" timestamp="1601040827951">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
