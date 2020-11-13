@@ -36,8 +36,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Visual Cue Indicator now uses the Pointer cursor when hovering.">
-      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Version, Changelog">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/include/questionnaire/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/questionnaire/end.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/audit.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/questionnaire.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/questionnaire.csv" afterDir="false" />
     </list>
@@ -246,14 +247,7 @@
       <workItem from="1604867647157" duration="6193000" />
       <workItem from="1605099488206" duration="6356000" />
       <workItem from="1605172041764" duration="7570000" />
-      <workItem from="1605201496182" duration="3063000" />
-    </task>
-    <task id="LOCAL-00168" summary="Big Tutorial Rewrite.">
-      <created>1604242442762</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1604242442762</updated>
+      <workItem from="1605201496182" duration="3904000" />
     </task>
     <task id="LOCAL-00169" summary="Added some missing translations.">
       <created>1604242840188</created>
@@ -591,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605205074324</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="Version, Changelog">
+      <created>1605205240835</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1605205240835</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,13 +653,13 @@
     <MESSAGE value="Bugfix: Quickstart save." />
     <MESSAGE value="Currency Format on Questionnaire/end.php" />
     <MESSAGE value="Blocked manipulation questions for Cond 4" />
-    <MESSAGE value="Version, Changelog" />
     <MESSAGE value="Fix: Forgot edge case." />
     <MESSAGE value="Questionnaire: Numeracy is skipped. Fix for duplicate rows in Feedback section." />
     <MESSAGE value="Questionnaire: Numeracy is skipped. Adjusted Page indexing." />
     <MESSAGE value="Fix: Using Mouse Event for datalyser.php processing." />
     <MESSAGE value="Visual Cue Indicator now uses the Pointer cursor when hovering." />
-    <option name="LAST_COMMIT_MESSAGE" value="Visual Cue Indicator now uses the Pointer cursor when hovering." />
+    <MESSAGE value="Version, Changelog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version, Changelog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -677,10 +678,10 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="-1273" y="-257" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605205134177">
+    <state x="-1273" y="-257" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605205240604">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205134177" />
+    <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205240603" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605118306684" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1605106616150" />
@@ -816,10 +817,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1605205138284">
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1605205255328">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205138284" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205255328" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605035403423" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605118308940" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1605104009881" />
