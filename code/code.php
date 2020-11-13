@@ -65,3 +65,11 @@ if (!function_exists("evaluateRiskTask")) {
         }
     }
 }
+
+if (!function_exists("formatCurrency")) {
+    function formatCurrency($currency, $accuracy = 2, $delimiter = ".") {
+        $string = number_format($currency, $accuracy, $delimiter, ",");
+
+        return $string;
+    }
+}

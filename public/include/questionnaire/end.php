@@ -19,7 +19,7 @@ $riskQueryBuilder = new QueryBuilder("risk_aversion");
 $ecuToGBP = 350;
 $showUpFeeNumber = 3.00;
 
-$showUpFee = number_format($showUpFeeNumber, 2, ".", ",");
+$showUpFee = formatCurrency($showUpFeeNumber);
 
 if (!isset($experimentId)) {
     echo "WARNING: COULD NOT READ EXPERIMENT ID!";
@@ -60,14 +60,14 @@ if (!$updated) {
 $rows = $results->fetch_all();
 
 $income = $rows[0][2];
-$incomeString = number_format($income, 2, ".", ",");
+$incomeString = formatCurrency($income);
 
 if($participant == 181) {
     $income = 500;
 }
 
 $pounds = round($income / $ecuToGBP, 2);
-$poundString = number_format($pounds, 2, ".", ",");
+$poundString = formatCurrency($pounds);
 
 
 
@@ -99,8 +99,9 @@ if($results && sizeof($results) > 0) {
     }
 
     if (!$isError) {
-        $riskResult = evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
-        $riskPayment = round(doubleval($riskResult) / doubleval($ecuToGBP), 2);
+        $riskResult = 385; //evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
+        $riskPayment = round($riskResult / $ecuToGBP, 2);
+        $riskPaymentString = formatCurrency($riskPayment);
         $riskAversionQuery = $riskQueryBuilder->buildInsert("WHERE subject_id = ?", true);
         $db->insertQuery($riskAversionQuery, "i", ...[$participant]);
     }
@@ -110,7 +111,7 @@ else {
 }
 
 //total calculation
-$total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
+$total = formatCurrency($pounds + $riskPayment + $showUpFeeNumber);
 
 
 
@@ -128,10 +129,10 @@ $total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
 <p class="tutorialText">
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
     You choose Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
-    This amounts to <b>£<?php echo $riskPayment ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
+    This amounts to <b>£<?php echo $riskPaymentString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
-    In this round, you earned a net income of <b><?php echo $incomeString ?> ECU</b>.
+    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
     This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 </p>
 
