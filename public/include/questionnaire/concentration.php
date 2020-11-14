@@ -31,7 +31,7 @@
     <p>
         <b>
             Please respond to the following two items. We guarantee that your responses will not affect your approval.
-        <br>
+        </b>
     </p>
 </div>
 
@@ -48,9 +48,9 @@
     <div class="item">
         <p class="questionText">
             <b>
-                To what extent could you concentrate on the instructions and decision tasks? <br>
-            </b>   (1 = "Not At All", 7 = "Fully")
-            
+                To what extent could you concentrate on the instructions and decision tasks?
+            </b> <br>
+            (1 = "Not At All", 7 = "Fully")
         </p>
         <div class="radioDisplayHorizontal">
             <?php echo createLikert(7, "con2"); ?>

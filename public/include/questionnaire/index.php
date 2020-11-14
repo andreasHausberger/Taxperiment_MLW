@@ -58,7 +58,6 @@ else {
 
     include($page);
 
-
     require_once("../../templates/footer.php");
 
 
