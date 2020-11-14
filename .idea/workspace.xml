@@ -37,14 +37,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/code_ui.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/DatabaseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/DatabaseHelper.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
