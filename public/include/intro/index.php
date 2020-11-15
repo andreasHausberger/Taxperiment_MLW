@@ -52,6 +52,15 @@ if ($action == "save_questionnaire" && $index === "6") {
     $insertID = $helper->saveRiskQuestionnaire($tempPostArray);
 }
 
+if ($action == "save_comprehension" && $index === "9") {
+    //handle comprehension task saving
+    $helper = new RedirectHelper($db, new QueryBuilder( 'comprehension'));
+    $tempPostArray = $_POST;
+    $tempPostArray['sname'] = getParamValue("sname");
+    $insertID = $helper->saveComprehensionTask($tempPostArray);
+
+}
+
 
 $pages = array(
     -1 => "error.html",
@@ -75,7 +84,7 @@ if ($condition == -1) {
 
 else {
 
-    if ($index == 4 || $index == 5 || $index == 9) {
+    if ($index == 4 || $index == 5 || $index == 8 || $index == 9) {
         //risk aversion has its own Next button (submit, save, & redirect).
         //exams 1 and 2 have tax evade/pay buttons, which work as "Next" Buttons.
 

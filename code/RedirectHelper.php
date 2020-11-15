@@ -69,6 +69,22 @@ class RedirectHelper {
         return false;
     }
 
+    function saveComprehensionTask($paraPostArray) {
+        if ($this->verifyPostArray($paraPostArray, 5)) {
+            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ? ORDER BY p.id DESC", "s", ...[ $paraPostArray['sname'] ] );
+            $subjectID = $idResults["id"];
+
+            $this->queryBuilder->addString("comp1", $paraPostArray["comp1"]);
+            $this->queryBuilder->addString("comp2", $paraPostArray["comp2"]);
+            $this->queryBuilder->addString("comp3", $paraPostArray["comp3"]);
+            $this->queryBuilder->addString("comp4", $paraPostArray["comp4"]);
+            $this->queryBuilder->addString("pid", $subjectID);
+
+            $insertQuery = $this->queryBuilder->buildInsert("");
+            return $insertID = $this->database->insertQuery($insertQuery);
+        }
+    }
+
     function createQuestionnaire($paraID) {
         return $this->database->insertQuery("INSERT INTO questionnaire (pid, created) VALUES (?, NOW())", "s", ...[$paraID]);
 
