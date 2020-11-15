@@ -8,18 +8,20 @@
 
 ?>
 
-<p>Staging Version 1.2.14 (November 2020)</p>
+<p>Relea Version 1.2.15 (November 2020)</p>
 
 <b>Recent Changes</b>
 <ul>
-  <li>Fix: Correct saving & processing of Visual Cue data</li>
-  <li>Visual Cue Box now has a Pointer as cursor</li>
-  <li>Martin's Changes as of 12.11.2020, 19:20</li>
+  <li>Saving of Comprehension Task (in Tutorial)</li>
+    <li>Last page info has been updated & reformatted</li>
+    <li>Auto-hides Pay/Don't Pay Buttons when clicked (prevents duplicate round entry)</li>
+    <li>Martin's Changes as of 15.11., 20:00</li>
+    <li>Many bug fixes. </li>
 </ul>
 
 <br>
 <b> To Do</b>
-
+    <li>Decision: Is everything working as expected? </li>
 <ul>
 </ul>
 
