@@ -113,6 +113,8 @@ if (isset($_GET['condition'])) {
 $feedback = $_GET['feedback'];
 $presentation = $_GET['presentation'];
 $order = $_GET['order'];
+$participant = urlencode($participant);
+
 
 $saveURL = "../../include/intro/index.php?&tw=0&sname=$participant&condition=$condition&page=$nextPage";
 ?>
