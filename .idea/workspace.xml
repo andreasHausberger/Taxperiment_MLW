@@ -37,10 +37,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/RedirectHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/RedirectHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/tut_comprehension.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/tut_comprehension.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
@@ -250,20 +246,6 @@
       <workItem from="1605172041764" duration="7570000" />
       <workItem from="1605201496182" duration="3904000" />
       <workItem from="1605283571338" duration="1165000" />
-    </task>
-    <task id="LOCAL-00176" summary="Reorganization: Tutorial saves data between Pages.">
-      <created>1604510602407</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1604510602407</updated>
-    </task>
-    <task id="LOCAL-00177" summary="Button Labels.">
-      <created>1604510733072</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1604510733072</updated>
     </task>
     <task id="LOCAL-00178" summary="Trello Issues Mostly done">
       <created>1604519064314</created>
@@ -594,7 +576,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605346596271</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="Saving of Comprehension Task in Tutorial">
+      <created>1605466438177</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1605466438177</updated>
+    </task>
+    <task id="LOCAL-00226" summary="Version, Changelog">
+      <created>1605466446351</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1605466446351</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +632,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Knowledge: Reduced number of questions." />
     <MESSAGE value="Fixed Value Errors in Risk Task." />
     <MESSAGE value="Fixes: Missing Tut page, more margin for SVG pages, adapted Experiment Content Display." />
     <MESSAGE value="Hot Fix: HL Risk Task" />
@@ -653,7 +648,6 @@
     <MESSAGE value="Questionnaire: Numeracy is skipped. Adjusted Page indexing." />
     <MESSAGE value="Fix: Using Mouse Event for datalyser.php processing." />
     <MESSAGE value="Visual Cue Indicator now uses the Pointer cursor when hovering." />
-    <MESSAGE value="Version, Changelog" />
     <MESSAGE value="Fix: Condition 3, 4 Box Display." />
     <MESSAGE value="Fix: Condition 3, 4 Box Display, second try." />
     <MESSAGE value="Questionnaire: Graceful handling when no $condition is specified." />
@@ -661,7 +655,9 @@
     <MESSAGE value="Fallback for missing values in manipulation.php" />
     <MESSAGE value="Syntax fix." />
     <MESSAGE value="Adapted User query to avoid confusion of IDs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adapted User query to avoid confusion of IDs" />
+    <MESSAGE value="Saving of Comprehension Task in Tutorial" />
+    <MESSAGE value="Version, Changelog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version, Changelog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -680,9 +676,10 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="695" y="0" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605346596144">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605466446246">
+      <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605466446246" />
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605346596144" />

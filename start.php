@@ -15,6 +15,7 @@
   <li>Saving of Comprehension Task (in Tutorial)</li>
     <li>Last page info has been updated & reformatted</li>
     <li>Auto-hides Pay/Don't Pay Buttons when clicked (prevents duplicate round entry)</li>
+    <li>Martin's Changes as of 15.11., 20:00</li>
     <li>Many bug fixes. </li>
 </ul>
 
