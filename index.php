@@ -30,6 +30,4 @@ else
     include("login.php");
 }
 
-?>
-
-<?php require_once("public/templates/footer.php"); ?>
+require_once("public/templates/footer.php");
