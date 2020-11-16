@@ -54,7 +54,14 @@
 
         <div id="taxInputContainer">
             <br>
-            <?php getAuditButtons() ?>
+            <?php
+            if($condition == 1) {
+                getAuditButtons(true);
+            }
+            else {
+                getAuditButtons();
+            }
+             ?>
 
         </div>
     </div>
