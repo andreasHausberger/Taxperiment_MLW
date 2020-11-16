@@ -128,7 +128,7 @@ $total = formatCurrency($pounds + $riskPayment + $showUpFeeNumber);
 
 <p class="tutorialText">
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
-    You choose Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
+    You have chosen Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
     This amounts to <b>£<?php echo $riskPaymentString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
