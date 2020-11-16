@@ -99,7 +99,7 @@ if($results && sizeof($results) > 0) {
     }
 
     if (!$isError) {
-        $riskResult = 385; //evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
+        $riskResult = evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
         $riskPayment = round($riskResult / $ecuToGBP, 2);
         $riskPaymentString = formatCurrency($riskPayment);
         $riskAversionQuery = $riskQueryBuilder->buildInsert("WHERE subject_id = ?", true);
