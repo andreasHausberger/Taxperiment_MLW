@@ -25,7 +25,7 @@ class RedirectHelper {
     function saveRiskSelfAssessment($paraPostArray) {
         if ($this->verifyPostArray($paraPostArray)) {
             $selfRisk = $paraPostArray["risk_self"];
-            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ?", "s", ...[ $paraPostArray['sname'] ] );
+            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ? ORDER BY p.id DESC", "s", ...[ $paraPostArray['sname'] ] );
             $subjectID = $idResults["id"];
             if ($selfRisk && $subjectID) {
                 return $this->database->insertQuery("INSERT INTO risk_aversion (subject_id, self_risk) VALUES (?, ?)", "ii", ...[$subjectID, $selfRisk]);
@@ -59,7 +59,7 @@ class RedirectHelper {
                 $this->queryBuilder->addString("r" . $rowNumber, $results[$rowNumber - 1]);
                 $rowNumber += 1;
             }
-            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ?", "s", ...[ $paraPostArray['sname'] ] );
+            $idResults = $this->database->selectQuery("SELECT p.id FROM participant p WHERE p.name = ? ORDER BY p.id DESC", "s", ...[ $paraPostArray['sname'] ] );
             $subjectID = $idResults["id"];
 
             $updateQuery = $this->queryBuilder->buildInsert("WHERE subject_id = ?", true);

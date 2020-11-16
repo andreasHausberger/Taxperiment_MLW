@@ -82,6 +82,8 @@ if($results && sizeof($results) > 0) {
     $roundData = $riskTaskArray[$randomRiskRound - 1];
     $isError = false;
 
+    $probability; $rewardSuccess; $rewardFailure;
+
     switch ($chosenAnswer) {
         case "A":
             $probability = $roundData["probA1"];
