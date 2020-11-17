@@ -17,6 +17,12 @@ class RedirectHelper {
             $prolificPID = $paraPostArray['prolific_pid'];
             $studyID = $paraPostArray['study_id'];
             $sessionID = $paraPostArray['session_id'];
+
+            $existingUserQuery = "SELECT * FROM participant p WHERE p.name = ?";
+            if ($existingUserResult = $this->database->selectQuery($existingUserQuery, "s", $name)) {
+                echo "Participant info has been saved: ID " . $existingUserResult["id"] . "<br>";
+                return $existingUserResult["id"];
+            }
             return $this->database->insertQuery("INSERT INTO participant (name, prolific_pid, study_id, session_id) VALUES (?, ?, ?, ?)", "ssss", ...[$name, $prolificPID, $studyID, $sessionID]);
         }
         return false;

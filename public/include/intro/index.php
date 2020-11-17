@@ -11,6 +11,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/RedirectHelper.php");
 $db = new Database();
 $riskQB = new QueryBuilder('risk_aversion');
+$canContinue = true;
 
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
@@ -33,7 +34,12 @@ if($action == "create_participant" && ($index === "1" || $index === "10")) {
         "study_id" => $studyID,
         "session_id" => $sessionID
     ];
-    $helper->createUser($userDataArray);
+    $createdUserResult = $helper->createUser($userDataArray);
+
+    if (!$createdUserResult) {
+        echo "An error occurred when creating a new participant. Please refresh this page to try again. <br>
+               If this error persists, please let the study administrator know: Mail to <a href='mailto:martin.mueller82@univie.ac.at'>martin.mueller82@univie.ac.at</a> ";
+    }
 }
 
 if ($action == "save_risk_self") {
@@ -108,7 +114,9 @@ else {
 
         include($page);
 
-        include("../../templates/continue.php");
+        if($canContinue) {
+            include("../../templates/continue.php");
+        }
 
         require_once ("../../templates/footer.php");
     }

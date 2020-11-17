@@ -73,7 +73,7 @@ $randomCondition = rand(1, 4);
 <br>
 
 <?php
-$nameCypher = sha1(strval(rand(0, 2500)));
+$nameCypher = sha1(strval(rand()));
 echo "<button onclick=startExp(\"$nameCypher\")> 
         Start Study
     </button> ";
