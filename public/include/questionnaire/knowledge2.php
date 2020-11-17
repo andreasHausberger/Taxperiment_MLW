@@ -37,7 +37,7 @@ if (sizeof($_POST) >= $numberOfQuestions) {
     <div class="item">
         <p class="questionText">
             <b>
-                Please try to explain in your own words what an expected value is! (open question)
+                Please try to explain in your own words what an expected value is.
             </b>
         </p>
         <div>
