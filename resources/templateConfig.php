@@ -166,7 +166,7 @@ if($condition == 1 || $condition == 2) {
     if($currentCondition == 1) {
         $currentBox = array(
             "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
-            "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$sureGainContent^$evRiskyContent");
+            "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$evRiskyContent^$sureGainContent");
     }
     else {
         $currentBox = array(
@@ -179,7 +179,7 @@ if($condition == 3 || $condition == 4) {
     if($currentCondition == 1) {
         $currentBox = array(
             "label" => "$fineLabel^$auditLabel`$incomeLabel^$taxLabel`$evRiskyLabel^$sureGainLabel",
-            "content" => "$fineContent^$auditContent`$incomeContent^$taxContent`$sureGainContent^$evRiskyContent");
+            "content" => "$fineContent^$auditContent`$incomeContent^$taxContent`$evRiskyContent^$sureGainContent");
     }
     else if($currentCondition == 7) {
         $currentBox = array(
