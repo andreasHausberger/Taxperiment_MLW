@@ -170,8 +170,8 @@ if($condition == 1 || $condition == 2) {
     }
     else {
         $currentBox = array(
-            "label" => "$incomeLabel^$taxLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
-            "content" => "$incomeContent^$taxContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent");
+            "label" => "$taxLabel^$incomeLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
+            "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent");
     }
 }
 
