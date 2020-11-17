@@ -162,6 +162,19 @@ $mouselabBoxArray = array(
 
 $currentBox = $mouselabBoxArray[$currentCondition];
 
+if($condition == 1 || $condition == 2) {
+    if($currentCondition == 1) {
+        $currentBox = array(
+            "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
+            "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$sureGainContent^$evRiskyContent");
+    }
+    else {
+        $currentBox = array(
+            "label" => "$incomeLabel^$taxLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
+            "content" => "$incomeContent^$taxContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent");
+    }
+}
+
 if($condition == 3 || $condition == 4) {
     if($currentCondition == 1) {
         $currentBox = array(

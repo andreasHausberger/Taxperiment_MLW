@@ -38,7 +38,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/include/intro/risk_attitude.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/include/intro/risk_attitude.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -248,14 +248,7 @@
       <workItem from="1605201496182" duration="3904000" />
       <workItem from="1605283571338" duration="1165000" />
       <workItem from="1605549469306" duration="909000" />
-      <workItem from="1605555677818" duration="3629000" />
-    </task>
-    <task id="LOCAL-00184" summary="Knowledge: Split Section into 2 Pages. Second one is skipped if &quot;no&quot; is selected on first.">
-      <created>1604679003818</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1604679003818</updated>
+      <workItem from="1605555677818" duration="4513000" />
     </task>
     <task id="LOCAL-00185" summary="Version, Changelog">
       <created>1604679483795</created>
@@ -593,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605558409269</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="Fixes, Check">
+      <created>1605559467890</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559467890</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +635,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Fixed Bug where Risk was not saved" />
     <MESSAGE value="Changelog" />
     <MESSAGE value="Overview Table: Color accents, padding." />
     <MESSAGE value="Bugfix: Quickstart save." />
@@ -660,7 +659,8 @@
     <MESSAGE value="Fix: Display Boxes (!)" />
     <MESSAGE value="Fix: Risk Questionnaire." />
     <MESSAGE value="Fixes: Questionnaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes: Questionnaire" />
+    <MESSAGE value="Fixes, Check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes, Check" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -679,10 +679,10 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605558409052">
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605559467743">
       <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
-    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605558409052" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605559467743" />
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605550497284" />
@@ -838,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1605550499093">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1605559470828">
+      <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605479386684" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605559470828" />
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605263703375" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605035403423" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605550499093" />
