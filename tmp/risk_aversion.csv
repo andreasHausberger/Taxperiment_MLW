@@ -1,0 +1,16 @@
+id,subject_id,row,result,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,self_risk,chosen_round,round_result 
+1,1,,,B,A,A,A,A,A,A,A,A,A,9,4,200 
+2,13,,,B,A,A,B,B,A,A,A,A,A,6,4,385 
+3,9,,,B,A,A,B,B,B,B,B,B,B,8,, 
+4,29,,,A,A,B,B,B,B,B,B,B,B,9,, 
+5,30,,,B,B,B,B,B,B,B,B,B,B,10,, 
+6,31,,,B,B,A,A,A,A,A,A,A,A,10,, 
+7,9,,,B,A,A,B,B,B,B,B,B,B,10,, 
+8,35,,,A,A,A,A,A,A,A,A,A,A,10,7, 
+9,32,,,B,A,B,A,A,A,A,A,A,A,8,, 
+10,32,,,B,A,B,A,A,A,A,A,A,A,10,, 
+11,32,,,B,A,B,A,A,A,A,A,A,A,10,, 
+12,41,,,B,A,B,A,A,A,A,A,A,A,9,10, 
+14,42,,,B,A,A,A,A,A,A,A,A,A,1,, 
+15,43,,,B,A,A,A,A,B,A,A,B,A,9,9, 
+16,46,,,B,A,B,A,A,A,A,A,A,A,9,,
