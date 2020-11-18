@@ -27,7 +27,7 @@ $sessionID = getParamValue("sessionID");
 
 
 if($action == "create_participant" && ($index === "1" || $index === "10")) {
-    $helper = new RedirectHelper($db, new QueryBuilder('participant'));
+    $helper = new RedirectHelper(new Database(), new QueryBuilder('participant'));
     $userDataArray = [
         "sname" => getParamValue("sname"),
         "prolific_pid" => $prolificPID,
@@ -44,7 +44,7 @@ if($action == "create_participant" && ($index === "1" || $index === "10")) {
 
 if ($action == "save_risk_self") {
     //handle save risk self
-    $helper = new RedirectHelper($db, $riskQB);
+    $helper = new RedirectHelper(new Database(), $riskQB);
     $tempPostArray = $_POST;
     $tempPostArray["sname"] = getParamValue("sname");
 
@@ -52,7 +52,7 @@ if ($action == "save_risk_self") {
 }
 if ($action == "save_questionnaire" && $index === "6") {
     //handle save questionnaire
-    $helper = new RedirectHelper($db, $riskQB);
+    $helper = new RedirectHelper(new Database(), $riskQB);
     $tempPostArray = $_POST;
     $tempPostArray["sname"] = getParamValue("sname");
     $insertID = $helper->saveRiskQuestionnaire($tempPostArray);
@@ -60,7 +60,7 @@ if ($action == "save_questionnaire" && $index === "6") {
 
 if ($action == "save_comprehension" && $index === "9") {
     //handle comprehension task saving
-    $helper = new RedirectHelper($db, new QueryBuilder( 'comprehension'));
+    $helper = new RedirectHelper(new Database(), new QueryBuilder( 'comprehension'));
     $tempPostArray = $_POST;
     $tempPostArray['sname'] = getParamValue("sname");
     $insertID = $helper->saveComprehensionTask($tempPostArray);

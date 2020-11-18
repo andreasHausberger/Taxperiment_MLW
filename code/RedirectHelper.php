@@ -11,7 +11,7 @@ class RedirectHelper {
         $this->queryBuilder = $queryBuilder;
     }
 
-    function createUser($paraPostArray) {
+    function createUser($paraPostArray, $paraNumberOfRetries = 5) {
         if ($this->verifyPostArray($paraPostArray, 4)) {
             $name = $paraPostArray['sname'];
             $prolificPID = $paraPostArray['prolific_pid'];
@@ -19,11 +19,16 @@ class RedirectHelper {
             $sessionID = $paraPostArray['session_id'];
 
             $existingUserQuery = "SELECT * FROM participant p WHERE p.name = ?";
-            if ($existingUserResult = $this->database->selectQuery($existingUserQuery, "s", $name)) {
-                echo "Participant info has been saved: ID " . $existingUserResult["id"] . "<br>";
+            if (($existingUserResult = $this->database->selectQuery($existingUserQuery, "s", $name)) && $paraNumberOfRetries > 0) {
                 return $existingUserResult["id"];
             }
-            return $this->database->insertQuery("INSERT INTO participant (name, prolific_pid, study_id, session_id) VALUES (?, ?, ?, ?)", "ssss", ...[$name, $prolificPID, $studyID, $sessionID]);
+            else {
+                $result =  $this->database->insertQuery("INSERT INTO participant (name, prolific_pid, study_id, session_id) VALUES (?, ?, ?, ?)", "ssss", ...[$name, $prolificPID, $studyID, $sessionID]);
+                if (!$result || true) {
+                    $this->createUser($paraPostArray, $paraNumberOfRetries - 1);
+                }
+                return $result;
+            }
         }
         return false;
     }
