@@ -19,12 +19,12 @@ class RedirectHelper {
             $sessionID = $paraPostArray['session_id'];
 
             $existingUserQuery = "SELECT * FROM participant p WHERE p.name = ?";
-            if (($existingUserResult = $this->database->selectQuery($existingUserQuery, "s", $name)) && $paraNumberOfRetries > 0) {
+            if (($existingUserResult = $this->database->selectQuery($existingUserQuery, "s", $name))) {
                 return $existingUserResult["id"];
             }
             else {
                 $result =  $this->database->insertQuery("INSERT INTO participant (name, prolific_pid, study_id, session_id) VALUES (?, ?, ?, ?)", "ssss", ...[$name, $prolificPID, $studyID, $sessionID]);
-                if (!$result || true) {
+                if (!$result && $paraNumberOfRetries > 0) {
                     $this->createUser($paraPostArray, $paraNumberOfRetries - 1);
                 }
                 return $result;
