@@ -52,12 +52,12 @@ class DatabaseHelper
         $dataString = "";
 
         if ($results && $paraHeaders) {
-            $headerString = implode(";", $paraHeaders);
+            $headerString = implode(",", $paraHeaders);
 
             $dataString .= $headerString;
 
             foreach ($results as $result) {
-                $rowString = "\n" . implode(";", $result);
+                $rowString = "\n" . implode(",", $result);
                 $dataString .= $rowString;
             }
         }
