@@ -24,7 +24,7 @@ class RedirectHelper {
             }
             else {
                 $result =  $this->database->insertQuery("INSERT INTO participant (name, prolific_pid, study_id, session_id) VALUES (?, ?, ?, ?)", "ssss", ...[$name, $prolificPID, $studyID, $sessionID]);
-                if (!$result || true) {
+                if (!$result) {
                     $this->createUser($paraPostArray, $paraNumberOfRetries - 1);
                 }
                 return $result;
