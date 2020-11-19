@@ -36,11 +36,11 @@ Jeder, der mich gefragt hat, weiß, dass ich kein Fan von Mouselab bin. Das Fram
 Ich möchte daher in den Raum stellen, dass langfristig eine bessere Alternative zu finden ist. Die Funktionialität, Boxen aufzudecken und deren Mouseover-Zeit zu speichern, ist nicht so komplex.  
 Eine schwierigere Frage ist die der Daten-Aufbereitung. Hier würde ich mich über euren Input freuen: 
 
-	⁃	Ist das Format der Mouselab-Daten für euch optimal? Gibt es hier weitere Abhängigkeiten in der Datenverarbeitung (zB fertige Skripte zur statistischen Analyse?)
+* Ist das Format der Mouselab-Daten für euch optimal? Gibt es hier weitere Abhängigkeiten in der Datenverarbeitung (zB fertige Skripte zur statistischen Analyse?)
 
-	⁃	Wenn nein, was könnte man hier verbessern?
+* Wenn nein, was könnte man hier verbessern?
 
-	⁃	Wären generelle Mousetracking-Daten für euch spannend (zB Heatmap, Scrollmap)?
+* Wären generelle Mousetracking-Daten für euch spannend (zB Heatmap, Scrollmap)?
 
 
 **HTML-Templates**
@@ -55,24 +55,23 @@ Die Experiment-Daten waren den Forschern bisher noch nicht offen zugänglich. Da
 
 Taxperiment sieht, wenn man positive Formulierungen sucht, sehr zweckmäßig aus. Ich würde gerne die visuellen Aspekte neu überdenken. 
 
-	⁃	 Weg mit der grauen Hintergrundfarbe? Farb-Akzente sind super, aber ich empfinde das Grau als geradezu "aggressiv langweilig". 
+* Weg mit der grauen Hintergrundfarbe? Farb-Akzente sind super, aber ich empfinde das Grau als geradezu "aggressiv langweilig". 
 
-	⁃	 Einheitliche Design-Sprache: 
+* Einheitliche Design-Sprache: 
 
-	⁃	 Font: Hier würde ich einen modernen Sans-Serif-Font vorschlagen
+* Font: Hier würde ich einen modernen Sans-Serif-Font vorschlagen
 
-	⁃	Farben: Einheitliche Farben, die mit Bedeutung verbunden sind
+* Farben: Einheitliche Farben, die mit Bedeutung verbunden sind
 
-	⁃	Icons: Einheitliche Icons, die Abläufe klarer kennzeichnen sollten. 
+* Icons: Einheitliche Icons, die Abläufe klarer kennzeichnen sollten. 
 
-	⁃	Vereinheitlichung von Fehlermeldungen, Notifications, etc.
+* Vereinheitlichung von Fehlermeldungen, Notifications, etc.
 
-	⁃	Sinnvolle, dynamische Anpassungen an verschiedene Display-Größen: Implementierung des Bootstrap-Frameworks. 
+* Sinnvolle, dynamische Anpassungen an verschiedene Display-Größen: Implementierung des Bootstrap-Frameworks. 
 
-	⁃	Researcher-Menü: Hier wäre eine sinnvolle Ordnung (zB mit einer Navigations-Leiste) der einzelnen Links sinnvoll. 
+* Researcher-Menü: Hier wäre eine sinnvolle Ordnung (zB mit einer Navigations-Leiste) der einzelnen Links super. 
 	
-Mir ist klar, dass rein optische Änderungen zunächst als weniger bedeutsam
 
 **Generelle Richtung**
 
-In unserem Entwicklungsprozess ist mir immer wieder aufgefallen, dass die "Pipeline" von der ersten Änderungs-Idee bis zur Umsetzung oft schwieriger ist, als sie sein müsste: Wir schrieben viele Mails, ich übersah einiges, verstand einiges falsch. Die oben genannten Denkanstöße sollten das Projekt in eine Richtung bringen, in der ihr als Forscher selbst mehr Möglichkeiten habt, direkt eure Ideen umzusetzen. 
+In unserem Entwicklungsprozess ist mir immer wieder aufgefallen, dass die "Pipeline" von der ersten Änderungs-Idee bis zur Umsetzung oft länger und herausfordernder ist, als sie sein müsste: Wir schrieben viele Mails, ich übersah einiges, verstand einiges falsch. Die oben genannten Denkanstöße sollten das Projekt in eine Richtung bringen, in der ihr als Forscher selbst mehr Möglichkeiten habt, direkt eure Ideen umzusetzen. 
