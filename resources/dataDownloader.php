@@ -142,6 +142,7 @@ if (isset($connection)) {
 
     $dbHelper->createCSV("risk_aversion", "risk_aversion", "Risk Aversion");
     $dbHelper->createCSV("exp_round", "exp_round", "Experiment Round Data");
+    $dbHelper->createCSV("experiment", "experiment", "Experiment & Technical Data");
 
     $expRoundDataQuery = " SELECT 
 	        ero.id,
