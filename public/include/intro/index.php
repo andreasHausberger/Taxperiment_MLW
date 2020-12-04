@@ -11,6 +11,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/code/QueryBuilder.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/RedirectHelper.php");
 $db = new Database();
 $riskQB = new QueryBuilder('risk_aversion');
+$canContinue = true;
 
 
 $index = isset($_GET['page']) ? $_GET['page'] : -1;
@@ -26,19 +27,24 @@ $sessionID = getParamValue("sessionID");
 
 
 if($action == "create_participant" && ($index === "1" || $index === "10")) {
-    $helper = new RedirectHelper($db, new QueryBuilder('participant'));
+    $helper = new RedirectHelper(new Database(), new QueryBuilder('participant'));
     $userDataArray = [
         "sname" => getParamValue("sname"),
         "prolific_pid" => $prolificPID,
         "study_id" => $studyID,
         "session_id" => $sessionID
     ];
-    $helper->createUser($userDataArray);
+    $createdUserResult = $helper->createUser($userDataArray);
+
+    if (!$createdUserResult) {
+        echo "An error occurred when creating a new participant. Please refresh this page to try again. <br>
+               If this error persists, please let the study administrator know: Mail to <a href='mailto:martin.mueller82@univie.ac.at'>martin.mueller82@univie.ac.at</a> ";
+    }
 }
 
 if ($action == "save_risk_self") {
     //handle save risk self
-    $helper = new RedirectHelper($db, $riskQB);
+    $helper = new RedirectHelper(new Database(), $riskQB);
     $tempPostArray = $_POST;
     $tempPostArray["sname"] = getParamValue("sname");
 
@@ -46,10 +52,19 @@ if ($action == "save_risk_self") {
 }
 if ($action == "save_questionnaire" && $index === "6") {
     //handle save questionnaire
-    $helper = new RedirectHelper($db, $riskQB);
+    $helper = new RedirectHelper(new Database(), $riskQB);
     $tempPostArray = $_POST;
     $tempPostArray["sname"] = getParamValue("sname");
     $insertID = $helper->saveRiskQuestionnaire($tempPostArray);
+}
+
+if ($action == "save_comprehension" && $index === "9") {
+    //handle comprehension task saving
+    $helper = new RedirectHelper(new Database(), new QueryBuilder( 'comprehension'));
+    $tempPostArray = $_POST;
+    $tempPostArray['sname'] = getParamValue("sname");
+    $insertID = $helper->saveComprehensionTask($tempPostArray);
+
 }
 
 
@@ -75,7 +90,7 @@ if ($condition == -1) {
 
 else {
 
-    if ($index == 4 || $index == 5 || $index == 9) {
+    if ($index == 4 || $index == 5 || $index == 8 || $index == 9) {
         //risk aversion has its own Next button (submit, save, & redirect).
         //exams 1 and 2 have tax evade/pay buttons, which work as "Next" Buttons.
 
@@ -99,7 +114,9 @@ else {
 
         include($page);
 
-        include("../../templates/continue.php");
+        if($canContinue) {
+            include("../../templates/continue.php");
+        }
 
         require_once ("../../templates/footer.php");
     }

@@ -36,12 +36,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="questionnaire/end.php: All currency is now in the same format.">
-      <change afterPath="$PROJECT_DIR$/resources/index.php" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/code_ui.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/code_ui.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/dataDownloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dataDownloader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/exp_round_order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/exp_round_order.csv" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -66,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="design" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -248,197 +246,12 @@
       <workItem from="1604867647157" duration="6193000" />
       <workItem from="1605099488206" duration="6356000" />
       <workItem from="1605172041764" duration="7570000" />
-      <workItem from="1605201496182" duration="8635000" />
-      <workItem from="1605428985092" duration="1391000" />
-    </task>
-    <task id="LOCAL-00170" summary="Version, Changelog.">
-      <created>1604243355186</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1604243355186</updated>
-    </task>
-    <task id="LOCAL-00171" summary="More Translations.">
-      <created>1604244163096</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1604244163096</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Added Label for cond 2 EV indicator. Added percentage points to tax due Box content.">
-      <created>1604250620882</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1604250620883</updated>
-    </task>
-    <task id="LOCAL-00173" summary="New SVGs">
-      <created>1604426291878</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1604426291878</updated>
-    </task>
-    <task id="LOCAL-00174" summary="Changelog">
-      <created>1604426426896</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1604426426897</updated>
-    </task>
-    <task id="LOCAL-00175" summary="WIP: Reorg of Tutorial Index.">
-      <created>1604508961468</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1604508961468</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Reorganization: Tutorial saves data between Pages.">
-      <created>1604510602407</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1604510602407</updated>
-    </task>
-    <task id="LOCAL-00177" summary="Button Labels.">
-      <created>1604510733072</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1604510733072</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Trello Issues Mostly done">
-      <created>1604519064314</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1604519064314</updated>
-    </task>
-    <task id="LOCAL-00179" summary="Knowledge: Question is &quot;optional&quot;">
-      <created>1604519901308</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1604519901308</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Knowledge: Question is &quot;optional&quot;">
-      <created>1604520723110</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1604520723110</updated>
-    </task>
-    <task id="LOCAL-00181" summary="Knowledge Fix: Fixed issue where answer count was incorrect.">
-      <created>1604570027910</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1604570027910</updated>
-    </task>
-    <task id="LOCAL-00182" summary="Some Trello Fixes.">
-      <created>1604592343093</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1604592343094</updated>
-    </task>
-    <task id="LOCAL-00183" summary="Removed Randomization for Round Presentation.">
-      <created>1604671871339</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1604671871339</updated>
-    </task>
-    <task id="LOCAL-00184" summary="Knowledge: Split Section into 2 Pages. Second one is skipped if &quot;no&quot; is selected on first.">
-      <created>1604679003818</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1604679003818</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Version, Changelog">
-      <created>1604679483795</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1604679483795</updated>
-    </task>
-    <task id="LOCAL-00186" summary="Risk Aversion: Random Round Selection for Payment. Refactored ECU/GBP Conversion.">
-      <created>1604763630405</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1604763630407</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Bug fixes: Data saving, Tutorial Display.">
-      <created>1604768694539</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1604768694539</updated>
-    </task>
-    <task id="LOCAL-00188" summary="Changelog, Version">
-      <created>1604769073740</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1604769073740</updated>
-    </task>
-    <task id="LOCAL-00189" summary="Database Helper: New Helper Class to ease data downloads (WIP).">
-      <created>1604863528294</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1604863528294</updated>
-    </task>
-    <task id="LOCAL-00190" summary="Added Prolific Link">
-      <created>1604868448736</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1604868448737</updated>
-    </task>
-    <task id="LOCAL-00191" summary="Prolific Identifiers correction">
-      <created>1604868514776</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1604868514777</updated>
-    </task>
-    <task id="LOCAL-00192" summary="Fixes: End Questionnaire Page">
-      <created>1604948516338</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1604948516338</updated>
-    </task>
-    <task id="LOCAL-00193" summary="Version, Changelog">
-      <created>1604948599433</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1604948599433</updated>
-    </task>
-    <task id="LOCAL-00194" summary="Screen Resolution, Meta data saving.">
-      <created>1604951417425</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1604951417425</updated>
-    </task>
-    <task id="LOCAL-00195" summary="Removed Comprehension Answer checks.">
-      <created>1604951873395</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1604951873395</updated>
-    </task>
-    <task id="LOCAL-00196" summary="Knowledge: Reduced number of questions.">
-      <created>1604952355581</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1604952355581</updated>
+      <workItem from="1605201496182" duration="3904000" />
+      <workItem from="1605283571338" duration="1165000" />
+      <workItem from="1605549469306" duration="909000" />
+      <workItem from="1605555677818" duration="4785000" />
+      <workItem from="1605599039580" duration="3343000" />
+      <workItem from="1605622279949" duration="8096000" />
     </task>
     <task id="LOCAL-00197" summary="Fixed Value Errors in Risk Task.">
       <created>1605034911200</created>
@@ -587,14 +400,203 @@
       <option name="project" value="LOCAL" />
       <updated>1605205240835</updated>
     </task>
-    <task id="LOCAL-00218" summary="questionnaire/end.php: All currency is now in the same format.">
-      <created>1605255438681</created>
+    <task id="LOCAL-00218" summary="Fix: Condition 3, 4 Box Display.">
+      <created>1605263509681</created>
       <option name="number" value="00218" />
       <option name="presentableId" value="LOCAL-00218" />
       <option name="project" value="LOCAL" />
-      <updated>1605255438681</updated>
+      <updated>1605263509681</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="Fix: Condition 3, 4 Box Display, second try.">
+      <created>1605284072756</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1605284072756</updated>
+    </task>
+    <task id="LOCAL-00220" summary="Questionnaire: Graceful handling when no $condition is specified.">
+      <created>1605284526155</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1605284526155</updated>
+    </task>
+    <task id="LOCAL-00221" summary="Format currency function.">
+      <created>1605287122767</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1605287122767</updated>
+    </task>
+    <task id="LOCAL-00222" summary="Fallback for missing values in manipulation.php">
+      <created>1605293078124</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1605293078124</updated>
+    </task>
+    <task id="LOCAL-00223" summary="Syntax fix.">
+      <created>1605293343719</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1605293343719</updated>
+    </task>
+    <task id="LOCAL-00224" summary="Adapted User query to avoid confusion of IDs">
+      <created>1605346596271</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1605346596271</updated>
+    </task>
+    <task id="LOCAL-00225" summary="Saving of Comprehension Task in Tutorial">
+      <created>1605466438177</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1605466438177</updated>
+    </task>
+    <task id="LOCAL-00226" summary="Version, Changelog">
+      <created>1605466446351</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1605466446351</updated>
+    </task>
+    <task id="LOCAL-00227" summary="Version, Changelog">
+      <created>1605466472628</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1605466472628</updated>
+    </task>
+    <task id="LOCAL-00228" summary="Fix: Tutorial Crash.">
+      <created>1605479249005</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1605479249005</updated>
+    </task>
+    <task id="LOCAL-00229" summary="Fix: Display Boxes (?)">
+      <created>1605479383670</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1605479383670</updated>
+    </task>
+    <task id="LOCAL-00230" summary="Fix: Display Boxes (!)">
+      <created>1605549942430</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1605549942431</updated>
+    </task>
+    <task id="LOCAL-00231" summary="Fix: Risk Questionnaire.">
+      <created>1605550455908</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1605550455908</updated>
+    </task>
+    <task id="LOCAL-00232" summary="Fixes: Questionnaire">
+      <created>1605558409269</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1605558409269</updated>
+    </task>
+    <task id="LOCAL-00233" summary="Fixes, Check">
+      <created>1605559467890</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559467890</updated>
+    </task>
+    <task id="LOCAL-00234" summary="Fix: Box Display">
+      <created>1605597405795</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1605597405796</updated>
+    </task>
+    <task id="LOCAL-00235" summary="Fix: Box Contents">
+      <created>1605600120785</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1605600120785</updated>
+    </task>
+    <task id="LOCAL-00236" summary="Fix: Box Contents">
+      <created>1605612897220</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1605612897221</updated>
+    </task>
+    <task id="LOCAL-00237" summary="Added Download Links, Saving Risk Questionnaire Result">
+      <created>1605617682308</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1605617682308</updated>
+    </task>
+    <task id="LOCAL-00238" summary="Version, Changelog">
+      <created>1605622378662</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1605622378662</updated>
+    </task>
+    <task id="LOCAL-00239" summary="Commit of csv Files to ensure write-ability for DatabasHelper">
+      <created>1605628755235</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1605628755235</updated>
+    </task>
+    <task id="LOCAL-00240" summary="Added Check to prevent User Saving error, duplicate saving.">
+      <created>1605647034276</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1605647034276</updated>
+    </task>
+    <task id="LOCAL-00241" summary="Fix: Saving of User">
+      <created>1605686975594</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1605686975594</updated>
+    </task>
+    <task id="LOCAL-00242" summary="Removed dev variable">
+      <created>1605688886499</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1605688886499</updated>
+    </task>
+    <task id="LOCAL-00243" summary="Added secure check for recursion">
+      <created>1605690411059</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1605690411059</updated>
+    </task>
+    <task id="LOCAL-00244" summary="Added Custom CSV for exp round order">
+      <created>1605699083373</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1605699083373</updated>
+    </task>
+    <task id="LOCAL-00245" summary="Comma seperated">
+      <created>1605700334755</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1605700334755</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,32 +638,32 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Database Helper: New Helper Class to ease data downloads (WIP)." />
-    <MESSAGE value="Added Prolific Link" />
-    <MESSAGE value="Prolific Identifiers correction" />
-    <MESSAGE value="Fixes: End Questionnaire Page" />
-    <MESSAGE value="Screen Resolution, Meta data saving." />
-    <MESSAGE value="Removed Comprehension Answer checks." />
-    <MESSAGE value="Knowledge: Reduced number of questions." />
-    <MESSAGE value="Fixed Value Errors in Risk Task." />
-    <MESSAGE value="Fixes: Missing Tut page, more margin for SVG pages, adapted Experiment Content Display." />
-    <MESSAGE value="Hot Fix: HL Risk Task" />
-    <MESSAGE value="New Questionnaire Page &quot;Concentration&quot;" />
-    <MESSAGE value="Button Says &quot;Next&quot; again." />
-    <MESSAGE value="Fixed Bug where Risk was not saved" />
-    <MESSAGE value="Changelog" />
-    <MESSAGE value="Overview Table: Color accents, padding." />
-    <MESSAGE value="Bugfix: Quickstart save." />
-    <MESSAGE value="Currency Format on Questionnaire/end.php" />
-    <MESSAGE value="Blocked manipulation questions for Cond 4" />
-    <MESSAGE value="Fix: Forgot edge case." />
-    <MESSAGE value="Questionnaire: Numeracy is skipped. Fix for duplicate rows in Feedback section." />
-    <MESSAGE value="Questionnaire: Numeracy is skipped. Adjusted Page indexing." />
-    <MESSAGE value="Fix: Using Mouse Event for datalyser.php processing." />
-    <MESSAGE value="Visual Cue Indicator now uses the Pointer cursor when hovering." />
+    <MESSAGE value="Fix: Condition 3, 4 Box Display." />
+    <MESSAGE value="Fix: Condition 3, 4 Box Display, second try." />
+    <MESSAGE value="Questionnaire: Graceful handling when no $condition is specified." />
+    <MESSAGE value="Format currency function." />
+    <MESSAGE value="Fallback for missing values in manipulation.php" />
+    <MESSAGE value="Syntax fix." />
+    <MESSAGE value="Adapted User query to avoid confusion of IDs" />
+    <MESSAGE value="Saving of Comprehension Task in Tutorial" />
+    <MESSAGE value="Fix: Tutorial Crash." />
+    <MESSAGE value="Fix: Display Boxes (?)" />
+    <MESSAGE value="Fix: Display Boxes (!)" />
+    <MESSAGE value="Fix: Risk Questionnaire." />
+    <MESSAGE value="Fixes: Questionnaire" />
+    <MESSAGE value="Fixes, Check" />
+    <MESSAGE value="Fix: Box Display" />
+    <MESSAGE value="Fix: Box Contents" />
+    <MESSAGE value="Added Download Links, Saving Risk Questionnaire Result" />
     <MESSAGE value="Version, Changelog" />
-    <MESSAGE value="questionnaire/end.php: All currency is now in the same format." />
-    <option name="LAST_COMMIT_MESSAGE" value="questionnaire/end.php: All currency is now in the same format." />
+    <MESSAGE value="Commit of csv Files to ensure write-ability for DatabasHelper" />
+    <MESSAGE value="Added Check to prevent User Saving error, duplicate saving." />
+    <MESSAGE value="Fix: Saving of User" />
+    <MESSAGE value="Removed dev variable" />
+    <MESSAGE value="Added secure check for recursion" />
+    <MESSAGE value="Added Custom CSV for exp round order" />
+    <MESSAGE value="Comma seperated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comma seperated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039983650">
@@ -680,122 +682,132 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="695" y="0" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605354867683">
+    <state x="695" y="0" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1605700334662">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205240603" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605559467743" />
+    <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
-    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605354867683" />
+    <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605700334662" />
     <state x="695" y="23" key="CommitChangelistDialog2/0.23.1920.1113@0.23.1920.1113" timestamp="1605106616150" />
-    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257480273" />
-    <state width="468" height="485" key="DebuggerActiveHint" timestamp="1605202571119">
-      <screen x="-3008" y="-367" width="3008" height="1669" />
+    <state x="695" y="214" key="CommitChangelistDialog2/0.23.3008.1605@0.23.3008.1605" timestamp="1605293350590" />
+    <state x="695" y="25" key="CommitChangelistDialog2/0.25.1920.1106@0.25.1920.1106" timestamp="1605617682157" />
+    <state width="491" height="349" key="DebuggerActiveHint" timestamp="1605550413703">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state width="770" height="465" key="DebuggerActiveHint/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605465671030" />
     <state width="468" height="466" key="DebuggerActiveHint/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605177793174" />
     <state width="468" height="485" key="DebuggerActiveHint/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202571119" />
+    <state width="491" height="349" key="DebuggerActiveHint/0.0.1920.1200@0.0.1920.1200" timestamp="1605550413703" />
     <state width="441" height="324" key="DebuggerActiveHint/0.23.1920.1113@0.23.1920.1113" timestamp="1605102748573" />
-    <state x="-2851" y="-223" width="2299" height="1318" key="DiffContextDialog" timestamp="1605205223018">
-      <screen x="-3008" y="-367" width="3008" height="1605" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog" timestamp="1605628479908">
+      <screen x="0" y="25" width="1920" height="1106" />
     </state>
-    <state x="-2851" y="-223" width="2299" height="1318" key="DiffContextDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205223018" />
-    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601041320261" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/-3008.-365.3008.1667/0.25.1920.1106@0.25.1920.1106" timestamp="1605464049513" />
+    <state x="-2851" y="-223" width="2299" height="1318" key="DiffContextDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605262050787" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1605622353863" />
     <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1605103994765" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1605445545903">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state x="100" y="108" width="1467" height="985" key="DiffContextDialog/0.25.1920.1106@0.25.1920.1106" timestamp="1605628479908" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom" timestamp="1605697394624">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.0.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083391" />
+    <state width="1878" height="324" key="GridCell.Tab.0.bottom/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438465" />
+    <state width="1685" height="290" key="GridCell.Tab.0.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089220" />
     <state width="939" height="354" key="GridCell.Tab.0.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202454736" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605430084976" />
+    <state width="1878" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394624" />
     <state width="1878" height="260" key="GridCell.Tab.0.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329553" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545903" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1605445545902">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center" timestamp="1605697394623">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.0.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083391" />
+    <state width="1878" height="324" key="GridCell.Tab.0.center/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438464" />
+    <state width="1685" height="290" key="GridCell.Tab.0.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089217" />
     <state width="939" height="354" key="GridCell.Tab.0.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202454735" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605430084974" />
+    <state width="1878" height="288" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394623" />
     <state width="1878" height="260" key="GridCell.Tab.0.center/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329552" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545902" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1605445545901">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left" timestamp="1605697394620">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.0.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083391" />
+    <state width="1878" height="324" key="GridCell.Tab.0.left/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438464" />
+    <state width="1685" height="290" key="GridCell.Tab.0.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089215" />
     <state width="939" height="354" key="GridCell.Tab.0.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202454734" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605430084973" />
+    <state width="1878" height="288" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394620" />
     <state width="1878" height="260" key="GridCell.Tab.0.left/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329552" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545901" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1605445545902">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right" timestamp="1605697394624">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.0.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083391" />
+    <state width="1878" height="324" key="GridCell.Tab.0.right/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438465" />
+    <state width="1685" height="290" key="GridCell.Tab.0.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089219" />
     <state width="939" height="354" key="GridCell.Tab.0.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202454736" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605430084975" />
+    <state width="1878" height="288" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394624" />
     <state width="1878" height="260" key="GridCell.Tab.0.right/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329553" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545902" />
-    <state width="1878" height="290" key="GridCell.Tab.1.bottom" timestamp="1605445545906">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.1.bottom" timestamp="1605697394626">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.1.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083392" />
+    <state width="1878" height="324" key="GridCell.Tab.1.bottom/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557441582" />
+    <state width="1685" height="290" key="GridCell.Tab.1.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287189573" />
     <state width="939" height="354" key="GridCell.Tab.1.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202458558" />
-    <state width="1878" height="290" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017190" />
-    <state width="1878" height="260" key="GridCell.Tab.1.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329554" />
-    <state width="1878" height="290" key="GridCell.Tab.1.bottom/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545906" />
-    <state width="1878" height="290" key="GridCell.Tab.1.center" timestamp="1605445545903">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394626" />
+    <state width="1878" height="290" key="GridCell.Tab.1.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1605284383578" />
+    <state width="1878" height="288" key="GridCell.Tab.1.bottom/0.25.1920.1106@0.25.1920.1106" timestamp="1605690142693" />
+    <state width="1878" height="288" key="GridCell.Tab.1.center" timestamp="1605697394625">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.1.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083392" />
+    <state width="1878" height="324" key="GridCell.Tab.1.center/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557441581" />
+    <state width="1685" height="290" key="GridCell.Tab.1.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287189573" />
     <state width="939" height="354" key="GridCell.Tab.1.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202458554" />
-    <state width="1878" height="290" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017190" />
-    <state width="1878" height="260" key="GridCell.Tab.1.center/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329554" />
-    <state width="1878" height="290" key="GridCell.Tab.1.center/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545903" />
-    <state width="1878" height="290" key="GridCell.Tab.1.left" timestamp="1605445545903">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394625" />
+    <state width="1878" height="290" key="GridCell.Tab.1.center/0.23.1920.1113@0.23.1920.1113" timestamp="1605284383576" />
+    <state width="1878" height="288" key="GridCell.Tab.1.center/0.25.1920.1106@0.25.1920.1106" timestamp="1605690142692" />
+    <state width="1878" height="288" key="GridCell.Tab.1.left" timestamp="1605697394625">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.1.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083392" />
+    <state width="1878" height="324" key="GridCell.Tab.1.left/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557441581" />
+    <state width="1685" height="290" key="GridCell.Tab.1.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287189572" />
     <state width="939" height="354" key="GridCell.Tab.1.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202458553" />
-    <state width="1878" height="290" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017189" />
-    <state width="1878" height="260" key="GridCell.Tab.1.left/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329553" />
-    <state width="1878" height="290" key="GridCell.Tab.1.left/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545903" />
-    <state width="1878" height="290" key="GridCell.Tab.1.right" timestamp="1605445545904">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394625" />
+    <state width="1878" height="290" key="GridCell.Tab.1.left/0.23.1920.1113@0.23.1920.1113" timestamp="1605284383576" />
+    <state width="1878" height="288" key="GridCell.Tab.1.left/0.25.1920.1106@0.25.1920.1106" timestamp="1605690142692" />
+    <state width="1878" height="288" key="GridCell.Tab.1.right" timestamp="1605697394626">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.1.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083392" />
+    <state width="1878" height="324" key="GridCell.Tab.1.right/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557441581" />
+    <state width="1685" height="290" key="GridCell.Tab.1.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287189573" />
     <state width="939" height="354" key="GridCell.Tab.1.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605202458557" />
-    <state width="1878" height="290" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017190" />
-    <state width="1878" height="260" key="GridCell.Tab.1.right/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329554" />
-    <state width="1878" height="290" key="GridCell.Tab.1.right/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545904" />
-    <state width="1878" height="290" key="GridCell.Tab.2.bottom" timestamp="1605445545908">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394626" />
+    <state width="1878" height="290" key="GridCell.Tab.1.right/0.23.1920.1113@0.23.1920.1113" timestamp="1605284383577" />
+    <state width="1878" height="288" key="GridCell.Tab.1.right/0.25.1920.1106@0.25.1920.1106" timestamp="1605690142692" />
+    <state width="1878" height="288" key="GridCell.Tab.2.bottom" timestamp="1605697394627">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.2.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083393" />
+    <state width="1878" height="324" key="GridCell.Tab.2.bottom/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438387" />
+    <state width="1685" height="290" key="GridCell.Tab.2.bottom/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089006" />
     <state width="1878" height="350" key="GridCell.Tab.2.bottom/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604949186360" />
-    <state width="1878" height="290" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017192" />
+    <state width="1878" height="288" key="GridCell.Tab.2.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394627" />
     <state width="1878" height="260" key="GridCell.Tab.2.bottom/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329555" />
-    <state width="1878" height="290" key="GridCell.Tab.2.bottom/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545908" />
-    <state width="1878" height="290" key="GridCell.Tab.2.center" timestamp="1605445545907">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.2.center" timestamp="1605697394627">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.2.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083393" />
+    <state width="1878" height="324" key="GridCell.Tab.2.center/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438386" />
+    <state width="1685" height="290" key="GridCell.Tab.2.center/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089005" />
     <state width="1878" height="350" key="GridCell.Tab.2.center/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604949186360" />
-    <state width="1878" height="290" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017191" />
+    <state width="1878" height="288" key="GridCell.Tab.2.center/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394627" />
     <state width="1878" height="260" key="GridCell.Tab.2.center/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329555" />
-    <state width="1878" height="290" key="GridCell.Tab.2.center/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545907" />
-    <state width="1878" height="290" key="GridCell.Tab.2.left" timestamp="1605445545907">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.2.left" timestamp="1605697394626">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.2.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083392" />
+    <state width="1878" height="324" key="GridCell.Tab.2.left/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438386" />
+    <state width="1685" height="290" key="GridCell.Tab.2.left/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089004" />
     <state width="1878" height="350" key="GridCell.Tab.2.left/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604949186360" />
-    <state width="1878" height="290" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017191" />
+    <state width="1878" height="288" key="GridCell.Tab.2.left/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394626" />
     <state width="1878" height="260" key="GridCell.Tab.2.left/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329554" />
-    <state width="1878" height="290" key="GridCell.Tab.2.left/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545907" />
-    <state width="1878" height="290" key="GridCell.Tab.2.right" timestamp="1605445545907">
-      <screen x="0" y="25" width="1920" height="1106" />
+    <state width="1878" height="288" key="GridCell.Tab.2.right" timestamp="1605697394627">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="939" height="354" key="GridCell.Tab.2.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205083393" />
+    <state width="1878" height="324" key="GridCell.Tab.2.right/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605557438387" />
+    <state width="1685" height="290" key="GridCell.Tab.2.right/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287089006" />
     <state width="1878" height="350" key="GridCell.Tab.2.right/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604949186360" />
-    <state width="1878" height="290" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605430017191" />
+    <state width="1878" height="288" key="GridCell.Tab.2.right/0.0.1920.1200@0.0.1920.1200" timestamp="1605697394627" />
     <state width="1878" height="260" key="GridCell.Tab.2.right/0.23.1920.1113@0.23.1920.1113" timestamp="1605125329555" />
-    <state width="1878" height="290" key="GridCell.Tab.2.right/0.25.1920.1106@0.25.1920.1106" timestamp="1605445545907" />
     <state x="-2707" y="-221" key="MergeDialog" timestamp="1604679271213">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
@@ -806,19 +818,18 @@
     </state>
     <state x="-1957" y="65" width="909" height="463" key="MultipleFileMergeDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604679271284" />
     <state x="671" y="323" key="MultipleFileMergeDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601040212034" />
-    <state x="902" y="391" key="NewPhpClassDialog" timestamp="1605256611417">
-      <screen x="0" y="23" width="1920" height="1113" />
+    <state x="902" y="397" key="NewPhpClassDialog" timestamp="1604742070360">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="-1595" y="185" key="NewPhpClassDialog/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1602860257504" />
     <state x="902" y="397" key="NewPhpClassDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1604742070360" />
-    <state x="902" y="391" key="NewPhpClassDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1605256611417" />
-    <state x="668" y="489" key="NewPhpFileDialog" timestamp="1605429025569">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="668" y="477" key="NewPhpFileDialog" timestamp="1605099730333">
+      <screen x="0" y="23" width="1920" height="1113" />
     </state>
     <state x="-1962" y="287" key="NewPhpFileDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604675462999" />
     <state x="-1961" y="313" key="NewPhpFileDialog/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604503298023" />
-    <state x="668" y="489" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1605429025569" />
-    <state x="668" y="477" key="NewPhpFileDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1605256618979" />
+    <state x="668" y="489" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1604745245020" />
+    <state x="668" y="477" key="NewPhpFileDialog/0.23.1920.1113@0.23.1920.1113" timestamp="1605099730333" />
     <state x="461" y="245" key="SettingsEditor" timestamp="1605115154711">
       <screen x="0" y="23" width="1920" height="1113" />
     </state>
@@ -832,14 +843,16 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="810" y="523" key="VCS.ChangelistChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1601041305840" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1605255447613">
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2" timestamp="1605700339081">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205255328" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605559470828" />
+    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605263703375" />
     <state x="-1777" y="79" key="Vcs.Push.Dialog.v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1605035403423" />
-    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605255447613" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605700339081" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.23.1920.1113@0.23.1920.1113" timestamp="1605104009881" />
-    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1597257484586" />
+    <state x="1231" y="452" key="Vcs.Push.Dialog.v2/0.23.3008.1605@0.23.3008.1605" timestamp="1605293353729" />
+    <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.25.1920.1106@0.25.1920.1106" timestamp="1605617688405" />
     <state x="713" y="341" key="VcsDiffUtil.ChangesDialog" timestamp="1601040827951">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -849,13 +862,15 @@
     </state>
     <state x="-2851" y="-233" width="2695" height="1338" key="com.intellij.dvcs.ui.CompareBranchesDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1603962032783" />
     <state x="100" y="100" width="1720" height="1000" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1601039774450" />
-    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605257087617">
+    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605647036307">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1772" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605205077460" />
+    <state x="-1772" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1605466482523" />
+    <state x="-1772" y="292" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605263698618" />
     <state x="-1772" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604502968587" />
-    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605257087617" />
+    <state x="789" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1605647036307" />
     <state x="789" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1113@0.23.1920.1113" timestamp="1605103903323" />
+    <state x="789" y="479" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1106@0.25.1920.1106" timestamp="1605622280389" />
     <state x="-2160" y="85" width="1312" height="766" key="find.popup" timestamp="1604237182669">
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
@@ -866,10 +881,10 @@
       <screen x="-3008" y="-367" width="3008" height="1669" />
     </state>
     <state width="600" height="424" key="javadoc.popup/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1602767977984" />
-    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup" timestamp="1605204953048">
+    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup" timestamp="1605286990630">
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
-    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605204953048" />
+    <state x="-1844" y="-42" width="670" height="676" key="search.everywhere.popup/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605286990630" />
     <state x="-1844" y="-30" width="1050" height="705" key="search.everywhere.popup/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604760548732" />
     <state x="743" y="243" width="670" height="506" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1605115557465" />
     <state x="743" y="248" width="670" height="470" key="search.everywhere.popup/0.23.1920.1113@0.23.1920.1113" timestamp="1605105515281" />
@@ -898,19 +913,9 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/code/QueryBuilder.php</url>
-          <line>55</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/templateConfig.php</url>
           <line>132</line>
           <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
-          <line>61</line>
-          <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/datalyser.php</url>
@@ -923,19 +928,64 @@
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public/include/questionnaire/manipulation.php</url>
-          <line>10</line>
-          <option name="timeStamp" value="125" />
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/end.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/index.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="126" />
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/end.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/index.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="127" />
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/end.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/tut_exam2.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/questionnaire/end.php</url>
+          <line>103</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
+          <line>46</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
+          <line>53</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
+          <line>72</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/dataDownloader.php</url>
+          <line>143</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/code/RedirectHelper.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>

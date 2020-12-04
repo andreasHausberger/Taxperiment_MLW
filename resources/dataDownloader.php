@@ -142,7 +142,21 @@ if (isset($connection)) {
 
     $dbHelper->createCSV("risk_aversion", "risk_aversion", "Risk Aversion");
     $dbHelper->createCSV("exp_round", "exp_round", "Experiment Round Data");
-    $dbHelper->createCSV("exp_round_order", "exp_round_order", "Experiment Round Metadata");
+    $dbHelper->createCSV("experiment", "experiment", "Experiment & Technical Data");
+
+    $expRoundDataQuery = " SELECT 
+	        ero.id,
+	        ero.exp_id,
+	exp.participant AS participant_id,
+	ero.round_order,
+	ero.condition_order
+FROM 
+	exp_round_order ero
+	LEFT JOIN experiment exp ON ero.exp_id = exp.id";
+
+    $dbHelper->createCustomCSV($expRoundDataQuery, "exp_round_order", ["ID", "Experiment ID", "Participant ID", "Round Order", "Condition Order"], "Exp. Round Order");
+    $dbHelper->createCSV("participant", "participant", "Participant");
+    $dbHelper->createCSV("comprehension", "comprehension", "Comprehension Task");
 
 }
 else {

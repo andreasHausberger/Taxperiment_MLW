@@ -19,7 +19,7 @@
         $sureGain = 700;
         $income = 1000;
         $evEvasion = 940;
-        $currentCondition = 1;
+        $currentCondition = 6;
 
         $nextPage = 10;
 
@@ -54,7 +54,9 @@
 
         <div id="taxInputContainer">
             <br>
-            <?php getAuditButtons() ?>
+            <?php
+            getAuditButtons();
+             ?>
 
         </div>
     </div>

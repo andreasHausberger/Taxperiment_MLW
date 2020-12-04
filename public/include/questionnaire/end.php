@@ -19,7 +19,7 @@ $riskQueryBuilder = new QueryBuilder("risk_aversion");
 $ecuToGBP = 350;
 $showUpFeeNumber = 3.00;
 
-$showUpFee = number_format($showUpFeeNumber, 2, ".", ",");
+$showUpFee = formatCurrency($showUpFeeNumber);
 
 if (!isset($experimentId)) {
     echo "WARNING: COULD NOT READ EXPERIMENT ID!";
@@ -60,12 +60,14 @@ if (!$updated) {
 $rows = $results->fetch_all();
 
 $income = $rows[0][2];
+$incomeString = formatCurrency($income);
 
 if($participant == 181) {
     $income = 500;
 }
 
 $pounds = round($income / $ecuToGBP, 2);
+$poundString = formatCurrency($pounds);
 
 
 
@@ -79,6 +81,8 @@ if($results && sizeof($results) > 0) {
     $chosenAnswer = $results[$riskRoundName];
     $roundData = $riskTaskArray[$randomRiskRound - 1];
     $isError = false;
+
+    $probability; $rewardSuccess; $rewardFailure;
 
     switch ($chosenAnswer) {
         case "A":
@@ -98,7 +102,9 @@ if($results && sizeof($results) > 0) {
 
     if (!$isError) {
         $riskResult = evaluateRiskTask($probability, $rewardSuccess, $rewardFailure);
-        $riskPayment = round(doubleval($riskResult) / doubleval($ecuToGBP), 2);
+        $riskQueryBuilder->addString("round_result", $riskResult);
+        $riskPayment = round($riskResult / $ecuToGBP, 2);
+        $riskPaymentString = formatCurrency($riskPayment);
         $riskAversionQuery = $riskQueryBuilder->buildInsert("WHERE subject_id = ?", true);
         $db->insertQuery($riskAversionQuery, "i", ...[$participant]);
     }
@@ -108,7 +114,7 @@ else {
 }
 
 //total calculation
-$total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
+$total = formatCurrency($pounds + $riskPayment + $showUpFeeNumber);
 
 
 
@@ -119,29 +125,30 @@ $total = number_format($pounds + $riskPayment + $showUpFeeNumber, 2, '.', ',');
 
 <br>
 
-<b> This is the last page. Thank you for your participation in this study.
-</b>
+<h3> This is the last page. Thank you for your participation in this study.
+</h3>
+<br>
 
-<p>
+<p class="tutorialText">
     For the first part of the study Lottery pair (row) <?php echo $randomRiskRound ?> was randomly chosen. 
-    You choose Option <?php echo $chosenAnswer ?> and earned <?php echo $riskResult ?> ECU.
-    This amounts to £<?php echo $riskPayment ?> (<?php echo $ecuToGBP ?> ECU = £1.00).
+    You have chosen Option <?php echo $chosenAnswer ?> and earned <b><?php echo $riskResult ?> ECU</b>.
+    This amounts to <b>£<?php echo $riskPaymentString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 <br>   
     For the second part of the study Round <?php echo $randomRound ?> was randomly chosen. 
-    In this round, you earned a net income of <?php echo $income ?> ECU.
-    This amounts to £<?php echo $pounds ?> (<?php echo $ecuToGBP ?> ECU = £1.00). 
+    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
+    This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 </p>
 
-<p>
-  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of £<?php echo ($total) ?>.
+<p class="tutorialText">
+  Including your showup fee of £<?php echo $showUpFee?>, you will be paid a total of <b>£<?php echo ($total) ?></b>.
 </p>
 
-<p>
+<p class="tutorialText">
 The purpose of this study was to investigate how factors like income, tax due, audit probability, fine, 
 or expected value information influence tax honesty and which information is attended in making the decision 
 whether to pay the tax due or to evade taxes.
 <br> 
-If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at"> martin.mueller82@univie.ac.at</a>)
+If you have more questions you can contact the researchers involved in this study: Martin Müller (<a href="mailto:martin.mueller82@univie.ac.at">martin.mueller82@univie.ac.at</a>)
 
 </p>
    
@@ -153,7 +160,7 @@ if (!$updated) {
 </b>";
 }
 else {
-    echo "<b> The information about the round chosen for payment was saved successfully. </b> <br> You can now leave this page.";
+    echo "<p class='tutorialText'> <b>The information about the round chosen for payment was saved successfully. </b> <br> You can now leave this page.</p>";
 }?>
 <br>
 <br>

@@ -41,6 +41,38 @@ class DatabaseHelper
         fclose($handle);
 
         echo "<p> Download Data for Table $name </p> <a href='$filePath'>$paraFileName</a>";
+    }
+
+    public function createCustomCSV($paraSQL, $paraFileName, $paraHeaders, $paraDisplayName = null, $paraFields = null, $paraWhereString = null) {
+        $name = $paraDisplayName ? $paraDisplayName : "Custom CSV";
+        $filePath = "./tmp/" . $paraFileName . ".csv";
+
+        $results = $this->database->selectQuery($paraSQL);
+
+        $dataString = "";
+
+        if ($results && $paraHeaders) {
+            $headerString = implode(",", $paraHeaders);
+
+            $dataString .= $headerString;
+
+            foreach ($results as $result) {
+                $rowString = "\n" . implode(",", $result);
+                $dataString .= $rowString;
+            }
+        }
+
+        if (!$handle = fopen($filePath, 'w+')) {
+            die("Cannot open file ($filePath)");
+        }
+
+        if (!fwrite($handle, $dataString)) {
+            die("Cannot write to file ($filePath)");
+        }
+        fclose($handle);
+
+        echo "<p> Download Data  ($name) </p> <a href='$filePath'>$paraFileName</a>";
+
 
     }
 

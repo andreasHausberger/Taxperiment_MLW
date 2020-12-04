@@ -186,9 +186,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         document.getElementById("wasHonest").value = honesty;
         document.getElementById("fine").value = "" + fine;
 
-
         submitInformation("submit", "submit", "submit");
-
 
     }
 
@@ -229,6 +227,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         document.getElementById('feedbackOverlay').style.width = '0';
         timefunction(txt1, txt2, txt3);
+        disableButtons();
         // document.getElementById("mlwebform").submit();
     }
 
@@ -273,6 +272,14 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         }
     }
 
+    function disableButtons() {
+        let elements = document.getElementsByClassName("auditButton");
+
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.visibility = 'hidden';
+        }
+    }
+
 
 
 </script>
@@ -286,20 +293,14 @@ echo $link?> method="post">
 
 
     <div id="taxInputContainer">
-<!--        <label for="inputValue">Please choose whether to pay the taxes stated above or to evade completely: </label>-->
-<!--        <input class="noEnter" type="text" id="inputValue" onkeyup="validateInput()" autocomplete="off"> <div id="inputFeedback"></div>-->
         <br>
         <?php
         $buttonsShouldBeMirrored = $currentCondition == 1;
         getAuditButtons($buttonsShouldBeMirrored); ?>
 
-
     </div>
 
     <br>
-<!---->
-<!--    <input id="submitButton" type= --><?php //echo($feedback == "0" ? "button" : "submit"); ?>
-<!--           class="formButton" name="Continue" value="Continue" onclick="performAudit()" disabled="true">-->
 
     <div class="overlay" id="feedbackOverlay">
         <div class="feedbackContainer">

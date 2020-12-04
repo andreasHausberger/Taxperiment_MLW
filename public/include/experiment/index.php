@@ -6,10 +6,6 @@
  * Time: 16:58
  */
 
-// echo "made it here";
-
-
-
 $experimentID = -1;
 
 if (isset($_GET['expid'])) {

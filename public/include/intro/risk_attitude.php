@@ -1,5 +1,12 @@
 
 <div class="pageContainer">
+    <script>
+        $(document).ready(function() {
+            numberOfQuestions = 1;
+            $("#submitButton").disabled = true;
+        })
+    </script>
+    <script src="/public/js/questionnaire.js"></script>
     <p class="tutorialText">
      <b>
         How do you see yourself: are you generally a person who is fully prepared to take risks or do you try to avoid
@@ -13,7 +20,7 @@
         <div class="riskSelfContainer">
             <?php echo createLikert(10, "risk_self");  ?>
         </div>
-        <input type="submit" value="Next">
+        <input type="submit" value="Next" id="submitButton" disabled="disabled">
     </form>
     </p>
 </div>

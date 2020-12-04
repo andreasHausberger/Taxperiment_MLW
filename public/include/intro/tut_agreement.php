@@ -50,6 +50,6 @@
     function displayMessage() {
         document.getElementById('continueButton').disabled = true;
 
-        document.getElementById("messageDisplay").innerText = "If you decline to participate, please notify the test supervisor!"
+        document.getElementById("messageDisplay").innerText = "If you decline to participate, please close now the window!"
     }
 </script>
