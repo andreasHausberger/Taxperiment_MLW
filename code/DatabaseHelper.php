@@ -77,9 +77,11 @@ class DatabaseHelper
     }
 
     public function displayAsTable($paraTableName, $columnArray, $displayColumnArray) {
-        $html = "<table id='table_$paraTableName'>";
+        $html = "<table id='table_$paraTableName' class='display'>";
 
         $headerRow = $this->createRow($displayColumnArray, true);
+
+        $html .= $headerRow;
 
         if(sizeof($columnArray) > 0) {
             $columnString = implode(", ", $columnArray);
@@ -89,21 +91,30 @@ class DatabaseHelper
         }
 
         $results = $this->database->selectQuery("SELECT $columnString FROM $paraTableName");
-
+        $rowHtml = "";
         foreach ($results as $result) {
-
+            $rowHtml .= $this->createRow($result);
         }
 
+        $html .= $rowHtml;
+
+        $html .= "</table>";
+
+        return $html;
     }
 
+
+
     private function createRow($paraRowdata, $paraIsHeaderRow = false) {
-        $html = $paraIsHeaderRow ? "<th>" :  "<tr>";
+        $html = "<tr>";
+        $openTag = $paraIsHeaderRow ? "<th>" : "<td>";
+        $closeTag = $paraIsHeaderRow ? "</th>" : "</td>";
 
         foreach ($paraRowdata as $item) {
-            $html .= "<td>" . $item . "</td>";
+            $html .= implode("", [$openTag, $item, $closeTag, "\n"]);
         }
 
-        $html .= $paraIsHeaderRow ? "</th>" : "</tr>";
+        $html .= "</tr>";
 
         return $html;
     }

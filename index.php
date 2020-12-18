@@ -18,6 +18,8 @@ else {
     $showNav = true;
 }
 
+$showNav = $isLoggedIn;
+
 require_once('./resources/config.php');
 
 require_once("public/templates/header.php");

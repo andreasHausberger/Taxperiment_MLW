@@ -9,6 +9,10 @@ body nav {
     border-radius: 5px;
 }
 
+ .navbarImageContainer img {
+     max-height: 115px;
+ }
+
 @media(max-width: 1200px) {
     body {
         margin: 30px 10vw !important;
