@@ -178,6 +178,15 @@ Audit Page
     margin: auto 10px;
 }
 
+.disabled_button {
+    cursor: default;
+    background-color: #AAAAAA;
+}
+
+.disabled_button:hover {
+    background-color: #AAAAAA;
+}
+
 
 
 /*Audit overlay*/

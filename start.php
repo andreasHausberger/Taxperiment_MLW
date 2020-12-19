@@ -15,9 +15,11 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
         <li class="list-group-item">Visual Redesign</li>
+        <li class="list-group-item">Added External Endpoint for serving of content via iFrame</li>
+        <li class="list-group-item">Disabled Custom experiment Start, Autostart for now.  </li>
     </ul>
     <hr>
-    <div class="btn btn-primary" data-toggle="modal" data-target="#expModal">
+    <div class="btn btn-primary disabled" data-toggle="modal" data-target="#expModal" aria-disabled="true">
         Start Experiment with Custom Parameters
     </div>
 
@@ -43,7 +45,7 @@
 
     </div>
 
-    <p class="versionText">Staging Version 1.3.1 (December 2020)</p>
+    <p class="versionText">Demo Version 1.4 (December 2020)</p>
 
 </div>
 

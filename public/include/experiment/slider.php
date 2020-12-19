@@ -124,7 +124,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
 
     }
 
-    var time = 3;
+    var time = 20;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {
@@ -158,12 +158,11 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
                 id:  id
             },
             success: (response) => {
-                alert("Success!", "The following data was saved: Score: " + response.score + ", Participant: " + response.participant_id);
-                console.log("response: ", response);
+                console.log("success: ", response);
             }
         })
         .done( (response) => {
-            console.log("success: ", response);
+            console.log("done: ", response);
         })
         .fail( () => {
             alert("Fail!");

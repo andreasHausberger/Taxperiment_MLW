@@ -3,8 +3,7 @@
 <div id="footer">
     <hr style="width: 100%;">
     <p>
-        Martin Müller, <br>
-        University of Vienna – 2020
+       Taxperiment – 2020
     </p>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
