@@ -8,38 +8,6 @@
 
 //require_once ('code/code.php');
 
-
-
-// echo "made it to config";
-
-$config = array(
-    "db" => array(
-        "db1" => array(
-            "servername" => "localhost",
-            "username" => "root",
-            "password" => "root",
-            "dbname" => "mlweb"
-        ),
-        "db2" => array(
-            "dbname" => "mouselabWEB",
-            "username" => "root",
-            "password" => "root",
-            "host" => "mlweb"
-        )
-    ),
-    "urls" => array(
-        "baseUrl" => "http://mouselabweb:8888"
-    ),
-    "paths" => array(
-        "resources" => "public/templates/",
-        "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/public/img",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/public/css"
-        )
-    )
-);
-
-
 /**
  * HEROKU SETUP
  * This is used for Heruku Setup with a ClearDB database.

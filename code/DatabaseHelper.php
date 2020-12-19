@@ -76,8 +76,47 @@ class DatabaseHelper
 
     }
 
-    public function displayAsTable($paraTableName) {
+    public function displayAsTable($paraTableName, $columnArray, $displayColumnArray) {
+        $html = "<table id='table_$paraTableName' class='display'>";
 
+        $headerRow = $this->createRow($displayColumnArray, true);
+
+        $html .= $headerRow;
+
+        if(sizeof($columnArray) > 0) {
+            $columnString = implode(", ", $columnArray);
+        }
+        else {
+            $columnString = "*";
+        }
+
+        $results = $this->database->selectQuery("SELECT $columnString FROM $paraTableName");
+        $rowHtml = "";
+        foreach ($results as $result) {
+            $rowHtml .= $this->createRow($result);
+        }
+
+        $html .= $rowHtml;
+
+        $html .= "</table>";
+
+        return $html;
+    }
+
+
+
+    private function createRow($paraRowdata, $paraIsHeaderRow = false) {
+        $html = "<tr>";
+        $openTag = $paraIsHeaderRow ? "<th>" : "<td>";
+        $closeTag = $paraIsHeaderRow ? "</th>" : "</td>";
+
+        foreach ($paraRowdata as $item) {
+            $html .= implode("", [$openTag, $item, $closeTag, "\n"]);
+        }
+
+        $html .= "</tr>";
+
+        return $html;
     }
 
     private function getHeaders($paraTableName) {

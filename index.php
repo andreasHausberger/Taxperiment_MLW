@@ -15,8 +15,10 @@ if ($password != "") {
 }
 else {
     $isLoggedIn = checkCookieHash();
+    $showNav = true;
 }
 
+$showNav = $isLoggedIn;
 
 require_once('./resources/config.php');
 
@@ -30,6 +32,4 @@ else
     include("login.php");
 }
 
-?>
-
-<?php require_once("public/templates/footer.php"); ?>
+require_once("public/templates/footer.php");

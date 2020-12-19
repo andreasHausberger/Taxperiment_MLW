@@ -69,12 +69,12 @@ $randomCondition = rand(1, 4);
 </script>
 
 <h1> Welcome Participant!</h1>
-
+<p>Note: Autostart is disabled in this version!</p>
 <br>
 
 <?php
 $nameCypher = sha1(strval(rand()));
-echo "<button onclick=startExp(\"$nameCypher\")> 
+echo "<button class='btn btn-primary' disabled='disabled' onclick=startExp(\"$nameCypher\")> 
         Start Study
     </button> ";
 

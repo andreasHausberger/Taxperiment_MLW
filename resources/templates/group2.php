@@ -1,6 +1,6 @@
 <?php
 
-require_once ("../../../resources/templateConfig.php");
+require_once ($_SERVER["DOCUMENT_ROOT"] .  "/resources/templateConfig.php");
 
 $box = $currentBox;
 
@@ -114,7 +114,7 @@ $feedback = $_GET['feedback'];
 $presentation = $_GET['presentation'];
 $order = $_GET['order'];
 
-$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation";
+//$saveURL = "/resources/library/mlwebphp_100beta/save.php?feedback=$feedback&order=$order&presentation=$presentation";
 ?>
 
 <FORM name="mlwebform" id="mlwebform" onSubmit="return checkForm(this)" method="POST"

@@ -73,3 +73,9 @@ if (!function_exists("formatCurrency")) {
         return $string;
     }
 }
+
+if (!function_exists("isValidValue")) {
+    function isValidValue($paraValue) {
+        return $paraValue != null && $paraValue != "";
+    }
+}

@@ -8,7 +8,6 @@
 
 require_once('./resources/config.php');
 
-require_once ("public/templates/header.php");
 
 echo "<h1>Downloads </h1>";
 
@@ -73,14 +72,10 @@ include "./resources/dataDownloader.php";
 <br>
 <br>
 
-<a href="index.php">< Return to Home Page</a>
-
 
 
 
 <?php
-
-require_once ("public/templates/footer.php")
 
 ?>
 
