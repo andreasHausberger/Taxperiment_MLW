@@ -22,7 +22,7 @@ if ($participantName != "") {
     }
     else if ($size > 1) {
         //TODO: Make this more graceful!
-        echo "Could not save participant - duplicate names!";
+        echo createWarningHTML("Database Warning", "Could not create new participant. Name already in database!");
         die();
     }
 }

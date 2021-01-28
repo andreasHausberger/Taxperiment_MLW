@@ -39,11 +39,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Added Documentation.">
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/QueryBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/code_ui.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/code_ui.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/external/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templates/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.html" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -118,18 +120,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/include/experiment" />
+      <recent name="$PROJECT_DIR$/public/include/questionnaire" />
+      <recent name="$PROJECT_DIR$/public/include/intro" />
+      <recent name="$PROJECT_DIR$/public/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/library" />
       <recent name="$PROJECT_DIR$/public/img/svg" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/resources/font" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/include/experiment" />
-      <recent name="$PROJECT_DIR$/public/include/questionnaire" />
-      <recent name="$PROJECT_DIR$/public/include/intro" />
-      <recent name="$PROJECT_DIR$/public/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -260,13 +262,6 @@
       <workItem from="1608196672427" duration="4127000" />
       <workItem from="1608232412340" duration="10165000" />
       <workItem from="1608373188383" duration="2351000" />
-    </task>
-    <task id="LOCAL-00198" summary="Fixes: Missing Tut page, more margin for SVG pages, adapted Experiment Content Display.">
-      <created>1605037215350</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1605037215350</updated>
     </task>
     <task id="LOCAL-00199" summary="Version, Changelog">
       <created>1605037775978</created>
@@ -604,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608282558452</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="New Database. Saving new Participants if i-param is unknown.">
+      <created>1611831128804</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1611831128804</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +658,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Fix: Condition 3, 4 Box Display, second try." />
     <MESSAGE value="Questionnaire: Graceful handling when no $condition is specified." />
     <MESSAGE value="Format currency function." />
     <MESSAGE value="Fallback for missing values in manipulation.php" />
@@ -681,7 +682,8 @@
     <MESSAGE value="Added Custom CSV for exp round order" />
     <MESSAGE value="Comma seperated" />
     <MESSAGE value="Added Documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Documentation." />
+    <MESSAGE value="New Database. Saving new Participants if i-param is unknown." />
+    <option name="LAST_COMMIT_MESSAGE" value="New Database. Saving new Participants if i-param is unknown." />
   </component>
   <component name="WindowStateProjectService">
     <state x="648" y="343" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604426003122">
@@ -696,10 +698,10 @@
       <screen x="-3008" y="-367" width="3008" height="1605" />
     </state>
     <state x="-2245" y="111" key="#xdebugger.XInspectDialog/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1604767777558" />
-    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1611831082415">
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1611831128664">
       <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
-    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1611831082415" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1611831128664" />
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="-2313" y="-168" width="1059" height="938" key="CommitChangelistDialog2/-3008.-367.3008.1669/0.23.1920.1113@-3008.-367.3008.1669" timestamp="1604763629990" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1605700334662" />
@@ -983,11 +985,6 @@
           <url>file://$PROJECT_DIR$/public/include/intro/index.php</url>
           <line>42</line>
           <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/external/index.php</url>
-          <line>5</line>
-          <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>
