@@ -79,3 +79,39 @@ if (!function_exists("isValidValue")) {
         return $paraValue != null && $paraValue != "";
     }
 }
+
+/**
+ * @param $paraName: Participant name
+ * @param Database|null $paraDB Existing Database, will create new one if none is given.
+ * @param QueryBuilder|null $paraQB Existing QueryBuilder, will create new one if none is given.
+ */
+function createNewParticipant($paraName, $paraDB = null, $paraQB = null) {
+    if (!$paraDB) {
+        $paraDB = new Database();
+    }
+    if (!$paraQB) {
+        $paraQB = new QueryBuilder("participant");
+    }
+    $paraQB->addString("name", $paraName);
+    $insert = $paraQB->buildInsert("");
+    return $paraDB->insertQuery($insert, ['s']);
+}
+
+/**
+ * @param int $paraParticipantID: Participant ID
+ * @param int $paraCondition: Condition, default is 0 //TODO: Wait for Jerome's feedback
+ * @param Database|null $paraDB Existing Database, will create new one if none is given.
+ * @param QueryBuilder|null $paraQB Existing QueryBuilder, will create new one if none is given.
+ */
+function createNewExperiment($paraParticipantID, $paraCondition = 1, $paraDB = null, $paraQB = null) {
+    if (!$paraDB) {
+        $paraDB = new Database();
+    }
+    if (!$paraQB) {
+        $paraQB = new QueryBuilder("experiment");
+    }
+    $experimentID = $paraDB->insertQuery("INSERT INTO experiment (exp_condition, participant) VALUES (?, ?)", "ii", ...[$paraCondition, $paraParticipantID]);
+
+    return $paraDB->insertQuery("UPDATE experiment SET start = NOW() WHERE id = ?", "i", $experimentID);
+
+}
