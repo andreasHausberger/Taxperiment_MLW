@@ -20,7 +20,7 @@ class QueryBuilder
 
     /**
      * Builds and returns a MySQL insert statement. Does not actually perform the statement!
-     * @param $whereString WHERE term of the statement
+     * @param $whereString 'WHERE' term of the statement
      * @param false $isUpdate Defines whether the statement is a true insert (new data is stored) or an update (existing data is changed)
      * @return false|string Returns the complete statement, or false if the statement could not be built.
      */
