@@ -1,5 +1,6 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"] . "/code/requirements_all.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/code.php");
 
 $action = postParamValue("action");
 $db = new Database();

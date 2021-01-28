@@ -22,7 +22,6 @@ if ($participantName != "") {
             $participantID = $idResult["id"];
             createNewExperiment($participantID, 1, $db, $qb);
         }
-
     }
     else if ($size > 1) {
         //display warning instead of content page!
