@@ -1,10 +1,10 @@
 <?php
 $expRoundArray = $expRounds['data'];
 $randomisedRoundOrderArray = json_decode($roundOrder);
-$randomisedConditionArray = json_decode($conditionOrder);
-$currentRoundIndex = $_GET['round'] - 1;
+//$randomisedConditionArray = json_decode($conditionOrder);
+//$currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
-$currentCondition = $randomisedConditionArray[0];
+$currentCondition = 3;
 
 $taxRate = $currentRound['tax_rate'];
 $auditProbability = $currentRound['audit_probability'];
@@ -19,7 +19,7 @@ $subjectID = $dataArray['pid'];
 $experimentID = $_GET['expid'];
 $participantID = $_GET['pid'];
 $currentRound = $_GET['round'];
-$condition = $_GET['condition'];
+//$condition = $_GET['condition'];
 $nextRound = $_GET['round'] + 1;
 $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 ?>
@@ -27,19 +27,19 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 <div id="auditContentContainer" style="margin-top: 5vh">
     <?php
 
-    if (isset($_GET['feedback'])) {
-        $delayFeedback = $_GET['feedback'];
+    if (isset($feedback) || isset($_GET['feedback'])) {
+        $delayFeedback = $feedback;
     }
     else {
         echo "WARNING: Could not find feedback information!";
     }
-    if (isset($_GET['condition'])) {
+    if (isset($condition) ||isset($_GET['condition'])) {
 
         if ($condition == 1 || $condition == 2) {
             include("../../../resources/templates/group1.php");
         }
         elseif ($condition == 3 || $condition == 4) {
-            include("../../../resources/templates/group2.php");
+            include($_SERVER["DOCUMENT_ROOT"] .  "/resources/templates/group2.php");
         }
         else {
             echo "Could not read condition!";

@@ -98,26 +98,30 @@
     </script>
 </head>
 <body>
-<h1>Start of experiment</h1>
 <form>
-    <TABLE>
+    <p>Specify a Subject name and a condition number.</p>
+    <p>
+        Note: If you leave the condition nr. field empty (or enter anything else than values between 1 and 4), a
+        random condition is selected.
+    </p>
+    <TABLE class="table">
         <TR>
-            <TD>Subject name:</TD>
+            <TD scope="col">Subject Name:</TD>
             <TD>
                 <input name="subject" type="text" id="subject">
             </TD>
         </TR>
         <TR>
-            <TD>Condition number:</TD>
-            <TD><input name="condnum" type="text" id="condnum" size="10"></TD>
+            <TD scope="col">Condition Number:</TD>
+            <TD><input name="condnum" type="text" id="condnum"></TD>
         </TR>
         <TR>
             <TD colspan=2>
-                <input type="button" name="Button" value="Start Experiment" onClick="startExp(this.form)">
-                <input type="button" name="Button" value="Generate Link" onClick="startExp(this.form, true)">
+                <input type="button" class="btn btn-primary" name="Button" value="Start Experiment" onClick="startExp(this.form)" disabled="disabled">
+                <input type="button" class="btn" name="Button" value="Generate Link" onClick="startExp(this.form, true)" disabled="disabled">
                 <input type="checkbox" id="skipIntro" name="skipIntro" value="0"> Skip Intro
                 <br>
-                <input type="text" id="linkText" placeholder="Link for Experiment" disabled="true" style="width: 400px">
+                <input type="text" id="linkText" placeholder="Link for Experiment" disabled="true" style="width: 400px; margin-top: 32px;">
                 <div id="exportButtonContainer" style="display: none">
                     <input type="button" name="clipboardButton" value="Copy To Clipboard" onClick="copyToClipboard()">
                 </div>
