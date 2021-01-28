@@ -38,6 +38,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/DatabaseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/DatabaseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/QueryBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/dataDownloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dataDownloader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/exp_round_order.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/exp_round_order.csv" afterDir="false" />
     </list>

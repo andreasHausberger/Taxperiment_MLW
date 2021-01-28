@@ -6,11 +6,22 @@ class DatabaseHelper
 
     private $database;
 
+    /**
+     * DatabaseHelper constructor.
+     * @param Database $database
+     */
     public function __construct(Database $database)
     {
         $this->database = $database;
     }
 
+    /**
+     * @param $paraTableName
+     * @param $paraFileName
+     * @param null $paraDisplayName
+     * @param null $paraFields
+     * @param null $paraWhereString
+     */
     public function createCSV($paraTableName, $paraFileName, $paraDisplayName = null, $paraFields = null, $paraWhereString = null) {
         $name = $paraDisplayName ? $paraDisplayName : $paraTableName;
         $filePath = "./tmp/" . $paraFileName . ".csv";
@@ -43,6 +54,14 @@ class DatabaseHelper
         echo "<p> Download Data for Table $name </p> <a href='$filePath'>$paraFileName</a>";
     }
 
+    /**
+     * @param $paraSQL
+     * @param $paraFileName
+     * @param $paraHeaders
+     * @param null $paraDisplayName
+     * @param null $paraFields
+     * @param null $paraWhereString
+     */
     public function createCustomCSV($paraSQL, $paraFileName, $paraHeaders, $paraDisplayName = null, $paraFields = null, $paraWhereString = null) {
         $name = $paraDisplayName ? $paraDisplayName : "Custom CSV";
         $filePath = "./tmp/" . $paraFileName . ".csv";
@@ -76,8 +95,11 @@ class DatabaseHelper
 
     }
 
+    /**
+     * @param $paraTableName
+     */
     public function displayAsTable($paraTableName) {
-
+        //TODO: This.
     }
 
     private function getHeaders($paraTableName) {
