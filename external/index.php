@@ -40,7 +40,6 @@ switch ($page) {
         break;
     case "audit":
         include("page/audit.php");
-        //audit
         break;
     case "feedback":
         //feedback

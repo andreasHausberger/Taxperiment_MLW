@@ -2,9 +2,11 @@
 
 $saveURL =  "../external/save/save.php";
 
+$roundData = loadMouselabTableData($round, $participantID);
+
 //Prepare Data
 
-require_once($_SERVER["DOCUMENT_ROOT"] . "/public/dataLoader.php");
+//require_once($_SERVER["DOCUMENT_ROOT"] . "/public/dataLoader.php");
 
 $currentRoundIndex = 1;
 $condition = 4;
@@ -17,10 +19,10 @@ $randomisedRoundOrderArray = json_decode($roundOrder);
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
 $currentCondition = 3;
 
-$taxRate = 0.4; //$currentRound['tax_rate'];
-$auditProbability = 0.1;  //$currentRound['audit_probability'];
-$fineRate = 1; //$currentRound['fine_rate'];
-$income = 900; //$currentRound['income'];
+$taxRate = $roundData["tax_rate"]; //$currentRound['tax_rate'];
+$auditProbability = $roundData["audit_probability"];  //$currentRound['audit_probability'];
+$fineRate = $roundData["fine_rate"]; //$currentRound['fine_rate'];
+$income = $roundData["income"]; //$currentRound['income'];
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
