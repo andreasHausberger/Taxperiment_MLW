@@ -26,9 +26,13 @@ if ($participantName != "") {
     else if ($size > 1) {
         //display warning instead of content page!
         echo createWarningHTML("Database Warning", "Could not create new participant. Name already in database!");
+
         die();
     }
 }
+
+$idResult = $db->selectQuery("SELECT p.id FROM participant p WHERE p.name = ?", "s", $participantName);
+$participantID = $idResult["id"];
 
 switch ($page) {
     case "slider":

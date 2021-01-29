@@ -9,7 +9,8 @@
     <title>Taxperiment - MLW</title>
 
     <!--    Bootstrap-->
-    <link rel="stylesheet" href="/resources/library/bootstrap/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/resources/library/bootstrap5/css/bootstrap.min.css" media="screen">
+    <script type="text/javascript" src="/resources/library/bootstrap5/js/bootstrap.min.js"></script>
 
     <!--    Custom CSS-->
     <link rel="stylesheet" href="/public/css/style.css">

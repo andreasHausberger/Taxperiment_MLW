@@ -124,7 +124,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
 
     }
 
-    var time = 20;
+    var time = 1;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {
@@ -135,8 +135,9 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
         else {
             let newURL = "<?php echo $saveURL; ?>";
             let id = "<?php echo $participantID; ?>";
+            let round = "<?php echo $_GET['round']; ?>";
             disableSliders();
-            saveData(totalScore, newURL, id);
+            saveData(totalScore, round, newURL, id);
             clearInterval(countdownTimer);
         }
     }, 1000);
@@ -148,24 +149,33 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
         })
     }
 
-    function saveData(score, url, id) {
+    function saveData(score, round, url, id) {
         $.ajax({
             url: url,
             type: "post",
             data: {
                 action: "ajax_slider",
                 score: score,
-                id:  id
+                id:  id,
+                round: round
             },
             success: (response) => {
-                console.log("success: ", response);
+                let json = JSON.parse(response);
+                let status = json.status;
+                if (status && status == 201) {
+                    console.log("success: ", response);
+                }
+                else if (status && status == 404) {
+                    console.log("error: ", json.message);
+                }
+
             }
         })
         .done( (response) => {
             console.log("done: ", response);
         })
         .fail( () => {
-            alert("Fail!");
+            alert("Failed Operation!");
         })
     }
 

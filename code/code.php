@@ -115,3 +115,35 @@ function createNewExperiment($paraParticipantID, $paraCondition = 1, $paraDB = n
     return $paraDB->insertQuery("UPDATE experiment SET start = NOW() WHERE id = ?", "i", $experimentID);
 
 }
+
+/**
+ * Saves Data From Slider Round.
+ * @param $paraScore: Slider score (not including any additional points)
+ * @param $paraRound: Round index.
+ * @param $paraParticipantID: Participant ID.
+ * @param null $paraExperimentID: Experiment ID. If none is given, a retrieval via Experiment table is attempted.
+ * @return bool|int|mixed: True/false whether operation was successful.
+ */
+function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperimentID = null) {
+    if ( !$paraRound || !$paraParticipantID) {
+        createWarningHTML("Slider Round Saving Error", "Could not save this slider round: One or more required parameters are missing!");
+        return false;
+    }
+    global $db;
+
+    if (!$paraExperimentID) {
+        $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
+        $paraExperimentID = $expData["experiment_id"];
+    }
+
+    $qb = new QueryBuilder("audit");
+
+    $qb->addString("exp_id", $paraExperimentID);
+    $qb->addString("pid", $paraParticipantID);
+    $qb->addString("actual_income", $paraScore);
+    $qb->addString("round", $paraRound);
+
+    $insert = $qb->buildInsert("");
+
+    return $db->insertQuery($insert);
+}
