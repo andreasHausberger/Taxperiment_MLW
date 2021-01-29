@@ -2,29 +2,30 @@
 
 function getNavBar()
 {
+
     echo '
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar">
           <div class="navbarImageContainer">
             <img class="navbar-brand" src="/public/img/Uni_Logo_2016.png" alt="">
           </div>
-          
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            
+
+          <div>
+            <ul class="nav nav-tabs nav-fill">
+
               <li class="nav-item active">
                 <a class="nav-link" href="/index.php">Home <span class="sr-only">(current)</span></a>
               </li>
-              
+
               <li class="nav-item">
                 <a class="nav-link" href="/resources/index.php?page=designer">Designer <span class="sr-only">(current)</span></a>
               </li>
-              
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                   Experiment Data
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -32,7 +33,7 @@ function getNavBar()
                   <a class="dropdown-item" href="/resources/index.php?page=download">Download Data</a>
                 </div>
               </li>
-              
+
               <li class="nav-item">
                <a class="nav-link" href="/public/include/experiment/feedback.php">Questionnaire Demo</a>
               </li>
@@ -71,4 +72,23 @@ function createDataTableList($paraArray) {
     $html .= "</ul>";
 
     return $html;
+}
+
+/**
+ * Creates a html warning template. Can be implemented flexibly.
+ * @param $paraTitle
+ * @param $paraMessage
+ */
+function createWarningHTML($paraTitle, $paraMessage) {
+
+    $html = "
+    <div class='alert alert-error'>
+        <button type='button' class='close' data-dismiss='alert'>&times;</button>
+        <h4>$paraTitle</h4>
+        $paraMessage
+    </div>
+    ";
+
+    return $html;
+
 }

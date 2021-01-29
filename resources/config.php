@@ -30,21 +30,7 @@ else {
     define("DB_Host", "localhost");
     define("DB_User","root");
     define("DB_Password", "root");
-    define("DB_Name", "mlnew");
-}
-
-
-if (!isset($connection)) {
-        $connection = new mysqli(DB_Host,
-            DB_User,
-            DB_Password,
-            DB_Name);
-}
-
-if ($connection->connect_error) {
-    die("Connection failed: " . $connection->connect_error);
-} else {
-//    console_log("Connected successfully");
+    define("DB_Name", "ml_external");
 }
 
 defined("LIBRARY_PATH") or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
@@ -53,5 +39,3 @@ defined("PASSWORD") or define("PASSWORD", "city-mouse-2659");
 
 ini_set("error_reporting", "true");
 error_reporting(E_ALL | E_STRICT);
-
-require(LIBRARY_PATH . '/mlwebphp_100beta/create_table.php');

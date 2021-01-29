@@ -31,10 +31,10 @@ $roundQueryAsc = "SELECT * FROM exp_round";
 global $expRounds, $dataArray;
 $expRounds = $db->selectQuery($roundQueryAsc);
 
-$test = getRandomOrder($connection, $experimentID);
-
-$roundOrder = getRandomOrder($connection, $experimentID)["roundArray"];
-$conditionOrder = getRandomOrder($connection, $experimentID)["conditionArray"];
+//$test = getRandomOrder($connection, $experimentID);
+//
+//$roundOrder = getRandomOrder($connection, $experimentID)["roundArray"];
+//$conditionOrder = getRandomOrder($connection, $experimentID)["conditionArray"];
 
 $roundNr = 1;
 $dataArray = array(
@@ -46,9 +46,9 @@ $dataArray = array(
     "feedback" => $conditionData[2],
     "order" => $conditionData[1],
     "presentation" => $conditionData[3],
-    "roundOrder" => $roundOrder,
-    "conditionOrder" => $conditionOrder,
-    "conditionData" => $conditionData
+    "roundOrder" => null,
+    "conditionOrder" => null,
+    "conditionData" => null
 );
 
 

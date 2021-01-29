@@ -6,6 +6,9 @@ class Database {
 
     public $connection;
 
+    /**
+     * Database constructor. Sets up an internal mysqli connection to the Database from config.
+     */
     public function __construct() {
         if (!$this->connection || !$this->connection->client_info) {
             $this->connection = new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
@@ -27,6 +30,13 @@ class Database {
         echo "Error: " . $error . " <br>";
     }
 
+    /**
+     * Performs a Select query.
+     * @param $query mysqli-formatted query. Can include placeholders for variables.
+     * @param null $paramTypes field types. See mysqli documentation for usage.
+     * @param mixed ...$paramVars variables. Use only if placeholders are in query.
+     * @return array|false array of data if query was successful, false if not.
+     */
     public function selectQuery($query, $paramTypes = null, ...$paramVars) {
         $this->open();
 
@@ -61,6 +71,13 @@ class Database {
 
     }
 
+    /**
+     *
+     * @param $query
+     * @param null $paramTypes
+     * @param mixed ...$paramVars
+     * @return bool|int|mixed
+     */
     public function insertQuery($query, $paramTypes = null, ...$paramVars) {
         $this->open();
 

@@ -1,6 +1,10 @@
 <?php
 
 
+/**
+ * Class QueryBuilder
+ * Builds queries from an array of variables.
+ */
 class QueryBuilder
 {
     public function __construct($tableName)
@@ -14,7 +18,12 @@ class QueryBuilder
         $this->varArray = [];
     }
 
-
+    /**
+     * Builds and returns a MySQL insert statement. Does not actually perform the statement!
+     * @param $whereString 'WHERE' term of the statement
+     * @param false $isUpdate Defines whether the statement is a true insert (new data is stored) or an update (existing data is changed)
+     * @return false|string Returns the complete statement, or false if the statement could not be built.
+     */
     function buildInsert($whereString, $isUpdate = false) {
         if ((!$whereString && $isUpdate) || !$this->table) {
             return false;
