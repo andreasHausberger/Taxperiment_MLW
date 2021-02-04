@@ -1,7 +1,11 @@
 <?php
 
+$feedbackData = loadFeedbackData($round, $participantID);
+
 $incomeGuaranteed = 1000;
-$incomeSlider = 400;
+$actualIncome = $feedbackData["actual_income"];
+$incomeSlider = $feedbackData["actual_income"];
+
 
 $incomeTotal = $incomeGuaranteed + $incomeSlider;
 $taxRate = 0.2;
@@ -34,7 +38,7 @@ $taxPaid = 200;
             Total income before tax:
         </td>
         <td>
-            = <?php echo $incomeTotal?> ECU
+            = <?php echo $actualIncome + $incomeGuaranteed?> ECU
         </td>
     </tr>
     <tr>
