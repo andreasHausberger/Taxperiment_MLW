@@ -112,6 +112,9 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
     }
 </script>
 <div style="margin: 5vh auto">
+
+
+
 <?php
     include($_SERVER["DOCUMENT_ROOT"] .  "/resources/templates/group2.php"); ?>
 </div>
@@ -121,6 +124,22 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             <input type="text" class="form-control" id="incomeInput" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
             <div class="btn btn-light" id="submitButton" value="">Pre-file Taxes </div>
         </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="auditModal" role="dialog" aria-labelledby="auditModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Audit Result</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script>
@@ -253,6 +272,12 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
             if (fine !== 0) {
                 netIncome = netIncome - fine;
+                setModalBodyContent("You were audited. The audit has found that you under-reported your tax amount. You were " +
+                    "fined " + fine + " ECU. Your income in this round is " + netIncome + ". ");
+            }
+            else
+            {
+                setModalBodyContent("You were audited. The audit has found that you correctly reported your tax amount. ");
             }
 
             if (netIncome < 0) { netIncome = 0; }
@@ -261,7 +286,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         }
         else {
             document.getElementById("wasAudited").value = false;
-
+            setModalBodyContent("You were not audited.");
             console.log("No Audit");
         }
 
@@ -273,14 +298,15 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         //save audit data
         let saveURL ='<?php echo $saveURL; ?>';
-
         saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine);
 
         //prepare & save MLWEB Data
         prepareMlwebSave();
+        $("#auditModal").modal("show");
+    }
 
-        // submitInformation("submit", "submit", "submit");
-
+    function setModalBodyContent(text) {
+        $("#modalBody").text(text);
     }
 
     function prepareMlwebSave() {

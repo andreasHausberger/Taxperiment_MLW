@@ -1,6 +1,23 @@
 
 <div class="siteContainer">
     <div class="contentContainer">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="sliderModal" role="dialog" aria-labelledby="sliderModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Time's up!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        The timer has expired. All your completed sliders were counted.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="timerContainer">
             <div class="timerContent">
                 <div>
@@ -124,7 +141,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
 
     }
 
-    var time = 20;
+    var time = 2;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {
@@ -139,6 +156,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
             disableSliders();
             saveData(totalScore, round, newURL, id);
             clearInterval(countdownTimer);
+            $("#sliderModal").modal('show');
         }
     }, 1000);
 
