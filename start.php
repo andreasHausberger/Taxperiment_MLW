@@ -15,12 +15,10 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item">Visual Redesign</li>
-        <li class="list-group-item">Added External Endpoint for serving of content via iFrame</li>
-        <li class="list-group-item">Disabled Custom experiment Start, Autostart for now.  </li>
-        <li class="list-group-item">New on-the-fly user saving for external links. </li>
-        <li class="list-group-item">Saving of Slider task performance for external links.  </li>
-        <li class="list-group-item">Loading of Mouselab Data for external links. </li>
+        <li class="list-group-item">Saving Audit Data, Mouselab Data</li>
+        <li class="list-group-item">Retrieving correct data for Audit, Feedback pages</li>
+        <li class="list-group-item">Error handling via HTML error tags</li>
+        <li class="list-group-item">Feedback Modals (responsive!) for Slider, Audit Pages</li>
 
     </ul>
     <hr>
@@ -50,7 +48,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.1 (January 2021)</p>
+    <p class="versionText">Demo Version 1.4.2 (February 2021)</p>
 
 </div>
 

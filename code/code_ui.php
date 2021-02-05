@@ -82,8 +82,7 @@ function createDataTableList($paraArray) {
 function createWarningHTML($paraTitle, $paraMessage) {
 
     $html = "
-    <div class='alert alert-error'>
-        <button type='button' class='close' data-dismiss='alert'>&times;</button>
+    <div class='alert alert-danger alert-dismissible fade show' role='alert'>
         <h4>$paraTitle</h4>
         $paraMessage
     </div>

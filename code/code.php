@@ -81,6 +81,18 @@ if (!function_exists("isValidValue")) {
 }
 
 /**
+ * @param array $paraFields
+ * @return bool
+ */
+function validateFields($paraFields) {
+    $isComplete = true;
+    foreach ($paraFields as $field) {
+        $isComplete = $field != null && $field != "";
+    }
+    return $isComplete;
+}
+
+/**
  * @param $paraName: Participant name
  * @param Database|null $paraDB Existing Database, will create new one if none is given.
  * @param QueryBuilder|null $paraQB Existing QueryBuilder, will create new one if none is given.
@@ -157,7 +169,7 @@ function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperim
 function loadMouselabTableData($paraRound, $paraParticipantID) {
     global $db;
     if (!$paraRound || intval($paraRound) < 1 || intval($paraRound) > 18) {
-        createWarningHTML("Data Loading Error", "Could not load data: Round is missing or invalid!");
+        echo createWarningHTML("Data Loading Error", "Could not load data: Round is missing or invalid!");
     }
 
     $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
@@ -170,5 +182,102 @@ function loadMouselabTableData($paraRound, $paraParticipantID) {
     $results["income"] = $incomeResult["actual_income"];
 
     return $results;
+}
 
+/**
+ * Loads Feedback data from 'audit' table. Uses participantID to get experiment ID.
+ * @param $paraRound: Round for which feedback is loaded.
+ * @param $paraParticipantID: Participant ID.
+ * @return array|false: Array of audit data (excluding 'selected')
+ */
+function loadFeedbackData($paraRound, $paraParticipantID) {
+    global $db;
+
+    if (!$paraRound || intval($paraRound < 1) || intval($paraRound) > 18) {
+        echo createWarningHTML("Data Loading Error", "Could not load data: Round is missing or invalid!");
+        die();
+    }
+
+    $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
+    $experimentID = $expData["experiment_id"];
+
+    $results = $db->selectQuery("SELECT 
+                                            id, 
+                                            exp_id,
+                                            round, 
+                                            actual_income, 
+                                            net_income, 
+                                            actual_tax, 
+                                            declared_tax, 
+                                            honesty, 
+                                            audit, 
+                                            fine 
+                                        FROM 
+                                            audit 
+                                        WHERE 
+                                            exp_id = ? AND
+                                             round = ?", "ii", ...[$experimentID, $paraRound]);
+
+    $taxRateResults = $db->selectQuery("SELECT tax_rate FROM exp_round WHERE id = ?", "i", $paraRound);
+
+    $results["tax_rate"] = $taxRateResults["tax_rate"];
+
+    return $results;
+}
+
+/**
+ * Saves Audit data.
+ * @param $paraRound: Round to save
+ * @param $paraParticipantID: Participant ID, is used to get experiment ID
+ * @param $paraPostData: Post data that must include: net_income, actual_tax, declared_tax, honesty, audit, fine.
+ * @return mixed|bool|int
+ */
+function saveAuditData($paraRound, $paraParticipantID, $paraPostData) {
+    global $db;
+
+    if (!$paraRound || intval($paraRound < 1) || intval($paraRound) > 18) {
+        return -1;
+    }
+
+    $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
+    $experimentID = $expData["experiment_id"];
+
+    $qb = new QueryBuilder('audit');
+    $qb->addString('net_income', $paraPostData['net_income']);
+    $qb->addString('actual_tax', $paraPostData['actual_tax']);
+    $qb->addString('declared_tax', $paraPostData['declared_tax']);
+    $qb->addString('honesty', $paraPostData['honesty']);
+    $qb->addString('audit', $paraPostData['audit']);
+    $qb->addString('fine', $paraPostData['fine']);
+
+    $update = $qb->buildInsert("WHERE exp_id = ? AND round = ?", true);
+
+    $result = $db->insertQuery($update, 'ii', ...[$experimentID, $paraRound]);
+
+    return $result;
+}
+//(expname, subject, ip, condnum, choice, round, procdata, addvar, adddata)
+function saveMlwebData($paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata, $paraAddvar = null, $paraAddData = null) {
+    global $db;
+    $arr = [$paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata];
+
+    if (!validateFields($arr)) {
+        return -1;
+    }
+
+    $qb = new QueryBuilder('mlweb');
+    $qb->addString('expname', $paraExpName);
+    $qb->addString('subject', $paraSubject);
+    $qb->addString('ip', $paraIP);
+    $qb->addString('choice', $paraChoice);
+    $qb->addString('round', $paraRound);
+    $qb->addString('procdata', $paraProcdata);
+    $qb->addString('addvar', $paraAddvar);
+    $qb->addString('adddata', $paraAddData);
+
+    $insert = $qb->buildInsert("");
+    $db->insertQuery($insert);
+
+    $insertResult = $db->insertQuery("UPDATE mlweb SET submitted = NOW() WHERE subject = ? AND ROUND = ?", 'ii', ...[$paraSubject, $paraRound]);
+    return $insertResult;
 }

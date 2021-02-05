@@ -118,8 +118,9 @@ $order = $_GET['order'];
 ?>
 
 <FORM name="mlwebform" id="mlwebform" onSubmit="return checkForm(this)" method="POST"
-      action=<?php echo $saveURL?>><INPUT type=hidden name="procdata" value="">
-    <input type=hidden name="subject" value="">
+      action=<?php echo $saveURL?>>
+    <input type=hidden name="procdata" id="procdata" value="">
+    <input type=hidden name="subject"  value="">
     <input type="hidden" id="tax" name="tax" value=<?php echo $income?>>
     <input type="hidden" id="reported_tax" name="reported_tax">
     <input type="hidden" id="actual_income" name="actual_income">
@@ -127,14 +128,14 @@ $order = $_GET['order'];
     <input type="hidden" id="wasAudited" name="wasAudited" >
     <input type="hidden" id="wasHonest" name="wasHonest">
     <input type="hidden" id="fine" name="fine">
-    <input type="hidden" name="subjectID" value=<?php echo $participantID ?>>
-    <input type="hidden" name="experimentID" value=<?php echo $experimentID ?>>
-    <input type="hidden" name="round" value=<?php echo $currentRound ?>>
+    <input type="hidden" id="subjectID" name="subjectID" value=<?php echo $participantID ?>>
+    <input type="hidden" id="experimentID" name="experimentID" value=<?php echo $experimentID ?>>
+    <input type="hidden" id="round" name="round" value=<?php echo $currentRound ?>>
     <input type=hidden name="expname" value="">
     <input type=hidden name="nextURL" value="">
-    <input type=hidden name="choice" value="">
-    <input type=hidden name="condnum" value="42">
-    <input type="hidden" name="condition" value=<?php echo $condnum ?>>
+    <input type=hidden id="choice" name="choice" value="">
+    <input type=hidden id="condnum" name="condnum" value="42">
+    <input type="hidden" id="condition" name="condition" value=<?php echo $condnum ?>>
     <input type=hidden name="to_email" value="">
     <input type=hidden name="nextRound" value=<?php echo $nextRound ?>>
     <input type=hidden name="nextMode" value=<?php echo $nextMode ?>>

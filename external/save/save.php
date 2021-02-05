@@ -29,8 +29,55 @@ switch ($action) {
             ];
             echo json_encode($resultArray);
         }
+        break;
+    case "ajax_audit":
+        $postArray = $_POST;
+        $participantID = postParamValue('id');
+        $round = postParamValue('round');
 
+        if ($participantID != "" && $round != "" && sizeof($postArray) > 0) {
+            $result = saveAuditData($round, $participantID, $postArray);
+            $resultArray = [
+                "status" => $result ? 201 : 400,
+                "participantID" => $participantID,
+                "round" => $round
+            ];
+            echo json_encode($resultArray);
+        }
+        else {
+            $resultArray = [
+                "status" => 404,
+                "message" => "Could not complete Operation. Parameters missing"
+            ];
+            echo json_encode($resultArray);
+        }
+        break;
+    case 'ajax_mlweb':
+        //save mouselab data for round and participant.
+        $participantID = postParamValue('subject_id');
+        $paraExperimentID = postParamValue('experiment_id');
+        $round = postParamValue('round');
+        $procData = postParamValue('procdata');
+        $choice = postParamValue('choice');
 
+        $result = saveMlwebData($paraExperimentID, $participantID, '', '1', $choice, $round, $procData);
+        $resultArray = [];
+        if ($result != -1) {
+            $resultArray = [
+                "status" => 201,
+                "participantID" => $participantID,
+                "round" => $round,
+                "message" => "Saved MLWEB data successfully!"
+            ];
+        }
+        else {
+            $resultArray = [
+                "status" => 400,
+                "message" => "Could not complete Operation. An Error occurred!"
+            ];
+        }
+        echo json_encode($resultArray);
+        break;
     default:
         break;
 }
