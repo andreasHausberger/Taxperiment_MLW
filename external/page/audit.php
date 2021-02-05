@@ -22,7 +22,7 @@ $currentCondition = 3;
 $taxRate = $roundData["tax_rate"]; //$currentRound['tax_rate'];
 $auditProbability = $roundData["audit_probability"];  //$currentRound['audit_probability'];
 $fineRate = $roundData["fine_rate"]; //$currentRound['fine_rate'];
-$income = $roundData["income"]; //$currentRound['income'];
+$income = $roundData["income"] + 1000; //$currentRound['income'];
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);

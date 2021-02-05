@@ -218,6 +218,10 @@ function loadFeedbackData($paraRound, $paraParticipantID) {
                                             exp_id = ? AND
                                              round = ?", "ii", ...[$experimentID, $paraRound]);
 
+    $taxRateResults = $db->selectQuery("SELECT tax_rate FROM exp_round WHERE id = ?", "i", $paraRound);
+
+    $results["tax_rate"] = $taxRateResults["tax_rate"];
+
     return $results;
 }
 

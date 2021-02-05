@@ -5,11 +5,13 @@ $feedbackData = loadFeedbackData($round, $participantID);
 $incomeGuaranteed = 1000;
 $actualIncome = $feedbackData["actual_income"];
 $incomeSlider = $feedbackData["actual_income"];
+$netIncome = $feedbackData["net_income"];
+$taxRate = $feedbackData["tax_rate"];
+$taxDue = $feedbackData["actual_tax"];
+$taxPaid = $feedbackData["declared_tax"];
 
 
 $incomeTotal = $incomeGuaranteed + $incomeSlider;
-$taxRate = 0.2;
-$taxPaid = 200;
 
 ?>
 
