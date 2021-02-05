@@ -52,6 +52,17 @@ switch ($action) {
             echo json_encode($resultArray);
         }
         break;
+    case 'ajax_mlweb':
+        //save mouselab data for round and participant.
+        $participantID = postParamValue('subject_id');
+        $paraExperimentID = postParamValue('experiment_id');
+        $round = postParamValue('round');
+        $procData = postParamValue('procdata');
+        $choice = postParamValue('choice');
+
+        saveMlwebData($paraExperimentID, $participantID, '', '1', $choice, $round, $procData);
+
+        break;
     default:
         break;
 }

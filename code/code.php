@@ -81,6 +81,18 @@ if (!function_exists("isValidValue")) {
 }
 
 /**
+ * @param array $paraFields
+ * @return bool
+ */
+function validateFields($paraFields) {
+    $isComplete = true;
+    foreach ($paraFields as $field) {
+        $isComplete = $field != null && $field != "";
+    }
+    return $isComplete;
+}
+
+/**
  * @param $paraName: Participant name
  * @param Database|null $paraDB Existing Database, will create new one if none is given.
  * @param QueryBuilder|null $paraQB Existing QueryBuilder, will create new one if none is given.
@@ -239,6 +251,29 @@ function saveAuditData($paraRound, $paraParticipantID, $paraPostData) {
     $result = $db->insertQuery($update, 'ii', ...[$experimentID, $paraRound]);
 
     return $result;
+}
+//(expname, subject, ip, condnum, choice, round, procdata, addvar, adddata)
+function saveMlwebData($paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata, $paraAddvar = null, $paraAddData = null) {
+    global $db;
+    $arr = [$paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata];
 
+    if (!validateFields($arr)) {
+        return -1;
+    }
 
+    $qb = new QueryBuilder('mlweb');
+    $qb->addString('expname', $paraExpName);
+    $qb->addString('subject', $paraSubject);
+    $qb->addString('ip', $paraIP);
+    $qb->addString('choice', $paraChoice);
+    $qb->addString('round', $paraRound);
+    $qb->addString('procdata', $paraProcdata);
+    $qb->addString('addvar', $paraAddvar);
+    $qb->addString('adddata', $paraAddData);
+
+    $insert = $qb->buildInsert("");
+    $db->insertQuery($insert);
+
+    $insertResult = $db->insertQuery("UPDATE mlweb SET submitted = NOW() WHERE subject = ? AND ROUND = ?", 'ii', ...[$paraSubject, $paraRound]);
+    return $insertResult;
 }

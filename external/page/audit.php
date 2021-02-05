@@ -44,8 +44,18 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         })
     });
 
-    function saveProcessData(url, procdata, round, id, url) {
+    function saveProcessData(url, subjectID, experimentID, round, choice, procdata) {
         $.ajax({
+            url: url,
+            type: "post",
+            data: {
+                action: "ajax_mlweb",
+                subject_id: subjectID,
+                experiment_id: experimentID,
+                round: round,
+                choice: choice,
+                procdata: procdata
+            }
 
         })
     }
@@ -239,8 +249,22 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
         saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine);
 
-        submitInformation("submit", "submit", "submit");
+        //prepare & save MLWEB Data
+        prepareMlwebSave();
 
+        // submitInformation("submit", "submit", "submit");
+
+    }
+
+    function prepareMlwebSave() {
+        let saveURL ='<?php echo $saveURL; ?>';
+        let subjectID = document.getElementById('subjectID').value;
+        let experimentID = document.getElementById('experimentID').value;
+        let round = document.getElementById('round').value;
+        let choice = document.getElementById('choice').value;
+        let procdata = document.getElementById('procdata').value;
+
+        saveProcessData(saveURL, subjectID, experimentID, round, choice, procdata);
     }
 
     function displayInformation(audit, income, reportedIncome, fine, taxRate, reportedTax) {
