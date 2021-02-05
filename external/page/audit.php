@@ -34,7 +34,18 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 ?>
 
 <script>
+
+    $(document).keypress(
+        function(event){
+            if (event.which == '13') {
+                event.preventDefault();
+            }
+        });
+
     $(document).ready( () => {
+
+
+
         $("#submitButton").on("click", (e) => {
             console.log("prefiled tax: ");
             let button = e.target;
@@ -55,7 +66,16 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 round: round,
                 choice: choice,
                 procdata: procdata
+            },
+            success: (response) => {
+                console.log(response.message);
             }
+
+        })
+        .done( (response) => {
+
+        })
+        .fail( () => {
 
         })
     }
@@ -104,6 +124,13 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 </div>
 
 <script>
+
+    $(document).keypress(
+        function(event){
+            if (event.which == '13') {
+                event.preventDefault();
+            }
+        });
 
     $(function() {
 

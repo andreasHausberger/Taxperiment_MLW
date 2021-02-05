@@ -60,8 +60,23 @@ switch ($action) {
         $procData = postParamValue('procdata');
         $choice = postParamValue('choice');
 
-        saveMlwebData($paraExperimentID, $participantID, '', '1', $choice, $round, $procData);
-
+        $result = saveMlwebData($paraExperimentID, $participantID, '', '1', $choice, $round, $procData);
+        $resultArray = [];
+        if ($result != -1) {
+            $resultArray = [
+                "status" => 201,
+                "participantID" => $participantID,
+                "round" => $round,
+                "message" => "Saved MLWEB data successfully!"
+            ];
+        }
+        else {
+            $resultArray = [
+                "status" => 400,
+                "message" => "Could not complete Operation. An Error occurred!"
+            ];
+        }
+        echo json_encode($resultArray);
         break;
     default:
         break;
