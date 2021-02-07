@@ -105,6 +105,14 @@ if (isset($_GET['condition'])) {
     recOpenCells = false;
     masterCond = 1;
     loadMatrices();
+
+    let globalIsDisabled = false;
+
+    function relayShowContent(fieldName, objectEvent) {
+        if (!globalIsDisabled) {
+            ShowCont(fieldName, objectEvent)
+        }
+    }
 </SCRIPT>
 <!--END TABLE STRUCTURE-->
 
@@ -164,7 +172,7 @@ $order = $_GET['order'];
                         </DIV>
                         <DIV ID="a0_img"
                              STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;"><A
-                                    HREF="javascript:void(0);" NAME="a0" onMouseOver="ShowCont('a0',event)"
+                                    HREF="javascript:void(0);" NAME="a0" onMouseOver="relayShowContent('a0',event)"
                                     onMouseOut="HideCont('a0',event)"><IMG NAME="a0" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=100
                                                                            height=50></A></DIV>
                     </DIV>
@@ -187,7 +195,7 @@ $order = $_GET['order'];
                         </DIV>
                         <DIV ID="a1_img"
                              STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;"><A
-                                    HREF="javascript:void(0);" NAME="a1" onMouseOver="ShowCont('a1',event)"
+                                    HREF="javascript:void(0);" NAME="a1" onMouseOver="relayShowContent('a1',event)"
                                     onMouseOut="HideCont('a1',event)"><IMG NAME="a1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=100
                                                                            height=50></A></DIV>
                     </DIV>
@@ -211,7 +219,7 @@ $order = $_GET['order'];
                         </DIV>
                         <DIV ID="b0_img"
                              STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;"><A
-                                    HREF="javascript:void(0);" NAME="b0" onMouseOver="ShowCont('b0',event)"
+                                    HREF="javascript:void(0);" NAME="b0" onMouseOver="relayShowContent('b0',event)"
                                     onMouseOut="HideCont('b0',event)"><IMG NAME="b0" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=100
                                                                            height=50></A></DIV>
                     </DIV>
@@ -234,7 +242,7 @@ $order = $_GET['order'];
                         </DIV>
                         <DIV ID="b1_img"
                              STYLE="position: absolute; left: 0px; top: 0px; height: 50px; width: 100px; z-index: 5;"><A
-                                    HREF="javascript:void(0);" NAME="b1" onMouseOver="ShowCont('b1',event)"
+                                    HREF="javascript:void(0);" NAME="b1" onMouseOver="relayShowContent('b1',event)"
                                     onMouseOut="HideCont('b1',event)"><IMG NAME="b1" SRC="/resources/library/mlwebphp_100beta/transp.gif" border=0 width=100
                                                                            height=50></A></DIV>
                     </DIV>
