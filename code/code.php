@@ -80,6 +80,14 @@ if (!function_exists("isValidValue")) {
     }
 }
 
+function getExperimentIDForParticipantID($paraParticipantID) {
+    global $db;
+
+    $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
+    $experimentID = $expData["experiment_id"];
+    return $experimentID;
+}
+
 /**
  * @param array $paraFields
  * @return bool
@@ -198,8 +206,15 @@ function loadFeedbackData($paraRound, $paraParticipantID) {
         die();
     }
 
+
+
     $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
     $experimentID = $expData["experiment_id"];
+
+    if (!$experimentID || $paraParticipantID < 0) {
+        echo createWarningHTML("Data Loading Error", "Could not load data: Participant ID is missing or unknown!");
+        die();
+    }
 
     $results = $db->selectQuery("SELECT 
                                             id, 
@@ -218,9 +233,10 @@ function loadFeedbackData($paraRound, $paraParticipantID) {
                                             exp_id = ? AND
                                              round = ?", "ii", ...[$experimentID, $paraRound]);
 
-    $taxRateResults = $db->selectQuery("SELECT tax_rate FROM exp_round WHERE id = ?", "i", $paraRound);
+    $expRoundResults = $db->selectQuery("SELECT tax_rate, fine_rate FROM exp_round WHERE id = ?", "i", $paraRound);
 
-    $results["tax_rate"] = $taxRateResults["tax_rate"];
+    $results["tax_rate"] = $expRoundResults["tax_rate"];
+    $results["fine_rate"] = $expRoundResults["fine_rate"];
 
     return $results;
 }

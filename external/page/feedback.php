@@ -8,15 +8,60 @@ $incomeSlider = $feedbackData["actual_income"];
 $netIncome = $feedbackData["net_income"];
 $taxRate = $feedbackData["tax_rate"];
 $taxDue = $feedbackData["actual_tax"];
+
 $taxPaid = $feedbackData["declared_tax"];
-
-
+$audit = $feedbackData["audit"];
+$honesty = $feedbackData["honesty"];
+$fineRate = $feedbackData["fine_rate"];
+$backPay = $taxDue - $taxPaid;
+$fine = floor($fineRate * $backPay);
 $incomeTotal = $incomeGuaranteed + $incomeSlider;
+
+$finalIncome = 0;
+
+if ($audit && !$honesty) {
+    $finalIncome = $incomeTotal - $backPay - ($fineRate * $backPay);
+
+    if ($finalIncome < 0) {
+        $finalIncome = 0;
+    }
+}
+else {
+    $finalIncome = $incomeTotal - $taxPaid;
+}
+
+$correctSliderAmount = $incomeSlider / 100;
+
+
+$auditText = "";
+$fineText = "";
+
+if ($audit == 1) {
+    $auditText = "<p class=\"text-danger\">You were <u> audited </u></p>";
+
+    if ($honesty == 0) {
+        $fineText = "The outcome of the audit was that you did not pay enough taxes.";
+    }
+}
+else {
+    $auditText = "<p class=\"text-body\"> You were <u>not</u> audited in this round.";
+}
 
 ?>
 
 <h1> Feedback </h1>
 <br>
+
+<div class="text-body">
+    <?php echo $auditText; ?>
+    <p>
+        <?php echo $fineText; ?>
+    </p>
+
+    <p>
+        <b>Income in this round after filed taxes</b>
+    </p>
+</div>
 
 <table class="mlwTable table">
     <tr>
@@ -29,10 +74,10 @@ $incomeTotal = $incomeGuaranteed + $incomeSlider;
     </tr>
     <tr>
         <td>
-            Earnings slider task (4 correct):
+            Earnings slider task (<?php echo $correctSliderAmount; ?> correct):
         </td>
         <td>
-            + <?php echo $incomeSlider?> ECU
+            + <?php echo $incomeSlider; ?> ECU
         </td>
     </tr>
     <tr>
@@ -40,7 +85,7 @@ $incomeTotal = $incomeGuaranteed + $incomeSlider;
             Total income before tax:
         </td>
         <td>
-            = <?php echo $actualIncome + $incomeGuaranteed?> ECU
+            = <?php echo $actualIncome + $incomeGuaranteed; ?> ECU
         </td>
     </tr>
     <tr>
@@ -51,12 +96,34 @@ $incomeTotal = $incomeGuaranteed + $incomeSlider;
             - <?php echo $taxPaid; ?> ECU
         </td>
     </tr>
+    <?php
+        if ($audit && !$honesty) {
+            echo "
+            <tr>
+        <td>
+            Back pay of evaded Tax: 
+        </td>
+        <td>
+            - $backPay ECU
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Fine ($fineRate x evaded amount):
+        </td>
+        <td>
+            - $fine ECU
+        </td>
+    </tr>
+            ";
+        }
+    ?>
     <tr>
         <td>
             Total income after Tax:
         </td>
         <td>
-            = <?php echo $incomeTotal - $taxPaid ?> ECU
+            = <?php echo $finalIncome ?> ECU
         </td>
     </tr>
 

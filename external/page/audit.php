@@ -68,14 +68,17 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 procdata: procdata
             },
             success: (response) => {
+                globalIsDisabled = true
                 console.log(response.message);
             }
 
         })
         .done( (response) => {
+            globalIsDisabled = true
 
         })
         .fail( () => {
+            globalIsDisabled = false
 
         })
     }
@@ -124,21 +127,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             <input type="text" class="form-control" id="incomeInput" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
             <div class="btn btn-light" id="submitButton" value="">Pre-file Taxes </div>
         </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="auditModal" role="dialog" aria-labelledby="auditModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Audit Result</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modalBody">
-                    ...
-                </div>
-            </div>
-        </div>
-    </div>
 
 </div>
 
@@ -300,9 +288,8 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         let saveURL ='<?php echo $saveURL; ?>';
         saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine);
 
-        //prepare & save MLWEB Data
+        //prepare & save MLWEB Data. Also disables Table on success.
         prepareMlwebSave();
-        $("#auditModal").modal("show");
     }
 
     function setModalBodyContent(text) {

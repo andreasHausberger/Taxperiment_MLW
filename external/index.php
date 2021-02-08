@@ -44,6 +44,9 @@ switch ($page) {
         //feedback
         include("page/feedback.php");
         break;
+    case "end":
+        include("page/end.php");
+        break;
     default:
         include("page/explanation.php");
         break;

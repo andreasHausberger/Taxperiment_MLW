@@ -15,10 +15,10 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item">Saving Audit Data, Mouselab Data</li>
-        <li class="list-group-item">Retrieving correct data for Audit, Feedback pages</li>
-        <li class="list-group-item">Error handling via HTML error tags</li>
-        <li class="list-group-item">Feedback Modals (responsive!) for Slider, Audit Pages</li>
+        <li> Improved Feedback</li>
+        <li> Disabled Slider</li>
+        <li> Mouselab data is saved correctly</li>
+        <li> Mouselab Table now is disabled when "Pre-file Taxes" Button is clicked. </li>
 
     </ul>
     <hr>
@@ -48,7 +48,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.2 (February 2021)</p>
+    <p class="versionText">Demo Version 1.4.3 (February 2021)</p>
 
 </div>
 
