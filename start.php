@@ -15,10 +15,8 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li> Improved Feedback</li>
-        <li> Disabled Slider</li>
-        <li> Mouselab data is saved correctly</li>
-        <li> Mouselab Table now is disabled when "Pre-file Taxes" Button is clicked. </li>
+        <li>Condition parameter for Mouselab (inverts x, y of table cell placements)</li>
+        <li>Fixed issue where slider data was not saved correctly</li>
 
     </ul>
     <hr>
@@ -48,7 +46,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.3 (February 2021)</p>
+    <p class="versionText">Demo Version 1.4.4 (February 2021)</p>
 
 </div>
 
