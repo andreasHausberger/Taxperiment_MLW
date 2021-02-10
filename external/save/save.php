@@ -15,7 +15,7 @@ switch ($action) {
         if ($score != "" && $participantID != "" && $round != "") {
             $result = saveSliderData($score, $round, $participantID);
             $resultArray = [
-                "status" => $result ? 201 : 400,
+                "status" => $result,
                 "score" => $score,
                 "participantID" => $participantID,
                 "round" => $round
