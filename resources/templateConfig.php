@@ -162,31 +162,42 @@ $mouselabBoxArray = array(
 
 $currentBox = $mouselabBoxArray[$currentCondition];
 
-if($condition == 1 || $condition == 2) {
-    if($currentCondition == 1) {
-        $currentBox = array(
-            "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
-            "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$evRiskyContent^$sureGainContent");
-    }
-    else {
-        $currentBox = array(
-            "label" => "$taxLabel^$incomeLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
-            "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent");
-    }
+if ($condition == 1) {
+    $currentBox = array(
+        "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel",
+        "content" => "$fineContent^$auditContent`$taxContent^$incomeContent");
 }
-
-if($condition == 3 || $condition == 4) {
-    if($currentCondition == 1) {
-        $currentBox = array(
-            "label" => "$fineLabel^$auditLabel`$incomeLabel^$taxLabel`$evRiskyLabel^$sureGainLabel",
-            "content" => "$fineContent^$auditContent`$incomeContent^$taxContent`$evRiskyContent^$sureGainContent");
-    }
-    else if($currentCondition == 7) {
-        $currentBox = array(
-            "label" => "$taxLabel^$incomeLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
-            "content" => "$taxContent^$incomeContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent");
-    }
+else {
+    $currentBox = array(
+        "label" => "$incomeLabel^$taxLabel`$auditLabel^$fineLabel",
+        "content" => "$incomeContent^$taxContent`$auditContent^$fineContent");
 }
+//
+//if($condition == 1 || $condition == 2) {
+//    if($currentCondition == 1) {
+//        $currentBox = array(
+//            "label" => "$fineLabel^$auditLabel`$taxLabel^$incomeLabel`$evRiskyLabel^$sureGainLabel",
+//            "content" => "$fineContent^$auditContent`$taxContent^$incomeContent`$evRiskyContent^$sureGainContent");
+//    }
+//    else {
+//        $currentBox = array(
+//            "label" => "$taxLabel^$incomeLabel`$fineLabel^$auditLabel`$sureGainLabel^$evRiskyLabel",
+//            "content" => "$taxContent^$incomeContent`$fineContent^$auditContent`$sureGainContent^$evRiskyContent");
+//    }
+//}
+//
+//if($condition == 3 || $condition == 4) {
+//    if($currentCondition == 1) {
+//        $currentBox = array(
+//            "label" => "$fineLabel^$auditLabel`$incomeLabel^$taxLabel`$evRiskyLabel^$sureGainLabel",
+//            "content" => "$fineContent^$auditContent`$incomeContent^$taxContent`$evRiskyContent^$sureGainContent");
+//    }
+//    else if($currentCondition == 7) {
+//        $currentBox = array(
+//            "label" => "$taxLabel^$incomeLabel`$auditLabel^$fineLabel`$sureGainLabel^$evRiskyLabel",
+//            "content" => "$taxContent^$incomeContent`$auditContent^$fineContent`$sureGainContent^$evRiskyContent");
+//    }
+//}
 
 $mlwFieldArray = [$incomeBox, $taxRateBox, $fineRateBox, $auditProbabilityBox];
 

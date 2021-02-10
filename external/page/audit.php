@@ -8,8 +8,15 @@ $roundData = loadMouselabTableData($round, $participantID);
 
 //require_once($_SERVER["DOCUMENT_ROOT"] . "/public/dataLoader.php");
 
+$conditionParameter = getParamValue("condition", "1");
+$conditionParameter = intval($conditionParameter);
+
+if ($conditionParameter == 0) {
+    $conditionParameter = 1;
+}
 $currentRoundIndex = 1;
-$condition = 4;
+$condition = $conditionParameter;
+$currentCondition = $conditionParameter;
 $feedback = 0;
 
 $expRoundArray = $expRounds['data'];
@@ -17,7 +24,6 @@ $randomisedRoundOrderArray = json_decode($roundOrder);
 //$randomisedConditionArray = json_decode($conditionOrder);
 //$currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
-$currentCondition = 3;
 
 $taxRate = $roundData["tax_rate"]; //$currentRound['tax_rate'];
 $auditProbability = $roundData["audit_probability"];  //$currentRound['audit_probability'];
@@ -119,7 +125,13 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
 
 <?php
-    include($_SERVER["DOCUMENT_ROOT"] .  "/resources/templates/group2.php"); ?>
+if ($conditionParameter == 1) {
+    include($_SERVER["DOCUMENT_ROOT"] . "/resources/templates/group2.php");
+}
+else {
+    include($_SERVER["DOCUMENT_ROOT"] . "/resources/templates/group2inverted.php");
+}
+?>
 </div>
 
 <div style="text-align: center">
