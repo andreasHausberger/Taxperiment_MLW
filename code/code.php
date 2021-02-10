@@ -147,7 +147,7 @@ function createNewExperiment($paraParticipantID, $paraCondition = 1, $paraDB = n
 function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperimentID = null) {
     if (!$paraRound || !$paraParticipantID) {
         createWarningHTML("Slider Round Saving Error", "Could not save this slider round: One or more required parameters are missing!");
-        return false;
+        return 403;
     }
     global $db;
 
@@ -156,6 +156,10 @@ function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperim
         $paraExperimentID = $expData["experiment_id"];
     }
 
+    $existingData = $db->selectQuery("SELECT id FROM audit WHERE exp_id = ? AND round = ?", "ii", ...[$paraExperimentID, $paraRound]);
+
+    $isUpdate = sizeof($existingData) > 0;
+
     $qb = new QueryBuilder("audit");
 
     $qb->addString("exp_id", $paraExperimentID);
@@ -163,9 +167,17 @@ function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperim
     $qb->addString("actual_income", $paraScore);
     $qb->addString("round", $paraRound);
 
-    $insert = $qb->buildInsert("");
+    if ($isUpdate) {
+        $update = $qb->buildInsert("WHERE exp_id = ? AND round = ?", true);
+        $db->insertQuery($update, "ii", ...[$paraExperimentID, $paraRound]);
+        return 200;
+    }
+    else {
+        $insert = $qb->buildInsert("");
+        $db->insertQuery($insert);
+        return 201;
+    }
 
-    return $db->insertQuery($insert);
 }
 
 /**

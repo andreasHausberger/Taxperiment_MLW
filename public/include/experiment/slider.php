@@ -156,7 +156,6 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
             disableSliders();
             saveData(totalScore, round, newURL, id);
             clearInterval(countdownTimer);
-            $("#sliderModal").modal('show');
         }
     }, 1000);
 
@@ -180,7 +179,8 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
             success: (response) => {
                 let json = JSON.parse(response);
                 let status = json.status;
-                if (status && status == 201) {
+                if (status && (status == 200 || status == 201 ) {
+                    $("#sliderModal").modal('show');
                     console.log("success: ", response);
                 }
                 else if (status && status == 404) {
