@@ -19,6 +19,7 @@
         <li class="list-group-item">Fixed issue where slider data was not saved correctly</li>
         <li class="list-group-item">Added saving function to global feedback page.</li>
         <li class="list-group-item">Added information for total payment to global feedback page.</li>
+        <li class="list-group-item">Added Table "Audit" for Experiment Data View (Beta).</li>
 
     </ul>
     <hr>
