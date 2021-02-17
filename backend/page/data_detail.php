@@ -18,7 +18,12 @@ $id = "#table_" . $row["table"];
     <script>
         $(document).ready( function () {
             $.noConflict();
-            $("<?php echo $id; ?>").DataTable();
+            $("<?php echo $id; ?>").DataTable({
+                "scrollY":        "200px",
+                "scrollX":        "200px",
+                "scrollCollapse": true,
+                "paging":         false
+            });
         } );
     </script>
 
@@ -32,7 +37,6 @@ $id = "#table_" . $row["table"];
         </button>
     </div>
 </div>
-    <br>
 
 
 <?php

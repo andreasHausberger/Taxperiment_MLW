@@ -41,7 +41,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/page/end.php" beforeDir="false" afterPath="$PROJECT_DIR$/external/page/end.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/page/data_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/page/data_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/DatabaseHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/code/DatabaseHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -264,14 +267,7 @@
       <workItem from="1612534229090" duration="3854000" />
       <workItem from="1612808588352" duration="772000" />
       <workItem from="1612972759609" duration="5700000" />
-      <workItem from="1613574387123" duration="2794000" />
-    </task>
-    <task id="LOCAL-00216" summary="Visual Cue Indicator now uses the Pointer cursor when hovering.">
-      <created>1605205074324</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1605205074324</updated>
+      <workItem from="1613574387123" duration="3496000" />
     </task>
     <task id="LOCAL-00217" summary="Version, Changelog">
       <created>1605205240835</created>
@@ -609,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613576700898</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="Added selection saving, wording to end.php">
+      <created>1613577420875</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1613577420875</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +664,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Commit of csv Files to ensure write-ability for DatabasHelper" />
     <MESSAGE value="Added Check to prevent User Saving error, duplicate saving." />
     <MESSAGE value="Fix: Saving of User" />
     <MESSAGE value="Removed dev variable" />
@@ -686,13 +688,14 @@
     <MESSAGE value="Slider saving: Overwrites existing rounds --&gt; ensures correct display." />
     <MESSAGE value="Version, Changelog." />
     <MESSAGE value="Fixed issues with Timer, Saving of Income." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues with Timer, Saving of Income." />
+    <MESSAGE value="Added selection saving, wording to end.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added selection saving, wording to end.php" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1613576700654">
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1613577420733">
       <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
-    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1613576700654" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1613577420733" />
     <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1667/0.25.1920.1106@-3008.-365.3008.1667" timestamp="1612978550555" />
     <state x="-1273" y="-257" width="899" height="1105" key="CommitChangelistDialog2/-3008.-367.3008.1605/0.23.1920.1177@-3008.-367.3008.1605" timestamp="1605287122601" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612808905903" />
@@ -986,6 +989,16 @@
           <url>file://$PROJECT_DIR$/external/save/save.php</url>
           <line>10</line>
           <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/page/data_detail.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/page/data_detail.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/library/mlwebphp_100beta/mlweb_start_random.php</url>

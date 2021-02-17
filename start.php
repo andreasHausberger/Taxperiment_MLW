@@ -15,8 +15,10 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li>Condition parameter for Mouselab (inverts x, y of table cell placements)</li>
-        <li>Fixed issue where slider data was not saved correctly</li>
+        <li class="list-group-item">Fixed issue where Slider timer would not be displayed. </li>
+        <li class="list-group-item">Fixed issue where slider data was not saved correctly</li>
+        <li class="list-group-item">Added saving function to global feedback page.</li>
+        <li class="list-group-item">Added information for total payment to global feedback page.</li>
 
     </ul>
     <hr>
@@ -46,7 +48,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.4 (February 2021)</p>
+    <p class="versionText">Demo Version 1.4.5 (February 2021)</p>
 
 </div>
 

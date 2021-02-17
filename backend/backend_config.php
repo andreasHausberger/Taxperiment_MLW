@@ -1,5 +1,13 @@
 <?php
 $dataTables = [
+    "audit" =>
+    [
+      "table" => "audit",
+      "display_name" => "Audit",
+      "read_only" => true,
+      "select_columns" => [],
+        "display_columns" => ["ID", "Experiment ID", "Participant ID", "Round", "Actual Income", "Net Income", "Actual Tax", "Declared Tax", "Honesty", "Audit", "Fine", "Selection"]
+    ],
     "exp_round" =>
     [
         "table" =>  "exp_round",
