@@ -158,7 +158,7 @@ function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperim
 
     $existingData = $db->selectQuery("SELECT id FROM audit WHERE exp_id = ? AND round = ?", "ii", ...[$paraExperimentID, $paraRound]);
 
-    $isUpdate = sizeof($existingData) > 0;
+    $isUpdate = $existingData && sizeof($existingData) > 0;
 
     $qb = new QueryBuilder("audit");
 

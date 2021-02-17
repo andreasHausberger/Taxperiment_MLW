@@ -96,7 +96,7 @@ class DatabaseHelper
     }
 
     public function displayAsTable($paraTableName, $columnArray, $displayColumnArray) {
-        $html = "<table id='table_$paraTableName' class='display'>";
+        $html = "<table id='table_$paraTableName' class='table table-striped' style='width:80%' >";
 
         $headerRow = $this->createRow($displayColumnArray, true);
 

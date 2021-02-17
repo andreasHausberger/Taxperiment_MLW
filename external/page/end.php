@@ -13,21 +13,46 @@ $db->insertQuery("UPDATE experiment SET finished_experiment = NOW() WHERE id = ?
 //select random Round
 $randomIndex = rand(0, count($rounds) -1);
 
-$randomlySelectedRound = $rounds[$randomIndex];
+$randomRoundInfo = $rounds[$randomIndex];
 
-$income = $randomlySelectedRound['net_income'];
+$selectedRound = $randomRoundInfo['round'];
+
+$income = $randomRoundInfo['net_income'];
 $poundString = formatCurrency($income / $ecuToGBP);
+$showUpFeeInPounds = 3;
+
+$totalPayment = doubleval($poundString) + $showUpFeeInPounds;
+
+//set random round to selected
+$selectionResult = $db->insertQuery("UPDATE audit SET selected = 1 WHERE exp_id = ? AND round = ?", "ii", ...[$expId, $selectedRound]);
+
+$resultText = "";
+if ($selectionResult != 0) {
+    $resultText = "WARNING: The selected could not be saved. Please let the test supervisor know.";
+}
+else {
+    $resultText = "The information about your payment has been saved. It is now safe to proceed.";
+}
+
+
 ?>
 <h1> Thank you for your participation!</h1>
 
 <br>
 
-<h3> This is the last page. Thank you for your participation in this study.
-</h3>
+<p class="text-body tutorialText">
+    This is the last page. Thank you for your participation in this study.
+</p>
+<p class="text-body tutorialText">
+    Round <?php echo $randomIndex + 1 ?> was randomly chosen.
+    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
+    This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
+</p>
 
-<br>
-Round <?php echo $randomIndex + 1 ?> was randomly chosen.
-In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
-This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
+<p class="text-body tutorialText">
+    Together with the show-up fee of £3.00, your payment for participating in this study is £<?php echo $totalPayment; ?>.
+</p>
+<p class="text-body tutorialText">
+    <?php echo $resultText; ?>
+</p>
 
-<br>
