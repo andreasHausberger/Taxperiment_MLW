@@ -6,8 +6,6 @@
  * Time: 12:13
  */
 
-require_once('./resources/config.php');
-
 
 echo "<h1>Downloads </h1>";
 
@@ -34,14 +32,14 @@ else {
     foreach ($rows as $row) {
         echo ("
 <div class='downloadButtonDiv'style='display: inline-flex;'>
-  <form action='datalyser.php' method='post' style='margin: 0 10px;'>
+  <form action='../datalyser.php' method='post' style='margin: 0 10px;'>
     <input type='hidden' value= $row[0] name='exp_name'>
     <input type='hidden' value='true' name='unpack'>
     <input type='hidden' value='download' name='act'>
     <input type='submit' value='Download  raw .csv data for $row[0]'>
 </form>
 
-<form action='datalyser.php' method='post'>
+<form action='../datalyser.php' method='post'>
     <input type='hidden' value= $row[0] name='exp_name'>
     <input type='hidden' value='true' name='unpack'>
     <input type='hidden' value='100' name='threshold'>
