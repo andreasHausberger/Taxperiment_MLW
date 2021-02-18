@@ -30,13 +30,6 @@ $id = "#table_" . $row["table"];
 <h1>
     View Table <?php echo $row["display_name"]; ?>
 </h1>
-<div class="row">
-    <div class="col-12">
-        <button class="btn btn-lg">
-            <i class="fas fa-edit"></i> Edit
-        </button>
-    </div>
-</div>
 
 
 <?php

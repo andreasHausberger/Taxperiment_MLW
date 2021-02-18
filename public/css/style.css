@@ -52,6 +52,15 @@ label {
     font-size: 16px !important;
 }
 
+/* Backend */
+
+.expDataTable {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .versionText {
     color: #AAAAAA;
     margin-top: 32px;
