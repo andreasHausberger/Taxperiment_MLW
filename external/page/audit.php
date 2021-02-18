@@ -104,8 +104,8 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 tax_due: taxDue,
                 declared_tax: declaredTax,
                 actual_tax: actualTax,
-                honesty: honesty,
-                audit: audit,
+                honesty:  honesty ? 1 : 0,
+                audit: audit ? 1 : 0,
                 fine: fine
             },
             success: (response) => {
@@ -243,9 +243,8 @@ else {
         document.getElementById("cue_arrow").style.transform = rotation;
     }
 
-    //is always called after the button is pushed.
     function performAudit(paraTaxAmount, paraHonesty = true) {
-        let reportedTax = parseInt(paraTaxAmount) //parseInt(document.getElementById("inputValue").value); //self reported tax
+        let reportedTax = parseInt(paraTaxAmount)
         document.getElementById("tax").value = <?php echo $income * $taxRate ?>;
         let actualIncome = <?php echo $income ?>
 
@@ -256,14 +255,12 @@ else {
         let taxRate = <?php echo $taxRate ?>;
 
         let honesty = paraHonesty; //true or false, depending on the declaration
-
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
 
         let fine = 0;
 
         netIncome = actualIncome - reportedTax;
-
 
         console.log("testing " + randomNr + " against probability " + probability);
 

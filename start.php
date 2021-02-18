@@ -15,11 +15,10 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item">Fixed issue where Slider timer would not be displayed. </li>
-        <li class="list-group-item">Fixed issue where slider data was not saved correctly</li>
-        <li class="list-group-item">Added saving function to global feedback page.</li>
-        <li class="list-group-item">Added information for total payment to global feedback page.</li>
-        <li class="list-group-item">Added Table "Audit" for Experiment Data View (Beta).</li>
+        <li class="list-group-item">Audit is now saved correctly. </li>
+        <li class="list-group-item">Improvements to Data Tables: Horizontal Scrolling.</li>
+        <li class="list-group-item">Added Mouselab Data Table. </li>
+        <li class="list-group-item">Added Datalyzer.php (not yet functional)</li>
 
     </ul>
     <hr>
