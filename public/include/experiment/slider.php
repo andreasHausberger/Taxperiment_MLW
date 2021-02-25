@@ -11,9 +11,6 @@
                         <h5 class="modal-title" id="exampleModalLabel">Time's up!</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        The timer has expired. All your completed sliders were counted.
-                    </div>
                 </div>
             </div>
         </div>
