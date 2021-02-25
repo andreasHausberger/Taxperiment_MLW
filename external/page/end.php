@@ -18,7 +18,11 @@ $randomRoundInfo = $rounds[$randomIndex];
 $selectedRound = $randomRoundInfo['round'];
 
 $income = $randomRoundInfo['net_income'];
-$poundString = formatCurrency($income / $ecuToGBP);
+$declaredTax = $randomRoundInfo['declared_tax'];
+$fine = $randomRoundInfo['fine'];
+$incomeAfterTax = $income - $declaredTax - $fine;
+
+$poundString = formatCurrency($incomeAfterTax / $ecuToGBP);
 $showUpFeeInPounds = 3;
 
 $totalPayment = doubleval($poundString) + $showUpFeeInPounds;
@@ -45,7 +49,7 @@ else {
 </p>
 <p class="text-body tutorialText">
     Round <?php echo $randomIndex + 1 ?> was randomly chosen.
-    In this round, you earned a net income of <b><?php echo $income ?> ECU</b>.
+    In this round, you earned a net income of <b><?php echo $incomeAfterTax ?> ECU</b>.
     This amounts to <b>£<?php echo $poundString ?></b> (<?php echo $ecuToGBP ?> ECU = £1.00).
 </p>
 
