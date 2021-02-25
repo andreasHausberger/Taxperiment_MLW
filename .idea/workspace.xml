@@ -41,7 +41,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templateConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templateConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/page/audit.php" beforeDir="false" afterPath="$PROJECT_DIR$/external/page/audit.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -266,14 +266,7 @@
       <workItem from="1612972759609" duration="5700000" />
       <workItem from="1613574387123" duration="3564000" />
       <workItem from="1613654446061" duration="3782000" />
-      <workItem from="1614244233691" duration="741000" />
-    </task>
-    <task id="LOCAL-00221" summary="Format currency function.">
-      <created>1605287122767</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1605287122767</updated>
+      <workItem from="1614244233691" duration="2668000" />
     </task>
     <task id="LOCAL-00222" summary="Fallback for missing values in manipulation.php">
       <created>1605293078124</created>
@@ -611,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614245296618</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="Audit: Adapted Fine Box Content.">
+      <created>1614245650508</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1614245650508</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +663,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Added Custom CSV for exp round order" />
     <MESSAGE value="Comma seperated" />
     <MESSAGE value="Added Documentation." />
     <MESSAGE value="New Database. Saving new Participants if i-param is unknown." />
@@ -688,13 +687,14 @@
     <MESSAGE value="Fixes for Audit. Better Data Tables." />
     <MESSAGE value="Version, Changelog. Datalyzer Link fix." />
     <MESSAGE value="Slider: Only shows &quot;Time's Up&quot; as Modal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Slider: Only shows &quot;Time's Up&quot; as Modal." />
+    <MESSAGE value="Audit: Adapted Fine Box Content." />
+    <option name="LAST_COMMIT_MESSAGE" value="Audit: Adapted Fine Box Content." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1614245296370">
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1614245650359">
       <screen x="-3008" y="-365" width="3008" height="1598" />
     </state>
-    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1614245296370" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1614245650359" />
     <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1667/0.25.1920.1106@-3008.-365.3008.1667" timestamp="1612978550555" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612808905903" />
     <state x="695" y="25" key="CommitChangelistDialog2/0.25.1920.1106@0.25.1920.1106" timestamp="1612808598462" />

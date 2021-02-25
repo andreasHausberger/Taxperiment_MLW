@@ -52,12 +52,15 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
 
 
-        $("#submitButton").on("click", (e) => {
+        $("#submitButton").click( (e) => {
             console.log("prefiled tax: ");
             let button = e.target;
-            let input = document.getElementById("incomeInput");
-            input.disabled = true;
-            button.classList.add("disabled_button");
+            if (!button.disabled) {
+                let input = document.getElementById("incomeInput");
+                input.disabled = true;
+                button.classList.add("disabled_button");
+            }
+
         })
     });
 
@@ -139,6 +142,9 @@ else {
             <input type="text" class="form-control" id="incomeInput" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
             <div class="btn btn-light" id="submitButton" value="">Pre-file Taxes </div>
         </div>
+    <div class="input-group">
+        <div id="inputFeedback"></div>
+    </div>
 
 </div>
 
@@ -194,15 +200,21 @@ else {
         let income = <?php echo $income ?>;
         let taxRate = <?php echo $taxRate ?>;
 
-        $("#submitButton").click(function () {
-            console.log("Prefile taxes clicked");
-            let taxAmount = $("#incomeInput").val();
+        $("#submitButton").click(function (event) {
+            let button = event.target
 
-            if (taxAmount != null) {
-                let taxDue = income * taxRate
-                let isCompliant = taxAmount >= taxDue;
-                performAudit(taxAmount, isCompliant);
+            if (!button.disabled) {
+                console.log("Prefile taxes clicked");
+                let taxAmount = $("#incomeInput").val();
+
+                if (taxAmount != null) {
+                    let taxDue = income * taxRate
+                    let isCompliant = taxAmount >= taxDue;
+                    performAudit(taxAmount, isCompliant);
+                    button.disabled = true
+                }
             }
+
         })
 
         $("#complyButton").click(function() {
@@ -215,6 +227,10 @@ else {
             console.log("Evade Button clicked");
             performAudit(0, false);
         });
+
+        $("#incomeInput").change( function() {
+            validateInput();
+        })
     });
 
     $('form').on('keydown', function(event) {
@@ -369,21 +385,29 @@ else {
     }
 
     function validateInput() {
-        document.getElementById("submitButton").disabled = true;
-        let input = document.getElementById("inputValue").value;
+        let button = document.getElementById("submitButton")
+        button.disabled = true;
+        button.classList.add("disabled_button");
+
+        let input = document.getElementById("incomeInput").value;
         let taxAmount = <?php echo $income * $taxRate; ?> ;
         let inputInt = parseInt(input);
 
         if (isNaN(inputInt)) {
             document.getElementById("inputFeedback").innerText = "Please enter numbers only!";
+            return false;
         }
         else if (inputInt < 0 || inputInt > taxAmount) {
             document.getElementById("inputFeedback").innerText = "Please enter values of a minimum of 0 and a maximum of the amount of tax due!";
+            return false;
         }
         else {
             console.log("valid input... " + inputInt);
             document.getElementById("inputFeedback").innerText = "";
             document.getElementById("submitButton").disabled = false;
+            button.classList.remove("disabled_button");
+
+            return true;
         }
     }
 
