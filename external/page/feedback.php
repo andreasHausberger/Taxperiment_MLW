@@ -49,9 +49,6 @@ else {
 
 ?>
 
-<h1> Feedback </h1>
-<br>
-
 <div class="text-body">
     <?php echo $auditText; ?>
     <p>
@@ -97,11 +94,11 @@ else {
         </td>
     </tr>
     <?php
-        if ($audit && !$honesty) {
+        if ($audit) {
             echo "
             <tr>
         <td>
-            Back pay of evaded Tax: 
+            Payment of Missing Tax: 
         </td>
         <td>
             - $backPay ECU
