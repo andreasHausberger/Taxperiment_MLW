@@ -15,6 +15,25 @@ class DatabaseHelper
         $this->database = $database;
     }
 
+    public function createDownloadButton($paraTableName, $paraFileName, $paraDisplayName) {
+        $result = $this->createCSV($paraTableName, $paraFileName, $paraDisplayName, null, null);
+
+        $name = $result["table_name"];
+        $filePath = $result["file_path"];
+
+        return "<a href='$filePath'><button class='btn btn-info'>Download $name </button></a>";
+    }
+
+    public function createDownloadLink($paraTableName, $paraFileName, $paraDisplayName = null, $paraFields = null, $paraWhereString = null) {
+        $result = $this->createCSV($paraTableName, $paraFileName, $paraDisplayName, $paraFields, $paraWhereString);
+
+        $name = $result["table_name"];
+        $filePath = $result["file_path"];
+
+        echo "<p> Download Data for Table $name </p> <a href='$filePath'>$paraFileName</a>";
+
+    }
+
     /**
      * @param $paraTableName
      * @param $paraFileName
@@ -24,7 +43,7 @@ class DatabaseHelper
      */
     public function createCSV($paraTableName, $paraFileName, $paraDisplayName = null, $paraFields = null, $paraWhereString = null) {
         $name = $paraDisplayName ? $paraDisplayName : $paraTableName;
-        $filePath = "./tmp/" . $paraFileName . ".csv";
+        $filePath = "/tmp/" . $paraFileName . ".csv";
 
 
         $headers = $this->getHeaders($paraTableName);
@@ -51,7 +70,13 @@ class DatabaseHelper
         }
         fclose($handle);
 
-        echo "<p> Download Data for Table $name </p> <a href='$filePath'>$paraFileName</a>";
+        $returnArray = [
+            "table_name" => $name,
+            "file_path" => $filePath,
+            "file_name" => $paraFileName
+        ];
+
+        return $returnArray;
     }
 
     /**

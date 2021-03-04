@@ -9,11 +9,7 @@ if (isset($_GET['subject'])) {
 } else {
     $subject = "anonymous";
 }
-if (isset($_GET['condition'])) {
-    $condnum = $_GET['condition'];
-} else {
-    $condnum = -1;
-}
+$condnum = $conditionParameter;
 
 ?>
 <!--Since the "condnum" input field is broken, we'll use our own with the name "condition". save.php is rewritten accordingly.-->

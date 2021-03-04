@@ -43,7 +43,12 @@ function getNavBar()
 ';
 }
 
-function createDataTableList($paraArray) {
+/**
+ * @param $paraArray
+ * @param DatabaseHelper $paraDatabaseHelper
+ * @return string
+ */
+function createDataTableList($paraArray, $paraDatabaseHelper = null) {
     $html = "<ul class='list-group'>";
 
     foreach ($paraArray as $row) {
@@ -51,17 +56,22 @@ function createDataTableList($paraArray) {
         $displayName = $row["display_name"];
 
         $editSymbol = $row["read_only"] ? "" : "<i class='fas fa-edit'></i>";
+        $downloadHTML = "";
+
+        if ($paraDatabaseHelper) {
+            $downloadHTML = $paraDatabaseHelper->createDownloadButton($name, $name, $displayName);
+        }
+
 
         $rowHtml = "
             <li class='list-group-item'>
                 <div class='row'>
-                <div class='col-9'>
+                <div class='col-6'>
                     <a href='/backend/page/data_detail.php?page=$name'> $displayName</a>
                 </div>
-                <div class='col-3'>
+                <div class='col-6'>
                     <span>
-                        <i class='fas fa-eye' style='margin-right: 18px'></i>
-                        $editSymbol
+                       $downloadHTML
                     </span>
                 </div>
                 </div>

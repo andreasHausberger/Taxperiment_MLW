@@ -20,7 +20,7 @@ $incomeTotal = $incomeGuaranteed + $incomeSlider;
 $finalIncome = 0;
 
 if ($audit && !$honesty) {
-    $finalIncome = $incomeTotal - $backPay - ($fineRate * $backPay);
+    $finalIncome = $incomeTotal - $taxPaid - $backPay - ($fineRate * $backPay);
 
     if ($finalIncome < 0) {
         $finalIncome = 0;

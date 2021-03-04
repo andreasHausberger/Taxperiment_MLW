@@ -59,8 +59,9 @@ switch ($action) {
         $round = postParamValue('round');
         $procData = postParamValue('procdata');
         $choice = postParamValue('choice');
+        $condition = postParamValue('condition');
 
-        $result = saveMlwebData($paraExperimentID, $participantID, '', '1', $choice, $round, $procData);
+        $result = saveMlwebData($paraExperimentID, $participantID, '', $condition, $choice, $round, $procData);
         $resultArray = [];
         if ($result != -1) {
             $resultArray = [
