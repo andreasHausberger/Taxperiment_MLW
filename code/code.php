@@ -288,13 +288,13 @@ function saveAuditData($paraRound, $paraParticipantID, $paraPostData) {
 function saveMlwebData($paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata, $paraAddvar = null, $paraAddData = null) {
     global $db;
     $arr = [$paraExpName, $paraSubject, $paraIP, $paraCondnum, $paraChoice, $paraRound, $paraProcdata];
-
     if (!validateFields($arr)) {
         return -1;
     }
+    $experimentName = "condtion_" . $paraCondnum;
 
     $qb = new QueryBuilder('mlweb');
-    $qb->addString('expname', $paraExpName);
+    $qb->addString('expname', $experimentName);
     $qb->addString('subject', $paraSubject);
     $qb->addString('ip', $paraIP);
     $qb->addString('choice', $paraChoice);

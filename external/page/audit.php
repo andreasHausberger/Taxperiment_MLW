@@ -64,7 +64,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         })
     });
 
-    function saveProcessData(url, subjectID, experimentID, round, choice, procdata) {
+    function saveProcessData(url, subjectID, experimentID, round, choice, condition, procdata) {
         $.ajax({
             url: url,
             type: "post",
@@ -72,6 +72,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 action: "ajax_mlweb",
                 subject_id: subjectID,
                 experiment_id: experimentID,
+                condition: condition,
                 round: round,
                 choice: choice,
                 procdata: procdata
@@ -326,10 +327,11 @@ else {
         let subjectID = document.getElementById('subjectID').value;
         let experimentID = document.getElementById('experimentID').value;
         let round = document.getElementById('round').value;
+        let condition = document.getElementById('condition').value;
         let choice = document.getElementById('choice').value;
         let procdata = document.getElementById('procdata').value;
 
-        saveProcessData(saveURL, subjectID, experimentID, round, choice, procdata);
+        saveProcessData(saveURL, subjectID, experimentID, round, choice, condition, procdata);
     }
 
     function displayInformation(audit, income, reportedIncome, fine, taxRate, reportedTax) {
