@@ -62,7 +62,7 @@ else {
 
 echo "<h2> Download of Questionnaire data and Audit Data </h2>";
 
-include "./resources/dataDownloader.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/resources/dataDownloader.php";
 
 ?>
 

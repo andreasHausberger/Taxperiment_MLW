@@ -18,7 +18,7 @@ $helper = new DatabaseHelper( $db );
 <h1>Database Tables</h1>
 
 <?php
-echo createDataTableList($dataTables);
+echo createDataTableList($dataTables, $helper);
 
 
 require_once( $_SERVER["DOCUMENT_ROOT"] . "/public/templates/footer.php");

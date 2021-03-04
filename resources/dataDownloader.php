@@ -6,12 +6,7 @@
  * Time: 14:52
  */
 
-include "../public/templates/header.php";
-include "./config.php";
-require_once "resources/code/code.php";
-
-require_once($_SERVER["DOCUMENT_ROOT"] . "/code/Database.php");
-require_once($_SERVER["DOCUMENT_ROOT"] . "/code/DatabaseHelper.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/code/requirements_all.php");
 
 $dbHelper = new DatabaseHelper(new Database());
 
@@ -49,100 +44,100 @@ $questionnaireResultQuery = "SELECT * FROM questionnaire where pid != 123";
 
 if (isset($connection)) {
 
-    $headers = array("participant_id", "participant_name", "experiment_id", "started", "finished_experiment", "finished_questionnaire", "experiment_round", "actual_income", "net_income", "actual_tax", "declared_tax", "honesty", "audit", "fine", "selected");
-
-
-    $auditResult = $connection->query($resultQuery);
-
-    if ($auditResult != null) {
-        while ($row = $auditResult->fetch_row()) {
-            $resultRows[] = $row;
-        }
-    }
-
-    $dataString = "";
-
-    $dataString = implode(",", $headers);
-
-    foreach ($resultRows as $resultRow) {
-        $rowString = " \n " . implode(",", $resultRow);
-        $dataString .= $rowString;
-    }
-
-    $filename = './tmp/audit.csv';
-
-    if (!$handle = fopen($filename, 'w+')) {
-        die("Cannot open file ($filename)");
-
-    }
-
-    if (!fwrite($handle, $dataString)) {
-        die("Cannot write to file ($filename)");
-    }
-
-    fclose($handle);
-
-    echo "<p> Download Audit data: </p> <a href='./tmp/audit.csv'>audit.csv</a>";
+//    $headers = array("participant_id", "participant_name", "experiment_id", "started", "finished_experiment", "finished_questionnaire", "experiment_round", "actual_income", "net_income", "actual_tax", "declared_tax", "honesty", "audit", "fine", "selected");
+//
+//
+//    $auditResult = $connection->query($resultQuery);
+//
+//    if ($auditResult != null) {
+//        while ($row = $auditResult->fetch_row()) {
+//            $resultRows[] = $row;
+//        }
+//    }
+//
+//    $dataString = "";
+//
+//    $dataString = implode(",", $headers);
+//
+//    foreach ($resultRows as $resultRow) {
+//        $rowString = " \n " . implode(",", $resultRow);
+//        $dataString .= $rowString;
+//    }
+//
+//    $filename = './tmp/audit.csv';
+//
+//    if (!$handle = fopen($filename, 'w+')) {
+//        die("Cannot open file ($filename)");
+//
+//    }
+//
+//    if (!fwrite($handle, $dataString)) {
+//        die("Cannot write to file ($filename)");
+//    }
+//
+//    fclose($handle);
+//
+//    echo "<p> Download Audit data: </p> <a href='./tmp/audit.csv'>audit.csv</a>";
 
 
     // get questionnaire data
+//
+//    $questionnaireHeaderResult = $connection->query($questionnaireHeaderQuery);
+//    if ($questionnaireHeaderResult != null) {
+//        while ($qRow = $questionnaireHeaderResult->fetch_assoc()) {
+//            $qHeaders[] = $qRow["Field"];
+//        }
+//    }
+//
+//    $questionnaireResult = $connection->query($questionnaireResultQuery);
+//
+//    if ($questionnaireResult != null) {
+//        while ($qr = $questionnaireResult->fetch_row()) {
+//            $qResultRows[] = $qr;
+//        }
+//    }
+//
+//    $qDataString = implode(",", $qHeaders);
+//
+//    foreach ($qResultRows as $qresultRow) {
+//        $qRowString = " \n " . implode(",", $qresultRow);
+//        $qDataString .= $qRowString;
+//    }
+//
+//
+//    $filename = './tmp/questionnaire.csv';
+//
+//    if (!$handle = fopen($filename, 'w+')) {
+//        die("Cannot open file ($filename)");
+//
+//    }
+//
+//    if (!fwrite($handle, $qDataString)) {
+//        die("Cannot write to file ($filename)");
+//        exit;
+//    }
+//
+//    fclose($handle);
+//
+//    echo "<p> Download Questionnaire data: </p> <a href='./tmp/questionnaire.csv'>questionnaire.csv</a>";
+//
+//
+//    $expRoundQuery = "
+//                    SELECT
+//                        ero.id,
+//                        ero.exp_id as experiment_id,
+//                        ero.round_order,
+//                        ero.condition_order
+//                    FROM
+//                        exp_round_order ero
+//    ";
+//    $expRoundHeadersQuery = "SHOW columns FROM exp_round_order";
+//
+//    $expRoundsFilename = "./tmp/expRounds.csv";
 
-    $questionnaireHeaderResult = $connection->query($questionnaireHeaderQuery);
-    if ($questionnaireHeaderResult != null) {
-        while ($qRow = $questionnaireHeaderResult->fetch_assoc()) {
-            $qHeaders[] = $qRow["Field"];
-        }
-    }
-
-    $questionnaireResult = $connection->query($questionnaireResultQuery);
-
-    if ($questionnaireResult != null) {
-        while ($qr = $questionnaireResult->fetch_row()) {
-            $qResultRows[] = $qr;
-        }
-    }
-
-    $qDataString = implode(",", $qHeaders);
-
-    foreach ($qResultRows as $qresultRow) {
-        $qRowString = " \n " . implode(",", $qresultRow);
-        $qDataString .= $qRowString;
-    }
-
-
-    $filename = './tmp/questionnaire.csv';
-
-    if (!$handle = fopen($filename, 'w+')) {
-        die("Cannot open file ($filename)");
-
-    }
-
-    if (!fwrite($handle, $qDataString)) {
-        die("Cannot write to file ($filename)");
-        exit;
-    }
-
-    fclose($handle);
-
-    echo "<p> Download Questionnaire data: </p> <a href='./tmp/questionnaire.csv'>questionnaire.csv</a>";
-
-
-    $expRoundQuery = "
-                    SELECT
-                        ero.id,
-                        ero.exp_id as experiment_id,
-                        ero.round_order,
-                        ero.condition_order
-                    FROM
-                        exp_round_order ero
-    ";
-    $expRoundHeadersQuery = "SHOW columns FROM exp_round_order";
-
-    $expRoundsFilename = "./tmp/expRounds.csv";
-
-    $dbHelper->createCSV("risk_aversion", "risk_aversion", "Risk Aversion");
-    $dbHelper->createCSV("exp_round", "exp_round", "Experiment Round Data");
-    $dbHelper->createCSV("experiment", "experiment", "Experiment & Technical Data");
+//    $dbHelper->createDownloadLink("risk_aversion", "risk_aversion", "Risk Aversion");
+    $dbHelper->createDownloadLink("exp_round", "exp_round", "Experiment Round Data");
+    $dbHelper->createDownloadLink("experiment", "experiment", "Experiment & Technical Data");
 
     $expRoundDataQuery = " SELECT 
 	        ero.id,
@@ -154,9 +149,7 @@ FROM
 	exp_round_order ero
 	LEFT JOIN experiment exp ON ero.exp_id = exp.id";
 
-    $dbHelper->createCustomCSV($expRoundDataQuery, "exp_round_order", ["ID", "Experiment ID", "Participant ID", "Round Order", "Condition Order"], "Exp. Round Order");
-    $dbHelper->createCSV("participant", "participant", "Participant");
-    $dbHelper->createCSV("comprehension", "comprehension", "Comprehension Task");
+    $dbHelper->createDownloadLink("participant", "participant", "Participant");
 
 }
 else {
