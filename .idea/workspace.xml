@@ -39,9 +39,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="Fixed Bug where">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/page/feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/external/page/feedback.php" afterDir="false" />
+    <list default="true" id="3790de57-1e5e-48ed-a471-0d9e4035d39a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
     </list>
     <list id="0ffa9877-9717-430f-93fb-21afd1dc8c19" name="Created Autostart" comment="Created Autostart&#10;&#10;(cherry picked from commit d8b26a1ad2e5c9bfaeddff7a1eccc330500a3ed9)">
       <changelist_data name="andreas.hausberger" email="andreas.hausberger@hpc.at" date="1597848912000" />
@@ -267,14 +266,7 @@
       <workItem from="1613574387123" duration="3564000" />
       <workItem from="1613654446061" duration="3782000" />
       <workItem from="1614244233691" duration="6171000" />
-      <workItem from="1614845391129" duration="6422000" />
-    </task>
-    <task id="LOCAL-00228" summary="Fix: Tutorial Crash.">
-      <created>1605479249005</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1605479249005</updated>
+      <workItem from="1614845391129" duration="6579000" />
     </task>
     <task id="LOCAL-00229" summary="Fix: Display Boxes (?)">
       <created>1605479383670</created>
@@ -612,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614850242933</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="Fixed bug where Net income was not displayed correctly.">
+      <created>1614852129086</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1614852129086</updated>
+    </task>
+    <option name="localTasksCounter" value="278" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +663,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="SHOW_PATCH_IN_EXPLORER" value="false" />
-    <MESSAGE value="Saving Slider Scores, some visual fixes." />
     <MESSAGE value="Added Bootstrap, DataTables" />
     <MESSAGE value="Version, changelog." />
     <MESSAGE value="Saving of Audit data." />
@@ -689,13 +687,14 @@
     <MESSAGE value="Version, Changelog" />
     <MESSAGE value="Datalyzer: Fixed issue where download Links could not be created." />
     <MESSAGE value="Added Download Buttons to List, Fixed Download Links on actual page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Download Buttons to List, Fixed Download Links on actual page." />
+    <MESSAGE value="Fixed bug where Net income was not displayed correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where Net income was not displayed correctly." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1614852111694">
+    <state x="-1919" y="-365" width="1059" height="938" key="CommitChangelistDialog2" timestamp="1614852128961">
       <screen x="-3008" y="-365" width="3008" height="1594" />
     </state>
-    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1594/0.25.1920.1175@-3008.-365.3008.1594" timestamp="1614852111694" />
+    <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1594/0.25.1920.1175@-3008.-365.3008.1594" timestamp="1614852128961" />
     <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1614250570523" />
     <state x="-1919" y="-365" key="CommitChangelistDialog2/-3008.-365.3008.1667/0.25.1920.1106@-3008.-365.3008.1667" timestamp="1612978550555" />
     <state x="695" y="0" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1612808905903" />
@@ -809,9 +808,10 @@
     </state>
     <state x="-1961" y="287" key="NewPhpFileDialog/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1612973092640" />
     <state x="-1961" y="315" key="NewPhpFileDialog/-3008.-365.3008.1667/0.25.1920.1106@-3008.-365.3008.1667" timestamp="1612698010000" />
-    <state x="-1777" y="62" key="Vcs.Push.Dialog.v2" timestamp="1614250573502">
-      <screen x="-3008" y="-365" width="3008" height="1598" />
+    <state x="-1777" y="61" key="Vcs.Push.Dialog.v2" timestamp="1614852141030">
+      <screen x="-3008" y="-365" width="3008" height="1594" />
     </state>
+    <state x="-1777" y="61" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1594/0.25.1920.1175@-3008.-365.3008.1594" timestamp="1614852141030" />
     <state x="-1777" y="62" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1598/0.25.1920.1175@-3008.-365.3008.1598" timestamp="1614250573502" />
     <state x="-1777" y="80" key="Vcs.Push.Dialog.v2/-3008.-365.3008.1667/0.25.1920.1106@-3008.-365.3008.1667" timestamp="1612978554288" />
     <state x="786" y="320" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1612808920816" />

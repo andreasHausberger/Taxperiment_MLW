@@ -15,12 +15,9 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item">Feedback: No Headline, shows all lines for all Audits. </li>
-        <li class="list-group-item">Feedback: Wording "Payment of Missing Tax". </li>
-        <li class="list-group-item">Tax Payment: Validation of Inputs. </li>
-        <li class="list-group-item">Audit: Wording for "Fine". </li>
-        <li class="list-group-item">Slider: Only displays "Time's Up" </li>
-
+        <li class="list-group-item">Fixed Mouselab ProcData Download Link Generation</li>
+        <li class="list-group-item">Added Download Buttons to Data Table List</li>
+        <li class="list-group-item">Feedback Bug Fix: Now displays correct total income. </li>
 
     </ul>
     <hr>
@@ -50,7 +47,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.6 (February 2021)</p>
+    <p class="versionText">Demo Version 1.4.7 (March 2021)</p>
 
 </div>
 
