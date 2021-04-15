@@ -1,15 +1,9 @@
 <?php
-
 $saveURL =  "../external/save/save.php";
-
 $roundData = loadMouselabTableData($round, $participantID);
 
 //Prepare Data
-
-//require_once($_SERVER["DOCUMENT_ROOT"] . "/public/dataLoader.php");
-
-$conditionParameter = getParamValue("condition", "1");
-$conditionParameter = intval($conditionParameter);
+$conditionParameter = intval(getParamValue("condition", "1"));
 
 if ($conditionParameter == 0) {
     $conditionParameter = 1;
@@ -25,10 +19,10 @@ $randomisedRoundOrderArray = json_decode($roundOrder);
 //$currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
 
-$taxRate = $roundData["tax_rate"]; //$currentRound['tax_rate'];
-$auditProbability = $roundData["audit_probability"];  //$currentRound['audit_probability'];
-$fineRate = $roundData["fine_rate"]; //$currentRound['fine_rate'];
-$income = $roundData["income"] + 1000; //$currentRound['income'];
+$taxRate = $roundData["tax_rate"];
+$auditProbability = $roundData["audit_probability"];
+$fineRate = $roundData["fine_rate"];
+$income = $roundData["income"] + 1000;
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
@@ -41,6 +35,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
 <script>
 
+    //prevents entry with Enter key.
     $(document).keypress(
         function(event){
             if (event.which == '13') {
@@ -49,9 +44,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         });
 
     $(document).ready( () => {
-
-
-
         $("#submitButton").click( (e) => {
             console.log("prefiled tax: ");
             let button = e.target;
@@ -60,6 +52,10 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 input.disabled = true;
                 button.classList.add("disabled_button");
             }
+        });
+
+        $(window).on('beforeunload', () => {
+
 
         })
     });
@@ -89,11 +85,10 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         })
         .fail( () => {
             globalIsDisabled = false
-
         })
     }
 
-    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine) {
+    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine, isPrefiled = 1) {
         let pid = <?php echo $participantID; ?>;
         let round = <?php echo $round; ?>;
         $.ajax({
@@ -109,6 +104,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 declared_tax: declaredTax,
                 actual_tax: actualTax,
                 honesty:  honesty ? 1 : 0,
+                prefiled: isPrefiled,
                 audit: audit ? 1 : 0,
                 fine: fine
             },
@@ -150,13 +146,6 @@ else {
 </div>
 
 <script>
-
-    $(document).keypress(
-        function(event){
-            if (event.which == '13') {
-                event.preventDefault();
-            }
-        });
 
     $(function() {
 
@@ -216,22 +205,12 @@ else {
                 }
             }
 
-        })
-
-        $("#complyButton").click(function() {
-            console.log("Comply Button clicked");
-            let taxAmount = income * taxRate;
-            performAudit(taxAmount, true);
-        });
-
-        $("#evadeButton").click(function() {
-            console.log("Evade Button clicked");
-            performAudit(0, false);
         });
 
         $("#incomeInput").change( function() {
+
             validateInput();
-        })
+        });
     });
 
     $('form').on('keydown', function(event) {
@@ -274,7 +253,6 @@ else {
         let honesty = paraHonesty; //true or false, depending on the declaration
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
-
         let fine = 0;
 
         netIncome = actualIncome - reportedTax;
@@ -322,7 +300,7 @@ else {
         $("#modalBody").text(text);
     }
 
-    function prepareMlwebSave() {
+    function prepareMlwebSave(isPrefiled = 1) {
         let saveURL ='<?php echo $saveURL; ?>';
         let subjectID = document.getElementById('subjectID').value;
         let experimentID = document.getElementById('experimentID').value;
