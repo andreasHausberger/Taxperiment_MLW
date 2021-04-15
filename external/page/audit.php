@@ -55,7 +55,13 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         });
 
         $(window).on('beforeunload', () => {
-
+            let auditIsComplete = document.getElementById("auditComplete").value;
+            let taxAmount = document.getElementById("reported_tax").value;
+            console.log("declared tax: " + taxAmount);
+            if (taxAmount != null && !auditIsComplete) {
+                performAudit(taxAmount, true, false);
+                button.disabled = true
+            }
 
         })
     });
@@ -88,7 +94,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         })
     }
 
-    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine, isPrefiled = 1) {
+    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine, isPrefiled) {
         let pid = <?php echo $participantID; ?>;
         let round = <?php echo $round; ?>;
         $.ajax({
@@ -195,8 +201,8 @@ else {
 
             if (!button.disabled) {
                 console.log("Prefile taxes clicked");
-                let taxAmount = $("#incomeInput").val();
 
+                let taxAmount = document.getElementById("reported_tax").value;
                 if (taxAmount != null) {
                     let taxDue = income * taxRate
                     let isCompliant = taxAmount >= taxDue;
@@ -207,9 +213,11 @@ else {
 
         });
 
-        $("#incomeInput").change( function() {
-
-            validateInput();
+        $("#incomeInput").change( (e) => {
+            let inputIsValid = validateInput();
+            if (inputIsValid) {
+                document.getElementById("reported_tax").value = e.target.value
+            }
         });
     });
 
@@ -239,7 +247,8 @@ else {
         document.getElementById("cue_arrow").style.transform = rotation;
     }
 
-    function performAudit(paraTaxAmount, paraHonesty = true) {
+    function performAudit(paraTaxAmount, paraHonesty = true, paraPrefiled = true) {
+        auditIsPrefiled = paraPrefiled
         let reportedTax = parseInt(paraTaxAmount)
         document.getElementById("tax").value = <?php echo $income * $taxRate ?>;
         let actualIncome = <?php echo $income ?>
@@ -260,7 +269,7 @@ else {
         console.log("testing " + randomNr + " against probability " + probability);
 
         if (audit) {
-            fine = startAudit(actualTax, reportedTax);
+            fine = calculateFine(actualTax, reportedTax);
 
             if (fine !== 0) {
                 netIncome = netIncome - fine;
@@ -287,10 +296,11 @@ else {
         document.getElementById("net_income").value = "" + netIncome;
         document.getElementById("wasHonest").value = honesty;
         document.getElementById("fine").value = "" + fine;
+        document.getElementById("auditComplete").value = true;
 
         //save audit data
         let saveURL ='<?php echo $saveURL; ?>';
-        saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine);
+        saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine, paraPrefiled);
 
         //prepare & save MLWEB Data. Also disables Table on success.
         prepareMlwebSave();
@@ -351,7 +361,7 @@ else {
         disableButtons();
     }
 
-    function startAudit(actualTax, reportedTax) {
+    function calculateFine(actualTax, reportedTax) {
         let fineRate = <?php echo $fineRate; ?>;
         if (reportedTax < actualTax) {
             //find the difference between the taxes, and multiply it with the fine rate.
