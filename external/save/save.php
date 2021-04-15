@@ -38,7 +38,7 @@ switch ($action) {
         if ($participantID != "" && $round != "" && sizeof($postArray) > 0) {
             $result = saveAuditData($round, $participantID, $postArray);
             $resultArray = [
-                "status" => $result ? 201 : 400,
+                "status" => $result >= 0 ? 201 : 400,
                 "participantID" => $participantID,
                 "round" => $round
             ];

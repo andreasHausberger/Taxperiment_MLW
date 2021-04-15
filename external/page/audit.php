@@ -79,7 +79,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             },
             success: (response) => {
                 globalIsDisabled = true
-                console.log(response.message);
+                console.log(response);
             }
 
         })
@@ -113,7 +113,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 fine: fine
             },
             success: (response) => {
-
+                console.log(response);
             }
         })
         .done( (response) => {
@@ -140,7 +140,7 @@ else {
 
 <div style="text-align: center">
         <div class="input-group">
-            <input type="text" class="form-control" id="incomeInput" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
+            <input type="text" class="form-control" id="incomeInput" autocomplete="off" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
             <div class="btn btn-light" id="submitButton" value="">Pre-file Taxes </div>
         </div>
     <div class="input-group">
