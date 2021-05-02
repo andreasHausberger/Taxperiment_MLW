@@ -1,5 +1,5 @@
 
-<div class="siteContainer">
+<div class="siteContainer" style="max-width: 100%; overflow-x: hidden">
     <div class="contentContainer">
 
 
@@ -126,7 +126,7 @@ $nextString = "index.php?round=" . $_GET['round'] . "&mode=2&expid=$experimentID
 
     }
 
-    var time = 20;
+    var time = 200;
     document.getElementById("time").innerHTML = time;
 
     var countdownTimer = setInterval(function() {
