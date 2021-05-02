@@ -270,6 +270,14 @@ function saveAuditData($paraRound, $paraParticipantID, $paraPostData) {
     $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);
     $experimentID = $expData["experiment_id"];
 
+    $existingAudits = $db->selectQuery("SELECT id FROM audit WHERE pid = ? AND round = ? AND actual_tax IS NOT NULL", "ii", ...[intval($paraParticipantID), $paraRound]);
+
+    if ($existingAudits && sizeof($existingAudits) > 0) {
+        return -2;
+    }
+
+
+
     $qb = new QueryBuilder('audit');
     $qb->addString('net_income', $paraPostData['net_income']);
     $qb->addString('actual_tax', $paraPostData['actual_tax']);
@@ -277,6 +285,7 @@ function saveAuditData($paraRound, $paraParticipantID, $paraPostData) {
     $qb->addString('honesty', $paraPostData['honesty']);
     $qb->addString('audit', $paraPostData['audit']);
     $qb->addString('fine', $paraPostData['fine']);
+    $qb->addString('prefiled', $paraPostData['prefiled']);
 
     $update = $qb->buildInsert("WHERE exp_id = ? AND round = ?", true);
 

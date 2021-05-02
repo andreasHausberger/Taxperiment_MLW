@@ -58,8 +58,11 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             let auditIsComplete = document.getElementById("auditComplete").value;
             let taxAmount = document.getElementById("reported_tax").value;
             console.log("declared tax: " + taxAmount);
-            if (taxAmount != null && !auditIsComplete) {
+            console.log("audit complete: " + auditIsComplete);
+
+            if (taxAmount != null && auditIsComplete != 1) {
                 performAudit(taxAmount, true, false);
+                document.getElementById("auditComplete").value = 1
                 button.disabled = true
             }
 
@@ -110,7 +113,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 declared_tax: declaredTax,
                 actual_tax: actualTax,
                 honesty:  honesty ? 1 : 0,
-                prefiled: isPrefiled,
+                prefiled: isPrefiled ? 1 : 0,
                 audit: audit ? 1 : 0,
                 fine: fine
             },
@@ -259,7 +262,7 @@ else {
         let actualTax = <?php echo $income * $taxRate ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = paraHonesty; //true or false, depending on the declaration
+        let honesty = actualTax == reportedTax;
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
         let fine = 0;
@@ -296,7 +299,7 @@ else {
         document.getElementById("net_income").value = "" + netIncome;
         document.getElementById("wasHonest").value = honesty;
         document.getElementById("fine").value = "" + fine;
-        document.getElementById("auditComplete").value = true;
+        document.getElementById("auditComplete").value = 1;
 
         //save audit data
         let saveURL ='<?php echo $saveURL; ?>';
