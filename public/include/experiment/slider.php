@@ -1,18 +1,10 @@
 
-<div class="siteContainer">
+<div class="siteContainer" style="max-width: 100%; overflow-x: hidden">
     <div class="contentContainer">
 
 
         <!-- Modal -->
         <div class="modal fade" id="sliderModal" role="dialog" aria-labelledby="sliderModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Time's up!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="timerContainer">
@@ -99,19 +91,15 @@
 
 if (isset($_GET['feedback'])) {
     $feedback = $_GET['feedback'];
-    console_log("Feedback is there");
 }
 
 if (isset($_GET['order'])) {
     $order = $_GET['order'];
-    console_log("Order is there");
 
 }
 
 if (isset($_GET['presentation'])) {
     $presentation = $_GET['presentation'];
-    console_log("Presentation is there");
-
 }
 
 $condition = $_GET['condition'];

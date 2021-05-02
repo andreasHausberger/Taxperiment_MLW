@@ -1,15 +1,9 @@
 <?php
-
 $saveURL =  "../external/save/save.php";
-
 $roundData = loadMouselabTableData($round, $participantID);
 
 //Prepare Data
-
-//require_once($_SERVER["DOCUMENT_ROOT"] . "/public/dataLoader.php");
-
-$conditionParameter = getParamValue("condition", "1");
-$conditionParameter = intval($conditionParameter);
+$conditionParameter = intval(getParamValue("condition", "1"));
 
 if ($conditionParameter == 0) {
     $conditionParameter = 1;
@@ -25,10 +19,10 @@ $randomisedRoundOrderArray = json_decode($roundOrder);
 //$currentRoundIndex = $_GET['round'] - 1;
 $currentRound = $expRoundArray[$randomisedRoundOrderArray[$currentRoundIndex]];
 
-$taxRate = $roundData["tax_rate"]; //$currentRound['tax_rate'];
-$auditProbability = $roundData["audit_probability"];  //$currentRound['audit_probability'];
-$fineRate = $roundData["fine_rate"]; //$currentRound['fine_rate'];
-$income = $roundData["income"] + 1000; //$currentRound['income'];
+$taxRate = $roundData["tax_rate"];
+$auditProbability = $roundData["audit_probability"];
+$fineRate = $roundData["fine_rate"];
+$income = $roundData["income"] + 1000;
 
 $subjectID = $dataArray['pid'];
 //var_dump($subjectID);
@@ -41,6 +35,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
 
 <script>
 
+    //prevents entry with Enter key.
     $(document).keypress(
         function(event){
             if (event.which == '13') {
@@ -49,9 +44,6 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         });
 
     $(document).ready( () => {
-
-
-
         $("#submitButton").click( (e) => {
             console.log("prefiled tax: ");
             let button = e.target;
@@ -59,6 +51,19 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 let input = document.getElementById("incomeInput");
                 input.disabled = true;
                 button.classList.add("disabled_button");
+            }
+        });
+
+        $(window).on('beforeunload', () => {
+            let auditIsComplete = document.getElementById("auditComplete").value;
+            let taxAmount = document.getElementById("reported_tax").value;
+            console.log("declared tax: " + taxAmount);
+            console.log("audit complete: " + auditIsComplete);
+
+            if (taxAmount != null && auditIsComplete != 1) {
+                performAudit(taxAmount, true, false);
+                document.getElementById("auditComplete").value = 1
+                button.disabled = true
             }
 
         })
@@ -79,7 +84,7 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
             },
             success: (response) => {
                 globalIsDisabled = true
-                console.log(response.message);
+                console.log(response);
             }
 
         })
@@ -89,11 +94,10 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
         })
         .fail( () => {
             globalIsDisabled = false
-
         })
     }
 
-    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine) {
+    function saveAuditData(url, netIncome, taxDue, declaredTax, actualTax, honesty, audit, fine, isPrefiled) {
         let pid = <?php echo $participantID; ?>;
         let round = <?php echo $round; ?>;
         $.ajax({
@@ -109,11 +113,12 @@ $nextMode = $_GET['mode'] == 2 ? 1 : 2;
                 declared_tax: declaredTax,
                 actual_tax: actualTax,
                 honesty:  honesty ? 1 : 0,
+                prefiled: isPrefiled ? 1 : 0,
                 audit: audit ? 1 : 0,
                 fine: fine
             },
             success: (response) => {
-
+                console.log(response);
             }
         })
         .done( (response) => {
@@ -140,7 +145,7 @@ else {
 
 <div style="text-align: center">
         <div class="input-group">
-            <input type="text" class="form-control" id="incomeInput" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
+            <input type="text" class="form-control" id="incomeInput" autocomplete="off" placeholder="Enter tax amount you decide to declare" aria-label="Declare Income" id="incomeInput" name="income">
             <div class="btn btn-light" id="submitButton" value="">Pre-file Taxes </div>
         </div>
     <div class="input-group">
@@ -150,13 +155,6 @@ else {
 </div>
 
 <script>
-
-    $(document).keypress(
-        function(event){
-            if (event.which == '13') {
-                event.preventDefault();
-            }
-        });
 
     $(function() {
 
@@ -206,8 +204,8 @@ else {
 
             if (!button.disabled) {
                 console.log("Prefile taxes clicked");
-                let taxAmount = $("#incomeInput").val();
 
+                let taxAmount = document.getElementById("reported_tax").value;
                 if (taxAmount != null) {
                     let taxDue = income * taxRate
                     let isCompliant = taxAmount >= taxDue;
@@ -216,22 +214,14 @@ else {
                 }
             }
 
-        })
-
-        $("#complyButton").click(function() {
-            console.log("Comply Button clicked");
-            let taxAmount = income * taxRate;
-            performAudit(taxAmount, true);
         });
 
-        $("#evadeButton").click(function() {
-            console.log("Evade Button clicked");
-            performAudit(0, false);
+        $("#incomeInput").change( (e) => {
+            let inputIsValid = validateInput();
+            if (inputIsValid) {
+                document.getElementById("reported_tax").value = e.target.value
+            }
         });
-
-        $("#incomeInput").change( function() {
-            validateInput();
-        })
     });
 
     $('form').on('keydown', function(event) {
@@ -260,7 +250,8 @@ else {
         document.getElementById("cue_arrow").style.transform = rotation;
     }
 
-    function performAudit(paraTaxAmount, paraHonesty = true) {
+    function performAudit(paraTaxAmount, paraHonesty = true, paraPrefiled = true) {
+        auditIsPrefiled = paraPrefiled
         let reportedTax = parseInt(paraTaxAmount)
         document.getElementById("tax").value = <?php echo $income * $taxRate ?>;
         let actualIncome = <?php echo $income ?>
@@ -271,10 +262,9 @@ else {
         let actualTax = <?php echo $income * $taxRate ?>; //actual income
         let taxRate = <?php echo $taxRate ?>;
 
-        let honesty = paraHonesty; //true or false, depending on the declaration
+        let honesty = actualTax == reportedTax;
         let randomNr = Math.random();
         let audit = (randomNr <= probability);
-
         let fine = 0;
 
         netIncome = actualIncome - reportedTax;
@@ -282,7 +272,7 @@ else {
         console.log("testing " + randomNr + " against probability " + probability);
 
         if (audit) {
-            fine = startAudit(actualTax, reportedTax);
+            fine = calculateFine(actualTax, reportedTax);
 
             if (fine !== 0) {
                 netIncome = netIncome - fine;
@@ -309,10 +299,11 @@ else {
         document.getElementById("net_income").value = "" + netIncome;
         document.getElementById("wasHonest").value = honesty;
         document.getElementById("fine").value = "" + fine;
+        document.getElementById("auditComplete").value = 1;
 
         //save audit data
         let saveURL ='<?php echo $saveURL; ?>';
-        saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine);
+        saveAuditData(saveURL, actualIncome, taxRate, reportedTax, actualTax, honesty, audit, fine, paraPrefiled);
 
         //prepare & save MLWEB Data. Also disables Table on success.
         prepareMlwebSave();
@@ -322,7 +313,7 @@ else {
         $("#modalBody").text(text);
     }
 
-    function prepareMlwebSave() {
+    function prepareMlwebSave(isPrefiled = 1) {
         let saveURL ='<?php echo $saveURL; ?>';
         let subjectID = document.getElementById('subjectID').value;
         let experimentID = document.getElementById('experimentID').value;
@@ -373,7 +364,7 @@ else {
         disableButtons();
     }
 
-    function startAudit(actualTax, reportedTax) {
+    function calculateFine(actualTax, reportedTax) {
         let fineRate = <?php echo $fineRate; ?>;
         if (reportedTax < actualTax) {
             //find the difference between the taxes, and multiply it with the fine rate.

@@ -37,8 +37,18 @@ switch ($action) {
 
         if ($participantID != "" && $round != "" && sizeof($postArray) > 0) {
             $result = saveAuditData($round, $participantID, $postArray);
+            $status = 0;
+            if ($result >= 0) {
+                $status = 201;
+            }
+            else if ($result == -1) {
+                $status == 400; //could not save due to missing values
+            }
+            else if ($result == -2) {
+                $status = 409; //conflict - round data already exists
+            }
             $resultArray = [
-                "status" => $result ? 201 : 400,
+                "status" => $status,
                 "participantID" => $participantID,
                 "round" => $round
             ];

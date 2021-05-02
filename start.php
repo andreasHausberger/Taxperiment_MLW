@@ -15,9 +15,11 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item">Fixed Mouselab ProcData Download Link Generation</li>
-        <li class="list-group-item">Added Download Buttons to Data Table List</li>
-        <li class="list-group-item">Feedback Bug Fix: Now displays correct total income. </li>
+        <li class="list-group-item"> Auto Save for Audits: When the site will disappear, the most recent values are saved. (Audit is still performed as expected)</li>
+        <li class="list-group-item"> Info whether audit is prefiled correctly (with button) or via auto-save (see above) is saved. </li>
+        <li class="list-group-item"> Audit text input field no longer auto-completes or auto-suggests. </li>
+        <li class="list-group-item"> Adapted Style for Sliders: No more horizontal scrolling. </li>
+        <li class="list-group-item"> Slider page does no longer display a modal dialogue after timer finishes. </li>
 
     </ul>
     <hr>
@@ -47,7 +49,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.7 (March 2021)</p>
+    <p class="versionText">Demo Version 1.4.8 (May 2021)</p>
 
 </div>
 

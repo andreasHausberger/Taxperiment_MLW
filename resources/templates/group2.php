@@ -129,6 +129,7 @@ $order = $_GET['order'];
     <input type="hidden" id="net_income" name="net_income">
     <input type="hidden" id="wasAudited" name="wasAudited" >
     <input type="hidden" id="wasHonest" name="wasHonest">
+    <input type="hidden" id="auditComplete" name="auditComplete" value="0">
     <input type="hidden" id="fine" name="fine">
     <input type="hidden" id="subjectID" name="subjectID" value=<?php echo $participantID ?>>
     <input type="hidden" id="experimentID" name="experimentID" value=<?php echo $experimentID ?>>
