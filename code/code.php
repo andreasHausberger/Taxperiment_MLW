@@ -188,8 +188,18 @@ function saveSliderData($paraScore, $paraRound, $paraParticipantID, $paraExperim
  */
 function loadMouselabTableData($paraRound, $paraParticipantID) {
     global $db;
-    if (!$paraRound || intval($paraRound) < 1 || intval($paraRound) > 18) {
+    if (intval($paraRound) < 0 || intval($paraRound) > 18) {
         echo createWarningHTML("Data Loading Error", "Could not load data: Round is missing or invalid!");
+    }
+
+    if ($paraRound == 0) {
+        $results = [
+            "income" => 600,
+            "tax_rate" => 0.3,
+            "audit_probability" => 0.1,
+            "fine_rate" => 0.5
+        ];
+        return $results;
     }
 
     $expData = $db->selectQuery("SELECT id as experiment_id, participant, exp_condition FROM experiment WHERE participant = ? ", "i", $paraParticipantID);

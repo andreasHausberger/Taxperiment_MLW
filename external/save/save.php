@@ -36,23 +36,33 @@ switch ($action) {
         $round = postParamValue('round');
 
         if ($participantID != "" && $round != "" && sizeof($postArray) > 0) {
-            $result = saveAuditData($round, $participantID, $postArray);
-            $status = 0;
-            if ($result >= 0) {
-                $status = 201;
+            if ($round == "0") {
+                $resultArray =  [
+                    "status" => "204",
+                    "message" => "Test Round 0 Activated"
+                ];
+                echo json_encode($resultArray);
             }
-            else if ($result == -1) {
-                $status == 400; //could not save due to missing values
+            else {
+                $result = saveAuditData($round, $participantID, $postArray);
+                $status = 0;
+                if ($result >= 0) {
+                    $status = 201;
+                }
+                else if ($result == -1) {
+                    $status == 400; //could not save due to missing values
+                }
+                else if ($result == -2) {
+                    $status = 409; //conflict - round data already exists
+                }
+                $resultArray = [
+                    "status" => $status,
+                    "participantID" => $participantID,
+                    "round" => $round
+                ];
+                echo json_encode($resultArray);
             }
-            else if ($result == -2) {
-                $status = 409; //conflict - round data already exists
-            }
-            $resultArray = [
-                "status" => $status,
-                "participantID" => $participantID,
-                "round" => $round
-            ];
-            echo json_encode($resultArray);
+
         }
         else {
             $resultArray = [
