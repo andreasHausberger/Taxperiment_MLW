@@ -15,11 +15,11 @@
     <h2>Recent Changes</h2>
     <ul class="list-group">
 
-        <li class="list-group-item"> Auto Save for Audits: When the site will disappear, the most recent values are saved. (Audit is still performed as expected)</li>
-        <li class="list-group-item"> Info whether audit is prefiled correctly (with button) or via auto-save (see above) is saved. </li>
-        <li class="list-group-item"> Audit text input field no longer auto-completes or auto-suggests. </li>
-        <li class="list-group-item"> Adapted Style for Sliders: No more horizontal scrolling. </li>
-        <li class="list-group-item"> Slider page does no longer display a modal dialogue after timer finishes. </li>
+        <li class="list-group-item"> Round 0: When parameter round=0 is set (for audit pages), examples are shown. No data is saved. </li>
+        <li class="list-group-item"> Adapted info texts. </li>
+        <li class="list-group-item"> Adapted Exp Round values. </li>
+
+
 
     </ul>
     <hr>
@@ -49,7 +49,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.8 (May 2021)</p>
+    <p class="versionText">Demo Version 1.4.9 (June 2021)</p>
 
 </div>
 
