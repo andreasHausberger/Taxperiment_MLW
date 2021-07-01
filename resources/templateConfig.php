@@ -25,7 +25,7 @@ $taxRatePercentagePoints = intval($taxRate * 100);
 $incomeContent = "$income ECU";
 $taxContent = "$taxRatePercentagePoints% = $taxDue ECU";
 $auditContent = "$auditPercentage%";
-$fineContent = "$finePercentage% of evaded amount";
+$fineContent = "+ $finePercentage% of evaded amount";
 $evRiskyContent = "$evEvasion ECU";
 $sureGainContent = "$sureGain ECU";
 

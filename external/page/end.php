@@ -2,7 +2,7 @@
 
 //get relevant data
 $db = new Database();
-$ecuToGBP = 350;
+$ecuToGBP = 500;
 $participantID = $db->selectQuery("SELECT id FROM participant WHERE name = ?", "s", $participantName);
 $expId = getExperimentIDForParticipantID($participantID['id']);
 $rounds = $db->selectQuery("SELECT * FROM audit WHERE exp_id = $expId");

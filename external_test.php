@@ -3,6 +3,7 @@ require_once("resources/config.php");
 require_once ("code/code.php");
 require_once("public/templates/header.php");
 
+
 echo "<h1> Test </h1>";
 
 $page = postParamValue("exp_page");
@@ -26,7 +27,7 @@ $round = postParamValue("round");
         <option value="feedback">Feedback</option>
     </select>
 
-    <input type="submit">
+    <input type="submit" value="Run">
     
 </form>
 
