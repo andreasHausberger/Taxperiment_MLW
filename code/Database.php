@@ -24,6 +24,10 @@ class Database {
         $this->connection->close();
     }
 
+    private function getConnection() {
+        return new mysqli(DB_Host, DB_User, DB_Password, DB_Name);
+    }
+
     private function displayError($error, $errorQuery) {
         echo "Could not complete operation! <br>";
         echo "Query: " . $errorQuery . " <br>";
@@ -79,18 +83,19 @@ class Database {
      * @return bool|int|mixed
      */
     public function insertQuery($query, $paramTypes = null, ...$paramVars) {
-        $this->open();
+        $connection = $this->getConnection();
 
         $insertID = null;
 
         if ($paramTypes != null && $paramVars != null) {
-            $preparedQuery = $this->connection->prepare($query);
+            $preparedQuery = $connection->prepare($query);
 
             if($preparedQuery) {
                 $preparedQuery->bind_param($paramTypes, ...$paramVars);
 
                 if ($preparedQuery->execute()) {
                     $insertID = $preparedQuery->insert_id;
+                    $connection->close();
                     return $insertID;
                 } else {
                     $this->displayError($preparedQuery->error, $query);
@@ -101,20 +106,20 @@ class Database {
             }
         }
         else {
-            if($this->connection->query($query)) {
-                $this->close();
-                $insertID = $this->connection->insert_id;
+            if($connection->query($query)) {
+                $connection->close();
+                $insertID = $connection->insert_id;
                 if (!$insertID) {
                     return true;
                 }
                 return $insertID;
             }
             else {
-                $this->displayError($this->connection->error, $query);
+                $this->displayError($connection->error, $query);
             }
         }
 
-        $this->close();
+        $connection->close();
         $this->displayError("DB Error: Could not complete insert or update!", $query);
         return false;
     }

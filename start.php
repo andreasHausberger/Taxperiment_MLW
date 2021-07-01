@@ -14,13 +14,9 @@
 
     <h2>Recent Changes</h2>
     <ul class="list-group">
-
-        <li class="list-group-item"> Round 0: When parameter round=0 is set (for audit pages), examples are shown. No data is saved. </li>
-        <li class="list-group-item"> Adapted info texts. </li>
-        <li class="list-group-item"> Adapted Exp Round values. </li>
-
-
-
+        <li class="list-group-item"> Added Test page. </li>
+        <li class="list-group-item"> Added more security for Saving data. </li>
+        <li class="list-group-item"> Changed ECU / £ Currency Key</li>
     </ul>
     <hr>
     <div class="btn btn-primary disabled" data-toggle="modal" data-target="#expModal" aria-disabled="true">
@@ -49,7 +45,7 @@
 
     </div>
 
-    <p class="versionText">Demo Version 1.4.9 (June 2021)</p>
+    <p class="versionText">Demo Version 1.4.10 (July 2021)</p>
 
 </div>
 
